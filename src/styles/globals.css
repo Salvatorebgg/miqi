@@ -706,3 +706,79 @@ a.lesson-row:hover { background: rgba(255, 255, 255, 0.8); }
 .resource-list svg { width: 1rem; height: 1rem; flex: none; }
 .resource-list span { flex: 1; font-weight: 600; }
 .resource-list em { font-style: normal; font-size: 0.78rem; color: var(--muted); }
+
+/* English practice */
+.metric-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.75rem;
+  margin: 1.25rem 0 0;
+}
+
+.metric-strip > div {
+  padding: 0.8rem 1rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.55);
+  text-align: center;
+}
+
+.metric-strip dt { font-size: 0.75rem; color: var(--muted); font-weight: 700; }
+.metric-strip dd { margin: 0.2rem 0 0; font-size: 1.3rem; font-weight: 800; color: var(--forest); }
+
+.vocab-card {
+  margin-top: 1rem;
+  padding: 1.5rem;
+  border-radius: 1.3rem;
+  text-align: center;
+  display: grid;
+  gap: 0.5rem;
+  justify-items: center;
+}
+
+.vocab-progress { margin: 0; font-size: 0.78rem; color: var(--muted); font-weight: 700; }
+.vocab-word { margin: 0; font-size: 2rem; font-weight: 800; color: var(--forest); letter-spacing: 0.02em; }
+.vocab-pos { margin: 0; color: var(--muted); }
+.vocab-detail { display: grid; gap: 0.45rem; }
+.vocab-collocations { margin: 0; font-weight: 600; color: var(--forest); }
+.vocab-example { margin: 0; font-style: italic; }
+
+.rating-row { display: flex; flex-wrap: wrap; gap: 0.6rem; justify-content: center; margin-top: 0.4rem; }
+.rating-hard { border-color: rgba(214, 105, 130, 0.5); color: #9c3d4f; }
+
+.tab-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.75rem; }
+
+.tab-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 44px;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(88, 201, 157, 0.35);
+  background: rgba(255, 255, 255, 0.5);
+  font: inherit;
+  font-weight: 700;
+  color: var(--forest);
+  cursor: pointer;
+}
+
+.tab-button.active {
+  background: linear-gradient(135deg, var(--mint-500), #3fae85);
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.tab-button svg { width: 1rem; height: 1rem; }
+
+.reading-card {
+  margin-top: 1rem;
+  padding: 1.25rem 1.4rem;
+  border-radius: 1.3rem;
+  display: grid;
+  gap: 0.9rem;
+}
+
+.reading-card h4 { margin: 0; color: var(--forest); }
+.reading-source { margin: 0.25rem 0 0; font-size: 0.78rem; color: var(--muted); }
+.reading-passage { margin: 0; line-height: 1.7; }
+.question-list { margin: 0; padding-left: 1.2rem; display: grid; gap: 1rem; }
