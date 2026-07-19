@@ -873,3 +873,99 @@ a.lesson-row:hover { background: rgba(255, 255, 255, 0.8); }
 
 .source-health { margin-top: 1.5rem; font-size: 0.85rem; }
 .source-health ul { padding-left: 1.2rem; }
+
+/* Games */
+.game-pane { margin-top: 1.25rem; display: grid; gap: 1rem; justify-items: center; }
+
+.game-toolbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: center;
+}
+
+.game-timer,
+.game-moves {
+  font-weight: 800;
+  color: var(--forest);
+  font-variant-numeric: tabular-nums;
+}
+
+.sudoku-grid {
+  display: grid;
+  grid-template-columns: repeat(9, 2.4rem);
+  grid-auto-rows: 2.4rem;
+  background: rgba(255, 255, 255, 0.55);
+  border: 2px solid var(--forest);
+  border-radius: 0.6rem;
+  overflow: hidden;
+}
+
+.sudoku-cell {
+  border: none;
+  border-right: 1px solid rgba(49, 89, 73, 0.25);
+  border-bottom: 1px solid rgba(49, 89, 73, 0.25);
+  background: transparent;
+  font: inherit;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #2b6b8f;
+  cursor: pointer;
+}
+
+.sudoku-cell.box-right { border-right: 2px solid var(--forest); }
+.sudoku-cell.box-bottom { border-bottom: 2px solid var(--forest); }
+.sudoku-cell.fixed { color: var(--forest); font-weight: 800; }
+.sudoku-cell.selected { background: var(--mint-100); outline: 2px solid var(--mint-500); outline-offset: -2px; }
+.sudoku-cell.conflict { background: rgba(214, 105, 130, 0.28); color: #9c3d4f; }
+
+.sudoku-pad {
+  display: grid;
+  grid-template-columns: repeat(10, minmax(2.2rem, 1fr));
+  gap: 0.4rem;
+  max-width: 30rem;
+}
+
+.game-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; justify-content: center; }
+
+.game-result {
+  margin: 0.5rem 0 0;
+  padding: 0.9rem 1.4rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  color: var(--forest);
+}
+
+.maze-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1.9rem);
+  grid-auto-rows: 1.9rem;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 0.6rem;
+  outline: none;
+}
+
+.maze-grid:focus-visible { outline: 3px solid rgba(88, 201, 157, 0.5); }
+
+.maze-cell { position: relative; }
+.maze-cell.wall-up { border-top: 2px solid var(--forest); }
+.maze-cell.wall-down { border-bottom: 2px solid var(--forest); }
+.maze-cell.wall-left { border-left: 2px solid var(--forest); }
+.maze-cell.wall-right { border-right: 2px solid var(--forest); }
+.maze-cell.goal { background: radial-gradient(circle, rgba(88, 201, 157, 0.55), transparent 70%); }
+
+.maze-player {
+  position: absolute;
+  inset: 22%;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f38ba8, #d6698a);
+  box-shadow: 0 2px 6px rgba(214, 105, 138, 0.5);
+}
+
+.maze-pad {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 0.4rem;
+  justify-items: center;
+}
