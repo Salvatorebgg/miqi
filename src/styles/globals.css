@@ -782,3 +782,94 @@ a.lesson-row:hover { background: rgba(255, 255, 255, 0.8); }
 .reading-source { margin: 0.25rem 0 0; font-size: 0.78rem; color: var(--muted); }
 .reading-passage { margin: 0; line-height: 1.7; }
 .question-list { margin: 0; padding-left: 1.2rem; display: grid; gap: 1rem; }
+
+/* News */
+.news-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.news-updated { margin: 0.25rem 0 0; font-size: 0.82rem; color: var(--muted); }
+
+.news-toolbar { display: grid; gap: 0.75rem; margin-top: 1rem; }
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 0.9rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(88, 201, 157, 0.35);
+  max-width: 26rem;
+}
+
+.search-box svg { width: 1rem; height: 1rem; color: var(--muted); flex: none; }
+
+.search-box input {
+  border: none;
+  background: none;
+  font: inherit;
+  min-height: 44px;
+  flex: 1;
+  outline: none;
+}
+
+.spinning { animation: miqi-spin 1s linear infinite; }
+
+@keyframes miqi-spin {
+  to { transform: rotate(360deg); }
+}
+
+.news-list { list-style: none; margin: 1.25rem 0 0; padding: 0; display: grid; gap: 0.9rem; }
+
+.news-card {
+  padding: 1rem 1.2rem;
+  border-radius: 1.2rem;
+}
+
+.news-card.read { opacity: 0.72; }
+.news-card h3 { margin: 0.4rem 0; font-size: 1.02rem; color: var(--forest); }
+.news-card > p { margin: 0; font-size: 0.9rem; }
+
+.news-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  font-size: 0.75rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.news-category {
+  padding: 0.1rem 0.55rem;
+  border-radius: 999px;
+  background: var(--mint-100);
+  color: var(--forest);
+}
+
+.news-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.7rem;
+}
+
+.news-actions a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: 44px;
+  color: var(--forest);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.news-actions svg { width: 1rem; height: 1rem; vertical-align: -0.15em; }
+.news-actions button { display: inline-flex; align-items: center; gap: 0.35rem; min-height: 44px; }
+
+.source-health { margin-top: 1.5rem; font-size: 0.85rem; }
+.source-health ul { padding-left: 1.2rem; }

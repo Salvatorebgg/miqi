@@ -5,6 +5,7 @@ import { AccountPage } from '../features/account/AccountPage'
 import { MathPage } from '../features/math/MathPage'
 import { LessonPage } from '../features/math/LessonPage'
 import { EnglishPage } from '../features/english/EnglishPage'
+import { NewsPage } from '../features/news/NewsPage'
 
 type PageProps = {
   eyebrow: string
@@ -30,7 +31,7 @@ export function AppRoutes() {
         <Route path="math" element={<MathPage />} />
         <Route path="math/lesson/:lessonId" element={<LessonPage />} />
         <Route path="english" element={<EnglishPage />} />
-        <Route path="news" element={<Page eyebrow="每日资讯" title="看见更大的世界" description="用适合学习的方式阅读与理解当天资讯。" />} />
+        <Route path="news" element={<NewsPage />} />
         <Route path="games" element={<Page eyebrow="脑力游戏" title="给大脑一次轻快挑战" description="短时练习，让注意力与思考保持活跃。" />} />
         <Route path="planner" element={<Page eyebrow="规划中心" title="把目标放进日程" description="整理任务、节奏与阶段性目标。" />} />
         <Route path="account" element={<AccountPage />} />
