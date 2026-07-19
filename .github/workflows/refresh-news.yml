@@ -1,0 +1,36 @@
+name: Refresh news feed
+
+on:
+  # Beijing time 00:15, 06:15, 12:15, 18:15 (UTC 16:15, 22:15, 04:15, 10:15)
+  schedule:
+    - cron: '15 16,22,4,10 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run news:refresh
+      - name: Validate feed JSON
+        run: |
+          node -e "const f=require('./public/data/news.json'); if(!Array.isArray(f.items)||f.items.length===0){process.exit(1)}"
+      - name: Commit updated feed
+        run: |
+          if git diff --quiet public/data/news.json; then
+            echo "Feed unchanged; nothing to commit."
+            exit 0
+          fi
+          git config user.name "miqi-news-bot"
+          git config user.email "miqi-news-bot@users.noreply.github.com"
+          git add public/data/news.json
+          git commit -m "Refresh news feed ($(date -u +%Y-%m-%d\ %H:%M\ UTC))"
+          git push

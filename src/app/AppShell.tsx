@@ -107,7 +107,6 @@ export function AppShell() {
           </nav>
           <p className="sidebar-note">每天一点，慢慢长成自己的节奏。</p>
           <div className="sidebar-footer">
-            <SoundToggle />
             <SyncBadge />
           </div>
         </aside>
@@ -118,9 +117,12 @@ export function AppShell() {
               <p className="eyebrow">MIQI LEARNING</p>
               <h1>学习驾驶舱</h1>
             </div>
-            <Link className="account-link glass" to="/account" aria-label="打开个人中心">
-              <UserRound aria-hidden="true" />
-            </Link>
+            <div className="topbar-actions">
+              <SoundToggle />
+              <Link className="account-link glass" to="/account" aria-label="打开个人中心">
+                <UserRound aria-hidden="true" />
+              </Link>
+            </div>
           </header>
           <Outlet />
         </main>

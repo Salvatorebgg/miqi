@@ -1196,3 +1196,9 @@ body.reduce-motion *::after {
   animation-duration: 0.01ms !important;
   scroll-behavior: auto !important;
 }
+
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
