@@ -1151,3 +1151,48 @@ a.lesson-row:hover { background: rgba(255, 255, 255, 0.8); }
 }
 .weak-list strong { color: var(--forest); }
 .weak-list span { color: var(--muted); font-size: 0.85rem; }
+
+/* Sound, sync & motion preferences */
+.sidebar-footer {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: 0.8rem;
+}
+
+.sound-toggle {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(88, 201, 157, 0.4);
+  background: rgba(255, 255, 255, 0.6);
+  color: var(--forest);
+  cursor: pointer;
+}
+
+.sound-toggle svg { width: 1.15rem; height: 1.15rem; }
+
+.sync-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.sync-badge svg { width: 0.95rem; height: 0.95rem; }
+
+body.reduce-motion .background-flow span {
+  animation: none;
+}
+
+body.reduce-motion *,
+body.reduce-motion *::before,
+body.reduce-motion *::after {
+  transition-duration: 0.01ms !important;
+  animation-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}

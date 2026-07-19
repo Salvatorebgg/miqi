@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import type { LucideIcon } from 'lucide-react'
 import {
   CalendarDays,
@@ -10,6 +11,10 @@ import {
   UserRound,
 } from 'lucide-react'
 import { Link, NavLink, Outlet } from 'react-router-dom'
+import { installControlSounds } from '../lib/audio'
+import { loadPreferences } from '../lib/preferences'
+import { SoundToggle } from '../components/ui/SoundToggle'
+import { SyncBadge } from '../components/ui/SyncBadge'
 
 type NavItem = {
   to: string
@@ -66,6 +71,17 @@ function MobileDock({ items }: { items: NavItem[] }) {
 }
 
 export function AppShell() {
+  useEffect(() => installControlSounds(), [])
+
+  useEffect(() => {
+    const apply = () => {
+      document.body.classList.toggle('reduce-motion', loadPreferences().reduceMotion)
+    }
+    apply()
+    window.addEventListener('miqi:preferences', apply)
+    return () => window.removeEventListener('miqi:preferences', apply)
+  }, [])
+
   return (
     <div className="site-frame">
       <a className="skip-link" href="#main-content">
@@ -90,6 +106,10 @@ export function AppShell() {
             ))}
           </nav>
           <p className="sidebar-note">每天一点，慢慢长成自己的节奏。</p>
+          <div className="sidebar-footer">
+            <SoundToggle />
+            <SyncBadge />
+          </div>
         </aside>
 
         <main id="main-content">
