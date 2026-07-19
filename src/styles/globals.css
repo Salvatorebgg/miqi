@@ -421,3 +421,124 @@ a {
     animation: none;
   }
 }
+
+/* Shared forms, buttons, and cards */
+.auth-form {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.25rem;
+  max-width: 26rem;
+}
+
+.form-field {
+  display: grid;
+  gap: 0.4rem;
+  font-weight: 600;
+  color: var(--forest);
+}
+
+.form-field input,
+.form-field textarea {
+  padding: 0.7rem 0.9rem;
+  border-radius: 0.9rem;
+  border: 1px solid rgba(88, 201, 157, 0.35);
+  background: rgba(255, 255, 255, 0.72);
+  font: inherit;
+  color: inherit;
+}
+
+.form-field input:focus-visible,
+.form-field textarea:focus-visible {
+  outline: 3px solid rgba(88, 201, 157, 0.45);
+  outline-offset: 2px;
+}
+
+.form-error { color: #b3394f; font-weight: 600; }
+.form-success { color: var(--forest); font-weight: 600; }
+
+.primary-button,
+.ghost-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 44px;
+  padding: 0.65rem 1.2rem;
+  border-radius: 999px;
+  border: none;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.primary-button {
+  background: linear-gradient(135deg, var(--mint-500), #3fae85);
+  color: #ffffff;
+  box-shadow: 0 10px 24px rgba(88, 201, 157, 0.35);
+}
+
+.ghost-button {
+  background: rgba(255, 255, 255, 0.6);
+  color: var(--forest);
+  border: 1px solid rgba(88, 201, 157, 0.4);
+}
+
+.primary-button:hover,
+.ghost-button:hover { transform: translateY(-1px); }
+
+.primary-button:disabled,
+.ghost-button:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+
+.primary-button svg,
+.ghost-button svg { width: 1.05rem; height: 1.05rem; }
+
+.link-button {
+  background: none;
+  border: none;
+  color: var(--forest);
+  font: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0.2rem 0.4rem;
+}
+
+.auth-switch { margin-top: 1rem; }
+
+.account-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.settings-card {
+  padding: 1.1rem 1.25rem;
+  border-radius: 1.25rem;
+}
+
+.settings-card h3 { margin: 0 0 0.6rem; color: var(--forest); }
+.settings-card svg { width: 1.1rem; height: 1.1rem; vertical-align: -0.2em; }
+
+.setting-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.55rem 0;
+  min-height: 44px;
+}
+
+.setting-row > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.setting-row input[type='checkbox'] {
+  width: 1.3rem;
+  height: 1.3rem;
+  accent-color: var(--mint-500);
+}
