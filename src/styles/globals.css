@@ -542,3 +542,167 @@ a {
   height: 1.3rem;
   accent-color: var(--mint-500);
 }
+
+/* Math classroom */
+.continue-card {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin: 1.25rem 0;
+  padding: 1rem 1.25rem;
+  border-radius: 1.25rem;
+  text-decoration: none;
+  color: var(--forest);
+}
+
+.continue-card span { font-size: 0.8rem; font-weight: 700; opacity: 0.75; }
+.continue-card strong { flex: 1; font-size: 1.05rem; }
+.continue-card svg { width: 1.2rem; height: 1.2rem; }
+
+.track-card {
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.4rem;
+  border-radius: 1.4rem;
+}
+
+.track-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.track-header h3 { margin: 0 0 0.25rem; color: var(--forest); }
+.track-header p { margin: 0; font-size: 0.9rem; }
+
+.progress-ring {
+  --percent: 0deg;
+  flex: none;
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: conic-gradient(var(--mint-500) var(--percent), rgba(88, 201, 157, 0.18) 0deg);
+}
+
+.progress-ring span {
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--ice);
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: var(--forest);
+}
+
+.lesson-list { list-style: none; margin: 1rem 0 0; padding: 0; display: grid; gap: 0.5rem; }
+
+.lesson-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 44px;
+  padding: 0.55rem 0.8rem;
+  border-radius: 0.9rem;
+  text-decoration: none;
+  color: inherit;
+  background: rgba(255, 255, 255, 0.45);
+}
+
+a.lesson-row:hover { background: rgba(255, 255, 255, 0.8); }
+.lesson-row.locked { opacity: 0.55; }
+.lesson-title { flex: 1; font-weight: 600; }
+.lesson-meta { font-size: 0.8rem; color: var(--muted); }
+.lesson-status { width: 1.15rem; height: 1.15rem; color: var(--mint-500); flex: none; }
+.lesson-status.done { color: #2e9c74; }
+
+/* Lesson page */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  min-height: 44px;
+  color: var(--forest);
+  font-weight: 700;
+  text-decoration: none;
+}
+.back-link svg { width: 1rem; height: 1rem; }
+
+.lesson-submeta { color: var(--muted); font-weight: 600; }
+.lesson-page section { margin-top: 1.75rem; }
+.lesson-page h3 { color: var(--forest); }
+
+.principle-card {
+  margin-top: 0.9rem;
+  padding: 1rem 1.2rem;
+  border-radius: 1.1rem;
+}
+
+.principle-card h4 { margin: 0 0 0.4rem; color: var(--forest); }
+.tex-block { display: block; margin: 0.7rem 0; overflow-x: auto; }
+
+.solution-steps { margin: 0.75rem 0 0; padding-left: 1.3rem; display: grid; gap: 0.35rem; }
+
+.read-toggle { margin-top: 1.5rem; }
+
+.exercise-card {
+  margin-top: 1rem;
+  padding: 1.1rem 1.25rem;
+  border-radius: 1.2rem;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.exercise-card.correct { box-shadow: inset 0 0 0 2px rgba(88, 201, 157, 0.55); }
+.exercise-card.incorrect { box-shadow: inset 0 0 0 2px rgba(214, 105, 130, 0.45); }
+
+.difficulty-tag {
+  display: inline-block;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.difficulty-tag.basic { background: var(--mint-100); color: var(--forest); }
+.difficulty-tag.advanced { background: #f6e4ef; color: #9c3d68; }
+.exercise-prompt { margin: 0.5rem 0 0; font-weight: 600; }
+
+.choice-grid { display: grid; gap: 0.5rem; }
+
+.choice-option {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 44px;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.8rem;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.choice-option input { accent-color: var(--mint-500); width: 1.1rem; height: 1.1rem; }
+
+.exercise-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+
+.resource-list { list-style: none; padding: 0; display: grid; gap: 0.6rem; }
+
+.resource-list a {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  min-height: 44px;
+  padding: 0.65rem 0.9rem;
+  border-radius: 0.95rem;
+  background: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  color: var(--forest);
+}
+
+.resource-list a:hover { background: rgba(255, 255, 255, 0.85); }
+.resource-list svg { width: 1rem; height: 1rem; flex: none; }
+.resource-list span { flex: 1; font-weight: 600; }
+.resource-list em { font-style: normal; font-size: 0.78rem; color: var(--muted); }

@@ -2,6 +2,8 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 import { AppShell } from './AppShell'
 import { AuthPage } from '../features/auth/AuthPage'
 import { AccountPage } from '../features/account/AccountPage'
+import { MathPage } from '../features/math/MathPage'
+import { LessonPage } from '../features/math/LessonPage'
 
 type PageProps = {
   eyebrow: string
@@ -24,7 +26,8 @@ export function AppRoutes() {
     <Routes>
       <Route element={<AppShell />}>
         <Route index element={<Page eyebrow="今日学习" title="从此刻开始，积累每一步" description="选择一项学习任务，保持专注，也记得留一点空间给好奇心。" />} />
-        <Route path="math" element={<Page eyebrow="数学课堂" title="让思路清晰可见" description="课程、练习与错题整理将在这里汇合。" />} />
+        <Route path="math" element={<MathPage />} />
+        <Route path="math/lesson/:lessonId" element={<LessonPage />} />
         <Route path="english" element={<Page eyebrow="IELTS 英语" title="每天多表达一点" description="围绕听、说、读、写建立稳定的练习节奏。" />} />
         <Route path="news" element={<Page eyebrow="每日资讯" title="看见更大的世界" description="用适合学习的方式阅读与理解当天资讯。" />} />
         <Route path="games" element={<Page eyebrow="脑力游戏" title="给大脑一次轻快挑战" description="短时练习，让注意力与思考保持活跃。" />} />
