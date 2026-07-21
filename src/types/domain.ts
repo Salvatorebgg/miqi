@@ -36,7 +36,7 @@ export interface VocabularyProgress {
 export interface GameSession {
   id: string
   userId: string
-  game: 'sudoku' | 'maze'
+  game: 'sudoku' | 'maze' | 'numberPuzzle'
   difficulty: string
   durationSeconds: number
   moves: number

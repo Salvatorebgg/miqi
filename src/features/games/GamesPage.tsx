@@ -1,5 +1,21 @@
-import { useCallback, useEffect, useRef, useState } from 'react'
-import { ArrowDown, ArrowLeft, ArrowRight, ArrowUp, Eraser, Grid3x3, Lightbulb, Puzzle, RotateCcw, Undo2 } from 'lucide-react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import {
+  ArrowDown,
+  ArrowLeft,
+  ArrowRight,
+  ArrowUp,
+  Calculator,
+  Eraser,
+  Grid3x3,
+  HelpCircle,
+  Lightbulb,
+  Puzzle,
+  RotateCcw,
+  Send,
+  Sparkles,
+  Trophy,
+  Undo2,
+} from 'lucide-react'
 import {
   difficultyClues,
   generateSudoku,
@@ -9,8 +25,21 @@ import {
   type SudokuDifficulty,
 } from './sudoku'
 import { createMazeState, movePlayer, type Direction, type MazeState } from './maze'
+import {
+  evaluateExpression,
+  extractNumbers,
+  generateHint,
+  generatePuzzle,
+  puzzleDifficultyConfig,
+  puzzleDifficultyLabels,
+  validateNumbers,
+  type NumberPuzzle,
+  type PuzzleDifficulty,
+} from './numberPuzzle'
 import { getRepository, LOCAL_USER_ID, newId } from '../../lib/repositoryInstance'
 import type { GameSession } from '../../types/domain'
+
+// ── helpers ──────────────────────────────────────────────────────────
 
 const saveSession = (session: Omit<GameSession, 'id' | 'userId' | 'createdAt'>) =>
   getRepository().saveGameSession({
@@ -23,15 +52,98 @@ const saveSession = (session: Omit<GameSession, 'id' | 'userId' | 'createdAt'>) 
 const formatTime = (seconds: number): string =>
   `${String(Math.floor(seconds / 60)).padStart(2, '0')}:${String(seconds % 60).padStart(2, '0')}`
 
-function useTimer(active: boolean): number {
+function useTimer(active: boolean): { seconds: number; reset: () => void } {
   const [seconds, setSeconds] = useState(0)
+  const activeRef = useRef(active)
+  activeRef.current = active
   useEffect(() => {
     if (!active) return
     const timer = setInterval(() => setSeconds(value => value + 1), 1000)
     return () => clearInterval(timer)
   }, [active])
-  return seconds
+  const reset = useCallback(() => setSeconds(0), [])
+  return { seconds, reset }
 }
+
+// ── high scores ──────────────────────────────────────────────────────
+
+const HS_KEY = 'miqi-game-high-scores'
+
+function loadHighScores(): Record<string, number> {
+  try {
+    return JSON.parse(localStorage.getItem(HS_KEY) || '{}') as Record<string, number>
+  } catch {
+    return {}
+  }
+}
+
+function saveHighScore(game: string, difficulty: string, score: number) {
+  const key = `${game}:${difficulty}`
+  const scores = loadHighScores()
+  if (!scores[key] || score > scores[key]) {
+    scores[key] = score
+    localStorage.setItem(HS_KEY, JSON.stringify(scores))
+  }
+}
+
+function useHighScore(game: string, difficulty: string): number {
+  const [score, setScore] = useState(() => loadHighScores()[`${game}:${difficulty}`] ?? 0)
+  useEffect(() => {
+    setScore(loadHighScores()[`${game}:${difficulty}`] ?? 0)
+  }, [game, difficulty])
+  return score
+}
+
+// ── confetti ─────────────────────────────────────────────────────────
+
+const CONFETTI_COLORS = ['#58c99d', '#9ddfca', '#e8879b', '#fde68a', '#bfdbfe', '#c4b5fd', '#f9a8d4', '#fdba74']
+
+interface ConfettiProps {
+  active: boolean
+}
+
+function Confetti({ active }: ConfettiProps) {
+  const pieces = useMemo(
+    () =>
+      Array.from({ length: 40 }, (_, i) => ({
+        id: i,
+        left: `${Math.random() * 100}%`,
+        color: CONFETTI_COLORS[Math.floor(Math.random() * CONFETTI_COLORS.length)],
+        delay: `${Math.random() * 0.6}s`,
+        duration: `${2.2 + Math.random() * 2}s`,
+        rotation: `${360 + Math.random() * 720}deg`,
+        size: `${6 + Math.random() * 6}px`,
+      })),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [active],
+  )
+
+  if (!active) return null
+
+  return (
+    <div className="confetti-overlay" aria-hidden="true">
+      {pieces.map(p => (
+        <div
+          key={p.id}
+          className="confetti-piece"
+          style={{
+            left: p.left,
+            background: p.color,
+            width: p.size,
+            height: p.size,
+            animationDelay: p.delay,
+            animationDuration: p.duration,
+            ['--confetti-rot' as string]: p.rotation,
+            ['--confetti-delay' as string]: p.delay,
+            ['--confetti-dur' as string]: p.duration,
+          } as React.CSSProperties}
+        />
+      ))}
+    </div>
+  )
+}
+
+// ── Sudoku ───────────────────────────────────────────────────────────
 
 function SudokuGame() {
   const [difficulty, setDifficulty] = useState<SudokuDifficulty>('easy')
@@ -40,9 +152,12 @@ function SudokuGame() {
   const [history, setHistory] = useState<number[][][]>([])
   const [selected, setSelected] = useState<[number, number] | null>(null)
   const [won, setWon] = useState(false)
-  const seconds = useTimer(!won)
+  const [showHelp, setShowHelp] = useState(false)
+  const { seconds, reset: resetTimer } = useTimer(!won)
   const secondsRef = useRef(seconds)
   secondsRef.current = seconds
+  const highScore = useHighScore('sudoku', difficulty)
+  const [confetti, setConfetti] = useState(false)
 
   const conflicts = new Set(validateSudoku(cells).conflicts.map(([r, c]) => `${r},${c}`))
 
@@ -54,6 +169,8 @@ function SudokuGame() {
     setHistory([])
     setSelected(null)
     setWon(false)
+    setConfetti(false)
+    resetTimer()
   }
 
   const place = useCallback(
@@ -68,13 +185,16 @@ function SudokuGame() {
           setHistory(h => [...h, previous])
           if (value !== 0 && isSolved(next)) {
             setWon(true)
+            setConfetti(true)
+            const score = Math.max(1000 - secondsRef.current * 2, 100)
             void saveSession({
               game: 'sudoku',
               difficulty,
               durationSeconds: secondsRef.current,
               moves: 81 - difficultyClues[difficulty],
-              score: Math.max(1000 - secondsRef.current * 2, 100),
+              score,
             })
+            saveHighScore('sudoku', difficulty, score)
           }
           return next
         })
@@ -110,19 +230,41 @@ function SudokuGame() {
 
   return (
     <div className="game-pane">
+      <Confetti active={confetti} />
+
       <div className="game-toolbar">
-        {(Object.keys(difficultyClues) as SudokuDifficulty[]).map(level => (
-          <button
-            key={level}
-            type="button"
-            className={`tab-button ${difficulty === level ? 'active' : ''}`}
-            onClick={() => restart(level)}
-          >
-            {{ easy: '简单', medium: '中等', hard: '困难' }[level]}
-          </button>
-        ))}
+        <div className="difficulty-row">
+          {(Object.keys(difficultyClues) as SudokuDifficulty[]).map(level => (
+            <button
+              key={level}
+              type="button"
+              className={`difficulty-pill ${difficulty === level ? 'active' : ''}`}
+              onClick={() => restart(level)}
+            >
+              {{ easy: '简单', medium: '中等', hard: '困难' }[level]}
+            </button>
+          ))}
+        </div>
         <span className="game-timer" role="timer" aria-label="用时">{formatTime(seconds)}</span>
+        {highScore > 0 ? (
+          <span className="game-high-score"><Trophy aria-hidden="true" />{highScore}</span>
+        ) : null}
+        <button type="button" className="help-toggle" onClick={() => setShowHelp(h => !h)} aria-expanded={showHelp}>
+          <HelpCircle aria-hidden="true" />{showHelp ? '收起' : '帮助'}
+        </button>
       </div>
+
+      {showHelp ? (
+        <div className="help-panel">
+          <h4>玩法说明</h4>
+          <ul>
+            <li>点击方格选中，然后点击数字键盘或按键盘 1-9 填入数字</li>
+            <li>每行、每列、每个 3x3 九宫格内数字 1-9 不能重复</li>
+            <li>灰色数字为固定提示，不可修改</li>
+            <li>使用「撤销」回退错误操作，「提示」自动填入正确答案</li>
+          </ul>
+        </div>
+      ) : null}
 
       <div className="sudoku-grid" role="grid" aria-label="数独棋盘">
         {cells.map((row, rowIndex) =>
@@ -179,7 +321,7 @@ function SudokuGame() {
       <div aria-live="polite">
         {won ? (
           <p className="game-result glass" role="status">
-            🎉 恭喜完成数独！用时 {formatTime(seconds)}。
+            <Sparkles aria-hidden="true" /> 恭喜完成数独！用时 {formatTime(seconds)}。
           </p>
         ) : null}
       </div>
@@ -187,12 +329,17 @@ function SudokuGame() {
   )
 }
 
+// ── Maze ─────────────────────────────────────────────────────────────
+
 function MazeGame() {
   const [state, setState] = useState<MazeState>(() => createMazeState(10, 10))
-  const seconds = useTimer(!state.won)
+  const { seconds, reset: resetTimer } = useTimer(!state.won)
   const secondsRef = useRef(seconds)
   secondsRef.current = seconds
   const savedRef = useRef(false)
+  const highScore = useHighScore('maze', '10x10')
+  const [confetti, setConfetti] = useState(false)
+  const [showHelp, setShowHelp] = useState(false)
 
   const move = useCallback(
     (direction: Direction) => {
@@ -200,13 +347,16 @@ function MazeGame() {
         const next = movePlayer(current, direction)
         if (next.won && !current.won && !savedRef.current) {
           savedRef.current = true
+          setConfetti(true)
+          const score = Math.max(1000 - next.moves * 5 - secondsRef.current, 100)
           void saveSession({
             game: 'maze',
             difficulty: '10x10',
             durationSeconds: secondsRef.current,
             moves: next.moves,
-            score: Math.max(1000 - next.moves * 5 - secondsRef.current, 100),
+            score,
           })
+          saveHighScore('maze', '10x10', score)
         }
         return next
       })
@@ -233,18 +383,40 @@ function MazeGame() {
 
   const restart = () => {
     savedRef.current = false
+    setConfetti(false)
+    resetTimer()
     setState(createMazeState(10, 10))
   }
 
   return (
     <div className="game-pane">
+      <Confetti active={confetti} />
+
       <div className="game-toolbar">
         <span className="game-timer" role="timer" aria-label="用时">{formatTime(seconds)}</span>
         <span className="game-moves">步数：{state.moves}</span>
+        {highScore > 0 ? (
+          <span className="game-high-score"><Trophy aria-hidden="true" />{highScore}</span>
+        ) : null}
+        <button type="button" className="help-toggle" onClick={() => setShowHelp(h => !h)} aria-expanded={showHelp}>
+          <HelpCircle aria-hidden="true" />{showHelp ? '收起' : '帮助'}
+        </button>
         <button type="button" className="ghost-button" onClick={restart}>
           <RotateCcw aria-hidden="true" />新迷宫
         </button>
       </div>
+
+      {showHelp ? (
+        <div className="help-panel">
+          <h4>玩法说明</h4>
+          <ul>
+            <li>使用方向键或 WASD 控制绿色圆点移动</li>
+            <li>从左上角起点到达右下角粉色终点即获胜</li>
+            <li>你也可以点击下方的方向按钮来移动</li>
+            <li>尝试用最少的步数完成迷宫挑战！</li>
+          </ul>
+        </div>
+      ) : null}
 
       <div
         className="maze-grid"
@@ -283,7 +455,7 @@ function MazeGame() {
       <div aria-live="polite">
         {state.won ? (
           <p className="game-result glass" role="status">
-            🎉 走出迷宫！{state.moves} 步，用时 {formatTime(seconds)}。
+            <Sparkles aria-hidden="true" /> 走出迷宫！{state.moves} 步，用时 {formatTime(seconds)}。
           </p>
         ) : null}
       </div>
@@ -291,21 +463,257 @@ function MazeGame() {
   )
 }
 
+// ── Number Puzzle (24-Point) ─────────────────────────────────────────
+
+const GAME_ID = 'numberPuzzle' as const
+
+function NumberPuzzleGame() {
+  const [difficulty, setDifficulty] = useState<PuzzleDifficulty>('easy')
+  const [puzzle, setPuzzle] = useState<NumberPuzzle>(() => generatePuzzle('easy'))
+  const [expression, setExpression] = useState('')
+  const [feedback, setFeedback] = useState<{ type: 'error' | 'success' | 'hint'; message: string } | null>(null)
+  const [won, setWon] = useState(false)
+  const [hintText, setHintText] = useState('')
+  const [moves, setMoves] = useState(0)
+  const [showHelp, setShowHelp] = useState(false)
+  const { seconds, reset: resetTimer } = useTimer(!won)
+  const secondsRef = useRef(seconds)
+  secondsRef.current = seconds
+  const highScore = useHighScore(GAME_ID, difficulty)
+  const [confetti, setConfetti] = useState(false)
+  const inputRef = useRef<HTMLInputElement>(null)
+
+  const config = puzzleDifficultyConfig[difficulty]
+
+  const restart = (nextDifficulty = difficulty) => {
+    const next = generatePuzzle(nextDifficulty)
+    setDifficulty(nextDifficulty)
+    setPuzzle(next)
+    setExpression('')
+    setFeedback(null)
+    setHintText('')
+    setWon(false)
+    setMoves(0)
+    setConfetti(false)
+    resetTimer()
+    setTimeout(() => inputRef.current?.focus(), 50)
+  }
+
+  const submit = () => {
+    if (won) return
+    const trimmed = expression.trim()
+    if (!trimmed) {
+      setFeedback({ type: 'error', message: '请输入算式' })
+      return
+    }
+    setHintText('')
+    setMoves(m => m + 1)
+
+    // Evaluate
+    const result = evaluateExpression(trimmed)
+    if (!result.valid) {
+      setFeedback({ type: 'error', message: result.error || '算式无效' })
+      return
+    }
+
+    // Check result equals 24
+    if (Math.abs(result.value! - 24) > 1e-9) {
+      setFeedback({ type: 'error', message: `结果为 ${result.value}，不等于 24，再试试！` })
+      return
+    }
+
+    // Check number usage
+    const usedNums = extractNumbers(trimmed)
+    const numCheck = validateNumbers(usedNums, puzzle.numbers, config.useAll)
+    if (!numCheck.valid) {
+      setFeedback({ type: 'error', message: numCheck.message })
+      return
+    }
+
+    // Success!
+    setWon(true)
+    setConfetti(true)
+    setFeedback({ type: 'success', message: '太棒了！算式正确等于 24！' })
+    const score = Math.max(1000 - secondsRef.current * 2 - moves * 10, 100)
+    void saveSession({
+      game: GAME_ID,
+      difficulty,
+      durationSeconds: secondsRef.current,
+      moves,
+      score,
+    })
+    saveHighScore(GAME_ID, difficulty, score)
+  }
+
+  const showHint = () => {
+    if (won) return
+    setMoves(m => m + 1)
+    setHintText(generateHint(puzzle.solution))
+    setFeedback({ type: 'hint', message: '已显示提示（计入步数）' })
+  }
+
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === 'Enter') {
+      e.preventDefault()
+      submit()
+    }
+  }
+
+  return (
+    <div className="game-pane">
+      <Confetti active={confetti} />
+
+      <div className="game-toolbar">
+        <div className="difficulty-row">
+          {(Object.keys(puzzleDifficultyConfig) as PuzzleDifficulty[]).map(level => (
+            <button
+              key={level}
+              type="button"
+              className={`difficulty-pill ${difficulty === level ? 'active' : ''}`}
+              onClick={() => restart(level)}
+            >
+              {puzzleDifficultyLabels[level]}
+            </button>
+          ))}
+        </div>
+        <span className="game-timer" role="timer" aria-label="用时">{formatTime(seconds)}</span>
+        <span className="game-moves">尝试：{moves}</span>
+        {highScore > 0 ? (
+          <span className="game-high-score"><Trophy aria-hidden="true" />{highScore}</span>
+        ) : null}
+        <button type="button" className="help-toggle" onClick={() => setShowHelp(h => !h)} aria-expanded={showHelp}>
+          <HelpCircle aria-hidden="true" />{showHelp ? '收起' : '帮助'}
+        </button>
+      </div>
+
+      {showHelp ? (
+        <div className="help-panel">
+          <h4>24 点玩法说明</h4>
+          <ul>
+            <li>使用给出的 {config.numberCount} 个数字，通过 + - * / 和括号组合，使结果等于 24</li>
+            {config.useAll ? (
+              <li>必须<b>恰好使用全部</b> {config.numberCount} 个数字，每个数字用一次</li>
+            ) : (
+              <li>可以使用部分数字，输入算式后提交即可</li>
+            )}
+            <li>例如：数字 3, 5, 7, 9，算式 (3+5)*(9-7) = 24</li>
+            <li>支持小数：如 8/(3-8/3) = 24</li>
+            <li>点击「提示」获取解题思路（会增加尝试次数）</li>
+          </ul>
+        </div>
+      ) : null}
+
+      <div className="number-puzzle-numbers" aria-label="可用数字">
+        {puzzle.numbers.map((num, i) => (
+          <div key={i} className="number-card">{num}</div>
+        ))}
+      </div>
+
+      <div className="puzzle-input-row">
+        <div className="puzzle-input-wrap">
+          <input
+            ref={inputRef}
+            type="text"
+            value={expression}
+            onChange={e => { setExpression(e.target.value); setFeedback(null); setHintText('') }}
+            onKeyDown={handleKeyDown}
+            className={feedback?.type === 'error' ? 'input-error' : ''}
+            placeholder="输入算式，例如 (3+5)*(9-7)"
+            aria-label="算式输入"
+            disabled={won}
+            autoFocus
+          />
+        </div>
+        <button type="button" className="primary-button" onClick={submit} disabled={won}>
+          <Send aria-hidden="true" />提交
+        </button>
+      </div>
+
+      {feedback ? (
+        <p className={`puzzle-feedback ${feedback.type}`} role={feedback.type === 'error' ? 'alert' : 'status'} aria-live="polite">
+          {feedback.message}
+        </p>
+      ) : null}
+
+      {hintText ? (
+        <p className="puzzle-hint-text"><Lightbulb aria-hidden="true" /> {hintText}</p>
+      ) : null}
+
+      <div className="game-actions">
+        <button type="button" className="ghost-button" onClick={showHint} disabled={won}>
+          <Lightbulb aria-hidden="true" />提示
+        </button>
+        <button type="button" className="ghost-button" onClick={() => restart()}>
+          <RotateCcw aria-hidden="true" />新一局
+        </button>
+      </div>
+
+      <div aria-live="polite">
+        {won ? (
+          <p className="game-result glass" role="status">
+            <Sparkles aria-hidden="true" /> 恭喜完成 24 点！用时 {formatTime(seconds)}，尝试 {moves} 次。
+          </p>
+        ) : null}
+      </div>
+    </div>
+  )
+}
+
+// ── Game definitions for the selector ────────────────────────────────
+
+type GameId = 'sudoku' | 'maze' | 'numberPuzzle'
+
+interface GameDef {
+  id: GameId
+  icon: React.ReactNode
+  name: string
+  desc: string
+}
+
+const gameDefs: GameDef[] = [
+  { id: 'sudoku', icon: <Grid3x3 aria-hidden="true" />, name: '数独', desc: '经典数字填空' },
+  { id: 'maze', icon: <Puzzle aria-hidden="true" />, name: '迷宫', desc: '方向键移动寻路' },
+  { id: 'numberPuzzle', icon: <Calculator aria-hidden="true" />, name: '24 点', desc: '四数组合算 24' },
+]
+
+// ── GamesPage ────────────────────────────────────────────────────────
+
 export function GamesPage() {
-  const [game, setGame] = useState<'sudoku' | 'maze'>('sudoku')
+  const [game, setGame] = useState<GameId>('sudoku')
+  const [animKey, setAnimKey] = useState(0)
+
+  const switchGame = (id: GameId) => {
+    if (id !== game) {
+      setGame(id)
+      setAnimKey(k => k + 1)
+    }
+  }
+
   return (
     <section className="page-panel glass" aria-labelledby="games-title">
       <p className="eyebrow">脑力游戏</p>
       <h2 id="games-title">给大脑一次轻快挑战</h2>
-      <div className="tab-row" role="tablist" aria-label="选择游戏">
-        <button type="button" role="tab" aria-selected={game === 'sudoku'} className={`tab-button ${game === 'sudoku' ? 'active' : ''}`} onClick={() => setGame('sudoku')}>
-          <Grid3x3 aria-hidden="true" />数独
-        </button>
-        <button type="button" role="tab" aria-selected={game === 'maze'} className={`tab-button ${game === 'maze' ? 'active' : ''}`} onClick={() => setGame('maze')}>
-          <Puzzle aria-hidden="true" />迷宫
-        </button>
+
+      <div className="game-selector" role="tablist" aria-label="选择游戏">
+        {gameDefs.map(def => (
+          <button
+            key={def.id}
+            type="button"
+            role="tab"
+            aria-selected={game === def.id}
+            className={`game-card ${game === def.id ? 'active' : ''}`}
+            onClick={() => switchGame(def.id)}
+          >
+            <span className="game-card-icon">{def.icon}</span>
+            <span className="game-card-name">{def.name}</span>
+            <span className="game-card-desc">{def.desc}</span>
+          </button>
+        ))}
       </div>
-      {game === 'sudoku' ? <SudokuGame /> : <MazeGame />}
+
+      <div key={animKey} className="game-pane fade-in">
+        {game === 'sudoku' ? <SudokuGame /> : game === 'maze' ? <MazeGame /> : <NumberPuzzleGame />}
+      </div>
     </section>
   )
 }
