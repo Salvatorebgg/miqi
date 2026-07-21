@@ -30,12 +30,12 @@ export function MathPage() {
 
   return (
     <section className="page-panel glass" aria-labelledby="math-title">
-      <p className="eyebrow">数学课堂</p>
-      <h2 id="math-title">从高中基础到高数线代，一步一个脚印</h2>
+      <p className="eyebrow">数学</p>
+      <h2 id="math-title">从高中基础到高数线代</h2>
 
       {nextLesson ? (
         <Link to={`/math/lesson/${nextLesson.id}`} className="continue-card glass">
-          <span>继续学习</span>
+          <span>继续</span>
           <strong>{nextLesson.title}</strong>
           <ArrowRight aria-hidden="true" />
         </Link>
