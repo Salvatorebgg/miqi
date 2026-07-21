@@ -37,6 +37,8 @@ export interface MathLesson {
     yMax: number
     title: string
     annotations?: { x: number; label: string }[]
+    fillArea?: boolean
+    derivatives?: { x: number }[]
   }
 }
 
@@ -91,6 +93,11 @@ export const mathLessons: MathLesson[] = [
         steps: ['计算 f(−x) = (−x)³ + (−x) = −x³ − x。', '观察 f(−x) = −(x³ + x) = −f(x)。', '定义域 ℝ 关于原点对称。'],
         answer: 'f(x) 是奇函数。',
       },
+      {
+        prompt: '已知 f(x + 1) = x² + 2x + 3，求 f(x) 的表达式。',
+        steps: ['令 t = x + 1，则 x = t − 1。', '代入：f(t) = (t−1)² + 2(t−1) + 3。', '展开：f(t) = t² − 2t + 1 + 2t − 2 + 3。', '化简得 f(t) = t² + 2，即 f(x) = x² + 2。'],
+        answer: 'f(x) = x² + 2',
+      },
     ],
     exercises: [
       {
@@ -140,6 +147,30 @@ export const mathLessons: MathLesson[] = [
         ],
         answer: 'b',
         solution: ['y = x² 为偶函数，在 (0, +∞) 单调递增。y = x³ 为奇函数；y = x + 1 非奇非偶；y = 1/x 在 (0, +∞) 单调递减。'],
+      },
+      {
+        id: 'bf-ex6', topic: 'functions', difficulty: 'advanced', type: 'choice',
+        prompt: '若函数 f(x) 满足 f(x+2)=f(x) 且 f(1)=3，则 f(5)=？',
+        options: [
+          { id: 'a', label: '3' },
+          { id: 'b', label: '6' },
+          { id: 'c', label: '9' },
+          { id: 'd', label: '1' },
+        ],
+        answer: 'a',
+        solution: ['f(x) 周期为 2，f(5)=f(3)=f(1)=3。'],
+      },
+      {
+        id: 'bf-ex7', topic: 'functions', difficulty: 'basic', type: 'number',
+        prompt: '已知 f(x) = x² + 1，g(x) = 2x，求 f(g(3)) 的值。',
+        answer: 37, tolerance: 0.0001,
+        solution: ['g(3) = 2×3 = 6。', 'f(6) = 6² + 1 = 37。'],
+      },
+      {
+        id: 'bf-ex8', topic: 'functions', difficulty: 'advanced', type: 'expression',
+        prompt: '已知 f(x − 1) = x² − 3x + 2，求 f(x) 的表达式。',
+        answer: 'x^2 - x',
+        solution: ['令 t = x − 1，则 x = t + 1。', 'f(t) = (t+1)² − 3(t+1) + 2 = t² + 2t + 1 − 3t − 3 + 2。', '化简得 f(t) = t² − t，即 f(x) = x² − x。'],
       },
     ],
     quiz: [
@@ -210,6 +241,11 @@ export const mathLessons: MathLesson[] = [
         steps: ['75° = 45° + 30°。', 'sin75° = sin45°cos30° + cos45°sin30°。', '= (√2/2)(√3/2) + (√2/2)(1/2) = (√6 + √2)/4。'],
         answer: '(√6 + √2)/4 ≈ 0.966',
       },
+      {
+        prompt: '已知 sin α = 1/3，α ∈ (π/2, π)，求 cos α 和 tan α。',
+        steps: ['α 在第二象限，cos α < 0。', '由 sin²α + cos²α = 1 得 cos²α = 1 − 1/9 = 8/9。', 'cos α = −√(8/9) = −2√2/3。', 'tan α = sin α/cos α = (1/3)/(−2√2/3) = −1/(2√2) = −√2/4。'],
+        answer: 'cos α = −2√2/3，tan α = −√2/4',
+      },
     ],
     exercises: [
       {
@@ -248,6 +284,30 @@ export const mathLessons: MathLesson[] = [
         answer: 0, tolerance: 0.0001,
         solution: ['sin(π + α) = −sin α，sin(π − α) = sin α，两者相加为 0。'],
       },
+      {
+        id: 'bt-ex6', topic: 'trigonometry', difficulty: 'advanced', type: 'choice',
+        prompt: '若 sin α = 3/5 且 α ∈ (π/2, π)，则 tan α = ？',
+        options: [
+          { id: 'a', label: '−3/4' },
+          { id: 'b', label: '3/4' },
+          { id: 'c', label: '−4/3' },
+          { id: 'd', label: '4/3' },
+        ],
+        answer: 'a',
+        solution: ['α 在第二象限，cos α < 0。', 'cos α = −√(1 − 9/25) = −4/5。', 'tan α = sin α/cos α = (3/5)/(−4/5) = −3/4。'],
+      },
+      {
+        id: 'bt-ex7', topic: 'trigonometry', difficulty: 'basic', type: 'number',
+        prompt: '计算 sin²(π/6) + cos²(π/3) 的值。',
+        answer: 0.5, tolerance: 0.001,
+        solution: ['sin(π/6) = 1/2，cos(π/3) = 1/2。', '(1/2)² + (1/2)² = 1/4 + 1/4 = 1/2。'],
+      },
+      {
+        id: 'bt-ex8', topic: 'trigonometry', difficulty: 'advanced', type: 'number',
+        prompt: '若 tan α = 2，求 (sin α + cos α)/(sin α − cos α) 的值。',
+        answer: 3, tolerance: 0.0001,
+        solution: ['分子分母同除 cos α：原式 = (tan α + 1)/(tan α − 1)。', '代入 tan α = 2 得 (2+1)/(2−1) = 3。'],
+      },
     ],
     quiz: [
       {
@@ -273,6 +333,18 @@ export const mathLessons: MathLesson[] = [
       { title: '三角函数系统复习', provider: 'Bilibili · 一数', url: 'https://search.bilibili.com/all?keyword=%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%20%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0', kind: 'video' },
       { title: 'Unit circle — Khan Academy', provider: 'Khan Academy', url: 'https://www.khanacademy.org/math/trigonometry/unit-circle-trig-func', kind: 'video' },
     ],
+    interactiveGraph: {
+      formula: 'Math.sin(x)',
+      xMin: -6.283,
+      xMax: 6.283,
+      yMin: -2,
+      yMax: 2,
+      title: 'y = sin x 的图像：观察周期性、奇偶性与振幅',
+      annotations: [
+        { x: 1.571, label: 'π/2' },
+        { x: 3.142, label: 'π' },
+      ],
+    },
   },
   {
     id: 'bridge-algebra',
@@ -307,6 +379,11 @@ export const mathLessons: MathLesson[] = [
         prompt: '解不等式 x² − 5x + 6 < 0。',
         steps: ['因式分解：(x−2)(x−3) < 0。', '根为 2 和 3，抛物线开口向上。', '小于零取两根之间。'],
         answer: '2 < x < 3',
+      },
+      {
+        prompt: '已知 a, b 均为正数且 a + b = 8，求 1/a + 1/b 的最小值。',
+        steps: ['1/a + 1/b = (a + b)/(ab) = 8/(ab)。', '由均值不等式，ab ≤ ((a+b)/2)² = 16，当 a = b = 4 时取等。', '分母最大时分式最小，故 8/(ab) ≥ 8/16 = 1/2。'],
+        answer: '1/2，当 a = b = 4 时取得',
       },
     ],
     exercises: [
@@ -346,6 +423,30 @@ export const mathLessons: MathLesson[] = [
         answer: 16, tolerance: 0.0001,
         solution: ['xy ≤ ((x+y)/2)² = 16，当 x = y = 4 时取等。'],
       },
+      {
+        id: 'ba-ex6', topic: 'algebra', difficulty: 'advanced', type: 'choice',
+        prompt: '若 x > 0，不等式 x + 9/x ≥ k 对所有 x > 0 恒成立，则 k 的最大值是？',
+        options: [
+          { id: 'a', label: '6' },
+          { id: 'b', label: '9' },
+          { id: 'c', label: '3' },
+          { id: 'd', label: '18' },
+        ],
+        answer: 'a',
+        solution: ['由均值不等式 x + 9/x ≥ 2√(x·9/x) = 6，当 x = 3 时取等。', '故 k 的最大值为 6。'],
+      },
+      {
+        id: 'ba-ex7', topic: 'algebra', difficulty: 'basic', type: 'number',
+        prompt: '已知 a > 0, b > 0, ab = 9，求 a + b 的最小值。',
+        answer: 6, tolerance: 0.0001,
+        solution: ['由均值不等式：a + b ≥ 2√(ab) = 2√9 = 6，当 a = b = 3 时取等。'],
+      },
+      {
+        id: 'ba-ex8', topic: 'algebra', difficulty: 'advanced', type: 'expression',
+        prompt: '化简分式 (x² − 1)/(x + 1)，其中 x ≠ −1。',
+        answer: 'x - 1',
+        solution: ['x² − 1 = (x − 1)(x + 1)。', '约去公因式 x + 1，得 x − 1。'],
+      },
     ],
     quiz: [
       {
@@ -371,6 +472,17 @@ export const mathLessons: MathLesson[] = [
       { title: '基本不等式专题', provider: 'Bilibili', url: 'https://search.bilibili.com/all?keyword=%E5%9F%BA%E6%9C%AC%E4%B8%8D%E7%AD%89%E5%BC%8F', kind: 'video' },
       { title: 'Quadratic inequalities — Khan Academy', provider: 'Khan Academy', url: 'https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:quadratics-multiplying-factoring', kind: 'article' },
     ],
+    interactiveGraph: {
+      formula: 'x*x - 4*x + 5',
+      xMin: -1,
+      xMax: 5,
+      yMin: -1,
+      yMax: 8,
+      title: 'y = x² − 4x + 5：配方得 (x−2)² + 1，顶点在 (2,1)',
+      annotations: [
+        { x: 2, label: '顶点 (2,1)' },
+      ],
+    },
   },
 
   // ── 第二阶：预备微积分 ─────────────────────────────────────────────
@@ -407,6 +519,11 @@ export const mathLessons: MathLesson[] = [
         prompt: '用归纳法证明 1 + 2 + … + n = n(n+1)/2。',
         steps: ['n = 1 时左边 = 1 = 右边，成立。', '假设 n = k 时成立，即和为 k(k+1)/2。', 'n = k+1 时，和 = k(k+1)/2 + (k+1) = (k+1)(k+2)/2，成立。'],
         answer: '由归纳法，命题对一切正整数 n 成立。',
+      },
+      {
+        prompt: '用归纳法证明前 n 个正奇数之和等于 n²：1 + 3 + 5 + … + (2n−1) = n²。',
+        steps: ['n = 1 时：左边 = 1 = 1²，成立。', '假设 n = k 时成立：1+3+…+(2k−1) = k²。', 'n = k+1 时：左边 = k² + (2(k+1)−1) = k² + 2k + 1 = (k+1)²。', '由归纳法，命题对一切正整数 n 成立。'],
+        answer: '前 n 个正奇数之和为 n²。',
       },
     ],
     exercises: [
@@ -445,6 +562,30 @@ export const mathLessons: MathLesson[] = [
         prompt: '无穷等比数列 1, 1/2, 1/4, ... 的和是？',
         answer: 2, tolerance: 0.0001,
         solution: ['S = a₁/(1−q) = 1/(1−1/2) = 2。'],
+      },
+      {
+        id: 'ps-ex6', topic: 'sequences', difficulty: 'advanced', type: 'choice',
+        prompt: '等差数列中 a₃ = 7，a₇ = 19，则公差 d = ？',
+        options: [
+          { id: 'a', label: '3' },
+          { id: 'b', label: '4' },
+          { id: 'c', label: '2' },
+          { id: 'd', label: '6' },
+        ],
+        answer: 'a',
+        solution: ['a₇ − a₃ = 4d = 12 ⇒ d = 3。'],
+      },
+      {
+        id: 'ps-ex7', topic: 'sequences', difficulty: 'basic', type: 'number',
+        prompt: '求等差数列 2, 5, 8, ... 的前 20 项和。',
+        answer: 610, tolerance: 0.0001,
+        solution: ['a₁ = 2，d = 3，a₂₀ = 2 + 19×3 = 59。', 'S₂₀ = 20×(2+59)/2 = 610。'],
+      },
+      {
+        id: 'ps-ex8', topic: 'sequences', difficulty: 'advanced', type: 'expression',
+        prompt: '数列满足 a₁ = 1，aₙ₊₁ = aₙ + 2n + 1，求通项 aₙ 的表达式。',
+        answer: 'n^2',
+        solution: ['写出前几项：a₁ = 1，a₂ = 1+3 = 4，a₃ = 4+5 = 9，a₄ = 9+7 = 16。', '猜测 aₙ = n²。', '验证：n² + 2n + 1 = (n+1)²，递推成立。'],
       },
     ],
     quiz: [
@@ -506,6 +647,11 @@ export const mathLessons: MathLesson[] = [
         steps: ['直接代入得 0/0，需要化简。', '分子因式分解：(x−2)(x+2)/(x−2) = x + 2。', '代入 x = 2 得 4。'],
         answer: '4',
       },
+      {
+        prompt: '求 lim(x→0) (1 − cos x)/x²。',
+        steps: ['直接代入得 0/0 型。', '利用三角恒等式 1−cos x = 2sin²(x/2)。', '原式 = lim 2sin²(x/2)/x² = lim 2·[sin(x/2)/(x/2)]²·(1/4)。', '= 2·1²·(1/4) = 1/2。'],
+        answer: '1/2',
+      },
     ],
     exercises: [
       {
@@ -544,6 +690,30 @@ export const mathLessons: MathLesson[] = [
         answer: 'a',
         solution: ['第二重要极限：lim(1 + 1/n)ⁿ = e。'],
       },
+      {
+        id: 'pl-ex6', topic: 'limits', difficulty: 'basic', type: 'number',
+        prompt: '求 lim(x→1) (x² + x − 2)/(x − 1) 的值。',
+        answer: 3, tolerance: 0.0001,
+        solution: ['分子因式分解：(x−1)(x+2)/(x−1) = x+2（x≠1）。', '代入 x=1 得 3。'],
+      },
+      {
+        id: 'pl-ex7', topic: 'limits', difficulty: 'advanced', type: 'choice',
+        prompt: 'lim(x→0) (eˣ − 1)/x 的值是？',
+        options: [
+          { id: 'a', label: '1' },
+          { id: 'b', label: 'e' },
+          { id: 'c', label: '0' },
+          { id: 'd', label: '不存在' },
+        ],
+        answer: 'a',
+        solution: ['这是 eˣ 在 x=0 处的导数定义，等价于重要极限变体，值为 1。'],
+      },
+      {
+        id: 'pl-ex8', topic: 'limits', difficulty: 'advanced', type: 'expression',
+        prompt: '求 lim(x→0⁺) (|x|/x) 的值（右极限）。',
+        answer: '1',
+        solution: ['x > 0 时 |x| = x，故 |x|/x = 1，右极限为 1。'],
+      },
     ],
     quiz: [
       {
@@ -565,6 +735,15 @@ export const mathLessons: MathLesson[] = [
         solution: ['连续要求极限存在且等于函数值，故极限存在是必要不充分条件。'],
       },
     ],
+    interactiveGraph: {
+      formula: '(x*x-4)/(x-2)',
+      xMin: -1,
+      xMax: 5,
+      yMin: -1,
+      yMax: 7,
+      title: '观察 y = (x²−4)/(x−2)：x=2 处有可去间断点，极限为 4',
+      annotations: [{ x: 2, label: 'x=2 处无定义，但极限=4' }],
+    },
     resources: [
       { title: '极限的概念（高数入门）', provider: 'Bilibili · 宋浩老师', url: 'https://search.bilibili.com/all?keyword=%E5%AE%8B%E6%B5%A9%20%E6%9E%81%E9%99%90', kind: 'video' },
       { title: 'Limits and continuity — Khan Academy', provider: 'Khan Academy', url: 'https://www.khanacademy.org/math/ap-calculus-ab/ab-limits-new', kind: 'video' },
@@ -604,6 +783,11 @@ export const mathLessons: MathLesson[] = [
         steps: ['8 = 2³，故 log₂ 8 = 3。', '27 = 3³，故 log₃ 27 = 3。', '合计 6。'],
         answer: '6',
       },
+      {
+        prompt: '解方程 2ˣ⁺¹ = 32。',
+        steps: ['32 = 2⁵。', '方程化为 2ˣ⁺¹ = 2⁵。', '指数相等：x + 1 = 5。', 'x = 4。'],
+        answer: 'x = 4',
+      },
     ],
     exercises: [
       {
@@ -642,6 +826,30 @@ export const mathLessons: MathLesson[] = [
         answer: 1.61, tolerance: 0.01,
         solution: ['x = ln 5 ≈ 1.609，保留两位小数 1.61。'],
       },
+      {
+        id: 'pe-ex6', topic: 'exponentials', difficulty: 'basic', type: 'choice',
+        prompt: '方程 3ˣ = 81 的解是？',
+        options: [
+          { id: 'a', label: 'x = 4' },
+          { id: 'b', label: 'x = 3' },
+          { id: 'c', label: 'x = 27' },
+          { id: 'd', label: 'x = log₃ 81' },
+        ],
+        answer: 'a',
+        solution: ['81 = 3⁴，故 3ˣ = 3⁴，x = 4。选项 d 也对但未化简，选最简形式 a。'],
+      },
+      {
+        id: 'pe-ex7', topic: 'exponentials', difficulty: 'advanced', type: 'number',
+        prompt: '解方程 log₂(x+1) + log₂(x−1) = 3，求 x（x > 1）。',
+        answer: 3, tolerance: 0.0001,
+        solution: ['log₂[(x+1)(x−1)] = 3 ⇒ log₂(x²−1) = 3。', 'x²−1 = 2³ = 8 ⇒ x² = 9。', 'x > 1，故 x = 3。'],
+      },
+      {
+        id: 'pe-ex8', topic: 'exponentials', difficulty: 'basic', type: 'expression',
+        prompt: '用对数运算法则化简 ln(a²b³)（用 ln a 和 ln b 表示）。',
+        answer: '2*ln(a)+3*ln(b)',
+        solution: ['ln(a²b³) = ln(a²) + ln(b³) = 2 ln a + 3 ln b。'],
+      },
     ],
     quiz: [
       {
@@ -663,6 +871,15 @@ export const mathLessons: MathLesson[] = [
         solution: ['ln e² = 2 ln e = 2。'],
       },
     ],
+    interactiveGraph: {
+      formula: 'Math.pow(2,x)',
+      xMin: -3,
+      xMax: 4,
+      yMin: -1,
+      yMax: 12,
+      title: '指数增长：y = 2ˣ 的图像，观察过定点 (0,1) 与爆炸式增长',
+      annotations: [{ x: 0, label: '过定点 (0,1)' }],
+    },
     resources: [
       { title: '指数与对数函数精讲', provider: 'Bilibili', url: 'https://search.bilibili.com/all?keyword=%E6%8C%87%E6%95%B0%E5%AF%B9%E6%95%B0%E5%87%BD%E6%95%B0', kind: 'video' },
       { title: 'Logarithms — Khan Academy', provider: 'Khan Academy', url: 'https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:logs', kind: 'video' },
@@ -703,6 +920,11 @@ export const mathLessons: MathLesson[] = [
         prompt: '求 y = sin(x²) 的导数。',
         steps: ['外层 sin u，导数 cos u；内层 u = x²，导数 2x。', "y' = cos(x²) · 2x。"],
         answer: "y' = 2x·cos(x²)",
+      },
+      {
+        prompt: '求 y = x·ln x 的导数。',
+        steps: ['识别为两个函数的乘积：u = x，v = ln x。', 'u′ = 1，v′ = 1/x。', '用乘积法则：y′ = u′v + uv′。', "y′ = 1·ln x + x·(1/x) = ln x + 1。"],
+        answer: "y′ = ln x + 1",
       },
     ],
     exercises: [
@@ -754,6 +976,30 @@ export const mathLessons: MathLesson[] = [
         answer: 'a',
         solution: ['链式法则：y′ = −sin(3x)·3 = −3 sin(3x)。'],
       },
+      {
+        id: 'cd-ex7', topic: 'derivatives', difficulty: 'advanced', type: 'number',
+        prompt: 'f(x) = x·e^x，求 f′(0)。',
+        answer: 1, tolerance: 0.0001,
+        solution: ['用乘积法则：f′(x) = 1·e^x + x·e^x = e^x(1 + x)。', 'f′(0) = e^0·(1 + 0) = 1。'],
+      },
+      {
+        id: 'cd-ex8', topic: 'derivatives', difficulty: 'advanced', type: 'number',
+        prompt: 'y = x/(x² + 1)，求 y′(0)。',
+        answer: 1, tolerance: 0.0001,
+        solution: ['用商法则：f′(x) = [(x²+1)·1 − x·2x]/(x²+1)² = (1 − x²)/(x²+1)²。', 'y′(0) = 1/1 = 1。'],
+      },
+      {
+        id: 'cd-ex9', topic: 'derivatives', difficulty: 'basic', type: 'choice',
+        prompt: 'f(x) = x^5 的导数是？',
+        options: [
+          { id: 'a', label: '5x⁴' },
+          { id: 'b', label: 'x⁴' },
+          { id: 'c', label: '5x⁵' },
+          { id: 'd', label: 'x⁵/5' },
+        ],
+        answer: 'a',
+        solution: ['幂法则：(x^n)′ = n·x^(n−1)，故 (x⁵)′ = 5x⁴。'],
+      },
     ],
     quiz: [
       {
@@ -786,6 +1032,8 @@ export const mathLessons: MathLesson[] = [
         { x: -1, label: '极大值' },
         { x: 1, label: '极小值' },
       ],
+      fillArea: true,
+      derivatives: [{ x: -1 }, { x: 1 }],
     },
     resources: [
       { title: '微积分的本质 · 导数篇', provider: 'Bilibili · 3Blue1Brown', url: 'https://search.bilibili.com/all?keyword=3Blue1Brown%20%E5%BE%AE%E7%A7%AF%E5%88%86%E7%9A%84%E6%9C%AC%E8%B4%A8', kind: 'video' },
@@ -825,6 +1073,11 @@ export const mathLessons: MathLesson[] = [
         prompt: '求 f(x) = x³ − 3x 的极值。',
         steps: ["f'(x) = 3x² − 3 = 3(x−1)(x+1)。", 'x = −1 左侧 f′ > 0、右侧 f′ < 0，为极大值 f(−1) = 2。', 'x = 1 为极小值 f(1) = −2。'],
         answer: '极大值 2（x = −1），极小值 −2（x = 1）',
+      },
+      {
+        prompt: '用洛必达法则求 lim(x→0) (1 − cos x) / x²。',
+        steps: ['直接代入得 0/0 型。', '第一次洛必达：分子导数为 sin x，分母导数为 2x，仍为 0/0。', '第二次洛必达：分子导数为 cos x，分母导数为 2。', '代入 x→0 得 cos 0 / 2 = 1/2。'],
+        answer: '1/2',
       },
     ],
     exercises: [
@@ -870,6 +1123,30 @@ export const mathLessons: MathLesson[] = [
         answer: 'a',
         solution: ["f'(x)=4x³−12x²=4x²(x−3)，驻点 x=0（不变号）、x=3（极小）。故极值点 1 个。答案为 1，对应选项 c。"],
       },
+      {
+        id: 'ca-ex6', topic: 'extrema', difficulty: 'basic', type: 'number',
+        prompt: 'f(x) = x² − 6x + 8，求 f(x) 的最小值。',
+        answer: -1, tolerance: 0.0001,
+        solution: ['f′(x) = 2x − 6 = 0 得 x = 3。', 'f(3) = 9 − 18 + 8 = −1。'],
+      },
+      {
+        id: 'ca-ex7', topic: 'extrema', difficulty: 'advanced', type: 'number',
+        prompt: '用洛必达法则求 lim(x→0) (sin 3x)/x 的值。',
+        answer: 3, tolerance: 0.0001,
+        solution: ['0/0 型，分子分母分别求导。', 'lim(x→0) (3 cos 3x)/1 = 3·1 = 3。'],
+      },
+      {
+        id: 'ca-ex8', topic: 'extrema', difficulty: 'advanced', type: 'choice',
+        prompt: '已知 f′(x) = 3x² − 3，则 f 的极大值点 x = ？',
+        options: [
+          { id: 'a', label: 'x = −1' },
+          { id: 'b', label: 'x = 1' },
+          { id: 'c', label: 'x = 0' },
+          { id: 'd', label: 'x = 2' },
+        ],
+        answer: 'a',
+        solution: ['f′(x) = 3(x−1)(x+1)，x=−1 处 f′ 由正变负，为极大值点。x=1 处由负变正，为极小值点。'],
+      },
     ],
     quiz: [
       {
@@ -902,6 +1179,7 @@ export const mathLessons: MathLesson[] = [
         { x: -1, label: '极大' },
         { x: 1, label: '极小' },
       ],
+      fillArea: true,
     },
     resources: [
       { title: '导数应用：单调性与极值', provider: 'Bilibili · 宋浩老师', url: 'https://search.bilibili.com/all?keyword=%E5%AE%8B%E6%B5%A9%20%E5%AF%BC%E6%95%B0%E5%BA%94%E7%94%A8', kind: 'video' },
@@ -941,6 +1219,11 @@ export const mathLessons: MathLesson[] = [
         prompt: '计算 ∫₀² x² dx。',
         steps: ['原函数 F(x) = x³/3。', 'F(2) − F(0) = 8/3 − 0 = 8/3。'],
         answer: '8/3 ≈ 2.667',
+      },
+      {
+        prompt: '计算 ∫₀^(π/2) cos x dx。',
+        steps: ['cos x 的原函数是 sin x。', '代入上限：sin(π/2) = 1。', '代入下限：sin(0) = 0。', '结果 = 1 − 0 = 1。'],
+        answer: '1',
       },
     ],
     exercises: [
@@ -992,6 +1275,30 @@ export const mathLessons: MathLesson[] = [
         answer: 'a',
         solution: ['幂函数积分公式在 n = −1 时不适用，单独记 ∫(1/x)dx = ln|x| + C。'],
       },
+      {
+        id: 'ci-ex7', topic: 'integrals', difficulty: 'basic', type: 'number',
+        prompt: '计算 ∫₀³ (x²) dx 的值。',
+        answer: 9, tolerance: 0.0001,
+        solution: ['原函数 x³/3，F(3) − F(0) = 27/3 − 0 = 9。'],
+      },
+      {
+        id: 'ci-ex8', topic: 'integrals', difficulty: 'advanced', type: 'number',
+        prompt: '计算 ∫₀¹ e^(2x) dx 的值（保留三位小数）。',
+        answer: 3.195, tolerance: 0.001,
+        solution: ['原函数 (1/2)·e^(2x)。', 'F(1) − F(0) = (1/2)(e² − 1) ≈ (7.389 − 1)/2 ≈ 3.195。'],
+      },
+      {
+        id: 'ci-ex9', topic: 'integrals', difficulty: 'advanced', type: 'choice',
+        prompt: '∫(0→π) sin x dx 的值是？',
+        options: [
+          { id: 'a', label: '2' },
+          { id: 'b', label: '0' },
+          { id: 'c', label: '1' },
+          { id: 'd', label: '−2' },
+        ],
+        answer: 'a',
+        solution: ['原函数 −cos x，−cos π + cos 0 = −(−1) + 1 = 2。'],
+      },
     ],
     quiz: [
       {
@@ -1024,6 +1331,7 @@ export const mathLessons: MathLesson[] = [
         { x: 0, label: 'a=0' },
         { x: 2, label: 'b=2' },
       ],
+      fillArea: true,
     },
     resources: [
       { title: '微积分的本质 · 积分篇', provider: 'Bilibili · 3Blue1Brown', url: 'https://search.bilibili.com/all?keyword=3Blue1Brown%20%E7%A7%AF%E5%88%86', kind: 'video' },
@@ -1065,6 +1373,11 @@ export const mathLessons: MathLesson[] = [
         prompt: '求 f(x, y) = x²y + sin y 的两个一阶偏导。',
         steps: ['对 x：把 y 当常数，∂f/∂x = 2xy。', '对 y：把 x 当常数，∂f/∂y = x² + cos y。'],
         answer: '∂f/∂x = 2xy，∂f/∂y = x² + cos y',
+      },
+      {
+        prompt: '求 z = e^(xy) 的全微分 dz。',
+        steps: ['对 x 求偏导（y 固定）：∂z/∂x = y·e^(xy)。', '对 y 求偏导（x 固定）：∂z/∂y = x·e^(xy)。', '全微分 dz = (∂z/∂x)dx + (∂z/∂y)dy。'],
+        answer: 'dz = e^(xy)(y·dx + x·dy)',
       },
     ],
     exercises: [
@@ -1110,6 +1423,30 @@ export const mathLessons: MathLesson[] = [
         answer: 'a',
         solution: ['∂z/∂x = 2x + y，∂z/∂y = x + 2y，故 dz = (2x+y)dx + (x+2y)dy。'],
       },
+      {
+        id: 'cp-ex6', topic: 'partial-derivatives', difficulty: 'basic', type: 'number',
+        prompt: 'f(x, y) = x³ + 2xy + y²，求 ∂f/∂y 在 (1, 0) 处的值。',
+        answer: 2, tolerance: 0.0001,
+        solution: ['∂f/∂y = 2x + 2y，代入 (1, 0) 得 2 + 0 = 2。'],
+      },
+      {
+        id: 'cp-ex7', topic: 'partial-derivatives', difficulty: 'advanced', type: 'number',
+        prompt: 'z = x²y³，求 ∂²z/(∂x∂y) 在 (2, 1) 处的值。',
+        answer: 12, tolerance: 0.0001,
+        solution: ['先 ∂z/∂x = 2xy³，再对 y 求偏导：∂²z/(∂x∂y) = 6xy²。', '代入 (2, 1) 得 6·2·1 = 12。'],
+      },
+      {
+        id: 'cp-ex8', topic: 'partial-derivatives', difficulty: 'advanced', type: 'choice',
+        prompt: 'f(x, y) = sin(xy)，则 ∂f/∂x = ？',
+        options: [
+          { id: 'a', label: 'y·cos(xy)' },
+          { id: 'b', label: 'x·cos(xy)' },
+          { id: 'c', label: 'cos(xy)' },
+          { id: 'd', label: '−y·cos(xy)' },
+        ],
+        answer: 'a',
+        solution: ['对 x 求偏导（y 固定）：链式法则，外层 sin 导数为 cos，内层 xy 对 x 导数为 y。', '∂f/∂x = cos(xy)·y = y·cos(xy)。'],
+      },
     ],
     quiz: [
       {
@@ -1131,6 +1468,14 @@ export const mathLessons: MathLesson[] = [
         solution: ['全微分是切平面对曲面增量的线性近似。'],
       },
     ],
+    interactiveGraph: {
+      formula: 'x*x',
+      xMin: -3,
+      xMax: 3,
+      yMin: -1,
+      yMax: 10,
+      title: '固定 y 观察 x 方向的截面：z = x² 是一条抛物线',
+    },
     resources: [
       { title: '多元函数微分学', provider: 'Bilibili · 宋浩老师', url: 'https://search.bilibili.com/all?keyword=%E5%AE%8B%E6%B5%A9%20%E5%81%8F%E5%AF%BC%E6%95%B0', kind: 'video' },
       { title: 'Partial derivatives — Khan Academy', provider: 'Khan Academy', url: 'https://www.khanacademy.org/math/multivariable-calculus/multivariable-derivatives', kind: 'video' },
@@ -1168,6 +1513,11 @@ export const mathLessons: MathLesson[] = [
       {
         prompt: '计算 ∬_D (x + y) dσ，D = [0,1]×[0,1]。',
         steps: ['先对 y 积：∫₀¹ (x + y) dy = x + 1/2。', '再对 x 积：∫₀¹ (x + 1/2) dx = 1/2 + 1/2 = 1。'],
+        answer: '1',
+      },
+      {
+        prompt: '计算 ∬_D xy dσ，D = [0,2]×[0,1]。',
+        steps: ['先对 y 积：∫₀¹ xy dy = x·[y²/2]₀¹ = x/2。', '再对 x 积：∫₀² (x/2) dx = [x²/4]₀² = 4/4 = 1。', '两次积分都得到整数，结果为 1。'],
         answer: '1',
       },
     ],
@@ -1208,6 +1558,30 @@ export const mathLessons: MathLesson[] = [
         answer: 'b',
         solution: ['∫₀²∫₀³ (x+y) dy dx = ∫₀² (3x + 9/2) dx = [3x²/2 + 9x/2]₀² = 6 + 9 = 15。'],
       },
+      {
+        id: 'cdi-ex6', topic: 'double-integrals', difficulty: 'basic', type: 'number',
+        prompt: '计算 ∬_D x² dσ，D = [0, 1]×[0, 2]。',
+        answer: 0.667, tolerance: 0.001,
+        solution: ['∫₀¹∫₀² x² dy dx = ∫₀¹ 2x² dx = [2x³/3]₀¹ = 2/3 ≈ 0.667。'],
+      },
+      {
+        id: 'cdi-ex7', topic: 'double-integrals', difficulty: 'advanced', type: 'number',
+        prompt: '交换积分次序：∫₀¹∫₀^x f(x,y) dy dx，积分区域 D 可表示为？求 ∫₀¹∫_y¹ 1 dx dy 的值。',
+        answer: 0.5, tolerance: 0.001,
+        solution: ['区域 D：0 ≤ y ≤ x ≤ 1，交换次序为 0 ≤ y ≤ 1，y ≤ x ≤ 1。', '∫₀¹∫_y¹ 1 dx dy = ∫₀¹ (1 − y) dy = [y − y²/2]₀¹ = 1 − 1/2 = 0.5。'],
+      },
+      {
+        id: 'cdi-ex8', topic: 'double-integrals', difficulty: 'advanced', type: 'choice',
+        prompt: 'D = [0,2]×[0,1]，∬_D (x² + y²) dσ = ？',
+        options: [
+          { id: 'a', label: '10/3' },
+          { id: 'b', label: '8/3' },
+          { id: 'c', label: '4' },
+          { id: 'd', label: '2' },
+        ],
+        answer: 'a',
+        solution: ['∫₀²∫₀¹ (x² + y²) dy dx = ∫₀² [x²y + y³/3]₀¹ dx = ∫₀² (x² + 1/3) dx。', '= [x³/3 + x/3]₀² = 8/3 + 2/3 = 10/3。'],
+      },
     ],
     quiz: [
       {
@@ -1229,6 +1603,15 @@ export const mathLessons: MathLesson[] = [
         solution: ['3 × 1 × 2 = 6。'],
       },
     ],
+    interactiveGraph: {
+      formula: 'x*x+1',
+      xMin: -2,
+      xMax: 2,
+      yMin: -1,
+      yMax: 6,
+      title: '二重积分的几何意义：曲面 z = x²+1 下的柱体体积',
+      fillArea: true,
+    },
     resources: [
       { title: '二重积分及其计算', provider: 'Bilibili · 宋浩老师', url: 'https://search.bilibili.com/all?keyword=%E5%AE%8B%E6%B5%A9%20%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86', kind: 'video' },
       { title: 'Double integrals — Khan Academy', provider: 'Khan Academy', url: 'https://www.khanacademy.org/math/multivariable-calculus/integrating-multivariable-functions', kind: 'video' },
