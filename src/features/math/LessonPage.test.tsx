@@ -19,27 +19,27 @@ describe('LessonPage', () => {
   it('renders objectives, intuition, principles, examples, exercises, quiz, and resources', () => {
     renderLesson('bridge-functions')
     expect(screen.getByRole('heading', { name: '函数与图像' })).toBeInTheDocument()
-    expect(screen.getByText('学习目标')).toBeInTheDocument()
-    expect(screen.getByText('直觉理解')).toBeInTheDocument()
-    expect(screen.getByText('核心原理')).toBeInTheDocument()
-    expect(screen.getByText('例题精讲')).toBeInTheDocument()
-    expect(screen.getByText('习题练习')).toBeInTheDocument()
-    expect(screen.getByText('随堂测验')).toBeInTheDocument()
-    expect(screen.getByText('推荐学习资料')).toBeInTheDocument()
+    expect(screen.getByText('目标')).toBeInTheDocument()
+    expect(screen.getByText('直觉')).toBeInTheDocument()
+    expect(screen.getByText('原理')).toBeInTheDocument()
+    expect(screen.getByText('例题')).toBeInTheDocument()
+    expect(screen.getByText('练习')).toBeInTheDocument()
+    expect(screen.getByText('测验')).toBeInTheDocument()
+    expect(screen.getByText('资料')).toBeInTheDocument()
   })
 
   it('grades a numeric exercise and shows feedback', async () => {
     renderLesson('bridge-functions')
     const answerInputs = screen.getAllByLabelText('答案')
     await userEvent.type(answerInputs[0], '11')
-    const submitButtons = screen.getAllByRole('button', { name: '提交答案' })
+    const submitButtons = screen.getAllByRole('button', { name: '提交' })
     await userEvent.click(submitButtons[1])
     expect(await screen.findByText('回答正确！')).toBeInTheDocument()
   })
 
   it('reveals a solution on demand', async () => {
     renderLesson('bridge-functions')
-    const revealButtons = screen.getAllByRole('button', { name: '查看解析' })
+    const revealButtons = screen.getAllByRole('button', { name: '解析' })
     await userEvent.click(revealButtons[0])
     expect(screen.getByText(/任取 0 ≤ x₁ < x₂/)).toBeInTheDocument()
   })
@@ -48,7 +48,7 @@ describe('LessonPage', () => {
     renderLesson('bridge-functions')
     await userEvent.click(screen.getByRole('button', { name: '我已完成阅读' }))
     expect(screen.getByRole('button', { name: '已标记读完' })).toBeDisabled()
-    expect(screen.getByText(/本节进度 20%/)).toBeInTheDocument()
+    expect(screen.getByText(/进度 20%/)).toBeInTheDocument()
   })
 
   it('external resources open safely in a new tab', () => {

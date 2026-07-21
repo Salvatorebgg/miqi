@@ -24,12 +24,12 @@ type NavItem = {
 }
 
 const navItems: NavItem[] = [
-  { to: '/', label: '学习首页', mobileLabel: '首页', icon: Home },
-  { to: '/math', label: '数学课堂', mobileLabel: '数学', icon: Calculator },
-  { to: '/english', label: 'IELTS 英语', mobileLabel: '英语', icon: Languages },
-  { to: '/news', label: '每日资讯', mobileLabel: '资讯', icon: Newspaper },
-  { to: '/games', label: '脑力游戏', mobileLabel: '游戏', icon: Gamepad2 },
-  { to: '/planner', label: '规划中心', mobileLabel: '规划', icon: CalendarDays },
+  { to: '/', label: '首页', mobileLabel: '首页', icon: Home },
+  { to: '/math', label: '数学', mobileLabel: '数学', icon: Calculator },
+  { to: '/english', label: '英语', mobileLabel: '英语', icon: Languages },
+  { to: '/news', label: '资讯', mobileLabel: '资讯', icon: Newspaper },
+  { to: '/games', label: '游戏', mobileLabel: '游戏', icon: Gamepad2 },
+  { to: '/planner', label: '规划', mobileLabel: '规划', icon: CalendarDays },
 ]
 
 function DailySnapshot() {
@@ -38,20 +38,20 @@ function DailySnapshot() {
       <div className="snapshot-icon" aria-hidden="true">
         <Sparkles />
       </div>
-      <p className="eyebrow">今日节奏</p>
-      <h2>保持轻盈，持续前进</h2>
+      <p className="eyebrow">今日</p>
+      <h2>学习概览</h2>
       <dl>
         <div>
-          <dt>专注目标</dt>
+          <dt>待完成</dt>
           <dd>3 项</dd>
         </div>
         <div>
-          <dt>学习连续</dt>
+          <dt>连续</dt>
           <dd>7 天</dd>
         </div>
       </dl>
       <Link className="snapshot-link" to="/planner">
-        查看今日规划
+        查看规划
       </Link>
     </div>
   )
@@ -91,6 +91,7 @@ export function AppShell() {
         <span />
         <span />
         <span />
+        <span />
       </div>
       <div className="app-shell">
         <aside className="sidebar glass" aria-label="主导航">
@@ -105,7 +106,7 @@ export function AppShell() {
               </NavLink>
             ))}
           </nav>
-          <p className="sidebar-note">每天一点，慢慢长成自己的节奏。</p>
+          <p className="sidebar-note">Miqi Learning</p>
           <div className="sidebar-footer">
             <SyncBadge />
           </div>
@@ -114,8 +115,8 @@ export function AppShell() {
         <main id="main-content">
           <header className="topbar">
             <div>
-              <p className="eyebrow">MIQI LEARNING</p>
-              <h1>学习驾驶舱</h1>
+              <p className="eyebrow">MIQI</p>
+              <h1>学习中心</h1>
             </div>
             <div className="topbar-actions">
               <SoundToggle />

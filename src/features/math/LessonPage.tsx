@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { BookOpenCheck, ChevronLeft, ExternalLink, Eye } from 'lucide-react'
 import { findLesson, trackForLesson, type MathExercise } from '../../data/mathCurriculum'
+import { MathGraph } from '../../components/ui/MathGraph'
 import { getRepository, LOCAL_USER_ID, newId } from '../../lib/repositoryInstance'
 import { gradeExercise, lessonCompletion, scoreAnswers } from './math'
 import { Tex } from '../../components/ui/Tex'
@@ -80,11 +81,11 @@ function ExerciseCard({
 
       <div className="exercise-actions">
         <button type="button" className="primary-button" onClick={submit} disabled={result !== null || answer === ''}>
-          提交答案
+          提交
         </button>
         <button type="button" className="ghost-button" onClick={() => setShowSolution(value => !value)}>
           <Eye aria-hidden="true" />
-          {showSolution ? '收起解析' : '查看解析'}
+          {showSolution ? '收起' : '解析'}
         </button>
       </div>
 
@@ -171,20 +172,20 @@ export function LessonPage() {
       <Link to="/math" className="back-link"><ChevronLeft aria-hidden="true" />返回数学课堂</Link>
       <p className="eyebrow">{track?.title}</p>
       <h2 id="lesson-title">{lesson.title}</h2>
-      <p className="lesson-submeta">约 {lesson.duration} 分钟 · 本节进度 {completion}%</p>
+      <p className="lesson-submeta">{lesson.duration} 分钟 · 进度 {completion}%</p>
 
       <section aria-labelledby="objectives-heading">
-        <h3 id="objectives-heading">学习目标</h3>
+        <h3 id="objectives-heading">目标</h3>
         <ul>{lesson.objectives.map((objective, i) => <li key={i}>{objective}</li>)}</ul>
       </section>
 
       <section aria-labelledby="intuition-heading">
-        <h3 id="intuition-heading">直觉理解</h3>
+        <h3 id="intuition-heading">直觉</h3>
         {lesson.intuition.map((paragraph, i) => <p key={i}>{paragraph}</p>)}
       </section>
 
       <section aria-labelledby="principles-heading">
-        <h3 id="principles-heading">核心原理</h3>
+        <h3 id="principles-heading">原理</h3>
         {lesson.principles.map((principle, i) => (
           <article key={i} className="principle-card glass">
             <h4>{principle.title}</h4>
@@ -194,8 +195,15 @@ export function LessonPage() {
         ))}
       </section>
 
+      {lesson.interactiveGraph ? (
+        <section aria-labelledby="graph-heading">
+          <h3 id="graph-heading">图像探索</h3>
+          <MathGraph {...lesson.interactiveGraph} />
+        </section>
+      ) : null}
+
       <section aria-labelledby="examples-heading">
-        <h3 id="examples-heading">例题精讲</h3>
+        <h3 id="examples-heading">例题</h3>
         {lesson.examples.map((example, i) => (
           <article key={i} className="principle-card glass">
             <h4>{example.prompt}</h4>
@@ -218,21 +226,21 @@ export function LessonPage() {
       </div>
 
       <section aria-labelledby="exercises-heading">
-        <h3 id="exercises-heading">习题练习</h3>
+        <h3 id="exercises-heading">练习</h3>
         {lesson.exercises.map(exercise => (
           <ExerciseCard key={exercise.id} exercise={exercise} lessonId={lesson.id} onGraded={handleExerciseGraded} />
         ))}
       </section>
 
       <section aria-labelledby="quiz-heading">
-        <h3 id="quiz-heading">随堂测验</h3>
+        <h3 id="quiz-heading">测验</h3>
         {lesson.quiz.map(exercise => (
           <ExerciseCard key={exercise.id} exercise={exercise} lessonId={lesson.id} onGraded={handleQuizGraded} />
         ))}
       </section>
 
       <section aria-labelledby="resources-heading">
-        <h3 id="resources-heading">推荐学习资料</h3>
+        <h3 id="resources-heading">资料</h3>
         <ul className="resource-list">
           {lesson.resources.map(resource => (
             <li key={resource.url}>

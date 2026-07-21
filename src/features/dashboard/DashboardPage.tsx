@@ -28,7 +28,6 @@ export function DashboardPage() {
       for (const record of readings) activeDates.add(record.createdAt.slice(0, 10))
       for (const record of sessions) activeDates.add(record.createdAt.slice(0, 10))
       if (activeDates.size > 0) {
-        // Today counts as active as soon as any task has progress.
         if (tasks.some(task => task.completed > 0)) activeDates.add(today)
       }
       setStreak(calculateStreak([...activeDates], today))
@@ -51,8 +50,8 @@ export function DashboardPage() {
 
   return (
     <section className="page-panel glass" aria-labelledby="dashboard-title">
-      <p className="eyebrow">{greeting}，今天是 {today}</p>
-      <h2 id="dashboard-title">学习驾驶舱</h2>
+      <p className="eyebrow">{greeting} · {today}</p>
+      <h2 id="dashboard-title">今日概览</h2>
 
       <div className="cockpit-summary">
         <div className="progress-ring large" role="img" aria-label={`今日完成度 ${completion}%`} style={{ '--percent': `${completion * 3.6}deg` } as React.CSSProperties}>
@@ -60,7 +59,7 @@ export function DashboardPage() {
         </div>
         <div className="streak-badge" role="status">
           <Flame aria-hidden="true" />
-          <strong>{streak}</strong> 天连续学习
+          <strong>{streak}</strong> 天
         </div>
       </div>
 
@@ -69,9 +68,9 @@ export function DashboardPage() {
           <Link to={`/math/lesson/${lesson.id}`} className="cockpit-card focus glass">
             <BookOpen aria-hidden="true" />
             <div>
-              <span className="cockpit-label">今日主攻 · 数学</span>
+              <span className="cockpit-label">数学</span>
               <strong>{lesson.title}</strong>
-              <em>约 {lesson.duration} 分钟</em>
+              <em>{lesson.duration} min</em>
             </div>
             <ArrowRight aria-hidden="true" />
           </Link>
@@ -80,11 +79,11 @@ export function DashboardPage() {
         <Link to="/english" className="cockpit-card glass">
           <PenLine aria-hidden="true" />
           <div>
-            <span className="cockpit-label">英语 · IELTS 8–9</span>
+            <span className="cockpit-label">英语</span>
             <strong>
-              {englishTask ? `词汇 ${englishTask.completed}/${englishTask.target}` : '今日词汇与精读'}
+              {englishTask ? `词汇 ${englishTask.completed}/${englishTask.target}` : '词汇与精读'}
             </strong>
-            <em>单词 · 情景 · 新闻 · 论文</em>
+            <em>单词 · 阅读 · 论文</em>
           </div>
           <ArrowRight aria-hidden="true" />
         </Link>
@@ -97,18 +96,18 @@ export function DashboardPage() {
         >
           <Newspaper aria-hidden="true" />
           <div>
-            <span className="cockpit-label">精读打卡</span>
-            <strong>{readingTask && readingTask.completed >= readingTask.target ? '已完成 ✓' : '完成后点这里打卡'}</strong>
-            <em>在英语页完成一篇阅读后更新</em>
+            <span className="cockpit-label">精读</span>
+            <strong>{readingTask && readingTask.completed >= readingTask.target ? '已完成' : '点击打卡'}</strong>
+            <em>英语页完成一篇后打卡</em>
           </div>
         </button>
 
         <Link to="/games" className="cockpit-card glass">
           <Gamepad2 aria-hidden="true" />
           <div>
-            <span className="cockpit-label">脑力小憩</span>
-            <strong>{gameTask && gameTask.completed >= gameTask.target ? '已完成 ✓' : '来一局数独或迷宫'}</strong>
-            <em>短时挑战，保持专注</em>
+            <span className="cockpit-label">游戏</span>
+            <strong>{gameTask && gameTask.completed >= gameTask.target ? '已完成' : '数独 / 迷宫'}</strong>
+            <em>休息一下</em>
           </div>
           <ArrowRight aria-hidden="true" />
         </Link>
@@ -116,7 +115,7 @@ export function DashboardPage() {
 
       {news && news.items.length > 0 ? (
         <section className="news-preview" aria-labelledby="news-preview-heading">
-          <h3 id="news-preview-heading">今日资讯速览</h3>
+          <h3 id="news-preview-heading">资讯速览</h3>
           <ul>
             {news.items.slice(0, 3).map(item => (
               <li key={item.id}>
@@ -127,12 +126,12 @@ export function DashboardPage() {
               </li>
             ))}
           </ul>
-          <Link to="/news" className="link-button">查看全部资讯 →</Link>
+          <Link to="/news" className="link-button">查看全部 →</Link>
         </section>
       ) : null}
 
       <p className="cockpit-tip">
-        <Link to="/planner">前往规划中心</Link> 查看任务清单、热力图与薄弱点分析。当前为本地模式，进度保存在此设备。
+        <Link to="/planner">规划中心</Link> · 任务清单与进度追踪
       </p>
     </section>
   )

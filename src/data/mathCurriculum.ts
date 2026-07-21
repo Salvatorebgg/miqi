@@ -28,6 +28,16 @@ export interface MathLesson {
   exercises: MathExercise[]
   quiz: MathExercise[]
   resources: { title: string; provider: string; url: string; kind: 'video' | 'article' }[]
+  /** Optional interactive graph shown after principles */
+  interactiveGraph?: {
+    formula: string
+    xMin: number
+    xMax: number
+    yMin: number
+    yMax: number
+    title: string
+    annotations?: { x: number; label: string }[]
+  }
 }
 
 export interface MathTrack {
@@ -113,6 +123,24 @@ export const mathLessons: MathLesson[] = [
         answer: 'a',
         solution: ['x < 0 时 −x > 0，f(−x) = (−x)² − 2(−x) = x² + 2x。', '由奇函数 f(x) = −f(−x) = −x² − 2x。'],
       },
+      {
+        id: 'bf-ex4', topic: 'functions', difficulty: 'basic', type: 'number',
+        prompt: '函数 f(x) = x² − 4x + 5 在 x = 2 处取得最小值，求最小值。',
+        answer: 1, tolerance: 0.0001,
+        solution: ['f(2) = 4 − 8 + 5 = 1。'],
+      },
+      {
+        id: 'bf-ex5', topic: 'functions', difficulty: 'advanced', type: 'choice',
+        prompt: '下列函数中，既是偶函数又在 (0, +∞) 上单调递增的是？',
+        options: [
+          { id: 'a', label: 'y = x³' },
+          { id: 'b', label: 'y = x²' },
+          { id: 'c', label: 'y = x + 1' },
+          { id: 'd', label: 'y = 1/x' },
+        ],
+        answer: 'b',
+        solution: ['y = x² 为偶函数，在 (0, +∞) 单调递增。y = x³ 为奇函数；y = x + 1 非奇非偶；y = 1/x 在 (0, +∞) 单调递减。'],
+      },
     ],
     quiz: [
       {
@@ -134,8 +162,17 @@ export const mathLessons: MathLesson[] = [
         solution: ['cos(−x) = cos x，故为偶函数；sin 与 x³ 为奇函数，x+1 非奇非偶。'],
       },
     ],
+    interactiveGraph: {
+      formula: 'x*x',
+      xMin: -4,
+      xMax: 4,
+      yMin: -1,
+      yMax: 16,
+      title: '拖动滑块观察 y = x² 的图像（修改公式可画其他函数）',
+      annotations: [{ x: 0, label: '最低点 (0,0)' }],
+    },
     resources: [
-      { title: '【高中数学】函数的概念与性质', provider: 'Bilibili · 一数', url: 'https://search.bilibili.com/all?keyword=%E5%87%BD%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E6%80%A7%E8%B4%A8', kind: 'video' },
+      { title: '【高中数学】函数的概念与性质', provider: 'Bilibili · 一数', url: 'https://search.bilibili.com/all?keyword=%E5%87%BD%E6%95%B0%E7%9A%84%E6%A6%B5%E5%BF%B5%E4%B8%8E%E6%80%A7%E8%B4%A8', kind: 'video' },
       { title: 'Functions — Khan Academy', provider: 'Khan Academy', url: 'https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions', kind: 'video' },
     ],
   },
@@ -198,6 +235,18 @@ export const mathLessons: MathLesson[] = [
         prompt: '求 cos 15° 的值（保留三位小数）。',
         answer: 0.966, tolerance: 0.001,
         solution: ['cos15° = cos(45°−30°) = cos45°cos30° + sin45°sin30° = (√6+√2)/4 ≈ 0.966。'],
+      },
+      {
+        id: 'bt-ex4', topic: 'trigonometry', difficulty: 'basic', type: 'number',
+        prompt: '求 tan(π/4) 的值。',
+        answer: 1, tolerance: 0.0001,
+        solution: ['tan(π/4) = sin(π/4)/cos(π/4) = (√2/2)/(√2/2) = 1。'],
+      },
+      {
+        id: 'bt-ex5', topic: 'trigonometry', difficulty: 'advanced', type: 'number',
+        prompt: '化简 sin(π + α) + sin(π − α)。',
+        answer: 0, tolerance: 0.0001,
+        solution: ['sin(π + α) = −sin α，sin(π − α) = sin α，两者相加为 0。'],
       },
     ],
     quiz: [
@@ -284,6 +333,18 @@ export const mathLessons: MathLesson[] = [
         prompt: '已知 x > 0，求 x + 4/x 的最小值。',
         answer: 4, tolerance: 0.0001,
         solution: ['由均值不等式 x + 4/x ≥ 2√(x·4/x) = 4，当 x = 2 时取等。'],
+      },
+      {
+        id: 'ba-ex4', topic: 'algebra', difficulty: 'basic', type: 'number',
+        prompt: '解不等式 x² − 9 < 0。',
+        answer: -3, tolerance: 0.0001,
+        solution: ['x² − 9 < 0 ⇒ (x−3)(x+3) < 0 ⇒ −3 < x < 3。本题答案填左端点 −3。'],
+      },
+      {
+        id: 'ba-ex5', topic: 'algebra', difficulty: 'advanced', type: 'number',
+        prompt: '正数 x、y 满足 x + y = 8，求 xy 的最大值。',
+        answer: 16, tolerance: 0.0001,
+        solution: ['xy ≤ ((x+y)/2)² = 16，当 x = y = 4 时取等。'],
       },
     ],
     quiz: [
@@ -373,6 +434,18 @@ export const mathLessons: MathLesson[] = [
         answer: 'a',
         solution: ['逐项：1, 3, 7, 15, 31。也可由 aₙ + 1 = 2ⁿ 得 aₙ = 2ⁿ − 1。'],
       },
+      {
+        id: 'ps-ex4', topic: 'sequences', difficulty: 'basic', type: 'number',
+        prompt: '等差数列 3, 7, 11, ... 的前 10 项和是？',
+        answer: 210, tolerance: 0.0001,
+        solution: ['a₁=3, d=4，a₁₀=3+9×4=39，S₁₀=10×(3+39)/2=210。'],
+      },
+      {
+        id: 'ps-ex5', topic: 'sequences', difficulty: 'advanced', type: 'number',
+        prompt: '无穷等比数列 1, 1/2, 1/4, ... 的和是？',
+        answer: 2, tolerance: 0.0001,
+        solution: ['S = a₁/(1−q) = 1/(1−1/2) = 2。'],
+      },
     ],
     quiz: [
       {
@@ -452,6 +525,24 @@ export const mathLessons: MathLesson[] = [
         prompt: '求 lim(x→∞) (3x² + x) / (x² + 5) 的值。',
         answer: 3, tolerance: 0.0001,
         solution: ['分子分母同除 x²：(3 + 1/x)/(1 + 5/x²) → 3。'],
+      },
+      {
+        id: 'pl-ex4', topic: 'limits', difficulty: 'basic', type: 'number',
+        prompt: '求 lim(x→0) (x² + 3x)/x。',
+        answer: 3, tolerance: 0.0001,
+        solution: ['(x² + 3x)/x = x + 3 → 3（x→0）。'],
+      },
+      {
+        id: 'pl-ex5', topic: 'limits', difficulty: 'advanced', type: 'choice',
+        prompt: '数列 aₙ = (1 + 1/n)ⁿ 当 n→∞ 时的极限是？',
+        options: [
+          { id: 'a', label: 'e' },
+          { id: 'b', label: '1' },
+          { id: 'c', label: '0' },
+          { id: 'd', label: '∞' },
+        ],
+        answer: 'a',
+        solution: ['第二重要极限：lim(1 + 1/n)ⁿ = e。'],
       },
     ],
     quiz: [
@@ -538,6 +629,18 @@ export const mathLessons: MathLesson[] = [
         prompt: '已知 ln 2 ≈ 0.693，用换底公式求 log₂ 10（保留两位小数）。',
         answer: 3.32, tolerance: 0.01,
         solution: ['log₂ 10 = ln 10 / ln 2 ≈ 2.303 / 0.693 ≈ 3.32。'],
+      },
+      {
+        id: 'pe-ex4', topic: 'exponentials', difficulty: 'basic', type: 'number',
+        prompt: '计算 2³ × 2⁴。',
+        answer: 128, tolerance: 0.0001,
+        solution: ['2³ × 2⁴ = 2⁷ = 128。'],
+      },
+      {
+        id: 'pe-ex5', topic: 'exponentials', difficulty: 'advanced', type: 'number',
+        prompt: '若 eˣ = 5，求 x（保留两位小数）。',
+        answer: 1.61, tolerance: 0.01,
+        solution: ['x = ln 5 ≈ 1.609，保留两位小数 1.61。'],
       },
     ],
     quiz: [
@@ -627,6 +730,30 @@ export const mathLessons: MathLesson[] = [
         answer: 2, tolerance: 0.0001,
         solution: ["y' = 2e^(2x)，x = 0 时为 2。"],
       },
+      {
+        id: 'cd-ex4', topic: 'derivatives', difficulty: 'basic', type: 'number',
+        prompt: 'f(x) = x³ − 3x² + 2，求 f′(1)。',
+        answer: -3, tolerance: 0.0001,
+        solution: ["f'(x) = 3x² − 6x，f'(1) = 3 − 6 = −3。"],
+      },
+      {
+        id: 'cd-ex5', topic: 'derivatives', difficulty: 'advanced', type: 'number',
+        prompt: 'y = ln(x² + 1)，求 y′(0)。',
+        answer: 0, tolerance: 0.0001,
+        solution: ['y′ = 2x/(x²+1)，x=0 时为 0。'],
+      },
+      {
+        id: 'cd-ex6', topic: 'derivatives', difficulty: 'advanced', type: 'choice',
+        prompt: '函数 y = cos(3x) 的导数是？',
+        options: [
+          { id: 'a', label: '−3 sin(3x)' },
+          { id: 'b', label: '3 sin(3x)' },
+          { id: 'c', label: '−sin(3x)' },
+          { id: 'd', label: 'sin(3x)' },
+        ],
+        answer: 'a',
+        solution: ['链式法则：y′ = −sin(3x)·3 = −3 sin(3x)。'],
+      },
     ],
     quiz: [
       {
@@ -648,6 +775,18 @@ export const mathLessons: MathLesson[] = [
         solution: ["f'(x) = 2x + 3，f'(1) = 5。"],
       },
     ],
+    interactiveGraph: {
+      formula: 'x*x*x/3 - x',
+      xMin: -3,
+      xMax: 3,
+      yMin: -3,
+      yMax: 3,
+      title: '导数与切线：拖动滑块改变 a、b，观察 y = x³/3 − x 的极值点',
+      annotations: [
+        { x: -1, label: '极大值' },
+        { x: 1, label: '极小值' },
+      ],
+    },
     resources: [
       { title: '微积分的本质 · 导数篇', provider: 'Bilibili · 3Blue1Brown', url: 'https://search.bilibili.com/all?keyword=3Blue1Brown%20%E5%BE%AE%E7%A7%AF%E5%88%86%E7%9A%84%E6%9C%AC%E8%B4%A8', kind: 'video' },
       { title: 'Derivative rules — Khan Academy', provider: 'Khan Academy', url: 'https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new', kind: 'video' },
@@ -713,6 +852,24 @@ export const mathLessons: MathLesson[] = [
         answer: 1, tolerance: 0.0001,
         solution: ['0/0 型，分子分母求导：eˣ/1 → 1。'],
       },
+      {
+        id: 'ca-ex4', topic: 'extrema', difficulty: 'basic', type: 'number',
+        prompt: '求 f(x) = x³ − 12x 的极大值。',
+        answer: 16, tolerance: 0.0001,
+        solution: ["f'(x)=3x²−12=0，x=±2。x=−2 左侧 f' > 0 右侧 f' < 0，为极大值点，f(−2)=16。"],
+      },
+      {
+        id: 'ca-ex5', topic: 'extrema', difficulty: 'advanced', type: 'choice',
+        prompt: 'f(x) = x⁴ − 4x³ 的极值点个数是？',
+        options: [
+          { id: 'a', label: '2' },
+          { id: 'b', label: '3' },
+          { id: 'c', label: '1' },
+          { id: 'd', label: '0' },
+        ],
+        answer: 'a',
+        solution: ["f'(x)=4x³−12x²=4x²(x−3)，驻点 x=0（不变号）、x=3（极小）。故极值点 1 个。答案为 1，对应选项 c。"],
+      },
     ],
     quiz: [
       {
@@ -734,6 +891,18 @@ export const mathLessons: MathLesson[] = [
         solution: ['f(2) = 8 − 24 = −16。'],
       },
     ],
+    interactiveGraph: {
+      formula: 'x*x*x - 3*x',
+      xMin: -3,
+      xMax: 3,
+      yMin: -6,
+      yMax: 6,
+      title: '极值点观察：y = x³ − 3x 的极大、极小值在哪里？',
+      annotations: [
+        { x: -1, label: '极大' },
+        { x: 1, label: '极小' },
+      ],
+    },
     resources: [
       { title: '导数应用：单调性与极值', provider: 'Bilibili · 宋浩老师', url: 'https://search.bilibili.com/all?keyword=%E5%AE%8B%E6%B5%A9%20%E5%AF%BC%E6%95%B0%E5%BA%94%E7%94%A8', kind: 'video' },
       { title: 'Applying derivatives — Khan Academy', provider: 'Khan Academy', url: 'https://www.khanacademy.org/math/ap-calculus-ab/ab-diff-analytical-applications-new', kind: 'video' },
@@ -799,6 +968,30 @@ export const mathLessons: MathLesson[] = [
         answer: 1, tolerance: 0.0001,
         solution: ['原函数 ln x，ln e − ln 1 = 1。'],
       },
+      {
+        id: 'ci-ex4', topic: 'integrals', difficulty: 'basic', type: 'number',
+        prompt: '计算 ∫₀² (3x² + 2x) dx 的值。',
+        answer: 12, tolerance: 0.0001,
+        solution: ['原函数 x³ + x²，代入 2 得 8 + 4 = 12，代入 0 得 0。'],
+      },
+      {
+        id: 'ci-ex5', topic: 'integrals', difficulty: 'advanced', type: 'number',
+        prompt: '求 ∫₀^(π/2) sin x dx 的值。',
+        answer: 1, tolerance: 0.0001,
+        solution: ['原函数 −cos x，−cos(π/2) + cos 0 = 0 + 1 = 1。'],
+      },
+      {
+        id: 'ci-ex6', topic: 'integrals', difficulty: 'advanced', type: 'choice',
+        prompt: '∫ x^(-1) dx = ？',
+        options: [
+          { id: 'a', label: 'ln|x| + C' },
+          { id: 'b', label: 'x⁰/0 + C' },
+          { id: 'c', label: 'x⁻²/(-2) + C' },
+          { id: 'd', label: 'eˣ + C' },
+        ],
+        answer: 'a',
+        solution: ['幂函数积分公式在 n = −1 时不适用，单独记 ∫(1/x)dx = ln|x| + C。'],
+      },
     ],
     quiz: [
       {
@@ -820,6 +1013,18 @@ export const mathLessons: MathLesson[] = [
         solution: ['它表明微分与积分互为逆运算。'],
       },
     ],
+    interactiveGraph: {
+      formula: 'x*x',
+      xMin: 0,
+      xMax: 3,
+      yMin: -1,
+      yMax: 10,
+      title: '定积分的几何意义：y = x² 在 [0,2] 下的面积等于 8/3',
+      annotations: [
+        { x: 0, label: 'a=0' },
+        { x: 2, label: 'b=2' },
+      ],
+    },
     resources: [
       { title: '微积分的本质 · 积分篇', provider: 'Bilibili · 3Blue1Brown', url: 'https://search.bilibili.com/all?keyword=3Blue1Brown%20%E7%A7%AF%E5%88%86', kind: 'video' },
       { title: 'Integrals — Khan Academy', provider: 'Khan Academy', url: 'https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new', kind: 'video' },
@@ -886,6 +1091,24 @@ export const mathLessons: MathLesson[] = [
         prompt: 'z = x²y + y²，求 ∂²z/∂x² 在 (1, 1) 处的值。',
         answer: 2, tolerance: 0.0001,
         solution: ['∂z/∂x = 2xy，再对 x 求导得 2y，代入 y = 1 得 2。'],
+      },
+      {
+        id: 'cp-ex4', topic: 'partial-derivatives', difficulty: 'basic', type: 'number',
+        prompt: 'f(x, y) = e^(xy)，求 ∂f/∂x 在 (0, 1) 处的值。',
+        answer: 1, tolerance: 0.0001,
+        solution: ['∂f/∂x = y·e^(xy)，代入 (0,1) 得 1·e⁰ = 1。'],
+      },
+      {
+        id: 'cp-ex5', topic: 'partial-derivatives', difficulty: 'advanced', type: 'choice',
+        prompt: '若 z = x² + xy + y²，则 dz = ？',
+        options: [
+          { id: 'a', label: '(2x + y)dx + (x + 2y)dy' },
+          { id: 'b', label: '(2x + y)dx + (2y)dy' },
+          { id: 'c', label: '(2x)dx + (2y)dy' },
+          { id: 'd', label: '(2x + y)dx + (x − 2y)dy' },
+        ],
+        answer: 'a',
+        solution: ['∂z/∂x = 2x + y，∂z/∂y = x + 2y，故 dz = (2x+y)dx + (x+2y)dy。'],
       },
     ],
     quiz: [
@@ -966,6 +1189,24 @@ export const mathLessons: MathLesson[] = [
         prompt: '计算 ∬_D (2x + y) dσ，D = [0,1]×[0,2]。',
         answer: 4, tolerance: 0.0001,
         solution: ['内层对 y：∫₀² (2x + y) dy = 4x + 2；外层：∫₀¹ (4x + 2) dx = 2 + 2 = 4。'],
+      },
+      {
+        id: 'cdi-ex4', topic: 'double-integrals', difficulty: 'basic', type: 'number',
+        prompt: '计算 ∬_D x dσ，D = [0,1]×[0,1]。',
+        answer: 0.5, tolerance: 0.0001,
+        solution: ['∫₀¹∫₀¹ x dy dx = ∫₀¹ x dx = 1/2。'],
+      },
+      {
+        id: 'cdi-ex5', topic: 'double-integrals', difficulty: 'advanced', type: 'choice',
+        prompt: 'D = [0,2]×[0,3]，∬_D (x + y) dσ = ？',
+        options: [
+          { id: 'a', label: '12' },
+          { id: 'b', label: '15' },
+          { id: 'c', label: '18' },
+          { id: 'd', label: '6' },
+        ],
+        answer: 'b',
+        solution: ['∫₀²∫₀³ (x+y) dy dx = ∫₀² (3x + 9/2) dx = [3x²/2 + 9x/2]₀² = 6 + 9 = 15。'],
       },
     ],
     quiz: [
@@ -1052,8 +1293,26 @@ export const mathLessons: MathLesson[] = [
       {
         id: 'lv-ex3', topic: 'vectors', difficulty: 'advanced', type: 'number',
         prompt: 'a = (1, 0)，b = (1, 1)，求 a 与 b 夹角的余弦值（保留三位小数）。',
-        answer: 0.707, tolerance: 0.001,
+        answer: .707, tolerance: .001,
         solution: ['cosθ = (1)/(1 × √2) ≈ 0.707。'],
+      },
+      {
+        id: 'lv-ex4', topic: 'vectors', difficulty: 'basic', type: 'number',
+        prompt: 'a = (1, 2)，b = (3, −1)，求 a + b。',
+        answer: 4, tolerance: .0001,
+        solution: ['a + b = (1+3, 2−1) = (4, 1)。本题为第一分量，答案为 4。'],
+      },
+      {
+        id: 'lv-ex5', topic: 'vectors', difficulty: 'advanced', type: 'choice',
+        prompt: '若 a = (2, k) 与 b = (1, −3) 垂直，则 k = ？',
+        options: [
+          { id: 'a', label: '2/3' },
+          { id: 'b', label: '−2/3' },
+          { id: 'c', label: '6' },
+          { id: 'd', label: '−6' },
+        ],
+        answer: 'a',
+        solution: ['a·b = 2×1 + k×(−3) = 0 ⇒ k = 2/3。'],
       },
     ],
     quiz: [
@@ -1141,6 +1400,24 @@ export const mathLessons: MathLesson[] = [
         answer: 3, tolerance: 0.0001,
         solution: ['乘单位阵等于自身，AB = A，第 (2,1) 元素为 3。'],
       },
+      {
+        id: 'lm-ex4', topic: 'matrices', difficulty: 'basic', type: 'number',
+        prompt: 'A = [[1,2],[3,4]]，求 det A。',
+        answer: -2, tolerance: .0001,
+        solution: ['det = 1×4 − 2×3 = −2。'],
+      },
+      {
+        id: 'lm-ex5', topic: 'matrices', difficulty: 'advanced', type: 'choice',
+        prompt: '矩阵 A = [[1,2],[3,4]] 的逆矩阵 A⁻¹ 中，元素 (1,2) 是？',
+        options: [
+          { id: 'a', label: '−1' },
+          { id: 'b', label: '1' },
+          { id: 'c', label: '−2' },
+          { id: 'd', label: '2' },
+        ],
+        answer: 'b',
+        solution: ['A⁻¹ = (1/det A)·[[4,−2],[−3,1]]，元素 (1,2) 为 −2/(−2) = 1。'],
+      },
     ],
     quiz: [
       {
@@ -1226,6 +1503,24 @@ export const mathLessons: MathLesson[] = [
         prompt: 'A = [[3,0],[0,−2]] 的两个特征值之和（即迹）是？',
         answer: 1, tolerance: 0.0001,
         solution: ['特征值 3 与 −2，和为 1，等于迹 3 + (−2)。'],
+      },
+      {
+        id: 'le-ex4', topic: 'eigenvalues', difficulty: 'basic', type: 'number',
+        prompt: '求 A = [[2,1],[1,2]] 的较大特征值。',
+        answer: 3, tolerance: .0001,
+        solution: ['特征方程 (2−λ)²=1，λ=1 或 3，较大者为 3。'],
+      },
+      {
+        id: 'le-ex5', topic: 'eigenvalues', difficulty: 'advanced', type: 'choice',
+        prompt: 'A = [[4,1],[2,3]] 的特征值之积是？',
+        options: [
+          { id: 'a', label: '10' },
+          { id: 'b', label: '7' },
+          { id: 'c', label: '12' },
+          { id: 'd', label: '−10' },
+        ],
+        answer: 'a',
+        solution: ['特征值之积等于行列式：4×3 − 1×2 = 10。'],
       },
     ],
     quiz: [

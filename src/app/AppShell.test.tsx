@@ -9,9 +9,9 @@ it('renders the learning cockpit and every primary destination', () => {
     </MemoryRouter>,
   )
 
-  expect(screen.getByRole('heading', { name: /学习驾驶舱/ })).toBeInTheDocument()
-  for (const label of ['数学课堂', 'IELTS 英语', '每日资讯', '脑力游戏', '规划中心']) {
-    expect(screen.getByRole('link', { name: new RegExp(label) })).toBeInTheDocument()
+  expect(screen.getByRole('heading', { name: /学习中心/ })).toBeInTheDocument()
+  for (const label of ['数学', '英语', '资讯', '游戏', '规划']) {
+    expect(screen.getAllByRole('link', { name: new RegExp(label) }).length).toBeGreaterThan(0)
   }
 })
 
