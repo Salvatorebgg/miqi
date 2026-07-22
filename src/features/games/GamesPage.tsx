@@ -1,24 +1,10 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import {
-  ArrowDown,
-  ArrowLeft,
-  ArrowRight,
-  ArrowUp,
-  Brain,
-  Calculator,
-  Eraser,
-  Gem,
-  Grid3x3,
-  HelpCircle,
-  Lightbulb,
-  Puzzle,
-  RotateCcw,
-  Send,
-  Sparkles,
-  Table2,
-  Trophy,
-  Undo2,
-  Zap,
+  ArrowDown, ArrowLeft, ArrowRight, ArrowUp,
+  Bomb, Eraser,
+  Grid3x3, HelpCircle, Lightbulb, Puzzle,
+  RotateCcw, Send, Sparkles, Table2,
+  Timer, Trophy, Type, Undo2, Zap,
 } from 'lucide-react'
 import {
   difficultyClues,
@@ -30,46 +16,28 @@ import {
 } from './sudoku'
 import { createMazeState, movePlayer, type Direction, type MazeState } from './maze'
 import {
-  evaluateExpression,
-  extractNumbers,
-  generateHint,
-  generatePuzzle,
-  puzzleDifficultyConfig,
-  puzzleDifficultyLabels,
-  validateNumbers,
-  type NumberPuzzle,
-  type PuzzleDifficulty,
-} from './numberPuzzle'
+  generateWordle, typeLetter, backspace, submitGuess,
+  type WordleState,
+} from './wordle'
 import {
-  generateMemoryGame,
-  flipCard as flipMemoryCard,
-  type MemoryState,
-} from './memory'
-import {
-  generateSlidingPuzzle,
-  moveTile,
+  generateSlidingPuzzle, moveTile,
   type SlidingState,
 } from './slidingPuzzle'
 import {
-  generateHanoi,
-  selectPeg,
-  isHanoiSolved,
-  type HanoiState,
-} from './hanoi'
+  generateMinesweeper, revealCell, toggleFlag,
+  type MinesweeperState, minesweeperDiffLabels, type MinesweeperDifficulty,
+} from './minesweeper'
 import {
-  generateSpeedMath,
-  submitAnswer as submitSpeedMath,
-  tickTimer as tickSpeedMathTimer,
-  type SpeedMathState,
+  generateSpeedMath, submitAnswer as submitSpeedMath,
+  tickTimer as tickSpeedMathTimer, type SpeedMathState,
 } from './speedMath'
 import {
-  generateSimon,
-  advanceSequence,
-  startShowingSequence,
-  advanceShowing,
-  playerPress,
-  type SimonState,
-} from './simon'
+  generateReaction, goGreen, tap, getReactionRating,
+  type ReactionState,
+} from './reaction'
+import {
+  generateLogicPuzzle, showNextClue, type LogicGridState,
+} from './logicGrid'
 import { getRepository, LOCAL_USER_ID, newId } from '../../lib/repositoryInstance'
 import type { GameSession } from '../../types/domain'
 
@@ -498,264 +466,75 @@ function MazeGame() {
 }
 
 // ── Number Puzzle (24-Point) ─────────────────────────────────────────
+// (replaced by Minesweeper + Wordle + Reaction + LogicGrid)
 
-const GAME_ID = 'numberPuzzle' as const
-
-function NumberPuzzleGame() {
-  const [difficulty, setDifficulty] = useState<PuzzleDifficulty>('easy')
-  const [puzzle, setPuzzle] = useState<NumberPuzzle>(() => generatePuzzle('easy'))
-  const [expression, setExpression] = useState('')
-  const [feedback, setFeedback] = useState<{ type: 'error' | 'success' | 'hint'; message: string } | null>(null)
-  const [won, setWon] = useState(false)
-  const [hintText, setHintText] = useState('')
-  const [moves, setMoves] = useState(0)
-  const [showHelp, setShowHelp] = useState(false)
-  const { seconds, reset: resetTimer } = useTimer(!won)
-  const secondsRef = useRef(seconds)
-  secondsRef.current = seconds
-  const highScore = useHighScore(GAME_ID, difficulty)
+function WordleGame() {
+  const [state, setState] = useState<WordleState>(() => generateWordle())
   const [confetti, setConfetti] = useState(false)
-  const inputRef = useRef<HTMLInputElement>(null)
+  const QWERTY = ['QWERTYUIOP', 'ASDFGHJKL', 'ZXCVBNM']
 
-  const config = puzzleDifficultyConfig[difficulty]
+  const onKey = (k: string) => setState(s => {
+    if (k === '⌫') return backspace(s)
+    if (k === '⏎') { const ns = submitGuess(s); if (ns.won && !confetti) setConfetti(true); return ns }
+    if (s.currentGuess.length < 5) return typeLetter(s, k)
+    return s
+  })
+  const restart = () => { setState(generateWordle()); setConfetti(false) }
 
-  const restart = (nextDifficulty = difficulty) => {
-    const next = generatePuzzle(nextDifficulty)
-    setDifficulty(nextDifficulty)
-    setPuzzle(next)
-    setExpression('')
-    setFeedback(null)
-    setHintText('')
-    setWon(false)
-    setMoves(0)
-    setConfetti(false)
-    resetTimer()
-    setTimeout(() => inputRef.current?.focus(), 50)
+  const getColor = (ch: string) => {
+    const ls = state.lettersUsed[ch]
+    return ls === 'correct' ? 'var(--mint-500)' : ls === 'present' ? '#e2a840' : ls === 'absent' ? '#777' : undefined
   }
-
-  const submit = () => {
-    if (won) return
-    const trimmed = expression.trim()
-    if (!trimmed) {
-      setFeedback({ type: 'error', message: '请输入算式' })
-      return
-    }
-    setHintText('')
-    setMoves(m => m + 1)
-
-    // Evaluate
-    const result = evaluateExpression(trimmed)
-    if (!result.valid) {
-      setFeedback({ type: 'error', message: result.error || '算式无效' })
-      return
-    }
-
-    // Check result equals 24
-    if (Math.abs(result.value! - 24) > 1e-9) {
-      setFeedback({ type: 'error', message: `结果为 ${result.value}，不等于 24，再试试！` })
-      return
-    }
-
-    // Check number usage
-    const usedNums = extractNumbers(trimmed)
-    const numCheck = validateNumbers(usedNums, puzzle.numbers, config.useAll)
-    if (!numCheck.valid) {
-      setFeedback({ type: 'error', message: numCheck.message })
-      return
-    }
-
-    // Success!
-    setWon(true)
-    setConfetti(true)
-    setFeedback({ type: 'success', message: '太棒了！算式正确等于 24！' })
-    const score = Math.max(1000 - secondsRef.current * 2 - moves * 10, 100)
-    void saveSession({
-      game: GAME_ID,
-      difficulty,
-      durationSeconds: secondsRef.current,
-      moves,
-      score,
-    })
-    saveHighScore(GAME_ID, difficulty, score)
-  }
-
-  const showHint = () => {
-    if (won) return
-    setMoves(m => m + 1)
-    setHintText(generateHint(puzzle.solution))
-    setFeedback({ type: 'hint', message: '已显示提示（计入步数）' })
-  }
-
-  const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === 'Enter') {
-      e.preventDefault()
-      submit()
-    }
-  }
-
-  return (
-    <div className="game-pane">
-      <Confetti active={confetti} />
-
-      <div className="game-toolbar">
-        <div className="difficulty-row">
-          {(Object.keys(puzzleDifficultyConfig) as PuzzleDifficulty[]).map(level => (
-            <button
-              key={level}
-              type="button"
-              className={`difficulty-pill ${difficulty === level ? 'active' : ''}`}
-              onClick={() => restart(level)}
-            >
-              {puzzleDifficultyLabels[level]}
-            </button>
-          ))}
-        </div>
-        <span className="game-timer" role="timer" aria-label="用时">{formatTime(seconds)}</span>
-        <span className="game-moves">尝试：{moves}</span>
-        {highScore > 0 ? (
-          <span className="game-high-score"><Trophy aria-hidden="true" />{highScore}</span>
-        ) : null}
-        <button type="button" className="help-toggle" onClick={() => setShowHelp(h => !h)} aria-expanded={showHelp}>
-          <HelpCircle aria-hidden="true" />{showHelp ? '收起' : '帮助'}
-        </button>
-      </div>
-
-      {showHelp ? (
-        <div className="help-panel">
-          <h4>24 点玩法说明</h4>
-          <ul>
-            <li>使用给出的 {config.numberCount} 个数字，通过 + - * / 和括号组合，使结果等于 24</li>
-            {config.useAll ? (
-              <li>必须<b>恰好使用全部</b> {config.numberCount} 个数字，每个数字用一次</li>
-            ) : (
-              <li>可以使用部分数字，输入算式后提交即可</li>
-            )}
-            <li>例如：数字 3, 5, 7, 9，算式 (3+5)*(9-7) = 24</li>
-            <li>支持小数：如 8/(3-8/3) = 24</li>
-            <li>点击「提示」获取解题思路（会增加尝试次数）</li>
-          </ul>
-        </div>
-      ) : null}
-
-      <div className="number-puzzle-numbers" aria-label="可用数字">
-        {puzzle.numbers.map((num, i) => (
-          <div key={i} className="number-card">{num}</div>
-        ))}
-      </div>
-
-      <div className="puzzle-input-row">
-        <div className="puzzle-input-wrap">
-          <input
-            ref={inputRef}
-            type="text"
-            value={expression}
-            onChange={e => { setExpression(e.target.value); setFeedback(null); setHintText('') }}
-            onKeyDown={handleKeyDown}
-            className={feedback?.type === 'error' ? 'input-error' : ''}
-            placeholder="输入算式，例如 (3+5)*(9-7)"
-            aria-label="算式输入"
-            disabled={won}
-            autoFocus
-          />
-        </div>
-        <button type="button" className="primary-button" onClick={submit} disabled={won}>
-          <Send aria-hidden="true" />提交
-        </button>
-      </div>
-
-      {feedback ? (
-        <p className={`puzzle-feedback ${feedback.type}`} role={feedback.type === 'error' ? 'alert' : 'status'} aria-live="polite">
-          {feedback.message}
-        </p>
-      ) : null}
-
-      {hintText ? (
-        <p className="puzzle-hint-text"><Lightbulb aria-hidden="true" /> {hintText}</p>
-      ) : null}
-
-      <div className="game-actions">
-        <button type="button" className="ghost-button" onClick={showHint} disabled={won}>
-          <Lightbulb aria-hidden="true" />提示
-        </button>
-        <button type="button" className="ghost-button" onClick={() => restart()}>
-          <RotateCcw aria-hidden="true" />新一局
-        </button>
-      </div>
-
-      <div aria-live="polite">
-        {won ? (
-          <p className="game-result glass" role="status">
-            <Sparkles aria-hidden="true" /> 恭喜完成 24 点！用时 {formatTime(seconds)}，尝试 {moves} 次。
-          </p>
-        ) : null}
-      </div>
-    </div>
-  )
-}
-
-// ── Game definitions for the selector ────────────────────────────────
-
-type GameId = 'sudoku' | 'maze' | 'numberPuzzle' | 'memory' | 'sliding' | 'hanoi' | 'speedMath' | 'simon'
-
-interface GameDef {
-  id: GameId
-  icon: React.ReactNode
-  name: string
-  desc: string
-}
-
-const gameDefs: GameDef[] = [
-  { id: 'sudoku', icon: <Grid3x3 aria-hidden="true" />, name: '数独', desc: '经典数字填空' },
-  { id: 'maze', icon: <Puzzle aria-hidden="true" />, name: '迷宫', desc: '方向键移动寻路' },
-  { id: 'numberPuzzle', icon: <Calculator aria-hidden="true" />, name: '24 点', desc: '四数合算 24' },
-  { id: 'memory', icon: <Brain aria-hidden="true" />, name: '记忆翻牌', desc: '匹配数学恒等式' },
-  { id: 'sliding', icon: <Table2 aria-hidden="true" />, name: '滑块拼图', desc: '滑动数字排序' },
-  { id: 'hanoi', icon: <Puzzle aria-hidden="true" />, name: '汉诺塔', desc: '碟片移动挑战' },
-  { id: 'speedMath', icon: <Zap aria-hidden="true" />, name: '心算竞赛', desc: '限时速算得分' },
-  { id: 'simon', icon: <Gem aria-hidden="true" />, name: '西蒙记忆', desc: '颜色序列回忆' },
-]
-
-// ── Memory Game ───────────────────────────────────────────────────
-
-function MemoryGame() {
-  const [state, setState] = useState<MemoryState>(() => generateMemoryGame('medium'))
-  const [confetti, setConfetti] = useState(false)
-  const timer = useTimer(true)
-  const diffLabel = { easy: '易', medium: '中', hard: '难' }
-
-  const handleFlip = (cardId: number) => setState(s => flipMemoryCard(s, cardId))
-  const restart = (d: 'easy' | 'medium' | 'hard') => { setState(generateMemoryGame(d)); setConfetti(false) }
-  const won = state.pairsFound === state.totalPairs
-  if (won && !confetti) { setConfetti(true); saveSession({ game: 'memory', difficulty: 'medium', durationSeconds: timer.seconds, moves: state.moves, score: Math.max(1000 - timer.seconds * 2 - state.moves * 5, 100) }) }
 
   return (
     <div className="game-pane fade-in">
       <Confetti active={confetti} />
       <div className="game-toolbar">
-        <span className="game-timer">{formatTime(timer.seconds)}</span>
-        <span className="game-moves">步数: {state.moves}</span>
-        <span className="game-moves">{state.pairsFound}/{state.totalPairs} 对</span>
+        <span className="game-moves">{state.attempts}/6 次</span>
+        {state.message ? <span className={state.won ? 'form-success' : 'form-error'}>{state.message}</span> : null}
       </div>
-      <div style={{ display: 'grid', gridTemplateColumns: `repeat(${state.totalPairs > 6 ? 5 : 4}, 3.5rem)`, gap: '0.5rem' }}>
-        {state.cards.map(card => (
-          <button key={card.id} onClick={() => handleFlip(card.id)} disabled={card.matched || card.flipped}
-            style={{ height: '3.5rem', borderRadius: '0.5rem', border: '2px solid var(--mint-500)',
-              background: card.matched ? 'var(--mint-100)' : card.flipped ? '#fff' : 'var(--forest)',
-              color: card.flipped || card.matched ? 'var(--ink)' : 'transparent', fontSize: '0.7rem', fontWeight: 700,
-              cursor: card.matched ? 'default' : 'pointer', padding: '0.2rem' }}>
-            {card.flipped || card.matched ? card.content : '?'}
-          </button>
+      <div style={{ display: 'grid', gap: '0.3rem' }}>
+        {Array.from({ length: 6 }, (_, r) => {
+          const guess = state.guesses[r]
+          const eval_ = state.evaluations[r]
+          const isCurrent = r === state.guesses.length && !state.gameOver
+          return (
+            <div key={r} style={{ display: 'flex', gap: '0.3rem', justifyContent: 'center' }}>
+              {Array.from({ length: 5 }, (_, c) => {
+                const ch = isCurrent ? state.currentGuess[c] : guess ? guess[c] : ''
+                const bg = eval_ ? (eval_[c] === 'correct' ? 'var(--mint-500)' : eval_[c] === 'present' ? '#e2a840' : '#555') : undefined
+                const color = bg ? '#fff' : 'var(--ink)'
+                const border = isCurrent && c === state.currentGuess.length ? '2px solid var(--mint-500)' : '2px solid #ccc'
+                return (
+                  <span key={c} style={{ width: '3rem', height: '3rem', display: 'grid', placeItems: 'center',
+                    borderRadius: '0.4rem', background: bg || '#fff', color, border,
+                    fontSize: '1.3rem', fontWeight: 700, textTransform: 'uppercase' }}>
+                    {ch || ''}
+                  </span>
+                )
+              })}
+            </div>
+          )
+        })}
+      </div>
+      {/* Keyboard */}
+      <div style={{ display: 'grid', gap: '0.35rem', marginTop: '0.5rem' }}>
+        {QWERTY.map((row, ri) => (
+          <div key={ri} style={{ display: 'flex', gap: '0.2rem', justifyContent: 'center' }}>
+            {ri === 2 ? <button onClick={() => onKey('⏎')} style={kbStyle}>⏎</button> : null}
+            {row.split('').map(ch => (
+              <button key={ch} onClick={() => onKey(ch)} style={{ ...kbStyle, background: getColor(ch) || '#ddd', color: getColor(ch) ? '#fff' : '#333', minWidth: '1.8rem' }}>{ch}</button>
+            ))}
+            {ri === 2 ? <button onClick={() => onKey('⌫')} style={{ ...kbStyle, minWidth: '2.5rem' }}>⌫</button> : null}
+          </div>
         ))}
       </div>
-      {won ? <div className="game-result glass"><Sparkles size={16} /> 全部配对！{state.moves} 步完成</div> : null}
-      <div className="difficulty-row">
-        {(['easy', 'medium', 'hard'] as const).map(d =>
-          <button key={d} className={`difficulty-pill ${d === 'medium' ? 'active' : ''}`} onClick={() => restart(d)}>{diffLabel[d]}</button>
-        )}
-      </div>
+      <button className="ghost-button" onClick={restart}><RotateCcw size={14} /> 新单词</button>
     </div>
   )
 }
+
+const kbStyle: React.CSSProperties = { height: '2.5rem', borderRadius: '0.35rem', border: 'none', cursor: 'pointer', fontSize: '0.75rem', fontWeight: 700, padding: '0 0.4rem' }
 
 // ── Sliding Puzzle ────────────────────────────────────────────────
 
@@ -791,41 +570,53 @@ function SlidingGame() {
   )
 }
 
-// ── Hanoi ─────────────────────────────────────────────────────────
+// ── Minesweeper ───────────────────────────────────────────────────
 
-function HanoiGame() {
-  const [state, setState] = useState<HanoiState>(() => generateHanoi('medium'))
+function MinesweeperGame() {
+  const [diff, setDiff] = useState<MinesweeperDifficulty>('medium')
+  const [state, setState] = useState<MinesweeperState>(() => generateMinesweeper(diff))
   const [confetti, setConfetti] = useState(false)
-  const timer = useTimer(!isHanoiSolved(state))
-  const won = isHanoiSolved(state)
+  const timer = useTimer(state.started && !state.gameOver)
 
-  const handlePeg = (i: number) => setState(s => selectPeg(s, i))
-  const restart = () => { setState(generateHanoi('medium')); setConfetti(false) }
-  if (won && !confetti) { setConfetti(true); saveSession({ game: 'hanoi', difficulty: 'medium', durationSeconds: timer.seconds, moves: state.moves, score: Math.max(1000 - timer.seconds - state.moves * 5, 100) }) }
+  const handleCell = (r: number, c: number) => setState(s => {
+    const ns = revealCell(s, r, c)
+    if (ns.won && !confetti) setConfetti(true)
+    return ns
+  })
+  const handleRightClick = (r: number, c: number, e: React.MouseEvent) => {
+    e.preventDefault()
+    setState(s => toggleFlag(s, r, c))
+  }
+  const restart = (d?: MinesweeperDifficulty) => {
+    const nd = d || diff
+    setDiff(nd); setState(generateMinesweeper(nd)); setConfetti(false)
+  }
 
-  const COLORS = ['#58c99d', '#9ddfca', '#315949', '#2e9c74', '#78d5b1']
+  const isDark = (r: number, c: number) => (r + c) % 2 === 0
   return (
     <div className="game-pane fade-in">
       <Confetti active={confetti} />
       <div className="game-toolbar">
         <span className="game-timer">{formatTime(timer.seconds)}</span>
-        <span className="game-moves">步数: {state.moves} / 最少: {state.minMoves}</span>
+        <span className="game-moves">🚩{state.flagCount}/{state.totalMines}</span>
       </div>
-      <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
-        {state.pegs.map((peg, i) => (
-          <button key={i} onClick={() => handlePeg(i)}
-            style={{ width: '5rem', minHeight: '8rem', border: `3px solid ${state.selectedPeg === i ? 'var(--mint-500)' : 'var(--mint-300)'}`,
-              borderRadius: '0.5rem', background: state.selectedPeg === i ? 'var(--mint-100)' : 'rgba(255,255,255,0.5)',
-              display: 'flex', flexDirection: 'column-reverse', alignItems: 'center', padding: '0.3rem', gap: '0.15rem', cursor: 'pointer' }}>
-            {peg.map((disk, j) => (
-              <div key={j} style={{ height: '1.2rem', borderRadius: '0.3rem',
-                background: COLORS[disk.size % COLORS.length], width: `${1.5 + disk.size * 0.8}rem` }} />
-            ))}
+      <div style={{ display: 'grid', gridTemplateColumns: `repeat(${state.cols}, 1.8rem)`, gap: 0, border: '2px solid var(--forest)', borderRadius: '0.3rem', overflow: 'hidden' }}>
+        {state.grid.map((row, r) => row.map((cell, c) => (
+          <button key={`${r}-${c}`} onClick={() => handleCell(r, c)} onContextMenu={e => handleRightClick(r, c, e)}
+            style={{ width: '1.8rem', height: '1.8rem', border: '1px solid rgba(0,0,0,0.15)', padding: 0,
+              background: cell.revealed ? (isDark(r, c) ? '#e8e8e0' : '#f0f0e8') : (isDark(r, c) ? '#a0d0a8' : '#b0d8b8'),
+              color: cell.revealed ? ['','#2563eb','#16a34a','#dc2626','#1e40af','#7c3aed','#0d9488','#333','#666'][cell.adjacentMines] || '#333' : 'transparent',
+              fontSize: '0.85rem', fontWeight: 800, cursor: 'pointer' }}>
+            {cell.revealed ? (cell.isMine ? '💣' : cell.adjacentMines || '') : cell.flagged ? '🚩' : ''}
           </button>
+        )))}
+      </div>
+      {state.gameOver ? <div className={`game-result glass`}>{state.won ? <><Sparkles size={16} /> 扫雷成功！</> : '💥 踩雷了！'}</div> : null}
+      <div className="difficulty-row">
+        {(Object.keys(minesweeperDiffLabels) as MinesweeperDifficulty[]).map(d => (
+          <button key={d} className={`difficulty-pill ${d === diff ? 'active' : ''}`} onClick={() => restart(d)}>{minesweeperDiffLabels[d]}</button>
         ))}
       </div>
-      {won ? <div className="game-result glass"><Sparkles size={16} /> 完成！{state.moves} 步 (最优 {state.minMoves} 步)</div> : null}
-      <button className="ghost-button" onClick={restart}><RotateCcw size={14} /> 重置</button>
     </div>
   )
 }
@@ -886,60 +677,122 @@ function SpeedMathGame() {
   )
 }
 
-// ── Simon ─────────────────────────────────────────────────────────
+// ── Reaction ──────────────────────────────────────────────────────
 
-function SimonGame() {
-  const [state, setState] = useState<SimonState>(() => generateSimon())
-  const [confetti, setConfetti] = useState(false)
-  const [started, setStarted] = useState(false)
-
+function ReactionGame() {
+  const [state, setState] = useState<ReactionState>(() => generateReaction(5))
   useEffect(() => {
-    if (!state.isShowing || !started || state.gameOver) return
-    const timer = setInterval(() => setState(s => advanceShowing(s).state), 600)
-    return () => clearInterval(timer)
-  }, [state.isShowing, started, state.gameOver])
+    if (state.phase === 'ready') {
+      const delay = 1000 + Math.random() * 4000
+      const t = setTimeout(() => setState(s => goGreen(s)), delay)
+      return () => clearTimeout(t)
+    }
+  }, [state.phase])
 
-  const startRound = () => {
-    setStarted(true)
-    const nextState = startShowingSequence(advanceSequence(state))
-    setState(nextState)
+  const handleTap = () => {
+    if (state.phase === 'idle' || state.phase === 'go') setState(s => tap(s))
+    else if (state.phase === 'ready') setState(s => tap(s)) // false start
   }
-  const handlePress = (i: number) => {
-    if (state.isShowing || state.gameOver) return
-    const result = playerPress(state, i)
-    if (result.gameOver && !confetti && result.currentRound > 1) { setConfetti(true) }
-    setState(result)
-  }
-  const restart = () => { setState(generateSimon()); setStarted(false); setConfetti(false) }
 
-  const COLORS_SIMON = ['#e74c3c', '#3498db', '#2ecc71', '#f1c40f']
+  const restart = () => setState(generateReaction(5))
+
+  const bgColor = state.phase === 'go' ? '#2ecc71' : state.phase === 'ready' ? '#e74c3c' : state.phase === 'falseStart' ? '#e67e22' : '#3498db'
 
   return (
     <div className="game-pane fade-in">
-      <Confetti active={confetti} />
       <div className="game-toolbar">
-        <span className="game-moves">轮次: {state.currentRound}</span>
-        <span className="game-moves">得分: {state.score}</span>
-        {state.gameOver ? <span className="game-moves" style={{ color: '#b3394f' }}>游戏结束</span> : null}
+        <span className="game-moves">{state.round}/{state.totalRounds} 轮</span>
+        {state.bestTime < Infinity ? <span className="game-moves">最佳: {state.bestTime}ms</span> : null}
+        {state.avgTime > 0 ? <span className="game-moves">平均: {state.avgTime}ms</span> : null}
       </div>
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
-        {COLORS_SIMON.map((color, i) => (
-          <button key={i} onClick={() => handlePress(i)} disabled={state.isShowing || state.gameOver || !started}
-            style={{ width: '5rem', height: '5rem', borderRadius: '0.75rem', border: '3px solid transparent',
-              background: color, opacity: state.isShowing && state.showingIndex === i ? 0.4 : 1,
-              cursor: started && !state.isShowing && !state.gameOver ? 'pointer' : 'default',
-              boxShadow: state.isShowing && state.showingIndex === i ? `0 0 20px ${color}` : undefined,
-              transition: 'all 0.15s ease', transform: state.isShowing && state.showingIndex === i ? 'scale(0.9)' : undefined }} />
-        ))}
-      </div>
-      {!started || state.gameOver ? (
-        <button className="primary-button" onClick={state.gameOver ? restart : startRound}>{state.gameOver ? <><RotateCcw size={14} /> 重新开始</> : '开始'}</button>
-      ) : (
-        <p className="game-moves">{state.isShowing ? '观察序列…' : '重复序列'}</p>
-      )}
+      <button onClick={handleTap}
+        style={{ width: '12rem', height: '12rem', borderRadius: '50%', border: '4px solid rgba(255,255,255,0.3)',
+          background: bgColor, color: '#fff', fontSize: '1.4rem', fontWeight: 800, cursor: 'pointer',
+          transition: 'background 0.1s ease', boxShadow: `0 0 40px ${bgColor}66` }}>
+        {state.phase === 'idle' && !state.gameOver ? '点击开始' : state.phase === 'ready' ? '等待...' : state.phase === 'go' ? '快按！' : state.phase === 'falseStart' ? '太早！' : state.gameOver ? `${getReactionRating(state.avgTime)}\n${state.avgTime}ms` : ''}
+      </button>
+      {state.reactionTimes.length > 0 ? (
+        <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+          {state.reactionTimes.map((t, i) => (
+            <span key={i} style={{ padding: '0.2rem 0.5rem', borderRadius: '0.3rem', fontSize: '0.78rem',
+              background: t < 200 ? 'var(--mint-100)' : t < 300 ? '#fef3c7' : '#fce4ec', fontWeight: 700 }}>
+              {t}ms
+            </span>
+          ))}
+        </div>
+      ) : null}
+      {state.gameOver ? <button className="ghost-button" onClick={restart}><RotateCcw size={14} /> 重新测试</button> : null}
     </div>
   )
 }
+
+// ── Logic Grid ────────────────────────────────────────────────────
+
+function LogicGridGame() {
+  const [state, setState] = useState<LogicGridState>(() => generateLogicPuzzle('medium'))
+
+  const nextClue = () => setState(s => showNextClue(s))
+  const restart = () => setState(generateLogicPuzzle('medium'))
+
+  return (
+    <div className="game-pane fade-in">
+      <div className="game-toolbar">
+        <span className="game-moves">线索: {state.currentClue}/{state.clues.length}</span>
+        {state.mistakes > 0 ? <span className="game-moves" style={{ color: '#b3394f' }}>错误: {state.mistakes}</span> : null}
+      </div>
+      <div className="help-panel glass" style={{ maxWidth: '28rem', lineHeight: 1.6 }}>
+        {state.clues.slice(0, state.currentClue).map((clue, i) => (
+          <p key={i} style={{ margin: '0.3rem 0', fontSize: '0.85rem' }}>
+            <strong>{i + 1}.</strong> {clue.text}
+          </p>
+        ))}
+        {state.currentClue < state.clues.length ? (
+          <p style={{ margin: '0.3rem 0', color: 'var(--muted)' }}>
+            <strong>{state.currentClue + 1}.</strong> <em>点击"下一线索"揭晓</em>
+          </p>
+        ) : null}
+        {state.currentClue === 0 ? <p style={{ color: 'var(--muted)', fontSize: '0.82rem' }}>阅读线索，推理出每个属性组合。点击"下一线索"逐条查看。</p> : null}
+      </div>
+      {/* Category legend */}
+      <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center', fontSize: '0.78rem', fontWeight: 600 }}>
+        {state.categories.map((cat, i) => (
+          <div key={i}>
+            <span style={{ color: 'var(--muted)' }}>{['姓名','科目','成绩'][i]}: </span>
+            {cat.join(', ')}
+          </div>
+        ))}
+      </div>
+      <div className="game-actions">
+        {state.currentClue < state.clues.length ? (
+          <button className="primary-button" onClick={nextClue}><Lightbulb size={14} /> 下一线索</button>
+        ) : null}
+        <button className="ghost-button" onClick={restart}><RotateCcw size={14} /> 新谜题</button>
+      </div>
+    </div>
+  )
+}
+
+// ── Game definitions ──────────────────────────────────────────────
+
+type GameId = 'sudoku' | 'maze' | 'sliding' | 'speedMath' | 'wordle' | 'minesweeper' | 'reaction' | 'logicGrid'
+
+interface GameDef {
+  id: GameId
+  icon: React.ReactNode
+  name: string
+  desc: string
+}
+
+const gameDefs: GameDef[] = [
+  { id: 'sudoku', icon: <Grid3x3 aria-hidden="true" />, name: '数独', desc: '专家模式 · 24线索' },
+  { id: 'maze', icon: <Puzzle aria-hidden="true" />, name: '迷宫', desc: '最大25×25 · 迷雾' },
+  { id: 'sliding', icon: <Table2 aria-hidden="true" />, name: '滑块拼图', desc: '5×5高难挑战' },
+  { id: 'speedMath', icon: <Zap aria-hidden="true" />, name: '心算竞赛', desc: '指数·根号·分数' },
+  { id: 'wordle', icon: <Type aria-hidden="true" />, name: '猜词', desc: '6次机会猜5字母单词' },
+  { id: 'minesweeper', icon: <Bomb aria-hidden="true" />, name: '扫雷', desc: '16×30 · 99雷专家' },
+  { id: 'reaction', icon: <Timer aria-hidden="true" />, name: '反应测试', desc: '毫秒级速度测试' },
+  { id: 'logicGrid', icon: <Lightbulb aria-hidden="true" />, name: '逻辑谜题', desc: '爱因斯坦推理挑战' },
+]
 
 // ── GamesPage ────────────────────────────────────────────────────────
 
@@ -977,7 +830,7 @@ export function GamesPage() {
       </div>
 
       <div key={animKey} className="game-pane fade-in">
-        {game === 'sudoku' ? <SudokuGame /> : game === 'maze' ? <MazeGame /> : game === 'numberPuzzle' ? <NumberPuzzleGame /> : game === 'memory' ? <MemoryGame /> : game === 'sliding' ? <SlidingGame /> : game === 'hanoi' ? <HanoiGame /> : game === 'speedMath' ? <SpeedMathGame /> : <SimonGame />}
+        {game === 'sudoku' ? <SudokuGame /> : game === 'maze' ? <MazeGame /> : game === 'sliding' ? <SlidingGame /> : game === 'speedMath' ? <SpeedMathGame /> : game === 'wordle' ? <WordleGame /> : game === 'minesweeper' ? <MinesweeperGame /> : game === 'reaction' ? <ReactionGame /> : <LogicGridGame />}
       </div>
     </section>
   )

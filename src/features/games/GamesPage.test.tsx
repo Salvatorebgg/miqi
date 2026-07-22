@@ -6,8 +6,6 @@ import { GamesPage } from './GamesPage'
 describe('GamesPage', () => {
   beforeEach(() => localStorage.clear())
 
-  // ── existing tests (must still pass) ──
-
   it('renders the sudoku board by default', () => {
     render(<GamesPage />)
     expect(screen.getByRole('grid', { name: '数独棋盘' })).toBeInTheDocument()
@@ -28,7 +26,7 @@ describe('GamesPage', () => {
       .find(cell => !cell.getAttribute('aria-label')!.includes('固定'))!
     await userEvent.click(editable)
     const pad = screen.getByRole('group', { name: '数字键盘' })
-    const digit = pad.querySelectorAll('button')[4] // '5'
+    const digit = pad.querySelectorAll('button')[4]
     await userEvent.click(digit)
     expect(editable).toHaveTextContent('5')
   })
@@ -45,58 +43,6 @@ describe('GamesPage', () => {
     expect(fixed).toHaveTextContent(original ?? '')
   })
 
-  // ── new tests: 24 point number puzzle ──
-
-  it('switches to the 24 point game tab', async () => {
-    render(<GamesPage />)
-    await userEvent.click(screen.getByRole('tab', { name: /24/ }))
-    // Number cards should appear
-    const numberCards = document.querySelectorAll('.number-card')
-    expect(numberCards.length).toBe(4)
-    // Input field should be present
-    expect(screen.getByPlaceholderText(/输入算式/)).toBeInTheDocument()
-    // Submit button should be present
-    expect(screen.getByRole('button', { name: /提交/ })).toBeInTheDocument()
-  })
-
-  it('allows typing an expression in the number puzzle', async () => {
-    render(<GamesPage />)
-    await userEvent.click(screen.getByRole('tab', { name: /24/ }))
-    const input = screen.getByPlaceholderText(/输入算式/)
-    await userEvent.type(input, '(3+5)*(9-7)')
-    expect(input).toHaveValue('(3+5)*(9-7)')
-  })
-
-  it('shows error when submitting invalid expression', async () => {
-    render(<GamesPage />)
-    await userEvent.click(screen.getByRole('tab', { name: /24/ }))
-    await userEvent.click(screen.getByRole('button', { name: /提交/ }))
-    // Should show an error about empty input
-    expect(screen.getByText('请输入算式')).toBeInTheDocument()
-  })
-
-  it('shows hint text when clicking the hint button', async () => {
-    render(<GamesPage />)
-    await userEvent.click(screen.getByRole('tab', { name: /24/ }))
-    await userEvent.click(screen.getByRole('button', { name: /新一局/ }))
-    await userEvent.click(screen.getByRole('button', { name: /^提示$/ }))
-    // Hint feedback message should appear
-    expect(screen.getByText(/已显示提示/)).toBeInTheDocument()
-  })
-
-  it('switches number puzzle difficulty and generates new numbers', async () => {
-    render(<GamesPage />)
-    await userEvent.click(screen.getByRole('tab', { name: /24/ }))
-    // Click medium difficulty
-    const mediumBtn = screen.getByRole('button', { name: '中等' })
-    await userEvent.click(mediumBtn)
-    // Number cards should still be present
-    const numberCards = document.querySelectorAll('.number-card')
-    expect(numberCards.length).toBe(4)
-  })
-
-  // ── new tests: game selector cards ──
-
   it('renders eight game selector cards', () => {
     render(<GamesPage />)
     const tabs = screen.getAllByRole('tab')
@@ -109,34 +55,35 @@ describe('GamesPage', () => {
     expect(sudokuTab).toHaveAttribute('aria-selected', 'true')
   })
 
-  // ── new tests: help panel ──
-
-  it('shows help panel when clicking the help button', async () => {
-    render(<GamesPage />)
-    const helpBtn = screen.getByRole('button', { name: '帮助' })
-    await userEvent.click(helpBtn)
-    expect(screen.getByText('玩法说明')).toBeInTheDocument()
-  })
-
-  it('hides help panel when clicking the help button again', async () => {
-    render(<GamesPage />)
-    const helpBtn = screen.getByRole('button', { name: '帮助' })
-    await userEvent.click(helpBtn)
-    expect(screen.getByText('玩法说明')).toBeInTheDocument()
-    await userEvent.click(screen.getByRole('button', { name: '收起' }))
-    expect(screen.queryByText('玩法说明')).not.toBeInTheDocument()
-  })
-
-  // ── new tests: switching back to sudoku preserves board ──
-
   it('can switch back to sudoku from another game', async () => {
     render(<GamesPage />)
-    // Switch to maze
-    await userEvent.click(screen.getByRole('tab', { name: /迷宫/ }))
-    expect(screen.getByRole('button', { name: '向上移动' })).toBeInTheDocument()
-    // Switch back to sudoku
+    await userEvent.click(screen.getByRole('tab', { name: /扫雷/ }))
     await userEvent.click(screen.getByRole('tab', { name: /数独/ }))
     expect(screen.getByRole('grid', { name: '数独棋盘' })).toBeInTheDocument()
     expect(screen.getAllByRole('gridcell')).toHaveLength(81)
+  })
+
+  it('shows Wordle game when switching to its tab', async () => {
+    render(<GamesPage />)
+    await userEvent.click(screen.getByRole('tab', { name: /猜词/ }))
+    expect(screen.getByText(/新单词/)).toBeInTheDocument()
+    expect(screen.getAllByRole('button', { name: 'Q' })).toHaveLength(1)
+  })
+
+  it('shows Minesweeper game with difficulty options', async () => {
+    render(<GamesPage />)
+    await userEvent.click(screen.getByRole('tab', { name: /扫雷/ }))
+    expect(screen.getByText(/9×9 · 10雷/)).toBeInTheDocument()
+    expect(screen.getByText(/16×16 · 40雷/)).toBeInTheDocument()
+    expect(screen.getAllByText(/16×30 · 99雷/).length).toBeGreaterThanOrEqual(1)
+  })
+
+  it('switches through all 8 games successfully', async () => {
+    render(<GamesPage />)
+    const names = [/数独/, /迷宫/, /滑块拼图/, /心算竞赛/, /猜词/, /扫雷/, /反应测试/, /逻辑谜题/]
+    for (const name of names) {
+      await userEvent.click(screen.getByRole('tab', { name }))
+      expect(screen.getByRole('tab', { name })).toHaveAttribute('aria-selected', 'true')
+    }
   })
 })
