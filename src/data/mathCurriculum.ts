@@ -40,6 +40,9 @@ export interface MathLesson {
     fillArea?: boolean
     derivatives?: { x: number }[]
   }
+  commonMistakes?: { mistake: string; correction: string }[]
+  keyFormulas?: { name: string; formula: string; usage: string }[]
+  detailedNotes?: string[]
 }
 
 export interface MathTrack {
@@ -202,6 +205,23 @@ export const mathLessons: MathLesson[] = [
       title: '拖动滑块观察 y = x² 的图像（修改公式可画其他函数）',
       annotations: [{ x: 0, label: '最低点 (0,0)' }],
     },
+    detailedNotes: [
+      '函数本质上是一种"映射"（mapping）：定义域中的每一个输入 x，都有且仅有一个输出 y。函数的图像是定义域与值域之间的对应关系在坐标平面上的可视化表示。',
+      '函数的单调性描述了在某一区间内，函数值随自变量增大而"只增不减"或"只减不增"的规律。严格单调递增要求 x₁ < x₂ 时有 f(x₁) < f(x₂)；严格单调递减则是 f(x₁) > f(x₂)。注意单调性是针对区间而言的，一个函数可能在不同的区间具有不同的单调性。',
+      '奇偶性是描述函数图像对称性的重要概念。偶函数的图像关于 y 轴对称（如 y = x², y = cos x），奇函数的图像关于原点对称（如 y = x³, y = sin x）。判断奇偶性的前提是定义域关于原点对称，否则既非奇函数也非偶函数。',
+    ],
+    keyFormulas: [
+      { name: '函数三要素', formula: 'f: A \\to B,\\quad y = f(x)', usage: '理解函数的输入输出关系，判断一个对应关系是否是函数' },
+      { name: '单调递增条件', formula: 'x_1 < x_2 \\Rightarrow f(x_1) < f(x_2)', usage: '证明或判断函数在区间上的单调性，常用作差法或求导法' },
+      { name: '奇函数判定', formula: 'f(-x) = -f(x)', usage: '验证函数是否关于原点对称。注意必须先确认定义域关于原点对称' },
+      { name: '偶函数判定', formula: 'f(-x) = f(x)', usage: '验证函数是否关于 y 轴对称。偶函数的图像只需画出一半，另一半由对称得到' },
+      { name: '函数复合', formula: 'f(g(x)) \\neq g(f(x)) \\ \\text{（一般）}', usage: '先计算内层函数的值，再代入外层函数。复合顺序不可随意交换' },
+    ],
+    commonMistakes: [
+      { mistake: '把 f(x+1) 的表达式直接当作 f(x) 的表达式', correction: '需要先做变量替换。令 t = x + 1，求出 f(t) 后再把 t 换成 x。这是函数表示中最常见的错误之一' },
+      { mistake: '判断单调性时只看几个离散点而非整个区间', correction: '单调性是区间上的整体性质。几个点的大小关系不足以判定单调性，需要分析导数符号或用作差法严格证明' },
+      { mistake: '在判断奇偶性前忘记检查定义域是否关于原点对称', correction: '若定义域不对称（如 [0, +∞)），则函数既非奇函数也非偶函数，后续讨论无意义' },
+    ],
     resources: [
       { title: '【高中数学】函数的概念与性质', provider: 'Bilibili · 一数', url: 'https://search.bilibili.com/all?keyword=%E5%87%BD%E6%95%B0%E7%9A%84%E6%A6%B5%E5%BF%B5%E4%B8%8E%E6%80%A7%E8%B4%A8', kind: 'video' },
       { title: 'Functions — Khan Academy', provider: 'Khan Academy', url: 'https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions', kind: 'video' },
@@ -345,6 +365,23 @@ export const mathLessons: MathLesson[] = [
         { x: 3.142, label: 'π' },
       ],
     },
+    detailedNotes: [
+      '三角函数源于对周期现象的数学描述。单位圆定义法将三角比推广为任意角的三角函数：角 α 的终边与单位圆的交点坐标为 (cos α, sin α)。这种定义自然地将三角函数的定义域从锐角拓展到全体实数，同时也揭示了正弦、余弦的值域为 [-1, 1]。',
+      '弧度制是高等数学中处理三角函数的"自然语言"。1 弧度定义为长度等于半径的弧所对的圆心角。弧度的引入使得 sin x/x → 1（x → 0）这样的极限公式具有简洁的形式，也使得导数公式 (sin x)′ = cos x 干净无系数。',
+      '三角恒等变换的核心思路是"拆角"和"统一函数名"。遇到不同角度的三角表达式，尝试将角度统一为基本角；遇到不同函数名，尝试借助平方关系和商数关系统一为正弦或余弦。',
+    ],
+    keyFormulas: [
+      { name: '弧度与角度换算', formula: '\\pi\\ \\text{rad} = 180^\\circ', usage: '在弧度制与角度制之间切换，极限和求导中角度必须以弧度表示' },
+      { name: '平方恒等式', formula: '\\sin^2 x + \\cos^2 x = 1', usage: '已知正弦求余弦（或反之）时最常用的工具。注意根据所在象限决定正负号' },
+      { name: '和角公式（正弦）', formula: '\\sin(\\alpha \\pm \\beta) = \\sin\\alpha\\cos\\beta \\pm \\cos\\alpha\\sin\\beta', usage: '将复合角拆分为已知角的和差，用于化简和求值' },
+      { name: '和角公式（余弦）', formula: '\\cos(\\alpha \\pm \\beta) = \\cos\\alpha\\cos\\beta \\mp \\sin\\alpha\\sin\\beta', usage: '注意余弦和角公式中加号对应减号，这是初学者最易出错的地方' },
+      { name: '商数关系', formula: '\\tan x = \\frac{\\sin x}{\\cos x}', usage: '将正切、余切等统一为正弦和余弦处理' },
+    ],
+    commonMistakes: [
+      { mistake: '计算 sin(x+y) 时直接写成 sin x + sin y', correction: '三角函数的和角公式不是简单的分配律。sin(α+β) = sinα cosβ + cosα sinβ' },
+      { mistake: '从 sin²α+cos²α=1 推出 cos α=√(1−sin²α) 而忘记符号', correction: '开方时必须根据 α 所在象限确定正负号。如 α∈(π/2,π) 时 cos α 取负值' },
+      { mistake: '在微积分计算中使用角度制而非弧度制', correction: '求导和积分中三角函数的角度必须使用弧度制。lim(x→0) sin x/x = 1 仅在 x 以弧度表示时成立' },
+    ],
   },
   {
     id: 'bridge-algebra',
@@ -483,6 +520,23 @@ export const mathLessons: MathLesson[] = [
         { x: 2, label: '顶点 (2,1)' },
       ],
     },
+    detailedNotes: [
+      '因式分解是代数运算中最基本也最重要的技能之一。其本质是"逆用乘法分配律"：将多项式写成若干个因式的乘积。常见的分解方法包括提取公因式、十字相乘法、分组分解法和公式法（平方差、完全平方等）。',
+      '一元二次不等式的解法核心是"先求根，再看开口"。将不等式化为标准形式 ax²+bx+c > 0（或 < 0），解出对应方程的两个根，然后结合抛物线开口方向确定解集。口诀"大于取两边，小于取中间"仅适用于 a > 0 的情形。',
+      '均值不等式（AM-GM）是一类重要的最值工具。对正数而言，算术平均 ≥ 几何平均，等号成立当且仅当各数相等。运用均值不等式求最值时，关键是构造"和定"或"积定"的条件。',
+    ],
+    keyFormulas: [
+      { name: '配方法（一般形式）', formula: 'ax^2+bx+c = a(x+\\frac{b}{2a})^2 + \\frac{4ac-b^2}{4a}', usage: '求二次函数极值、顶点、最值，将一般式化为顶点式' },
+      { name: '平方差公式', formula: 'a^2 - b^2 = (a-b)(a+b)', usage: '常用的因式分解公式，也适用于含三角、对数的表达式' },
+      { name: '一元二次不等式（a>0）', formula: 'ax^2+bx+c > 0 \\Rightarrow x < x_1 \\text{ 或 } x > x_2', usage: '大于取两根之外。a<0 时两边同乘 −1 改变不等号方向' },
+      { name: '均值不等式（两数）', formula: '\\frac{a+b}{2} \\ge \\sqrt{ab}\\quad (a,b>0)', usage: '求 a+b 的最小值或 ab 的最大值，前提是正数且能构造定值' },
+      { name: '均值不等式（n 数）', formula: '\\frac{x_1+\\cdots+x_n}{n} \\ge \\sqrt[n]{x_1\\cdots x_n}', usage: '推广到 n 个正数的最值问题' },
+    ],
+    commonMistakes: [
+      { mistake: '解 x²−4>0 时写 −2<x<2', correction: '大于取两边。x²−4>0 ⇔ (x−2)(x+2)>0 ⇔ x<−2 或 x>2。开口向上的抛物线大于零在两根之外' },
+      { mistake: '对负数使用均值不等式', correction: '均值不等式仅适用于非负数。若题目中出现负数，需先判断是否能通过变形转化为正数问题' },
+      { mistake: '因式分解不彻底，留下还可以继续分解的因子', correction: '分解后检查每个因式是否还能继续分解。例如 x⁴−1 分解为 (x²+1)(x+1)(x−1) 才算彻底' },
+    ],
   },
 
   // ── 第二阶：预备微积分 ─────────────────────────────────────────────
@@ -611,6 +665,23 @@ export const mathLessons: MathLesson[] = [
     resources: [
       { title: '数列通项与求和专题', provider: 'Bilibili', url: 'https://search.bilibili.com/all?keyword=%E6%95%B0%E5%88%97%E9%80%9A%E9%A1%B9%E6%B1%82%E5%92%8C', kind: 'video' },
       { title: 'Sequences — Khan Academy', provider: 'Khan Academy', url: 'https://www.khanacademy.org/math/precalculus/x9e81a4f98389efdf:series', kind: 'video' },
+    ],
+    detailedNotes: [
+      '数列本质上是定义在正整数集上的函数 aₙ = f(n)。与连续函数不同，数列只在离散的整数点上取值。等差和等比数列是两种最基本的数列类型，分别对应线性增长和指数增长的离散形式。',
+      '数学归纳法是证明关于正整数命题的最强大工具。它由两步组成：(1) 验证基础情形 n=1（或某个初始值）成立；(2) 假设 n=k 时命题成立，推导 n=k+1 时也成立。两步缺一不可——没有第一步，多米诺骨牌不会开始倒下；没有第二步，骨牌不会传递。',
+      '递推数列（如 aₙ₊₁ = paₙ + q 型）的处理思路是"化为等比"或"找不动点"。对于形如 aₙ₊₁ = aₙ + f(n) 的累加型递推，可以通过逐项相加找到通项公式。',
+    ],
+    keyFormulas: [
+      { name: '等差数列通项', formula: 'a_n = a_1 + (n-1)d', usage: '已知首项 a₁ 和公差 d，求第 n 项；或由已知两项反求公差' },
+      { name: '等差数列求和', formula: 'S_n = \\frac{n(a_1 + a_n)}{2}', usage: '梯形公式的离散版：首尾相加乘项数除二' },
+      { name: '等比数列通项', formula: 'a_n = a_1 q^{n-1}', usage: '已知首项 a₁ 和公比 q，求第 n 项。注意 q=1 时退化为常数列' },
+      { name: '等比数列求和 (q≠1)', formula: 'S_n = a_1\\frac{1-q^n}{1-q}', usage: '利用"乘 q 相减"推导，注意分母不能为零' },
+      { name: '数学归纳法逻辑', formula: 'P(1) \\land [P(k) \\Rightarrow P(k+1)] \\Rightarrow \\forall n\\ P(n)', usage: '验证基础 + 归纳递推 = 对所有正整数成立' },
+    ],
+    commonMistakes: [
+      { mistake: '等比数列求和时分母写为 1−q 但实际 q>1 时代入公式结果正确但易混淆', correction: '使用 S_n = a₁(qⁿ−1)/(q−1) 与 S_n = a₁(1−qⁿ)/(1−q) 是等价的，选择哪个取决于 q>1 还是 q<1 便于计算' },
+      { mistake: '数学归纳法只做归纳步骤，忘记验证 n=1 的基础情形', correction: '没有基础情形（奠基），归纳推理就像悬在半空。必须确保第一步自身成立，后续的"推倒"才有意义' },
+      { mistake: '把递推式 aₙ₊₁ = 2aₙ + 1 直接写成 aₙ = 2ⁿ − 1 而不加验证', correction: '需要先观察模式或解特征方程。对于此类线性递推，可设 aₙ + c = 2(aₙ₋₁ + c)，解得 c = 1 后化为等比数列' },
     ],
   },
   {
@@ -1697,6 +1768,30 @@ export const mathLessons: MathLesson[] = [
         answer: 'a',
         solution: ['a·b = 2×1 + k×(−3) = 0 ⇒ k = 2/3。'],
       },
+      {
+        id: 'lv-ex6', topic: 'vectors', difficulty: 'basic', type: 'number',
+        prompt: 'a = (1, 2, 2)，求 |a|（模长，保留三位小数）。',
+        answer: 3, tolerance: 0.0001,
+        solution: ['|a| = √(1² + 2² + 2²) = √9 = 3。'],
+      },
+      {
+        id: 'lv-ex7', topic: 'vectors', difficulty: 'advanced', type: 'choice',
+        prompt: 'a = (1, 0)，b = (0, 1)，则 a 与 b 的夹角是？',
+        options: [
+          { id: 'a', label: '90°（π/2）' },
+          { id: 'b', label: '0°' },
+          { id: 'c', label: '45°（π/4）' },
+          { id: 'd', label: '180°（π）' },
+        ],
+        answer: 'a',
+        solution: ['a·b = 1×0 + 0×1 = 0，cosθ = 0/(1×1) = 0，θ = π/2 = 90°。'],
+      },
+      {
+        id: 'lv-ex8', topic: 'vectors', difficulty: 'advanced', type: 'number',
+        prompt: 'a = (3, 4)，b = (1, 2)，求 a 在 b 方向上的投影长度 a·b / |b|（保留三位小数）。',
+        answer: 4.919, tolerance: 0.001,
+        solution: ['a·b = 3×1 + 4×2 = 11。', '|b| = √(1 + 4) = √5 ≈ 2.236。', '投影长度 = 11 / 2.236 ≈ 4.919。'],
+      },
     ],
     quiz: [
       {
@@ -1801,6 +1896,30 @@ export const mathLessons: MathLesson[] = [
         answer: 'b',
         solution: ['A⁻¹ = (1/det A)·[[4,−2],[−3,1]]，元素 (1,2) 为 −2/(−2) = 1。'],
       },
+      {
+        id: 'lm-ex6', topic: 'matrices', difficulty: 'basic', type: 'number',
+        prompt: '矩阵 A = [[1,1],[0,1]]，B = [[1,0],[1,1]]，求 det(AB)。',
+        answer: 1, tolerance: 0.0001,
+        solution: ['det(AB) = det A × det B = 1 × 1 = 1。'],
+      },
+      {
+        id: 'lm-ex7', topic: 'matrices', difficulty: 'advanced', type: 'choice',
+        prompt: 'A = [[0,1],[1,0]] 表示什么线性变换？',
+        options: [
+          { id: 'a', label: '关于 y=x 的镜像反射' },
+          { id: 'b', label: '逆时针旋转 90°' },
+          { id: 'c', label: '沿 x 轴拉伸 2 倍' },
+          { id: 'd', label: 'x 和 y 都取相反数' },
+        ],
+        answer: 'a',
+        solution: ['A 作用在 (x, y) 上得 (y, x)，即交换两坐标，是关于直线 y=x 的镜像反射。'],
+      },
+      {
+        id: 'lm-ex8', topic: 'matrices', difficulty: 'advanced', type: 'number',
+        prompt: 'A = [[2,1],[1,2]]，求 (A²) 的迹 tr(A²)（即对角线元素之和）。',
+        answer: 10, tolerance: 0.0001,
+        solution: ['A² = [[2,1],[1,2]]×[[2,1],[1,2]] = [[5,4],[4,5]]。', 'tr(A²) = 5 + 5 = 10。'],
+      },
     ],
     quiz: [
       {
@@ -1904,6 +2023,30 @@ export const mathLessons: MathLesson[] = [
         ],
         answer: 'a',
         solution: ['特征值之积等于行列式：4×3 − 1×2 = 10。'],
+      },
+      {
+        id: 'le-ex6', topic: 'eigenvalues', difficulty: 'basic', type: 'number',
+        prompt: 'A = [[3,0],[0,3]] 的特征值是什么？写出较大的那个。',
+        answer: 3, tolerance: 0.0001,
+        solution: ['A = 3I 是纯量矩阵，其特征值就是 3（二重）。'],
+      },
+      {
+        id: 'le-ex7', topic: 'eigenvalues', difficulty: 'advanced', type: 'choice',
+        prompt: '若 A 可对角化且特征值为 2 和 −2，则 det A = ？',
+        options: [
+          { id: 'a', label: '−4' },
+          { id: 'b', label: '4' },
+          { id: 'c', label: '0' },
+          { id: 'd', label: '2' },
+        ],
+        answer: 'a',
+        solution: ['det A = 特征值之积 = 2 × (−2) = −4。'],
+      },
+      {
+        id: 'le-ex8', topic: 'eigenvalues', difficulty: 'advanced', type: 'number',
+        prompt: 'A = [[2,1],[1,2]]，求特征值 λ₁ = 1，λ₂ = 3。特征向量 v₂ 对应 λ₂=3，满足 (A−3I)v=0，求 v₂ 的一个分量（取 v₂ = (1, x)，求 x）。',
+        answer: 1, tolerance: 0.0001,
+        solution: ['A−3I = [[−1,1],[1,−1]]，解 (A−3I)(1,x)ᵀ = 0。', '第一行：−1·1 + 1·x = 0 ⇒ x = 1。', '故 v₂ = (1, 1) 是 λ₂=3 的特征向量。'],
       },
     ],
     quiz: [

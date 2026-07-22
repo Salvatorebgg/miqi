@@ -16,13 +16,16 @@ const renderLesson = (lessonId: string) =>
 describe('LessonPage', () => {
   beforeEach(() => localStorage.clear())
 
-  it('renders objectives, intuition, principles, examples, exercises, quiz, and resources', () => {
+  it('renders objectives, intuition, principles, detailed notes, formulas, examples, common mistakes, exercises, quiz, and resources', () => {
     renderLesson('bridge-functions')
     expect(screen.getByRole('heading', { name: '函数与图像' })).toBeInTheDocument()
     expect(screen.getByText('目标')).toBeInTheDocument()
     expect(screen.getByText('直觉')).toBeInTheDocument()
     expect(screen.getByText('原理')).toBeInTheDocument()
+    expect(screen.getByText('详细讲义')).toBeInTheDocument()
+    expect(screen.getByText('公式卡片')).toBeInTheDocument()
     expect(screen.getByText('例题')).toBeInTheDocument()
+    expect(screen.getByText('常见误区')).toBeInTheDocument()
     expect(screen.getByText('练习')).toBeInTheDocument()
     expect(screen.getByText('测验')).toBeInTheDocument()
     expect(screen.getByText('资料')).toBeInTheDocument()

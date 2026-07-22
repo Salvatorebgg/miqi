@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowRight, CheckCircle2, Circle, Lock } from 'lucide-react'
+import { ArrowRight, CheckCircle2, Circle } from 'lucide-react'
 import { lessonsForTrack, mathTracks } from '../../data/mathCurriculum'
 import { getRepository } from '../../lib/repositoryInstance'
 import { lessonCompletion } from './math'
@@ -15,17 +15,10 @@ export function MathPage() {
 
   const progressFor = (lessonId: string) => progress.find(item => item.lessonId === lessonId)
 
-  // A lesson is unlocked when all its prerequisites have completion >= 60.
-  const isUnlocked = (prerequisites: string[]): boolean =>
-    prerequisites.every(id => {
-      const record = progressFor(id)
-      return record ? lessonCompletion(record) >= 60 : false
-    })
-
-  // First unfinished, unlocked lesson across the ordered journey.
+  // First unfinished lesson across the ordered journey.
   const allLessons = mathTracks.flatMap(track => lessonsForTrack(track.id))
   const nextLesson =
-    allLessons.find(lesson => isUnlocked(lesson.prerequisites) && lessonCompletion(progressFor(lesson.id) ?? { read: false, exerciseScore: 0, quizScore: 0 }) < 100) ??
+    allLessons.find(lesson => lessonCompletion(progressFor(lesson.id) ?? { read: false, exerciseScore: 0, quizScore: 0 }) < 100) ??
     allLessons[0]
 
   return (
@@ -70,26 +63,17 @@ export function MathPage() {
                 const completion = lessonCompletion(
                   progressFor(lesson.id) ?? { read: false, exerciseScore: 0, quizScore: 0 },
                 )
-                const unlocked = isUnlocked(lesson.prerequisites)
                 return (
                   <li key={lesson.id}>
-                    {unlocked ? (
-                      <Link to={`/math/lesson/${lesson.id}`} className="lesson-row">
-                        {completion >= 100 ? (
-                          <CheckCircle2 className="lesson-status done" aria-label="已完成" />
-                        ) : (
-                          <Circle className="lesson-status" aria-hidden="true" />
-                        )}
-                        <span className="lesson-title">{lesson.title}</span>
-                        <span className="lesson-meta">{lesson.duration} 分钟 · {completion}%</span>
-                      </Link>
-                    ) : (
-                      <span className="lesson-row locked" aria-label={`${lesson.title}（需先完成前置课程）`}>
-                        <Lock className="lesson-status" aria-hidden="true" />
-                        <span className="lesson-title">{lesson.title}</span>
-                        <span className="lesson-meta">完成前置课程后解锁</span>
-                      </span>
-                    )}
+                    <Link to={`/math/lesson/${lesson.id}`} className="lesson-row">
+                      {completion >= 100 ? (
+                        <CheckCircle2 className="lesson-status done" aria-label="已完成" />
+                      ) : (
+                        <Circle className="lesson-status" aria-hidden="true" />
+                      )}
+                      <span className="lesson-title">{lesson.title}</span>
+                      <span className="lesson-meta">{lesson.duration} 分钟 · {completion}%</span>
+                    </Link>
                   </li>
                 )
               })}

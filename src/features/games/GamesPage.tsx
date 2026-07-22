@@ -4,8 +4,10 @@ import {
   ArrowLeft,
   ArrowRight,
   ArrowUp,
+  Brain,
   Calculator,
   Eraser,
+  Gem,
   Grid3x3,
   HelpCircle,
   Lightbulb,
@@ -13,8 +15,10 @@ import {
   RotateCcw,
   Send,
   Sparkles,
+  Table2,
   Trophy,
   Undo2,
+  Zap,
 } from 'lucide-react'
 import {
   difficultyClues,
@@ -36,6 +40,36 @@ import {
   type NumberPuzzle,
   type PuzzleDifficulty,
 } from './numberPuzzle'
+import {
+  generateMemoryGame,
+  flipCard as flipMemoryCard,
+  type MemoryState,
+} from './memory'
+import {
+  generateSlidingPuzzle,
+  moveTile,
+  type SlidingState,
+} from './slidingPuzzle'
+import {
+  generateHanoi,
+  selectPeg,
+  isHanoiSolved,
+  type HanoiState,
+} from './hanoi'
+import {
+  generateSpeedMath,
+  submitAnswer as submitSpeedMath,
+  tickTimer as tickSpeedMathTimer,
+  type SpeedMathState,
+} from './speedMath'
+import {
+  generateSimon,
+  advanceSequence,
+  startShowingSequence,
+  advanceShowing,
+  playerPress,
+  type SimonState,
+} from './simon'
 import { getRepository, LOCAL_USER_ID, newId } from '../../lib/repositoryInstance'
 import type { GameSession } from '../../types/domain'
 
@@ -661,7 +695,7 @@ function NumberPuzzleGame() {
 
 // ── Game definitions for the selector ────────────────────────────────
 
-type GameId = 'sudoku' | 'maze' | 'numberPuzzle'
+type GameId = 'sudoku' | 'maze' | 'numberPuzzle' | 'memory' | 'sliding' | 'hanoi' | 'speedMath' | 'simon'
 
 interface GameDef {
   id: GameId
@@ -673,8 +707,239 @@ interface GameDef {
 const gameDefs: GameDef[] = [
   { id: 'sudoku', icon: <Grid3x3 aria-hidden="true" />, name: '数独', desc: '经典数字填空' },
   { id: 'maze', icon: <Puzzle aria-hidden="true" />, name: '迷宫', desc: '方向键移动寻路' },
-  { id: 'numberPuzzle', icon: <Calculator aria-hidden="true" />, name: '24 点', desc: '四数组合算 24' },
+  { id: 'numberPuzzle', icon: <Calculator aria-hidden="true" />, name: '24 点', desc: '四数合算 24' },
+  { id: 'memory', icon: <Brain aria-hidden="true" />, name: '记忆翻牌', desc: '匹配数学恒等式' },
+  { id: 'sliding', icon: <Table2 aria-hidden="true" />, name: '滑块拼图', desc: '滑动数字排序' },
+  { id: 'hanoi', icon: <Puzzle aria-hidden="true" />, name: '汉诺塔', desc: '碟片移动挑战' },
+  { id: 'speedMath', icon: <Zap aria-hidden="true" />, name: '心算竞赛', desc: '限时速算得分' },
+  { id: 'simon', icon: <Gem aria-hidden="true" />, name: '西蒙记忆', desc: '颜色序列回忆' },
 ]
+
+// ── Memory Game ───────────────────────────────────────────────────
+
+function MemoryGame() {
+  const [state, setState] = useState<MemoryState>(() => generateMemoryGame('medium'))
+  const [confetti, setConfetti] = useState(false)
+  const timer = useTimer(true)
+  const diffLabel = { easy: '易', medium: '中', hard: '难' }
+
+  const handleFlip = (cardId: number) => setState(s => flipMemoryCard(s, cardId))
+  const restart = (d: 'easy' | 'medium' | 'hard') => { setState(generateMemoryGame(d)); setConfetti(false) }
+  const won = state.pairsFound === state.totalPairs
+  if (won && !confetti) { setConfetti(true); saveSession({ game: 'memory', difficulty: 'medium', durationSeconds: timer.seconds, moves: state.moves, score: Math.max(1000 - timer.seconds * 2 - state.moves * 5, 100) }) }
+
+  return (
+    <div className="game-pane fade-in">
+      <Confetti active={confetti} />
+      <div className="game-toolbar">
+        <span className="game-timer">{formatTime(timer.seconds)}</span>
+        <span className="game-moves">步数: {state.moves}</span>
+        <span className="game-moves">{state.pairsFound}/{state.totalPairs} 对</span>
+      </div>
+      <div style={{ display: 'grid', gridTemplateColumns: `repeat(${state.totalPairs > 6 ? 5 : 4}, 3.5rem)`, gap: '0.5rem' }}>
+        {state.cards.map(card => (
+          <button key={card.id} onClick={() => handleFlip(card.id)} disabled={card.matched || card.flipped}
+            style={{ height: '3.5rem', borderRadius: '0.5rem', border: '2px solid var(--mint-500)',
+              background: card.matched ? 'var(--mint-100)' : card.flipped ? '#fff' : 'var(--forest)',
+              color: card.flipped || card.matched ? 'var(--ink)' : 'transparent', fontSize: '0.7rem', fontWeight: 700,
+              cursor: card.matched ? 'default' : 'pointer', padding: '0.2rem' }}>
+            {card.flipped || card.matched ? card.content : '?'}
+          </button>
+        ))}
+      </div>
+      {won ? <div className="game-result glass"><Sparkles size={16} /> 全部配对！{state.moves} 步完成</div> : null}
+      <div className="difficulty-row">
+        {(['easy', 'medium', 'hard'] as const).map(d =>
+          <button key={d} className={`difficulty-pill ${d === 'medium' ? 'active' : ''}`} onClick={() => restart(d)}>{diffLabel[d]}</button>
+        )}
+      </div>
+    </div>
+  )
+}
+
+// ── Sliding Puzzle ────────────────────────────────────────────────
+
+function SlidingGame() {
+  const [state, setState] = useState<SlidingState>(() => generateSlidingPuzzle('medium'))
+  const [confetti, setConfetti] = useState(false)
+  const timer = useTimer(!state.solved)
+
+  const handleMove = (r: number, c: number) => setState(s => moveTile(s, r, c))
+  const restart = () => { setState(generateSlidingPuzzle('medium')); setConfetti(false) }
+  if (state.solved && !confetti) { setConfetti(true); saveSession({ game: 'sliding', difficulty: 'medium', durationSeconds: timer.seconds, moves: state.moves, score: Math.max(1000 - timer.seconds - state.moves * 5, 100) }) }
+
+  return (
+    <div className="game-pane fade-in">
+      <Confetti active={confetti} />
+      <div className="game-toolbar">
+        <span className="game-timer">{formatTime(timer.seconds)}</span>
+        <span className="game-moves">步数: {state.moves}</span>
+      </div>
+      <div style={{ display: 'grid', gridTemplateColumns: `repeat(${state.gridSize}, 3.5rem)`, gap: '0.3rem' }}>
+        {state.tiles.map((row, r) => row.map((val, c) => (
+          <button key={`${r}-${c}`} onClick={() => handleMove(r, c)}
+            style={{ height: '3.5rem', borderRadius: '0.5rem', border: '2px solid var(--mint-300)',
+              background: val === 0 ? 'transparent' : '#fff', color: val === 0 ? 'transparent' : 'var(--forest)',
+              fontSize: '1.2rem', fontWeight: 700, cursor: val === 0 ? 'default' : 'pointer' }}>
+            {val || ''}
+          </button>
+        )))}
+      </div>
+      {state.solved ? <div className="game-result glass"><Sparkles size={16} /> 拼图完成！{state.moves} 步</div> : null}
+      <button className="ghost-button" onClick={restart}><RotateCcw size={14} /> 新一局</button>
+    </div>
+  )
+}
+
+// ── Hanoi ─────────────────────────────────────────────────────────
+
+function HanoiGame() {
+  const [state, setState] = useState<HanoiState>(() => generateHanoi('medium'))
+  const [confetti, setConfetti] = useState(false)
+  const timer = useTimer(!isHanoiSolved(state))
+  const won = isHanoiSolved(state)
+
+  const handlePeg = (i: number) => setState(s => selectPeg(s, i))
+  const restart = () => { setState(generateHanoi('medium')); setConfetti(false) }
+  if (won && !confetti) { setConfetti(true); saveSession({ game: 'hanoi', difficulty: 'medium', durationSeconds: timer.seconds, moves: state.moves, score: Math.max(1000 - timer.seconds - state.moves * 5, 100) }) }
+
+  const COLORS = ['#58c99d', '#9ddfca', '#315949', '#2e9c74', '#78d5b1']
+  return (
+    <div className="game-pane fade-in">
+      <Confetti active={confetti} />
+      <div className="game-toolbar">
+        <span className="game-timer">{formatTime(timer.seconds)}</span>
+        <span className="game-moves">步数: {state.moves} / 最少: {state.minMoves}</span>
+      </div>
+      <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
+        {state.pegs.map((peg, i) => (
+          <button key={i} onClick={() => handlePeg(i)}
+            style={{ width: '5rem', minHeight: '8rem', border: `3px solid ${state.selectedPeg === i ? 'var(--mint-500)' : 'var(--mint-300)'}`,
+              borderRadius: '0.5rem', background: state.selectedPeg === i ? 'var(--mint-100)' : 'rgba(255,255,255,0.5)',
+              display: 'flex', flexDirection: 'column-reverse', alignItems: 'center', padding: '0.3rem', gap: '0.15rem', cursor: 'pointer' }}>
+            {peg.map((disk, j) => (
+              <div key={j} style={{ height: '1.2rem', borderRadius: '0.3rem',
+                background: COLORS[disk.size % COLORS.length], width: `${1.5 + disk.size * 0.8}rem` }} />
+            ))}
+          </button>
+        ))}
+      </div>
+      {won ? <div className="game-result glass"><Sparkles size={16} /> 完成！{state.moves} 步 (最优 {state.minMoves} 步)</div> : null}
+      <button className="ghost-button" onClick={restart}><RotateCcw size={14} /> 重置</button>
+    </div>
+  )
+}
+
+// ── Speed Math ────────────────────────────────────────────────────
+
+function SpeedMathGame() {
+  const [state, setState] = useState<SpeedMathState>(() => generateSpeedMath('medium'))
+  const [confetti, setConfetti] = useState(false)
+  const [input, setInput] = useState('')
+  const intervalRef = useRef<ReturnType<typeof setInterval>>()
+
+  useEffect(() => {
+    intervalRef.current = setInterval(() => setState(s => tickSpeedMathTimer(s)), 1000)
+    return () => clearInterval(intervalRef.current)
+  }, [])
+
+  useEffect(() => { if (state.gameOver) clearInterval(intervalRef.current) }, [state.gameOver])
+  if (state.gameOver && !confetti) { setConfetti(true); saveSession({ game: 'speedMath', difficulty: 'medium', durationSeconds: 60 - state.timeLeft, moves: state.correctCount, score: state.score }) }
+
+  const submit = () => {
+    setState(s => submitSpeedMath(s, Number(input)))
+    setInput('')
+  }
+  const restart = () => {
+    clearInterval(intervalRef.current)
+    const fresh = generateSpeedMath('medium')
+    setState(fresh)
+    setConfetti(false)
+    setInput('')
+    intervalRef.current = setInterval(() => setState(s => tickSpeedMathTimer(s)), 1000)
+  }
+
+  return (
+    <div className="game-pane fade-in">
+      <Confetti active={confetti} />
+      <div className="game-toolbar">
+        <span className="game-timer" style={{ color: state.timeLeft <= 10 ? '#b3394f' : undefined }}>{state.timeLeft}s</span>
+        <span className="game-moves">得分: {state.score}</span>
+        <span className="game-moves">连击: {state.combo}x</span>
+      </div>
+      {!state.gameOver ? (
+        <>
+          <h3 style={{ fontSize: '2rem', margin: '1rem 0', color: 'var(--forest)' }}>{state.question.expression} = ?</h3>
+          <div className="puzzle-input-row">
+            <div className="puzzle-input-wrap">
+              <input value={input} onChange={e => setInput(e.target.value)} onKeyDown={e => e.key === 'Enter' && submit()}
+                placeholder="输入答案" inputMode="decimal" />
+            </div>
+            <button className="primary-button" onClick={submit}><Send size={14} /></button>
+          </div>
+        </>
+      ) : (
+        <div className="game-result glass"><Sparkles size={16} /> 正确 {state.correctCount} 题，得分 {state.score}！</div>
+      )}
+      <button className="ghost-button" onClick={restart}><RotateCcw size={14} /> 重新开始</button>
+    </div>
+  )
+}
+
+// ── Simon ─────────────────────────────────────────────────────────
+
+function SimonGame() {
+  const [state, setState] = useState<SimonState>(() => generateSimon())
+  const [confetti, setConfetti] = useState(false)
+  const [started, setStarted] = useState(false)
+
+  useEffect(() => {
+    if (!state.isShowing || !started || state.gameOver) return
+    const timer = setInterval(() => setState(s => advanceShowing(s).state), 600)
+    return () => clearInterval(timer)
+  }, [state.isShowing, started, state.gameOver])
+
+  const startRound = () => {
+    setStarted(true)
+    const nextState = startShowingSequence(advanceSequence(state))
+    setState(nextState)
+  }
+  const handlePress = (i: number) => {
+    if (state.isShowing || state.gameOver) return
+    const result = playerPress(state, i)
+    if (result.gameOver && !confetti && result.currentRound > 1) { setConfetti(true) }
+    setState(result)
+  }
+  const restart = () => { setState(generateSimon()); setStarted(false); setConfetti(false) }
+
+  const COLORS_SIMON = ['#e74c3c', '#3498db', '#2ecc71', '#f1c40f']
+
+  return (
+    <div className="game-pane fade-in">
+      <Confetti active={confetti} />
+      <div className="game-toolbar">
+        <span className="game-moves">轮次: {state.currentRound}</span>
+        <span className="game-moves">得分: {state.score}</span>
+        {state.gameOver ? <span className="game-moves" style={{ color: '#b3394f' }}>游戏结束</span> : null}
+      </div>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
+        {COLORS_SIMON.map((color, i) => (
+          <button key={i} onClick={() => handlePress(i)} disabled={state.isShowing || state.gameOver || !started}
+            style={{ width: '5rem', height: '5rem', borderRadius: '0.75rem', border: '3px solid transparent',
+              background: color, opacity: state.isShowing && state.showingIndex === i ? 0.4 : 1,
+              cursor: started && !state.isShowing && !state.gameOver ? 'pointer' : 'default',
+              boxShadow: state.isShowing && state.showingIndex === i ? `0 0 20px ${color}` : undefined,
+              transition: 'all 0.15s ease', transform: state.isShowing && state.showingIndex === i ? 'scale(0.9)' : undefined }} />
+        ))}
+      </div>
+      {!started || state.gameOver ? (
+        <button className="primary-button" onClick={state.gameOver ? restart : startRound}>{state.gameOver ? <><RotateCcw size={14} /> 重新开始</> : '开始'}</button>
+      ) : (
+        <p className="game-moves">{state.isShowing ? '观察序列…' : '重复序列'}</p>
+      )}
+    </div>
+  )
+}
 
 // ── GamesPage ────────────────────────────────────────────────────────
 
@@ -712,7 +977,7 @@ export function GamesPage() {
       </div>
 
       <div key={animKey} className="game-pane fade-in">
-        {game === 'sudoku' ? <SudokuGame /> : game === 'maze' ? <MazeGame /> : <NumberPuzzleGame />}
+        {game === 'sudoku' ? <SudokuGame /> : game === 'maze' ? <MazeGame /> : game === 'numberPuzzle' ? <NumberPuzzleGame /> : game === 'memory' ? <MemoryGame /> : game === 'sliding' ? <SlidingGame /> : game === 'hanoi' ? <HanoiGame /> : game === 'speedMath' ? <SpeedMathGame /> : <SimonGame />}
       </div>
     </section>
   )

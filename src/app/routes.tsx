@@ -7,7 +7,6 @@ import { LessonPage } from '../features/math/LessonPage'
 import { EnglishPage } from '../features/english/EnglishPage'
 import { NewsPage } from '../features/news/NewsPage'
 import { GamesPage } from '../features/games/GamesPage'
-import { PlannerPage } from '../features/planner/PlannerPage'
 import { DashboardPage } from '../features/dashboard/DashboardPage'
 
 export function AppRoutes() {
@@ -20,7 +19,7 @@ export function AppRoutes() {
         <Route path="english" element={<EnglishPage />} />
         <Route path="news" element={<NewsPage />} />
         <Route path="games" element={<GamesPage />} />
-        <Route path="planner" element={<PlannerPage />} />
+        <Route path="planner" element={<Navigate to="/" replace />} />
         <Route path="account" element={<AccountPage />} />
         <Route path="auth" element={<AuthPage />} />
       </Route>

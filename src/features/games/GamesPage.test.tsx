@@ -97,10 +97,10 @@ describe('GamesPage', () => {
 
   // ── new tests: game selector cards ──
 
-  it('renders three game selector cards', () => {
+  it('renders eight game selector cards', () => {
     render(<GamesPage />)
     const tabs = screen.getAllByRole('tab')
-    expect(tabs).toHaveLength(3)
+    expect(tabs).toHaveLength(8)
   })
 
   it('highlights the active game card', () => {

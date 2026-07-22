@@ -399,7 +399,7 @@ a {
     bottom: max(0.5rem, env(safe-area-inset-bottom));
     left: 0.5rem;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 0.15rem;
     padding: 0.4rem;
     border-radius: 1.1rem;
@@ -1079,11 +1079,11 @@ a.lesson-row:hover { background: rgba(255, 255, 255, 0.75); }
 /* Sudoku grid */
 .sudoku-grid {
   display: grid;
-  grid-template-columns: repeat(9, 2.1rem);
-  grid-auto-rows: 2.1rem;
+  grid-template-columns: repeat(9, 3.2rem);
+  grid-auto-rows: 3.2rem;
   background: rgba(255, 255, 255, 0.50);
   border: 2px solid var(--forest);
-  border-radius: 0.5rem;
+  border-radius: 0.6rem;
   overflow: hidden;
 }
 
@@ -1093,7 +1093,7 @@ a.lesson-row:hover { background: rgba(255, 255, 255, 0.75); }
   border-bottom: 1px solid rgba(49, 89, 73, 0.20);
   background: transparent;
   font: inherit;
-  font-size: 0.95rem;
+  font-size: 1.25rem;
   font-weight: 600;
   color: #2b6b8f;
   cursor: pointer;
@@ -1107,9 +1107,9 @@ a.lesson-row:hover { background: rgba(255, 255, 255, 0.75); }
 
 .sudoku-pad {
   display: grid;
-  grid-template-columns: repeat(10, minmax(2rem, 1fr));
-  gap: 0.3rem;
-  max-width: 26rem;
+  grid-template-columns: repeat(10, minmax(2.8rem, 1fr));
+  gap: 0.4rem;
+  max-width: 34rem;
 }
 
 .game-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
@@ -1167,10 +1167,10 @@ a.lesson-row:hover { background: rgba(255, 255, 255, 0.75); }
 /* Maze grid */
 .maze-grid {
   display: grid;
-  grid-template-columns: repeat(10, 1.7rem);
-  grid-auto-rows: 1.7rem;
+  grid-template-columns: repeat(10, 2.4rem);
+  grid-auto-rows: 2.4rem;
   background: rgba(255, 255, 255, 0.35);
-  border-radius: 0.5rem;
+  border-radius: 0.6rem;
   outline: none;
 }
 
@@ -1209,12 +1209,12 @@ a.lesson-row:hover { background: rgba(255, 255, 255, 0.75); }
 .number-card {
   display: grid;
   place-items: center;
-  width: 3.2rem;
-  height: 4rem;
-  border-radius: 0.7rem;
+  width: 4rem;
+  height: 5rem;
+  border-radius: 0.8rem;
   background: linear-gradient(145deg, #ffffff, #eef9f3);
   border: 2px solid var(--mint-300);
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 750;
   color: var(--forest);
   box-shadow: 0 4px 14px rgba(88, 201, 157, 0.15);
@@ -1564,4 +1564,60 @@ body.reduce-motion *::after {
   margin-top: 0.5rem;
   font-size: 0.78rem;
   color: var(--muted);
+}
+
+[data-theme="dark"] {
+  --ice: #1a2a24;
+  --ink: #dff4ea;
+  --forest: #9ddfca;
+  --muted: #7aa894;
+  --glass: rgba(30, 50, 40, 0.75);
+  --glass-border: rgba(255,255,255,0.10);
+  --mint-100: rgba(88,201,157,0.12);
+  --mint-300: rgba(88,201,157,0.25);
+  --mint-500: #58c99d;
+  --shadow: 0 20px 60px rgba(0,0,0,0.25);
+}
+
+/* Focus timer */
+.focus-timer {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(49, 89, 73, 0.08);
+  display: grid;
+  gap: 0.6rem;
+  justify-items: center;
+}
+
+.focus-timer .progress-ring.large {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.focus-timer .progress-ring.large span {
+  width: 2.4rem;
+  height: 2.4rem;
+  font-size: 0.72rem;
+}
+
+.focus-label {
+  margin: 0;
+  font-size: 0.72rem;
+  font-weight: 650;
+  color: var(--muted);
+  text-align: center;
+}
+
+.focus-actions {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.focus-actions .primary-button,
+.focus-actions .ghost-button {
+  font-size: 0.72rem;
+  min-height: 30px;
+  padding: 0.35rem 0.75rem;
 }
