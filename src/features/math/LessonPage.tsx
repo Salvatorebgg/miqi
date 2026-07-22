@@ -213,6 +213,44 @@ export function LessonPage() {
         ))}
       </section>
 
+      {lesson.detailedNotes && lesson.detailedNotes.length > 0 ? (
+        <section aria-labelledby="notes-heading">
+          <h3 id="notes-heading">详细讲义</h3>
+          {lesson.detailedNotes.map((note, i) => (
+            <article key={i} className="principle-card glass">
+              <p>{note}</p>
+            </article>
+          ))}
+        </section>
+      ) : null}
+
+      {lesson.keyFormulas && lesson.keyFormulas.length > 0 ? (
+        <section aria-labelledby="formulas-heading">
+          <h3 id="formulas-heading">公式卡片</h3>
+          <div className="formula-grid">
+            {lesson.keyFormulas.map((item, i) => (
+              <article key={i} className="principle-card glass formula-card">
+                <h4>{item.name}</h4>
+                <Tex formula={item.formula} block />
+                <p className="formula-usage">{item.usage}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+      ) : null}
+
+      {lesson.commonMistakes && lesson.commonMistakes.length > 0 ? (
+        <section aria-labelledby="mistakes-heading">
+          <h3 id="mistakes-heading">常见误区</h3>
+          {lesson.commonMistakes.map((item, i) => (
+            <article key={i} className="principle-card glass mistake-card">
+              <p className="mistake-text"><strong>错误：</strong>{item.mistake}</p>
+              <p className="correction-text"><strong>纠正：</strong>{item.correction}</p>
+            </article>
+          ))}
+        </section>
+      ) : null}
+
       <div className="read-toggle">
         <button
           type="button"

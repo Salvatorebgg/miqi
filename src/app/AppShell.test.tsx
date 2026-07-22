@@ -10,12 +10,12 @@ it('renders the learning cockpit and every primary destination', () => {
   )
 
   expect(screen.getByRole('heading', { name: /学习中心/ })).toBeInTheDocument()
-  for (const label of ['数学', '英语', '资讯', '游戏', '规划']) {
+  for (const label of ['数学', '英语', '资讯', '游戏']) {
     expect(screen.getAllByRole('link', { name: new RegExp(label) }).length).toBeGreaterThan(0)
   }
 })
 
-it('keeps the planner reachable from the mobile navigation', () => {
+it('renders all 5 nav links in the mobile navigation', () => {
   render(
     <MemoryRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <AppShell />
@@ -23,5 +23,7 @@ it('keeps the planner reachable from the mobile navigation', () => {
   )
 
   const mobileNavigation = screen.getByRole('navigation', { name: '移动导航' })
-  expect(within(mobileNavigation).getByRole('link', { name: '规划' })).toHaveAttribute('href', '/planner')
+  for (const label of ['首页', '数学', '英语', '资讯', '游戏']) {
+    expect(within(mobileNavigation).getByRole('link', { name: label })).toBeInTheDocument()
+  }
 })

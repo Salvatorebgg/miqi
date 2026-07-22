@@ -1,11 +1,12 @@
 export interface Preferences {
   muted: boolean
   reduceMotion: boolean
+  theme: 'mint' | 'dark'
 }
 
 const KEY = 'miqi:preferences'
 
-const defaults: Preferences = { muted: false, reduceMotion: false }
+const defaults: Preferences = { muted: false, reduceMotion: false, theme: 'mint' }
 
 export function loadPreferences(storage: Storage = localStorage): Preferences {
   try {

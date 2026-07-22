@@ -1,20 +1,22 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import type { LucideIcon } from 'lucide-react'
 import {
-  CalendarDays,
   Calculator,
   Gamepad2,
   Home,
   Languages,
+  Moon,
   Newspaper,
   Sparkles,
+  Sun,
   UserRound,
 } from 'lucide-react'
 import { Link, NavLink, Outlet } from 'react-router-dom'
 import { installControlSounds } from '../lib/audio'
-import { loadPreferences } from '../lib/preferences'
+import { loadPreferences, savePreferences } from '../lib/preferences'
 import { SoundToggle } from '../components/ui/SoundToggle'
 import { SyncBadge } from '../components/ui/SyncBadge'
+import { FocusTimer } from '../features/dashboard/FocusTimer'
 
 type NavItem = {
   to: string
@@ -29,7 +31,6 @@ const navItems: NavItem[] = [
   { to: '/english', label: '英语', mobileLabel: '英语', icon: Languages },
   { to: '/news', label: '资讯', mobileLabel: '资讯', icon: Newspaper },
   { to: '/games', label: '游戏', mobileLabel: '游戏', icon: Gamepad2 },
-  { to: '/planner', label: '规划', mobileLabel: '规划', icon: CalendarDays },
 ]
 
 function DailySnapshot() {
@@ -50,8 +51,8 @@ function DailySnapshot() {
           <dd>7 天</dd>
         </div>
       </dl>
-      <Link className="snapshot-link" to="/planner">
-        查看规划
+      <Link className="snapshot-link" to="/">
+        查看概览
       </Link>
     </div>
   )
@@ -73,14 +74,25 @@ function MobileDock({ items }: { items: NavItem[] }) {
 export function AppShell() {
   useEffect(() => installControlSounds(), [])
 
+  const [theme, setTheme] = useState(() => loadPreferences().theme)
+
   useEffect(() => {
     const apply = () => {
-      document.body.classList.toggle('reduce-motion', loadPreferences().reduceMotion)
+      const prefs = loadPreferences()
+      document.body.classList.toggle('reduce-motion', prefs.reduceMotion)
+      document.documentElement.setAttribute('data-theme', prefs.theme)
+      setTheme(prefs.theme)
     }
     apply()
     window.addEventListener('miqi:preferences', apply)
     return () => window.removeEventListener('miqi:preferences', apply)
   }, [])
+
+  const toggleTheme = () => {
+    const prefs = loadPreferences()
+    const next = prefs.theme === 'mint' ? 'dark' : 'mint' as const
+    savePreferences({ ...prefs, theme: next })
+  }
 
   return (
     <div className="site-frame">
@@ -119,6 +131,9 @@ export function AppShell() {
               <h1>学习中心</h1>
             </div>
             <div className="topbar-actions">
+              <button type="button" className="sound-toggle" onClick={toggleTheme} aria-label={theme === 'dark' ? '切换到浅色主题' : '切换到暗色主题'}>
+                {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
+              </button>
               <SoundToggle />
               <Link className="account-link glass" to="/account" aria-label="打开个人中心">
                 <UserRound aria-hidden="true" />
@@ -130,6 +145,7 @@ export function AppShell() {
 
         <aside className="context-rail glass" aria-label="学习概览">
           <DailySnapshot />
+          <FocusTimer />
         </aside>
 
         <MobileDock items={navItems} />
