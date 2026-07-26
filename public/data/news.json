@@ -1,10 +1,120 @@
 {
-  "generatedAt": "2026-07-25T23:11:51.272Z",
+  "generatedAt": "2026-07-26T06:48:27.052Z",
   "stale": false,
   "items": [
     {
+      "id": "https://www.bbc.co.uk/sport/football/articles/cm2genrg72do?at_medium=rss&at_campaign=rss",
+      "title": "Gomez injury overshadows winning start for Iraola",
+      "summary": "Liverpool start life under Andoni Iraola with a 4-2 win over Sunderland thanks to goals from Kieran Morrison, Dominik Szoboszlai, Federico Chiesa and Lewis Koumas.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cm2genrg72do?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cm2genrg72do?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-07-26T06:25:17.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/07/26/cocoa-prices-chocolate-lindt-barry-callebaut-nestle.html",
+      "title": "Cocoa prices are easing. So why is chocolate still so expensive?",
+      "summary": "Chocolate firms look to win shoppers back with premium products and social media trends after poor weather conditions, tariffs, and the Iran war hit sales.",
+      "url": "https://www.cnbc.com/2026/07/26/cocoa-prices-chocolate-lindt-barry-callebaut-nestle.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/07/26/cocoa-prices-chocolate-lindt-barry-callebaut-nestle.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-07-26T05:00:01.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/c5y3rrd32jlo?at_medium=rss&at_campaign=rss",
+      "title": "Left-wing Democrats are on a winning run - but can they lure back crucial swing voters?",
+      "summary": "They have seen a flurry of recent wins, but Michigan will test their ability to win back working-class voters in crucial states.",
+      "url": "https://www.bbc.co.uk/news/articles/c5y3rrd32jlo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c5y3rrd32jlo?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-07-26T03:58:51.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/07/25/nx-s1-5907997/germany-lgbtq-event-dead-injured-pride",
+      "title": "One dead, several injured after vehicle plows through crowd at Berlin Pride event",
+      "summary": "Berlin police said they have identified a suspect who \"is known to police\" and has links to \"Islamist circles.\"",
+      "url": "https://www.npr.org/2026/07/25/nx-s1-5907997/germany-lgbtq-event-dead-injured-pride",
+      "canonicalUrl": "https://www.npr.org/2026/07/25/nx-s1-5907997/germany-lgbtq-event-dead-injured-pride",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-07-26T01:10:56.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/07/25/nx-s1-5907963/wildfires-spain-france-evacuations",
+      "title": "France and Spain fires force more than 200,000 to flee homes",
+      "summary": "At least one person has died in a fire in Spain, according to officials.",
+      "url": "https://www.npr.org/2026/07/25/nx-s1-5907963/wildfires-spain-france-evacuations",
+      "canonicalUrl": "https://www.npr.org/2026/07/25/nx-s1-5907963/wildfires-spain-france-evacuations",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-07-26T01:05:45.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/boxing/articles/c141x88p30ko?at_medium=rss&at_campaign=rss",
+      "title": "Joshua's emotional win over Prenga in pictures",
+      "summary": "A pictorial view as Anthony Joshua beats Kristian Prenga in dramatic fashion in Saudi Arabia to tee up a super-fight with Tyson Fury.",
+      "url": "https://www.bbc.co.uk/sport/boxing/articles/c141x88p30ko?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/boxing/articles/c141x88p30ko?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-07-26T00:58:10.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/cd7le0d53y2o?at_medium=rss&at_campaign=rss",
+      "title": "More than 300,000 flee wildfires in France and Spain",
+      "summary": "Spain's PM warns of \"complex hours\" ahead as authorities in France say they are far from bringing blazes burning near Bordeaux under control.",
+      "url": "https://www.bbc.co.uk/news/articles/cd7le0d53y2o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cd7le0d53y2o?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-07-26T00:54:06.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/czxqlkrlj7no?at_medium=rss&at_campaign=rss",
+      "title": "The notorious Cameroonian prison with its own record label",
+      "summary": "New Bell's inmates have become mini stars, recording songs and music videos from the confines of the jail.",
+      "url": "https://www.bbc.co.uk/news/articles/czxqlkrlj7no?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/czxqlkrlj7no?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-07-26T00:24:30.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/c20e5r1pvvdo?at_medium=rss&at_campaign=rss",
+      "title": "Would you pay $58.5m to live in this iconic New York building?",
+      "summary": "With its renovation nearly complete, the Flatiron is ready for its next - and most extravagant - phase of life.",
+      "url": "https://www.bbc.co.uk/news/articles/c20e5r1pvvdo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c20e5r1pvvdo?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-07-26T00:05:03.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/c935q2k6pxqo?at_medium=rss&at_campaign=rss",
+      "title": "What Love Island tells us about the changing face of dating",
+      "summary": "From women making the first move to shifting relationship dynamics, Love Island has become a window into Britain's evolving dating culture",
+      "url": "https://www.bbc.co.uk/news/articles/c935q2k6pxqo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c935q2k6pxqo?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-07-25T23:31:49.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/c33y3151vydo?at_medium=rss&at_campaign=rss",
+      "title": "Pizza, pasta, potatoes, protein - how Italian children became so overweight",
+      "summary": "The Mediterranean diet was a blueprint for healthy living, yet Italian children are among the most overweight in Europe according to WHO.",
+      "url": "https://www.bbc.co.uk/news/articles/c33y3151vydo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c33y3151vydo?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-07-25T23:30:07.000Z"
+    },
+    {
       "id": "https://www.bbc.co.uk/sport/boxing/articles/cgew1lrpgzro?at_medium=rss&at_campaign=rss",
-      "title": "Joshua knocked down twice in dramatic win",
+      "title": "Joshua knocked down twice as dramatic win sets up Fury fight",
       "summary": "Anthony Joshua suffers two knockdowns before recovering to dramatically stop Kristian Prenga in the second round.",
       "url": "https://www.bbc.co.uk/sport/boxing/articles/cgew1lrpgzro?at_medium=rss&at_campaign=rss",
       "canonicalUrl": "https://www.bbc.co.uk/sport/boxing/articles/cgew1lrpgzro?at_medium=rss&at_campaign=rss",
@@ -33,16 +143,6 @@
       "publishedAt": "2026-07-25T22:30:00.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/sport/articles/c36dw6dw8n8o?at_medium=rss&at_campaign=rss",
-      "title": "Quieter night in pool for Scots, but more finals reached",
-      "summary": "No podium places or rousing renditions of Flower of Scotland at Tollcross on Saturday night, but the home swimming ranks still have cause for cheer.",
-      "url": "https://www.bbc.co.uk/sport/articles/c36dw6dw8n8o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/articles/c36dw6dw8n8o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-07-25T22:22:35.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/sport/boxing/articles/clyqz0lq4keo?at_medium=rss&at_campaign=rss",
       "title": "Bloodied Kelly battles past Agyarko to retain title",
       "summary": "Briton Josh Kelly is forced to dig deep to retain his IBF light-middleweight world title in a points win against Ireland's Caoimhin Agyarko.",
@@ -54,12 +154,12 @@
     },
     {
       "id": "https://www.bbc.co.uk/news/articles/c3v0lyrndn7o?at_medium=rss&at_campaign=rss",
-      "title": "Smash hit: How Alex Eala's Wimbledon run made everyday Filipinos fall in love with tennis",
+      "title": "How Eala's Wimbledon run made Filipinos fall in love with tennis",
       "summary": "Formerly the preserve of the rich, tennis is booming in the basketball- and boxing-obsessed country.",
       "url": "https://www.bbc.co.uk/news/articles/c3v0lyrndn7o?at_medium=rss&at_campaign=rss",
       "canonicalUrl": "https://www.bbc.co.uk/news/articles/c3v0lyrndn7o?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
+      "source": "BBC Sport",
+      "category": "sports",
       "publishedAt": "2026-07-25T22:15:14.000Z"
     },
     {
@@ -393,16 +493,6 @@
       "publishedAt": "2026-07-25T17:15:09.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/news/articles/cd7le0d53y2o?at_medium=rss&at_campaign=rss",
-      "title": "More than 250,000 flee wildfires in France and Spain",
-      "summary": "Spain's PM warns of \"complex hours\" ahead as authorities in France say they are far from bringing blazes burning near Bordeaux under control.",
-      "url": "https://www.bbc.co.uk/news/articles/cd7le0d53y2o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cd7le0d53y2o?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-07-25T17:13:40.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/sport/cricket/videos/cd7lelx3njqo?at_medium=rss&at_campaign=rss",
       "title": "How two 'sensational' fielding moments win the match for Sunrisers",
       "summary": "Sunrisers Leeds players Matthew Revis and Abrar Ahmed produce two moments of brilliant fielding in the closing stages of their match against Southern Brave, saving eight runs, helping them secure a five-run win and their",
@@ -411,16 +501,6 @@
       "source": "BBC Sport",
       "category": "sports",
       "publishedAt": "2026-07-25T17:11:57.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/rugby-league/articles/ce3qlelq293o?at_medium=rss&at_campaign=rss",
-      "title": "Giants end 12-match losing run with win at York",
-      "summary": "Huddersfield Giants end a run of 12 successive Super League defeats with a spirited victory at York Knights.",
-      "url": "https://www.bbc.co.uk/sport/rugby-league/articles/ce3qlelq293o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/rugby-league/articles/ce3qlelq293o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-07-25T16:57:23.000Z"
     },
     {
       "id": "https://www.cnbc.com/2026/07/25/the-odyssey-imax-70mm-screenings.html",
@@ -444,7 +524,7 @@
     },
     {
       "id": "https://www.bbc.co.uk/sport/cycling/articles/c1d141dl2qro?at_medium=rss&at_campaign=rss",
-      "title": "Pogacar poised to join Tour greats with fifth title in Paris finale",
+      "title": "Paris awaits as Pogacar poised to join Tour greats with fifth title",
       "summary": "Tadej Pogacar is set to win a record-equalling fifth Tour de France after Ecuador's Richard Carapaz takes a dramatic stage 20 to Alpe d'Huez.",
       "url": "https://www.bbc.co.uk/sport/cycling/articles/c1d141dl2qro?at_medium=rss&at_campaign=rss",
       "canonicalUrl": "https://www.bbc.co.uk/sport/cycling/articles/c1d141dl2qro?at_medium=rss&at_campaign=rss",
@@ -601,16 +681,6 @@
       "source": "CNBC · Finance",
       "category": "finance",
       "publishedAt": "2026-07-25T13:30:01.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/articles/c07rgpxe51no?at_medium=rss&at_campaign=rss",
-      "title": "CJP protest: The youth movement India's Modi didn't see coming",
-      "summary": "The CJP protest began with exam paper leaks. It became India's biggest student movement in years - why?",
-      "url": "https://www.bbc.co.uk/news/articles/c07rgpxe51no?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c07rgpxe51no?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-07-25T13:26:04.000Z"
     },
     {
       "id": "https://www.sciencedaily.com/releases/2026/07/260724061444.htm",
@@ -793,16 +863,6 @@
       "publishedAt": "2026-07-25T10:26:41.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/news/articles/cd9w22n9e4go?at_medium=rss&at_campaign=rss",
-      "title": "Warning shot or publicity stunt - how worried should we be about the OpenAI hack?",
-      "summary": "Hugging Face said the hack was done at superhuman speed by an AI with little or no human guidance.",
-      "url": "https://www.bbc.co.uk/news/articles/cd9w22n9e4go?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cd9w22n9e4go?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-07-25T10:14:41.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/sport/football/articles/c0m7w21v2rzo?at_medium=rss&at_campaign=rss",
       "title": "Chelsea in talks for Villa set-piece guru MacPhee",
       "summary": "Chelsea are looking to sign highly regarded set-piece coach Austin MacPhee from Aston Villa but they face competition from Premier League and Saudi Pro League clubs.",
@@ -953,16 +1013,6 @@
       "publishedAt": "2026-07-25T05:29:38.000Z"
     },
     {
-      "id": "https://www.npr.org/2026/07/25/nx-s1-5907805/white-house-correspondents-dinner",
-      "title": "'The show must go on.' Trump makes jabs at rescheduled White House Correspondents' dinner",
-      "summary": "President Trump used his speech to attack his political opponents, members of the media and even members of his own cabinet.",
-      "url": "https://www.npr.org/2026/07/25/nx-s1-5907805/white-house-correspondents-dinner",
-      "canonicalUrl": "https://www.npr.org/2026/07/25/nx-s1-5907805/white-house-correspondents-dinner",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-07-25T05:04:00.000Z"
-    },
-    {
       "id": "https://www.sciencedaily.com/releases/2026/07/260724061434.htm",
       "title": "Venus may be tearing itself apart from within",
       "summary": "Scientists have uncovered new evidence that Venus may still be tearing itself apart from within. Advanced 3D simulations indicate that some of the planet&#039;s giant rift valleys formed relatively recently and could sti",
@@ -1023,16 +1073,6 @@
       "publishedAt": "2026-07-25T00:06:53.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/news/articles/ce85j65r4l2o?at_medium=rss&at_campaign=rss",
-      "title": "The pop band who went from playing for rescue dogs to selling out arenas",
-      "summary": "The group discuss disastrous gigs, putting political action into music and the meaning of \"queer pop\".",
-      "url": "https://www.bbc.co.uk/news/articles/ce85j65r4l2o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ce85j65r4l2o?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-07-24T23:01:10.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/news/articles/c1d1gz3n99ro?at_medium=rss&at_campaign=rss",
       "title": "Zelensky tries to fix crisis over removal of defence minister and counts the cost",
       "summary": "Protests have continued over Zelensky's decision to dismiss Mykhailo Fedorov, and some commentators believe he has been damaged politically.",
@@ -1051,16 +1091,6 @@
       "source": "BBC News · World",
       "category": "general",
       "publishedAt": "2026-07-24T22:49:59.000Z"
-    },
-    {
-      "id": "https://www.npr.org/2026/07/24/nx-s1-5906818/paramount-warner-bros-merger-pause-lawsuits",
-      "title": "Paramount says it will pause its Warner acquisition while legal challenges play out",
-      "summary": "A dozen states and the Writers Guild of America had challenged the merger.",
-      "url": "https://www.npr.org/2026/07/24/nx-s1-5906818/paramount-warner-bros-merger-pause-lawsuits",
-      "canonicalUrl": "https://www.npr.org/2026/07/24/nx-s1-5906818/paramount-warner-bros-merger-pause-lawsuits",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-07-24T22:26:21.000Z"
     },
     {
       "id": "https://www.cnbc.com/2026/07/24/tesla-tsla-spacex-spcx-stock-starship-test-flight-musk-bad-week.html",
@@ -1143,16 +1173,6 @@
       "publishedAt": "2026-07-24T20:07:36.000Z"
     },
     {
-      "id": "https://www.cnbc.com/2026/07/24/odds-that-the-straits-traffic-returns-to-normal-drop-on-kalshi.html",
-      "title": "Strait of Hormuz traffic may not return to normal for 12 months or more, according to prediction markets",
-      "summary": "Kalshi traders give less than 50% odds that the key maritime passageway will fully reopen by July 2027.",
-      "url": "https://www.cnbc.com/2026/07/24/odds-that-the-straits-traffic-returns-to-normal-drop-on-kalshi.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/07/24/odds-that-the-straits-traffic-returns-to-normal-drop-on-kalshi.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-07-24T19:58:24.000Z"
-    },
-    {
       "id": "https://www.cnbc.com/2026/07/24/cyclospora-cdc-says-outbreak-is-in-nine-states.html",
       "title": "CDC says massive cyclospora outbreak is now in nine states",
       "summary": "The four newly linked states — Illinois, Kansas, Oklahoma and Pennsylvania — join Indiana, Kentucky, Ohio, West Virginia and hard-hit Michigan.",
@@ -1181,26 +1201,6 @@
       "source": "CNBC · Finance",
       "category": "finance",
       "publishedAt": "2026-07-24T19:12:09.000Z"
-    },
-    {
-      "id": "https://www.theverge.com/ai-artificial-intelligence/970894/midjourney-co-star-acquisition",
-      "title": "Midjourney bought the astrology app Co-Star",
-      "summary": "Midjourney, which has gone from generating AI cat images to full-body ultrasound scans, is getting into a new field: astrology. The AI startup announced on Thursday that it has acquired the personalized astrology app Co-",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/970894/midjourney-co-star-acquisition",
-      "canonicalUrl": "https://www.theverge.com/ai-artificial-intelligence/970894/midjourney-co-star-acquisition",
-      "source": "The Verge · AI",
-      "category": "ai",
-      "publishedAt": "2026-07-24T19:06:58.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/07/24/us-iran-war-trump-hormuz-houthis.html",
-      "title": "Trump considers ‘massive attack’ on Iran; Pakistan reportedly seeks to restart stalled peace talks",
-      "summary": "The president told Axios he was considering an operation \"bigger than ever before\" before Reuters reported Pakistan is seeking to restart peace talks.",
-      "url": "https://www.cnbc.com/2026/07/24/us-iran-war-trump-hormuz-houthis.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/07/24/us-iran-war-trump-hormuz-houthis.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-07-24T18:48:10.000Z"
     }
   ],
   "sourceHealth": [
@@ -1231,7 +1231,7 @@
     {
       "name": "BBC Sport",
       "ok": true,
-      "itemCount": 80,
+      "itemCount": 81,
       "error": null
     },
     {
