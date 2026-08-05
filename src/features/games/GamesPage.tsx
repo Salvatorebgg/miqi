@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import {
   ArrowDown, ArrowLeft, ArrowRight, ArrowUp,
-  Bomb, Eraser,
+  Bomb, Eraser, Eye,
   Grid3x3, HelpCircle, Lightbulb, Puzzle,
   RotateCcw, Send, Sparkles, Table2,
   Timer, Trophy, Type, Undo2, Zap,
@@ -14,14 +14,14 @@ import {
   type SudokuBoard,
   type SudokuDifficulty,
 } from './sudoku'
-import { createMazeState, movePlayer, type Direction, type MazeState } from './maze'
+import { createMazeState, movePlayer, revealAllCells, mazeDifficultySizes, type Direction, type MazeState, type MazeDifficulty } from './maze'
 import {
   generateWordle, typeLetter, backspace, submitGuess,
   type WordleState,
 } from './wordle'
 import {
   generateSlidingPuzzle, moveTile,
-  type SlidingState,
+  type SlidingState, type SlidingDifficulty,
 } from './slidingPuzzle'
 import {
   generateMinesweeper, revealCell, toggleFlag,
@@ -29,7 +29,7 @@ import {
 } from './minesweeper'
 import {
   generateSpeedMath, submitAnswer as submitSpeedMath,
-  tickTimer as tickSpeedMathTimer, type SpeedMathState,
+  tickTimer as tickSpeedMathTimer, type SpeedMathState, type SpeedMathDifficulty,
 } from './speedMath'
 import {
   generateReaction, goGreen, tap, getReactionRating,
@@ -65,6 +65,30 @@ function useTimer(active: boolean): { seconds: number; reset: () => void } {
   }, [active])
   const reset = useCallback(() => setSeconds(0), [])
   return { seconds, reset }
+}
+
+/**
+ * Saves a game session and best score exactly once when `done` becomes true,
+ * and re-arms itself when `done` returns to false (new round).
+ */
+function useGameComplete(
+  done: boolean,
+  makeSession: () => Omit<GameSession, 'id' | 'userId' | 'createdAt'>,
+): void {
+  const savedRef = useRef(false)
+  const makeSessionRef = useRef(makeSession)
+  makeSessionRef.current = makeSession
+  useEffect(() => {
+    if (done) {
+      if (savedRef.current) return
+      savedRef.current = true
+      const session = makeSessionRef.current()
+      void saveSession(session)
+      saveHighScore(session.game, session.difficulty, session.score)
+    } else {
+      savedRef.current = false
+    }
+  }, [done])
 }
 
 // ── high scores ──────────────────────────────────────────────────────
@@ -144,6 +168,40 @@ function Confetti({ active }: ConfettiProps) {
     </div>
   )
 }
+
+// ── difficulty pills ─────────────────────────────────────────────────
+
+function DifficultyPills<T extends string>({
+  options,
+  current,
+  labels,
+  onChange,
+}: {
+  options: readonly T[]
+  current: T
+  labels: Record<T, string>
+  onChange: (difficulty: T) => void
+}) {
+  return (
+    <div className="difficulty-row">
+      {options.map(difficulty => (
+        <button
+          key={difficulty}
+          type="button"
+          className={`difficulty-pill ${current === difficulty ? 'active' : ''}`}
+          onClick={() => onChange(difficulty)}
+        >
+          {labels[difficulty]}
+        </button>
+      ))}
+    </div>
+  )
+}
+
+const sudokuLabels: Record<SudokuDifficulty, string> = { easy: '简单', medium: '中等', hard: '困难', expert: '专家' }
+const mazeLabels: Record<MazeDifficulty, string> = { easy: '简单', medium: '中等', hard: '困难', expert: '专家' }
+const speedMathLabels: Record<SpeedMathDifficulty, string> = { easy: '简单', medium: '中等', hard: '困难', expert: '专家' }
+const slidingLabels: Record<SlidingDifficulty, string> = { easy: '简单', medium: '中等', hard: '高难' }
 
 // ── Sudoku ───────────────────────────────────────────────────────────
 
@@ -235,18 +293,12 @@ function SudokuGame() {
       <Confetti active={confetti} />
 
       <div className="game-toolbar">
-        <div className="difficulty-row">
-          {(Object.keys(difficultyClues) as SudokuDifficulty[]).map(level => (
-            <button
-              key={level}
-              type="button"
-              className={`difficulty-pill ${difficulty === level ? 'active' : ''}`}
-              onClick={() => restart(level)}
-            >
-              {{ easy: '简单', medium: '中等', hard: '困难' }[level]}
-            </button>
-          ))}
-        </div>
+        <DifficultyPills
+          options={Object.keys(difficultyClues) as SudokuDifficulty[]}
+          current={difficulty}
+          labels={sudokuLabels}
+          onChange={restart}
+        />
         <span className="game-timer" role="timer" aria-label="用时">{formatTime(seconds)}</span>
         {highScore > 0 ? (
           <span className="game-high-score"><Trophy aria-hidden="true" />{highScore}</span>
@@ -333,33 +385,47 @@ function SudokuGame() {
 
 // ── Maze ─────────────────────────────────────────────────────────────
 
+const mazeCellSizes: Record<MazeDifficulty, string> = {
+  easy: '3rem',
+  medium: '2.4rem',
+  hard: '1.4rem',
+  expert: '1.15rem',
+}
+
 function MazeGame() {
-  const [state, setState] = useState<MazeState>(() => createMazeState(10, 10))
+  const [difficulty, setDifficulty] = useState<MazeDifficulty>('medium')
+  const [state, setState] = useState<MazeState>(() => {
+    const { width, height } = mazeDifficultySizes.medium
+    return createMazeState(width, height)
+  })
   const { seconds, reset: resetTimer } = useTimer(!state.won)
   const secondsRef = useRef(seconds)
   secondsRef.current = seconds
-  const savedRef = useRef(false)
-  const highScore = useHighScore('maze', '10x10')
+  const highScore = useHighScore('maze', difficulty)
   const [confetti, setConfetti] = useState(false)
   const [showHelp, setShowHelp] = useState(false)
+
+  useGameComplete(state.won, () => ({
+    game: 'maze',
+    difficulty,
+    durationSeconds: secondsRef.current,
+    moves: state.moves,
+    score: Math.max(1000 - state.moves * 5 - secondsRef.current, 100),
+  }))
+
+  // Lift the fog on the whole map when the maze is solved.
+  useEffect(() => {
+    if (state.won) setState(revealAllCells)
+  }, [state.won])
+
+  const { width, height } = mazeDifficultySizes[difficulty]
+  const cellSize = mazeCellSizes[difficulty]
 
   const move = useCallback(
     (direction: Direction) => {
       setState(current => {
         const next = movePlayer(current, direction)
-        if (next.won && !current.won && !savedRef.current) {
-          savedRef.current = true
-          setConfetti(true)
-          const score = Math.max(1000 - next.moves * 5 - secondsRef.current, 100)
-          void saveSession({
-            game: 'maze',
-            difficulty: '10x10',
-            durationSeconds: secondsRef.current,
-            moves: next.moves,
-            score,
-          })
-          saveHighScore('maze', '10x10', score)
-        }
+        if (next.won && !current.won) setConfetti(true)
         return next
       })
     },
@@ -383,11 +449,11 @@ function MazeGame() {
     return () => window.removeEventListener('keydown', onKey)
   }, [move])
 
-  const restart = () => {
-    savedRef.current = false
+  const restart = (nextDifficulty = difficulty) => {
     setConfetti(false)
     resetTimer()
-    setState(createMazeState(10, 10))
+    setDifficulty(nextDifficulty)
+    setState(createMazeState(mazeDifficultySizes[nextDifficulty].width, mazeDifficultySizes[nextDifficulty].height))
   }
 
   return (
@@ -395,6 +461,12 @@ function MazeGame() {
       <Confetti active={confetti} />
 
       <div className="game-toolbar">
+        <DifficultyPills
+          options={['easy', 'medium', 'hard', 'expert'] as const}
+          current={difficulty}
+          labels={mazeLabels}
+          onChange={restart}
+        />
         <span className="game-timer" role="timer" aria-label="用时">{formatTime(seconds)}</span>
         <span className="game-moves">步数：{state.moves}</span>
         {highScore > 0 ? (
@@ -403,7 +475,7 @@ function MazeGame() {
         <button type="button" className="help-toggle" onClick={() => setShowHelp(h => !h)} aria-expanded={showHelp}>
           <HelpCircle aria-hidden="true" />{showHelp ? '收起' : '帮助'}
         </button>
-        <button type="button" className="ghost-button" onClick={restart}>
+        <button type="button" className="ghost-button" onClick={() => restart()}>
           <RotateCcw aria-hidden="true" />新迷宫
         </button>
       </div>
@@ -413,9 +485,9 @@ function MazeGame() {
           <h4>玩法说明</h4>
           <ul>
             <li>使用方向键或 WASD 控制绿色圆点移动</li>
+            <li>迷雾会随移动点亮，未探索的区域是暗的</li>
             <li>从左上角起点到达右下角粉色终点即获胜</li>
-            <li>你也可以点击下方的方向按钮来移动</li>
-            <li>尝试用最少的步数完成迷宫挑战！</li>
+            <li>难度越大，迷宫越大、迷雾越浓</li>
           </ul>
         </div>
       ) : null}
@@ -423,8 +495,9 @@ function MazeGame() {
       <div
         className="maze-grid"
         role="application"
-        aria-label="迷宫：使用方向键或 WASD 移动，从左上方起点走到右下方终点"
+        aria-label={`迷宫：${width}×${height}，使用方向键或 WASD 移动，从左上方起点走到右下方终点`}
         tabIndex={0}
+        style={{ gridTemplateColumns: `repeat(${width}, ${cellSize})`, gridAutoRows: cellSize }}
       >
         {state.maze.map((row, y) =>
           row.map((cell, x) => (
@@ -436,7 +509,8 @@ function MazeGame() {
                 cell.walls.down ? 'wall-down' : '',
                 cell.walls.left ? 'wall-left' : '',
                 cell.walls.right ? 'wall-right' : '',
-                state.goal.x === x && state.goal.y === y ? 'goal' : '',
+                cell.revealed ? '' : 'hidden',
+                state.goal.x === x && state.goal.y === y && cell.revealed ? 'goal' : '',
               ].join(' ')}
             >
               {state.player.x === x && state.player.y === y ? <span className="maze-player" aria-hidden="true" /> : null}
@@ -465,13 +539,21 @@ function MazeGame() {
   )
 }
 
-// ── Number Puzzle (24-Point) ─────────────────────────────────────────
-// (replaced by Minesweeper + Wordle + Reaction + LogicGrid)
+// ── Wordle ───────────────────────────────────────────────────────────
 
 function WordleGame() {
   const [state, setState] = useState<WordleState>(() => generateWordle())
   const [confetti, setConfetti] = useState(false)
+  const highScore = useHighScore('wordle', 'classic')
   const QWERTY = ['QWERTYUIOP', 'ASDFGHJKL', 'ZXCVBNM']
+
+  useGameComplete(state.gameOver && state.won, () => ({
+    game: 'wordle',
+    difficulty: 'classic',
+    durationSeconds: state.attempts * 15,
+    moves: state.attempts,
+    score: Math.max((6 - state.attempts + 1) * 100, 100),
+  }))
 
   const onKey = (k: string) => setState(s => {
     if (k === '⌫') return backspace(s)
@@ -492,23 +574,23 @@ function WordleGame() {
       <div className="game-toolbar">
         <span className="game-moves">{state.attempts}/6 次</span>
         {state.message ? <span className={state.won ? 'form-success' : 'form-error'}>{state.message}</span> : null}
+        {highScore > 0 ? (
+          <span className="game-high-score"><Trophy aria-hidden="true" />{highScore}</span>
+        ) : null}
       </div>
-      <div style={{ display: 'grid', gap: '0.3rem' }}>
+      <div className="game-wordle-board">
         {Array.from({ length: 6 }, (_, r) => {
           const guess = state.guesses[r]
           const eval_ = state.evaluations[r]
           const isCurrent = r === state.guesses.length && !state.gameOver
           return (
-            <div key={r} style={{ display: 'flex', gap: '0.3rem', justifyContent: 'center' }}>
+            <div key={r} className="game-wordle-row">
               {Array.from({ length: 5 }, (_, c) => {
                 const ch = isCurrent ? state.currentGuess[c] : guess ? guess[c] : ''
-                const bg = eval_ ? (eval_[c] === 'correct' ? 'var(--mint-500)' : eval_[c] === 'present' ? '#e2a840' : '#555') : undefined
-                const color = bg ? '#fff' : 'var(--ink)'
-                const border = isCurrent && c === state.currentGuess.length ? '2px solid var(--mint-500)' : '2px solid #ccc'
+                const tone = eval_ ? (eval_[c] === 'correct' ? 'correct' : eval_[c] === 'present' ? 'present' : 'absent') : undefined
+                const isCursor = isCurrent && c === state.currentGuess.length
                 return (
-                  <span key={c} style={{ width: '3rem', height: '3rem', display: 'grid', placeItems: 'center',
-                    borderRadius: '0.4rem', background: bg || '#fff', color, border,
-                    fontSize: '1.3rem', fontWeight: 700, textTransform: 'uppercase' }}>
+                  <span key={c} className={['game-wordle-tile', tone ?? '', isCursor ? 'cursor' : ''].join(' ')}>
                     {ch || ''}
                   </span>
                 )
@@ -517,15 +599,14 @@ function WordleGame() {
           )
         })}
       </div>
-      {/* Keyboard */}
-      <div style={{ display: 'grid', gap: '0.35rem', marginTop: '0.5rem' }}>
+      <div className="game-wordle-kbd">
         {QWERTY.map((row, ri) => (
-          <div key={ri} style={{ display: 'flex', gap: '0.2rem', justifyContent: 'center' }}>
-            {ri === 2 ? <button onClick={() => onKey('⏎')} style={kbStyle}>⏎</button> : null}
+          <div key={ri} className="game-wordle-kbd-row">
+            {ri === 2 ? <button type="button" className="game-wordle-key wide" onClick={() => onKey('⏎')}>⏎</button> : null}
             {row.split('').map(ch => (
-              <button key={ch} onClick={() => onKey(ch)} style={{ ...kbStyle, background: getColor(ch) || '#ddd', color: getColor(ch) ? '#fff' : '#333', minWidth: '1.8rem' }}>{ch}</button>
+              <button key={ch} type="button" className="game-wordle-key" style={{ background: getColor(ch) || undefined }} onClick={() => onKey(ch)}>{ch}</button>
             ))}
-            {ri === 2 ? <button onClick={() => onKey('⌫')} style={{ ...kbStyle, minWidth: '2.5rem' }}>⌫</button> : null}
+            {ri === 2 ? <button type="button" className="game-wordle-key wide" onClick={() => onKey('⌫')}>⌫</button> : null}
           </div>
         ))}
       </div>
@@ -534,38 +615,63 @@ function WordleGame() {
   )
 }
 
-const kbStyle: React.CSSProperties = { height: '2.5rem', borderRadius: '0.35rem', border: 'none', cursor: 'pointer', fontSize: '0.75rem', fontWeight: 700, padding: '0 0.4rem' }
-
-// ── Sliding Puzzle ────────────────────────────────────────────────
+// ── Sliding Puzzle ───────────────────────────────────────────────────
 
 function SlidingGame() {
+  const [difficulty, setDifficulty] = useState<SlidingDifficulty>('medium')
   const [state, setState] = useState<SlidingState>(() => generateSlidingPuzzle('medium'))
   const [confetti, setConfetti] = useState(false)
   const timer = useTimer(!state.solved)
+  const secondsRef = useRef(timer.seconds)
+  secondsRef.current = timer.seconds
+  const highScore = useHighScore('sliding', difficulty)
+
+  useGameComplete(state.solved, () => ({
+    game: 'sliding',
+    difficulty,
+    durationSeconds: secondsRef.current,
+    moves: state.moves,
+    score: Math.max(1000 - secondsRef.current - state.moves * 5, 100),
+  }))
+
+  useEffect(() => {
+    if (state.solved) setConfetti(true)
+  }, [state.solved])
 
   const handleMove = (r: number, c: number) => setState(s => moveTile(s, r, c))
-  const restart = () => { setState(generateSlidingPuzzle('medium')); setConfetti(false) }
-  if (state.solved && !confetti) { setConfetti(true); saveSession({ game: 'sliding', difficulty: 'medium', durationSeconds: timer.seconds, moves: state.moves, score: Math.max(1000 - timer.seconds - state.moves * 5, 100) }) }
+  const restart = (nextDifficulty = difficulty) => {
+    setDifficulty(nextDifficulty)
+    setConfetti(false)
+    timer.reset()
+    setState(generateSlidingPuzzle(nextDifficulty))
+  }
 
   return (
     <div className="game-pane fade-in">
       <Confetti active={confetti} />
       <div className="game-toolbar">
+        <DifficultyPills
+          options={['easy', 'medium', 'hard'] as const}
+          current={difficulty}
+          labels={slidingLabels}
+          onChange={restart}
+        />
         <span className="game-timer">{formatTime(timer.seconds)}</span>
         <span className="game-moves">步数: {state.moves}</span>
+        {highScore > 0 ? (
+          <span className="game-high-score"><Trophy aria-hidden="true" />{highScore}</span>
+        ) : null}
       </div>
-      <div style={{ display: 'grid', gridTemplateColumns: `repeat(${state.gridSize}, 3.5rem)`, gap: '0.3rem' }}>
+      <div className="game-sliding-grid" style={{ gridTemplateColumns: `repeat(${state.gridSize}, 3.5rem)` }}>
         {state.tiles.map((row, r) => row.map((val, c) => (
-          <button key={`${r}-${c}`} onClick={() => handleMove(r, c)}
-            style={{ height: '3.5rem', borderRadius: '0.5rem', border: '2px solid var(--mint-300)',
-              background: val === 0 ? 'transparent' : '#fff', color: val === 0 ? 'transparent' : 'var(--forest)',
-              fontSize: '1.2rem', fontWeight: 700, cursor: val === 0 ? 'default' : 'pointer' }}>
+          <button key={`${r}-${c}`} type="button" onClick={() => handleMove(r, c)}
+            className={`game-sliding-tile ${val === 0 ? 'empty' : ''}`}>
             {val || ''}
           </button>
         )))}
       </div>
       {state.solved ? <div className="game-result glass"><Sparkles size={16} /> 拼图完成！{state.moves} 步</div> : null}
-      <button className="ghost-button" onClick={restart}><RotateCcw size={14} /> 新一局</button>
+      <button className="ghost-button" onClick={() => restart()}><RotateCcw size={14} /> 新一局</button>
     </div>
   )
 }
@@ -577,12 +683,23 @@ function MinesweeperGame() {
   const [state, setState] = useState<MinesweeperState>(() => generateMinesweeper(diff))
   const [confetti, setConfetti] = useState(false)
   const timer = useTimer(state.started && !state.gameOver)
+  const secondsRef = useRef(timer.seconds)
+  secondsRef.current = timer.seconds
+  const highScore = useHighScore('minesweeper', diff)
 
-  const handleCell = (r: number, c: number) => setState(s => {
-    const ns = revealCell(s, r, c)
-    if (ns.won && !confetti) setConfetti(true)
-    return ns
-  })
+  useGameComplete(state.won, () => ({
+    game: 'minesweeper',
+    difficulty: diff,
+    durationSeconds: secondsRef.current,
+    moves: state.revealedCount,
+    score: Math.max(1000 - secondsRef.current - state.revealedCount, 100),
+  }))
+
+  useEffect(() => {
+    if (state.won) setConfetti(true)
+  }, [state.won])
+
+  const handleCell = (r: number, c: number) => setState(s => revealCell(s, r, c))
   const handleRightClick = (r: number, c: number, e: React.MouseEvent) => {
     e.preventDefault()
     setState(s => toggleFlag(s, r, c))
@@ -599,24 +716,32 @@ function MinesweeperGame() {
       <div className="game-toolbar">
         <span className="game-timer">{formatTime(timer.seconds)}</span>
         <span className="game-moves">🚩{state.flagCount}/{state.totalMines}</span>
+        {highScore > 0 ? (
+          <span className="game-high-score"><Trophy aria-hidden="true" />{highScore}</span>
+        ) : null}
       </div>
-      <div style={{ display: 'grid', gridTemplateColumns: `repeat(${state.cols}, 1.8rem)`, gap: 0, border: '2px solid var(--forest)', borderRadius: '0.3rem', overflow: 'hidden' }}>
+      <div className="game-mine-grid" style={{ gridTemplateColumns: `repeat(${state.cols}, 1.8rem)` }}>
         {state.grid.map((row, r) => row.map((cell, c) => (
-          <button key={`${r}-${c}`} onClick={() => handleCell(r, c)} onContextMenu={e => handleRightClick(r, c, e)}
-            style={{ width: '1.8rem', height: '1.8rem', border: '1px solid rgba(0,0,0,0.15)', padding: 0,
-              background: cell.revealed ? (isDark(r, c) ? '#e8e8e0' : '#f0f0e8') : (isDark(r, c) ? '#a0d0a8' : '#b0d8b8'),
-              color: cell.revealed ? ['','#2563eb','#16a34a','#dc2626','#1e40af','#7c3aed','#0d9488','#333','#666'][cell.adjacentMines] || '#333' : 'transparent',
-              fontSize: '0.85rem', fontWeight: 800, cursor: 'pointer' }}>
+          <button key={`${r}-${c}`} type="button" onClick={() => handleCell(r, c)} onContextMenu={e => handleRightClick(r, c, e)}
+            className={[
+              'game-mine-cell',
+              cell.revealed ? 'revealed' : '',
+              isDark(r, c) ? 'shade-dark' : 'shade-light',
+              cell.isMine && cell.revealed ? 'mine' : '',
+            ].join(' ')}
+            data-adj={cell.revealed && !cell.isMine ? cell.adjacentMines : undefined}
+            aria-label={`${r + 1}行${c + 1}列${cell.revealed ? (cell.isMine ? '，地雷' : `，${cell.adjacentMines}个相邻雷`) : cell.flagged ? '，已插旗' : '，未翻开'}`}>
             {cell.revealed ? (cell.isMine ? '💣' : cell.adjacentMines || '') : cell.flagged ? '🚩' : ''}
           </button>
         )))}
       </div>
       {state.gameOver ? <div className={`game-result glass`}>{state.won ? <><Sparkles size={16} /> 扫雷成功！</> : '💥 踩雷了！'}</div> : null}
-      <div className="difficulty-row">
-        {(Object.keys(minesweeperDiffLabels) as MinesweeperDifficulty[]).map(d => (
-          <button key={d} className={`difficulty-pill ${d === diff ? 'active' : ''}`} onClick={() => restart(d)}>{minesweeperDiffLabels[d]}</button>
-        ))}
-      </div>
+      <DifficultyPills
+        options={Object.keys(minesweeperDiffLabels) as MinesweeperDifficulty[]}
+        current={diff}
+        labels={minesweeperDiffLabels}
+        onChange={restart}
+      />
     </div>
   )
 }
@@ -624,10 +749,12 @@ function MinesweeperGame() {
 // ── Speed Math ────────────────────────────────────────────────────
 
 function SpeedMathGame() {
+  const [difficulty, setDifficulty] = useState<SpeedMathDifficulty>('medium')
   const [state, setState] = useState<SpeedMathState>(() => generateSpeedMath('medium'))
   const [confetti, setConfetti] = useState(false)
   const [input, setInput] = useState('')
   const intervalRef = useRef<ReturnType<typeof setInterval>>()
+  const highScore = useHighScore('speedMath', difficulty)
 
   useEffect(() => {
     intervalRef.current = setInterval(() => setState(s => tickSpeedMathTimer(s)), 1000)
@@ -635,15 +762,26 @@ function SpeedMathGame() {
   }, [])
 
   useEffect(() => { if (state.gameOver) clearInterval(intervalRef.current) }, [state.gameOver])
-  if (state.gameOver && !confetti) { setConfetti(true); saveSession({ game: 'speedMath', difficulty: 'medium', durationSeconds: 60 - state.timeLeft, moves: state.correctCount, score: state.score }) }
+  useGameComplete(state.gameOver, () => ({
+    game: 'speedMath',
+    difficulty,
+    durationSeconds: state.totalTime - state.timeLeft,
+    moves: state.correctCount,
+    score: state.score,
+  }))
+
+  useEffect(() => {
+    if (state.gameOver) setConfetti(true)
+  }, [state.gameOver])
 
   const submit = () => {
     setState(s => submitSpeedMath(s, Number(input)))
     setInput('')
   }
-  const restart = () => {
+  const restart = (nextDifficulty = difficulty) => {
     clearInterval(intervalRef.current)
-    const fresh = generateSpeedMath('medium')
+    const fresh = generateSpeedMath(nextDifficulty)
+    setDifficulty(nextDifficulty)
     setState(fresh)
     setConfetti(false)
     setInput('')
@@ -654,9 +792,18 @@ function SpeedMathGame() {
     <div className="game-pane fade-in">
       <Confetti active={confetti} />
       <div className="game-toolbar">
+        <DifficultyPills
+          options={['easy', 'medium', 'hard', 'expert'] as const}
+          current={difficulty}
+          labels={speedMathLabels}
+          onChange={restart}
+        />
         <span className="game-timer" style={{ color: state.timeLeft <= 10 ? '#b3394f' : undefined }}>{state.timeLeft}s</span>
         <span className="game-moves">得分: {state.score}</span>
         <span className="game-moves">连击: {state.combo}x</span>
+        {highScore > 0 ? (
+          <span className="game-high-score"><Trophy aria-hidden="true" />{highScore}</span>
+        ) : null}
       </div>
       {!state.gameOver ? (
         <>
@@ -672,7 +819,7 @@ function SpeedMathGame() {
       ) : (
         <div className="game-result glass"><Sparkles size={16} /> 正确 {state.correctCount} 题，得分 {state.score}！</div>
       )}
-      <button className="ghost-button" onClick={restart}><RotateCcw size={14} /> 重新开始</button>
+      <button className="ghost-button" onClick={() => restart()}><RotateCcw size={14} /> 重新开始</button>
     </div>
   )
 }
@@ -681,6 +828,17 @@ function SpeedMathGame() {
 
 function ReactionGame() {
   const [state, setState] = useState<ReactionState>(() => generateReaction(5))
+  const [confetti, setConfetti] = useState(false)
+  const highScore = useHighScore('reaction', 'classic')
+
+  useGameComplete(state.gameOver, () => ({
+    game: 'reaction',
+    difficulty: 'classic',
+    durationSeconds: Math.round((state.reactionTimes.reduce((a, b) => a + b, 0)) / 1000),
+    moves: state.reactionTimes.length,
+    score: Math.round(Math.max(0, 1000 - state.avgTime)),
+  }))
+
   useEffect(() => {
     if (state.phase === 'ready') {
       const delay = 1000 + Math.random() * 4000
@@ -688,6 +846,10 @@ function ReactionGame() {
       return () => clearTimeout(t)
     }
   }, [state.phase])
+
+  useEffect(() => {
+    if (state.gameOver) setConfetti(true)
+  }, [state.gameOver])
 
   const handleTap = () => {
     if (state.phase === 'idle' || state.phase === 'go') setState(s => tap(s))
@@ -700,22 +862,22 @@ function ReactionGame() {
 
   return (
     <div className="game-pane fade-in">
+      <Confetti active={confetti} />
       <div className="game-toolbar">
         <span className="game-moves">{state.round}/{state.totalRounds} 轮</span>
         {state.bestTime < Infinity ? <span className="game-moves">最佳: {state.bestTime}ms</span> : null}
         {state.avgTime > 0 ? <span className="game-moves">平均: {state.avgTime}ms</span> : null}
+        {highScore > 0 ? (
+          <span className="game-high-score"><Trophy aria-hidden="true" />{highScore}</span>
+        ) : null}
       </div>
-      <button onClick={handleTap}
-        style={{ width: '12rem', height: '12rem', borderRadius: '50%', border: '4px solid rgba(255,255,255,0.3)',
-          background: bgColor, color: '#fff', fontSize: '1.4rem', fontWeight: 800, cursor: 'pointer',
-          transition: 'background 0.1s ease', boxShadow: `0 0 40px ${bgColor}66` }}>
+      <button type="button" onClick={handleTap} className="game-reaction-btn" style={{ background: bgColor, boxShadow: `0 0 40px ${bgColor}66` }}>
         {state.phase === 'idle' && !state.gameOver ? '点击开始' : state.phase === 'ready' ? '等待...' : state.phase === 'go' ? '快按！' : state.phase === 'falseStart' ? '太早！' : state.gameOver ? `${getReactionRating(state.avgTime)}\n${state.avgTime}ms` : ''}
       </button>
       {state.reactionTimes.length > 0 ? (
-        <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+        <div className="game-reaction-chips">
           {state.reactionTimes.map((t, i) => (
-            <span key={i} style={{ padding: '0.2rem 0.5rem', borderRadius: '0.3rem', fontSize: '0.78rem',
-              background: t < 200 ? 'var(--mint-100)' : t < 300 ? '#fef3c7' : '#fce4ec', fontWeight: 700 }}>
+            <span key={i} className="game-reaction-chip" data-slow={t >= 300}>
               {t}ms
             </span>
           ))}
@@ -730,17 +892,34 @@ function ReactionGame() {
 
 function LogicGridGame() {
   const [state, setState] = useState<LogicGridState>(() => generateLogicPuzzle('medium'))
+  const [showAnswer, setShowAnswer] = useState(false)
+  const highScore = useHighScore('logicGrid', 'classic')
 
   const nextClue = () => setState(s => showNextClue(s))
-  const restart = () => setState(generateLogicPuzzle('medium'))
+  const restart = () => { setState(generateLogicPuzzle('medium')); setShowAnswer(false) }
+  const revealAnswer = () => {
+    setShowAnswer(true)
+    const score = Math.max(1000 - (state.mistakes * 200 + (state.clues.length - state.currentClue) * 100), 100)
+    void saveSession({
+      game: 'logicGrid',
+      difficulty: 'classic',
+      durationSeconds: 0,
+      moves: state.currentClue,
+      score,
+    })
+    saveHighScore('logicGrid', 'classic', score)
+  }
 
   return (
     <div className="game-pane fade-in">
       <div className="game-toolbar">
         <span className="game-moves">线索: {state.currentClue}/{state.clues.length}</span>
         {state.mistakes > 0 ? <span className="game-moves" style={{ color: '#b3394f' }}>错误: {state.mistakes}</span> : null}
+        {highScore > 0 ? (
+          <span className="game-high-score"><Trophy aria-hidden="true" />{highScore}</span>
+        ) : null}
       </div>
-      <div className="help-panel glass" style={{ maxWidth: '28rem', lineHeight: 1.6 }}>
+      <div className="help-panel glass game-logic-clues" style={{ maxWidth: '28rem', lineHeight: 1.6 }}>
         {state.clues.slice(0, state.currentClue).map((clue, i) => (
           <p key={i} style={{ margin: '0.3rem 0', fontSize: '0.85rem' }}>
             <strong>{i + 1}.</strong> {clue.text}
@@ -753,19 +932,27 @@ function LogicGridGame() {
         ) : null}
         {state.currentClue === 0 ? <p style={{ color: 'var(--muted)', fontSize: '0.82rem' }}>阅读线索，推理出每个属性组合。点击"下一线索"逐条查看。</p> : null}
       </div>
-      {/* Category legend */}
-      <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center', fontSize: '0.78rem', fontWeight: 600 }}>
+      <div className="game-logic-legend">
         {state.categories.map((cat, i) => (
           <div key={i}>
-            <span style={{ color: 'var(--muted)' }}>{['姓名','科目','成绩'][i]}: </span>
+            <span className="game-logic-cat">{['姓名', '科目', '成绩'][i]}: </span>
             {cat.join(', ')}
           </div>
         ))}
       </div>
+      {showAnswer ? (
+        <div className="game-logic-solution">
+          <h4>参考答案</h4>
+          {state.solution.map((row, i) => (
+            <p key={i}>{row.map((item, cat) => `${['姓名', '科目', '成绩'][cat]}：${state.categories[cat][item]}`).join(' · ')}</p>
+          ))}
+        </div>
+      ) : null}
       <div className="game-actions">
         {state.currentClue < state.clues.length ? (
           <button className="primary-button" onClick={nextClue}><Lightbulb size={14} /> 下一线索</button>
         ) : null}
+        <button className="ghost-button" onClick={revealAnswer} disabled={showAnswer}><Eye size={14} /> {showAnswer ? '已查看答案' : '查看答案'}</button>
         <button className="ghost-button" onClick={restart}><RotateCcw size={14} /> 新谜题</button>
       </div>
     </div>
@@ -785,8 +972,8 @@ interface GameDef {
 
 const gameDefs: GameDef[] = [
   { id: 'sudoku', icon: <Grid3x3 aria-hidden="true" />, name: '数独', desc: '专家模式 · 24线索' },
-  { id: 'maze', icon: <Puzzle aria-hidden="true" />, name: '迷宫', desc: '最大25×25 · 迷雾' },
-  { id: 'sliding', icon: <Table2 aria-hidden="true" />, name: '滑块拼图', desc: '5×5高难挑战' },
+  { id: 'maze', icon: <Puzzle aria-hidden="true" />, name: '迷宫', desc: '迷雾探索 · 最大25×25' },
+  { id: 'sliding', icon: <Table2 aria-hidden="true" />, name: '滑块拼图', desc: '3×3到5×5 · 高难挑战' },
   { id: 'speedMath', icon: <Zap aria-hidden="true" />, name: '心算竞赛', desc: '指数·根号·分数' },
   { id: 'wordle', icon: <Type aria-hidden="true" />, name: '猜词', desc: '6次机会猜5字母单词' },
   { id: 'minesweeper', icon: <Bomb aria-hidden="true" />, name: '扫雷', desc: '16×30 · 99雷专家' },

@@ -19,6 +19,8 @@ export interface LogicGridState {
   grid: boolean[][][][] // grid[catA][itemA][catB][itemB] = true if match is possible
   clues: LogicClue[]
   currentClue: number // index of current clue being shown
+  /** One assignment row per person: [cat0 item, cat1 item, cat2 item]. */
+  solution: number[][]
   score: number
   difficulty: LogicDifficulty
   startedAt: number
@@ -95,6 +97,7 @@ export function generateLogicPuzzle(difficulty: LogicDifficulty): LogicGridState
     grid,
     clues: puzzle.clues,
     currentClue: 0,
+    solution: puzzle.solution.map(row => [...row]),
     score: 0,
     difficulty,
     startedAt: Date.now(),

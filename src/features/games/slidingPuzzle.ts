@@ -15,11 +15,11 @@ export interface SlidingState {
   solved: boolean
 }
 
-/** Grid size for each difficulty. easy and medium both use 3x3; hard uses 4x4. */
+/** Grid size for each difficulty: easy/medium 3x3, hard 5x5 (24 tiles). */
 export const slidingGridSizes: Record<SlidingDifficulty, number> = {
   easy: 3,
   medium: 3,
-  hard: 4,
+  hard: 5,
 }
 
 /**
@@ -29,7 +29,7 @@ export const slidingGridSizes: Record<SlidingDifficulty, number> = {
 export const slidingShuffleMoves: Record<SlidingDifficulty, number> = {
   easy: 30,
   medium: 100,
-  hard: 200,
+  hard: 2000,
 }
 
 /** Deterministic RNG (mulberry32) for reproducible puzzles. */

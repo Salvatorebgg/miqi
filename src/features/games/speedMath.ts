@@ -1,4 +1,4 @@
-export type SpeedMathDifficulty = 'easy' | 'medium' | 'hard'
+export type SpeedMathDifficulty = 'easy' | 'medium' | 'hard' | 'expert'
 
 export interface SpeedMathQuestion {
   a: number
@@ -7,6 +7,10 @@ export interface SpeedMathQuestion {
   answer: number
   /** Human-readable expression, e.g. "12 + 7". */
   expression: string
+  /** Optional third operand for three-operand expressions (e.g. a + b × c). */
+  c?: number
+  /** Optional second operator for three-operand expressions. */
+  op2?: string
 }
 
 export interface SpeedMathState {
@@ -29,16 +33,27 @@ export interface SpeedMathState {
 export const DEFAULT_SPEED_MATH_TIME = 60
 
 /** Number ranges and allowed operators per difficulty. */
-interface SpeedMathConfig {
+export interface SpeedMathConfig {
   min: number
   max: number
   ops: string[]
+  /** Special question types enabled for this difficulty. */
+  specials?: string[]
 }
 
-const speedMathConfigs: Record<SpeedMathDifficulty, SpeedMathConfig> = {
+export const speedMathConfigs: Record<SpeedMathDifficulty, SpeedMathConfig> = {
   easy: { min: 1, max: 20, ops: ['+', '-'] },
   medium: { min: 1, max: 30, ops: ['+', '-', '*'] },
-  hard: { min: 1, max: 50, ops: ['+', '-', '*', '/'] },
+  hard: { min: 1, max: 40, ops: ['+', '-', '*', '/'], specials: ['exponent', 'sqrt', 'three-op'] },
+  expert: { min: 1, max: 50, ops: ['+', '-', '*', '/'], specials: ['fraction', 'percentage', 'complex'] },
+}
+
+/** Timer duration in seconds per difficulty. */
+export const speedMathTimers: Record<SpeedMathDifficulty, number> = {
+  easy: 90,
+  medium: 60,
+  hard: 45,
+  expert: 30,
 }
 
 /** Deterministic RNG (mulberry32) for reproducible question sequences. */
@@ -55,11 +70,34 @@ export function seededRandom(seed: number): () => number {
 
 /**
  * Generates a random arithmetic question based on the difficulty config.
+ * For hard: exponents, square roots, and three-operand expressions.
+ * For expert: fractions, percentages, and complex expressions.
  */
 function generateQuestion(
   config: SpeedMathConfig,
   rng: () => number,
 ): SpeedMathQuestion {
+  // Decide whether to generate a special question type (weighted)
+  const specials = config.specials ?? []
+  if (specials.length > 0 && rng() < 0.5) {
+    const special = specials[Math.floor(rng() * specials.length)]
+    switch (special) {
+      case 'exponent':
+        return generateExponentQuestion(config, rng)
+      case 'sqrt':
+        return generateSqrtQuestion(config, rng)
+      case 'three-op':
+        return generateThreeOpQuestion(config, rng)
+      case 'fraction':
+        return generateFractionQuestion(config, rng)
+      case 'percentage':
+        return generatePercentageQuestion(config, rng)
+      case 'complex':
+        return generateComplexQuestion(config, rng)
+    }
+  }
+
+  // Standard arithmetic question
   const op = config.ops[Math.floor(rng() * config.ops.length)]
   let a: number
   let b: number
@@ -73,21 +111,18 @@ function generateQuestion(
       break
 
     case '-':
-      // Ensure non-negative result for easy/medium
       a = Math.floor(rng() * (config.max - config.min + 1)) + config.min
       b = Math.floor(rng() * (a - config.min + 1)) + config.min
       answer = a - b
       break
 
     case '*':
-      // Keep factors manageable
       a = Math.floor(rng() * Math.min(config.max, 12)) + 1
       b = Math.floor(rng() * Math.min(config.max, 12)) + 1
       answer = a * b
       break
 
     case '/':
-      // Generate b first, then a = b * k so division is exact with integer result
       b = Math.floor(rng() * Math.min(config.max, 12)) + 1
       const k = Math.floor(rng() * Math.min(config.max, 12)) + 1
       a = b * k
@@ -115,6 +150,190 @@ function generateQuestion(
   return { a, b, op, answer, expression }
 }
 
+/** Generates an exponent question, e.g. 2^3 = 8 or 3^2 = 9. */
+function generateExponentQuestion(
+  _config: SpeedMathConfig,
+  rng: () => number,
+): SpeedMathQuestion {
+  const base = Math.floor(rng() * 8) + 2 // 2..9
+  const exp = Math.floor(rng() * 3) + 2  // 2..4
+  const answer = Math.pow(base, exp)
+  return {
+    a: base,
+    b: exp,
+    op: '^',
+    answer,
+    expression: `${base}^${exp}`,
+  }
+}
+
+/** Generates a square root question with a perfect square, e.g. √49 = 7. */
+function generateSqrtQuestion(
+  _config: SpeedMathConfig,
+  rng: () => number,
+): SpeedMathQuestion {
+  const root = Math.floor(rng() * 11) + 2 // 2..12
+  const square = root * root
+  return {
+    a: square,
+    b: 0,
+    op: '√',
+    answer: root,
+    expression: `√${square}`,
+  }
+}
+
+/** Generates a three-operand expression with operator precedence, e.g. 3 + 4 × 2 = 11. */
+function generateThreeOpQuestion(
+  config: SpeedMathConfig,
+  rng: () => number,
+): SpeedMathQuestion {
+  const ops: [string, string][] = [
+    ['+', '×'], ['-', '×'], ['×', '+'], ['×', '-'],
+    ['+', '÷'], ['-', '÷'],
+  ]
+  const [op1, op2] = ops[Math.floor(rng() * ops.length)]
+  let a: number, b: number, c: number, answer: number
+
+  // Generate values that produce clean integer results
+  if (op2 === '×') {
+    b = Math.floor(rng() * 11) + 2  // 2..12
+    c = Math.floor(rng() * 11) + 2  // 2..12
+    const product = b * c
+    if (op1 === '+') {
+      a = Math.floor(rng() * (config.max - 1)) + 1
+      answer = a + product
+    } else {
+      // op1 === '-': ensure non-negative
+      a = product + Math.floor(rng() * (config.max - 1)) + 1
+      answer = a - product
+    }
+  } else if (op2 === '÷') {
+    c = Math.floor(rng() * 11) + 2
+    const k = Math.floor(rng() * 11) + 1
+    b = c * k // ensures b ÷ c is exact
+    if (op1 === '+') {
+      a = Math.floor(rng() * (config.max - 1)) + 1
+      answer = a + k
+    } else {
+      a = k + Math.floor(rng() * (config.max - 1)) + 1
+      answer = a - k
+    }
+  } else {
+    // Fallback: op2 is + or -
+    a = Math.floor(rng() * (config.max - config.min + 1)) + config.min
+    b = Math.floor(rng() * (config.max - config.min + 1)) + config.min
+    c = Math.floor(rng() * (config.max - config.min + 1)) + config.min
+    const middle = op2 === '+' ? b + c : b - c
+    answer = op1 === '+' ? a + middle : a - middle
+  }
+
+  return {
+    a, b, op: op1, answer,
+    expression: `${a} ${op1} ${b} ${op2} ${c}`,
+    c,
+    op2,
+  }
+}
+
+/** Generates a fraction addition/subtraction with a clean integer or simple fraction answer, e.g. 1/2 + 1/2 = 1. */
+function generateFractionQuestion(
+  _config: SpeedMathConfig,
+  rng: () => number,
+): SpeedMathQuestion {
+  const den = Math.floor(rng() * 9) + 2 // 2..10
+  const num1 = Math.floor(rng() * (den - 1)) + 1 // 1..den-1
+  const num2 = Math.floor(rng() * (den - 1)) + 1
+  const isAdd = rng() > 0.5
+
+  let answer: number
+  let op: string
+  let expression: string
+
+  if (isAdd) {
+    answer = (num1 + num2) / den
+    op = '+'
+    expression = `${num1}/${den} + ${num2}/${den}`
+  } else {
+    // Ensure non-negative
+    const larger = Math.max(num1, num2)
+    const smaller = Math.min(num1, num2)
+    answer = (larger - smaller) / den
+    op = '−'
+    expression = `${larger}/${den} − ${smaller}/${den}`
+  }
+
+  return {
+    a: num1, b: den, op,
+    answer: Math.round(answer * 100) / 100, // guard against FP imprecision for simple cases
+    expression,
+  }
+}
+
+/** Generates a percentage question, e.g. 25% of 200 = 50. */
+function generatePercentageQuestion(
+  _config: SpeedMathConfig,
+  rng: () => number,
+): SpeedMathQuestion {
+  const pct = (Math.floor(rng() * 9) + 1) * 5 // 5, 10, 15, ..., 45
+  const base = (Math.floor(rng() * 19) + 1) * 10 // 10, 20, ..., 190
+  const answer = (pct / 100) * base
+
+  return {
+    a: pct,
+    b: base,
+    op: '%',
+    answer,
+    expression: `${pct}% of ${base}`,
+  }
+}
+
+/** Generates a complex expression mixing operators or special forms, e.g. (15 + 25) ÷ 5 = 8. */
+function generateComplexQuestion(
+  config: SpeedMathConfig,
+  rng: () => number,
+): SpeedMathQuestion {
+  const type = Math.floor(rng() * 3)
+
+  if (type === 0) {
+    // Parenthesized expression: (a + b) × c or (a + b) ÷ c
+    const useMul = rng() > 0.5
+    const a = Math.floor(rng() * (config.max / 2)) + 1
+    const b = Math.floor(rng() * (config.max / 2)) + 1
+    if (useMul) {
+      const c = Math.floor(rng() * 5) + 2 // 2..6
+      return {
+        a, b, op: '+', answer: (a + b) * c,
+        expression: `(${a} + ${b}) × ${c}`,
+        c, op2: '×',
+      }
+    } else {
+      const c = Math.floor(rng() * 5) + 2
+      const sum = a + b
+      const adjusted = sum * c // ensure a+b is divisible by c
+      return {
+        a: adjusted - b, b, op: '+', answer: c,
+        expression: `(${adjusted - b} + ${b}) ÷ ${c}`,
+        c, op2: '÷',
+      }
+    }
+  } else if (type === 1) {
+    // Mixed percentage: X% of Y, what is the result?
+    return generatePercentageQuestion(config, rng)
+  } else {
+    // Exponent with addition: base^exp + n
+    const base = Math.floor(rng() * 5) + 2 // 2..6
+    const exp = Math.floor(rng() * 2) + 2  // 2..3
+    const pow = Math.pow(base, exp)
+    const n = Math.floor(rng() * (config.max - pow)) + 1
+    return {
+      a: base, b: exp, op: '^', answer: pow + n,
+      expression: `${base}^${exp} + ${n}`,
+      c: n, op2: '+',
+    }
+  }
+}
+
 /**
  * Generates a new timed mental arithmetic challenge.
  *
@@ -124,7 +343,7 @@ function generateQuestion(
  */
 export function generateSpeedMath(
   difficulty: SpeedMathDifficulty,
-  totalTime: number = DEFAULT_SPEED_MATH_TIME,
+  totalTime: number = speedMathTimers[difficulty],
   rng: () => number = Math.random,
 ): SpeedMathState {
   const config = speedMathConfigs[difficulty]
@@ -149,7 +368,7 @@ export function generateSpeedMath(
  * - Correct: increments score and combo, generates a new question.
  * - Wrong: decrements combo to 0, tracks wrong count, generates a new question.
  *
- * Score formula: correct = +10 base + combo bonus (combo * 2, capped at +20).
+ * Score formula: correct = +10 base + combo bonus (combo * 3, capped at +30).
  * Wrong answers deduct 5 points (score never goes below 0).
  *
  * @param state - Current game state.
@@ -164,7 +383,7 @@ export function submitAnswer(state: SpeedMathState, answer: number): SpeedMathSt
 
   if (isCorrect) {
     const newCombo = state.combo + 1
-    const comboBonus = Math.min(newCombo * 2, 20)
+    const comboBonus = Math.min(newCombo * 3, 30)
     const points = 10 + comboBonus
     const newQuestion = generateQuestion(
       config,

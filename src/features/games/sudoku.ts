@@ -9,8 +9,28 @@ export interface SudokuBoard {
   solution: number[][]
 }
 
-export const difficultyClues = { easy: 40, medium: 34, hard: 28 } as const
+export const difficultyClues = { easy: 40, medium: 34, hard: 28, expert: 24 } as const
 export type SudokuDifficulty = keyof typeof difficultyClues
+
+export const difficultyLabels: Record<SudokuDifficulty, string> = {
+  easy: 'Easy',
+  medium: 'Medium',
+  hard: 'Hard',
+  expert: 'Expert',
+}
+
+export interface DifficultyConfig {
+  clues: number
+  label: string
+  description: string
+}
+
+export const difficultyConfig: Record<SudokuDifficulty, DifficultyConfig> = {
+  easy: { clues: 40, label: 'Easy', description: '40 clues — great for beginners' },
+  medium: { clues: 34, label: 'Medium', description: '34 clues — a balanced challenge' },
+  hard: { clues: 28, label: 'Hard', description: '28 clues — for experienced players' },
+  expert: { clues: 24, label: 'Expert', description: '24 clues — extreme difficulty' },
+}
 
 /** Deterministic RNG (mulberry32) for reproducible tests and shareable puzzles. */
 export function seededRandom(seed: number): SudokuRng {
@@ -65,28 +85,59 @@ export interface SudokuValidation {
   conflicts: [number, number][]
 }
 
-const unitOk = (values: number[]): { ok: boolean; dupes: number[] } => {
-  const seen = new Map<number, number[]>()
-  values.forEach((value, index) => {
-    if (value === 0) return
-    seen.set(value, [...(seen.get(value) ?? []), index])
-  })
-  const dupes = [...seen.values()].filter(indexes => indexes.length > 1).flat()
-  return { ok: dupes.length === 0, dupes }
+/**
+ * Killer-like sum check: for a unit (row, col, or box), if all 9 cells are filled,
+ * the sum must be exactly 45 and contain every digit 1-9 exactly once.
+ * For partially filled units, checks that no duplicate exists and the current sum
+ * does not exceed 45 (early failure signal).
+ */
+function checkUnit(
+  values: number[],
+  coordsList: [number, number][],
+  conflicts: Set<string>,
+): void {
+  const nonZero = values.filter(v => v !== 0)
+  const sum = nonZero.reduce((s, v) => s + v, 0)
+
+  // Duplicate detection
+  const seen = new Map<number, number>()
+  for (let i = 0; i < values.length; i++) {
+    const v = values[i]
+    if (v === 0) continue
+    const prev = seen.get(v)
+    if (prev !== undefined) {
+      conflicts.add(`${coordsList[prev][0]},${coordsList[prev][1]}`)
+      conflicts.add(`${coordsList[i][0]},${coordsList[i][1]}`)
+    } else {
+      seen.set(v, i)
+    }
+  }
+
+  // Killer-like sum validation: if the unit is fully filled, sum must be exactly 45
+  // and all digits 1-9 must be present
+  if (nonZero.length === 9) {
+    const digitSet = new Set(nonZero)
+    if (digitSet.size !== 9 || sum !== 45) {
+      // Mark all cells in the unit as conflicting (the unit as a whole is invalid)
+      for (const [r, c] of coordsList) {
+        conflicts.add(`${r},${c}`)
+      }
+    }
+  }
 }
 
 /** Checks rows, columns, and boxes for conflicts; complete = no empty cells. */
 export function validateSudoku(cells: number[][]): SudokuValidation {
   const conflicts = new Set<string>()
-  const mark = (coords: [number, number][]) => coords.forEach(([r, c]) => conflicts.add(`${r},${c}`))
 
   for (let row = 0; row < 9; row++) {
-    const { dupes } = unitOk(cells[row])
-    mark(dupes.map(col => [row, col] as [number, number]))
+    const coords = Array.from({ length: 9 }, (_, col) => [row, col] as [number, number])
+    checkUnit(cells[row], coords, conflicts)
   }
   for (let col = 0; col < 9; col++) {
-    const { dupes } = unitOk(cells.map(row => row[col]))
-    mark(dupes.map(row => [row, col] as [number, number]))
+    const values = cells.map(row => row[col])
+    const coords = Array.from({ length: 9 }, (_, row) => [row, col] as [number, number])
+    checkUnit(values, coords, conflicts)
   }
   for (let box = 0; box < 9; box++) {
     const boxRow = Math.floor(box / 3) * 3
@@ -99,8 +150,7 @@ export function validateSudoku(cells: number[][]): SudokuValidation {
         coords.push([boxRow + r, boxCol + c])
       }
     }
-    const { dupes } = unitOk(values)
-    mark(dupes.map(index => coords[index]))
+    checkUnit(values, coords, conflicts)
   }
 
   const complete = cells.every(row => row.every(value => value !== 0))

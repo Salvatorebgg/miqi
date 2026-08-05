@@ -1,10 +1,21 @@
 export type MazeRng = () => number
 
+export type MazeDifficulty = 'easy' | 'medium' | 'hard' | 'expert'
+
+export const mazeDifficultySizes: Record<MazeDifficulty, { width: number; height: number }> = {
+  easy: { width: 5, height: 5 },
+  medium: { width: 10, height: 10 },
+  hard: { width: 20, height: 20 },
+  expert: { width: 25, height: 25 },
+}
+
 export type Direction = 'up' | 'down' | 'left' | 'right'
 
 export interface MazeCell {
   /** walls[side] === true means a wall on that side */
   walls: Record<Direction, boolean>
+  /** Whether this cell has been revealed (fog-of-war). */
+  revealed: boolean
 }
 
 export interface Position {
@@ -32,7 +43,7 @@ const delta: Record<Direction, Position> = {
 /** Randomized depth-first search producing a perfect maze with symmetric walls. */
 export function generateMaze(width: number, height: number, rng: MazeRng = Math.random): MazeCell[][] {
   const maze: MazeCell[][] = Array.from({ length: height }, () =>
-    Array.from({ length: width }, () => ({ walls: { up: true, down: true, left: true, right: true } })),
+    Array.from({ length: width }, () => ({ walls: { up: true, down: true, left: true, right: true }, revealed: false })),
   )
   const visited = Array.from({ length: height }, () => Array<boolean>(width).fill(false))
   const stack: Position[] = [{ x: 0, y: 0 }]
@@ -63,13 +74,15 @@ export function generateMaze(width: number, height: number, rng: MazeRng = Math.
 }
 
 export function createMazeState(width: number, height: number, rng: MazeRng = Math.random): MazeState {
-  return {
+  const base: MazeState = {
     maze: generateMaze(width, height, rng),
     player: { x: 0, y: 0 },
     goal: { x: width - 1, y: height - 1 },
     moves: 0,
     won: false,
   }
+  // Fog-of-war starts with the spawn area lit so the player can move at once.
+  return revealAdjacentCells(base)
 }
 
 export function movePlayer(state: MazeState, direction: Direction): MazeState {
@@ -80,12 +93,52 @@ export function movePlayer(state: MazeState, direction: Direction): MazeState {
     x: state.player.x + delta[direction].x,
     y: state.player.y + delta[direction].y,
   }
-  return {
+  const nextState: MazeState = {
     ...state,
     player,
     moves: state.moves + 1,
     won: player.x === state.goal.x && player.y === state.goal.y,
   }
+  // Apply fog-of-war: reveal cells adjacent to the new player position
+  return revealAdjacentCells(nextState)
+}
+
+/**
+ * Fog-of-war: reveals the cell the player is standing on plus all
+ * cardinal-direction neighbours (up to 5 cells).
+ */
+export function revealAdjacentCells(state: MazeState): MazeState {
+  const { maze, player } = state
+  const height = maze.length
+  const width = maze[0]?.length ?? 0
+  const newMaze = maze.map(row => row.map(cell => ({ ...cell, walls: { ...cell.walls } })))
+
+  // Reveal the player's current cell and all 4 cardinal neighbours
+  const toReveal: Position[] = [
+    { x: player.x, y: player.y },
+    { x: player.x, y: player.y - 1 },
+    { x: player.x, y: player.y + 1 },
+    { x: player.x - 1, y: player.y },
+    { x: player.x + 1, y: player.y },
+  ]
+
+  for (const pos of toReveal) {
+    if (pos.x >= 0 && pos.x < width && pos.y >= 0 && pos.y < height) {
+      newMaze[pos.y][pos.x].revealed = true
+    }
+  }
+
+  return { ...state, maze: newMaze }
+}
+
+/**
+ * Fully reveals all cells on the maze (e.g. when the game is won).
+ */
+export function revealAllCells(state: MazeState): MazeState {
+  const newMaze = state.maze.map(row =>
+    row.map(cell => ({ ...cell, walls: { ...cell.walls }, revealed: true })),
+  )
+  return { ...state, maze: newMaze }
 }
 
 /** Counts cells reachable from (0,0); a perfect maze reaches every cell. */

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { createMazeState, generateMaze, movePlayer, openEdges, reachableCells } from './maze'
+import { createMazeState, generateMaze, movePlayer, openEdges, reachableCells, revealAdjacentCells, revealAllCells } from './maze'
 import { seededRandom } from './sudoku'
 
 describe('generateMaze', () => {
@@ -21,6 +21,40 @@ describe('generateMaze', () => {
 
   it('is deterministic with a seeded rng', () => {
     expect(generateMaze(6, 6, seededRandom(9))).toEqual(generateMaze(6, 6, seededRandom(9)))
+  })
+})
+
+describe('fog-of-war', () => {
+  it('lights up the spawn area on creation', () => {
+    const state = createMazeState(5, 5, seededRandom(3))
+    expect(state.maze[0][0].revealed).toBe(true)
+    expect(state.maze[0][1].revealed).toBe(true)
+    expect(state.maze[1][0].revealed).toBe(true)
+  })
+
+  it('reveals cells adjacent to the player when moving', () => {
+    const state = createMazeState(5, 5, seededRandom(4))
+    const open = (['up', 'down', 'left', 'right'] as const).find(
+      direction => !state.maze[0][0].walls[direction],
+    )!
+    const next = movePlayer(state, open)
+    const revealedCount = next.maze.flat().filter(cell => cell.revealed).length
+    expect(revealedCount).toBeGreaterThan(state.maze.flat().filter(cell => cell.revealed).length)
+  })
+
+  it('reveals everything on revealAllCells', () => {
+    const state = createMazeState(4, 4, seededRandom(7))
+    const revealed = revealAllCells(state)
+    expect(revealed.maze.every(row => row.every(cell => cell.revealed))).toBe(true)
+  })
+
+  it('never reveals cells outside the maze bounds', () => {
+    const state = createMazeState(3, 3, seededRandom(9))
+    // Move the player to a corner and confirm revealAdjacentCells stays in-bounds.
+    const corner = { ...state, player: { x: 2, y: 2 } }
+    const result = revealAdjacentCells(corner)
+    expect(result.maze).toHaveLength(3)
+    expect(result.maze.every(row => row.length === 3)).toBe(true)
   })
 })
 

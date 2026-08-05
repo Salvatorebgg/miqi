@@ -12,6 +12,25 @@ describe('GamesPage', () => {
     expect(screen.getAllByRole('gridcell')).toHaveLength(81)
   })
 
+  it('offers the expert sudoku difficulty', () => {
+    render(<GamesPage />)
+    expect(screen.getByRole('button', { name: '专家' })).toBeInTheDocument()
+  })
+
+  it('offers four maze difficulties including expert', async () => {
+    render(<GamesPage />)
+    await userEvent.click(screen.getByRole('tab', { name: /迷宫/ }))
+    expect(screen.getByRole('button', { name: '专家' })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: '简单' })).toBeInTheDocument()
+  })
+
+  it('offers speed-math difficulty pills and defaults to medium', async () => {
+    render(<GamesPage />)
+    await userEvent.click(screen.getByRole('tab', { name: /心算竞赛/ }))
+    expect(screen.getByRole('button', { name: '专家' })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: '中等' })).toHaveClass('active')
+  })
+
   it('switches to the maze tab', async () => {
     render(<GamesPage />)
     await userEvent.click(screen.getByRole('tab', { name: /迷宫/ }))
