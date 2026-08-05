@@ -15,6 +15,11 @@ describe('EnglishPage', () => {
     expect(screen.getByRole('tab', { name: /论文摘要/ })).toBeInTheDocument()
   })
 
+  it('shows the IPA phonetic for the current word', async () => {
+    render(<EnglishPage />)
+    expect(await screen.findByText(/əˈliːvi/)).toBeInTheDocument()
+  })
+
   it('reveals a word and records a rating', async () => {
     render(<EnglishPage />)
     await userEvent.click(await screen.findByRole('button', { name: '显示释义与例句' }))
@@ -39,5 +44,25 @@ describe('EnglishPage', () => {
     expect(await screen.findByText(/答对 \d \/ 4 题/)).toBeInTheDocument()
     const attempts = JSON.parse(localStorage.getItem('miqi:reading-attempts') ?? '[]') as unknown[]
     expect(attempts).toHaveLength(1)
+  })
+
+  it('reveals the full-text translation after submitting answers', async () => {
+    render(<EnglishPage />)
+    const radios = await screen.findAllByRole('radio')
+    const groups = new Map<string, HTMLInputElement>()
+    for (const radio of radios) {
+      const input = radio as HTMLInputElement
+      if (!groups.has(input.name)) groups.set(input.name, input)
+    }
+    for (const input of groups.values()) await userEvent.click(input)
+    await userEvent.click(screen.getByRole('button', { name: '提交阅读答案' }))
+    await screen.findByText(/答对 \d \/ 4 题/)
+
+    // The toggle only appears after submission.
+    const toggle = screen.getByRole('button', { name: '查看全文翻译' })
+    expect(toggle).toHaveAttribute('aria-expanded', 'false')
+    await userEvent.click(toggle)
+    expect(screen.getByRole('button', { name: '收起全文翻译' })).toBeInTheDocument()
+    expect(document.querySelector('.reading-translation')).not.toBeNull()
   })
 })

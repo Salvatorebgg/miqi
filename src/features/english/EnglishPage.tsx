@@ -1,9 +1,26 @@
 import { useEffect, useMemo, useState } from 'react'
-import { BookMarked, Brain, Newspaper, ScrollText, Sparkles } from 'lucide-react'
+import { BookMarked, Brain, Newspaper, ScrollText, Sparkles, Volume2 } from 'lucide-react'
 import { ieltsWords, paperSets, scenarioSets, englishNewsSets, type IeltsWord, type ReadingSet } from '../../data/englishContent'
 import { getDailyEnglishPlan, scheduleReview } from './scheduler'
 import { getRepository, LOCAL_USER_ID, newId, todayString } from '../../lib/repositoryInstance'
+import { speak, speechAvailable, accentLabels, type Accent } from '../../lib/speech'
 import type { ReadingAttempt, VocabularyProgress } from '../../types/domain'
+
+function SpeakButton({ text, accent, className = '' }: { text: string; accent: Accent; className?: string }) {
+  if (!speechAvailable()) return null
+  return (
+    <button
+      type="button"
+      className={`vocab-speak ${className}`}
+      title={`朗读：${text}（${accentLabels[accent]}）`}
+      aria-label={`${accentLabels[accent]}朗读 ${text}`}
+      onClick={() => speak(text, accent)}
+    >
+      <Volume2 aria-hidden="true" />
+      {accentLabels[accent]}
+    </button>
+  )
+}
 
 function VocabularyTrainer({
   words,
@@ -46,12 +63,30 @@ function VocabularyTrainer({
     <div className="vocab-card glass" aria-live="polite">
       <p className="vocab-progress">第 {index + 1} / {queue.length} 个</p>
       <p className="vocab-word">{current.word}</p>
+      <p className="vocab-phonetic">{current.phonetic}</p>
       <p className="vocab-pos">{current.pos}</p>
+      <div className="vocab-speak-row" role="group" aria-label="单词朗读">
+        <SpeakButton text={current.word} accent="en-GB" />
+        <SpeakButton text={current.word} accent="en-US" />
+      </div>
       {revealed ? (
         <div className="vocab-detail">
           <p><strong>{current.definition}</strong></p>
           <p className="vocab-collocations">{current.collocations.join(' · ')}</p>
-          <p className="vocab-example">{current.example}</p>
+          <p className="vocab-example">
+            {current.example}
+            {speechAvailable() ? (
+              <button
+                type="button"
+                className="vocab-speak example"
+                title="朗读例句"
+                aria-label="朗读例句"
+                onClick={() => speak(current.example, 'en-GB')}
+              >
+                <Volume2 aria-hidden="true" />例句
+              </button>
+            ) : null}
+          </p>
           <div className="rating-row" role="group" aria-label="熟悉程度">
             <button type="button" className="ghost-button rating-hard" onClick={() => void rate(0)}>不认识</button>
             <button type="button" className="ghost-button" onClick={() => void rate(1)}>有点模糊</button>
@@ -72,6 +107,7 @@ function ReadingCard({ set }: { set: ReadingSet }) {
   const [submitted, setSubmitted] = useState(false)
   const [summary, setSummary] = useState('')
   const [saved, setSaved] = useState(false)
+  const [showTranslation, setShowTranslation] = useState(false)
   const startedAt = useMemo(() => Date.now(), [])
 
   const correctCount = set.questions.filter(question => answers[question.id] === question.answer).length
@@ -144,9 +180,31 @@ function ReadingCard({ set }: { set: ReadingSet }) {
         提交阅读答案
       </button>
       {submitted ? (
-        <p className="form-success" role="status">
-          答对 {correctCount} / {set.questions.length} 题，总结已保存。坚持精读，分数会一点点长出来。
-        </p>
+        <>
+          <p className="form-success" role="status">
+            答对 {correctCount} / {set.questions.length} 题，总结已保存。坚持精读，分数会一点点长出来。
+          </p>
+          <div className="translation-toggle">
+            <button
+              type="button"
+              className="ghost-button"
+              aria-expanded={showTranslation}
+              onClick={() => setShowTranslation(value => !value)}
+            >
+              {showTranslation ? '收起全文翻译' : '查看全文翻译'}
+            </button>
+          </div>
+          {showTranslation ? (
+            <div className="reading-translation">
+              {set.passage.map((paragraph, i) => (
+                <div key={i} className="translation-pair">
+                  <p className="translation-original">{paragraph}</p>
+                  <p className="translation-zh">{set.translation[i] ?? ''}</p>
+                </div>
+              ))}
+            </div>
+          ) : null}
+        </>
       ) : null}
     </article>
   )
