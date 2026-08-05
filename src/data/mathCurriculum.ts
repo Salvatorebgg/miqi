@@ -904,10 +904,10 @@ export const mathLessons: MathLesson[] = [
           { id: 'a', label: 'x = 4' },
           { id: 'b', label: 'x = 3' },
           { id: 'c', label: 'x = 27' },
-          { id: 'd', label: 'x = log₃ 81' },
+          { id: 'd', label: 'x = log₈₁ 3' },
         ],
         answer: 'a',
-        solution: ['81 = 3⁴，故 3ˣ = 3⁴，x = 4。选项 d 也对但未化简，选最简形式 a。'],
+        solution: ['81 = 3⁴，故 3ˣ = 3⁴，x = 4。'],
       },
       {
         id: 'pe-ex7', topic: 'exponentials', difficulty: 'advanced', type: 'number',
@@ -1191,7 +1191,7 @@ export const mathLessons: MathLesson[] = [
           { id: 'c', label: '1' },
           { id: 'd', label: '0' },
         ],
-        answer: 'a',
+        answer: 'c',
         solution: ["f'(x)=4x³−12x²=4x²(x−3)，驻点 x=0（不变号）、x=3（极小）。故极值点 1 个。答案为 1，对应选项 c。"],
       },
       {
@@ -1637,7 +1637,7 @@ export const mathLessons: MathLesson[] = [
       },
       {
         id: 'cdi-ex7', topic: 'double-integrals', difficulty: 'advanced', type: 'number',
-        prompt: '交换积分次序：∫₀¹∫₀^x f(x,y) dy dx，积分区域 D 可表示为？求 ∫₀¹∫_y¹ 1 dx dy 的值。',
+        prompt: '将 ∫₀¹∫₀^x f(x,y) dy dx 交换积分次序为 ∫₀¹∫_y¹ f(x,y) dx dy。求 ∫₀¹∫_y¹ 1 dx dy 的值。',
         answer: 0.5, tolerance: 0.001,
         solution: ['区域 D：0 ≤ y ≤ x ≤ 1，交换次序为 0 ≤ y ≤ 1，y ≤ x ≤ 1。', '∫₀¹∫_y¹ 1 dx dy = ∫₀¹ (1 − y) dy = [y − y²/2]₀¹ = 1 − 1/2 = 0.5。'],
       },
@@ -1751,10 +1751,16 @@ export const mathLessons: MathLesson[] = [
         solution: ['cosθ = (1)/(1 × √2) ≈ 0.707。'],
       },
       {
-        id: 'lv-ex4', topic: 'vectors', difficulty: 'basic', type: 'number',
+        id: 'lv-ex4', topic: 'vectors', difficulty: 'basic', type: 'choice',
         prompt: 'a = (1, 2)，b = (3, −1)，求 a + b。',
-        answer: 4, tolerance: .0001,
-        solution: ['a + b = (1+3, 2−1) = (4, 1)。本题为第一分量，答案为 4。'],
+        options: [
+          { id: 'a', label: '(4, 1)' },
+          { id: 'b', label: '(1, 4)' },
+          { id: 'c', label: '(−2, 3)' },
+          { id: 'd', label: '(2, 3)' },
+        ],
+        answer: 'a',
+        solution: ['a + b = (1+3, 2−1) = (4, 1)。'],
       },
       {
         id: 'lv-ex5', topic: 'vectors', difficulty: 'advanced', type: 'choice',

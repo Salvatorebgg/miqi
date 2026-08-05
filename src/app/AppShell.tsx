@@ -14,6 +14,8 @@ import {
 import { Link, NavLink, Outlet } from 'react-router-dom'
 import { installControlSounds } from '../lib/audio'
 import { loadPreferences, savePreferences } from '../lib/preferences'
+import { attemptCloudSync } from '../lib/syncBridge'
+import { isCloudEnabled } from '../lib/supabase'
 import { SoundToggle } from '../components/ui/SoundToggle'
 import { SyncBadge } from '../components/ui/SyncBadge'
 import { FocusTimer } from '../features/dashboard/FocusTimer'
@@ -73,6 +75,15 @@ function MobileDock({ items }: { items: NavItem[] }) {
 
 export function AppShell() {
   useEffect(() => installControlSounds(), [])
+
+  // Push locally queued records to the cloud on launch and periodically so a
+  // session can resume sync after login without manual action.
+  useEffect(() => {
+    if (!isCloudEnabled) return
+    void attemptCloudSync()
+    const interval = setInterval(() => void attemptCloudSync(), 30_000)
+    return () => clearInterval(interval)
+  }, [])
 
   const [theme, setTheme] = useState(() => loadPreferences().theme)
 

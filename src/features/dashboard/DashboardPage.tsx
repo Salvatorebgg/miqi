@@ -11,6 +11,17 @@ import type { CourseProgress, ExerciseAttempt, GameSession, ReadingAttempt } fro
 
 const WEEK_LABELS = ['一', '二', '三', '四', '五', '六', '日']
 
+const GAME_NAMES: Record<string, string> = {
+  sudoku: '数独',
+  maze: '迷宫',
+  sliding: '滑块拼图',
+  speedMath: '心算',
+  wordle: '猜词',
+  minesweeper: '扫雷',
+  reaction: '反应测试',
+  logicGrid: '逻辑谜题',
+}
+
 export function DashboardPage() {
   const today = todayString()
   const { tasks, increment } = useDailyTasks(today)
@@ -171,7 +182,13 @@ export function DashboardPage() {
           <Gamepad2 aria-hidden="true" />
           <div>
             <span className="cockpit-label">游戏</span>
-            <strong>{gameTask && gameTask.completed >= gameTask.target ? '已完成' : '数独 / 迷宫'}</strong>
+            <strong>
+              {gameTask && gameTask.completed >= gameTask.target
+                ? '已完成'
+                : sessions.length > 0
+                  ? `继续：${GAME_NAMES[sessions[sessions.length - 1].game] ?? '游戏'}`
+                  : '数独 · 迷宫 · 扫雷'}
+            </strong>
           </div>
           <ArrowRight aria-hidden="true" />
         </Link>

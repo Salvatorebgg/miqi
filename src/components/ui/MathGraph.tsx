@@ -65,9 +65,16 @@ export function MathGraph({
   const [input, setInput] = useState(formula)
   const [hover, setHover] = useState<{ x: number; y: number } | null>(null)
 
-  const preparedFormula = input
-    .replace(/\ba\b/g, a.toString())
-    .replace(/\bb\b/g, b.toString())
+  const preparedFormula = input.replace(/[ab]/g, (token, offset: number, full: string) => {
+    // Only substitute standalone parameters: skip tokens that are part of a
+    // longer identifier, member access, or function call (e.g. "abs", "Math.a",
+    // "a(x)").
+    const before = offset > 0 ? full[offset - 1] : ''
+    const after = offset + 1 < full.length ? full[offset + 1] : ''
+    if (before && /[\w.]/.test(before)) return token
+    if (after && /[\w(]/.test(after)) return token
+    return token === 'a' ? a.toString() : b.toString()
+  })
 
   useEffect(() => {
     const canvas = canvasRef.current
@@ -98,10 +105,10 @@ export function MathGraph({
     const graphWidth = width - padding.left - padding.right
     const graphHeight = height - padding.top - padding.bottom
 
-    const scaleX = graphWidth / (xMax - xMin) / zoom
-    const scaleY = graphHeight / (yMax - yMin) / zoom
-    const centerX = padding.left + (-xMin * zoom * scaleX)
-    const centerY = padding.top + (yMax * zoom * scaleY)
+    const scaleX = (graphWidth / (xMax - xMin)) * zoom
+    const scaleY = (graphHeight / (yMax - yMin)) * zoom
+    const centerX = padding.left + -xMin * scaleX
+    const centerY = padding.top + yMax * scaleY
 
     const toCanvasX = (x: number) => centerX + x * zoom * scaleX
     const toCanvasY = (y: number) => centerY - y * zoom * scaleY
@@ -324,7 +331,9 @@ export function MathGraph({
     const rect = canvas.getBoundingClientRect()
     const padding = 44
     const graphWidth = width - padding - 28
-    const x = xMin + ((event.clientX - rect.left - padding) / graphWidth) * (xMax - xMin) * zoom
+    // The drawing pass maps x → centerX + x * zoom * scaleX, so the inverse
+    // must divide by zoom (previously multiplied, making the crosshair drift).
+    const x = xMin + ((event.clientX - rect.left - padding) / graphWidth) * ((xMax - xMin) / zoom)
     if (x >= xMin && x <= xMax) setHover({ x, y: 0 })
   }
 

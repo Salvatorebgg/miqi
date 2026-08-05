@@ -7,9 +7,10 @@ describe('calculateStreak', () => {
     expect(calculateStreak(['2026-07-16', '2026-07-17', '2026-07-18'], '2026-07-18')).toBe(3)
   })
 
-  it('returns 0 when today is missing and stops at gaps', () => {
-    expect(calculateStreak(['2026-07-17'], '2026-07-18')).toBe(0)
+  it('continues from yesterday when today is not yet active and stops at gaps', () => {
+    expect(calculateStreak(['2026-07-17'], '2026-07-18')).toBe(1)
     expect(calculateStreak(['2026-07-15', '2026-07-17', '2026-07-18'], '2026-07-18')).toBe(2)
+    expect(calculateStreak(['2026-07-15'], '2026-07-18')).toBe(0)
   })
 
   it('handles month boundaries', () => {

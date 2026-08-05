@@ -3,10 +3,17 @@ import { mathLessons, findLesson } from '../../data/mathCurriculum'
 import { lessonCompletion } from '../math/math'
 import { ieltsWords } from '../../data/englishContent'
 
-/** Consecutive active days ending at `today` (0 if today is not active). */
+/**
+ * Consecutive active days ending at `today`. If the learner hasn't logged
+ * anything yet today, the streak still stands until the day ends — count back
+ * from yesterday so the badge doesn't reset to zero every morning.
+ */
 export function calculateStreak(activeDates: string[], today: string): number {
   const dates = new Set(activeDates)
   const cursor = new Date(`${today}T00:00:00Z`)
+  if (!dates.has(cursor.toISOString().slice(0, 10))) {
+    cursor.setUTCDate(cursor.getUTCDate() - 1)
+  }
   let streak = 0
   while (dates.has(cursor.toISOString().slice(0, 10))) {
     streak += 1

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import type { User } from '@supabase/supabase-js'
-import { CloudOff, LogOut, Volume2, VolumeX, Waves } from 'lucide-react'
+import { CloudOff, LogOut, Moon, Sun, Volume2, VolumeX, Waves } from 'lucide-react'
 import { supabase } from '../../lib/supabase'
 import { loadPreferences, savePreferences, type Preferences } from '../../lib/preferences'
 
@@ -75,6 +75,17 @@ export function AccountPage() {
               type="checkbox"
               checked={!preferences.reduceMotion}
               onChange={event => update({ reduceMotion: !event.target.checked })}
+            />
+          </label>
+          <label className="setting-row">
+            <span>
+              {preferences.theme === 'dark' ? <Sun aria-hidden="true" /> : <Moon aria-hidden="true" />}
+              暗色主题
+            </span>
+            <input
+              type="checkbox"
+              checked={preferences.theme === 'dark'}
+              onChange={event => update({ theme: event.target.checked ? 'dark' : 'mint' })}
             />
           </label>
         </article>

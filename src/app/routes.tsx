@@ -19,7 +19,6 @@ export function AppRoutes() {
         <Route path="english" element={<EnglishPage />} />
         <Route path="news" element={<NewsPage />} />
         <Route path="games" element={<GamesPage />} />
-        <Route path="planner" element={<Navigate to="/" replace />} />
         <Route path="account" element={<AccountPage />} />
         <Route path="auth" element={<AuthPage />} />
       </Route>

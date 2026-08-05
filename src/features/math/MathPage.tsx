@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowRight, CheckCircle2, Circle } from 'lucide-react'
-import { lessonsForTrack, mathTracks } from '../../data/mathCurriculum'
+import { lessonsForTrack, mathTracks, findLesson } from '../../data/mathCurriculum'
 import { getRepository } from '../../lib/repositoryInstance'
 import { lessonCompletion } from './math'
+import { nextMathLesson } from '../planner/progress'
 import type { CourseProgress } from '../../types/domain'
 
 export function MathPage() {
@@ -15,11 +16,9 @@ export function MathPage() {
 
   const progressFor = (lessonId: string) => progress.find(item => item.lessonId === lessonId)
 
-  // First unfinished lesson across the ordered journey.
-  const allLessons = mathTracks.flatMap(track => lessonsForTrack(track.id))
-  const nextLesson =
-    allLessons.find(lesson => lessonCompletion(progressFor(lesson.id) ?? { read: false, exerciseScore: 0, quizScore: 0 }) < 100) ??
-    allLessons[0]
+  // First unlocked lesson that isn't fully completed, respecting prerequisites.
+  const nextLessonId = nextMathLesson(progress)
+  const nextLesson = nextLessonId ? findLesson(nextLessonId) : undefined
 
   return (
     <section className="page-panel glass" aria-labelledby="math-title">
