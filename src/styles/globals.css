@@ -765,10 +765,50 @@ a.lesson-row:hover { background: rgba(255, 255, 255, 0.75); }
 
 .vocab-progress { margin: 0; font-size: 0.7rem; color: var(--muted); font-weight: 650; }
 .vocab-word { margin: 0; font-size: 1.6rem; font-weight: 750; color: var(--forest); letter-spacing: 0.02em; }
+.vocab-phonetic { margin: 0; color: var(--muted); font-size: 0.9rem; letter-spacing: 0.03em; }
 .vocab-pos { margin: 0; color: var(--muted); font-size: 0.85rem; }
 .vocab-detail { display: grid; gap: 0.35rem; }
 .vocab-collocations { margin: 0; font-weight: 600; color: var(--forest); font-size: 0.85rem; }
 .vocab-example { margin: 0; font-style: italic; font-size: 0.85rem; }
+
+.vocab-speak-row {
+  display: flex;
+  gap: 0.4rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.vocab-speak {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  min-height: 30px;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(88, 201, 157, 0.30);
+  background: rgba(255, 255, 255, 0.55);
+  color: var(--forest);
+  font: inherit;
+  font-size: 0.72rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.vocab-speak:hover {
+  background: var(--mint-100);
+  transform: translateY(-1px);
+}
+
+.vocab-speak svg { width: 0.85rem; height: 0.85rem; }
+
+.vocab-speak.example {
+  margin-left: 0.5rem;
+  min-height: 24px;
+  padding: 0.15rem 0.5rem;
+  font-size: 0.68rem;
+  vertical-align: middle;
+}
 
 .rating-row { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin-top: 0.3rem; }
 .rating-hard { border-color: rgba(214, 145, 130, 0.45); color: #4a5c3b; }
@@ -811,6 +851,36 @@ a.lesson-row:hover { background: rgba(255, 255, 255, 0.75); }
 .reading-source { margin: 0.2rem 0 0; font-size: 0.7rem; color: var(--muted); }
 .reading-passage { margin: 0; line-height: 1.65; font-size: 0.88rem; }
 .question-list { margin: 0; padding-left: 1rem; display: grid; gap: 0.75rem; font-size: 0.88rem; }
+
+.translation-toggle {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.4rem;
+}
+
+.reading-translation {
+  display: grid;
+  gap: 0.85rem;
+  margin-top: 0.4rem;
+}
+
+.translation-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: 0.8rem;
+  background: rgba(255, 255, 255, 0.40);
+  border-left: 3px solid var(--mint-300);
+}
+
+.translation-pair p { margin: 0; font-size: 0.82rem; line-height: 1.7; }
+.translation-original { color: var(--forest); }
+.translation-zh { color: var(--muted); }
+
+@media (max-width: 639px) {
+  .translation-pair { grid-template-columns: 1fr; }
+}
 
 /* News */
 .news-header {
@@ -1172,6 +1242,8 @@ a.lesson-row:hover { background: rgba(255, 255, 255, 0.75); }
   background: rgba(255, 255, 255, 0.35);
   border-radius: 0.6rem;
   outline: none;
+  max-width: 100%;
+  overflow-x: auto;
 }
 
 .maze-grid:focus-visible { outline: 2px solid rgba(88, 201, 157, 0.45); }
@@ -1182,6 +1254,17 @@ a.lesson-row:hover { background: rgba(255, 255, 255, 0.75); }
 .maze-cell.wall-left { border-left: 2px solid var(--forest); }
 .maze-cell.wall-right { border-right: 2px solid var(--forest); }
 .maze-cell.goal { background: radial-gradient(circle, rgba(88, 201, 157, 0.45), transparent 70%); }
+
+/* Fog-of-war: unexplored cells stay dark until the player approaches. */
+.maze-cell.hidden::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(49, 89, 73, 0.28);
+}
+[data-theme="dark"] .maze-cell.hidden::after {
+  background: rgba(0, 0, 0, 0.55);
+}
 
 .maze-player {
   position: absolute;
@@ -1197,6 +1280,199 @@ a.lesson-row:hover { background: rgba(255, 255, 255, 0.75); }
   gap: 0.3rem;
   justify-items: center;
 }
+
+/* Wordle */
+.game-wordle-board {
+  display: grid;
+  gap: 0.3rem;
+}
+
+.game-wordle-row {
+  display: flex;
+  gap: 0.3rem;
+  justify-content: center;
+}
+
+.game-wordle-tile {
+  width: 3rem;
+  height: 3rem;
+  display: grid;
+  place-items: center;
+  border-radius: 0.4rem;
+  background: var(--ice);
+  color: var(--ink);
+  border: 2px solid rgba(49, 89, 73, 0.22);
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.game-wordle-tile.cursor { border-color: var(--mint-500); }
+.game-wordle-tile.correct { background: var(--mint-500); color: #fff; border-color: transparent; }
+.game-wordle-tile.present { background: #e2a840; color: #fff; border-color: transparent; }
+.game-wordle-tile.absent { background: #6b7f76; color: #fff; border-color: transparent; }
+
+.game-wordle-kbd {
+  display: grid;
+  gap: 0.35rem;
+  margin-top: 0.5rem;
+}
+
+.game-wordle-kbd-row {
+  display: flex;
+  gap: 0.2rem;
+  justify-content: center;
+}
+
+.game-wordle-key {
+  min-width: 1.9rem;
+  height: 2.5rem;
+  padding: 0 0.4rem;
+  border-radius: 0.35rem;
+  border: none;
+  background: #dbe7e1;
+  color: #1d3a2f;
+  font: inherit;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+[data-theme="dark"] .game-wordle-key { background: rgba(255, 255, 255, 0.14); color: var(--ink); }
+
+.game-wordle-key.wide { min-width: 3rem; font-size: 0.8rem; }
+
+/* Sliding puzzle */
+.game-sliding-grid {
+  display: grid;
+  gap: 0.3rem;
+}
+
+.game-sliding-tile {
+  height: 3.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--mint-300);
+  background: var(--ice);
+  color: var(--forest);
+  font: inherit;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.game-sliding-tile.empty {
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+  cursor: default;
+}
+
+[data-theme="dark"] .game-sliding-tile { background: rgba(255, 255, 255, 0.08); color: var(--ink); }
+
+/* Minesweeper */
+.game-mine-grid {
+  display: grid;
+  gap: 0;
+  border: 2px solid var(--forest);
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+
+.game-mine-cell {
+  width: 1.8rem;
+  height: 1.8rem;
+  padding: 0;
+  border: 1px solid rgba(49, 89, 73, 0.18);
+  border-radius: 0;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: transparent;
+  cursor: pointer;
+}
+
+.game-mine-cell.shade-dark { background: #a0d0a8; }
+.game-mine-cell.shade-light { background: #b0d8b8; }
+.game-mine-cell.revealed.shade-dark { background: #e8e8e0; }
+.game-mine-cell.revealed.shade-light { background: #f0f0e8; }
+.game-mine-cell.mine { background: #e8879b !important; }
+
+[data-theme="dark"] .game-mine-cell.shade-dark { background: #2c4438; }
+[data-theme="dark"] .game-mine-cell.shade-light { background: #35503f; }
+[data-theme="dark"] .game-mine-cell.revealed.shade-dark { background: #22352b; }
+[data-theme="dark"] .game-mine-cell.revealed.shade-light { background: #2a4134; }
+
+.game-mine-cell.revealed { color: #333; }
+[data-theme="dark"] .game-mine-cell.revealed { color: var(--ink); }
+
+.game-mine-cell.revealed[data-adj='1'] { color: #2563eb; }
+.game-mine-cell.revealed[data-adj='2'] { color: #16a34a; }
+.game-mine-cell.revealed[data-adj='3'] { color: #dc2626; }
+.game-mine-cell.revealed[data-adj='4'] { color: #1e40af; }
+.game-mine-cell.revealed[data-adj='5'] { color: #7c3aed; }
+.game-mine-cell.revealed[data-adj='6'] { color: #0d9488; }
+.game-mine-cell.revealed[data-adj='7'] { color: #374151; }
+.game-mine-cell.revealed[data-adj='8'] { color: #6b7280; }
+
+/* Reaction */
+.game-reaction-btn {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  font: inherit;
+  font-size: 1.4rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.1s ease;
+  white-space: pre-line;
+}
+
+.game-reaction-chips {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.game-reaction-chip {
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.3rem;
+  font-size: 0.78rem;
+  background: var(--mint-100);
+  color: var(--forest);
+  font-weight: 700;
+}
+
+.game-reaction-chip[data-slow='true'] { background: #fce4ec; color: #b3394f; }
+
+/* Logic grid */
+.game-logic-clues { justify-items: start; text-align: left; }
+
+.game-logic-legend {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--forest);
+}
+
+.game-logic-cat { color: var(--muted); }
+
+.game-logic-solution {
+  padding: 0.8rem 1.1rem;
+  border-radius: 0.9rem;
+  background: rgba(255, 255, 255, 0.50);
+  border: 1px solid var(--glass-border);
+  max-width: 28rem;
+  width: 100%;
+}
+
+.game-logic-solution h4 { margin: 0 0 0.4rem; color: var(--forest); font-size: 0.9rem; }
+.game-logic-solution p { margin: 0.3rem 0; font-size: 0.85rem; color: var(--forest); }
 
 /* Number Puzzle */
 .number-puzzle-numbers {
@@ -1620,4 +1896,42 @@ body.reduce-motion *::after {
   font-size: 0.72rem;
   min-height: 30px;
   padding: 0.35rem 0.75rem;
+}
+
+/* Game surface polish: dark theme + small screens */
+[data-theme="dark"] .sudoku-grid { background: rgba(255, 255, 255, 0.06); }
+[data-theme="dark"] .maze-grid { background: rgba(255, 255, 255, 0.06); }
+[data-theme="dark"] .game-sliding-tile { background: rgba(255, 255, 255, 0.08); }
+[data-theme="dark"] .game-reaction-chip[data-slow='true'] { background: rgba(179, 57, 79, 0.28); color: #f2c3cd; }
+[data-theme="dark"] .game-logic-solution { background: rgba(255, 255, 255, 0.06); }
+
+@media (max-width: 639px) {
+  .sudoku-grid {
+    grid-template-columns: repeat(9, 2.4rem);
+    grid-auto-rows: 2.4rem;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  .sudoku-cell { font-size: 1rem; }
+
+  .sudoku-pad {
+    grid-template-columns: repeat(10, minmax(2.1rem, 1fr));
+  }
+
+  .game-mine-grid {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  .game-wordle-tile {
+    width: 2.6rem;
+    height: 2.6rem;
+    font-size: 1.1rem;
+  }
+
+  .game-sliding-tile {
+    height: 3rem;
+    font-size: 1rem;
+  }
 }
