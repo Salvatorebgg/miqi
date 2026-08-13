@@ -140,6 +140,7 @@ export function AppShell() {
             <div>
               <p className="eyebrow">MIQI</p>
               <h1>学习中心</h1>
+              <p className="topbar-sub"><Sparkles aria-hidden="true" />{theme === 'dark' ? '暗色 · 专注模式' : '每日进步一点点'}</p>
             </div>
             <div className="topbar-actions">
               <button type="button" className="sound-toggle" onClick={toggleTheme} aria-label={theme === 'dark' ? '切换到浅色主题' : '切换到暗色主题'}>
