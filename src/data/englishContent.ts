@@ -103,6 +103,46 @@ export const ieltsWords: IeltsWord[] = [
   w('w58', 'tentative', '/ˈtentətɪv/', 'adj.', '试探性的；暂定的', ['tentative conclusion', 'tentative steps'], 'The findings support a tentative conclusion rather than a firm law.', 'academic'),
   w('w59', 'unprecedented', '/ʌnˈpresɪdentɪd/', 'adj.', '前所未有的', ['unprecedented scale', 'almost unprecedented'], 'Online education has grown at an unprecedented pace.', 'technology'),
   w('w60', 'versatile', '/ˈvɜːsətaɪl/', 'adj.', '多才多艺的；用途广的', ['versatile skill', 'highly versatile'], 'Writing is a versatile skill that transfers to almost every career.', 'daily'),
+  w('w61', 'abolish', '/əˈbɒlɪʃ/', 'v.', '废除；取消', ['abolish slavery', 'abolish a rule'], 'The committee voted to abolish the outdated dress code.', 'society'),
+  w('w62', 'accelerate', '/əkˈseləreɪt/', 'v.', '加速；促进', ['accelerate growth', 'accelerate the process'], 'Investment in rail could accelerate regional economic growth.', 'economy'),
+  w('w63', 'accommodate', '/əˈkɒmədeɪt/', 'v.', '容纳；为…提供方便', ['accommodate more students', 'accommodate changing needs'], 'The new library was designed to accommodate 800 students at once.', 'education'),
+  w('w64', 'acknowledge', '/əkˈnɒlɪdʒ/', 'v.', '承认；致谢', ['acknowledge a mistake', 'widely acknowledged'], 'The report acknowledges that remote learning widened the digital divide.', 'society'),
+  w('w65', 'adequate', '/ˈædɪkwət/', 'adj.', '足够的；合格的', ['adequate funding', 'adequate preparation'], 'Many schools lack adequate funding for laboratory equipment.', 'education'),
+  w('w66', 'administer', '/ədˈmɪnɪstə(r)/', 'v.', '管理；施行', ['administer a test', 'administer the programme'], 'The survey was administered to over three thousand households.', 'academic'),
+  w('w67', 'allocate', '/ˈæləkeɪt/', 'v.', '分配；拨给', ['allocate resources', 'allocate time'], 'Councils must allocate scarce housing resources fairly.', 'society'),
+  w('w68', 'analogous', '/əˈnæləɡəs/', 'adj.', '类似的；可比拟的', ['analogous situation', 'broadly analogous'], 'The spread of a rumour is analogous to the spread of a disease.', 'academic'),
+  w('w69', 'assess', '/əˈses/', 'v.', '评估；估价', ['assess the impact', 'assess performance'], 'Exams are only one way to assess a student\'s understanding.', 'education'),
+  w('w70', 'assume', '/əˈsjuːm/', 'v.', '假定；承担', ['assume responsibility', 'safely assume'], 'We should not assume that every student has internet access at home.', 'society'),
+  w('w71', 'capacity', '/kəˈpæsəti/', 'n.', '容量；能力', ['spare capacity', 'capacity to learn'], 'The hospital\'s capacity was stretched during the winter peak.', 'health'),
+  w('w72', 'collaborate', '/kəˈlæbəreɪt/', 'v.', '合作；协作', ['collaborate on a project', 'collaborate closely'], 'Students collaborated on the science fair project across three schools.', 'education'),
+  w('w73', 'compensate', '/ˈkɒmpenseɪt/', 'v.', '补偿；弥补', ['compensate for a loss', 'compensate workers'], 'Flexible working can compensate for long commutes.', 'society'),
+  w('w74', 'concurrent', '/kənˈkʌrənt/', 'adj.', '同时发生的；并行的', ['concurrent sessions', 'concurrent processes'], 'The conference ran four concurrent workshops.', 'academic'),
+  w('w75', 'confine', '/kənˈfaɪn/', 'v.', '限制；局限于', ['confine to', 'confined space'], 'The damage was confined to the ground floor.', 'daily'),
+  w('w76', 'consensus', '/kənˈsensəs/', 'n.', '共识；一致意见', ['reach a consensus', 'growing consensus'], 'There is broad consensus that exercise improves mental health.', 'health'),
+  w('w77', 'constrain', '/kənˈstreɪn/', 'v.', '限制；约束', ['constrained by budget', 'time constraints'], 'Small budgets constrain what schools can offer.', 'education'),
+  w('w78', 'contemporary', '/kənˈtemprəri/', 'adj.', '当代的；同时代的', ['contemporary society', 'contemporary art'], 'Contemporary debates about privacy echo older concerns about newspapers.', 'culture'),
+  w('w79', 'contradict', '/ˌkɒntrəˈdɪkt/', 'v.', '反驳；与…矛盾', ['contradict a claim', 'directly contradict'], 'The new data appears to contradict the earlier conclusion.', 'academic'),
+  w('w80', 'conventional', '/kənˈvenʃənl/', 'adj.', '传统的；常规的', ['conventional wisdom', 'conventional methods'], 'Conventional teaching relies heavily on the lecture format.', 'education'),
+  w('w81', 'convey', '/kənˈveɪ/', 'v.', '传达；运送', ['convey meaning', 'convey a message'], 'Tone of voice can convey as much as the words themselves.', 'language'),
+  w('w82', 'criterion', '/kraɪˈtɪəriən/', 'n.', '标准；准则', ['meet the criteria', 'key criterion'], 'Speed is not the only criterion for judging a writer.', 'writing'),
+  w('w83', 'crucial', '/ˈkruːʃl/', 'adj.', '至关重要的；决定性的', ['crucial role', 'crucial to success'], 'Sleep plays a crucial role in consolidating new vocabulary.', 'health'),
+  w('w84', 'decline', '/dɪˈklaɪn/', 'v./n.', '下降；衰退', ['sharp decline', 'declining birth rate'], 'Public libraries have seen a slow decline in footfall.', 'society'),
+  w('w85', 'deduce', '/dɪˈdjuːs/', 'v.', '推断；演绎', ['deduce from', 'correctly deduced'], 'From the footprints, detectives deduced the suspect\'s height.', 'academic'),
+  w('w86', 'deficient', '/dɪˈfɪʃnt/', 'adj.', '缺乏的；有缺陷的', ['deficient in', 'nutritionally deficient'], 'Diets deficient in vitamin D are common in winter.', 'health'),
+  w('w87', 'demonstrate', '/ˈdemənstreɪt/', 'v.', '证明；演示', ['demonstrate a link', 'demonstrate how'], 'The study demonstrates a clear link between reading and vocabulary growth.', 'academic'),
+  w('w88', 'distort', '/dɪˈstɔːt/', 'v.', '扭曲；歪曲', ['distort the truth', 'distorted view'], 'Anonymity can distort the tone of online discussion.', 'technology'),
+  w('w89', 'domestic', '/dəˈmestɪk/', 'adj.', '国内的；家用的', ['domestic market', 'domestic chores'], 'The domestic market absorbs most of the factory\'s output.', 'economy'),
+  w('w90', 'dominant', '/ˈdɒmɪnənt/', 'adj.', '占主导地位的；显著的', ['dominant position', 'dominant culture'], 'English remains the dominant language of academic publishing.', 'culture'),
+  w('w91', 'enable', '/ɪˈneɪbl/', 'v.', '使能够；使可行', ['enable students to', 'enable access'], 'Subsidised transport enables rural students to attend school daily.', 'society'),
+  w('w92', 'enhance', '/ɪnˈhɑːns/', 'v.', '提高；增强', ['enhance learning', 'enhance the experience'], 'Multimedia materials can enhance understanding of abstract ideas.', 'education'),
+  w('w93', 'explicit', '/ɪkˈsplɪsɪt/', 'adj.', '明确的；直白的', ['explicit instruction', 'explicit consent'], 'The guidelines give explicit examples of acceptable practice.', 'academic'),
+  w('w94', 'flourish', '/ˈflʌrɪʃ/', 'v.', '繁荣；兴旺', ['flourish under', 'culture flourished'], 'Small towns flourished along the new railway line.', 'economy'),
+  w('w95', 'foster', '/ˈfɒstə(r)/', 'v.', '培养；促进', ['foster creativity', 'foster a culture'], 'Discussion-based classes foster critical thinking.', 'education'),
+  w('w96', 'generate', '/ˈdʒenəreɪt/', 'v.', '产生；生成', ['generate revenue', 'generate interest'], 'A good question can generate a lively class debate.', 'education'),
+  w('w97', 'identical', '/aɪˈdentɪkl/', 'adj.', '完全相同的', ['identical twins', 'essentially identical'], 'The two algorithms produce essentially identical results.', 'academic'),
+  w('w98', 'illuminate', '/ɪˈluːmɪneɪt/', 'v.', '阐明；照亮', ['illuminate the issue', 'illuminate the difference'], 'Case studies illuminate how policy works in practice.', 'academic'),
+  w('w99', 'imply', '/ɪmˈplaɪ/', 'v.', '暗示；意味着', ['imply that', 'does not imply'], 'High grades do not necessarily imply deep understanding.', 'education'),
+  w('w100', 'innovative', '/ˈɪnəvətɪv/', 'adj.', '创新的；新颖的', ['innovative approach', 'innovative design'], 'Innovative teaching methods can revive a tired curriculum.', 'education'),
 ]
 
 const q = (
@@ -286,6 +326,34 @@ export const scenarioSets: ReadingSet[] = [
     ],
     summaryPrompt: '用英文写一段话，说服朋友参加一次志愿活动。',
   },
+  {
+    id: 'sc-flight-change',
+    kind: 'scenario',
+    title: '情景理解 · 航班延误与改签',
+    passage: [
+      'Lena\'s flight home is cancelled two hours before departure. At the airline counter she asks for the earliest rebooking rather than a refund, because her visa runs out in three days. The agent finds a morning flight the next day and, as the delay crosses the threshold in EU law, hands her a form to claim compensation and a voucher for meals and one hotel night.',
+      'The airline\'s website says vouchers expire in six months and are non-transferable. Lena photographs every receipt, keeps the boarding pass for the original flight, and notes the cancellation reason the agent mentions — "crew scheduling" — since disputed claims are sometimes dismissed for this wording.',
+    ],
+    translation: [
+      '丽娜的返程航班在起飞前两小时被取消。在航空公司柜台，她要求改签最早的航班而不是退款，因为她的签证三天后就到期。代理为她找到次日早班机，并且由于延误超过了欧盟法律规定的门槛，给了她一张申请赔偿的表格，以及一份餐费和一夜酒店住宿的代金券。',
+      '航空公司官网显示，代金券六个月后过期且不可转让。丽娜拍下了每一张收据，保留原航班的登机牌，并记下代理提到的取消原因——"机组排班"——因为有争议的索赔有时会因为这个措辞而被驳回。',
+    ],
+    questions: [
+      q('sc7-q1', 'main-idea', '本段介绍？', [
+        ['a', '航班取消时改签、索赔与留证的关键做法'], ['b', '如何预订酒店'], ['c', '签证办理流程'], ['d', '航空公司的收益结构'],
+      ], 'a', '从柜台改签到法务索赔再到留存证据，是一条完整的应对主线。'),
+      q('sc7-q2', 'detail', 'Lena 选择改签而非退款的原因是？', [
+        ['a', '她的签证三天后到期，退款来不及重新购票'], ['b', '退款金额太少'], ['c', '她喜欢该航空公司'], ['d', '退款需要等一个月'],
+      ], 'a', '原文明确："because her visa runs out in three days"。'),
+      q('sc7-q3', 'inference', '她为何特意记下"机组排班"这一措辞？', [
+        ['a', '某些航空公司会以该理由拒付赔偿，需留作质证'], ['b', '她想投诉该员工'], ['c', '这是为了申请签证'], ['d', '她需要向房东解释'],
+      ], 'a', '"disputed claims are sometimes dismissed for this wording" 说明原因。'),
+      q('sc7-q4', 'summary', '遭遇航班取消时，合理的做法是？', [
+        ['a', '尽快改签并留存凭证，必要时申请法定赔偿'], ['b', '当场放弃所有权利'], ['c', '只要求退款不考虑行程'], ['d', '靠发怒解决问题'],
+      ], 'a', '文中 Lena 的每一步都在为改签与索赔保留依据。'),
+    ],
+    summaryPrompt: '用英文写一段话，向乘客说明航班取消后应做的三件事。',
+  },
 ]
 
 export const englishNewsSets: ReadingSet[] = [
@@ -407,6 +475,41 @@ export const englishNewsSets: ReadingSet[] = [
       ], 'a', '"once dismissed as barren" 与 "distinct communities" 构成转折。'),
     ],
     summaryPrompt: '用英文概括这项发现，并说明你支持或反对深海采矿的理由。',
+  },
+  {
+    id: 'news-farmbots',
+    kind: 'news',
+    title: '新闻阅读 · 农田里的机器人',
+    source: 'Miqi Learning 编辑部（模拟新闻稿）',
+    passage: [
+      'Autonomous weeding robots, powered by cameras and narrow AI, are being tested on vegetable farms across northern Europe. The machines remove individual weeds by precision water jet, cutting herbicide use by up to 80% on some trial fields. Farmers report the robots work through the night, when staff cannot, and that soil compaction is lower because the machines weigh a fraction of a tractor.',
+      'Agronomists caution that the robots currently recognise a limited set of crop varieties and struggle in heavy rain. Early adopters also note the upfront cost — about half the price of a small tractor — still excludes most smallholders, widening an existing digital divide in agriculture.',
+    ],
+    translation: [
+      '配备摄像头和窄域人工智能的自主除草机器人，正在北欧多国的蔬菜农场接受测试。这些机器通过精准水刀去除单株杂草，在部分试验田里将除草剂用量减少了多达80%。农户反馈，机器可以在夜间工作，这是人力做不到的；而且由于自重仅为一台拖拉机的零头，对土壤的压实也更小。',
+      '农学家提醒，这些机器人目前只能识别有限的作物品种，在大雨中也会失灵。早期采用者还指出，购置成本——约为一台小型拖拉机价格的一半——仍将大多数小农户拒之门外，从而拉大了农业领域已有的数字鸿沟。',
+    ],
+    questions: [
+      q('n5-q1', 'main-idea', '这篇报道的主线是？', [
+        ['a', '除草机器人带来的收益及其在成本与技术上对农户的挑战'],
+        ['b', '机器人将彻底取代所有农民'],
+        ['c', '除草剂的发明历史'],
+        ['d', '北方蔬菜的价格波动'],
+      ], 'a', '一段讲收益，二段讲局限与成本门槛，构成均衡报道。'),
+      q('n5-q2', 'detail', '试验田中除草剂用量减少了多少？', [
+        ['a', '约 50%'], ['b', '最多 80%'], ['c', '100%'], ['d', '30%'],
+      ], 'b', '原文："cutting herbicide use by up to 80%"。'),
+      q('n5-q3', 'inference', '"widening an existing digital divide" 指？', [
+        ['a', '能买得起机器的大农场与小农户差距拉大'], ['b', '城市与乡村网络差异消失'], ['c', '农民不再使用手机'], ['d', '机器人之间性能不同'],
+      ], 'a', '成本门槛使小农户难以受益，加深了既有分化。'),
+      q('n5-q4', 'summary', '文中提到机器人的一个优势与一个局限是？', [
+        ['a', '优势：夜间作业、减少除草剂与压实；局限：品种识别有限、怕大雨、成本高'],
+        ['b', '优势：完全免费；局限：速度太快'],
+        ['c', '优势：无需维护；局限：只能种菜'],
+        ['d', '优势：替代所有农活；局限：噪音大'],
+      ], 'a', '两个段落分别列出，答案整合了正反两面。'),
+    ],
+    summaryPrompt: '用英文写出这条新闻的三要素（what / why / concern）。',
   },
 ]
 
@@ -535,5 +638,40 @@ export const paperSets: ReadingSet[] = [
       ], 'a', '病理相当却更晚出现症状，正是储备概念的操作化。'),
     ],
     summaryPrompt: '用英文总结研究设计，并写出作者提到的一个局限。',
+  },
+  {
+    id: 'paper-microbiome',
+    kind: 'paper',
+    title: '论文摘要 · 肠道菌群与睡眠质量',
+    source: '模拟学术摘要 · Nutrition & Sleep Medicine 方向',
+    passage: [
+      'Abstract: We examined whether gut microbial diversity is associated with objectively measured sleep efficiency. Across 862 adults, higher Shannon diversity of the gut microbiome correlated with fewer night awakenings and greater slow-wave sleep, after adjusting for body mass index, diet, and chronotype.',
+      'Longitudinal sampling of 214 participants over six months showed that increases in dietary fibre preceded measurable gains in diversity and, one to two weeks later, small but significant improvements in sleep efficiency. Because the temporal order is suggestive rather than conclusive, the authors propose randomised fibre interventions as the next step.',
+    ],
+    translation: [
+      '摘要：我们考察了肠道菌群多样性是否与客观测量的睡眠效率相关。在862名成年人中，肠道微生物组的香农多样性越高，与夜间觉醒次数越少、慢波睡眠越多相关，且这一关联在调整了体质指数、饮食和昼夜节律类型之后仍然成立。',
+      '对214名参与者为期六个月的纵向采样显示，膳食纤维的增加先于多样性可测量的提升，而多样性提升一到两周后，睡眠效率出现小而显著的改善。由于时间先后顺序只能提示而不能确证因果，作者建议下一步开展随机化的纤维干预研究。',
+    ],
+    questions: [
+      q('p5-q1', 'main-idea', '该研究的核心发现是？', [
+        ['a', '肠道菌群多样性与睡眠效率相关，纤维增加可能先于睡眠改善'],
+        ['b', '睡眠问题与饮食完全无关'],
+        ['c', '菌群多样性由基因唯一决定'],
+        ['d', '慢波睡眠没有生理意义'],
+      ], 'a', '横断面相关 + 纵向时间顺序共同支撑，作者自己也强调需干预验证。'),
+      q('p5-q2', 'detail', '横断面分析纳入了多少名成年人？', [
+        ['a', '214'], ['b', '862'], ['c', '1,076'], ['d', '6,000'],
+      ], 'b', '横断面 862 人，纵向随访是其子集 214 人。'),
+      q('p5-q3', 'inference', '作者为何把结论限定为"建议性"而非"因果"？', [
+        ['a', '观察性时间顺序无法排除其他因素，需要随机干预证实'], ['b', '样本量太小'], ['c', '仪器测量不准'], ['d', '数据被篡改'],
+      ], 'a', '"temporal order is suggestive rather than conclusive" 与随机干预建议呼应。'),
+      q('p5-q4', 'summary', '纵向数据揭示的先后关系是？', [
+        ['a', '纤维摄入增加 → 菌群多样性上升 → 1–2 周后睡眠效率改善'],
+        ['b', '睡眠变好导致纤维摄入增加'],
+        ['c', '三者在同一时间完全无关'],
+        ['d', '先有疾病再有多样性下降'],
+      ], 'a', '原文给出了明确的三步时间顺序。'),
+    ],
+    summaryPrompt: '用英文写出该研究的发现、方法局限，以及作者建议的下一步。',
   },
 ]

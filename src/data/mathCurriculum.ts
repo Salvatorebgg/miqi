@@ -538,6 +538,157 @@ export const mathLessons: MathLesson[] = [
       { mistake: '因式分解不彻底，留下还可以继续分解的因子', correction: '分解后检查每个因式是否还能继续分解。例如 x⁴−1 分解为 (x²+1)(x+1)(x−1) 才算彻底' },
     ],
   },
+  {
+    id: 'bridge-analytic-geometry',
+    trackId: 'bridge',
+    title: '直线与圆的方程',
+    duration: 45,
+    prerequisites: ['bridge-algebra'],
+    objectives: ['掌握直线的点斜式与一般式', '会用点到直线距离公式', '理解圆的标准方程与位置关系'],
+    intuition: [
+      '解析几何把"几何问题"翻译成"代数问题"：直线、圆这样的图形，都可以写成一个方程。于是"两线是否相交""点到线多远"统统变成解方程、算距离。',
+      '斜率是直线的"性格指标"：正斜率向上走，负斜率向下走，斜率相等则平行，斜率相乘为 −1 则垂直。圆的标准方程则直接"暴露"圆心与半径。',
+    ],
+    principles: [
+      {
+        title: '直线方程',
+        body: '过点 (x₁, y₁) 且斜率为 k 的直线为点斜式；展开即得一般式 Ax + By + C = 0。',
+        formula: 'y - y_1 = k(x - x_1)',
+      },
+      {
+        title: '点到直线距离',
+        body: '点 (x₀, y₀) 到直线 Ax + By + C = 0 的距离公式，分子为代入绝对值，分母为系数平方和开根。',
+        formula: 'd = \\frac{|Ax_0 + By_0 + C|}{\\sqrt{A^2 + B^2}}',
+      },
+      {
+        title: '圆的标准方程',
+        body: '圆心 (a, b)、半径 r 的圆满足：到圆心的距离恒等于 r。',
+        formula: '(x-a)^2 + (y-b)^2 = r^2',
+      },
+    ],
+    examples: [
+      {
+        prompt: '求过点 (1, 2) 且斜率为 3 的直线与 x 轴的交点。',
+        steps: ['点斜式：y − 2 = 3(x − 1)。', '令 y = 0：−2 = 3(x − 1) ⇒ x = 1/3。'],
+        answer: '交点 (1/3, 0)',
+      },
+      {
+        prompt: '求点 (2, 3) 到直线 3x + 4y − 8 = 0 的距离。',
+        steps: ['代入距离公式：d = |3×2 + 4×3 − 8| / √(3² + 4²)。', '分子 = |6 + 12 − 8| = 10，分母 = 5。', 'd = 10/5 = 2。'],
+        answer: '距离为 2',
+      },
+    ],
+    exercises: [
+      {
+        id: 'baex-ex1', topic: 'analytic-geometry', difficulty: 'basic', type: 'number',
+        prompt: '求点 (1, 1) 到直线 y = 0 的距离。',
+        answer: 1, tolerance: 0.0001,
+        solution: ['即到 x 轴的距离，|1 − 0| = 1。'],
+      },
+      {
+        id: 'baex-ex2', topic: 'analytic-geometry', difficulty: 'basic', type: 'choice',
+        prompt: '圆心 (0, 0)、半径 5 的圆的标准方程是？',
+        options: [
+          { id: 'a', label: 'x² + y² = 25' },
+          { id: 'b', label: 'x² + y² = 5' },
+          { id: 'c', label: 'x + y = 25' },
+          { id: 'd', label: 'x² − y² = 25' },
+        ],
+        answer: 'a',
+        solution: ['(x−0)² + (y−0)² = 5²，即 x² + y² = 25。'],
+      },
+      {
+        id: 'baex-ex3', topic: 'analytic-geometry', difficulty: 'advanced', type: 'number',
+        prompt: '求点 (3, 4) 到直线 x + y = 0 的距离（保留三位小数）。',
+        answer: 4.95, tolerance: 0.01,
+        solution: ['d = |3 + 4| / √(1 + 1) = 7/√2 ≈ 4.950。'],
+      },
+      {
+        id: 'baex-ex4', topic: 'analytic-geometry', difficulty: 'basic', type: 'number',
+        prompt: '过点 (2, 3) 斜率为 2 的直线，其 y 轴截距是？',
+        answer: -1, tolerance: 0.0001,
+        solution: ['y − 3 = 2(x − 2)，令 x = 0 得 y = 3 − 4 = −1。'],
+      },
+      {
+        id: 'baex-ex5', topic: 'analytic-geometry', difficulty: 'advanced', type: 'choice',
+        prompt: '直线 y = 2x + 1 与 y = 2x − 3 的关系是？',
+        options: [
+          { id: 'a', label: '平行' },
+          { id: 'b', label: '垂直' },
+          { id: 'c', label: '相交但不垂直' },
+          { id: 'd', label: '重合' },
+        ],
+        answer: 'a',
+        solution: ['两直线斜率相等（均为 2），截距不同，故平行。'],
+      },
+      {
+        id: 'baex-ex6', topic: 'analytic-geometry', difficulty: 'basic', type: 'number',
+        prompt: '圆心 (1, −2)、半径 3 的圆，其方程中 (x−1)² + (y+2)² = ？',
+        answer: 9, tolerance: 0.0001,
+        solution: ['半径平方 r² = 3² = 9。'],
+      },
+      {
+        id: 'baex-ex7', topic: 'analytic-geometry', difficulty: 'advanced', type: 'number',
+        prompt: '求直线 y = x 与圆 x² + y² = 2 的交点中，x 坐标的值（两交点 x 相同，取该值）。',
+        answer: 1, tolerance: 0.0001,
+        solution: ['代入 y = x：2x² = 2 ⇒ x² = 1 ⇒ x = ±1。取正根 x = 1。'],
+      },
+      {
+        id: 'baex-ex8', topic: 'analytic-geometry', difficulty: 'advanced', type: 'number',
+        prompt: '直线 y = x + b 与圆 x² + y² = 1 相切，求 b（取正根，保留三位小数）。',
+        answer: 1.414, tolerance: 0.001,
+        solution: ['相切条件：圆心到直线距离 = 半径。直线化为 x − y + b = 0。', 'd = |b|/√2 = 1 ⇒ |b| = √2 ≈ 1.414。'],
+      },
+    ],
+    quiz: [
+      {
+        id: 'baex-q1', topic: 'analytic-geometry', difficulty: 'basic', type: 'choice',
+        prompt: '两直线垂直的斜率条件是？',
+        options: [
+          { id: 'a', label: '斜率之积为 −1' },
+          { id: 'b', label: '斜率相等' },
+          { id: 'c', label: '斜率之积为 1' },
+          { id: 'd', label: '斜率无关' },
+        ],
+        answer: 'a',
+        solution: ['k₁·k₂ = −1 时两直线垂直（斜率存在的情形）。'],
+      },
+      {
+        id: 'baex-q2', topic: 'analytic-geometry', difficulty: 'basic', type: 'number',
+        prompt: '点 (0, 0) 到直线 3x + 4y − 5 = 0 的距离是？',
+        answer: 1, tolerance: 0.0001,
+        solution: ['d = |−5| / √(9+16) = 5/5 = 1。'],
+      },
+    ],
+    interactiveGraph: {
+      formula: 'Math.sqrt(Math.max(4 - (x-1)*(x-1), 0)) - 2',
+      xMin: -3,
+      xMax: 5,
+      yMin: -5,
+      yMax: 1,
+      title: '上半圆 (x−1)² + (y+2)² = 4：圆心 (1,−2)、半径 2',
+      annotations: [{ x: 1, label: '圆心 (1,−2)' }],
+    },
+    keyFormulas: [
+      { name: '点斜式', formula: 'y - y_1 = k(x - x_1)', usage: '已知斜率和一点写直线方程' },
+      { name: '点到直线距离', formula: 'd = \\frac{|Ax_0 + By_0 + C|}{\\sqrt{A^2 + B^2}}', usage: '距离类问题的通用工具' },
+      { name: '圆的标准方程', formula: '(x-a)^2 + (y-b)^2 = r^2', usage: '直接读出圆心与半径' },
+    ],
+    commonMistakes: [
+      { mistake: '求两点连线的斜率时把 Δy/Δx 写反', correction: '斜率 = 纵坐标差 ÷ 横坐标差 = (y₂−y₁)/(x₂−x₁)，顺序要一致' },
+      { mistake: '点到直线距离中分子漏掉绝对值', correction: '分子是代入后的绝对值 |Ax₀+By₀+C|，可负可正，取绝对值才是距离' },
+      { mistake: '把 x² + y² + Dx + Ey + F = 0 当作标准方程直接读圆心', correction: '需先配方成 (x−a)²+(y−b)²=r² 才能读出圆心与半径' },
+    ],
+    detailedNotes: [
+      '解析几何的核心思想是"用代数研究几何"：把图形表示为方程，几何关系（平行、垂直、相切、相交）转化为方程或不等式之间的关系。',
+      '斜率不存在（竖直直线）的情形要单独处理：此时方程为 x = 常数，不能用点斜式。',
+      '直线与圆的位置关系有三种：相交（距离 < 半径）、相切（距离 = 半径）、相离（距离 > 半径），都可统一用"圆心到直线的距离与半径比较"来判断。',
+    ],
+    resources: [
+      { title: '直线与圆（解析几何入门）', provider: 'Bilibili', url: 'https://search.bilibili.com/all?keyword=%E7%9B%B4%E7%BA%BF%E4%B8%8E%E5%9C%86%20%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95', kind: 'video' },
+      { title: 'Circles — Khan Academy', provider: 'Khan Academy', url: 'https://www.khanacademy.org/math/geometry-home/cc-geometry-circles', kind: 'video' },
+    ],
+  },
 
   // ── 第二阶：预备微积分 ─────────────────────────────────────────────
   {
@@ -954,6 +1105,166 @@ export const mathLessons: MathLesson[] = [
     resources: [
       { title: '指数与对数函数精讲', provider: 'Bilibili', url: 'https://search.bilibili.com/all?keyword=%E6%8C%87%E6%95%B0%E5%AF%B9%E6%95%B0%E5%87%BD%E6%95%B0', kind: 'video' },
       { title: 'Logarithms — Khan Academy', provider: 'Khan Academy', url: 'https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:logs', kind: 'video' },
+    ],
+  },
+  {
+    id: 'precalc-complex',
+    trackId: 'precalc',
+    title: '复数与欧拉公式',
+    duration: 50,
+    prerequisites: ['precalc-exp-log', 'bridge-trig'],
+    objectives: ['理解复数的代数与三角形式', '掌握复平面与模辐角', '会用欧拉公式统一指数与三角'],
+    intuition: [
+      '负数不能开平方？复数说：那就定义 i² = −1。加上这一条，方程 x² = −1 有了解，代数从此"封闭"。复数把平面上的点写成 z = x + iy，加减是平移，乘除是缩放旋转。',
+      '欧拉公式 e^{iθ} = cos θ + i sin θ 是数学最优雅的等式之一：指数与三角函数在复数域握手。它让"旋转"变成"乘法"，是信号处理与量子力学的地基。',
+    ],
+    principles: [
+      {
+        title: '虚数单位与代数形式',
+        body: 'i² = −1，复数 z = a + bi（a 为实部，b 为虚部），在复平面上对应点 (a, b)。',
+        formula: 'z = a + bi,\\quad i^2 = -1',
+      },
+      {
+        title: '三角形式与欧拉公式',
+        body: '模 r 与辐角 θ 给出三角形式；由欧拉公式与指数形式等价。',
+        formula: 'z = r(\\cos\\theta + i\\sin\\theta) = r\\,e^{i\\theta}',
+      },
+      {
+        title: '复数乘法即旋转',
+        body: '两复数相乘：模长相乘，辐角相加。这是欧拉形式最直观的结论。',
+        formula: 'r_1e^{i\\theta_1}\\,\\cdot\\, r_2e^{i\\theta_2} = r_1 r_2\\, e^{i(\\theta_1+\\theta_2)}',
+      },
+    ],
+    examples: [
+      {
+        prompt: '计算 (1 + 2i)(3 − i) 并化简。',
+        steps: ['展开：1×3 + 1×(−i) + 2i×3 + 2i×(−i)。', '= 3 − i + 6i − 2i²。', 'i² = −1，故 −2i² = +2。', '合并：3 + 2 + (−1 + 6)i = 5 + 5i。'],
+        answer: '5 + 5i',
+      },
+      {
+        prompt: '把 z = 1 + i 写成三角形式（求模与辐角）。',
+        steps: ['模 r = √(1² + 1²) = √2。', '辐角 tan θ = 1/1 = 1，θ = π/4。', 'z = √2(cos(π/4) + i sin(π/4)) = √2·e^{iπ/4}。'],
+        answer: 'z = √2 e^{iπ/4}',
+      },
+    ],
+    exercises: [
+      {
+        id: 'pc-ex1', topic: 'complex', difficulty: 'basic', type: 'number',
+        prompt: '计算 (1 + i)² 的实部。',
+        answer: 0, tolerance: 0.0001,
+        solution: ['(1+i)² = 1 + 2i + i² = 1 + 2i − 1 = 2i，实部为 0。'],
+      },
+      {
+        id: 'pc-ex2', topic: 'complex', difficulty: 'basic', type: 'choice',
+        prompt: 'i²⁰²⁴ 的值是？（注意 2024 是 4 的倍数）',
+        options: [
+          { id: 'a', label: '1' },
+          { id: 'b', label: 'i' },
+          { id: 'c', label: '−1' },
+          { id: 'd', label: '−i' },
+        ],
+        answer: 'a',
+        solution: ['i 的幂以 4 为周期：i⁴ = 1，2024 是 4 的倍数，故 i²⁰²⁴ = 1。'],
+      },
+      {
+        id: 'pc-ex3', topic: 'complex', difficulty: 'advanced', type: 'number',
+        prompt: '求复数 z = 3 + 4i 的模 |z|。',
+        answer: 5, tolerance: 0.0001,
+        solution: ['|z| = √(9 + 16) = 5。'],
+      },
+      {
+        id: 'pc-ex4', topic: 'complex', difficulty: 'basic', type: 'number',
+        prompt: '计算 i² 的值。',
+        answer: -1, tolerance: 0.0001,
+        solution: ['由定义 i² = −1。'],
+      },
+      {
+        id: 'pc-ex5', topic: 'complex', difficulty: 'advanced', type: 'number',
+        prompt: '用欧拉公式求 e^{iπ} 的值。',
+        answer: -1, tolerance: 0.0001,
+        solution: ['e^{iπ} = cos π + i sin π = −1 + 0 = −1（欧拉恒等式）。'],
+      },
+      {
+        id: 'pc-ex6', topic: 'complex', difficulty: 'basic', type: 'choice',
+        prompt: '复数 z = 2i 在复平面上的位置是？',
+        options: [
+          { id: 'a', label: '虚轴正半轴上' },
+          { id: 'b', label: '实轴正半轴上' },
+          { id: 'c', label: '原点' },
+          { id: 'd', label: '第三象限' },
+        ],
+        answer: 'a',
+        solution: ['z = 0 + 2i，实部 0、虚部 2，位于虚轴正半轴。'],
+      },
+      {
+        id: 'pc-ex7', topic: 'complex', difficulty: 'advanced', type: 'number',
+        prompt: '计算 (cos(π/3) + i sin(π/3))² 的辐角主值（弧度）。',
+        answer: 2.094, tolerance: 0.001,
+        solution: ['复数相乘辐角相加：(π/3) + (π/3) = 2π/3 ≈ 2.094。'],
+      },
+      {
+        id: 'pc-ex8', topic: 'complex', difficulty: 'advanced', type: 'expression',
+        prompt: '化简 (3 + 2i) − (1 − 4i)，写出结果（形如 a+bi，无空格）。',
+        answer: '2+6i',
+        solution: ['实部：3 − 1 = 2；虚部：2 − (−4) = 6。结果为 2 + 6i。'],
+      },
+    ],
+    quiz: [
+      {
+        id: 'pc-q1', topic: 'complex', difficulty: 'basic', type: 'choice',
+        prompt: '欧拉公式 e^{iθ} 等于？',
+        options: [
+          { id: 'a', label: 'cos θ + i sin θ' },
+          { id: 'b', label: 'cos θ − i sin θ' },
+          { id: 'c', label: 'sin θ + i cos θ' },
+          { id: 'd', label: 'e·i·θ' },
+        ],
+        answer: 'a',
+        solution: ['欧拉公式：e^{iθ} = cos θ + i sin θ。'],
+      },
+      {
+        id: 'pc-q2', topic: 'complex', difficulty: 'basic', type: 'choice',
+        prompt: '方程 x² + 1 = 0 在复数范围内的根是？',
+        options: [
+          { id: 'a', label: 'x = ±i' },
+          { id: 'b', label: 'x = ±1' },
+          { id: 'c', label: 'x = i（仅一个）' },
+          { id: 'd', label: '无解' },
+        ],
+        answer: 'a',
+        solution: ['x² = −1 ⇒ x = ±i，两个共轭虚根。'],
+      },
+    ],
+    interactiveGraph: {
+      formula: 'Math.cos(x)',
+      xMin: -6.283,
+      xMax: 6.283,
+      yMin: -2,
+      yMax: 2,
+      title: '欧拉公式的实部：e^{iθ} 的实部 cos θ，辐角 θ 每转 2π 回到起点',
+      annotations: [
+        { x: 3.142, label: 'θ=π' },
+        { x: 6.283, label: 'θ=2π' },
+      ],
+    },
+    keyFormulas: [
+      { name: '虚数单位', formula: 'i^2 = -1', usage: '定义复数域的基础' },
+      { name: '欧拉公式', formula: 'e^{i\\theta} = \\cos\\theta + i\\sin\\theta', usage: '指数与三角的统一，复平面旋转' },
+      { name: '复数乘法（极坐标）', formula: 'r_1e^{i\\theta_1} r_2e^{i\\theta_2} = r_1r_2 e^{i(\\theta_1+\\theta_2)}', usage: '模相乘、辐角相加，快速算幂与积' },
+    ],
+    commonMistakes: [
+      { mistake: '把 i² 当作 1', correction: '定义 i² = −1，这是复数唯一的核心约定' },
+      { mistake: '求 |a+bi| 时忘记开方，写成 a² + b²', correction: '模是 √(a²+b²)，不是 a²+b²' },
+      { mistake: '辐角判断象限失误', correction: '辐角需由 (a, b) 所在象限决定，tanθ=b/a 不够，还要看实部虚部符号' },
+    ],
+    detailedNotes: [
+      '复数域是实数域的扩张，核心约定只有一条 i² = −1。由此代数基本定理成立：任何多项式在复数域都有根。',
+      '复平面的几何直觉极强：加法是向量平移，乘法是"模相乘、辐角相加"的旋转缩放。这也解释了为什么 e^{iθ} 描述单位圆上的匀速旋转。',
+      '欧拉恒等式 e^{iπ} + 1 = 0 把数学中最基本的五个常数（e, π, i, 1, 0）联结在一起，是数学之美的经典代表。',
+    ],
+    resources: [
+      { title: '复数的几何意义与欧拉公式', provider: 'Bilibili · 3Blue1Brown 中字', url: 'https://search.bilibili.com/all?keyword=%E5%A4%8D%E6%95%B0%20%E6%AC%A7%E6%8B%89%E5%85%AC%E5%BC%8F', kind: 'video' },
+      { title: 'Complex numbers — Khan Academy', provider: 'Khan Academy', url: 'https://www.khanacademy.org/math/precalculus/x9e81a4f98389efdf:complex', kind: 'video' },
     ],
   },
 
@@ -1686,6 +1997,157 @@ export const mathLessons: MathLesson[] = [
     resources: [
       { title: '二重积分及其计算', provider: 'Bilibili · 宋浩老师', url: 'https://search.bilibili.com/all?keyword=%E5%AE%8B%E6%B5%A9%20%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86', kind: 'video' },
       { title: 'Double integrals — Khan Academy', provider: 'Khan Academy', url: 'https://www.khanacademy.org/math/multivariable-calculus/integrating-multivariable-functions', kind: 'video' },
+    ],
+  },
+  {
+    id: 'calc2-lagrange',
+    trackId: 'calc2',
+    title: '拉格朗日乘数法与条件极值',
+    duration: 55,
+    prerequisites: ['calc2-partial'],
+    objectives: ['理解条件极值与约束优化的思想', '掌握拉格朗日乘数法的步骤', '会判断条件极值的最优性'],
+    intuition: [
+      '现实中很少能"自由"地求极值：预算有限、材料固定、面积给定——这就是约束。条件极值问的是：在一条曲线上走，哪里最高、哪里最低？',
+      '拉格朗日乘数法的直觉是：在约束曲线上取得极值的点，目标函数的梯度必须与约束的梯度平行。因为若两者不平行，就还能沿着曲线"蹭"出更大值。λ 就是这个平行比例，它衡量"约束放松一个单位，目标改善多少"——经济学里叫影子价格。',
+    ],
+    principles: [
+      {
+        title: '条件极值问题',
+        body: '求目标函数 f(x, y) 在约束 g(x, y) = 0 下的极值，称为条件极值问题。',
+        formula: '\\min\\ \\max\\ f(x,y)\\quad \\text{s.t.}\\quad g(x,y) = 0',
+      },
+      {
+        title: '拉格朗日乘数法',
+        body: '构造拉格朗日函数 L = f + λg，令其对所有变量和 λ 的偏导都为零，解方程组即得候选极值点。',
+        formula: 'L(x, y, \\lambda) = f(x, y) + \\lambda\\, g(x, y)',
+      },
+      {
+        title: '驻点条件',
+        body: '极值点满足梯度与约束梯度共线，即存在 λ 使两者的梯度线性相关。',
+        formula: '\\nabla f = -\\lambda\\, \\nabla g',
+      },
+    ],
+    examples: [
+      {
+        prompt: '用拉格朗日乘数法求 f(x, y) = xy 在约束 x + y = 4 下的最大值。',
+        steps: ['构造 L = xy + λ(x + y − 4)。', '对 x 求偏导：y + λ = 0；对 y：x + λ = 0。', '两式相减得 x = y。', '代入约束 2x = 4，得 x = y = 2。', '最大值 f(2, 2) = 4。'],
+        answer: '最大值 4，在 (2, 2) 取得',
+      },
+      {
+        prompt: '求椭圆 x² + 4y² = 4 上的点到原点距离平方的最小值（即 min x² + y²，约束 x² + 4y² = 4）。',
+        steps: ['构造 L = x² + y² + λ(x² + 4y² − 4)。', '对 x：2x + 2λx = 0；对 y：2y + 8λy = 0。', '由第一式，若 x ≠ 0 则 λ = −1；代入第二式得 2y − 8y = −6y = 0，故 y = 0，于是 x² = 4，候选点 (±2, 0)，距离平方 4。', '若 x = 0，则 y = ±1，距离平方 1。', '最小距离平方为 1（在 (0, ±1) 取得）。'],
+        answer: '最小值为 1',
+      },
+    ],
+    exercises: [
+      {
+        id: 'cl-ex1', topic: 'lagrange', difficulty: 'basic', type: 'number',
+        prompt: '用拉格朗日乘数法求 f(x, y) = xy 在 x + y = 2 下的最大值。',
+        answer: 1, tolerance: 0.0001,
+        solution: ['L = xy + λ(x + y − 2)，y + λ = 0，x + λ = 0 ⇒ x = y = 1。', '最大值为 1。'],
+      },
+      {
+        id: 'cl-ex2', topic: 'lagrange', difficulty: 'basic', type: 'number',
+        prompt: '求 f(x, y) = x² + y² 在约束 x + y = 2 下的最小值。',
+        answer: 2, tolerance: 0.0001,
+        solution: ['L = x² + y² + λ(x + y − 2)，2x + λ = 0，2y + λ = 0 ⇒ x = y = 1。', '最小值为 1 + 1 = 2。'],
+      },
+      {
+        id: 'cl-ex3', topic: 'lagrange', difficulty: 'advanced', type: 'choice',
+        prompt: '拉格朗日乘数 λ 的经济学含义是？',
+        options: [
+          { id: 'a', label: '约束放松一个单位时目标函数的边际变化（影子价格）' },
+          { id: 'b', label: '目标函数的最大值' },
+          { id: 'c', label: '约束条件本身' },
+          { id: 'd', label: '自变量的个数' },
+        ],
+        answer: 'a',
+        solution: ['λ 是约束的边际价值：约束 b 变化 d b 时，最优值近似变化 λ·d b。'],
+      },
+      {
+        id: 'cl-ex4', topic: 'lagrange', difficulty: 'basic', type: 'number',
+        prompt: '矩形周长为 40，长宽各为多少时面积最大？求最大面积。',
+        answer: 100, tolerance: 0.0001,
+        solution: ['设长 x 宽 y，2x + 2y = 40，即 x + y = 20。', '由对称性或拉格朗日法，x = y = 10 时面积最大，为 100。'],
+      },
+      {
+        id: 'cl-ex5', topic: 'lagrange', difficulty: 'advanced', type: 'number',
+        prompt: '求 f(x, y) = 2x + 3y 在 x² + y² = 1 下的最大值（保留三位小数）。',
+        answer: 3.606, tolerance: 0.001,
+        solution: ['由柯西不等式，(2x+3y)² ≤ (2²+3²)(x²+y²) = 13。', '最大值为 √13 ≈ 3.606。'],
+      },
+      {
+        id: 'cl-ex6', topic: 'lagrange', difficulty: 'advanced', type: 'choice',
+        prompt: '条件极值的驻点处，目标函数梯度与约束梯度满足？',
+        options: [
+          { id: 'a', label: '互相平行（共线）' },
+          { id: 'b', label: '互相垂直' },
+          { id: 'c', label: '大小相等' },
+          { id: 'd', label: '方向相反且等长' },
+        ],
+        answer: 'a',
+        solution: ['∇f = −λ∇g，两梯度共线（平行）。'],
+      },
+      {
+        id: 'cl-ex7', topic: 'lagrange', difficulty: 'basic', type: 'number',
+        prompt: '用拉格朗日乘数法求 f(x, y) = x + y 在 xy = 1（x, y > 0）下的最小值。',
+        answer: 2, tolerance: 0.0001,
+        solution: ['L = x + y + λ(xy − 1)，1 + λy = 0，1 + λx = 0 ⇒ x = y = 1。', '最小值为 2。'],
+      },
+      {
+        id: 'cl-ex8', topic: 'lagrange', difficulty: 'advanced', type: 'number',
+        prompt: '给定 x² + y² = 8，求 xy 的最大值。',
+        answer: 4, tolerance: 0.0001,
+        solution: ['L = xy + λ(x² + y² − 8)，y + 2λx = 0，x + 2λy = 0。', '两式相减：(x − y)(1 − 2λ) = 0。取 x = y，则 2x² = 8，x = y = 2，xy = 4。'],
+      },
+    ],
+    quiz: [
+      {
+        id: 'cl-q1', topic: 'lagrange', difficulty: 'basic', type: 'choice',
+        prompt: '构造拉格朗日函数时，约束需写成？',
+        options: [
+          { id: 'a', label: 'g(x, y) = 0 的形式' },
+          { id: 'b', label: 'g(x, y) = c 的任意形式' },
+          { id: 'c', label: '必须 ≥ 0' },
+          { id: 'd', label: '无需整理' },
+        ],
+        answer: 'a',
+        solution: ['标准形式 L = f + λg，要求 g = 0。'],
+      },
+      {
+        id: 'cl-q2', topic: 'lagrange', difficulty: 'basic', type: 'number',
+        prompt: 'f(x, y) = x² + y² 在 x + y = 4 下的最小值是？',
+        answer: 8, tolerance: 0.0001,
+        solution: ['x = y = 2，最小值为 4 + 4 = 8。'],
+      },
+    ],
+    interactiveGraph: {
+      formula: 'x*x + y*y',
+      xMin: -3,
+      xMax: 3,
+      yMin: -3,
+      yMax: 3,
+      title: '约束优化：目标函数 x² + y²（等高圆）与约束 x + y = 4（直线）相切处为最值点',
+      annotations: [{ x: 2, label: '相切点 (2,2)' }],
+    },
+    keyFormulas: [
+      { name: '拉格朗日函数', formula: 'L = f(x, y) + \\lambda\\, g(x, y)', usage: '把条件极值转化为无约束极值' },
+      { name: '驻点方程组', formula: '\\frac{\\partial L}{\\partial x}=0,\\ \\frac{\\partial L}{\\partial y}=0,\\ \\frac{\\partial L}{\\partial \\lambda}=0', usage: '解出所有候选点后再代入比较' },
+      { name: '梯度共线条件', formula: '\\nabla f = -\\lambda\\, \\nabla g', usage: '理解几何意义：等高线与约束曲线相切' },
+    ],
+    commonMistakes: [
+      { mistake: '忘记对 λ 本身求偏导（即补上约束方程）', correction: '第三个方程 ∂L/∂λ = 0 正是 g = 0，必须列出并参与求解' },
+      { mistake: '把候选点直接当作最值，不做比较', correction: '驻点方程组解出的都是候选点，需逐一比较（可能还有边界/端点）' },
+      { mistake: '对拉格朗日函数求二阶导来判极值', correction: '条件极值的二阶判定需要用到边界上的二阶微分（受限海森矩阵），常规 Hessian 判别法不适用' },
+    ],
+    detailedNotes: [
+      '拉格朗日乘数法把"带约束的优化"转化为"无约束的驻点方程组"。几何上，极值点处目标函数的等高线与约束曲线相切：切点处的梯度互相平行，这正是 ∂L 各偏导为零的几何来源。',
+      'λ 的数值有明确解释：若把约束常数 c 提高一个微小量，最优目标值近似增加 λ·dc。因此 λ 也被称为"影子价格"，在经济学、工程学中用于评估资源的边际价值。',
+      '对多约束问题 g₁ = 0, g₂ = 0，只需在 L 中叠加多个 λᵢgᵢ 项，驻点方程组维度相应增加。',
+    ],
+    resources: [
+      { title: '拉格朗日乘数法（多元函数极值）', provider: 'Bilibili · 宋浩老师', url: 'https://search.bilibili.com/all?keyword=%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E4%B9%98%E6%95%B0%E6%B3%95', kind: 'video' },
+      { title: 'Lagrange multipliers — Khan Academy', provider: 'Khan Academy', url: 'https://www.khanacademy.org/math/multivariable-calculus/applications-of-multivariable-derivatives/lagrange-multipliers', kind: 'video' },
     ],
   },
 

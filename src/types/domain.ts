@@ -36,7 +36,19 @@ export interface VocabularyProgress {
 export interface GameSession {
   id: string
   userId: string
-  game: 'sudoku' | 'maze' | 'sliding' | 'speedMath' | 'wordle' | 'minesweeper' | 'reaction' | 'logicGrid'
+  game:
+    | 'sudoku'
+    | 'maze'
+    | 'sliding'
+    | 'speedMath'
+    | 'wordle'
+    | 'minesweeper'
+    | 'reaction'
+    | 'logicGrid'
+    | 'hanoi'
+    | 'memory'
+    | 'simon'
+    | 'numberPuzzle'
   difficulty: string
   durationSeconds: number
   moves: number

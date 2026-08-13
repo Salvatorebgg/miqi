@@ -10,7 +10,7 @@ import {
 } from './news'
 import { getRepository, LOCAL_USER_ID } from '../../lib/repositoryInstance'
 
-type CategoryFilter = NewsCategory | 'all'
+type CategoryFilter = NewsCategory | 'all' | 'saved'
 
 export function NewsPage() {
   const [feed, setFeed] = useState<NewsFeed | null>(null)
@@ -43,10 +43,11 @@ export function NewsPage() {
       })
   }, [load])
 
-  const visible = useMemo(
-    () => (feed ? filterNews(feed.items, category, query) : []),
-    [feed, category, query],
-  )
+  const visible = useMemo(() => {
+    if (!feed) return []
+    const items = category === 'saved' ? feed.items.filter(item => savedIds.has(item.id)) : feed.items
+    return filterNews(items, category === 'saved' ? 'all' : category, query)
+  }, [feed, category, query, savedIds])
 
   const markArticle = async (articleId: string, patch: { read?: boolean; saved?: boolean }) => {
     const nextRead = patch.read ?? readIds.has(articleId)
@@ -93,7 +94,7 @@ export function NewsPage() {
 
       <div className="news-toolbar">
         <div className="tab-row" role="tablist" aria-label="资讯分类">
-          {(Object.keys(categoryLabels) as CategoryFilter[]).map(key => (
+          {(Object.keys(categoryLabels) as Array<keyof typeof categoryLabels>).map(key => (
             <button
               key={key}
               type="button"
@@ -105,6 +106,17 @@ export function NewsPage() {
               {categoryLabels[key]}
             </button>
           ))}
+          <button
+            type="button"
+            role="tab"
+            aria-selected={category === 'saved'}
+            className={`tab-button saved-tab ${category === 'saved' ? 'active' : ''}`}
+            onClick={() => setCategory('saved')}
+          >
+            <BookmarkCheck aria-hidden="true" />
+            收藏
+            {savedIds.size > 0 ? <span className="count-badge">{savedIds.size}</span> : null}
+          </button>
         </div>
         <label className="search-box">
           <Search aria-hidden="true" />
@@ -119,8 +131,18 @@ export function NewsPage() {
       </div>
 
       {error ? <p role="alert" className="form-error">{error}</p> : null}
-      {!feed && !error ? <p role="status">正在加载今日资讯…</p> : null}
-      {feed && visible.length === 0 ? <p role="status">这个分类暂时没有内容，换个分类或关键词试试。</p> : null}
+      {!feed && !error ? (
+        <div className="skeleton-list" role="status" aria-label="正在加载资讯">
+          {[0, 1, 2, 3].map(index => <div key={index} className="skeleton skeleton-line" />)}
+        </div>
+      ) : null}
+      {feed && visible.length === 0 ? (
+        <p role="status">
+          {category === 'saved'
+            ? '还没有收藏的资讯，点卡片上的「收藏」按钮就能把好文章留在这里。'
+            : '这个分类暂时没有内容，换个分类或关键词试试。'}
+        </p>
+      ) : null}
 
       <ol className="news-list">
         {visible.map(item => (

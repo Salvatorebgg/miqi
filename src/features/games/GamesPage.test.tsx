@@ -62,10 +62,10 @@ describe('GamesPage', () => {
     expect(fixed).toHaveTextContent(original ?? '')
   })
 
-  it('renders eight game selector cards', () => {
+  it('renders twelve game selector cards', () => {
     render(<GamesPage />)
     const tabs = screen.getAllByRole('tab')
-    expect(tabs).toHaveLength(8)
+    expect(tabs).toHaveLength(12)
   })
 
   it('highlights the active game card', () => {
@@ -97,12 +97,34 @@ describe('GamesPage', () => {
     expect(screen.getAllByText(/16×30 · 99雷/).length).toBeGreaterThanOrEqual(1)
   })
 
-  it('switches through all 8 games successfully', async () => {
+  it('switches through all 12 games successfully', async () => {
     render(<GamesPage />)
-    const names = [/数独/, /迷宫/, /滑块拼图/, /心算竞赛/, /猜词/, /扫雷/, /反应测试/, /逻辑谜题/]
+    const names = [/数独/, /迷宫/, /滑块拼图/, /心算竞赛/, /猜词/, /扫雷/, /反应测试/, /逻辑谜题/, /汉诺塔/, /记忆翻牌/, /西蒙/, /数字谜题/]
     for (const name of names) {
       await userEvent.click(screen.getByRole('tab', { name }))
       expect(screen.getByRole('tab', { name })).toHaveAttribute('aria-selected', 'true')
     }
+  })
+
+  it('shows the hanoi game with three pegs and difficulty pills', async () => {
+    render(<GamesPage />)
+    await userEvent.click(screen.getByRole('tab', { name: /汉诺塔/ }))
+    expect(screen.getByRole('group', { name: '汉诺塔三根柱子' })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: '简单' })).toBeInTheDocument()
+  })
+
+  it('shows the memory match grid', async () => {
+    render(<GamesPage />)
+    await userEvent.click(screen.getByRole('tab', { name: /记忆翻牌/ }))
+    expect(screen.getByRole('group', { name: '记忆翻牌' })).toBeInTheDocument()
+  })
+
+  it('shows the number puzzle and a simon start button after switching', async () => {
+    render(<GamesPage />)
+    await userEvent.click(screen.getByRole('tab', { name: /数字谜题/ }))
+    expect(screen.getAllByText(/用四张牌算出/)).toHaveLength(1)
+    expect(screen.getByRole('button', { name: /验证/ })).toBeInTheDocument()
+    await userEvent.click(screen.getByRole('tab', { name: /西蒙/ }))
+    expect(screen.getByRole('button', { name: '开始游戏' })).toBeInTheDocument()
   })
 })

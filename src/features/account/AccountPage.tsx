@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import type { User } from '@supabase/supabase-js'
-import { CloudOff, LogOut, Moon, Sun, Volume2, VolumeX, Waves } from 'lucide-react'
+import { Cloud, CloudOff, LogOut, Moon, Sun, Volume2, VolumeX, Waves } from 'lucide-react'
 import { supabase } from '../../lib/supabase'
 import { loadPreferences, savePreferences, type Preferences } from '../../lib/preferences'
 
@@ -92,12 +92,18 @@ export function AccountPage() {
 
         <article className="settings-card glass">
           <h3>同步状态</h3>
+          <p>
+            <span className={`status-chip ${supabase && user ? 'ok' : ''}`} role="status">
+              {supabase && user ? <Cloud aria-hidden="true" /> : <CloudOff aria-hidden="true" />}
+              {supabase ? (user ? '云端已同步' : '未登录') : '本地模式'}
+            </span>
+          </p>
           <p role="status">
             {supabase
               ? user
-                ? '云端同步已开启，学习记录将自动备份。'
+                ? '学习记录将自动备份到云端，多设备进度一致。'
                 : '登录后开启云端同步。'
-              : '本地模式：所有进度保存在浏览器中，不会丢失。'}
+              : '所有进度保存在浏览器中，不会丢失。'}
           </p>
         </article>
       </div>

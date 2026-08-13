@@ -1,9 +1,9 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import {
   ArrowDown, ArrowLeft, ArrowRight, ArrowUp,
-  Bomb, Eraser, Eye,
-  Grid3x3, HelpCircle, Lightbulb, Puzzle,
-  RotateCcw, Send, Sparkles, Table2,
+  Bomb, Brain, CircleDot, Eraser, Eye,
+  Grid3x3, HelpCircle, Layers, Lightbulb, Play, Puzzle,
+  RotateCcw, Send, Sigma, Sparkles, Table2,
   Timer, Trophy, Type, Undo2, Zap,
 } from 'lucide-react'
 import {
@@ -38,6 +38,23 @@ import {
 import {
   generateLogicPuzzle, showNextClue, type LogicGridState,
 } from './logicGrid'
+import {
+  generateHanoi, selectPeg, hanoiDiskCounts, hanoiRating,
+  type HanoiState, type HanoiDifficulty,
+} from './hanoi'
+import {
+  generateMemoryGame, flipCard, tickMemory, memoryGrids,
+  type MemoryState, type MemoryDifficulty,
+} from './memory'
+import {
+  generateSimon, advanceSequence, advanceShowing, playerPress,
+  type SimonState,
+} from './simon'
+import {
+  generatePuzzle, evaluateExpression, extractNumbers, validateNumbers,
+  generateHint, puzzleDifficultyLabels, puzzleDifficultyConfig,
+  type NumberPuzzle, type PuzzleDifficulty,
+} from './numberPuzzle'
 import { getRepository, LOCAL_USER_ID, newId } from '../../lib/repositoryInstance'
 import type { GameSession } from '../../types/domain'
 
@@ -202,6 +219,8 @@ const sudokuLabels: Record<SudokuDifficulty, string> = { easy: '简单', medium:
 const mazeLabels: Record<MazeDifficulty, string> = { easy: '简单', medium: '中等', hard: '困难', expert: '专家' }
 const speedMathLabels: Record<SpeedMathDifficulty, string> = { easy: '简单', medium: '中等', hard: '困难', expert: '专家' }
 const slidingLabels: Record<SlidingDifficulty, string> = { easy: '简单', medium: '中等', hard: '高难' }
+const hanoiLabels: Record<HanoiDifficulty, string> = { easy: '简单', medium: '中等', hard: '困难' }
+const memoryLabels: Record<MemoryDifficulty, string> = { easy: '简单', medium: '中等', hard: '困难' }
 
 // ── Sudoku ───────────────────────────────────────────────────────────
 
@@ -959,9 +978,498 @@ function LogicGridGame() {
   )
 }
 
+// ── Tower of Hanoi ────────────────────────────────────────────────
+
+function HanoiGame() {
+  const [difficulty, setDifficulty] = useState<HanoiDifficulty>('medium')
+  const [state, setState] = useState<HanoiState>(() => generateHanoi('medium'))
+  const [confetti, setConfetti] = useState(false)
+  const [showHelp, setShowHelp] = useState(false)
+  const { seconds, reset: resetTimer } = useTimer(!state.solved)
+  const secondsRef = useRef(seconds)
+  secondsRef.current = seconds
+  const highScore = useHighScore('hanoi', difficulty)
+
+  useGameComplete(state.solved, () => ({
+    game: 'hanoi',
+    difficulty,
+    durationSeconds: secondsRef.current,
+    moves: state.moves,
+    score: Math.max(1000 - state.moves * 8 - secondsRef.current, 100),
+  }))
+
+  useEffect(() => {
+    if (state.solved) setConfetti(true)
+  }, [state.solved])
+
+  const onPeg = (pegIndex: number) => setState(s => selectPeg(s, pegIndex))
+
+  const restart = (nextDifficulty = difficulty) => {
+    setDifficulty(nextDifficulty)
+    setConfetti(false)
+    resetTimer()
+    setState(generateHanoi(nextDifficulty))
+  }
+
+  const rating = hanoiRating(state)
+  const ratingLabels = {
+    perfect: '完美 · 恰好最少步数',
+    excellent: '优秀 · 最少步数的 1.2 倍内',
+    good: '良好 · 最少步数的 1.5 倍内',
+    fair: '及格 · 最少步数的 2 倍内',
+    practice: '再多练几局',
+  }
+  const maxDiskSize = hanoiDiskCounts[difficulty]
+
+  return (
+    <div className="game-pane fade-in">
+      <Confetti active={confetti} />
+
+      <div className="game-toolbar">
+        <DifficultyPills
+          options={['easy', 'medium', 'hard'] as const}
+          current={difficulty}
+          labels={hanoiLabels}
+          onChange={restart}
+        />
+        <span className="game-timer" role="timer" aria-label="用时">{formatTime(seconds)}</span>
+        <span className="game-moves">步数：{state.moves} / {state.minMoves}</span>
+        {highScore > 0 ? (
+          <span className="game-high-score"><Trophy aria-hidden="true" />{highScore}</span>
+        ) : null}
+        <button type="button" className="help-toggle" onClick={() => setShowHelp(h => !h)} aria-expanded={showHelp}>
+          <HelpCircle aria-hidden="true" />{showHelp ? '收起' : '帮助'}
+        </button>
+        <button type="button" className="ghost-button" onClick={() => restart()}>
+          <RotateCcw aria-hidden="true" />新一局
+        </button>
+      </div>
+
+      {showHelp ? (
+        <div className="help-panel">
+          <h4>玩法说明</h4>
+          <ul>
+            <li>目标：把左柱的所有圆盘搬到右柱，每次只能移动一个</li>
+            <li>大圆盘不能放在小圆盘上面</li>
+            <li>先点选一根柱子抬起最上方的圆盘，再点目标柱子放下</li>
+            <li>n 个圆盘的最优解是 2ⁿ − 1 步，看看你能多接近</li>
+          </ul>
+        </div>
+      ) : null}
+
+      <div className="hanoi-board" role="group" aria-label="汉诺塔三根柱子">
+        {state.pegs.map((peg, i) => (
+          <div
+            key={i}
+            className={`hanoi-peg ${state.selectedPeg === i ? 'selected' : ''}`}
+            role="button"
+            aria-label={`${['左柱', '中柱', '右柱'][i]}，${peg.length} 个圆盘`}
+            onClick={() => onPeg(i)}
+          >
+            <div className="hanoi-shaft" />
+            <div className="hanoi-disks">
+              {peg.map((disk, j) => (
+                <div
+                  key={j}
+                  className={`hanoi-disk size-${disk.size}`}
+                  style={{ width: `${(disk.size / maxDiskSize) * 100}%` }}
+                >
+                  {disk.size}
+                </div>
+              ))}
+            </div>
+            <span className="hanoi-peg-label">{['左', '中', '右'][i]}</span>
+          </div>
+        ))}
+      </div>
+
+      <div aria-live="polite">
+        {state.solved ? (
+          <p className="game-result glass" role="status">
+            <Sparkles aria-hidden="true" /> 汉诺塔完成！{state.moves} 步 · {ratingLabels[rating]}（用时 {formatTime(seconds)}）
+          </p>
+        ) : null}
+      </div>
+    </div>
+  )
+}
+
+// ── Memory Match ──────────────────────────────────────────────────
+
+function MemoryGame() {
+  const [difficulty, setDifficulty] = useState<MemoryDifficulty>('medium')
+  const [state, setState] = useState<MemoryState>(() => generateMemoryGame('medium'))
+  const [confetti, setConfetti] = useState(false)
+  const [showHelp, setShowHelp] = useState(false)
+  const timer = useTimer(!state.gameOver)
+  const secondsRef = useRef(timer.seconds)
+  secondsRef.current = timer.seconds
+  const highScore = useHighScore('memory', difficulty)
+
+  useGameComplete(state.gameOver, () => ({
+    game: 'memory',
+    difficulty,
+    durationSeconds: secondsRef.current,
+    moves: state.moves,
+    score: Math.max(1000 - state.moves * 5 - secondsRef.current, 100),
+  }))
+
+  useEffect(() => {
+    if (state.gameOver) setConfetti(true)
+  }, [state.gameOver])
+
+  // Flip mismatched cards back once the reveal delay has elapsed.
+  useEffect(() => {
+    if (state.lockUntil === 0) return
+    const timer = setInterval(() => setState(s => tickMemory(s)), 150)
+    return () => clearInterval(timer)
+  }, [state.lockUntil])
+
+  const onCard = (cardId: number) => setState(s => flipCard(s, cardId))
+
+  const restart = (nextDifficulty = difficulty) => {
+    setDifficulty(nextDifficulty)
+    setConfetti(false)
+    timer.reset()
+    setState(generateMemoryGame(nextDifficulty))
+  }
+
+  const { cols } = memoryGrids[difficulty]
+
+  return (
+    <div className="game-pane fade-in">
+      <Confetti active={confetti} />
+
+      <div className="game-toolbar">
+        <DifficultyPills
+          options={['easy', 'medium', 'hard'] as const}
+          current={difficulty}
+          labels={memoryLabels}
+          onChange={restart}
+        />
+        <span className="game-timer" role="timer" aria-label="用时">{formatTime(timer.seconds)}</span>
+        <span className="game-moves">配对：{state.pairsFound}/{state.totalPairs}</span>
+        {highScore > 0 ? (
+          <span className="game-high-score"><Trophy aria-hidden="true" />{highScore}</span>
+        ) : null}
+        <button type="button" className="help-toggle" onClick={() => setShowHelp(h => !h)} aria-expanded={showHelp}>
+          <HelpCircle aria-hidden="true" />{showHelp ? '收起' : '帮助'}
+        </button>
+        <button type="button" className="ghost-button" onClick={() => restart()}>
+          <RotateCcw aria-hidden="true" />新一局
+        </button>
+      </div>
+
+      {showHelp ? (
+        <div className="help-panel">
+          <h4>玩法说明</h4>
+          <ul>
+            <li>翻开两张卡片，把算式和它的结果配对</li>
+            <li>例如「2³」和「8」就是一对</li>
+            <li>配错时卡片会短暂展示后翻回，考验你的记忆</li>
+          </ul>
+        </div>
+      ) : null}
+
+      <div
+        className="memory-grid"
+        role="group"
+        aria-label="记忆翻牌"
+        style={{ gridTemplateColumns: `repeat(${cols}, minmax(2.5rem, 1fr))`, maxWidth: `${cols * 3}rem` }}
+      >
+        {state.cards.map(card => {
+          const faceUp = card.flipped || card.matched
+          return (
+            <button
+              key={card.id}
+              type="button"
+              className={`memory-card ${faceUp ? 'flipped' : ''} ${card.matched ? 'matched' : ''}`}
+              onClick={() => onCard(card.id)}
+              disabled={card.matched}
+              aria-label={faceUp ? `卡片：${card.content}` : '未翻开的卡片'}
+            >
+              {faceUp ? card.content : '?'}
+            </button>
+          )
+        })}
+      </div>
+
+      <div aria-live="polite">
+        {state.gameOver ? (
+          <p className="game-result glass" role="status">
+            <Sparkles aria-hidden="true" /> 全部配对成功！{state.moves} 次翻牌 · 用时 {formatTime(timer.seconds)}
+          </p>
+        ) : null}
+      </div>
+    </div>
+  )
+}
+
+// ── Simon Says ────────────────────────────────────────────────────
+
+const SIMON_COLORS = ['#e0503e', '#3b82f6', '#2ecc71', '#f5b52e']
+
+function SimonGame() {
+  const [state, setState] = useState<SimonState>(() => generateSimon(12))
+  const [confetti, setConfetti] = useState(false)
+  const [showHelp, setShowHelp] = useState(false)
+  const highScore = useHighScore('simon', 'classic')
+
+  useGameComplete(state.gameOver, () => ({
+    game: 'simon',
+    difficulty: 'classic',
+    durationSeconds: Math.round((Date.now() - state.startTime) / 1000),
+    moves: state.score,
+    score: Math.max(state.score * 120, 100),
+  }))
+
+  useEffect(() => {
+    if (state.won) setConfetti(true)
+  }, [state.won])
+
+  // Machine shows the sequence one colour every ~650 ms.
+  useEffect(() => {
+    if (!state.isShowing) return
+    const timer = setTimeout(() => {
+      setState(current => advanceShowing(current).state)
+    }, 650)
+    return () => clearTimeout(timer)
+  }, [state.isShowing, state.showingIndex])
+
+  const start = () => setState(s => advanceSequence(s))
+
+  const onPress = (colorIndex: number) => {
+    setState(current => {
+      const next = playerPress(current, colorIndex)
+      // The player repeated the whole sequence — immediately start the next round.
+      if (!next.gameOver && !next.isShowing && next.playerIndex === 0 && next.score > current.score) {
+        return advanceSequence(next)
+      }
+      return next
+    })
+  }
+
+  const restart = () => setState(generateSimon(12))
+
+  const litIndex =
+    state.isShowing && state.showingIndex > 0 ? state.sequence[state.showingIndex - 1] : -1
+
+  return (
+    <div className="game-pane fade-in">
+      <Confetti active={confetti} />
+
+      <div className="game-toolbar">
+        <span className="game-moves">第 {state.currentRound} 轮</span>
+        <span className="game-moves">得分：{state.score}</span>
+        {highScore > 0 ? (
+          <span className="game-high-score"><Trophy aria-hidden="true" />{highScore}</span>
+        ) : null}
+        <button type="button" className="help-toggle" onClick={() => setShowHelp(h => !h)} aria-expanded={showHelp}>
+          <HelpCircle aria-hidden="true" />{showHelp ? '收起' : '帮助'}
+        </button>
+        {state.currentRound > 0 && !state.gameOver ? (
+          <button type="button" className="ghost-button" onClick={restart}>
+            <RotateCcw aria-hidden="true" />重新开始
+          </button>
+        ) : null}
+      </div>
+
+      {showHelp ? (
+        <div className="help-panel">
+          <h4>玩法说明</h4>
+          <ul>
+            <li>机器按顺序点亮颜色，记住它</li>
+            <li>亮灯结束后，按相同顺序点击色板</li>
+            <li>每一轮加一个新颜色，连续完成 12 轮即胜利</li>
+            <li>点错颜色立即结束本局</li>
+          </ul>
+        </div>
+      ) : null}
+
+      {state.gameOver ? (
+        <p className={`game-result glass ${state.won ? '' : 'game-result-lose'}`} role="status">
+          {state.won ? (
+            <><Sparkles aria-hidden="true" /> 连对 {state.score} 轮，记忆力惊人！</>
+          ) : (
+            <>第 {state.currentRound} 轮按错了，正确顺序是 {state.sequence.map(i => ['红', '蓝', '绿', '黄'][i]).join(' → ')}</>
+          )}
+        </p>
+      ) : (
+        <p className="simon-status">
+          {state.isShowing ? '记住这个顺序…' : state.currentRound === 0 ? '准备好了吗？' : '轮到你了，按顺序点击！'}
+        </p>
+      )}
+
+      <div className="simon-pad" role="group" aria-label="西蒙色板">
+        {SIMON_COLORS.map((color, i) => {
+          const lit = litIndex === i
+          const active = state.isShowing ? false : state.currentRound > 0 && !state.gameOver
+          return (
+            <button
+              key={i}
+              type="button"
+              className={`simon-pad-btn ${lit ? 'lit' : ''}`}
+              style={{ background: color, boxShadow: lit ? `0 0 26px ${color}` : undefined }}
+              aria-label={['红', '蓝', '绿', '黄'][i]}
+              onClick={() => active && onPress(i)}
+              disabled={!active}
+            >
+              {['红', '蓝', '绿', '黄'][i]}
+            </button>
+          )
+        })}
+      </div>
+
+      <div className="game-actions">
+        {state.currentRound === 0 && !state.gameOver ? (
+          <button type="button" className="primary-button" onClick={start}>
+            <Play aria-hidden="true" />开始游戏
+          </button>
+        ) : state.gameOver ? (
+          <button type="button" className="primary-button" onClick={restart}>
+            <RotateCcw aria-hidden="true" />再来一局
+          </button>
+        ) : null}
+      </div>
+    </div>
+  )
+}
+
+// ── Number Puzzle (24 game) ───────────────────────────────────────
+
+function NumberPuzzleGame() {
+  const [difficulty, setDifficulty] = useState<PuzzleDifficulty>('medium')
+  const [puzzle, setPuzzle] = useState<NumberPuzzle>(() => generatePuzzle('medium'))
+  const [input, setInput] = useState('')
+  const [feedback, setFeedback] = useState<{ kind: 'error' | 'success' | 'hint'; text: string } | null>(null)
+  const [won, setWon] = useState(false)
+  const [showHelp, setShowHelp] = useState(false)
+  const { seconds, reset: resetTimer } = useTimer(!won)
+  const highScore = useHighScore('numberPuzzle', difficulty)
+  const config = puzzleDifficultyConfig[difficulty]
+
+  const check = () => {
+    if (won) return
+    const evaluated = evaluateExpression(input)
+    if (!evaluated.valid) {
+      setFeedback({ kind: 'error', text: evaluated.error ?? '算式无效' })
+      return
+    }
+    const used = extractNumbers(input)
+    const validated = validateNumbers(used, puzzle.numbers, config.useAll)
+    if (!validated.valid) {
+      setFeedback({ kind: 'error', text: validated.message })
+      return
+    }
+    if (Math.abs((evaluated.value ?? 0) - 24) > 1e-6) {
+      setFeedback({ kind: 'error', text: `结果等于 ${evaluated.value}，不是 24，再想想` })
+      return
+    }
+    setWon(true)
+    setFeedback({ kind: 'success', text: '漂亮！结果正好是 24！' })
+    const score = Math.max(1000 - seconds, 100)
+    void saveSession({ game: 'numberPuzzle', difficulty, durationSeconds: seconds, moves: 1, score })
+    saveHighScore('numberPuzzle', difficulty, score)
+  }
+
+  const showHint = () => setFeedback({ kind: 'hint', text: generateHint(puzzle.solution) })
+  const reveal = () => setFeedback({ kind: 'hint', text: `参考算式：${puzzle.solution} = 24` })
+
+  const restart = (nextDifficulty = difficulty) => {
+    setDifficulty(nextDifficulty)
+    setPuzzle(generatePuzzle(nextDifficulty))
+    setInput('')
+    setFeedback(null)
+    setWon(false)
+    resetTimer()
+  }
+
+  return (
+    <div className="game-pane fade-in">
+      <Confetti active={won} />
+
+      <div className="game-toolbar">
+        <DifficultyPills
+          options={['easy', 'medium', 'hard'] as const}
+          current={difficulty}
+          labels={puzzleDifficultyLabels}
+          onChange={restart}
+        />
+        <span className="game-timer" role="timer" aria-label="用时">{formatTime(seconds)}</span>
+        {highScore > 0 ? (
+          <span className="game-high-score"><Trophy aria-hidden="true" />{highScore}</span>
+        ) : null}
+        <button type="button" className="help-toggle" onClick={() => setShowHelp(h => !h)} aria-expanded={showHelp}>
+          <HelpCircle aria-hidden="true" />{showHelp ? '收起' : '帮助'}
+        </button>
+        <button type="button" className="ghost-button" onClick={() => restart()}>
+          <RotateCcw aria-hidden="true" />新谜题
+        </button>
+      </div>
+
+      {showHelp ? (
+        <div className="help-panel">
+          <h4>玩法说明</h4>
+          <ul>
+            <li>把给出的数字用 + − × ÷ 和括号组合成算式</li>
+            <li>要求最终结果正好等于 24</li>
+            <li>中等/困难难度要求四个数字恰好各用一次</li>
+          </ul>
+        </div>
+      ) : null}
+
+      <h3 className="number-puzzle-title">用四张牌算出 <strong>24</strong></h3>
+      <div className="number-puzzle-numbers">
+        {puzzle.numbers.map((number, i) => (
+          <div key={i} className="number-card">{number}</div>
+        ))}
+      </div>
+
+      <div className="puzzle-input-row">
+        <div className="puzzle-input-wrap">
+          <input
+            value={input}
+            onChange={event => setInput(event.target.value)}
+            onKeyDown={event => event.key === 'Enter' && check()}
+            placeholder={config.useAll ? '四个数字各用一次，如 (3+5)×(9−7)' : '如 (3+5)×(9−7)'}
+            aria-label="算式输入"
+          />
+        </div>
+        <button type="button" className="primary-button" onClick={check}>
+          <Send aria-hidden="true" />验证
+        </button>
+      </div>
+
+      {feedback ? (
+        <p className={`puzzle-feedback ${feedback.kind}`} role="status">{feedback.text}</p>
+      ) : (
+        <div className="puzzle-feedback" aria-hidden="true" />
+      )}
+
+      <div className="game-actions">
+        <button type="button" className="ghost-button" onClick={showHint}>
+          <Lightbulb aria-hidden="true" />提示
+        </button>
+        <button type="button" className="ghost-button" onClick={reveal} disabled={won}>
+          <Eye aria-hidden="true" />查看算式
+        </button>
+        <button type="button" className="ghost-button" onClick={() => restart()}>
+          <RotateCcw aria-hidden="true" />换一组数字
+        </button>
+      </div>
+
+      {won ? (
+        <p className="game-result glass" role="status">
+          <Sparkles aria-hidden="true" /> 成功算出 24！用时 {formatTime(seconds)}
+        </p>
+      ) : null}
+    </div>
+  )
+}
+
 // ── Game definitions ──────────────────────────────────────────────
 
-type GameId = 'sudoku' | 'maze' | 'sliding' | 'speedMath' | 'wordle' | 'minesweeper' | 'reaction' | 'logicGrid'
+type GameId = 'sudoku' | 'maze' | 'sliding' | 'speedMath' | 'wordle' | 'minesweeper' | 'reaction' | 'logicGrid' | 'hanoi' | 'memory' | 'simon' | 'numberPuzzle'
 
 interface GameDef {
   id: GameId
@@ -979,6 +1487,10 @@ const gameDefs: GameDef[] = [
   { id: 'minesweeper', icon: <Bomb aria-hidden="true" />, name: '扫雷', desc: '16×30 · 99雷专家' },
   { id: 'reaction', icon: <Timer aria-hidden="true" />, name: '反应测试', desc: '毫秒级速度测试' },
   { id: 'logicGrid', icon: <Lightbulb aria-hidden="true" />, name: '逻辑谜题', desc: '爱因斯坦推理挑战' },
+  { id: 'hanoi', icon: <Layers aria-hidden="true" />, name: '汉诺塔', desc: '3–5 层 · 最优 2ⁿ−1 步' },
+  { id: 'memory', icon: <Brain aria-hidden="true" />, name: '记忆翻牌', desc: '算式配对 · 6–10 对' },
+  { id: 'simon', icon: <CircleDot aria-hidden="true" />, name: '西蒙', desc: '记住顺序 · 连对 12 轮' },
+  { id: 'numberPuzzle', icon: <Sigma aria-hidden="true" />, name: '数字谜题', desc: '四数算 24 · 心算推理' },
 ]
 
 // ── GamesPage ────────────────────────────────────────────────────────
@@ -1017,7 +1529,18 @@ export function GamesPage() {
       </div>
 
       <div key={animKey} className="game-pane fade-in">
-        {game === 'sudoku' ? <SudokuGame /> : game === 'maze' ? <MazeGame /> : game === 'sliding' ? <SlidingGame /> : game === 'speedMath' ? <SpeedMathGame /> : game === 'wordle' ? <WordleGame /> : game === 'minesweeper' ? <MinesweeperGame /> : game === 'reaction' ? <ReactionGame /> : <LogicGridGame />}
+        {game === 'sudoku' ? <SudokuGame />
+          : game === 'maze' ? <MazeGame />
+          : game === 'sliding' ? <SlidingGame />
+          : game === 'speedMath' ? <SpeedMathGame />
+          : game === 'wordle' ? <WordleGame />
+          : game === 'minesweeper' ? <MinesweeperGame />
+          : game === 'reaction' ? <ReactionGame />
+          : game === 'logicGrid' ? <LogicGridGame />
+          : game === 'hanoi' ? <HanoiGame />
+          : game === 'memory' ? <MemoryGame />
+          : game === 'simon' ? <SimonGame />
+          : <NumberPuzzleGame />}
       </div>
     </section>
   )

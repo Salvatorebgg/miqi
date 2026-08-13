@@ -1,13 +1,13 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowRight, BookOpen, CheckCircle2, Circle, Flame, Gamepad2, PenLine, TrendingUp } from 'lucide-react'
+import { Activity, ArrowRight, BookMarked, BookOpen, CheckCircle2, Circle, Flame, Gamepad2, Library, ListChecks, PenLine, Sparkles, TrendingUp } from 'lucide-react'
 import { getRepository, todayString } from '../../lib/repositoryInstance'
 import { aggregateWeakAreas, calculateStreak, categoryCompletion, dayCompletion, nextMathLesson, type WeakArea } from '../planner/progress'
 import { mathTracks, lessonsForTrack, findLesson } from '../../data/mathCurriculum'
 import { lessonCompletion } from '../math/math'
 import { loadNews, type NewsFeed } from '../news/news'
 import { useDailyTasks } from '../planner/useDailyTasks'
-import type { CourseProgress, ExerciseAttempt, GameSession, ReadingAttempt } from '../../types/domain'
+import type { CourseProgress, ExerciseAttempt, GameSession, ReadingAttempt, VocabularyProgress } from '../../types/domain'
 
 const WEEK_LABELS = ['一', '二', '三', '四', '五', '六', '日']
 
@@ -20,7 +20,35 @@ const GAME_NAMES: Record<string, string> = {
   minesweeper: '扫雷',
   reaction: '反应测试',
   logicGrid: '逻辑谜题',
+  hanoi: '汉诺塔',
+  memory: '记忆翻牌',
+  simon: '西蒙',
+  numberPuzzle: '数字谜题',
 }
+
+const QUOTES = [
+  '不积跬步，无以至千里。今天再小的进步，也是前进。',
+  '学习是唯一稳赚不赔的投资。',
+  '把大目标切成小步，每天走一步就是赢。',
+  '坚持的复利，比聪明更可怕。',
+  '不必惊艳所有人，只需超越昨天的自己。',
+  '阅读是随身携带的避难所，练习是通往熟练的唯一道路。',
+  '今天偷过的懒是明天的难路，今天流过的汗是明天的台阶。',
+  '最好的时机是十年前，其次就是现在。',
+  '掌握一个新知识，就多一个看世界的视角。',
+  '自律带来自由，重复带来突破。',
+  '每一次失败都在告诉你：这个坑已经排除了。',
+  '种一棵树最好的时间，是现在。',
+]
+
+function dayOfYear(iso: string): number {
+  const [y, m, d] = iso.slice(0, 10).split('-').map(Number)
+  const start = Date.UTC(y, 0, 0)
+  const now = Date.UTC(y, m - 1, d)
+  return Math.floor((now - start) / 86400000)
+}
+
+const WEEK_DAYS = ['周日', '周一', '周二', '周三', '周四', '周五', '周六']
 
 export function DashboardPage() {
   const today = todayString()
@@ -32,20 +60,23 @@ export function DashboardPage() {
   const [attempts, setAttempts] = useState<ExerciseAttempt[]>([])
   const [readings, setReadings] = useState<ReadingAttempt[]>([])
   const [sessions, setSessions] = useState<GameSession[]>([])
+  const [vocab, setVocab] = useState<VocabularyProgress[]>([])
 
   useEffect(() => {
     const repo = getRepository()
     void (async () => {
-      const [fetchedAttempts, fetchedReadings, fetchedSessions, fetchedProgress] = await Promise.all([
+      const [fetchedAttempts, fetchedReadings, fetchedSessions, fetchedProgress, fetchedVocab] = await Promise.all([
         repo.listExerciseAttempts(),
         repo.listReadingAttempts(),
         repo.listGameSessions(),
         repo.listCourseProgress(),
+        repo.listVocabulary(),
       ])
       setAttempts(fetchedAttempts)
       setReadings(fetchedReadings)
       setSessions(fetchedSessions)
       setCourseProgress(fetchedProgress)
+      setVocab(fetchedVocab)
 
       const activeDates = new Set<string>()
       for (const record of fetchedAttempts) activeDates.add(record.createdAt.slice(0, 10))
@@ -104,6 +135,25 @@ export function DashboardPage() {
     return result
   }, [today, activityByDate])
 
+  // Last-7-day activity bar chart (single series, sequential mint ramp)
+  const last7 = useMemo(() => {
+    const result: { date: string; label: string; count: number }[] = []
+    const end = new Date(`${today}T00:00:00Z`)
+    for (let i = 6; i >= 0; i--) {
+      const cursor = new Date(end)
+      cursor.setUTCDate(end.getUTCDate() - i)
+      const key = cursor.toISOString().slice(0, 10)
+      result.push({
+        date: key,
+        label: i === 0 ? '今天' : WEEK_DAYS[cursor.getUTCDay()],
+        count: activityByDate.get(key) ?? 0,
+      })
+    }
+    return result
+  }, [today, activityByDate])
+  const maxDaily = Math.max(1, ...last7.map(day => day.count))
+  const quote = QUOTES[dayOfYear(today) % QUOTES.length]
+
   const recentAttempts = attempts.slice(-20)
   const recentAccuracy =
     recentAttempts.length > 0
@@ -118,6 +168,47 @@ export function DashboardPage() {
       {/* 1. Greeting + today's date */}
       <p className="eyebrow">{greeting} · {today}</p>
       <h2 id="dashboard-title">今日概览</h2>
+
+      {/* 1b. Daily quote */}
+      <figure className="quote-card glass" role="note">
+        <Sparkles aria-hidden="true" />
+        <blockquote>{quote}</blockquote>
+        <figcaption>今日格言</figcaption>
+      </figure>
+
+      {/* 1c. Lifetime stat tiles */}
+      <div className="stat-grid" aria-label="学习数据总览">
+        <div className="stat-tile glass">
+          <Library aria-hidden="true" />
+          <strong>{vocab.length}</strong>
+          <span>累计学词</span>
+        </div>
+        <div className="stat-tile glass">
+          <ListChecks aria-hidden="true" />
+          <strong>{attempts.length}</strong>
+          <span>完成练习</span>
+        </div>
+        <div className="stat-tile glass">
+          <Gamepad2 aria-hidden="true" />
+          <strong>{sessions.length}</strong>
+          <span>游戏场次</span>
+        </div>
+        <div className="stat-tile glass">
+          <BookMarked aria-hidden="true" />
+          <strong>{readings.length}</strong>
+          <span>精读篇数</span>
+        </div>
+        <div className="stat-tile glass">
+          <Activity aria-hidden="true" />
+          <strong>{activityByDate.size}</strong>
+          <span>活跃天数</span>
+        </div>
+        <div className="stat-tile glass">
+          <Flame aria-hidden="true" />
+          <strong>{streak}</strong>
+          <span>连续打卡</span>
+        </div>
+      </div>
 
       {/* 2. Task list with progress ring */}
       <section aria-labelledby="tasks-heading">
@@ -260,6 +351,26 @@ export function DashboardPage() {
               ))}
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* 6b. Last-7-day activity bar chart */}
+      <section aria-labelledby="week-chart-heading">
+        <h3 id="week-chart-heading">近 7 天活动</h3>
+        <div className="week-chart" role="img" aria-label="近 7 天每日学习活动次数柱状图">
+          {last7.map(day => {
+            const height = day.count > 0 ? Math.max(8, Math.round((day.count / maxDaily) * 100)) : 2
+            return (
+              <div key={day.date} className="week-day">
+                <div className="week-bar-track" title={`${day.date}：${day.count} 项活动`}>
+                  <div className="week-bar" style={{ height: `${height}%` }}>
+                    <span className="week-value">{day.count > 0 ? day.count : ''}</span>
+                  </div>
+                </div>
+                <span className={`week-day-label ${day.date === today ? 'is-today' : ''}`}>{day.label}</span>
+              </div>
+            )
+          })}
         </div>
       </section>
 

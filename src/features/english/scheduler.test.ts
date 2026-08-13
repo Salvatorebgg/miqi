@@ -92,10 +92,10 @@ describe('english content contract', () => {
     }
   })
 
-  it('has six scenarios, four news sets, and four paper sets', () => {
-    expect(scenarioSets).toHaveLength(6)
-    expect(englishNewsSets).toHaveLength(4)
-    expect(paperSets).toHaveLength(4)
+  it('has seven scenarios, five news sets, and five paper sets', () => {
+    expect(scenarioSets).toHaveLength(7)
+    expect(englishNewsSets).toHaveLength(5)
+    expect(paperSets).toHaveLength(5)
   })
 
   it('every reading set covers all four question kinds with explanations', () => {
