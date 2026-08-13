@@ -46,9 +46,9 @@ describe('scoreAnswers', () => {
 })
 
 describe('curriculum content contract', () => {
-  it('has five ordered tracks', () => {
-    expect(mathTracks).toHaveLength(5)
-    expect(mathTracks.map(track => track.order)).toEqual([1, 2, 3, 4, 5])
+  it('has seven ordered tracks', () => {
+    expect(mathTracks).toHaveLength(7)
+    expect(mathTracks.map(track => track.order)).toEqual([1, 2, 3, 4, 5, 6, 7])
   })
 
   it('every track has at least two lessons', () => {
