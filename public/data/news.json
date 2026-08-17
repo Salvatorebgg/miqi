@@ -1,26 +1,496 @@
 {
-  "generatedAt": "2026-08-17T04:57:25.651Z",
+  "generatedAt": "2026-08-17T10:47:35.609Z",
   "stale": false,
   "items": [
     {
-      "id": "https://www.bbc.co.uk/news/articles/cq5665zgg1po?at_medium=rss&at_campaign=rss",
-      "title": "Heroes actress Hayden Panettiere dies aged 36",
-      "summary": "Panettiere starred in TV shows including Heroes and Nashville along with films Remember the Titans and Raising Helen.",
-      "url": "https://www.bbc.co.uk/news/articles/cq5665zgg1po?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cq5665zgg1po?at_medium=rss&at_campaign=rss",
+      "id": "https://www.bbc.co.uk/sport/cricket/articles/clyj72y933mo?at_medium=rss&at_campaign=rss",
+      "title": "Dean to captain England against Ireland",
+      "summary": "Charlie Dean will lead England for their one-day international series against Ireland in September, with regular captain Nat Sciver-Brunt among a number of senior players rested.",
+      "url": "https://www.bbc.co.uk/sport/cricket/articles/clyj72y933mo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/cricket/articles/clyj72y933mo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-08-17T10:40:26.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/crl7686r71yo?at_medium=rss&at_campaign=rss",
+      "title": "Aid shortages and fears of starvation as Indonesia reels from deadly earthquake",
+      "summary": "Some 53 people were killed and thousands displaced by the earthquake, which struck early on Saturday.",
+      "url": "https://www.bbc.co.uk/news/articles/crl7686r71yo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/crl7686r71yo?at_medium=rss&at_campaign=rss",
       "source": "BBC News · World",
       "category": "general",
-      "publishedAt": "2026-08-17T04:53:27.000Z"
+      "publishedAt": "2026-08-17T10:39:24.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/equestrian/videos/cp8e0n2yjnxo?at_medium=rss&at_campaign=rss",
+      "title": "GB eventing team claim record-breaking world title",
+      "summary": "Watch Olympic eventing champions Laura Collett and Ros Canter final phase to secure record-breaking team gold and individual bronze and silver medals at the FEI World Championships, Aachen, Germany.",
+      "url": "https://www.bbc.co.uk/sport/equestrian/videos/cp8e0n2yjnxo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/equestrian/videos/cp8e0n2yjnxo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-08-17T10:36:03.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/08/17/santoli-earnings-bonanza-that-lifted-market-to-record-may-not-be-all-that-it-appears-to-be.html",
+      "title": "Santoli: Earnings bonanza that lifted market to record may not be all that it appears to be",
+      "summary": "The S&P 500 is up more than 6% in 12 trading days to record levels.",
+      "url": "https://www.cnbc.com/2026/08/17/santoli-earnings-bonanza-that-lifted-market-to-record-may-not-be-all-that-it-appears-to-be.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/08/17/santoli-earnings-bonanza-that-lifted-market-to-record-may-not-be-all-that-it-appears-to-be.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-08-17T10:31:33.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/cm2g7mr0d17o?at_medium=rss&at_campaign=rss",
+      "title": "Cagliari's Trepy in intensive care after reported pool incident",
+      "summary": "Cagliari striker Yael Trepy is being treated in intensive care after an incident in Sardinia.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cm2g7mr0d17o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cm2g7mr0d17o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-08-17T10:25:57.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/cricket/articles/cz9707d48x2o?at_medium=rss&at_campaign=rss",
+      "title": "Knight Riders could invest in Hundred if it expands",
+      "summary": "Kolkata Knight Riders are interested in buying a stake in a new Hundred franchise if the competition expands to 10 teams.",
+      "url": "https://www.bbc.co.uk/sport/cricket/articles/cz9707d48x2o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/cricket/articles/cz9707d48x2o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-08-17T10:16:02.000Z"
+    },
+    {
+      "id": "https://www.marketwatch.com/story/im-running-out-of-time-i-sold-my-300-000-rental-property-at-a-75-000-loss-should-i-buy-another-one-to-avoid-taxes-f214c172?mod=mw_rss_topstories",
+      "title": "&#x2018;I&#x2019;m running out of time&#x2019;: I sold my $300,000 rental property at a $75,000 loss. Should I buy another one to avoid taxes?",
+      "summary": "&#x201c;My CPA hasn&#x2019;t gotten back to me.&#x201d;",
+      "url": "https://www.marketwatch.com/story/im-running-out-of-time-i-sold-my-300-000-rental-property-at-a-75-000-loss-should-i-buy-another-one-to-avoid-taxes-f214c172?mod=mw_rss_topstories",
+      "canonicalUrl": "https://www.marketwatch.com/story/im-running-out-of-time-i-sold-my-300-000-rental-property-at-a-75-000-loss-should-i-buy-another-one-to-avoid-taxes-f214c172?mod=mw_rss_topstories",
+      "source": "MarketWatch · Top Stories",
+      "category": "finance",
+      "publishedAt": "2026-08-17T10:16:00.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/08/17/nx-s1-5935226/hayden-panettiere-dies",
+      "title": "Hayden Panettiere, who starred in 'Heroes' and 'Nashville,' dies at 36",
+      "summary": "A child actor since she was cast in various commercials as an 11-month-old, Panettiere was best known for her role as the country music star Juliette Barnes in the series \"Nashville.\"",
+      "url": "https://www.npr.org/2026/08/17/nx-s1-5935226/hayden-panettiere-dies",
+      "canonicalUrl": "https://www.npr.org/2026/08/17/nx-s1-5935226/hayden-panettiere-dies",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-08-17T10:00:10.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/08/17/ukraine-war-russia-putin-moscow.html",
+      "title": "Russia targets Danube port after one of Ukraine’s largest aerial attacks of the war",
+      "summary": "Russia struck port infrastructure in Ukraine’s Odesa region, damaging a Togo-flagged civilian vessel near Izmail after Kyiv launched a major drone attack on Moscow.",
+      "url": "https://www.cnbc.com/2026/08/17/ukraine-war-russia-putin-moscow.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/08/17/ukraine-war-russia-putin-moscow.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-08-17T09:46:08.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/cd7l9n4qnlno?at_medium=rss&at_campaign=rss",
+      "title": "Man City in advanced talks for £85m Bouaddi, 18",
+      "summary": "Manchester City are in advanced talks with Lille over a move for Morocco midfielder Ayyoub Bouaddi.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cd7l9n4qnlno?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cd7l9n4qnlno?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-08-17T09:23:32.000Z"
+    },
+    {
+      "id": "https://www.marketwatch.com/story/investor-dubbed-ai-stock-god-had-56-of-his-funds-in-these-two-stocks-before-it-blew-up-07472f46?mod=mw_rss_topstories",
+      "title": "Investor dubbed &#x2018;AI stock god&#x2019; had 56% of his funds in these two stocks before it blew up",
+      "summary": "At the end of the first half of 2026, on the cusp of a major correction in the sector, more than three quarters of the Situational Awareness fund was betting on just five stocks, all of which were, in essence, one big be",
+      "url": "https://www.marketwatch.com/story/investor-dubbed-ai-stock-god-had-56-of-his-funds-in-these-two-stocks-before-it-blew-up-07472f46?mod=mw_rss_topstories",
+      "canonicalUrl": "https://www.marketwatch.com/story/investor-dubbed-ai-stock-god-had-56-of-his-funds-in-these-two-stocks-before-it-blew-up-07472f46?mod=mw_rss_topstories",
+      "source": "MarketWatch · Top Stories",
+      "category": "finance",
+      "publishedAt": "2026-08-17T09:22:00.000Z"
+    },
+    {
+      "id": "https://www.marketwatch.com/story/my-son-does-not-work-yet-he-pays-500-for-aca-health-insurance-how-is-that-fair-92f578c4?mod=mw_rss_topstories",
+      "title": "My son does not work, yet he pays $500 for ACA health insurance. How is that fair?",
+      "summary": "&#x201c;I see people who have a lot of money but little or no taxable income who still qualify for subsidies on their health insurance.&#x201d;",
+      "url": "https://www.marketwatch.com/story/my-son-does-not-work-yet-he-pays-500-for-aca-health-insurance-how-is-that-fair-92f578c4?mod=mw_rss_topstories",
+      "canonicalUrl": "https://www.marketwatch.com/story/my-son-does-not-work-yet-he-pays-500-for-aca-health-insurance-how-is-that-fair-92f578c4?mod=mw_rss_topstories",
+      "source": "MarketWatch · Top Stories",
+      "category": "finance",
+      "publishedAt": "2026-08-17T09:15:00.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/c4gkk7r2r4yo?at_medium=rss&at_campaign=rss",
+      "title": "Man City face Neto competition - Monday's gossip",
+      "summary": "Manchester City face competition for Pedro Neto, Real Madrid want Martin Zubimendi and Premier League clubs want Liam Delap.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c4gkk7r2r4yo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c4gkk7r2r4yo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-08-17T09:12:54.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/cgk451r4z76o?at_medium=rss&at_campaign=rss",
+      "title": "Spurs' Vicario set to join Juventus on loan",
+      "summary": "Tottenham accept a loan offer from Juventus for goalkeeper Guglielmo Vicario, which includes an option to buy.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cgk451r4z76o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cgk451r4z76o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-08-17T09:05:54.000Z"
+    },
+    {
+      "id": "https://www.marketwatch.com/story/neighbors-in-rural-texas-county-are-not-happy-about-elon-musks-plan-to-erect-worlds-largest-building-2183edcb?mod=mw_rss_topstories",
+      "title": "Neighbors in rural Texas county are not happy about Elon Musk&#x2019;s plan to erect world&#x2019;s largest building",
+      "summary": "The latest project of trillionaire Elon Musk is a semiconductor factory the size of 1,000 Costco stores, and local residents are concerned about the impact.",
+      "url": "https://www.marketwatch.com/story/neighbors-in-rural-texas-county-are-not-happy-about-elon-musks-plan-to-erect-worlds-largest-building-2183edcb?mod=mw_rss_topstories",
+      "canonicalUrl": "https://www.marketwatch.com/story/neighbors-in-rural-texas-county-are-not-happy-about-elon-musks-plan-to-erect-worlds-largest-building-2183edcb?mod=mw_rss_topstories",
+      "source": "MarketWatch · Top Stories",
+      "category": "finance",
+      "publishedAt": "2026-08-17T09:04:00.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/cn0nj3ln8r5o?at_medium=rss&at_campaign=rss",
+      "title": "Top Zambian opposition figures arrested days after presidential vote",
+      "summary": "The authorities allege they were involved in an insurrection plot but the leading opposition candidate says there was an attempt on his life.",
+      "url": "https://www.bbc.co.uk/news/articles/cn0nj3ln8r5o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cn0nj3ln8r5o?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-08-17T09:01:06.000Z"
+    },
+    {
+      "id": "https://www.marketwatch.com/story/former-starbucks-ceohoward-schultz-sells-home-in-hawaii-for-36-million-after-moving-to-florida-fc1de897?mod=mw_rss_topstories",
+      "title": "Former Starbucks CEO&#xa0;Howard Schultz sells home in Hawaii for $36 million after moving to Florida",
+      "summary": "Former Starbucks CEO&#xa0;Howard Schultz&#xa0;has sold his longtime&#xa0;Hawaii&#xa0;sanctuary for the staggering price of $36 million&#x2014;just months after he bought a $44 million residence in&#xa0;Florida.",
+      "url": "https://www.marketwatch.com/story/former-starbucks-ceohoward-schultz-sells-home-in-hawaii-for-36-million-after-moving-to-florida-fc1de897?mod=mw_rss_topstories",
+      "canonicalUrl": "https://www.marketwatch.com/story/former-starbucks-ceohoward-schultz-sells-home-in-hawaii-for-36-million-after-moving-to-florida-fc1de897?mod=mw_rss_topstories",
+      "source": "MarketWatch · Top Stories",
+      "category": "finance",
+      "publishedAt": "2026-08-17T09:01:00.000Z"
+    },
+    {
+      "id": "https://www.technologyreview.com/2026/08/17/1141568/moxie-when-kids-robot-best-friend-dies",
+      "title": "What happens when a kid’s robot best friend dies?",
+      "summary": "When Xander first met Moxie, she taught him that when he was anxious, he could calm down by exhaling through his lips so that he buzzed like a bee. They practiced breathing like dragons to manage feeling mad and sniffing",
+      "url": "https://www.technologyreview.com/2026/08/17/1141568/moxie-when-kids-robot-best-friend-dies",
+      "canonicalUrl": "https://www.technologyreview.com/2026/08/17/1141568/moxie-when-kids-robot-best-friend-dies",
+      "source": "MIT Technology Review · AI",
+      "category": "ai",
+      "publishedAt": "2026-08-17T09:00:00.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/08/17/nx-s1-5913980/nuns-dc-affordable-housing",
+      "title": "Living with nuns: Priced out of D.C., young women found low rent with unlikely roommates",
+      "summary": "For 10 years, a Catholic-run home offered young women an affordable place to live in the nation's capital as they studied and launched careers. Now, that community is saying goodbye.",
+      "url": "https://www.npr.org/2026/08/17/nx-s1-5913980/nuns-dc-affordable-housing",
+      "canonicalUrl": "https://www.npr.org/2026/08/17/nx-s1-5913980/nuns-dc-affordable-housing",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-08-17T09:00:00.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/08/17/nx-s1-5893721/workers-mcdonalds-work-app-jobs-ai",
+      "title": "Car problems? No childcare? How an app is helping people get to work",
+      "summary": "Unexpected absences can cost employers tens of thousands of dollars a month. An app that helps workers with last-minute transportation, food and childcare is making a difference.",
+      "url": "https://www.npr.org/2026/08/17/nx-s1-5893721/workers-mcdonalds-work-app-jobs-ai",
+      "canonicalUrl": "https://www.npr.org/2026/08/17/nx-s1-5893721/workers-mcdonalds-work-app-jobs-ai",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-08-17T09:00:00.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/08/17/nx-s1-5791740/college-student-voting-voter-id",
+      "title": "Can a student ID be used for voting? More Republican-led states are banning it",
+      "summary": "New bans on using student IDs for voting in Indiana and New Hampshire have sparked lawsuits after creating the latest hurdles to the ballot box for the U.S. voting-age group least likely to vote.",
+      "url": "https://www.npr.org/2026/08/17/nx-s1-5791740/college-student-voting-voter-id",
+      "canonicalUrl": "https://www.npr.org/2026/08/17/nx-s1-5791740/college-student-voting-voter-id",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-08-17T09:00:00.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/08/17/nx-s1-5930701/meta-trial-kids-social-media-addiction",
+      "title": "Meta heads to court in a landmark trial about kids and social media addiction",
+      "summary": "Four states are suing the parent company of Facebook and Instagram, alleging that the platforms were designed to hook kids and that Meta hid the mental health risks.",
+      "url": "https://www.npr.org/2026/08/17/nx-s1-5930701/meta-trial-kids-social-media-addiction",
+      "canonicalUrl": "https://www.npr.org/2026/08/17/nx-s1-5930701/meta-trial-kids-social-media-addiction",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-08-17T09:00:00.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/08/17/nx-s1-5928263/cialis-viagra-tadalafil-longevity-heart-health",
+      "title": "Cialis is an erectile dysfunction drug. Could it also help you live longer?",
+      "summary": "In some wellness circles, tadalafil is promoted as a longevity drug. There is evidence showing a link between it and a lower risk of death in men, but there are no well-controlled trials in humans.",
+      "url": "https://www.npr.org/2026/08/17/nx-s1-5928263/cialis-viagra-tadalafil-longevity-heart-health",
+      "canonicalUrl": "https://www.npr.org/2026/08/17/nx-s1-5928263/cialis-viagra-tadalafil-longevity-heart-health",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-08-17T09:00:00.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/08/17/nx-s1-5923975/wildfires-western-community-protection",
+      "title": "As wildfires get worse, some states are struggling to pass fire protection rules",
+      "summary": "There's a lot homeowners can do to prepare for wildfires, such as managing flammable plants and using fire-resistant building materials. But some states struggle to pass rules requiring those steps.",
+      "url": "https://www.npr.org/2026/08/17/nx-s1-5923975/wildfires-western-community-protection",
+      "canonicalUrl": "https://www.npr.org/2026/08/17/nx-s1-5923975/wildfires-western-community-protection",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-08-17T09:00:00.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/08/17/nx-s1-5910496/elon-musk-starbase-texas-spacex",
+      "title": "Elon Musk's Starbase wants to expand in south Texas",
+      "summary": "Landowners and activists worry about impact to the environment around SpaceX's complex.",
+      "url": "https://www.npr.org/2026/08/17/nx-s1-5910496/elon-musk-starbase-texas-spacex",
+      "canonicalUrl": "https://www.npr.org/2026/08/17/nx-s1-5910496/elon-musk-starbase-texas-spacex",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-08-17T09:00:00.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/08/17/nx-s1-5930235/morning-news-brief",
+      "title": "Morning news brief",
+      "summary": "USS Washington to relieve USS Lincoln after concerns about conditions, Ukraine launches one of its largest aerial attacks on Russia, a look at where talks stand regarding the future of Gaza.",
+      "url": "https://www.npr.org/2026/08/17/nx-s1-5930235/morning-news-brief",
+      "canonicalUrl": "https://www.npr.org/2026/08/17/nx-s1-5930235/morning-news-brief",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-08-17T08:49:18.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/golf/videos/c2049gqwwyyo?at_medium=rss&at_campaign=rss",
+      "title": "Scheffler cruises to eight-shot win at first FedEx Cup play-off",
+      "summary": "World number one Scottie Scheffler cruises to an eight-shot victory at the first FedEx Cup play-off event at the St Jude Championship at TPC Southwind.",
+      "url": "https://www.bbc.co.uk/sport/golf/videos/c2049gqwwyyo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/golf/videos/c2049gqwwyyo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-08-17T08:49:01.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/cn7n4lm11vro?at_medium=rss&at_campaign=rss",
+      "title": "Ukrainian strikes kill six in Russia, acting governor says",
+      "summary": "A 14-year-old child was among four others injured, the acting governor of Russia's Belgorod region says.",
+      "url": "https://www.bbc.co.uk/news/articles/cn7n4lm11vro?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cn7n4lm11vro?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-08-17T08:47:19.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/news/articles/c77gg5vn44yo?at_medium=rss&at_campaign=rss",
       "title": "Trump envoy Kushner arrives in Israel after rare Hamas talks on Gaza peace plan",
-      "summary": "Kushner is expected to meet Israeli Prime Minister Benjamin Netanyahu later on Monday.",
+      "summary": "US President Trump's son-in-law Jared Kushner is expected to meet Israeli Prime Minister Benjamin Netanyahu later on Monday.",
       "url": "https://www.bbc.co.uk/news/articles/c77gg5vn44yo?at_medium=rss&at_campaign=rss",
       "canonicalUrl": "https://www.bbc.co.uk/news/articles/c77gg5vn44yo?at_medium=rss&at_campaign=rss",
       "source": "BBC News · World",
       "category": "general",
-      "publishedAt": "2026-08-17T04:50:56.000Z"
+      "publishedAt": "2026-08-17T08:43:12.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/c4g4r0mrmlpo?at_medium=rss&at_campaign=rss",
+      "title": "Movie that went viral for terrible animation becomes China box office hit",
+      "summary": "Niu Lai's confusing plot and laughable animation quality has won ironic fans on the internet.",
+      "url": "https://www.bbc.co.uk/news/articles/c4g4r0mrmlpo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c4g4r0mrmlpo?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-08-17T08:35:07.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/c5ywwv3j1v1o?at_medium=rss&at_campaign=rss",
+      "title": "Signings impress but squad issues remain - learnings from Man Utd's summer",
+      "summary": "Positives, negatives and areas to address urgently - how are Michael Carrick's Manchester United shaping up now pre-season is over?",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c5ywwv3j1v1o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c5ywwv3j1v1o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-08-17T08:29:10.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/08/17/china-economy-sales-investment-july-.html",
+      "title": "China's economy slows further in July as retail sales barely grow, investment slump steepens",
+      "summary": "The data is reinforcing concerns about the health of the world's second-largest economy, which has grappled with a deepening supply-demand imbalance.",
+      "url": "https://www.cnbc.com/2026/08/17/china-economy-sales-investment-july-.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/08/17/china-economy-sales-investment-july-.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-08-17T08:26:04.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/08/17/us-iran-war-trump-hormuz.html",
+      "title": "Strait of Hormuz shipping grinds to a halt ahead of U.S.-Iran ceasefire expiry",
+      "summary": "Shipping traffic in the Strait of Hormuz sank to a new low as a ceasefire between the U.S. and Iran is set to expire on Monday with no deal in sight.",
+      "url": "https://www.cnbc.com/2026/08/17/us-iran-war-trump-hormuz.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/08/17/us-iran-war-trump-hormuz.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-08-17T08:06:38.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/cy4kge80l1eo?at_medium=rss&at_campaign=rss",
+      "title": "Bronze explains out-of-character contract extension",
+      "summary": "England defender Lucy Bronze says she has found a \"really good role\" at a club she is \"comfortable\" with, after signing a rare contract extension with Chelsea.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cy4kge80l1eo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cy4kge80l1eo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-08-17T08:06:16.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/c4g305xwdr4o?at_medium=rss&at_campaign=rss",
+      "title": "These eight players will help you win FPL",
+      "summary": "Our Fantasy Premier League experts pick eight players they think will help you have a successful FPL season.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c4g305xwdr4o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c4g305xwdr4o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-08-17T07:49:52.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/athletics/articles/clyqqxgrdqqo?at_medium=rss&at_campaign=rss",
+      "title": "'Are you not entertained?' - Hunt enters stardom with iconic quadruple",
+      "summary": "Amy Hunt asserts herself as Great Britain's new track sensation after winning an unprecedented four gold medals at the European Athletics Championships.",
+      "url": "https://www.bbc.co.uk/sport/athletics/articles/clyqqxgrdqqo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/athletics/articles/clyqqxgrdqqo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-08-17T07:02:43.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/08/17/ferrari-luce-electric-car-autos.html",
+      "title": "Ferrari Luce: Polarizing EV becomes a $40 million collector’s item",
+      "summary": "The auction of the Luce comes nearly three months after Ferrari unveiled its first fully electric car, which was priced at 550,000 euros (roughly $640,000).",
+      "url": "https://www.cnbc.com/2026/08/17/ferrari-luce-electric-car-autos.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/08/17/ferrari-luce-electric-car-autos.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-08-17T06:52:23.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/c4gddjpjm49o?at_medium=rss&at_campaign=rss",
+      "title": "Stats that show Premier League is getting more competitive",
+      "summary": "Last season, the Premier League was arguably more competitive than it has been for years. BBC Sport looks at whether that will continue to be the case this time around.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c4gddjpjm49o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c4gddjpjm49o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-08-17T06:41:27.000Z"
+    },
+    {
+      "id": "https://www.sciencedaily.com/releases/2026/08/260815064803.htm",
+      "title": "Scientists tracked kids for 8 years — the screen time result was unexpected",
+      "summary": "An eight-year Finnish study found that children who spent more time on screens tended to show better cognitive processing as teenagers, challenging common assumptions about screen use. Researchers say the key may be bala",
+      "url": "https://www.sciencedaily.com/releases/2026/08/260815064803.htm",
+      "canonicalUrl": "https://www.sciencedaily.com/releases/2026/08/260815064803.htm",
+      "source": "ScienceDaily · Top Science",
+      "category": "academic",
+      "publishedAt": "2026-08-17T06:41:08.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/formula1/articles/c0l58802270o?at_medium=rss&at_campaign=rss",
+      "title": "Dutch GP in pictures as F1 prepares for Zandvoort farewell",
+      "summary": "A selection of images from the Dutch Grand Prix, as Zandvoort prepares to host a Formula 1 race for the final time.",
+      "url": "https://www.bbc.co.uk/sport/formula1/articles/c0l58802270o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/formula1/articles/c0l58802270o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-08-17T06:31:36.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/cx2lll7zvn0o?at_medium=rss&at_campaign=rss",
+      "title": "Trump says US to reduce military drills with South Korea after it stayed out of Iran war",
+      "summary": "Trump cites his \"very good relationship\" with North Korea's leader in deciding to downsize the exercises.",
+      "url": "https://www.bbc.co.uk/news/articles/cx2lll7zvn0o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cx2lll7zvn0o?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-08-17T06:24:31.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/c05q03v8nrno?at_medium=rss&at_campaign=rss",
+      "title": "Dublin Dons? The failed attempt to bring a Premier League club to Ireland",
+      "summary": "Just how close did an Irish consortium come to buying a Premier League team and moving them to Dublin?",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c05q03v8nrno?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c05q03v8nrno?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-08-17T06:19:22.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/c20d7wz4e7po?at_medium=rss&at_campaign=rss",
+      "title": "Who am I? Guess Premier League star No 28",
+      "summary": "Work out the identity of today's player in as few attempts as possible.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c20d7wz4e7po?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c20d7wz4e7po?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-08-17T06:10:48.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/clyq749qwl5o?at_medium=rss&at_campaign=rss",
+      "title": "Five in Five: Football quiz No 1",
+      "summary": "Will you beat the clock by getting all five of today's answers in five minutes?",
+      "url": "https://www.bbc.co.uk/sport/football/articles/clyq749qwl5o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/clyq749qwl5o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-08-17T06:04:20.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/cg4dd420ezlo?at_medium=rss&at_campaign=rss",
+      "title": "Aussie rules footy players under investigation as police probe sexual assault claim",
+      "summary": "The Sydney Swans confirmed an incident had occurred in the hours after the team's win on Sunday.",
+      "url": "https://www.bbc.co.uk/news/articles/cg4dd420ezlo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cg4dd420ezlo?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-08-17T05:46:45.000Z"
+    },
+    {
+      "id": "https://www.sciencedaily.com/releases/2026/08/260815064759.htm",
+      "title": "Animals have been eating nature’s original bioplastic for millions of years",
+      "summary": "Nature invented biodegradable plastic long before humans did—and animals may have been feeding on it for hundreds of millions of years. Researchers discovered that dozens of animal species possess enzymes capable of brea",
+      "url": "https://www.sciencedaily.com/releases/2026/08/260815064759.htm",
+      "canonicalUrl": "https://www.sciencedaily.com/releases/2026/08/260815064759.htm",
+      "source": "ScienceDaily · Top Science",
+      "category": "academic",
+      "publishedAt": "2026-08-17T05:34:10.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/08/17/g-s1-138969/trump-exercises-south-korea",
+      "title": "Trump orders Pentagon to scale back joint exercises with South Korea",
+      "summary": "President Trump explained the decision by saying South Korea had declined to help with the \"denuclearization\" of Iran and he cited his good relationship with North Korea's leader.",
+      "url": "https://www.npr.org/2026/08/17/g-s1-138969/trump-exercises-south-korea",
+      "canonicalUrl": "https://www.npr.org/2026/08/17/g-s1-138969/trump-exercises-south-korea",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-08-17T05:21:39.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/08/17/japanese-automakers-vulnerable-iran-war-yen-rally.html",
+      "title": "Japanese automakers vulnerable to one-two punch of Iran war, yen rally",
+      "summary": "Japanese automakers vulnerable to one-two punch of Iran war, yen rally",
+      "url": "https://www.cnbc.com/2026/08/17/japanese-automakers-vulnerable-iran-war-yen-rally.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/08/17/japanese-automakers-vulnerable-iran-war-yen-rally.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-08-17T05:18:44.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/cricket/articles/cwyee152xeqo?at_medium=rss&at_campaign=rss",
+      "title": "Brook on Test captaincy, batting and Wellington",
+      "summary": "In an exclusive interview, England's Harry Brook says he supports Joe Root taking the Test captaincy, addresses frustrations about his batting and describes the Wellington nightclub incident fallout.",
+      "url": "https://www.bbc.co.uk/sport/cricket/articles/cwyee152xeqo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/cricket/articles/cwyee152xeqo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-08-17T05:15:45.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/news/articles/cvgll74vvydo?at_medium=rss&at_campaign=rss",
@@ -34,23 +504,13 @@
     },
     {
       "id": "https://www.bbc.co.uk/news/articles/cvgww971nn2o?at_medium=rss&at_campaign=rss",
-      "title": "Landslide in South Korea kills one as record rain lashes south",
+      "title": "Record rains drench South Korean city as landslide kills one",
       "summary": "It comes as large swathes of East and South East Asia have been pummelled by dats of heavy rain.",
       "url": "https://www.bbc.co.uk/news/articles/cvgww971nn2o?at_medium=rss&at_campaign=rss",
       "canonicalUrl": "https://www.bbc.co.uk/news/articles/cvgww971nn2o?at_medium=rss&at_campaign=rss",
       "source": "BBC News · World",
       "category": "general",
       "publishedAt": "2026-08-17T04:34:09.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/articles/cg4dd420ezlo?at_medium=rss&at_campaign=rss",
-      "title": "Aussie rules footy players referred to police as detectives investigate sexual assault",
-      "summary": "The \"disappointed\" Sydney Swans CEO wouldn't say what the incident was or how many players were involved.",
-      "url": "https://www.bbc.co.uk/news/articles/cg4dd420ezlo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cg4dd420ezlo?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-08-17T04:30:15.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/football/articles/c5ye0qekjelo?at_medium=rss&at_campaign=rss",
@@ -73,18 +533,8 @@
       "publishedAt": "2026-08-17T03:02:00.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/news/articles/cx2lll7zvn0o?at_medium=rss&at_campaign=rss",
-      "title": "Trump says US to scale back South Korea military drills after it stayed out of Iran war",
-      "summary": "Trump cites his \"very good relationship\" with North Korea's leader in deciding to downsize the exercises.",
-      "url": "https://www.bbc.co.uk/news/articles/cx2lll7zvn0o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cx2lll7zvn0o?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-08-17T02:51:27.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/news/articles/c77ggpgrp2do?at_medium=rss&at_campaign=rss",
-      "title": "Ferrari's first ever electric car sold for record $40m at auction",
+      "title": "Ferrari's first ever electric car sold for record $40m",
       "summary": "The Luce's launch drew backlash from some commentators who said it broke from the brand's signature dramatic styling.",
       "url": "https://www.bbc.co.uk/news/articles/c77ggpgrp2do?at_medium=rss&at_campaign=rss",
       "canonicalUrl": "https://www.bbc.co.uk/news/articles/c77ggpgrp2do?at_medium=rss&at_campaign=rss",
@@ -103,6 +553,16 @@
       "publishedAt": "2026-08-17T02:21:02.000Z"
     },
     {
+      "id": "https://www.sciencedaily.com/releases/2026/08/260814235856.htm",
+      "title": "A little-known protein may be fueling Alzheimer’s — and scientists found a way to block it",
+      "summary": "An experimental Alzheimer’s compound prevented damaging protein clumps from forming in the brains of mice, helping nerve cells survive longer and reducing amyloid buildup. The treatment also appeared to improve heart hea",
+      "url": "https://www.sciencedaily.com/releases/2026/08/260814235856.htm",
+      "canonicalUrl": "https://www.sciencedaily.com/releases/2026/08/260814235856.htm",
+      "source": "ScienceDaily · Top Science",
+      "category": "academic",
+      "publishedAt": "2026-08-17T01:01:15.000Z"
+    },
+    {
       "id": "https://www.bbc.co.uk/news/articles/crmrr7kjy9vo?at_medium=rss&at_campaign=rss",
       "title": "About 100 homes swept away after Hurricane Lala lashes Hawaii",
       "summary": "The state's governor says there \"amazingly\" does not seem to have been any loss of life besides a car crash.",
@@ -111,6 +571,16 @@
       "source": "BBC News · World",
       "category": "general",
       "publishedAt": "2026-08-17T00:20:51.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/videos/cj4kglpl55lo?at_medium=rss&at_campaign=rss",
+      "title": "'I want my brother back' - Tupac’s brother tells BBC murder trial won’t bring justice",
+      "summary": "The BBC's Shaimaa Khalil sat down with Mopreme Shakur ahead of the trial for his brother and late rapper's 1996 murder.",
+      "url": "https://www.bbc.co.uk/news/videos/cj4kglpl55lo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cj4kglpl55lo?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-08-16T23:21:37.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/golf/articles/cre44r1y17no?at_medium=rss&at_campaign=rss",
@@ -124,7 +594,7 @@
     },
     {
       "id": "https://www.bbc.co.uk/news/articles/cy0j2r15dr1o?at_medium=rss&at_campaign=rss",
-      "title": "'Ghana was the crime scene' - the country leading the demand for slavery reparations",
+      "title": "'Ghana was the crime scene': The country leading the demand for slavery reparations",
       "summary": "Ghana has become Africa's leading voice in telling the world that Western nations owe reparations",
       "url": "https://www.bbc.co.uk/news/articles/cy0j2r15dr1o?at_medium=rss&at_campaign=rss",
       "canonicalUrl": "https://www.bbc.co.uk/news/articles/cy0j2r15dr1o?at_medium=rss&at_campaign=rss",
@@ -144,8 +614,8 @@
     },
     {
       "id": "https://www.bbc.co.uk/sport/golf/articles/c1711189q2ro?at_medium=rss&at_campaign=rss",
-      "title": "Englishman Whaley wins US Amateur title",
-      "summary": "Jack Whaley becomes only the second Englishman since 1911 to win the US Amateur Championship as he beats American Jay Leng Jr 4&3 at Merion.",
+      "title": "England's Whaley makes history by winning US Amateur",
+      "summary": "Jack Whaley becomes only the second Englishman since 1911 to win the US Amateur as he beats American Jay Leng Jr 4&3 at Merion.",
       "url": "https://www.bbc.co.uk/sport/golf/articles/c1711189q2ro?at_medium=rss&at_campaign=rss",
       "canonicalUrl": "https://www.bbc.co.uk/sport/golf/articles/c1711189q2ro?at_medium=rss&at_campaign=rss",
       "source": "BBC Sport",
@@ -183,16 +653,6 @@
       "publishedAt": "2026-08-16T21:32:25.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/sport/football/articles/c4gkk7r2r4yo?at_medium=rss&at_campaign=rss",
-      "title": "Martinez Juventus move now off - Monday's gossip",
-      "summary": "Juventus pull out of move for Emiliano Martinez, Manchester City face competition for Pedro Neto and Real Madrid want Martin Zubimendi, plus more.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/c4gkk7r2r4yo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c4gkk7r2r4yo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-08-16T21:24:43.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/sport/football/articles/crl77w8y8r3o?at_medium=rss&at_campaign=rss",
       "title": "Cameroon claim first Wafcon title with victory over Malawi",
       "summary": "Marie Ngah Manga scores twice as Cameroon cruise to a 3-0 win over Malawi and claim a first ever Women's Africa Cup of Nations title.",
@@ -203,18 +663,8 @@
       "publishedAt": "2026-08-16T21:23:49.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/news/articles/ceqeeendz42o?at_medium=rss&at_campaign=rss",
-      "title": "US commander says mental health a 'priority' on USS Lincoln",
-      "summary": "Adm Cooper acknowledges service at sea for long periods is \"uniquely challenging\", after visiting the warship.",
-      "url": "https://www.bbc.co.uk/news/articles/ceqeeendz42o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ceqeeendz42o?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-08-16T21:04:27.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/sport/football/videos/cly9xz3rgkeo?at_medium=rss&at_campaign=rss",
-      "title": "Watch the best of Rodri's Manchester City journey",
+      "title": "'He's the professor' - Rodri's Manchester City journey",
       "summary": "BBC Sport takes a look back at the moments that defined Rodri's time at Manchester City, from important goals to injuries and a Ballon d'Or, as the great midfielder takes his next step in his career.",
       "url": "https://www.bbc.co.uk/sport/football/videos/cly9xz3rgkeo?at_medium=rss&at_campaign=rss",
       "canonicalUrl": "https://www.bbc.co.uk/sport/football/videos/cly9xz3rgkeo?at_medium=rss&at_campaign=rss",
@@ -241,26 +691,6 @@
       "source": "BBC Sport",
       "category": "sports",
       "publishedAt": "2026-08-16T20:45:11.000Z"
-    },
-    {
-      "id": "https://www.npr.org/2026/08/16/nx-s1-5934670/indiana-flooding-deaths",
-      "title": "Multiple people dead as flooding continues in Indiana",
-      "summary": "Some parts of Indiana received more than 11 inches of rainfall over three days, beginning Aug. 11, causing record floods. Several suburbs of Indianapolis also underwater.",
-      "url": "https://www.npr.org/2026/08/16/nx-s1-5934670/indiana-flooding-deaths",
-      "canonicalUrl": "https://www.npr.org/2026/08/16/nx-s1-5934670/indiana-flooding-deaths",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-08-16T20:38:40.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/cricket/articles/crmr4kwx2rpo?at_medium=rss&at_campaign=rss",
-      "title": "Combined men's and women's trophy in Hundred - how would it look in other sports?",
-      "summary": "With The Hundred launching a joint trophy combining men's and women's points, BBC Sport assesses who would win silverware if this was applied to other competitions.",
-      "url": "https://www.bbc.co.uk/sport/cricket/articles/crmr4kwx2rpo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/cricket/articles/crmr4kwx2rpo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-08-16T20:37:53.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/athletics/videos/cz644439dj0o?at_medium=rss&at_campaign=rss",
@@ -293,16 +723,6 @@
       "publishedAt": "2026-08-16T20:22:18.000Z"
     },
     {
-      "id": "https://www.npr.org/2026/08/16/g-s1-138948/kushner-gaza-hamas-netanyahu-egypt-talks",
-      "title": "Kushner meets with Hamas on the Gaza road map ahead of talks with Netanyahu",
-      "summary": "Jared Kushner, President Trump's son-in-law, held a rare meeting with Hamas leadership Sunday in Egypt, in a new diplomatic effort to make progress in the stalled Gaza ceasefire.",
-      "url": "https://www.npr.org/2026/08/16/g-s1-138948/kushner-gaza-hamas-netanyahu-egypt-talks",
-      "canonicalUrl": "https://www.npr.org/2026/08/16/g-s1-138948/kushner-gaza-hamas-netanyahu-egypt-talks",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-08-16T20:20:22.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/sport/athletics/articles/c30444dmqe0o?at_medium=rss&at_campaign=rss",
       "title": "History for Hunt and Asher-Smith in golden finish for GB",
       "summary": "Amy Hunt and Dina Asher-Smith make history while Georgia Hunter Bell claims a commanding 1500m gold as Great Britain finish strongly at the European Championships.",
@@ -321,16 +741,6 @@
       "source": "BBC Sport",
       "category": "sports",
       "publishedAt": "2026-08-16T20:04:32.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/articles/cp8eex1nmpvo?at_medium=rss&at_campaign=rss",
-      "title": "Belgian wildfire doubles in size on third day tearing through nature reserve",
-      "summary": "Hundreds of firefighters are trying to contain the flames consuming the major park.",
-      "url": "https://www.bbc.co.uk/news/articles/cp8eex1nmpvo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cp8eex1nmpvo?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-08-16T20:01:51.000Z"
     },
     {
       "id": "https://www.cnbc.com/2026/08/16/top-us-commander-acknowledges-mental-health-issues-on-uss-lincoln.html",
@@ -374,23 +784,13 @@
     },
     {
       "id": "https://www.bbc.co.uk/sport/football/articles/cy0jj65r18yo?at_medium=rss&at_campaign=rss",
-      "title": "Barcelona agree £65m Rodri deal - who could replace him at Man City?",
+      "title": "Barcelona agree £65m deal to sign Rodri from Man City",
       "summary": "Barcelona agree a deal to sign Spain captain Rodri from Manchester City.",
       "url": "https://www.bbc.co.uk/sport/football/articles/cy0jj65r18yo?at_medium=rss&at_campaign=rss",
       "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cy0jj65r18yo?at_medium=rss&at_campaign=rss",
       "source": "BBC Sport",
       "category": "sports",
       "publishedAt": "2026-08-16T19:37:45.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/articles/c1411pgje8xo?at_medium=rss&at_campaign=rss",
-      "title": "Russia says at least seven killed in largest Ukrainian attack of 2026",
-      "summary": "Moscow also launched deadly strikes against Ukraine overnight, sparking fires across the capital Kyiv.",
-      "url": "https://www.bbc.co.uk/news/articles/c1411pgje8xo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c1411pgje8xo?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-08-16T19:03:04.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/news/articles/c0l5583903yo?at_medium=rss&at_campaign=rss",
@@ -401,16 +801,6 @@
       "source": "BBC News · World",
       "category": "general",
       "publishedAt": "2026-08-16T19:00:23.000Z"
-    },
-    {
-      "id": "https://www.npr.org/2026/08/16/g-s1-138941/tommy-john-elbow-surgery-baseball-pitcher-yankees-dodgers",
-      "title": "Tommy John, namesake for a pioneering elbow surgery that saved his career, dies at 83",
-      "summary": "The left-handed MLB pitcher was 31 years old when he tore the ulnar collateral ligament in his pitching elbow in 1974, an injury that had been a death knell for pitchers' careers up to that point.",
-      "url": "https://www.npr.org/2026/08/16/g-s1-138941/tommy-john-elbow-surgery-baseball-pitcher-yankees-dodgers",
-      "canonicalUrl": "https://www.npr.org/2026/08/16/g-s1-138941/tommy-john-elbow-surgery-baseball-pitcher-yankees-dodgers",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-08-16T18:58:25.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/swimming/videos/cgewwvggx11o?at_medium=rss&at_campaign=rss",
@@ -434,7 +824,7 @@
     },
     {
       "id": "https://www.bbc.co.uk/sport/football/articles/c07rr20g732o?at_medium=rss&at_campaign=rss",
-      "title": "Shop window or new chance - what next for Grealish?",
+      "title": "Shop window or new chance - Grealish faces next chapter",
       "summary": "Jack Grealish made an unexpected return to the Manchester City team on Sunday - so what could his future hold?",
       "url": "https://www.bbc.co.uk/sport/football/articles/c07rr20g732o?at_medium=rss&at_campaign=rss",
       "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c07rr20g732o?at_medium=rss&at_campaign=rss",
@@ -471,16 +861,6 @@
       "source": "BBC Sport",
       "category": "sports",
       "publishedAt": "2026-08-16T17:59:03.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/football/articles/cwyrre1qzwlo?at_medium=rss&at_campaign=rss",
-      "title": "Belgian Pocognoli confirmed as Scotland boss",
-      "summary": "The Scottish FA say they have appointed \"one of Europe's brightest emerging coaching talents\" by securing Sebastien Pocognoli as Scotland men's new head coach on a two-year deal.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cwyrre1qzwlo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cwyrre1qzwlo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-08-16T17:56:58.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/swimming/videos/ce8llpk2xrro?at_medium=rss&at_campaign=rss",
@@ -553,16 +933,6 @@
       "publishedAt": "2026-08-16T16:33:16.000Z"
     },
     {
-      "id": "https://www.npr.org/2026/08/16/nx-s1-5933052/sicily-art-heist-museum-parma",
-      "title": "A good – and bad – week for Italy's art police and museum security",
-      "summary": "On Friday, Italian police said they'd recovered three paintings stolen from a museum near the city of Parma. By Saturday night, thieves in Sicily had made off with four more masterpieces.",
-      "url": "https://www.npr.org/2026/08/16/nx-s1-5933052/sicily-art-heist-museum-parma",
-      "canonicalUrl": "https://www.npr.org/2026/08/16/nx-s1-5933052/sicily-art-heist-museum-parma",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-08-16T16:27:54.000Z"
-    },
-    {
       "id": "https://www.marketwatch.com/story/im-63-and-a-retired-cpa-i-have-a-1-2-million-401-k-do-i-need-a-roth-conversion-0a227302?mod=mw_rss_topstories",
       "title": "I&#x2019;m 63, a retired CPA with a $1.2 million 401(k). Do I need to bother with a Roth conversion?",
       "summary": "&#x201c;I don&#x2019;t expect my marginal tax rate to be materially different in the future.&#x201d;",
@@ -593,16 +963,6 @@
       "publishedAt": "2026-08-16T16:18:45.000Z"
     },
     {
-      "id": "https://www.npr.org/2026/08/16/g-s1-138926/lala-tropical-storm-hawaii-hurricane",
-      "title": "Lala is again a tropical storm, sending drenching rain and winds across Hawaii",
-      "summary": "Hurricane Lala weakened to a tropical storm Sunday after skirting Hawaii without making landfall, but it wasn't done punishing the Big Island with hurricane-force gusts.",
-      "url": "https://www.npr.org/2026/08/16/g-s1-138926/lala-tropical-storm-hawaii-hurricane",
-      "canonicalUrl": "https://www.npr.org/2026/08/16/g-s1-138926/lala-tropical-storm-hawaii-hurricane",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-08-16T15:47:58.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/sport/american-football/articles/cn8nnzpnyj4o?at_medium=rss&at_campaign=rss",
       "title": "GB women narrowly defeated in Olympic qualifier",
       "summary": "Great Britain's women's flag football team miss out on qualifying for the 2028 Olympics as they suffer defeat at the World Championships.",
@@ -623,16 +983,6 @@
       "publishedAt": "2026-08-16T15:42:23.000Z"
     },
     {
-      "id": "https://www.npr.org/2026/08/16/nx-s1-5927053/what-happened-in-ceuta",
-      "title": "What really happened in Ceuta? Why we may never find out",
-      "summary": "Hundreds of migrants have again attempted to cross from Morocco into the Spanish territory of Ceuta. This time, Moroccan officials fended them off, raising new questions about the crossing of July 30.",
-      "url": "https://www.npr.org/2026/08/16/nx-s1-5927053/what-happened-in-ceuta",
-      "canonicalUrl": "https://www.npr.org/2026/08/16/nx-s1-5927053/what-happened-in-ceuta",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-08-16T15:38:22.000Z"
-    },
-    {
       "id": "https://www.theverge.com/ai-artificial-intelligence/980742/chatgpts-computer-history-tracks-your-clicks-and-keystrokes",
       "title": "ChatGPT’s Computer History tracks your clicks and keystrokes",
       "summary": "ChatGPT's desktop app on macOS has a new feature called Computer History that turns your actions into training data, learning how you work, suggesting automations, and even picking up tasks you left half done. It uses yo",
@@ -643,16 +993,6 @@
       "publishedAt": "2026-08-16T14:56:40.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/sport/athletics/articles/cdj00m4k0rro?at_medium=rss&at_campaign=rss",
-      "title": "O'Connor targets biggest titles after European gold",
-      "summary": "Kate O'Connor knows she is capable of winning a world and Olympic title after producing a superb performance to clinch a European gold medal.",
-      "url": "https://www.bbc.co.uk/sport/athletics/articles/cdj00m4k0rro?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/athletics/articles/cdj00m4k0rro?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-08-16T14:50:39.000Z"
-    },
-    {
       "id": "https://www.cnbc.com/2026/08/16/grandma-gail-advice-for-late-bloomers-it-doesnt-all-have-to-be-perfect.html",
       "title": "The internet's grandma has advice for late bloomers: 'It doesn't all have to be perfect'",
       "summary": "Kim Murstein and Gail Rudnick are the duo behind \"Excuse My Grandma,\" an advice podcast that dives into life, love and other issues across generations.",
@@ -661,16 +1001,6 @@
       "source": "CNBC · Finance",
       "category": "finance",
       "publishedAt": "2026-08-16T14:30:01.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/football/articles/ckg44n858qvo?at_medium=rss&at_campaign=rss",
-      "title": "Villa close in on Suzuki with Martinez future in doubt",
-      "summary": "Aston Villa close in on the signing of Parma goalkeeper Zion Suzuki, with Emi Martinez's future in increasing doubt.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/ckg44n858qvo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/ckg44n858qvo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-08-16T13:38:08.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/equestrian/videos/c20jj44dgl6o?at_medium=rss&at_campaign=rss",
@@ -701,46 +1031,6 @@
       "source": "CNBC · Finance",
       "category": "finance",
       "publishedAt": "2026-08-16T13:30:01.000Z"
-    },
-    {
-      "id": "https://www.marketwatch.com/story/heres-the-real-reason-oil-prices-arent-moving-higher-256afdbc?mod=mw_rss_topstories",
-      "title": "Here&#x2019;s the real reason oil prices aren&#x2019;t moving higher",
-      "summary": "Oil prices are not higher largely because the world does not want as much oil as it used to &#x2014; and that&#x2019;s arguably the more troubling story.",
-      "url": "https://www.marketwatch.com/story/heres-the-real-reason-oil-prices-arent-moving-higher-256afdbc?mod=mw_rss_topstories",
-      "canonicalUrl": "https://www.marketwatch.com/story/heres-the-real-reason-oil-prices-arent-moving-higher-256afdbc?mod=mw_rss_topstories",
-      "source": "MarketWatch · Top Stories",
-      "category": "finance",
-      "publishedAt": "2026-08-16T13:00:00.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/equestrian/articles/cewrrz51kxeo?at_medium=rss&at_campaign=rss",
-      "title": "GB's Fry claims historic double-double at Worlds",
-      "summary": "Great Britain's Lottie Fry becomes the first rider in the history of the FEI World Championships to retain both individual dressage titles.",
-      "url": "https://www.bbc.co.uk/sport/equestrian/articles/cewrrz51kxeo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/equestrian/articles/cewrrz51kxeo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-08-16T12:56:18.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/football/articles/c2lqqr15p2yo?at_medium=rss&at_campaign=rss",
-      "title": "Elvedi set for Leeds move as £8.5m fee agreed",
-      "summary": "Leeds agree an £8.5m deal to sign defender Nico Elvedi, who is set to have a medical on Monday.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/c2lqqr15p2yo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c2lqqr15p2yo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-08-16T12:52:42.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/tennis/articles/cj033qggmv3o?at_medium=rss&at_campaign=rss",
-      "title": "Fery wins on return as Djokovic reveals health condition after loss",
-      "summary": "Britain's Arthur Fery beats Australia's James Duckworth at the Cincinnati Open but Novak Djokovic falls to a shock defeat by Argentina's Thiago Tirante.",
-      "url": "https://www.bbc.co.uk/sport/tennis/articles/cj033qggmv3o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/tennis/articles/cj033qggmv3o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-08-16T12:51:19.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/news/articles/c3v00w5ylw9o?at_medium=rss&at_campaign=rss",
@@ -793,36 +1083,6 @@
       "publishedAt": "2026-08-16T12:00:00.000Z"
     },
     {
-      "id": "https://www.marketwatch.com/story/the-mediterranean-diet-is-the-best-out-there-heres-why-americans-struggle-with-it-081f3fe7?mod=mw_rss_topstories",
-      "title": "The Mediterranean diet is the best out there. Here&#x2019;s why Americans struggle with it.",
-      "summary": "It&#x2019;s not just about eating well. It&#x2019;s about cooking at home and sharing those meals with friends and family.",
-      "url": "https://www.marketwatch.com/story/the-mediterranean-diet-is-the-best-out-there-heres-why-americans-struggle-with-it-081f3fe7?mod=mw_rss_topstories",
-      "canonicalUrl": "https://www.marketwatch.com/story/the-mediterranean-diet-is-the-best-out-there-heres-why-americans-struggle-with-it-081f3fe7?mod=mw_rss_topstories",
-      "source": "MarketWatch · Top Stories",
-      "category": "finance",
-      "publishedAt": "2026-08-16T12:00:00.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/08/16/top-wall-street-analysts-like-these-dividend-stocks-for-steady-income.html",
-      "title": "Top Wall Street analysts like these 3 dividend stocks for steady income",
-      "summary": "Investors looking for steady income can add dividend-paying energy stocks to their portfolios.",
-      "url": "https://www.cnbc.com/2026/08/16/top-wall-street-analysts-like-these-dividend-stocks-for-steady-income.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/08/16/top-wall-street-analysts-like-these-dividend-stocks-for-steady-income.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-08-16T11:58:15.000Z"
-    },
-    {
-      "id": "https://www.npr.org/2026/08/16/nx-s1-5932491/transgender-health-care-medicaid-trump-oz",
-      "title": "'What are we going to do?' The mom of a trans teen grapples with Trump's Medicaid move",
-      "summary": "A longtime Republican living in California says the Trump administration's continuing actions to target transgender youth take a personal toll.",
-      "url": "https://www.npr.org/2026/08/16/nx-s1-5932491/transgender-health-care-medicaid-trump-oz",
-      "canonicalUrl": "https://www.npr.org/2026/08/16/nx-s1-5932491/transgender-health-care-medicaid-trump-oz",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-08-16T11:54:19.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/sport/athletics/articles/cjejjzg4vqwo?at_medium=rss&at_campaign=rss",
       "title": "Donnelly wins GB's first women's marathon medal at Europeans",
       "summary": "Abbie Donnelly became the first British woman to win a marathon medal at the European Championships as she claimed bronze in Birmingham on Sunday.",
@@ -831,36 +1091,6 @@
       "source": "BBC Sport",
       "category": "sports",
       "publishedAt": "2026-08-16T11:40:30.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/articles/cn5nnlq2pwpo?at_medium=rss&at_campaign=rss",
-      "title": "Europe's tallest Virgin Mary statue unveiled in rural Poland",
-      "summary": "The 55.6-metre (182ft) concrete figure is head-and-shoulders above Rio de Janeiro's Christ the Redeemer.",
-      "url": "https://www.bbc.co.uk/news/articles/cn5nnlq2pwpo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cn5nnlq2pwpo?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-08-16T11:35:25.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/football/articles/c4g442me1k8o?at_medium=rss&at_campaign=rss",
-      "title": "Maguire wants 'huge threat' Rashford to stay at Man Utd",
-      "summary": "Manchester United defender Harry Maguire says he hopes Marcus Rashford will stay at the club because he can improve Michael Carrick's team.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/c4g442me1k8o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c4g442me1k8o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-08-16T11:00:14.000Z"
-    },
-    {
-      "id": "https://www.marketwatch.com/story/walmart-and-target-are-about-to-reveal-the-health-of-the-u-s-consumer-d5b89491?mod=mw_rss_topstories",
-      "title": "Walmart and Target are about to reveal the health of the U.S. consumer",
-      "summary": "Earnings reports from the two major retailers will show how shoppers are holding up in an era of persistent inflation.",
-      "url": "https://www.marketwatch.com/story/walmart-and-target-are-about-to-reveal-the-health-of-the-u-s-consumer-d5b89491?mod=mw_rss_topstories",
-      "canonicalUrl": "https://www.marketwatch.com/story/walmart-and-target-are-about-to-reveal-the-health-of-the-u-s-consumer-d5b89491?mod=mw_rss_topstories",
-      "source": "MarketWatch · Top Stories",
-      "category": "finance",
-      "publishedAt": "2026-08-16T11:00:00.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/news/articles/ckg4424zd7go?at_medium=rss&at_campaign=rss",
@@ -883,16 +1113,6 @@
       "publishedAt": "2026-08-16T10:24:51.000Z"
     },
     {
-      "id": "https://www.npr.org/2026/08/16/nx-s1-5933006/ukraine-aerial-attack-6-dead-russia",
-      "title": "Ukraine launches one of its largest aerial attacks of the war, killing at least 6 people in Russia",
-      "summary": "Ukraine launched hundreds of drones across Russia Sunday, killing at least six people in one of Kyiv's largest aerial attacks of the war.",
-      "url": "https://www.npr.org/2026/08/16/nx-s1-5933006/ukraine-aerial-attack-6-dead-russia",
-      "canonicalUrl": "https://www.npr.org/2026/08/16/nx-s1-5933006/ukraine-aerial-attack-6-dead-russia",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-08-16T10:12:09.000Z"
-    },
-    {
       "id": "https://www.sciencedaily.com/releases/2026/08/260815064805.htm",
       "title": "Physicists discover a hidden gluon structure inside protons that could rewrite textbooks",
       "summary": "Physicists may have uncovered a hidden feature inside protons that helps preserve one of matter’s most fundamental properties. RHIC collision data suggest baryon number is carried not simply by three quarks, but by a Y-s",
@@ -913,16 +1133,6 @@
       "publishedAt": "2026-08-16T09:45:45.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/news/articles/cj4kk8kz271o?at_medium=rss&at_campaign=rss",
-      "title": "Qatar denies capturing three Iranian pilots after downing fighter jets",
-      "summary": "Iran claims they have been held since Qatar downed two fighter jets at the start of the US-Iran war.",
-      "url": "https://www.bbc.co.uk/news/articles/cj4kk8kz271o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cj4kk8kz271o?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-08-16T09:27:58.000Z"
-    },
-    {
       "id": "https://www.sciencedaily.com/releases/2026/08/260815065014.htm",
       "title": "Scientists reveal why walking gets so much harder with age",
       "summary": "As we age, the body appears to sacrifice walking efficiency in exchange for stability. Older adults stiffen the ankle more with each step, which may help prevent falls but also forces the muscles to work harder while pro",
@@ -933,36 +1143,6 @@
       "publishedAt": "2026-08-16T09:13:25.000Z"
     },
     {
-      "id": "https://www.npr.org/2026/08/16/nx-s1-5929441/npr-senior-podcast-challenge-official-rules",
-      "title": "NPR Senior Podcast Challenge: Official Rules",
-      "summary": "",
-      "url": "https://www.npr.org/2026/08/16/nx-s1-5929441/npr-senior-podcast-challenge-official-rules",
-      "canonicalUrl": "https://www.npr.org/2026/08/16/nx-s1-5929441/npr-senior-podcast-challenge-official-rules",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-08-16T09:00:00.000Z"
-    },
-    {
-      "id": "https://www.npr.org/2026/08/16/nx-s1-5928398/endangered-sea-stars-release-pacific-ocean",
-      "title": "Billions of sea stars have died. A Northwest tribe is trying to save the species",
-      "summary": "Sunflower sea stars are critically endangered in the Pacific Ocean. University of Washington researchers are working with the Samish Indian Nation to bring this 24-armed creature back from the brink of extinction.",
-      "url": "https://www.npr.org/2026/08/16/nx-s1-5928398/endangered-sea-stars-release-pacific-ocean",
-      "canonicalUrl": "https://www.npr.org/2026/08/16/nx-s1-5928398/endangered-sea-stars-release-pacific-ocean",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-08-16T09:00:00.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/mixed-martial-arts/articles/c8dnn7d01p5o?at_medium=rss&at_campaign=rss",
-      "title": "Makhachev beats Machado Garry to break UFC win record",
-      "summary": "Islam Makhachev cements his status as the best pound-for-pound fighter in the world with a commanding victory over Ian Machado Garry.",
-      "url": "https://www.bbc.co.uk/sport/mixed-martial-arts/articles/c8dnn7d01p5o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/mixed-martial-arts/articles/c8dnn7d01p5o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-08-16T08:16:25.000Z"
-    },
-    {
       "id": "https://www.sciencedaily.com/releases/2026/08/260814235837.htm",
       "title": "A new Ice Age species was hiding in la brea tar pits fossils for decades",
       "summary": "Scientists have discovered a new extinct amphibian species hiding in the fossil collections of Los Angeles’ La Brea Tar Pits. Named Spea labreae, the Ice Age spadefoot toad is an exceptionally rare find—only one other ex",
@@ -971,16 +1151,6 @@
       "source": "ScienceDaily · Top Science",
       "category": "academic",
       "publishedAt": "2026-08-16T07:33:36.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/cricket/articles/cn8nn37v22lo?at_medium=rss&at_campaign=rss",
-      "title": "Bangladesh thrash Australia in one of Test cricket's greatest upsets",
-      "summary": "Bangladesh thrash Australia by nine wickets on the fourth day of the series-opener in Darwin to complete one of Test cricket's greatest upsets.",
-      "url": "https://www.bbc.co.uk/sport/cricket/articles/cn8nn37v22lo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/cricket/articles/cn8nn37v22lo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-08-16T06:57:29.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/football/articles/c0l5927xr89o?at_medium=rss&at_campaign=rss",
@@ -1013,16 +1183,6 @@
       "publishedAt": "2026-08-16T03:03:05.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/sport/athletics/videos/clyllwdwvexo?at_medium=rss&at_campaign=rss",
-      "title": "'It was so up and down' - O'Connor wins heptathlon gold",
-      "summary": "Ireland's Kate O'Connor speaks after winning gold in the women's heptathlon at the European Athletics Championships, just weeks after winning the same event at the Commonwealth Games.",
-      "url": "https://www.bbc.co.uk/sport/athletics/videos/clyllwdwvexo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/athletics/videos/clyllwdwvexo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-08-15T22:33:57.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/sport/athletics/videos/clyxx3x23dvo?at_medium=rss&at_campaign=rss",
       "title": "Johnson-Thompson grateful to still be competing",
       "summary": "Great Britain's Katarina Johnson-Thompson reflects on her European Championships, where her heptathlon was impacted by a lack of training due to injury.",
@@ -1041,166 +1201,6 @@
       "source": "BBC Sport",
       "category": "sports",
       "publishedAt": "2026-08-15T21:49:21.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/athletics/videos/ce8llyzyj27o?at_medium=rss&at_campaign=rss",
-      "title": "'Absolutely miles ahead!' GB women win brilliant relay gold",
-      "summary": "Great Britain's Dina Asher-Smith, Amy Hunt, Success Eduan and Imani-Lara Lansiquot dominate the 4x100m relay to win a brilliant gold.",
-      "url": "https://www.bbc.co.uk/sport/athletics/videos/ce8llyzyj27o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/athletics/videos/ce8llyzyj27o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-08-15T21:14:57.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/articles/ckg44x2ey1ro?at_medium=rss&at_campaign=rss",
-      "title": "Morocco detains dozens of migrants trying to cross into Ceuta, reports say",
-      "summary": "Security had been stepped up amid suggestions on social media of a second mass crossing on Saturday.",
-      "url": "https://www.bbc.co.uk/news/articles/ckg44x2ey1ro?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ckg44x2ey1ro?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-08-15T20:58:31.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/athletics/videos/c07rr9809gdo?at_medium=rss&at_campaign=rss",
-      "title": "Great Britain storm to 4x100m relay gold",
-      "summary": "Great Britain quartet Romell Glave, Zharnell Hughes, Jeremiah Azu and Louie Hinchliffe race to 4x100m relay gold at the European Athletics Championships.",
-      "url": "https://www.bbc.co.uk/sport/athletics/videos/c07rr9809gdo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/athletics/videos/c07rr9809gdo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-08-15T20:51:11.000Z"
-    },
-    {
-      "id": "https://www.theverge.com/entertainment/980502/roleplay-as-an-ai-chatbot",
-      "title": "Have a laugh at AI’s expense by roleplaying as a chatbot",
-      "summary": "Your AI Slop Bores Me is brilliant in its simplicity. There are two tabs: human and LARP as an AI. On one side you enter a request. On the other, you submit an answer. But the important thing is that there's a human on b",
-      "url": "https://www.theverge.com/entertainment/980502/roleplay-as-an-ai-chatbot",
-      "canonicalUrl": "https://www.theverge.com/entertainment/980502/roleplay-as-an-ai-chatbot",
-      "source": "The Verge · AI",
-      "category": "ai",
-      "publishedAt": "2026-08-15T20:45:00.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/articles/cn9nnxrxg4qo?at_medium=rss&at_campaign=rss",
-      "title": "Liechtenstein changes succession rule to allow women to ascend the throne",
-      "summary": "The declaration was made on the national day of the central European country, which has a population of just 44,000.",
-      "url": "https://www.bbc.co.uk/news/articles/cn9nnxrxg4qo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cn9nnxrxg4qo?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-08-15T19:41:57.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/cycling/articles/czxqqlpnx98o?at_medium=rss&at_campaign=rss",
-      "title": "'Fury' at Tarling death as cycling union calls for better helmets",
-      "summary": "The cyclists' union expresses \"fury\" over the death of British rider Fin Tarling during Friday's stage of the Volta a Portugal.",
-      "url": "https://www.bbc.co.uk/sport/cycling/articles/czxqqlpnx98o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/cycling/articles/czxqqlpnx98o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-08-15T19:05:32.000Z"
-    },
-    {
-      "id": "https://www.marketwatch.com/story/think-interest-rates-are-high-now-these-charts-offers-a-different-perspective-ae5f28c6?mod=mw_rss_topstories",
-      "title": "Think interest rates are high now? These charts offer a different perspective.",
-      "summary": "Also in Weekend Reads: 10 remarkable housing markets, stock picks, and health-insurance battles.",
-      "url": "https://www.marketwatch.com/story/think-interest-rates-are-high-now-these-charts-offers-a-different-perspective-ae5f28c6?mod=mw_rss_topstories",
-      "canonicalUrl": "https://www.marketwatch.com/story/think-interest-rates-are-high-now-these-charts-offers-a-different-perspective-ae5f28c6?mod=mw_rss_topstories",
-      "source": "MarketWatch · Top Stories",
-      "category": "finance",
-      "publishedAt": "2026-08-15T19:01:00.000Z"
-    },
-    {
-      "id": "https://www.marketwatch.com/story/owning-a-home-is-overrated-renting-is-now-often-a-much-better-money-move-711288a6?mod=mw_rss_topstories",
-      "title": "Owning a home is overrated. Renting is now often a much better money move.",
-      "summary": "There are better ways to think about investments than homeownership.",
-      "url": "https://www.marketwatch.com/story/owning-a-home-is-overrated-renting-is-now-often-a-much-better-money-move-711288a6?mod=mw_rss_topstories",
-      "canonicalUrl": "https://www.marketwatch.com/story/owning-a-home-is-overrated-renting-is-now-often-a-much-better-money-move-711288a6?mod=mw_rss_topstories",
-      "source": "MarketWatch · Top Stories",
-      "category": "finance",
-      "publishedAt": "2026-08-15T18:23:00.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/videos/c62e1v8p07go?at_medium=rss&at_campaign=rss",
-      "title": "Why is Australia's mushroom killer back in court this week?",
-      "summary": "The BBC’s Katy Watson explains why triple-murderer Erin Patterson is back in court this week trying to overturn her conviction.",
-      "url": "https://www.bbc.co.uk/news/videos/c62e1v8p07go?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/videos/c62e1v8p07go?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-08-15T18:02:30.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/08/15/cannabis-marijuana-legalization-midterm-elections.html",
-      "title": "Marijuana reform is emerging as a midterm elections issue on both sides of the aisle",
-      "summary": "With November's midterms fast approaching, cannabis reform is an issue. It's popular with voters, but its power to tilt elections remains uncertain.",
-      "url": "https://www.cnbc.com/2026/08/15/cannabis-marijuana-legalization-midterm-elections.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/08/15/cannabis-marijuana-legalization-midterm-elections.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-08-15T17:35:09.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/08/15/prediction-markets-and-sports-betting-how-this-uk-exchange-is-trying-to-do-both-in-the-us.html",
-      "title": "Prediction markets and sports betting: How this UK exchange is trying to do both in the U.S.",
-      "summary": "Smarkets is entering the U.S. prediction market race but also applying to run as a sportsbook within states amid regulatory uncertainty at the federal level.",
-      "url": "https://www.cnbc.com/2026/08/15/prediction-markets-and-sports-betting-how-this-uk-exchange-is-trying-to-do-both-in-the-us.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/08/15/prediction-markets-and-sports-betting-how-this-uk-exchange-is-trying-to-do-both-in-the-us.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-08-15T14:46:43.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/08/15/anthropic-revenue-jumps-to-over-11point5-billion-in-q2-report.html",
-      "title": "Anthropic revenue reportedly jumps to more than $11.5 billion in second quarter",
-      "summary": "The jump in revenue underscores the rapid growth of the Claude chatbot maker as it prepares for a potential blockbuster initial public offering.",
-      "url": "https://www.cnbc.com/2026/08/15/anthropic-revenue-jumps-to-over-11point5-billion-in-q2-report.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/08/15/anthropic-revenue-jumps-to-over-11point5-billion-in-q2-report.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-08-15T14:45:31.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/08/15/aoc-egg-freezing-costs-insurance-taxes.html",
-      "title": "AOC says she's been saving up to freeze her eggs. Here's how much the procedure can cost",
-      "summary": "AOC is highlighting the cost of freezing her eggs. Here's what to know about health insurance coverage, state laws and taxes associated with the process.",
-      "url": "https://www.cnbc.com/2026/08/15/aoc-egg-freezing-costs-insurance-taxes.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/08/15/aoc-egg-freezing-costs-insurance-taxes.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-08-15T14:35:01.000Z"
-    },
-    {
-      "id": "https://www.sciencedaily.com/releases/2026/08/260813045555.htm",
-      "title": "A 30-year-old fossil was hiding bones from a mysterious ancient sea monster",
-      "summary": "Fossils collected in Osaka more than 30 years ago have revealed a surprise hiding in plain sight: four previously unrecognized bones from a giant Cretaceous mosasaur. Among them is the first confirmed premaxilla—the fron",
-      "url": "https://www.sciencedaily.com/releases/2026/08/260813045555.htm",
-      "canonicalUrl": "https://www.sciencedaily.com/releases/2026/08/260813045555.htm",
-      "source": "ScienceDaily · Top Science",
-      "category": "academic",
-      "publishedAt": "2026-08-15T14:19:45.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/08/15/strategic-petroleum-reserve-spr-oil-iran-war-caverns.html",
-      "title": "Depleted strategic oil reserve nears level that raises concerns about damage to caverns, operations",
-      "summary": "The rapid drawdown of the U.S. Strategic Petroleum Reserve could damage the caverns that store the oil, experts warn.",
-      "url": "https://www.cnbc.com/2026/08/15/strategic-petroleum-reserve-spr-oil-iran-war-caverns.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/08/15/strategic-petroleum-reserve-spr-oil-iran-war-caverns.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-08-15T14:19:35.000Z"
-    },
-    {
-      "id": "https://www.sciencedaily.com/releases/2026/08/260813045557.htm",
-      "title": "Common food preservative linked to rising suicide deaths among young people",
-      "summary": "A widely available food-preservation chemical is emerging as a disturbing factor in rising UK suicide deaths, particularly among younger people and men. Researchers say the scale may be underestimated and are calling for",
-      "url": "https://www.sciencedaily.com/releases/2026/08/260813045557.htm",
-      "canonicalUrl": "https://www.sciencedaily.com/releases/2026/08/260813045557.htm",
-      "source": "ScienceDaily · Top Science",
-      "category": "academic",
-      "publishedAt": "2026-08-15T14:09:09.000Z"
     }
   ],
   "sourceHealth": [
@@ -1231,7 +1231,7 @@
     {
       "name": "BBC Sport",
       "ok": true,
-      "itemCount": 74,
+      "itemCount": 77,
       "error": null
     },
     {
@@ -1255,7 +1255,7 @@
     {
       "name": "BBC News · World",
       "ok": true,
-      "itemCount": 32,
+      "itemCount": 28,
       "error": null
     },
     {
