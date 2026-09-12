@@ -1,16 +1,376 @@
 {
-  "generatedAt": "2026-09-12T18:22:43.232Z",
+  "generatedAt": "2026-09-12T23:59:25.345Z",
   "stale": false,
   "items": [
     {
-      "id": "https://www.bbc.co.uk/iplayer/live/bbcfour?at_medium=rss&at_campaign=rss",
-      "title": "Cricket: Today at the Test",
-      "summary": "Day 4 highlights from the third Test match between England and Pakistan at Edgbaston.",
-      "url": "https://www.bbc.co.uk/iplayer/live/bbcfour?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/iplayer/live/bbcfour?at_medium=rss&at_campaign=rss",
+      "id": "https://www.npr.org/2026/09/12/nx-s1-5967534/celine-dion-performance-paris",
+      "title": "Celine Dion returns to the stage after battling rare illness",
+      "summary": "The Canadian singer opened up her 16-show residency in Paris at the Plenitude Arena. The entire series is sold out.",
+      "url": "https://www.npr.org/2026/09/12/nx-s1-5967534/celine-dion-performance-paris",
+      "canonicalUrl": "https://www.npr.org/2026/09/12/nx-s1-5967534/celine-dion-performance-paris",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-09-12T23:54:06.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/tennis/articles/clym434j01xo?at_medium=rss&at_campaign=rss",
+      "title": "Rybakina wins US Open to inflict further pain on Sabalenka",
+      "summary": "Elena Rybakina demonstrates why she is the best women's player in the world by beating Aryna Sabalenka to win her first US Open title.",
+      "url": "https://www.bbc.co.uk/sport/tennis/articles/clym434j01xo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/tennis/articles/clym434j01xo?at_medium=rss&at_campaign=rss",
       "source": "BBC Sport",
       "category": "sports",
-      "publishedAt": "2026-09-12T19:00:00.000Z"
+      "publishedAt": "2026-09-12T23:46:52.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/rugby-union/articles/c07lmxpmvr9o?at_medium=rss&at_campaign=rss",
+      "title": "South Africa cap series victory over New Zealand with win in Baltimore",
+      "summary": "South Africa complete a 3-1 series win over New Zealand as the world champions' consistency, power and cohesion proves too much in the fourth Test in Baltimore.",
+      "url": "https://www.bbc.co.uk/sport/rugby-union/articles/c07lmxpmvr9o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/rugby-union/articles/c07lmxpmvr9o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-09-12T23:29:11.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/09/12/anthropics-amodei-proposes-plan-to-slow-the-pace-of-advancing-ai-capabilities.html",
+      "title": "OpenAI rules out IPO this year as Altman, Musk & Amodei warn AI is moving too fast",
+      "summary": "Altman's IPO comments and Amodei's public call for more careful pacing of AI development cap a week of loud AI warnings.",
+      "url": "https://www.cnbc.com/2026/09/12/anthropics-amodei-proposes-plan-to-slow-the-pace-of-advancing-ai-capabilities.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/09/12/anthropics-amodei-proposes-plan-to-slow-the-pace-of-advancing-ai-capabilities.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-09-12T23:20:43.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/snooker/articles/ckgw191xkrlo?at_medium=rss&at_campaign=rss",
+      "title": "Williams to face Carter after semi-final fightback",
+      "summary": "Mark Williams pulls off a superb fightback to beat Shaun Murphy and book a spot against Ali Carter in Sunday's English Open final.",
+      "url": "https://www.bbc.co.uk/sport/snooker/articles/ckgw191xkrlo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/snooker/articles/ckgw191xkrlo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-09-12T23:11:12.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/videos/ckgw13ng43xo?at_medium=rss&at_campaign=rss",
+      "title": "Chelsea's defence looks 'weak & disjointed' - analysis",
+      "summary": "Match of the Day pundit Ashley Williams says Chelsea's \"struggling\" defence looked \"weak and disjointed\" in their 2-2 draw against Hull at Stamford Bridge.",
+      "url": "https://www.bbc.co.uk/sport/football/videos/ckgw13ng43xo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/videos/ckgw13ng43xo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-09-12T23:07:03.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/videos/cm2m7105d71o?at_medium=rss&at_campaign=rss",
+      "title": "Referee 'completely wrong' to award penalty - Williams",
+      "summary": "Match of the Day pundits Ashley Williams and Thomas Frank believe Sunderland should not have been awarded a penalty after Ezri Konsa was adjudged to foul Dan Ballard, instead claiming that Arsenal should have had a free ",
+      "url": "https://www.bbc.co.uk/sport/football/videos/cm2m7105d71o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/videos/cm2m7105d71o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-09-12T23:00:41.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/c5ym4384rezo?at_medium=rss&at_campaign=rss",
+      "title": "'Today the game was unprotected' - Arteta fumes but Arsenal survive",
+      "summary": "Arsenal produced a gritty 2-0 win against Sunderland, but Mikel Arteta fumed about the penalty that could have cost his side a result.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c5ym4384rezo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c5ym4384rezo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-09-12T22:57:13.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/videos/c5ympj1m71ko?at_medium=rss&at_campaign=rss",
+      "title": "Arsenal hold off energetic Sunderland to continue perfect title defence",
+      "summary": "Arsenal maintain their 100% start to their Premier League season with a win at Sunderland, who mount an admirable push for a point before Bukayo Saka's penalty puts the result beyond doubt.",
+      "url": "https://www.bbc.co.uk/sport/football/videos/c5ympj1m71ko?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/videos/c5ympj1m71ko?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-09-12T21:53:50.000Z"
+    },
+    {
+      "id": "https://www.marketwatch.com/story/why-openais-sam-altman-says-an-ipo-isnt-in-the-cards-this-year-229de89c?mod=mw_rss_topstories",
+      "title": "Why OpenAI&#x2019;s Sam Altman says an IPO isn&#x2019;t in the cards this year",
+      "summary": "Concerns about AI safety have ramped up, and OpenAI&#x2019;s CEO says now would be an &#x2018;ill-advised&#x2019; time for the ChatGPT creator to go public",
+      "url": "https://www.marketwatch.com/story/why-openais-sam-altman-says-an-ipo-isnt-in-the-cards-this-year-229de89c?mod=mw_rss_topstories",
+      "canonicalUrl": "https://www.marketwatch.com/story/why-openais-sam-altman-says-an-ipo-isnt-in-the-cards-this-year-229de89c?mod=mw_rss_topstories",
+      "source": "MarketWatch · Top Stories",
+      "category": "finance",
+      "publishedAt": "2026-09-12T21:50:00.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/videos/cd94ke0z07qo?at_medium=rss&at_campaign=rss",
+      "title": "Arteta 'very worried & very sad' over penalty incident",
+      "summary": "Mikel Arteta is pleased with Arsenal's performance against Sunderland, but is \"very worried and very sad\" about the penalty awarded to their opponents during the match at the Stadium of Light.",
+      "url": "https://www.bbc.co.uk/sport/football/videos/cd94ke0z07qo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/videos/cd94ke0z07qo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-09-12T21:45:43.000Z"
+    },
+    {
+      "id": "https://www.theverge.com/ai-artificial-intelligence/994383/openais-rogue-ai-rubygems-hack",
+      "title": "OpenAI’s rogue AI tried to hack another company in May",
+      "summary": "In May, hundreds of malicious and spam packages were uploaded to RubyGems, causing a serious disruption for the host. Now independent researchers have said that a swarm of OpenAI agents were responsible for the attack. N",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/994383/openais-rogue-ai-rubygems-hack",
+      "canonicalUrl": "https://www.theverge.com/ai-artificial-intelligence/994383/openais-rogue-ai-rubygems-hack",
+      "source": "The Verge · AI",
+      "category": "ai",
+      "publishedAt": "2026-09-12T21:41:36.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/c2e0mzdwmkko?at_medium=rss&at_campaign=rss",
+      "title": "Arsenal monitoring Como's Paz - Sunday's gossip",
+      "summary": "Arsenal are monitoring Nico Paz, Liverpool and Aston Villa are tracking Cher Ndour and Sunderland are refusing to give up on Geny Catamo, plus more.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c2e0mzdwmkko?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c2e0mzdwmkko?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-09-12T21:35:12.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/videos/cg49xg625n0o?at_medium=rss&at_campaign=rss",
+      "title": "Tottenham's wait for league goal continues after Everton draw",
+      "summary": "Tottenham's wait for a first Premier League goal and win this season continues after Roberto de Zerbi's side were held to a goalless home draw by Everton.",
+      "url": "https://www.bbc.co.uk/sport/football/videos/cg49xg625n0o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/videos/cg49xg625n0o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-09-12T21:32:43.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/videos/c780zx2wl9vo?at_medium=rss&at_campaign=rss",
+      "title": "Fulham take first point of the season at lacklustre Liverpool",
+      "summary": "Fulham claim their first Premier League point of the season after a difficult start under Alvaro Arbeloa, as Liverpool fail to score for the first time this season just days after their Champions League victory over Atle",
+      "url": "https://www.bbc.co.uk/sport/football/videos/c780zx2wl9vo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/videos/c780zx2wl9vo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-09-12T21:31:46.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/videos/c7504wz4xgxo?at_medium=rss&at_campaign=rss",
+      "title": "Flemming's late strike earns Ipswich win over 10-man Crystal Palace",
+      "summary": "Zian Flemming scores his first goal for Ipswich to give the club a late victory over 10-man Crystal Palace at Selhurst Park.",
+      "url": "https://www.bbc.co.uk/sport/football/videos/c7504wz4xgxo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/videos/c7504wz4xgxo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-09-12T21:31:11.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/videos/c1l6ennjpnzo?at_medium=rss&at_campaign=rss",
+      "title": "Brentford hold Bournemouth as Rose's wait for a win continues",
+      "summary": "Marco Rose's wait for a first Premier League victory as Bournemouth head coach continues as they are held to a 2-2 draw by Brentford at Vitality Stadium.",
+      "url": "https://www.bbc.co.uk/sport/football/videos/c1l6ennjpnzo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/videos/c1l6ennjpnzo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-09-12T21:30:25.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/videos/cj64yzk2894o?at_medium=rss&at_campaign=rss",
+      "title": "Jesus snatches late win for Forest as Villa's poor start continues",
+      "summary": "Igor Jesus scores an 88th minute winner as Nottingham Forest beat Aston Villa at Villa Park for the first time in 32 years and gives Oliver Glasner his first victory as Forest head coach since taking charge in the summer",
+      "url": "https://www.bbc.co.uk/sport/football/videos/cj64yzk2894o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/videos/cj64yzk2894o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-09-12T21:30:21.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/videos/cwyz533qlw8o?at_medium=rss&at_campaign=rss",
+      "title": "Hull remain unbeaten in league after impressive Chelsea draw",
+      "summary": "In-form striker Joao Pedro scores a second-half equaliser as Chelsea rescues a point at home to promoted Hull City.",
+      "url": "https://www.bbc.co.uk/sport/football/videos/cwyz533qlw8o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/videos/cwyz533qlw8o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-09-12T21:30:16.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/cwyzppd1d5lo?at_medium=rss&at_campaign=rss",
+      "title": "Trump's comments on a united Ireland may have targeted audience across the Atlantic",
+      "summary": "Nobody could have predicted that today's main global headline would be Trump's desire to see a unified Ireland.",
+      "url": "https://www.bbc.co.uk/news/articles/cwyzppd1d5lo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cwyzppd1d5lo?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-09-12T21:25:28.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/c14dpgm0rg4o?at_medium=rss&at_campaign=rss",
+      "title": "Anthropic boss Dario Amodei calls for AI development to slow down",
+      "summary": "The call comes amid growing concerns that AI models may become able to inflict serious damage worldwide.",
+      "url": "https://www.bbc.co.uk/news/articles/c14dpgm0rg4o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c14dpgm0rg4o?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-09-12T21:16:47.000Z"
+    },
+    {
+      "id": "https://www.theverge.com/ai-artificial-intelligence/994384/sam-altman-no-openai-ipo-ill-advised",
+      "title": "Sam Altman says OpenAI going public in 2026 would be ‘ill-advised’",
+      "summary": "OpenAI CEO Sam Altman confirmed that there would be no OpenAI IPO in 2026 during an interview with Fortune. Over the course of 45 minutes, Altman discussed a variety of subjects including the Hugging Face hacking inciden",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/994384/sam-altman-no-openai-ipo-ill-advised",
+      "canonicalUrl": "https://www.theverge.com/ai-artificial-intelligence/994384/sam-altman-no-openai-ipo-ill-advised",
+      "source": "The Verge · AI",
+      "category": "ai",
+      "publishedAt": "2026-09-12T21:16:28.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/czjzpvxy0vko?at_medium=rss&at_campaign=rss",
+      "title": "Guimaraes and Raya crucial - Sunderland v Arsenal player ratings",
+      "summary": "How Sunderland and Arsenal players rated following their Premier League match.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/czjzpvxy0vko?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/czjzpvxy0vko?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-09-12T20:56:48.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/cvgydkv0yxdo?at_medium=rss&at_campaign=rss",
+      "title": "Toothless Spurs blank again as new era turns into a false dawn",
+      "summary": "Toothless Spurs' draw a blank again and are now in danger of seeing a brave new era turn into a false dawn, says chief football writer Phil McNulty.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cvgydkv0yxdo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cvgydkv0yxdo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-09-12T20:38:33.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/c4gr33g3evlo?at_medium=rss&at_campaign=rss",
+      "title": "Only Roland Garros towel left, says Ukraine tennis player after Russian strike hits flat",
+      "summary": "Dayana Yastremska says her flat took a \"direct hit\" by a Russian missile in Odesa, and all that left was her Roland Garros towel.",
+      "url": "https://www.bbc.co.uk/news/articles/c4gr33g3evlo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c4gr33g3evlo?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-09-12T20:27:25.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/athletics/articles/ckgwk3dz1z2o?at_medium=rss&at_campaign=rss",
+      "title": "Hodgkinson second to Werro after hamstring tear",
+      "summary": "Keely Hodgkinson is again denied a major prize by rival Audrey Werro - but reveals she had to overcome a torn hamstring to make the start line at the World Athletics Ultimate Championship.",
+      "url": "https://www.bbc.co.uk/sport/athletics/articles/ckgwk3dz1z2o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/athletics/articles/ckgwk3dz1z2o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-09-12T20:04:55.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/cy4zpp20w77o?at_medium=rss&at_campaign=rss",
+      "title": "Fire at nursing home in Chile kills 16 residents",
+      "summary": "Ten people were evacuated from the home in Araucanía region in central Chile.",
+      "url": "https://www.bbc.co.uk/news/articles/cy4zpp20w77o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cy4zpp20w77o?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-09-12T19:36:50.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/c62j0lr1rzmo?at_medium=rss&at_campaign=rss",
+      "title": "More dropped points at Anfield - is it too early for Liverpool to worry?",
+      "summary": "Liverpool have failed to win either of their first two Premier League games at Anfield. But is it too early to worry?",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c62j0lr1rzmo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c62j0lr1rzmo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-09-12T19:30:02.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/golf/articles/cp8dy97wnxjo?at_medium=rss&at_campaign=rss",
+      "title": "Inspired Lowry takes four-shot lead into final day",
+      "summary": "Shane Lowry produces an inspired display on the greens to take a four-shot lead into the final round of the Irish Open and close in on his first individual win since 2022.",
+      "url": "https://www.bbc.co.uk/sport/golf/articles/cp8dy97wnxjo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/golf/articles/cp8dy97wnxjo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-09-12T19:27:21.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/tennis/articles/clym44jvy9zo?at_medium=rss&at_campaign=rss",
+      "title": "GB's Hewett beats Oda to win fifth US Open title",
+      "summary": "Great Britain's Alfie Hewett beats Japanese top seed Tokito Oda to win a fifth US Open title and his 11th Grand Slam singles crown overall.",
+      "url": "https://www.bbc.co.uk/sport/tennis/articles/clym44jvy9zo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/tennis/articles/clym44jvy9zo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-09-12T18:55:04.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/athletics/videos/cx2z00wnj78o?at_medium=rss&at_campaign=rss",
+      "title": "Werro prevails over rivals in close 800m battle",
+      "summary": "Audrey Werro beats Keely Hodgkinson and Femke Broeders-Bol in a commanding women's 800m final victory, becoming the Ultimate Champion after charging clear at the final stretch.",
+      "url": "https://www.bbc.co.uk/sport/athletics/videos/cx2z00wnj78o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/athletics/videos/cx2z00wnj78o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-09-12T18:40:11.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/tennis/articles/cn8mvvgxnlno?at_medium=rss&at_campaign=rss",
+      "title": "'I'm still in shock' - GB's Skupski wins US Open doubles title with Harrison",
+      "summary": "Britain's Neal Skupski and American partner Christian Harrison win the US Open men's doubles to secure their second Grand Slam title together.",
+      "url": "https://www.bbc.co.uk/sport/tennis/articles/cn8mvvgxnlno?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/tennis/articles/cn8mvvgxnlno?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-09-12T18:36:34.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/c8043gn8ng3o?at_medium=rss&at_campaign=rss",
+      "title": "Solanke struggles, but Branthwaite solid - Spurs v Everton player ratings",
+      "summary": "How Spurs and Everton's players rated following their Premier League match, which ended in a goalless draw.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c8043gn8ng3o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c8043gn8ng3o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-09-12T18:32:15.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/09/12/nx-s1-5967476/alien-removal-court-deportation-afganistan",
+      "title": "Alien Terrorist Removal Court deports legal US resident to Afghanistan in first-ever case",
+      "summary": "Nazira Haji Zada, a lawful permanent resident, conceded to being an \"alien terrorist.\" It marks the first case in the Alien Terrorist Removal Court.",
+      "url": "https://www.npr.org/2026/09/12/nx-s1-5967476/alien-removal-court-deportation-afganistan",
+      "canonicalUrl": "https://www.npr.org/2026/09/12/nx-s1-5967476/alien-removal-court-deportation-afganistan",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-09-12T18:29:18.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/formula1/articles/c5yeljnxyvdo?at_medium=rss&at_campaign=rss",
+      "title": "Norris' real opportunity after coming from nowhere with 'masterpiece' lap",
+      "summary": "McLaren do not have the fastest car at the Spanish Grand Prix but with overtaking expected to be difficult, pole man Lando Norris has a chance of another win.",
+      "url": "https://www.bbc.co.uk/sport/formula1/articles/c5yeljnxyvdo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/formula1/articles/c5yeljnxyvdo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-09-12T18:26:39.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/golf/articles/ckgvz6kdy4yo?at_medium=rss&at_campaign=rss",
+      "title": "Was Hull-Woad pairing right call as Europe & US end level with singles to play?",
+      "summary": "Should Europe fail to reach the 14½ points they require to win the Solheim Cup on Sunday questions will surely be asked of captain Anna Nordqvist's faith in Charley Hull and Lottie Woad as a pairing.",
+      "url": "https://www.bbc.co.uk/sport/golf/articles/ckgvz6kdy4yo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/golf/articles/ckgvz6kdy4yo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-09-12T18:23:16.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/c1l6qd2qvyzo?at_medium=rss&at_campaign=rss",
+      "title": "New system, same problems - Alonso not happy with 'soft' Chelsea",
+      "summary": "It was subdued at Stamford Bridge after Chelsea's 2-2 draw with newly promoted Hull City.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c1l6qd2qvyzo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c1l6qd2qvyzo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-09-12T18:22:46.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/football/articles/clye91zj7l0o?at_medium=rss&at_campaign=rss",
@@ -43,16 +403,6 @@
       "publishedAt": "2026-09-12T17:43:56.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/news/articles/c14dpgm0rg4o?at_medium=rss&at_campaign=rss",
-      "title": "Anthropic boss Dario Amodei calls for AI development to slow down",
-      "summary": "The call comes amid growing concerns that AI models may become able to inflict serious damage worldwide.",
-      "url": "https://www.bbc.co.uk/news/articles/c14dpgm0rg4o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c14dpgm0rg4o?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-09-12T17:42:38.000Z"
-    },
-    {
       "id": "https://www.cnbc.com/2026/09/12/ai-manager-coaching-employee-feedback-performanc-review.html",
       "title": "Conversations that AIs are having in the office that may influence your performance review and pay",
       "summary": "AI tools can help find the right tone and language for difficult workplace conversations about performance and pay, and managers are already using them.",
@@ -71,16 +421,6 @@
       "source": "BBC News · World",
       "category": "general",
       "publishedAt": "2026-09-12T17:38:21.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/football/articles/cpd029p2yn0o?at_medium=rss&at_campaign=rss",
-      "title": "Swansea have shown they can beat anyone - Matos",
-      "summary": "Vitor Matos believes Swansea City's bright start to the new season proves they are capable of competing with any team in the Championship.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cpd029p2yn0o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cpd029p2yn0o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-09-12T17:37:58.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/news/videos/cwyz11gk7y7o?at_medium=rss&at_campaign=rss",
@@ -105,7 +445,7 @@
     {
       "id": "https://www.bbc.co.uk/sport/rugby-union/articles/cq8je0z88nzo?at_medium=rss&at_campaign=rss",
       "title": "'Absolute joke' to be worried - Mitchell on England's response",
-      "summary": "England produce dominant second-half performance to comfortably defeat Australia at CorpAcq Stadium in the opening game of the new WXV Global Series.",
+      "summary": "England trail at half-time but a dominant second-half performance helps them to an emphatic 48-15 victory over Australia at CorpAcq Stadium in the opening game of the new WXV Global Series.",
       "url": "https://www.bbc.co.uk/sport/rugby-union/articles/cq8je0z88nzo?at_medium=rss&at_campaign=rss",
       "canonicalUrl": "https://www.bbc.co.uk/sport/rugby-union/articles/cq8je0z88nzo?at_medium=rss&at_campaign=rss",
       "source": "BBC Sport",
@@ -141,26 +481,6 @@
       "source": "BBC Sport",
       "category": "sports",
       "publishedAt": "2026-09-12T17:14:24.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/09/12/anthropics-amodei-proposes-plan-to-slow-the-pace-of-advancing-ai-capabilities.html",
-      "title": "Anthropic's Amodei proposes plan to 'slow the pace' of advancing AI capabilities",
-      "summary": "Amodei's essay landed after an Anthropic researcher set off a firestorm on social media this week by announcing he quit his job at the company.",
-      "url": "https://www.cnbc.com/2026/09/12/anthropics-amodei-proposes-plan-to-slow-the-pace-of-advancing-ai-capabilities.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/09/12/anthropics-amodei-proposes-plan-to-slow-the-pace-of-advancing-ai-capabilities.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-09-12T17:00:10.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/formula1/articles/c8r60g7nrn6o?at_medium=rss&at_campaign=rss",
-      "title": "Norris takes Madrid pole with 'gorgeous' lap",
-      "summary": "Lando Norris takes a superb pole position for McLaren at the Spanish Grand Prix, beating Mercedes' Kimi Antonelli and Red Bull's Max Verstappen.",
-      "url": "https://www.bbc.co.uk/sport/formula1/articles/c8r60g7nrn6o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/formula1/articles/c8r60g7nrn6o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-09-12T17:00:06.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/cycling/articles/c39m7rm00lko?at_medium=rss&at_campaign=rss",
@@ -311,16 +631,6 @@
       "source": "MarketWatch · Top Stories",
       "category": "finance",
       "publishedAt": "2026-09-12T14:01:00.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/articles/cy0zvx15rywo?at_medium=rss&at_campaign=rss",
-      "title": "A united Ireland would be 'fantastic' says Trump during Irish visit",
-      "summary": "Trump made the comments during a meeting with Irish leader Micheál Martin, but Downing Street says it will \"stick to the Good Friday Agreement\".",
-      "url": "https://www.bbc.co.uk/news/articles/cy0zvx15rywo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cy0zvx15rywo?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-09-12T13:56:20.000Z"
     },
     {
       "id": "https://www.sciencedaily.com/releases/2026/09/260911214238.htm",
@@ -583,16 +893,6 @@
       "publishedAt": "2026-09-12T10:00:00.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/sport/tennis/articles/cly59yjl5d5o?at_medium=rss&at_campaign=rss",
-      "title": "'Red rag to a bull' - Sabalenka's extra motivation to win US Open",
-      "summary": "Aryna Sabalenka has lost the world number one ranking to Elena Rybakina - but has the chance to take revenge in the US Open final.",
-      "url": "https://www.bbc.co.uk/sport/tennis/articles/cly59yjl5d5o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/tennis/articles/cly59yjl5d5o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-09-12T09:04:13.000Z"
-    },
-    {
       "id": "https://www.npr.org/2026/09/12/nx-s1-5964931/miami-airport-amazon-cargo-crash",
       "title": "Miami crash raises concerns about the jet's operator, and why it's flying for Amazon",
       "summary": "The cargo plane crash in Miami is raising concerns about the safety culture at 21 Air, one of the carriers that fly for Amazon. Former pilots were sounding alarms even before Sunday's accident.",
@@ -614,8 +914,8 @@
     },
     {
       "id": "https://www.npr.org/2026/09/12/nx-s1-5950588/openai-anthropic-ai-safety-researchers-hacks",
-      "title": "Why are the people building the most powerful AI so worried about what it could do?",
-      "summary": "As an Anthropic resignation and OpenAI agents' hack on Hugging Face capture public attention, some researchers worry the industry is racing too fast to develop powerful AI while safety measures lag.",
+      "title": "Anthropic and OpenAI CEOs call for AI development to slow down, OpenAI to delay IPO",
+      "summary": "Dario Amodei and Sam Altman are the latest to urge caution amid fears the industry is racing too fast to build powerful AI while safety measures lag.",
       "url": "https://www.npr.org/2026/09/12/nx-s1-5950588/openai-anthropic-ai-safety-researchers-hacks",
       "canonicalUrl": "https://www.npr.org/2026/09/12/nx-s1-5950588/openai-anthropic-ai-safety-researchers-hacks",
       "source": "NPR · Top Stories",
@@ -643,36 +943,6 @@
       "publishedAt": "2026-09-12T07:39:53.000Z"
     },
     {
-      "id": "https://www.npr.org/2026/09/12/g-s1-143054/brics-leaders-meet-in-india",
-      "title": "BRICS leaders meet in India as wars and US tensions test the bloc",
-      "summary": "Indian Prime Minister Narendra Modi hosts Russian President Vladimir Putin, Chinese President Xi Jinping and other leaders of the BRICS nations for a summit on trade, investment, and global conflicts.",
-      "url": "https://www.npr.org/2026/09/12/g-s1-143054/brics-leaders-meet-in-india",
-      "canonicalUrl": "https://www.npr.org/2026/09/12/g-s1-143054/brics-leaders-meet-in-india",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-09-12T07:18:55.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/boxing/articles/cje8y84wd1no?at_medium=rss&at_campaign=rss",
-      "title": "Garcia v Benn - welterweight world title fight predictions",
-      "summary": "Figures from the boxing world give their predictions for Saturday's WBC welterweight world title fight between Ryan Garcia and Briton Conor Benn.",
-      "url": "https://www.bbc.co.uk/sport/boxing/articles/cje8y84wd1no?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/boxing/articles/cje8y84wd1no?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-09-12T06:55:38.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/boxing/articles/c4gqj1g5d27o?at_medium=rss&at_campaign=rss",
-      "title": "Benn makes weight - then puts on 32lbs in 12 hours",
-      "summary": "Conor Benn and Ryan Garcia both comfortably make the welterweight limit for their WBC title fight despite concerns at how they would fare on the scales.",
-      "url": "https://www.bbc.co.uk/sport/boxing/articles/c4gqj1g5d27o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/boxing/articles/c4gqj1g5d27o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-09-12T06:46:27.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/sport/football/articles/cgk5n3xpkv2o?at_medium=rss&at_campaign=rss",
       "title": "Signed instead of Rashford, Gordon is proving worth at Barca",
       "summary": "Anthony Gordon's £70m move to Barcelona was questioned by some - but the England winger is already proving his worth for the free-scoring Spanish giants.",
@@ -693,16 +963,6 @@
       "publishedAt": "2026-09-12T06:05:34.000Z"
     },
     {
-      "id": "https://www.npr.org/2026/09/12/g-s1-143044/yemens-houthis-capture-red-sea-island",
-      "title": "Yemen's Houthis capture a Red Sea island in threat to shipping",
-      "summary": "Iranian-backed Houthi rebels in Yemen have captured a strategic island in the Bab el-Mandeb Strait. The move threatens Saudi oil exports through a key commercial lane. And Saudi Arabia said it shut down a major oil pipel",
-      "url": "https://www.npr.org/2026/09/12/g-s1-143044/yemens-houthis-capture-red-sea-island",
-      "canonicalUrl": "https://www.npr.org/2026/09/12/g-s1-143044/yemens-houthis-capture-red-sea-island",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-09-12T05:57:08.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/news/articles/cwyz59yyqk4o?at_medium=rss&at_campaign=rss",
       "title": "Ukraine faces 'toughest winter' since Russia's full-scale invasion, UN official tells BBC",
       "summary": "A senior UN official tells the BBC there is a race against the clock to ensure access to power and water through winter.",
@@ -711,16 +971,6 @@
       "source": "BBC News · World",
       "category": "general",
       "publishedAt": "2026-09-12T05:55:15.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/football/articles/cy8zrxvpvlyo?at_medium=rss&at_campaign=rss",
-      "title": "Flex your football brain with our daily quizzes",
-      "summary": "Test your ball knowledge with today's Who Am I?, Five in Five and Brainteaser.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cy8zrxvpvlyo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cy8zrxvpvlyo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-09-12T05:54:29.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/football/articles/cy5zp9llp3ro?at_medium=rss&at_campaign=rss",
@@ -781,16 +1031,6 @@
       "source": "BBC News · World",
       "category": "general",
       "publishedAt": "2026-09-12T01:04:49.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/articles/clyjqvjzlwno?at_medium=rss&at_campaign=rss",
-      "title": "'Never, ever forget' - America marks 25th anniversary of 9/11 attacks",
-      "summary": "In New York, the Pentagon and Pennsylvania, solemn ceremonies commemorate the landmark anniversary.",
-      "url": "https://www.bbc.co.uk/news/articles/clyjqvjzlwno?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/clyjqvjzlwno?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-09-12T00:43:00.000Z"
     },
     {
       "id": "https://www.sciencedaily.com/releases/2026/09/260911003852.htm",
@@ -863,16 +1103,6 @@
       "publishedAt": "2026-09-11T22:42:14.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/sport/athletics/articles/c05r94l4j9go?at_medium=rss&at_campaign=rss",
-      "title": "Glitzy innovations but Duplantis still wins - new Ultimate Championship begins",
-      "summary": "The Ultimate Championship is posed as something different in athletics, but some things stay the same - pole vault star Armand Duplantis taking centre stage.",
-      "url": "https://www.bbc.co.uk/sport/athletics/articles/c05r94l4j9go?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/athletics/articles/c05r94l4j9go?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-09-11T22:24:31.000Z"
-    },
-    {
       "id": "https://www.marketwatch.com/story/this-investment-is-safe-from-both-trump-and-the-democrats-and-it-pays-4-7-4b76c2f3?mod=mw_rss_topstories",
       "title": "This investment is safe from both Trump and the Democrats &#x2014; and it pays 4.7%",
       "summary": "There&#x2019;s a safe haven hiding in plain sight.",
@@ -883,26 +1113,6 @@
       "publishedAt": "2026-09-11T22:06:00.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/sport/football/articles/c1j4z1ry29jo?at_medium=rss&at_campaign=rss",
-      "title": "Like Benzema & as good as Haaland - Alonso on Joao Pedro",
-      "summary": "Chelsea manager Xabi Alonso says striker Joao Pedro is similar stylistically to his former Real Madrid team-mate Karim Benzema and is at a comparable level to Manchester City's Erling Haaland.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/c1j4z1ry29jo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c1j4z1ry29jo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-09-11T21:30:23.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/rugby-league/articles/c3v4zpewq6qo?at_medium=rss&at_campaign=rss",
-      "title": "Wigan beat Catalans to lift sixth League Leaders' Shield",
-      "summary": "Wigan Warriors win a sixth League Leaders' Shield as they beat Catalans Dragons to wrap up top spot in Super League heading into the play-offs.",
-      "url": "https://www.bbc.co.uk/sport/rugby-league/articles/c3v4zpewq6qo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/rugby-league/articles/c3v4zpewq6qo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-09-11T21:22:22.000Z"
-    },
-    {
       "id": "https://www.marketwatch.com/story/marvell-is-sitting-on-an-incredibly-sticky-business-that-could-help-it-unlock-a-30-billion-opportunity-caa6c83f?mod=mw_rss_topstories",
       "title": "Marvell is sitting on an incredibly &#x2018;sticky&#x2019; business that could help it unlock a $30 billion opportunity",
       "summary": "Marvell is best known for making custom chips &#x2014; but an analyst notes there&#x2019;s arguably more potential in supporting components and optical networking.",
@@ -911,16 +1121,6 @@
       "source": "MarketWatch · Top Stories",
       "category": "finance",
       "publishedAt": "2026-09-11T21:16:00.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/football/articles/cr50q58vqggo?at_medium=rss&at_campaign=rss",
-      "title": "Richarlison's move to Vasco da Gama falls through",
-      "summary": "Tottenham forward Richarlison's proposed move to Vasco da Gama falls through amid ongoing uncertainty over the Brazilian's future.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cr50q58vqggo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cr50q58vqggo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-09-11T20:49:46.000Z"
     },
     {
       "id": "https://www.marketwatch.com/story/tesla-could-transform-the-trucking-business-and-capitalize-on-high-diesel-prices-e4c48d79?mod=mw_rss_topstories",
@@ -941,16 +1141,6 @@
       "source": "CNBC · Finance",
       "category": "finance",
       "publishedAt": "2026-09-11T20:48:19.000Z"
-    },
-    {
-      "id": "https://www.marketwatch.com/story/oracle-shares-are-climbing-after-results-what-wall-street-analysts-are-saying-now-0d4517ae?mod=mw_rss_topstories",
-      "title": "Oracle shook off fears about AI spending, but its stock still loses ground",
-      "summary": "&#x201c;Several of Oracle&#x2019;s bear cases were addressed head on&#x201d; in the latest earnings report, according to an analyst.",
-      "url": "https://www.marketwatch.com/story/oracle-shares-are-climbing-after-results-what-wall-street-analysts-are-saying-now-0d4517ae?mod=mw_rss_topstories",
-      "canonicalUrl": "https://www.marketwatch.com/story/oracle-shares-are-climbing-after-results-what-wall-street-analysts-are-saying-now-0d4517ae?mod=mw_rss_topstories",
-      "source": "MarketWatch · Top Stories",
-      "category": "finance",
-      "publishedAt": "2026-09-11T20:45:00.000Z"
     },
     {
       "id": "https://www.theverge.com/ai-artificial-intelligence/994207/chatgpt-new-mexico-lawyer-fined-murder-appeal",
@@ -1011,196 +1201,6 @@
       "source": "BBC Sport",
       "category": "sports",
       "publishedAt": "2026-09-11T19:43:48.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/cricket/videos/c8xkv541lxvo?at_medium=rss&at_campaign=rss",
-      "title": "Razaullah steals the show as Pakistan fight back to frustrate England",
-      "summary": "Shan Masood, Babar Azam and debutant Razaullah all reach half-centuries as Pakistan produce a spirited fight back to score 449 in their second innings on day three, setting England 130 to win the third and final Test, an",
-      "url": "https://www.bbc.co.uk/sport/cricket/videos/c8xkv541lxvo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/cricket/videos/c8xkv541lxvo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-09-11T19:00:05.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/cricket/videos/cj06733y5v6o?at_medium=rss&at_campaign=rss",
-      "title": "'He's a star' - Razaullah shines brightest to leave England flustered",
-      "summary": "After picking up four wickets in England's first innings, 21-year-old Razaullah steals the show at Edgbaston with the bat, scoring 81 off 63 balls to help Pakistan set England a target of 130 to win the third and final T",
-      "url": "https://www.bbc.co.uk/sport/cricket/videos/cj06733y5v6o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/cricket/videos/cj06733y5v6o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-09-11T18:53:28.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/golf/videos/ckg0zlk7j7eo?at_medium=rss&at_campaign=rss",
-      "title": "Woad & Korda lead best shots from Solheim Cup day one",
-      "summary": "Watch the best shots from day one of the 2026 Solheim Cup, featuring Europe's Lottie Woad and the US' Nelly Korda.",
-      "url": "https://www.bbc.co.uk/sport/golf/videos/ckg0zlk7j7eo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/golf/videos/ckg0zlk7j7eo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-09-11T18:14:14.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/09/11/social-security-cola-2027-estimate.html",
-      "title": "Social Security COLA for 2027 may be 3.5% to 3.6%, new estimates show — the highest in 3 years",
-      "summary": "New government inflation data points to a higher Social Security cost-of-living adjustment for 2027. Here's what experts estimate the change may be.",
-      "url": "https://www.cnbc.com/2026/09/11/social-security-cola-2027-estimate.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/09/11/social-security-cola-2027-estimate.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-09-11T18:07:21.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/golf/videos/c804g8ll0xlo?at_medium=rss&at_campaign=rss",
-      "title": "Europe rescue half as US falter in final hole drama",
-      "summary": "Carlota Ciganda's pressure putt for par earns Europe an unlikely half after Lauren Coughlin narrowly missed the chance to earn the US a point, with scores locked at 4-4 following day one of the 2026 Solheim Cup.",
-      "url": "https://www.bbc.co.uk/sport/golf/videos/c804g8ll0xlo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/golf/videos/c804g8ll0xlo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-09-11T17:57:58.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/09/11/iran-houthis-mokha-red-sea-yemen.html",
-      "title": "Houthis reportedly advance to key Red Sea island, further threatening crucial oil choke point",
-      "summary": "The advance raises the threat to shipping near the Bab el-Mandeb Strait, a waterway that connects the Red Sea to the Gulf of Aden to global markets.",
-      "url": "https://www.cnbc.com/2026/09/11/iran-houthis-mokha-red-sea-yemen.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/09/11/iran-houthis-mokha-red-sea-yemen.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-09-11T17:40:46.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/articles/cgmrzzkjywlo?at_medium=rss&at_campaign=rss",
-      "title": "Gen Zs recall first learning of 'deeply harrowing, terrifying' 9/11",
-      "summary": "They carry distinct memories not from the day itself, but from the moment - years later - they learned about the attacks.",
-      "url": "https://www.bbc.co.uk/news/articles/cgmrzzkjywlo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cgmrzzkjywlo?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-09-11T17:21:00.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/formula1/articles/c9w4dz14787o?at_medium=rss&at_campaign=rss",
-      "title": "Alonso cannot leave F1 while uncompetitive - FIA boss",
-      "summary": "FIA president Mohammed Ben Sulayem says it would be \"not acceptable\" for Fernando Alonso to leave F1 while he is in an uncompetitive position.",
-      "url": "https://www.bbc.co.uk/sport/formula1/articles/c9w4dz14787o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/formula1/articles/c9w4dz14787o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-09-11T17:03:48.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/09/11/election-officials-ban-employees-from-prediction-markets.html",
-      "title": "Election officials ban certain public workers from trading on prediction markets ahead of midterms",
-      "summary": "Ahead of the midterms, election officials ban certain workers from using prediction markets to reassure the public they are committed to election integrity.",
-      "url": "https://www.cnbc.com/2026/09/11/election-officials-ban-employees-from-prediction-markets.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/09/11/election-officials-ban-employees-from-prediction-markets.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-09-11T17:00:48.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/09/11/the-inside-story-on-the-historic-us-venezuela-oil-deal-and-how-it-will-work.html",
-      "title": "I went to Caracas for Venezuela’s new oil deals. Here’s what stood out",
-      "summary": "CNBC was one of just a handful of news organizations allowed to travel to Caracas with the U.S. secretary of energy.",
-      "url": "https://www.cnbc.com/2026/09/11/the-inside-story-on-the-historic-us-venezuela-oil-deal-and-how-it-will-work.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/09/11/the-inside-story-on-the-historic-us-venezuela-oil-deal-and-how-it-will-work.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-09-11T16:59:05.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/09/11/bonds-are-going-on-tilt-how-to-play-them-says-mike-khouw.html",
-      "title": "Bonds are going on tilt. How to play them, says Mike Khouw",
-      "summary": "Warren Buffett once said interest rates are to asset prices what gravity is to matter. If the options market is correct, things could get heavy, says Mike Khouw.",
-      "url": "https://www.cnbc.com/2026/09/11/bonds-are-going-on-tilt-how-to-play-them-says-mike-khouw.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/09/11/bonds-are-going-on-tilt-how-to-play-them-says-mike-khouw.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-09-11T16:26:14.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/videos/cy5z02w1zxxo?at_medium=rss&at_campaign=rss",
-      "title": "How global trade and oil prices could be hit by Houthi advance",
-      "summary": "Yemen's Houthis have seized territory near the Bab al-Mandab Strait - a key trade gateway for oil and global shipping.",
-      "url": "https://www.bbc.co.uk/news/videos/cy5z02w1zxxo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cy5z02w1zxxo?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-09-11T16:13:39.000Z"
-    },
-    {
-      "id": "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
-      "title": "Anthropic spent this week in hot water over cybersecurity",
-      "summary": "After admitting earlier this year that its AI models had hacked other companies' systems on a handful of occasions, Anthropic released a new report on Wednesday detailing the attacks. It reveals a string of incidents dis",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
-      "canonicalUrl": "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
-      "source": "The Verge · AI",
-      "category": "ai",
-      "publishedAt": "2026-09-11T16:09:14.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/09/11/wealthy-investors-tax-aware-long-short-strategies.html",
-      "title": "Wealthy investors are pouring billions into this new tax strategy despite risks",
-      "summary": "Total assets invested in so-called tax-aware long-short strategies — or TALS — have surged to more than $170 billion, according to Tax Alpha Insider.",
-      "url": "https://www.cnbc.com/2026/09/11/wealthy-investors-tax-aware-long-short-strategies.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/09/11/wealthy-investors-tax-aware-long-short-strategies.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-09-11T15:54:22.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/09/11/cdc-record-cyclosporiasis-outbreak-over.html",
-      "title": "Record U.S. cyclosporiasis outbreak is over, CDC says",
-      "summary": "The largest outbreak, linked to shredded iceberg lettuce from Taylor Farms, sickened more than 12,000 people.",
-      "url": "https://www.cnbc.com/2026/09/11/cdc-record-cyclosporiasis-outbreak-over.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/09/11/cdc-record-cyclosporiasis-outbreak-over.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-09-11T15:36:45.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/football/articles/c20939pqy78o?at_medium=rss&at_campaign=rss",
-      "title": "Liverpool unveil memorials for former manager Beard",
-      "summary": "Liverpool have unveiled permanent memorials at their training ground and outside Anfield in tribute to former women's team manager Matt Beard.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/c20939pqy78o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c20939pqy78o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-09-11T15:32:08.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/09/11/iran-russia-brics-sanctions-energy.html",
-      "title": "Iran, Russia condemn Western economic sanctions and urge BRICS bloc to deepen economic ties",
-      "summary": "Iranian President Masoud Pezeshkian and Russian President Vladimir Putin criticized Western sanctions and asked the BRICS bloc to deepen trade ties.",
-      "url": "https://www.cnbc.com/2026/09/11/iran-russia-brics-sanctions-energy.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/09/11/iran-russia-brics-sanctions-energy.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-09-11T15:10:45.000Z"
-    },
-    {
-      "id": "https://www.theverge.com/tech/993974/meta-ai-prompt-invasive-suggestions",
-      "title": "Meta says it&#8217;s changing AI suggestions after posing invasive personal questions",
-      "summary": "Meta says it's making changes to the prompts suggested by its AI chatbot after a viral video showed it digging for personal information about a woman's young daughters, as reported earlier by Futurism. In a statement to ",
-      "url": "https://www.theverge.com/tech/993974/meta-ai-prompt-invasive-suggestions",
-      "canonicalUrl": "https://www.theverge.com/tech/993974/meta-ai-prompt-invasive-suggestions",
-      "source": "The Verge · AI",
-      "category": "ai",
-      "publishedAt": "2026-09-11T14:25:21.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/football/articles/cz7zrdxj9x0o?at_medium=rss&at_campaign=rss",
-      "title": "Celtic given 'timely' police reminder before derby",
-      "summary": "Celtic players had a visit from Police Scotland on Friday to give them \"a timely reminder\" about their \"general behaviour\" in Sunday's Premier Sport Cup quarter-final against city rivals Rangers, manager Martin O'Neill r",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cz7zrdxj9x0o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cz7zrdxj9x0o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-09-11T14:16:39.000Z"
     }
   ],
   "sourceHealth": [
@@ -1231,7 +1231,7 @@
     {
       "name": "BBC Sport",
       "ok": true,
-      "itemCount": 67,
+      "itemCount": 78,
       "error": null
     },
     {
