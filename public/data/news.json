@@ -1,7 +1,447 @@
 {
-  "generatedAt": "2026-09-16T19:33:00.345Z",
+  "generatedAt": "2026-09-17T00:32:05.890Z",
   "stale": false,
   "items": [
+    {
+      "id": "https://www.cnbc.com/2026/09/15/congress-ai-data-center-utility-costs.html",
+      "title": "House advances bill to rein in AI data center utility costs",
+      "summary": "The bipartisan legislation would create a regulatory framework states could adopt to prevent data center-related energy costs from being passed on to consumers.",
+      "url": "https://www.cnbc.com/2026/09/15/congress-ai-data-center-utility-costs.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/09/15/congress-ai-data-center-utility-costs.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-09-17T00:08:01.000Z"
+    },
+    {
+      "id": "https://www.marketwatch.com/story/intels-stock-rises-as-investors-hope-memory-chips-can-mark-the-next-step-in-its-turnaround-a276608f?mod=mw_rss_topstories",
+      "title": "Intel&#x2019;s stock rises as investors hope memory chips can mark the next step in its turnaround",
+      "summary": "A report says Intel is in early talks with SK Hynix, which is considering some sort of partnership that would enable it to make memory chips in the U.S.",
+      "url": "https://www.marketwatch.com/story/intels-stock-rises-as-investors-hope-memory-chips-can-mark-the-next-step-in-its-turnaround-a276608f?mod=mw_rss_topstories",
+      "canonicalUrl": "https://www.marketwatch.com/story/intels-stock-rises-as-investors-hope-memory-chips-can-mark-the-next-step-in-its-turnaround-a276608f?mod=mw_rss_topstories",
+      "source": "MarketWatch · Top Stories",
+      "category": "finance",
+      "publishedAt": "2026-09-16T23:51:00.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/09/16/trump-fed-interest-rate-warsh.html",
+      "title": "Trump says he still has confidence in Fed Chair Warsh, demands 1% or lower interest rates",
+      "summary": "President Donald Trump previously threatened to cut off trade with countries that have trade surpluses with the U.S. if the Fed doesn't cut interest rates.",
+      "url": "https://www.cnbc.com/2026/09/16/trump-fed-interest-rate-warsh.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/09/16/trump-fed-interest-rate-warsh.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-09-16T23:45:02.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/cr3wjz3edd10o?at_medium=rss&at_campaign=rss",
+      "title": "Snapchat 'willing to implement' daily time limits for teens, boss tells BBC",
+      "summary": "Evan Speigel says it would be \"an important step forward for the industry\" in an interview with the BBC.",
+      "url": "https://www.bbc.co.uk/news/articles/cr3wjz3edd10o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cr3wjz3edd10o?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-09-16T23:41:57.000Z"
+    },
+    {
+      "id": "https://www.theverge.com/tech/996078/snap-specs-intelligence-ai-agent-ios-mac",
+      "title": "Snap is launching a new Specs AI tool, and it’s coming to iOS and Mac",
+      "summary": "Snap is introducing \"Specs Intelligence,\" a new AI assistant that can connect other digital accounts to help you with things like work tasks and keeping track of travel information. It seems similar to AI assistants like",
+      "url": "https://www.theverge.com/tech/996078/snap-specs-intelligence-ai-agent-ios-mac",
+      "canonicalUrl": "https://www.theverge.com/tech/996078/snap-specs-intelligence-ai-agent-ios-mac",
+      "source": "The Verge · AI",
+      "category": "ai",
+      "publishedAt": "2026-09-16T23:40:00.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/cmwyzr576y9zo?at_medium=rss&at_campaign=rss",
+      "title": "Carrick 'not bothered' by pressure - but should he be after this latest mess?",
+      "summary": "Manager Michael Carrick insists he does not feel under pressure after Manchester United's EFL Cup exit.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cmwyzr576y9zo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cmwyzr576y9zo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-09-16T23:31:38.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/cvrl6egl1254o?at_medium=rss&at_campaign=rss",
+      "title": "Boehly and Walter sell Chelsea stakes to Clearlake",
+      "summary": "Clearlake Capital acquires full control of Chelsea as chairman Todd Boehly, director Mark Walter and Hansjorg Wyss sell their stakes in the club.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cvrl6egl1254o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cvrl6egl1254o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-09-16T23:29:10.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2024/05/30/nx-s1-4854224/death-heat-arizona-climate-change-medical-examiner",
+      "title": "Here's why an Arizona medical examiner is working to track heat-related deaths",
+      "summary": "No one across the U.S. is consistently tracking climate-fueled deaths. One medical examiner has a new protocol on heat-deaths.",
+      "url": "https://www.npr.org/2024/05/30/nx-s1-4854224/death-heat-arizona-climate-change-medical-examiner",
+      "canonicalUrl": "https://www.npr.org/2024/05/30/nx-s1-4854224/death-heat-arizona-climate-change-medical-examiner",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-09-16T23:07:40.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/09/16/openai-6-new-instances-of-concerning-model-behavior-since-march.html",
+      "title": "OpenAI reports 6 new instances of 'concerning model behavior' since March",
+      "summary": "OpenAI has disclosed six new cases of model misbehavior and offered a framework for disclosing future instances, as the debate over AI model safety intensifies.",
+      "url": "https://www.cnbc.com/2026/09/16/openai-6-new-instances-of-concerning-model-behavior-since-march.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/09/16/openai-6-new-instances-of-concerning-model-behavior-since-march.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-09-16T23:05:48.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/09/16/russia-sanctions-bill-lindsey-graham-congress.html",
+      "title": "House passes sweeping Russia sanctions bill honoring Lindsey Graham, sends to Trump",
+      "summary": "The Lindsey Graham Russia sanctions bill is on a path to become law after the House votes in favor.",
+      "url": "https://www.cnbc.com/2026/09/16/russia-sanctions-bill-lindsey-graham-congress.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/09/16/russia-sanctions-bill-lindsey-graham-congress.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-09-16T22:32:18.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/09/16/nx-s1-5971289/russia-sanctions-house-vote-lindsey-graham",
+      "title": "House passes Russia sanctions, sending bill named for Lindsey Graham to Trump's desk",
+      "summary": "The legislation was named for the late South Carolina Republican. It gives the president authority to impose tariffs on top importers of oil and natural gas from Russia, such as China and India.",
+      "url": "https://www.npr.org/2026/09/16/nx-s1-5971289/russia-sanctions-house-vote-lindsey-graham",
+      "canonicalUrl": "https://www.npr.org/2026/09/16/nx-s1-5971289/russia-sanctions-house-vote-lindsey-graham",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-09-16T22:30:46.000Z"
+    },
+    {
+      "id": "https://www.marketwatch.com/story/warshs-fed-rolls-out-first-interest-rate-hike-in-3-years-with-one-more-increase-expected-cde3060d?mod=mw_rss_topstories",
+      "title": "As Fed rolls out its first interest-rate hike in 3 years, market braces for more increases",
+      "summary": "The Fed&#x2019;s policy-making committee was unanimous in its decision to hike, but forward guidance was split.",
+      "url": "https://www.marketwatch.com/story/warshs-fed-rolls-out-first-interest-rate-hike-in-3-years-with-one-more-increase-expected-cde3060d?mod=mw_rss_topstories",
+      "canonicalUrl": "https://www.marketwatch.com/story/warshs-fed-rolls-out-first-interest-rate-hike-in-3-years-with-one-more-increase-expected-cde3060d?mod=mw_rss_topstories",
+      "source": "MarketWatch · Top Stories",
+      "category": "finance",
+      "publishedAt": "2026-09-16T22:25:00.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/cw4gmlyvj422o?at_medium=rss&at_campaign=rss",
+      "title": "US interest rates raised for first time in three years",
+      "summary": "Rates were hiked in a unanimous decision despite fierce opposition from President Donald Trump, who had called for a cut.",
+      "url": "https://www.bbc.co.uk/news/articles/cw4gmlyvj422o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cw4gmlyvj422o?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-09-16T22:16:51.000Z"
+    },
+    {
+      "id": "https://www.marketwatch.com/story/my-rental-property-is-paid-off-but-i-need-cash-is-this-a-bad-time-to-take-out-a-50-000-heloc-d094bbc5?mod=mw_rss_topstories",
+      "title": "My rental property is paid off, but I need cash. Is this a bad time to take out a $50,000 HELOC?",
+      "summary": "The Federal Reserve announced a quarter-percentage-point interest-rate hike Wednesday, to a range of 3.75%-4.0%.",
+      "url": "https://www.marketwatch.com/story/my-rental-property-is-paid-off-but-i-need-cash-is-this-a-bad-time-to-take-out-a-50-000-heloc-d094bbc5?mod=mw_rss_topstories",
+      "canonicalUrl": "https://www.marketwatch.com/story/my-rental-property-is-paid-off-but-i-need-cash-is-this-a-bad-time-to-take-out-a-50-000-heloc-d094bbc5?mod=mw_rss_topstories",
+      "source": "MarketWatch · Top Stories",
+      "category": "finance",
+      "publishedAt": "2026-09-16T22:16:00.000Z"
+    },
+    {
+      "id": "https://www.marketwatch.com/story/there-might-be-a-silver-lining-my-friends-wife-died-at-60-after-a-high-earning-career-can-he-claim-her-social-security-eb95210a?mod=mw_rss_topstories",
+      "title": "&#x2018;There might be a silver lining&#x2019;: My friend&#x2019;s wife died at 60 after a high-earning career. Can he claim her Social Security?",
+      "summary": "&#x201c;They had been married for over 30 years when she passed.&#x201d;",
+      "url": "https://www.marketwatch.com/story/there-might-be-a-silver-lining-my-friends-wife-died-at-60-after-a-high-earning-career-can-he-claim-her-social-security-eb95210a?mod=mw_rss_topstories",
+      "canonicalUrl": "https://www.marketwatch.com/story/there-might-be-a-silver-lining-my-friends-wife-died-at-60-after-a-high-earning-career-can-he-claim-her-social-security-eb95210a?mod=mw_rss_topstories",
+      "source": "MarketWatch · Top Stories",
+      "category": "finance",
+      "publishedAt": "2026-09-16T22:15:00.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/videos/cmew984dq92lo?at_medium=rss&at_campaign=rss",
+      "title": "Handbags, jewels, watches: Inside Singapore's dirty money auction",
+      "summary": "The BBC goes inside a fortified storage facility to view luxury goods seized by police that are now up for auction.",
+      "url": "https://www.bbc.co.uk/news/videos/cmew984dq92lo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cmew984dq92lo?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-09-16T22:13:36.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/c6eq8z9wjjqlo?at_medium=rss&at_campaign=rss",
+      "title": "De la Fuente extends Spain contract to 2032",
+      "summary": "World Cup-winning head coach Luis de la Fuente agrees a contract extension with Spain until 2032.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c6eq8z9wjjqlo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c6eq8z9wjjqlo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-09-16T22:02:44.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/cqd08y9dd5dko?at_medium=rss&at_campaign=rss",
+      "title": "League Two Fleetwood host Arsenal in EFL Cup - full fourth-round draw",
+      "summary": "League Two side Fleetwood Town will host Premier League champions Arsenal in the fourth round of the EFL Cup.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cqd08y9dd5dko?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cqd08y9dd5dko?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-09-16T21:57:04.000Z"
+    },
+    {
+      "id": "https://www.marketwatch.com/story/generacs-stock-soars-more-than-30-after-amazon-deal-cements-its-status-as-ai-power-player-a842b0dc?mod=mw_rss_topstories",
+      "title": "Generac&#x2019;s stock soars more than 30% after Amazon deal cements company&#x2019;s status as an AI power player",
+      "summary": "First deliveries of Generac&#x2019;s backup power generators are worth $2.4 billion.",
+      "url": "https://www.marketwatch.com/story/generacs-stock-soars-more-than-30-after-amazon-deal-cements-its-status-as-ai-power-player-a842b0dc?mod=mw_rss_topstories",
+      "canonicalUrl": "https://www.marketwatch.com/story/generacs-stock-soars-more-than-30-after-amazon-deal-cements-its-status-as-ai-power-player-a842b0dc?mod=mw_rss_topstories",
+      "source": "MarketWatch · Top Stories",
+      "category": "finance",
+      "publishedAt": "2026-09-16T21:56:00.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/09/16/fed-interest-rates-kevin-warsh-trump.html",
+      "title": "Analysis: How Trump could reignite the Fed independence fight after Warsh's rate hike",
+      "summary": "The Federal Reserve unanimously raised interest rates by a quarter point despite repeated calls from President Donald Trump for lower rates.",
+      "url": "https://www.cnbc.com/2026/09/16/fed-interest-rates-kevin-warsh-trump.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/09/16/fed-interest-rates-kevin-warsh-trump.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-09-16T21:50:48.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/09/16/amazon-obtains-right-to-buy-up-to-340m-of-generac-boosting-stock-.html",
+      "title": "Amazon obtains right to buy stock in Generac, boosting power company's share price by over 40%",
+      "summary": "Amazon was granted warrants to buy up to $340 million worth of Generac stock as part of a deal to supply backup power generators for its data centers.",
+      "url": "https://www.cnbc.com/2026/09/16/amazon-obtains-right-to-buy-up-to-340m-of-generac-boosting-stock-.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/09/16/amazon-obtains-right-to-buy-up-to-340m-of-generac-boosting-stock-.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-09-16T21:40:18.000Z"
+    },
+    {
+      "id": "https://www.marketwatch.com/story/fed-rate-hike-fails-to-calm-troubled-markets-as-dow-falls-600-points-expect-more-sharp-swings-in-stocks-and-bonds-5ffb55fe?mod=mw_rss_topstories",
+      "title": "Fed rate hike fails to calm troubled markets as Dow falls 600 points. Expect more sharp swings in stocks and bonds.",
+      "summary": "Fed Chair Kevin Warsh has sent investors a message: When it comes to tamping down inflation, he means business.",
+      "url": "https://www.marketwatch.com/story/fed-rate-hike-fails-to-calm-troubled-markets-as-dow-falls-600-points-expect-more-sharp-swings-in-stocks-and-bonds-5ffb55fe?mod=mw_rss_topstories",
+      "canonicalUrl": "https://www.marketwatch.com/story/fed-rate-hike-fails-to-calm-troubled-markets-as-dow-falls-600-points-expect-more-sharp-swings-in-stocks-and-bonds-5ffb55fe?mod=mw_rss_topstories",
+      "source": "MarketWatch · Top Stories",
+      "category": "finance",
+      "publishedAt": "2026-09-16T21:40:00.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/videos/c9dr7e1lr265o?at_medium=rss&at_campaign=rss",
+      "title": "Watch: Leaked photos reveal extensive damage at US bases in Gulf",
+      "summary": "The photos, provided by active military personnel, show a severed radar jet, flattened trailers and severely damaged buildings as a result of Iranian strikes.",
+      "url": "https://www.bbc.co.uk/news/videos/c9dr7e1lr265o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/videos/c9dr7e1lr265o?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-09-16T21:24:24.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/09/16/g-s1-143708/video-houses-collapse-north-carolina-ocean",
+      "title": "You'd expect homeowners to save their stuff. Federal policy pays them to leave it",
+      "summary": "NPR dug into the upside-down world of FEMA flood insurance in coastal areas, and found many homeowners have no financial choice but to let their homes collapse.",
+      "url": "https://www.npr.org/2026/09/16/g-s1-143708/video-houses-collapse-north-carolina-ocean",
+      "canonicalUrl": "https://www.npr.org/2026/09/16/g-s1-143708/video-houses-collapse-north-carolina-ocean",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-09-16T21:20:59.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/09/16/nx-s1-5954258/leon-black-jeffrey-epstein-contempt-congress",
+      "title": "Committee investigating Epstein holds billionaire Leon Black in contempt of Congress",
+      "summary": "Billionaire investor Leon Black refused to appear before the committee investigating convicted sex offender Jeffrey Epstein for a deposition. Now it's up to the Department of Justice whether to pursue criminal charges.",
+      "url": "https://www.npr.org/2026/09/16/nx-s1-5954258/leon-black-jeffrey-epstein-contempt-congress",
+      "canonicalUrl": "https://www.npr.org/2026/09/16/nx-s1-5954258/leon-black-jeffrey-epstein-contempt-congress",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-09-16T21:12:27.000Z"
+    },
+    {
+      "id": "https://www.theverge.com/entertainment/996499/ai-odyssey-movie-review",
+      "title": "The 2.5-hour AI-generated Odyssey movie is 2.5 hours too long",
+      "summary": "Christopher Nolan's engrossing take on The Odyssey dominated at the box office and spurred a newfound interest in classic literature among filmgoers. But a new retelling of the story made entirely with AI is so bad that ",
+      "url": "https://www.theverge.com/entertainment/996499/ai-odyssey-movie-review",
+      "canonicalUrl": "https://www.theverge.com/entertainment/996499/ai-odyssey-movie-review",
+      "source": "The Verge · AI",
+      "category": "ai",
+      "publishedAt": "2026-09-16T20:59:13.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/09/16/nx-s1-5971420/trump-administration-smithsonian-warning-signs",
+      "title": "Trump administration plans ideological warning signs for Smithsonian",
+      "summary": "The Interior Secretary says the move is necessary to combat what he calls ideological bias.",
+      "url": "https://www.npr.org/2026/09/16/nx-s1-5971420/trump-administration-smithsonian-warning-signs",
+      "canonicalUrl": "https://www.npr.org/2026/09/16/nx-s1-5971420/trump-administration-smithsonian-warning-signs",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-09-16T20:55:54.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/09/16/leon-black-contempt-house-epstein-subpoenas-refusal.html",
+      "title": "House votes to hold Leon Black in contempt of Congress over Epstein subpoenas defiance",
+      "summary": "Billionaire Leon Black is suing the House Committee on Oversight and Government Reform seeking to block subpoenas it issued him in its probe of Jeffrey Epstein.",
+      "url": "https://www.cnbc.com/2026/09/16/leon-black-contempt-house-epstein-subpoenas-refusal.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/09/16/leon-black-contempt-house-epstein-subpoenas-refusal.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-09-16T20:54:15.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/c3qjk2nev7r8o?at_medium=rss&at_campaign=rss",
+      "title": "Painful endgame for Gray as stale Hibs slump",
+      "summary": "A club hero, David Gray ends his time as Hibs head coach not to the sound of euphoria from fans, but to the sound of a support collectively exhaling in relief, writes Tom English.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c3qjk2nev7r8o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c3qjk2nev7r8o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-09-16T20:53:10.000Z"
+    },
+    {
+      "id": "https://www.marketwatch.com/story/why-optical-stocks-lumentum-and-coherent-were-the-days-biggest-gainers-051af440?mod=mw_rss_topstories",
+      "title": "Why optical stocks Lumentum and Coherent were the day&#x2019;s biggest S&P 500 gainers",
+      "summary": "Investors are looking further down the AI data-center supply chain for signs of demand amid concerns of a spending slowdown, one expert says.",
+      "url": "https://www.marketwatch.com/story/why-optical-stocks-lumentum-and-coherent-were-the-days-biggest-gainers-051af440?mod=mw_rss_topstories",
+      "canonicalUrl": "https://www.marketwatch.com/story/why-optical-stocks-lumentum-and-coherent-were-the-days-biggest-gainers-051af440?mod=mw_rss_topstories",
+      "source": "MarketWatch · Top Stories",
+      "category": "finance",
+      "publishedAt": "2026-09-16T20:52:00.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/09/16/nx-s1-5971222/the-burnerverse-exploiting-young-women-in-college",
+      "title": "The 'burnerverse' exploiting young women in college",
+      "summary": "Wired reporter EJ Dickson speaks with NPR's Juana Summers about an online community that targets and harasses young women with their own nonconsensual, sexually explicit images.",
+      "url": "https://www.npr.org/2026/09/16/nx-s1-5971222/the-burnerverse-exploiting-young-women-in-college",
+      "canonicalUrl": "https://www.npr.org/2026/09/16/nx-s1-5971222/the-burnerverse-exploiting-young-women-in-college",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-09-16T20:50:17.000Z"
+    },
+    {
+      "id": "https://www.theverge.com/ai-artificial-intelligence/996470/ai-data-center-e-waste-ban",
+      "title": "The AI data center e-waste problem is huge — and getting bigger",
+      "summary": "E-waste from the AI boom has been vastly underestimated, a new report warns. By 2050, it could become enough trash to fill 23 million shipping containers - roughly enough 40-foot containers to circle the world six times ",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/996470/ai-data-center-e-waste-ban",
+      "canonicalUrl": "https://www.theverge.com/ai-artificial-intelligence/996470/ai-data-center-e-waste-ban",
+      "source": "The Verge · AI",
+      "category": "ai",
+      "publishedAt": "2026-09-16T20:40:46.000Z"
+    },
+    {
+      "id": "https://www.marketwatch.com/story/heres-a-sneaky-way-to-play-the-feds-rate-increase-6deb072f?mod=mw_rss_topstories",
+      "title": "Here&#x2019;s a sneaky way to play the Fed&#x2019;s rate increase",
+      "summary": "But watch out for the pitfalls.",
+      "url": "https://www.marketwatch.com/story/heres-a-sneaky-way-to-play-the-feds-rate-increase-6deb072f?mod=mw_rss_topstories",
+      "canonicalUrl": "https://www.marketwatch.com/story/heres-a-sneaky-way-to-play-the-feds-rate-increase-6deb072f?mod=mw_rss_topstories",
+      "source": "MarketWatch · Top Stories",
+      "category": "finance",
+      "publishedAt": "2026-09-16T20:38:00.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/cricket/articles/crkgwyp2287lo?at_medium=rss&at_campaign=rss",
+      "title": "Leicestershire on brink of relegation after 27-point deduction",
+      "summary": "Leicestershire are on the brink of relegation from County Championship Division One after being deducted 27 points for breaching pitch regulations.",
+      "url": "https://www.bbc.co.uk/sport/cricket/articles/crkgwyp2287lo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/cricket/articles/crkgwyp2287lo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-09-16T20:37:39.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/09/16/trump-kennedy-center-beatty.html",
+      "title": "Trump's Kennedy Center closure is 'unlawful,' Rep. Beatty tells judge in emergency hearing request",
+      "summary": "President Donald Trump says renovations at the Kennedy Center will not occur until the courts allow his name to be restored on the performing arts center.",
+      "url": "https://www.cnbc.com/2026/09/16/trump-kennedy-center-beatty.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/09/16/trump-kennedy-center-beatty.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-09-16T20:32:54.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/09/16/transport-economy-diesel-prices-iran.html",
+      "title": "'Science fiction': Transport companies — the backbone of economy — are sounding alarm on fuel prices",
+      "summary": "Prices for diesel, the fuel type used to power trucks and trains, came in at an all-time high of $6.31 per gallon on Wednesday.",
+      "url": "https://www.cnbc.com/2026/09/16/transport-economy-diesel-prices-iran.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/09/16/transport-economy-diesel-prices-iran.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-09-16T20:22:24.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/09/16/treasury-yield-bond-market-fed-decision.html",
+      "title": "10-year Treasury yield climbs back to 5% after Fed hikes rates, Warsh highlights inflation risks",
+      "summary": "The 10-year yield moved above the 5% mark after a Federal Reserve rate increase and comments from Chairman Kevin Warsh highlighting persistent inflation risks.",
+      "url": "https://www.cnbc.com/2026/09/16/treasury-yield-bond-market-fed-decision.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/09/16/treasury-yield-bond-market-fed-decision.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-09-16T20:10:01.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/09/16/nx-s1-5971043/eu-canada-carney-tariffs-trump",
+      "title": "EU rolls out red carpet to Canada to become its first 'associate member'",
+      "summary": "The European Union's top official backs the Canadian prime minister's push for his country to become the bloc's first \"associate member,\" as Brussels seeks to deepen ties amid pressure from the U.S.",
+      "url": "https://www.npr.org/2026/09/16/nx-s1-5971043/eu-canada-carney-tariffs-trump",
+      "canonicalUrl": "https://www.npr.org/2026/09/16/nx-s1-5971043/eu-canada-carney-tariffs-trump",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-09-16T20:08:27.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/09/16/continental-resources-to-develop-massive-oil-patch-in-venezuela-.html",
+      "title": "Trump donor Harold Hamm's Continental Resources to develop oil region in Venezuela",
+      "summary": "Continental said it undertook an \"independent evaluation of opportunities\" in Venezuela after President Donald Trump called for the industry to invest.",
+      "url": "https://www.cnbc.com/2026/09/16/continental-resources-to-develop-massive-oil-patch-in-venezuela-.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/09/16/continental-resources-to-develop-massive-oil-patch-in-venezuela-.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-09-16T20:07:55.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/09/16/jb-hunt-stock-jbht-earnings.html",
+      "title": "J.B. Hunt stock plunges 13% after company warns third-quarter earnings will fall",
+      "summary": "Shares of J.B. Hunt plunged 13% Wednesday after the company warned of an earnings drop between 5% and 10%.",
+      "url": "https://www.cnbc.com/2026/09/16/jb-hunt-stock-jbht-earnings.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/09/16/jb-hunt-stock-jbht-earnings.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-09-16T20:00:36.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/c62l8g8qlr0ko?at_medium=rss&at_campaign=rss",
+      "title": "US House votes to hold billionaire Epstein associate Leon Black in contempt",
+      "summary": "Black - who had business ties to Epstein - declined to appear and provide documents related to the convicted sex offender.",
+      "url": "https://www.bbc.co.uk/news/articles/c62l8g8qlr0ko?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c62l8g8qlr0ko?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-09-16T19:59:57.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/09/16/anthropic-policy-chief-says-ai-companies-cant-operate-on-honor-code.html",
+      "title": "Anthropic policy chief says AI companies can't be expected to operate on 'honor code'",
+      "summary": "Sarah Heck, Anthropic's head of public policy, offered her perspectives on AI safety as the debate about how to regulate model development intensifies.",
+      "url": "https://www.cnbc.com/2026/09/16/anthropic-policy-chief-says-ai-companies-cant-operate-on-honor-code.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/09/16/anthropic-policy-chief-says-ai-companies-cant-operate-on-honor-code.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-09-16T19:56:09.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/c617jz28nkvgo?at_medium=rss&at_campaign=rss",
+      "title": "Arsenal rejected Dowman loan offers - Thursday's gossip",
+      "summary": "Arsenal received loan offers for Max Dowman, Luke Shaw could leave Manchester United next summer, Luca Weinhandl attracting interest from multiple Premier League clubs, plus more.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c617jz28nkvgo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c617jz28nkvgo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-09-16T19:53:12.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/09/16/gundlach-bonds-fed-rate-hike.html",
+      "title": "Jeff Gundlach says the Fed should have hiked rates by more to fight rising inflation",
+      "summary": "The Fed should have hiked rates by half percentage point rather than a quarter, the investor told CNBC.",
+      "url": "https://www.cnbc.com/2026/09/16/gundlach-bonds-fed-rate-hike.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/09/16/gundlach-bonds-fed-rate-hike.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-09-16T19:38:41.000Z"
+    },
     {
       "id": "https://www.cnbc.com/2026/09/16/boeing-ceo-737-max-production.html",
       "title": "Boeing CEO: 737 Max production taking 'a little bit longer' to stabilize than expected",
@@ -10,7 +450,7 @@
       "canonicalUrl": "https://www.cnbc.com/2026/09/16/boeing-ceo-737-max-production.html",
       "source": "CNBC · Finance",
       "category": "finance",
-      "publishedAt": "2026-09-16T19:32:11.000Z"
+      "publishedAt": "2026-09-16T19:36:24.000Z"
     },
     {
       "id": "https://www.cnbc.com/2026/09/16/susie-wiles-trump-cancer.html",
@@ -23,26 +463,6 @@
       "publishedAt": "2026-09-16T19:31:11.000Z"
     },
     {
-      "id": "https://www.cnbc.com/2026/09/16/anthropic-open-ai-model-safety-risks.html",
-      "title": "Anthropic, OpenAI proposed new 'neutral' AI watchdogs. Why you should worry about the idea",
-      "summary": "Anthropic and OpenAI are proposing embedded AI evaluators to help manage risk of models causing catastrophic harm to society, but the idea has some issues.",
-      "url": "https://www.cnbc.com/2026/09/16/anthropic-open-ai-model-safety-risks.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/09/16/anthropic-open-ai-model-safety-risks.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-09-16T19:31:06.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/09/16/continental-resources-to-develop-massive-oil-patch-in-venezuela-.html",
-      "title": "Continental Resources to develop massive oil patch in Venezuela",
-      "summary": "Continental said it undertook an \"independent evaluation of opportunities\" in Venezuela after President Donald Trump called for the industry to invest.",
-      "url": "https://www.cnbc.com/2026/09/16/continental-resources-to-develop-massive-oil-patch-in-venezuela-.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/09/16/continental-resources-to-develop-massive-oil-patch-in-venezuela-.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-09-16T19:30:12.000Z"
-    },
-    {
       "id": "https://www.cnbc.com/2026/09/16/hyperscaler-debt-signals-warning-sign-apollo-cautions.html",
       "title": "Hyperscaler debt signals warning sign, Apollo cautions",
       "summary": "Credit default swaps for companies building data centers are getting pricier, and it's not because banks are hedging more of their bets.",
@@ -51,6 +471,16 @@
       "source": "CNBC · Finance",
       "category": "finance",
       "publishedAt": "2026-09-16T19:29:18.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/09/16/fed-rate-hike-consumer-borrowing-and-savings-rates.html",
+      "title": "Fed raises rates: What it means for your credit cards, mortgages, savings accounts and auto loans",
+      "summary": "The Fed's quarter-point rate hike will impact a range of consumer borrowing and savings costs, including mortgages, credit cards, car loans and deposit rates.",
+      "url": "https://www.cnbc.com/2026/09/16/fed-rate-hike-consumer-borrowing-and-savings-rates.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/09/16/fed-rate-hike-consumer-borrowing-and-savings-rates.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-09-16T19:17:38.000Z"
     },
     {
       "id": "https://www.marketwatch.com/story/i-am-drowning-in-debt-i-have-125-000-in-credit-card-debt-will-9-000-in-disability-income-affect-my-bankruptcy-f897c131?mod=mw_rss_topstories",
@@ -63,14 +493,14 @@
       "publishedAt": "2026-09-16T19:15:00.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/sport/cricket/articles/crkgwyp2287lo?at_medium=rss&at_campaign=rss",
-      "title": "Leicestershire on brink of relegation after 27-point deduction",
-      "summary": "Leicestershire are on the brink of relegation from County Championship Division One after being deducted 27 points for breaching pitch regulations.",
-      "url": "https://www.bbc.co.uk/sport/cricket/articles/crkgwyp2287lo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/cricket/articles/crkgwyp2287lo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-09-16T19:13:11.000Z"
+      "id": "https://www.bbc.co.uk/news/articles/c6j9xrx80ekro?at_medium=rss&at_campaign=rss",
+      "title": "Trump chief of staff Susie Wiles announces she's cancer-free",
+      "summary": "The 69-year-old White House chief of staff is a powerful figure and particularly close to the US president.",
+      "url": "https://www.bbc.co.uk/news/articles/c6j9xrx80ekro?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6j9xrx80ekro?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-09-16T19:12:48.000Z"
     },
     {
       "id": "https://www.cnbc.com/2026/09/16/hegseth-impeachment-house-election-recess.html",
@@ -83,46 +513,6 @@
       "publishedAt": "2026-09-16T19:12:33.000Z"
     },
     {
-      "id": "https://www.marketwatch.com/story/warshs-fed-rolls-out-first-interest-rate-hike-in-3-years-with-one-more-increase-expected-cde3060d?mod=mw_rss_topstories",
-      "title": "As Fed rolls out its first interest-rate hike in 3 years, officials are divided on what to do next",
-      "summary": "The Fed&#x2019;s policy-making committee was unanimous in its decision to hike, but forward guidance was split.",
-      "url": "https://www.marketwatch.com/story/warshs-fed-rolls-out-first-interest-rate-hike-in-3-years-with-one-more-increase-expected-cde3060d?mod=mw_rss_topstories",
-      "canonicalUrl": "https://www.marketwatch.com/story/warshs-fed-rolls-out-first-interest-rate-hike-in-3-years-with-one-more-increase-expected-cde3060d?mod=mw_rss_topstories",
-      "source": "MarketWatch · Top Stories",
-      "category": "finance",
-      "publishedAt": "2026-09-16T19:10:00.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/09/16/treasury-yield-bond-market-fed-decision.html",
-      "title": "10-year Treasury yield climbs back to 5% after Fed hikes rates, Warsh highlights inflation risks",
-      "summary": "The 10-year Treasury note yield traded near the key 5% mark after a Federal Reserve rate increase and comments from Chairman Kevin Warsh highlighting persistent inflation risks.",
-      "url": "https://www.cnbc.com/2026/09/16/treasury-yield-bond-market-fed-decision.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/09/16/treasury-yield-bond-market-fed-decision.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-09-16T19:04:52.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html",
-      "title": "Fed approves interest rate hike, signals one more to come this year",
-      "summary": "The Federal Reserve on Wednesday approved its first interest rate hike since 2023 and indicated another to come.",
-      "url": "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-09-16T19:02:17.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/09/16/leon-black-contempt-house-epstein-subpoenas-refusal.html",
-      "title": "House votes to hold Leon Black in contempt of Congress over Epstein subpoenas defiance",
-      "summary": "Billionaire Leon Black is suing the House Oversight and Government Reform Committee seeking to block subpoenas it issued him in its probe of Jeffrey Epstein.",
-      "url": "https://www.cnbc.com/2026/09/16/leon-black-contempt-house-epstein-subpoenas-refusal.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/09/16/leon-black-contempt-house-epstein-subpoenas-refusal.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-09-16T19:02:13.000Z"
-    },
-    {
       "id": "https://www.cnbc.com/2026/09/16/fed-delivers-its-first-hike-in-3-years-plus-whats-moving-starbucks-and-ge-vernova.html",
       "title": "Fed delivers its first hike in 3 years. Plus, what's moving Starbucks and GE Vernova",
       "summary": "Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading.",
@@ -131,16 +521,6 @@
       "source": "CNBC · Finance",
       "category": "finance",
       "publishedAt": "2026-09-16T19:00:14.000Z"
-    },
-    {
-      "id": "https://www.marketwatch.com/story/my-rental-property-is-paid-off-but-i-need-cash-is-this-a-bad-time-to-take-out-a-50-000-heloc-d094bbc5?mod=mw_rss_topstories",
-      "title": "My rental property is paid off, but I need cash. Is this a bad time to take out a $50,000 HELOC?",
-      "summary": "The Federal Reserve announced a quarter-percentage-point interest-rate hike Wednesday, to a range of 3.75%-4.0%.",
-      "url": "https://www.marketwatch.com/story/my-rental-property-is-paid-off-but-i-need-cash-is-this-a-bad-time-to-take-out-a-50-000-heloc-d094bbc5?mod=mw_rss_topstories",
-      "canonicalUrl": "https://www.marketwatch.com/story/my-rental-property-is-paid-off-but-i-need-cash-is-this-a-bad-time-to-take-out-a-50-000-heloc-d094bbc5?mod=mw_rss_topstories",
-      "source": "MarketWatch · Top Stories",
-      "category": "finance",
-      "publishedAt": "2026-09-16T19:00:00.000Z"
     },
     {
       "id": "https://www.marketwatch.com/story/google-is-playing-a-different-ai-game-than-everyone-else-and-wall-street-may-be-missing-the-point-e91077a3?mod=mw_rss_topstories",
@@ -163,16 +543,6 @@
       "publishedAt": "2026-09-16T18:53:00.000Z"
     },
     {
-      "id": "https://www.marketwatch.com/story/the-smartest-money-moves-to-make-with-interest-rates-expected-to-go-higher-aefe375b?mod=mw_rss_topstories",
-      "title": "The smartest money moves to make now that interest rates are going higher",
-      "summary": "The Fed&#x2019;s quarter-point interest-rate hike will &#x2018;bite&#x2019; consumers. Here&#x2019;s how to prep your money.",
-      "url": "https://www.marketwatch.com/story/the-smartest-money-moves-to-make-with-interest-rates-expected-to-go-higher-aefe375b?mod=mw_rss_topstories",
-      "canonicalUrl": "https://www.marketwatch.com/story/the-smartest-money-moves-to-make-with-interest-rates-expected-to-go-higher-aefe375b?mod=mw_rss_topstories",
-      "source": "MarketWatch · Top Stories",
-      "category": "finance",
-      "publishedAt": "2026-09-16T18:38:00.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/news/articles/c8g49e0gwxeno?at_medium=rss&at_campaign=rss",
       "title": "Photos show widespread damage at US sites from Iranian attacks",
       "summary": "A wrecked air force plane and destroyed buildings are among the images obtained by the BBC's partner CBS News.",
@@ -191,16 +561,6 @@
       "source": "BBC Sport",
       "category": "sports",
       "publishedAt": "2026-09-16T18:36:10.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/09/16/anthropic-policy-chief-says-ai-companies-cant-operate-on-honor-code.html",
-      "title": "Anthropic policy chief says AI companies can't be expected to operate on 'honor code'",
-      "summary": "Sarah Heck, Anthropic's head of public policy, offered her perspectives on AI safety as the debate about how to regulate model development intensifies.",
-      "url": "https://www.cnbc.com/2026/09/16/anthropic-policy-chief-says-ai-companies-cant-operate-on-honor-code.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/09/16/anthropic-policy-chief-says-ai-companies-cant-operate-on-honor-code.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-09-16T18:35:21.000Z"
     },
     {
       "id": "https://www.cnbc.com/2026/09/16/american-airlines-ceo-first-class-seats.html",
@@ -223,24 +583,14 @@
       "publishedAt": "2026-09-16T18:32:11.000Z"
     },
     {
-      "id": "https://www.marketwatch.com/story/microns-stock-could-climb-70-higher-thanks-to-a-factor-thats-been-largely-absent-so-far-2489f2cc?mod=mw_rss_topstories",
-      "title": "Micron&#x2019;s stock could climb 70% higher thanks to a factor that&#x2019;s been largely absent so far",
-      "summary": "Shares of Micron trade at a stubbornly low valuation but a TD Cowen analyst thinks that could change.",
-      "url": "https://www.marketwatch.com/story/microns-stock-could-climb-70-higher-thanks-to-a-factor-thats-been-largely-absent-so-far-2489f2cc?mod=mw_rss_topstories",
-      "canonicalUrl": "https://www.marketwatch.com/story/microns-stock-could-climb-70-higher-thanks-to-a-factor-thats-been-largely-absent-so-far-2489f2cc?mod=mw_rss_topstories",
-      "source": "MarketWatch · Top Stories",
+      "id": "https://www.cnbc.com/2026/09/16/september-fed-statement-redline.html",
+      "title": "Here is what changed in the new Fed statement under Warsh",
+      "summary": "This is a comparison of Wednesday's Federal Open Market Committee statement with the one issued after the Fed's previous policymaking meeting in July.",
+      "url": "https://www.cnbc.com/2026/09/16/september-fed-statement-redline.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/09/16/september-fed-statement-redline.html",
+      "source": "CNBC · Finance",
       "category": "finance",
-      "publishedAt": "2026-09-16T18:26:00.000Z"
-    },
-    {
-      "id": "https://www.marketwatch.com/story/intels-stock-rises-as-investors-hope-memory-chips-can-mark-the-next-step-in-its-turnaround-a276608f?mod=mw_rss_topstories",
-      "title": "Intel&#x2019;s stock rises as investors hope memory chips can mark the next step in its turnaround",
-      "summary": "A report says Intel is in early talks with SK Hynix, which is considering some sort of partnership that would enable it to make memory chips in the U.S.",
-      "url": "https://www.marketwatch.com/story/intels-stock-rises-as-investors-hope-memory-chips-can-mark-the-next-step-in-its-turnaround-a276608f?mod=mw_rss_topstories",
-      "canonicalUrl": "https://www.marketwatch.com/story/intels-stock-rises-as-investors-hope-memory-chips-can-mark-the-next-step-in-its-turnaround-a276608f?mod=mw_rss_topstories",
-      "source": "MarketWatch · Top Stories",
-      "category": "finance",
-      "publishedAt": "2026-09-16T18:20:00.000Z"
+      "publishedAt": "2026-09-16T18:18:54.000Z"
     },
     {
       "id": "https://www.cnbc.com/2026/09/16/blumenthal-ai-regulation-safety-oversight.html",
@@ -261,16 +611,6 @@
       "source": "BBC Sport",
       "category": "sports",
       "publishedAt": "2026-09-16T18:11:19.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/09/16/transport-economy-diesel-prices-iran.html",
-      "title": "'Science fiction': Transport companies — the backbone of economy — are sounding alarm on fuel prices",
-      "summary": "Prices for diesel, the fuel type used to power trucks and trains, came in at an all-time high of $6.31 per gallon on Wednesday.",
-      "url": "https://www.cnbc.com/2026/09/16/transport-economy-diesel-prices-iran.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/09/16/transport-economy-diesel-prices-iran.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-09-16T17:50:28.000Z"
     },
     {
       "id": "https://www.cnbc.com/2026/09/16/emil-michael-ai-regulation-trump.html",
@@ -313,16 +653,6 @@
       "publishedAt": "2026-09-16T17:32:22.000Z"
     },
     {
-      "id": "https://www.marketwatch.com/story/the-data-center-backlash-is-so-fierce-that-republican-candidates-are-willing-to-cross-trump-9a6eaa03?mod=mw_rss_topstories",
-      "title": "The data-center backlash is so fierce that Republican candidates are willing to cross Trump",
-      "summary": "President Trump has been a vocal supporter of data centers, but GOP candidates in tight midterm races are increasingly taking a different tack.",
-      "url": "https://www.marketwatch.com/story/the-data-center-backlash-is-so-fierce-that-republican-candidates-are-willing-to-cross-trump-9a6eaa03?mod=mw_rss_topstories",
-      "canonicalUrl": "https://www.marketwatch.com/story/the-data-center-backlash-is-so-fierce-that-republican-candidates-are-willing-to-cross-trump-9a6eaa03?mod=mw_rss_topstories",
-      "source": "MarketWatch · Top Stories",
-      "category": "finance",
-      "publishedAt": "2026-09-16T17:30:00.000Z"
-    },
-    {
       "id": "https://www.cnbc.com/2026/09/16/lagging-sector-looks-poised-for-a-rebound-heres-how-mike-khouw-is-trading-it.html",
       "title": "Lagging sector looks poised for a rebound. Here's how Mike Khouw is trading it",
       "summary": "Quietly, the communications sector has started to claw back some of the year's underperformance.",
@@ -344,23 +674,13 @@
     },
     {
       "id": "https://www.npr.org/2026/09/16/g-s1-143590/us-justice-department-russian-operatives-attacks",
-      "title": "DOJ charges Russian agents with plotting attacks, including in US",
+      "title": "DOJ charges Russian agents with plotting attacks, including in the U.S.",
       "summary": "The indictment says the defendants belong to a network that \"is one arm of the Russian Federation's apparatus used to carry out external attacks\" worldwide.",
       "url": "https://www.npr.org/2026/09/16/g-s1-143590/us-justice-department-russian-operatives-attacks",
       "canonicalUrl": "https://www.npr.org/2026/09/16/g-s1-143590/us-justice-department-russian-operatives-attacks",
       "source": "NPR · Top Stories",
       "category": "general",
       "publishedAt": "2026-09-16T17:19:49.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/football/articles/cmvgyp0z1240o?at_medium=rss&at_campaign=rss",
-      "title": "Magilton to remain in Cliftonville hot-seat",
-      "summary": "Jim Magilton will remain manager of Cliftonville despite Glentoran's interest in the former Northern Ireland international.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cmvgyp0z1240o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cmvgyp0z1240o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-09-16T17:17:35.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/news/articles/cvp8d00j9gg5o?at_medium=rss&at_campaign=rss",
@@ -403,26 +723,6 @@
       "publishedAt": "2026-09-16T17:00:00.000Z"
     },
     {
-      "id": "https://www.marketwatch.com/story/he-does-not-have-a-spouse-or-children-my-son-has-a-serious-genetic-disease-what-should-i-do-with-my-1-3-million-estate-98cdccf9?mod=mw_rss_topstories",
-      "title": "My son has a potentially fatal genetic disease. What should I do with my $1.3 million estate?",
-      "summary": "&#x201c;He is also the sole beneficiary of my 403(b) accounts.&#x201d;",
-      "url": "https://www.marketwatch.com/story/he-does-not-have-a-spouse-or-children-my-son-has-a-serious-genetic-disease-what-should-i-do-with-my-1-3-million-estate-98cdccf9?mod=mw_rss_topstories",
-      "canonicalUrl": "https://www.marketwatch.com/story/he-does-not-have-a-spouse-or-children-my-son-has-a-serious-genetic-disease-what-should-i-do-with-my-1-3-million-estate-98cdccf9?mod=mw_rss_topstories",
-      "source": "MarketWatch · Top Stories",
-      "category": "finance",
-      "publishedAt": "2026-09-16T17:00:00.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/09/16/jb-hunt-stock-jbht-earnings.html",
-      "title": "J.B. Hunt stock plunges 10% after company warns third-quarter earnings will fall",
-      "summary": "Shares of J.B. Hunt plunged more than 10% Wednesday after the company warned of an earnings drop between 5% and 10%.",
-      "url": "https://www.cnbc.com/2026/09/16/jb-hunt-stock-jbht-earnings.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/09/16/jb-hunt-stock-jbht-earnings.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-09-16T16:48:13.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/sport/athletics/articles/cqdr7e4dm0zpo?at_medium=rss&at_campaign=rss",
       "title": "African greats inspired by the potential of Nairobi 2029",
       "summary": "Some of Africa's great track and field stars expect the decision to award Kenya the 2029 World Athletics Championships to inspire the next generation.",
@@ -443,16 +743,6 @@
       "publishedAt": "2026-09-16T16:40:48.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/sport/football/articles/c52e01ln0jj8o?at_medium=rss&at_campaign=rss",
-      "title": "Gray sacked by Hibs after six league games",
-      "summary": "Hibernian sack head coach David Gray six games into the Scottish Premiership season, ending the former captain's 12-year stay at Easter Road.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/c52e01ln0jj8o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c52e01ln0jj8o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-09-16T16:34:00.000Z"
-    },
-    {
       "id": "https://www.theverge.com/ai-artificial-intelligence/996234/anthropic-one-claude-cowork-docs-slides",
       "title": "Claude comes for Gemini with its own take on Docs and Slides",
       "summary": "Claude is getting a pair of new tools today: Docs and Slides. They'll let you create documents and presentations through Claude chats, which you can export, edit, and share with other users. As part of the announcement, ",
@@ -463,44 +753,14 @@
       "publishedAt": "2026-09-16T16:30:00.000Z"
     },
     {
-      "id": "https://www.cnbc.com/2026/09/16/prediction-markets-say-democrats-are-slightly-favored-to-win-senate.html",
-      "title": "Senate is still a toss-up, but Democrats now have slight edge, prediction market traders think",
-      "summary": "Traders on both Kalshi and Polymarket see Democrats with one of their best chances to flip the U.S. Senate since the contracts on the election opened.",
-      "url": "https://www.cnbc.com/2026/09/16/prediction-markets-say-democrats-are-slightly-favored-to-win-senate.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/09/16/prediction-markets-say-democrats-are-slightly-favored-to-win-senate.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-09-16T16:26:41.000Z"
-    },
-    {
-      "id": "https://www.marketwatch.com/story/classic-budgeting-rules-dont-work-anymore-even-if-your-household-makes-100-000-heres-what-does-cfb235a8?mod=mw_rss_topstories",
-      "title": "Classic budgeting rules don&#x2019;t work anymore &#x2014; even if your household makes $100,000. Here&#x2019;s what does.",
-      "summary": "Spending guidelines designed to put diligent consumers in a solid financial position may not set them up to succeed in today&#x2019;s economy.",
-      "url": "https://www.marketwatch.com/story/classic-budgeting-rules-dont-work-anymore-even-if-your-household-makes-100-000-heres-what-does-cfb235a8?mod=mw_rss_topstories",
-      "canonicalUrl": "https://www.marketwatch.com/story/classic-budgeting-rules-dont-work-anymore-even-if-your-household-makes-100-000-heres-what-does-cfb235a8?mod=mw_rss_topstories",
-      "source": "MarketWatch · Top Stories",
-      "category": "finance",
-      "publishedAt": "2026-09-16T16:24:00.000Z"
-    },
-    {
-      "id": "https://www.npr.org/2026/09/16/nx-s1-5971125/how-jared-kushner-is-mixing-u-s-diplomacy-with-his-billion-dollar-business",
-      "title": "How Jared Kushner is mixing U.S. diplomacy with his billion-dollar business",
-      "summary": "The New Yorker 's Dexter Filkins says while Trump's son-in-law is a U.S. special envoy negotiating peace, he's also working on private business deals, raising billions in some of the same countries.",
-      "url": "https://www.npr.org/2026/09/16/nx-s1-5971125/how-jared-kushner-is-mixing-u-s-diplomacy-with-his-billion-dollar-business",
-      "canonicalUrl": "https://www.npr.org/2026/09/16/nx-s1-5971125/how-jared-kushner-is-mixing-u-s-diplomacy-with-his-billion-dollar-business",
-      "source": "NPR · Top Stories",
+      "id": "https://www.bbc.co.uk/news/articles/c639m42y43v4o?at_medium=rss&at_campaign=rss",
+      "title": "Michelin-starred Seoul restaurant fined for using ants as garnish",
+      "summary": "The owner of the acclaimed establishment avoids jail but is made to pay 15 million won (£8,144; $10,965).",
+      "url": "https://www.bbc.co.uk/news/articles/c639m42y43v4o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c639m42y43v4o?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
       "category": "general",
-      "publishedAt": "2026-09-16T16:14:19.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/09/16/russia-sanctions-bill-lindsey-graham-congress.html",
-      "title": "House set to pass sweeping Russia sanctions bill honoring Lindsey Graham",
-      "summary": "The Lindsey Graham Russia sanctions bill is on a path to become law after the House votes in favor.",
-      "url": "https://www.cnbc.com/2026/09/16/russia-sanctions-bill-lindsey-graham-congress.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/09/16/russia-sanctions-bill-lindsey-graham-congress.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-09-16T16:08:39.000Z"
+      "publishedAt": "2026-09-16T15:48:50.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/football/articles/crgjqw0l01njo?at_medium=rss&at_campaign=rss",
@@ -553,16 +813,6 @@
       "publishedAt": "2026-09-16T15:02:09.000Z"
     },
     {
-      "id": "https://www.npr.org/2026/09/16/nx-s1-5968873/lab-mouse-human-brain-cells-organoid-disease-ethics",
-      "title": "Mice with human brain cells offer a tool to study disease. Ethicists ask: What's next?",
-      "summary": "Neuroscientists have made a major advance in modeling the human brain in mice, offering a new way to study conditions like cerebral palsy. Ethicists ask if it changes how these mice should be treated.",
-      "url": "https://www.npr.org/2026/09/16/nx-s1-5968873/lab-mouse-human-brain-cells-organoid-disease-ethics",
-      "canonicalUrl": "https://www.npr.org/2026/09/16/nx-s1-5968873/lab-mouse-human-brain-cells-organoid-disease-ethics",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-09-16T15:00:16.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/news/articles/c6dj4nn0n97ro?at_medium=rss&at_campaign=rss",
       "title": "Eight German state premiers back Merz amid speculation over future",
       "summary": "Christian Democratic Union leadership throws its weight behind the chancellor ahead of two state elections this weekend.",
@@ -593,16 +843,6 @@
       "publishedAt": "2026-09-16T14:44:50.000Z"
     },
     {
-      "id": "https://www.cnbc.com/2026/09/16/canada-eu-associate-member-von-der-leyen.html",
-      "title": "Canada invited to become EU’s first ‘associate member’ as Trump trade war intensifies",
-      "summary": "EU chief Ursula von der Leyen said the bloc wants to open the door for Canada to become its first associate member, signaling a major deepening of ties.",
-      "url": "https://www.cnbc.com/2026/09/16/canada-eu-associate-member-von-der-leyen.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/09/16/canada-eu-associate-member-von-der-leyen.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-09-16T14:43:09.000Z"
-    },
-    {
       "id": "https://www.cnbc.com/2026/09/16/new-zealand-sovereign-wealth-fund-stock-market.html",
       "title": "World's top-performing sovereign wealth fund warns of looming pullback in U.S. stock market",
       "summary": "New Zealand's $54 billion pension fund returned 14.2% in the year to June.",
@@ -611,16 +851,6 @@
       "source": "CNBC · Finance",
       "category": "finance",
       "publishedAt": "2026-09-16T14:31:24.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/09/16/costco-and-uber-partnership.html",
-      "title": "Costco expands Uber Eats delivery partnership to 47 states",
-      "summary": "Uber and Costco announced an expansion of a partnership where Costco members can order delivery from the store on Uber Eats to 47 states, up from 17.",
-      "url": "https://www.cnbc.com/2026/09/16/costco-and-uber-partnership.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/09/16/costco-and-uber-partnership.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-09-16T14:31:09.000Z"
     },
     {
       "id": "https://www.sciencedaily.com/releases/2026/09/260915232130.htm",
@@ -653,16 +883,6 @@
       "publishedAt": "2026-09-16T14:00:12.000Z"
     },
     {
-      "id": "https://www.cnbc.com/2026/09/16/reddit-ai-risk-humanity-warning-tech.html",
-      "title": "Reddit co-founder says tech industry has been 'tone deaf' in explaining AI: 'Misinformation flying around'",
-      "summary": "Alexis Ohanian said AI risks are more mundane than the \"Terminator and Skynet\" scenarios some fear.",
-      "url": "https://www.cnbc.com/2026/09/16/reddit-ai-risk-humanity-warning-tech.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/09/16/reddit-ai-risk-humanity-warning-tech.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-09-16T13:57:47.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/news/articles/cqy0z5y7wnp2o?at_medium=rss&at_campaign=rss",
       "title": "US limits visas for South African officials over alleged anti-white discrimination",
       "summary": "Secretary of State Marco Rubio says South Africa has not addressed US concerns over racial inequality.",
@@ -671,16 +891,6 @@
       "source": "BBC News · World",
       "category": "general",
       "publishedAt": "2026-09-16T13:57:03.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/rugby-union/articles/cmd94enz5nqqo?at_medium=rss&at_campaign=rss",
-      "title": "Bevan to play at fly-half in Wales' WXV opener",
-      "summary": "Keira Bevan is to switch half-back roles after being selected to play at 10 for Wales' WXV opener against South Africa in Cardiff on Friday.",
-      "url": "https://www.bbc.co.uk/sport/rugby-union/articles/cmd94enz5nqqo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/rugby-union/articles/cmd94enz5nqqo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-09-16T13:56:17.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/articles/c317jz22nrr0o?at_medium=rss&at_campaign=rss",
@@ -693,16 +903,6 @@
       "publishedAt": "2026-09-16T13:54:42.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/news/videos/cq62jvr18ny4o?at_medium=rss&at_campaign=rss",
-      "title": "Nigeria’s ‘sarcasm queen’ answers ‘silly’ questions about Africa",
-      "summary": "Nigerian journalist and content creator Charity Ekezie believes the best way to challenge negative stereotypes about Africa is to laugh at them.",
-      "url": "https://www.bbc.co.uk/news/videos/cq62jvr18ny4o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cq62jvr18ny4o?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-09-16T13:51:26.000Z"
-    },
-    {
       "id": "https://www.sciencedaily.com/releases/2026/09/260915232128.htm",
       "title": "A 240-million-year-old fossil just changed the dinosaur timeline",
       "summary": "A newly identified 240-million-year-old animal from Tanzania is forcing scientists to rethink the early dinosaur timeline. Dinodontosaurus isiyavamanda belongs to a group previously known only from South America, linking",
@@ -713,26 +913,6 @@
       "publishedAt": "2026-09-16T13:48:08.000Z"
     },
     {
-      "id": "https://www.npr.org/2026/09/16/nx-s1-5969965/cost-of-living-expenses-prices-midterms",
-      "title": "How are rising prices affecting you? NPR wants to know",
-      "summary": "Inflation, gasoline prices and the cost of living are top of mind in the election season. How are higher costs shaping the way you live? NPR wants to hear.",
-      "url": "https://www.npr.org/2026/09/16/nx-s1-5969965/cost-of-living-expenses-prices-midterms",
-      "canonicalUrl": "https://www.npr.org/2026/09/16/nx-s1-5969965/cost-of-living-expenses-prices-midterms",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-09-16T13:40:12.000Z"
-    },
-    {
-      "id": "https://www.npr.org/2026/09/16/nx-s1-5904423/russia-seizes-ukrainian-pows-then-it-demands-favors-from-their-relatives",
-      "title": "Russia seizes Ukrainian POWs, then it demands favors from their relatives",
-      "summary": "Russia is believed to be holding thousands of Ukrainian POWs. Russia is also tormenting the families of these prisoners by contacting their relatives on social media and demanding they help Russia.",
-      "url": "https://www.npr.org/2026/09/16/nx-s1-5904423/russia-seizes-ukrainian-pows-then-it-demands-favors-from-their-relatives",
-      "canonicalUrl": "https://www.npr.org/2026/09/16/nx-s1-5904423/russia-seizes-ukrainian-pows-then-it-demands-favors-from-their-relatives",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-09-16T13:33:53.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/news/articles/cw4gr5jnd134o?at_medium=rss&at_campaign=rss",
       "title": "Legendary Nigerian actor Olu Jacobs dies aged 84",
       "summary": "Olu Jacobs was one of Nigeria's most recognised actors, whose career spanned several decades.",
@@ -741,16 +921,6 @@
       "source": "BBC News · World",
       "category": "general",
       "publishedAt": "2026-09-16T13:29:39.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/09/16/tropical-smoothie-cafe-announces-new-branding-plans-for-new-locations.html",
-      "title": "Tropical Smoothie Cafe is getting a makeover as it prepares for its 'next 3,000' locations",
-      "summary": "Tropical Smoothie Cafe unveiled new branding as it grows rapidly under the ownership of private equity firm Blackstone.",
-      "url": "https://www.cnbc.com/2026/09/16/tropical-smoothie-cafe-announces-new-branding-plans-for-new-locations.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/09/16/tropical-smoothie-cafe-announces-new-branding-plans-for-new-locations.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-09-16T13:16:40.000Z"
     },
     {
       "id": "https://www.technologyreview.com/2026/09/16/1144014/building-the-materials-foundation-for-ai",
@@ -803,16 +973,6 @@
       "publishedAt": "2026-09-16T12:14:21.000Z"
     },
     {
-      "id": "https://www.cnbc.com/2026/09/16/us-iran-war-trump-hormuz.html",
-      "title": "Saudi says Houthis targeted Mecca with a drone, Iran-backed group rejects claim",
-      "summary": "The Organization of Islamic Cooperation condemned the strike as a \"heinous\" attack. Mecca is Islam's holiest site and the focal point of the annual Hajj pilgrimage.",
-      "url": "https://www.cnbc.com/2026/09/16/us-iran-war-trump-hormuz.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/09/16/us-iran-war-trump-hormuz.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-09-16T12:06:30.000Z"
-    },
-    {
       "id": "https://www.theverge.com/policy/995534/a-brief-history-of-ai-executives-calling-for-regulation",
       "title": "A brief history of AI executives calling for regulation",
       "summary": "Over the past few days, a lot of people who stand to make a lot of money from AI all publicly agreed that it's time to make everyone slow down before we lose control - including OpenAI CEO Sam Altman, Anthropic CEO Dario",
@@ -843,24 +1003,14 @@
       "publishedAt": "2026-09-16T11:49:57.000Z"
     },
     {
-      "id": "https://www.cnbc.com/2026/09/16/mortgage-demand-from-homebuyers-drops-19percent-from-a-year-ago.html",
-      "title": "Mortgage demand from homebuyers drops 19% from a year ago, as interest rates surge abruptly higher",
-      "summary": "Mortgage rates have surged to the highest level since the start of 2025, causing a major pullback in mortgage demand.",
-      "url": "https://www.cnbc.com/2026/09/16/mortgage-demand-from-homebuyers-drops-19percent-from-a-year-ago.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/09/16/mortgage-demand-from-homebuyers-drops-19percent-from-a-year-ago.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-09-16T11:47:11.000Z"
-    },
-    {
-      "id": "https://www.npr.org/2026/09/16/g-s1-143569/up-first-newsletter-fed-reserve-interest-rates-iran-war-kennedy-center-contraception",
-      "title": "Fed expected to raise interest rates. And, board votes to close Kennedy Center",
-      "summary": "The Fed is expected to raise interest rates today for the first time in three years. And, the Kennedy Center board voted yesterday to close the historic center.",
-      "url": "https://www.npr.org/2026/09/16/g-s1-143569/up-first-newsletter-fed-reserve-interest-rates-iran-war-kennedy-center-contraception",
-      "canonicalUrl": "https://www.npr.org/2026/09/16/g-s1-143569/up-first-newsletter-fed-reserve-interest-rates-iran-war-kennedy-center-contraception",
-      "source": "NPR · Top Stories",
+      "id": "https://www.bbc.co.uk/news/articles/ck0e3rnxev27o?at_medium=rss&at_campaign=rss",
+      "title": "Carney's new love-in with EU has everything to do with Trump",
+      "summary": "The Canadian PM is in Strasbourg this week seeking a \"unique alliance\" - and there is one clear catalyst.",
+      "url": "https://www.bbc.co.uk/news/articles/ck0e3rnxev27o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ck0e3rnxev27o?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
       "category": "general",
-      "publishedAt": "2026-09-16T11:19:46.000Z"
+      "publishedAt": "2026-09-16T11:08:01.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/football/articles/cmx2zyjylee1o?at_medium=rss&at_campaign=rss",
@@ -893,16 +1043,6 @@
       "publishedAt": "2026-09-16T11:02:54.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/sport/football/articles/c6wyzg91zm4wo?at_medium=rss&at_campaign=rss",
-      "title": "Harwood-Bellis has chance to make his mark at Villa",
-      "summary": "Left out of Aston Villa's Champions League squad and yet to feature since his arrival, Taylor Harwood-Bellis has the chance to shine in the EFL Cup.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/c6wyzg91zm4wo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c6wyzg91zm4wo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-09-16T11:00:56.000Z"
-    },
-    {
       "id": "https://www.cnbc.com/2026/09/16/americans-living-abroad-us-tax-rules-fbar-filing.html",
       "title": "Living abroad doesn't end your U.S. tax obligations. What young expats need to know",
       "summary": "Americans living overseas may still face U.S. tax-filing and foreign-account reporting rules — even when they ultimately owe no U.S. income tax.",
@@ -921,16 +1061,6 @@
       "source": "BBC Sport",
       "category": "sports",
       "publishedAt": "2026-09-16T10:56:23.000Z"
-    },
-    {
-      "id": "https://www.npr.org/2026/09/16/nx-s1-5970985/canada-become-eu-associate-member",
-      "title": "EU's Ursula von der Leyen says she wants Canada to become an associate member",
-      "summary": "European Commission President Ursula von der Leyen on Wednesday proposed making Canada the European Union's first associate member, a striking overture as U.S. President Donald Trump's tariffs drive Ottawa closer to Euro",
-      "url": "https://www.npr.org/2026/09/16/nx-s1-5970985/canada-become-eu-associate-member",
-      "canonicalUrl": "https://www.npr.org/2026/09/16/nx-s1-5970985/canada-become-eu-associate-member",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-09-16T10:48:22.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/football/articles/cq70dl3pn8xjo?at_medium=rss&at_campaign=rss",
@@ -953,26 +1083,6 @@
       "publishedAt": "2026-09-16T10:02:05.000Z"
     },
     {
-      "id": "https://www.npr.org/2026/09/16/nx-s1-5968780/trump-rfk-jr-health-nomination-surgeon-general",
-      "title": "Senators question Trump's picks for top health positions, including surgeon general",
-      "summary": "On Wednesday, the Senate committee on health held a confirmation hearing for three top health officials, including surgeon general. Dr. Nicole Saphier is President Trump's third attempt to nominate a surgeon general.",
-      "url": "https://www.npr.org/2026/09/16/nx-s1-5968780/trump-rfk-jr-health-nomination-surgeon-general",
-      "canonicalUrl": "https://www.npr.org/2026/09/16/nx-s1-5968780/trump-rfk-jr-health-nomination-surgeon-general",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-09-16T10:00:00.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/articles/cw4gq0j5jg10o?at_medium=rss&at_campaign=rss",
-      "title": "Journalist and pilot among three killed after news helicopter crashes in LA",
-      "summary": "The NBCLA news helicopter was flying near the scene of a fatal bus crash.",
-      "url": "https://www.bbc.co.uk/news/articles/cw4gq0j5jg10o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cw4gq0j5jg10o?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-09-16T09:49:48.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/news/articles/c620lg854v45o?at_medium=rss&at_campaign=rss",
       "title": "Tall athletes can't stretch their legs in container beds at Asian Games, official says",
       "summary": "South Korea's delegation slams the wooden containers housing its athletes at the Asian Games in Nagoya city.",
@@ -991,6 +1101,16 @@
       "source": "BBC Sport",
       "category": "sports",
       "publishedAt": "2026-09-16T09:01:21.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/c34gd48x5rlwo?at_medium=rss&at_campaign=rss",
+      "title": "Why Trump is all-in on AI despite the warnings",
+      "summary": "The US president has pushed the issue to the forefront of American politics - even at the risk of losing supporters.",
+      "url": "https://www.bbc.co.uk/news/articles/c34gd48x5rlwo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c34gd48x5rlwo?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-09-16T08:41:44.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/news/articles/cr89jqd1w45eo?at_medium=rss&at_campaign=rss",
@@ -1033,26 +1153,6 @@
       "publishedAt": "2026-09-16T06:49:45.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/sport/mixed-martial-arts/articles/c3eq8x995q1o?at_medium=rss&at_campaign=rss",
-      "title": "Released despite seven straight wins, baffled Mokaev vows UFC return",
-      "summary": "Muhammad Mokaev tells BBC Sport that he is still searching for answers about why he was cut by the UFC in 2024 and dreams of returning to the organisation.",
-      "url": "https://www.bbc.co.uk/sport/mixed-martial-arts/articles/c3eq8x995q1o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/mixed-martial-arts/articles/c3eq8x995q1o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-09-16T06:36:48.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/football/articles/c6wyz1ll1g3xo?at_medium=rss&at_campaign=rss",
-      "title": "Meet the Scottish teenagers poised to represent Uganda",
-      "summary": "Teenage brothers Olly and Seb Fisher are closing in on their dream of international recognition - but it won't come from their homeland of Scotland.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/c6wyz1ll1g3xo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c6wyz1ll1g3xo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-09-16T06:12:11.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/news/videos/cmzezj8gr224o?at_medium=rss&at_campaign=rss",
       "title": "Runaway horse captured by police on motorbikes",
       "summary": "The unharmed horse escaped from its owner before the start of a parade in New Mexico",
@@ -1061,36 +1161,6 @@
       "source": "BBC News · World",
       "category": "general",
       "publishedAt": "2026-09-16T05:57:23.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/football/articles/cm2q81r5zvjo?at_medium=rss&at_campaign=rss",
-      "title": "Flex your football brain with our daily quizzes",
-      "summary": "Test your ball knowledge against today's Who Am I?, Five in Five and Brainteaser.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cm2q81r5zvjo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cm2q81r5zvjo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-09-16T05:49:34.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/football/articles/cxnvl2nv525ro?at_medium=rss&at_campaign=rss",
-      "title": "Why are Man Utd better without the ball?",
-      "summary": "Under Michael Carrick, Manchester United average 1.5 points per game when they have more than 50% of the ball. When they have less than 50%, this number is 2.6.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cxnvl2nv525ro?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cxnvl2nv525ro?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-09-16T05:46:28.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/football/articles/c9gk58j0vy0eo?at_medium=rss&at_campaign=rss",
-      "title": "Does Bellamy need to win back Wales fans?",
-      "summary": "After a \"sleepless night\", Wales boss Craig Bellamy decided to turn down the chance to manage Burnley - but has it affected what fans think of him?",
-      "url": "https://www.bbc.co.uk/sport/football/articles/c9gk58j0vy0eo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c9gk58j0vy0eo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-09-16T05:41:00.000Z"
     },
     {
       "id": "https://www.sciencedaily.com/releases/2026/09/260915232124.htm",
@@ -1123,16 +1193,6 @@
       "publishedAt": "2026-09-15T23:34:25.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/news/articles/cmq8jdgel128o?at_medium=rss&at_campaign=rss",
-      "title": "Five takeaways from Canada's push to woo the world's richest investors",
-      "summary": "A $1tn sales pitch, more than 160 projects on offer, pivot to the EU amid a bitter trade war with the US - takeaways from the first Canada Investment Summit.",
-      "url": "https://www.bbc.co.uk/news/articles/cmq8jdgel128o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmq8jdgel128o?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-09-15T22:46:20.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/sport/cricket/videos/cv70dl8301xyo?at_medium=rss&at_campaign=rss",
       "title": "Brook & Baker shine as England crush Sri Lanka",
       "summary": "Harry Brook hit 114 not out in the first innings set up England with a total of 254 proving to difficult for Sri Lanka to chase leading to a England win by 119 runs after bowling out Sri Lanka.",
@@ -1141,66 +1201,6 @@
       "source": "BBC Sport",
       "category": "sports",
       "publishedAt": "2026-09-15T21:15:35.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/cricket/videos/cm20lg9vdgqqo?at_medium=rss&at_campaign=rss",
-      "title": "'What an innings' - Brook hits century against Sri Lanka",
-      "summary": "Watch the best of Harry Brook's sensational century against Sri Lanka from just 42 balls, the joint-second fastest hundred by an Englishman in a T20I.",
-      "url": "https://www.bbc.co.uk/sport/cricket/videos/cm20lg9vdgqqo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/cricket/videos/cm20lg9vdgqqo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-09-15T19:17:05.000Z"
-    },
-    {
-      "id": "https://www.technologyreview.com/2026/09/15/1143936/roundtables-will-ai-really-kill-us-all",
-      "title": "Roundtables: Could AI really kill us all?",
-      "summary": "Listen to the session or watch below Employees at the world&#8217;s leading AI labs are saying there&#8217;s a real possibility that advanced AI could destroy humanity. Are they right? Or is this more scaremongering and ",
-      "url": "https://www.technologyreview.com/2026/09/15/1143936/roundtables-will-ai-really-kill-us-all",
-      "canonicalUrl": "https://www.technologyreview.com/2026/09/15/1143936/roundtables-will-ai-really-kill-us-all",
-      "source": "MIT Technology Review · AI",
-      "category": "ai",
-      "publishedAt": "2026-09-15T17:47:51.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/videos/cmn07yjqg5rwo?at_medium=rss&at_campaign=rss",
-      "title": "Warning of space arms race as US confirms weapons in Earth's orbit",
-      "summary": "The BBC's defence correspondent Jonathan Beale explains what an arms race in space might look like - and what it could mean for us on the ground.",
-      "url": "https://www.bbc.co.uk/news/videos/cmn07yjqg5rwo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cmn07yjqg5rwo?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-09-15T17:35:02.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/athletics/articles/cxvgyrlzn10lo?at_medium=rss&at_campaign=rss",
-      "title": "How Kenya won its bid for 2029 World Athletics Championships",
-      "summary": "Kenya's athletics-loving population and improved infrastructure helped Nairobi secure the rights to host the 2029 World Championships, but challenges remain to ensure a successful event.",
-      "url": "https://www.bbc.co.uk/sport/athletics/articles/cxvgyrlzn10lo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/athletics/articles/cxvgyrlzn10lo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-09-15T17:03:14.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/articles/c8ly49w9g1edo?at_medium=rss&at_campaign=rss",
-      "title": "Suspected sabotage causes major Netherlands rail disruption",
-      "summary": "Trains were cancelled or delayed on Tuesday after objects were found on tracks at multiple locations.",
-      "url": "https://www.bbc.co.uk/news/articles/c8ly49w9g1edo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c8ly49w9g1edo?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-09-15T16:55:04.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/football/articles/c51kxlek7471o?at_medium=rss&at_campaign=rss",
-      "title": "The key talking points from Pocognoli's bold Scotland squad",
-      "summary": "The Sebastien Pocognoli Scotland era is already creating serious intrigue - and the Belgian's squad are yet to assemble for a training-ground rondo, never mind play a game.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/c51kxlek7471o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c51kxlek7471o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-09-15T15:12:03.000Z"
     }
   ],
   "sourceHealth": [
@@ -1231,7 +1231,7 @@
     {
       "name": "BBC Sport",
       "ok": true,
-      "itemCount": 74,
+      "itemCount": 70,
       "error": null
     },
     {
@@ -1255,7 +1255,7 @@
     {
       "name": "BBC News · World",
       "ok": true,
-      "itemCount": 25,
+      "itemCount": 28,
       "error": null
     },
     {
