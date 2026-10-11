@@ -1,16 +1,236 @@
 {
-  "generatedAt": "2026-10-11T01:00:08.061Z",
+  "generatedAt": "2026-10-11T10:48:31.627Z",
   "stale": false,
   "items": [
     {
-      "id": "https://www.bbc.co.uk/news/articles/cw33x4y8k82no?at_medium=rss&at_campaign=rss",
-      "title": "Twelve killed in attack on airport in Saudi capital Riyadh",
-      "summary": "Another 309 people are injured, with the Saudi-led coalition saying the attack by Yemen's Houthis is \"war crime\".",
-      "url": "https://www.bbc.co.uk/news/articles/cw33x4y8k82no?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cw33x4y8k82no?at_medium=rss&at_campaign=rss",
+      "id": "https://www.bbc.co.uk/sport/football/articles/ckgel112lr1qo?at_medium=rss&at_campaign=rss",
+      "title": "Russo named England player of the year",
+      "summary": "Arsenal forward Alessia Russo is named England women's player of the year after scoring five goals in 10 games.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/ckgel112lr1qo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/ckgel112lr1qo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-11T10:35:31.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/cricket/articles/cw98z44glde4o?at_medium=rss&at_campaign=rss",
+      "title": "Mahmud takes Test hat-trick - can you name the others in past 40 years?",
+      "summary": "Bangladesh seamer Hasan Mahmud takes a hat-trick - but can you name all the others to do so in a men's Test in the past 40 years?",
+      "url": "https://www.bbc.co.uk/sport/cricket/articles/cw98z44glde4o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/cricket/articles/cw98z44glde4o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-11T10:24:39.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/10/11/nx-s1-5996655/heat-therapy-sauna-thermoregulation-health-benefits",
+      "title": "Sweating the details: Sauna's potential health benefits draw scientists' interest",
+      "summary": "A group of international researchers is pushing to rigorously study the potential health benefits of sauna and other heat therapies. They hope to bring scientific legitimacy to the age-old practices.",
+      "url": "https://www.npr.org/2026/10/11/nx-s1-5996655/heat-therapy-sauna-thermoregulation-health-benefits",
+      "canonicalUrl": "https://www.npr.org/2026/10/11/nx-s1-5996655/heat-therapy-sauna-thermoregulation-health-benefits",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-10-11T10:00:00.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/motorsport/articles/cm79p8dgqyp8o?at_medium=rss&at_campaign=rss",
+      "title": "Bezzecchi wins as Martin retakes championship lead",
+      "summary": "Marco Bezzecchi triumphs at the Indonesian Grand Prix, while Jorge Martin finishes third to retake the lead from Marc Marquez in the MotoGP world championship.",
+      "url": "https://www.bbc.co.uk/sport/motorsport/articles/cm79p8dgqyp8o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/motorsport/articles/cm79p8dgqyp8o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-11T09:27:37.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/10/11/nx-s1-5968691/midterm-elections-washington-congressional-district",
+      "title": "In one of the country's most competitive districts, a Democrat tries to keep her seat",
+      "summary": "In a highly competitive Washington congressional race, the incumbent Democrat has angered part of her party base and the Trump-backed Republican challenger faces backlash against the party in power.",
+      "url": "https://www.npr.org/2026/10/11/nx-s1-5968691/midterm-elections-washington-congressional-district",
+      "canonicalUrl": "https://www.npr.org/2026/10/11/nx-s1-5968691/midterm-elections-washington-congressional-district",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-10-11T09:00:00.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/10/11/g-s1-145063/justice-department-civil-rights-transformed",
+      "title": "Reshaped civil rights mission at Justice Department transforms its work, workforce",
+      "summary": "Harmeet Dhillon has pushed out hundreds of longtime attorneys, replaced many with inexperienced ideological allies, and used the division's enforcement powers to pursue the president's agenda.",
+      "url": "https://www.npr.org/2026/10/11/g-s1-145063/justice-department-civil-rights-transformed",
+      "canonicalUrl": "https://www.npr.org/2026/10/11/g-s1-145063/justice-department-civil-rights-transformed",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-10-11T09:00:00.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/10/11/nx-s1-5995238/jobs-employment-economy-unemployment-benefits",
+      "title": "It's taking longer to find a new job after losing one",
+      "summary": "People who lose their jobs in this economy are taking longer to find new work. Nearly four in ten people exhaust their unemployment benefits before they land a new job.",
+      "url": "https://www.npr.org/2026/10/11/nx-s1-5995238/jobs-employment-economy-unemployment-benefits",
+      "canonicalUrl": "https://www.npr.org/2026/10/11/nx-s1-5995238/jobs-employment-economy-unemployment-benefits",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-10-11T09:00:00.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/c84g179n2393o?at_medium=rss&at_campaign=rss",
+      "title": "Delhi sees more protests as 'cockroach' group's leaders released",
+      "summary": "Police say they will keep restricting access to the city centre after thousands of people were detained and released on Saturday.",
+      "url": "https://www.bbc.co.uk/news/articles/c84g179n2393o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c84g179n2393o?at_medium=rss&at_campaign=rss",
       "source": "BBC News · World",
       "category": "general",
-      "publishedAt": "2026-10-11T00:21:52.000Z"
+      "publishedAt": "2026-10-11T08:50:21.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/athletics/articles/cm4g102vr5q8o?at_medium=rss&at_campaign=rss",
+      "title": "Kipchoge, 41, breaks course record at Melbourne Marathon",
+      "summary": "Double Olympic champion Eliud Kipchoge says \"his body is still peaking\" after winning the Melbourne Marathon in a course record time at the age of 41.",
+      "url": "https://www.bbc.co.uk/sport/athletics/articles/cm4g102vr5q8o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/athletics/articles/cm4g102vr5q8o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-11T08:19:52.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/iplayer/episode/m0032wxj?at_medium=rss&at_campaign=rss",
+      "title": "Highlights and analysis on Match of the Day",
+      "summary": "With Man Utd v Spurs, Arsenal v Leeds and Chelsea v Bournemouth as the top flight returns",
+      "url": "https://www.bbc.co.uk/iplayer/episode/m0032wxj?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/iplayer/episode/m0032wxj?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-11T08:00:00.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/rugby-union/articles/c6n8dx3xvm59o?at_medium=rss&at_campaign=rss",
+      "title": "Ulster need 'honest conversations' after winless start",
+      "summary": "Ulster hooker Tom Stewart admits \"I don't think I've come to the party well enough\" and says the squad must have \"honest conversations\" after an underwhelming start to the season.",
+      "url": "https://www.bbc.co.uk/sport/rugby-union/articles/c6n8dx3xvm59o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/rugby-union/articles/c6n8dx3xvm59o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-11T07:37:50.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/mixed-martial-arts/articles/cq5yn05n6k1do?at_medium=rss&at_campaign=rss",
+      "title": "Allen submits Duncan to derail Briton's title hopes",
+      "summary": "Brendan Allen submits Christian Leroy Duncan in the fifth round in Las Vegas to derail the Briton's middleweight title aspirations.",
+      "url": "https://www.bbc.co.uk/sport/mixed-martial-arts/articles/cq5yn05n6k1do?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/mixed-martial-arts/articles/cq5yn05n6k1do?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-11T06:23:13.000Z"
+    },
+    {
+      "id": "https://www.sciencedaily.com/releases/2026/10/261008005254.htm",
+      "title": "The eye has a hidden cleanup system scientists never knew existed",
+      "summary": "Scientists have discovered a hidden cleanup system at the back of the eye that drains fluid and waste through a previously unknown pathway. The surprising finding, demonstrated in mice, could open the door to new treatme",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261008005254.htm",
+      "canonicalUrl": "https://www.sciencedaily.com/releases/2026/10/261008005254.htm",
+      "source": "ScienceDaily · Top Science",
+      "category": "academic",
+      "publishedAt": "2026-10-11T06:01:54.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/cmlylg0n5pg7o?at_medium=rss&at_campaign=rss",
+      "title": "Who am I? Plus today's other quizzes",
+      "summary": "Test your ball knowledge against today's Who Am I?, Five in Five and Brainteaser.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cmlylg0n5pg7o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cmlylg0n5pg7o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-11T05:42:58.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/videos/cqvg0m1my97go?at_medium=rss&at_campaign=rss",
+      "title": "Top five Liverpool-Man City moments",
+      "summary": "Relive five classic moments between Liverpool and Manchester City before Sunday's Premier League game at Anfield (16:30 BST).",
+      "url": "https://www.bbc.co.uk/sport/football/videos/cqvg0m1my97go?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/videos/cqvg0m1my97go?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-11T05:37:52.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/cvy0rp14xz7lo?at_medium=rss&at_campaign=rss",
+      "title": "Toxicity and uncertainty await Man City - will their season even matter?",
+      "summary": "Manchester City visit Liverpool on Sunday with a lot of uncertainty hanging over them. Phil McNulty looks at what lies ahead.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cvy0rp14xz7lo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cvy0rp14xz7lo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-11T05:27:03.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/c9vgregzk6gro?at_medium=rss&at_campaign=rss",
+      "title": "US justice department investigates TV networks over Trump pool coverage",
+      "summary": "The White House had blocked access for CNN, MS Now and Politico, leading them to restrict pool coverage.",
+      "url": "https://www.bbc.co.uk/news/articles/c9vgregzk6gro?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c9vgregzk6gro?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-10-11T05:05:43.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/rugby-union/articles/c69vzm2pxznxo?at_medium=rss&at_campaign=rss",
+      "title": "Fight for Wales spots heats up as under-threat regions win",
+      "summary": "The talking points from round three of URC as Ospreys and Scarlets get first win and players try to impress Wales boss Steve Tandy.",
+      "url": "https://www.bbc.co.uk/sport/rugby-union/articles/c69vzm2pxznxo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/rugby-union/articles/c69vzm2pxznxo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-11T05:01:23.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/10/11/ai-dynamic-pricing-shoppers-groceries.html",
+      "title": "AI may change the price of your Big Mac and groceries — what this means for shoppers",
+      "summary": "As retailers turn to AI tools to streamline operations, experts warn that collecting more detailed consumer data increases the risk of personalized pricing.",
+      "url": "https://www.cnbc.com/2026/10/11/ai-dynamic-pricing-shoppers-groceries.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/10/11/ai-dynamic-pricing-shoppers-groceries.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-10-11T05:00:01.000Z"
+    },
+    {
+      "id": "https://www.sciencedaily.com/releases/2026/10/261008102701.htm",
+      "title": "Scientists build a nuclear clock that could make atomic clocks obsolete",
+      "summary": "Scientists in Vienna have achieved a major breakthrough in timekeeping by creating the world’s first self-stabilizing nuclear clock, a technology that could eventually surpass even the most precise atomic clocks. Instead",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261008102701.htm",
+      "canonicalUrl": "https://www.sciencedaily.com/releases/2026/10/261008102701.htm",
+      "source": "ScienceDaily · Top Science",
+      "category": "academic",
+      "publishedAt": "2026-10-11T03:06:35.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/cqe8r5l7n92jo?at_medium=rss&at_campaign=rss",
+      "title": "'Time for Ukraine to get new president,' says Trump after Zelensky condemns diesel deal",
+      "summary": "Ukraine's leader had said the deal with Russia to release diesel into the US would help Moscow fund the war.",
+      "url": "https://www.bbc.co.uk/news/articles/cqe8r5l7n92jo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqe8r5l7n92jo?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-10-11T01:41:29.000Z"
+    },
+    {
+      "id": "https://www.sciencedaily.com/releases/2026/10/261008005256.htm",
+      "title": "Neanderthals may have used prehistoric glue as an ancient antibiotic",
+      "summary": "Neanderthals may have used a sticky substance made from birch bark to treat wounds thousands of years before antibiotics existed. Researchers recreated ancient birch tar production techniques and discovered that every sa",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261008005256.htm",
+      "canonicalUrl": "https://www.sciencedaily.com/releases/2026/10/261008005256.htm",
+      "source": "ScienceDaily · Top Science",
+      "category": "academic",
+      "publishedAt": "2026-10-11T00:45:37.000Z"
+    },
+    {
+      "id": "https://www.sciencedaily.com/releases/2026/10/261008005253.htm",
+      "title": "Scientists created a tiny device that can control your nerves to treat chronic pain",
+      "summary": "Scientists have developed a tiny, injectable device that can control nerve activity without surgery, batteries, or wires, potentially transforming treatment for chronic pain and movement disorders. Powered wirelessly fro",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261008005253.htm",
+      "canonicalUrl": "https://www.sciencedaily.com/releases/2026/10/261008005253.htm",
+      "source": "ScienceDaily · Top Science",
+      "category": "academic",
+      "publishedAt": "2026-10-11T00:23:19.000Z"
     },
     {
       "id": "https://www.npr.org/2026/10/10/g-s1-147682/attack-on-riyadh-airport-killed-12-people-and-wounded-over-300-more-saudi-authorities-say",
@@ -61,16 +281,6 @@
       "source": "BBC Sport",
       "category": "sports",
       "publishedAt": "2026-10-10T22:58:38.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/iplayer/episode/m0032wxj?at_medium=rss&at_campaign=rss",
-      "title": "Highlights and analysis on Match of the Day",
-      "summary": "With Man Utd v Spurs, Arsenal v Leeds and Chelsea v Bournemouth as the top flight returns",
-      "url": "https://www.bbc.co.uk/iplayer/episode/m0032wxj?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/iplayer/episode/m0032wxj?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-10-10T22:50:45.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/boxing/articles/c9ly0543nnx3o?at_medium=rss&at_campaign=rss",
@@ -133,16 +343,6 @@
       "publishedAt": "2026-10-10T21:32:53.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/sport/rugby-union/articles/cw4g131jg6y8o?at_medium=rss&at_campaign=rss",
-      "title": "Ulster playing games like they're training sessions - Murphy",
-      "summary": "Head coach Richie Murphy says UIster are \"playing matches like training sessions\" as he expresses his disappointment after Saturday's 26-26 draw with Munster in Belfast.",
-      "url": "https://www.bbc.co.uk/sport/rugby-union/articles/cw4g131jg6y8o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/rugby-union/articles/cw4g131jg6y8o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-10-10T21:07:06.000Z"
-    },
-    {
       "id": "https://www.cnbc.com/2026/10/10/microsoft-satya-nadella-ai-emergency-brake-safety.html",
       "title": "Microsoft's Nadella says AI needs an ‘emergency brake’ that humans control",
       "summary": "Nadella joined other tech moguls and researchers in calling for stronger safeguards and, in some cases, for the pacing of frontier development.",
@@ -164,7 +364,7 @@
     },
     {
       "id": "https://www.bbc.co.uk/sport/football/articles/c62e9g09e781o?at_medium=rss&at_campaign=rss",
-      "title": "Boos, anguish & fading belief -'worrying day' for under-pressure Carrick",
+      "title": "Boos, anguish & fading belief - 'worrying day' for under-pressure Carrick",
       "summary": "It couldn't happen again could it? Another failure to beat 10 men increases pressure on Man Utd boss Michael Carrick after a 1-1 draw against Tottenham Hotspur.",
       "url": "https://www.bbc.co.uk/sport/football/articles/c62e9g09e781o?at_medium=rss&at_campaign=rss",
       "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c62e9g09e781o?at_medium=rss&at_campaign=rss",
@@ -181,16 +381,6 @@
       "source": "BBC News · World",
       "category": "general",
       "publishedAt": "2026-10-10T20:51:12.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/rugby-union/articles/cm5yn2ng799po?at_medium=rss&at_campaign=rss",
-      "title": "Leinster stroll past Cardiff for happy homecoming",
-      "summary": "Champions Leinster score five tries to beat Cardiff in Dublin for their first win of the 2026-27 United Rugby Championship campaign.",
-      "url": "https://www.bbc.co.uk/sport/rugby-union/articles/cm5yn2ng799po?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/rugby-union/articles/cm5yn2ng799po?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-10-10T20:33:01.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/football/articles/cqzjx3z4ljr0o?at_medium=rss&at_campaign=rss",
@@ -301,16 +491,6 @@
       "source": "BBC Sport",
       "category": "sports",
       "publishedAt": "2026-10-10T19:35:45.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/articles/cqe8r5l7n92jo?at_medium=rss&at_campaign=rss",
-      "title": "'Time for Ukraine to get new president,' says Trump after Zelensky condemns diesel deal",
-      "summary": "Ukraine's leader had said the deal with Russia to release diesel into the US would help Moscow fund the war.",
-      "url": "https://www.bbc.co.uk/news/articles/cqe8r5l7n92jo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqe8r5l7n92jo?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-10-10T19:28:28.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/news/videos/cwkg50dgpml7o?at_medium=rss&at_campaign=rss",
@@ -443,26 +623,6 @@
       "publishedAt": "2026-10-10T18:53:25.000Z"
     },
     {
-      "id": "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit",
-      "title": "DistroKid has been quietly taking down songs in response to UMG lawsuit",
-      "summary": "Artists are taking to social media to complain that DistroKid has unceremoniously removed their work without notice. Now DistroKid has confirmed to The Verge that the takedowns are a direct response to claims made by UMG",
-      "url": "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit",
-      "canonicalUrl": "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit",
-      "source": "The Verge · AI",
-      "category": "ai",
-      "publishedAt": "2026-10-10T18:52:07.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/football/articles/cr86z32ezel9o?at_medium=rss&at_campaign=rss",
-      "title": "Tottenham grab a draw but who got 1/10 - Ratings for Man Utd v Spurs",
-      "summary": "Tottenham score an injury-time equaliser against Manchester United after Rodrigo Bentancur was sent off for headbutting Luke Shaw.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cr86z32ezel9o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cr86z32ezel9o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-10-10T18:46:40.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/sport/rugby-union/articles/ckvg6l4yv498o?at_medium=rss&at_campaign=rss",
       "title": "Ulster fight back to draw with Munster in thriller",
       "summary": "A second-half fightback earns Ulster a draw against Munster in a thrilling United Rugby Championship Irish derby in Belfast.",
@@ -563,16 +723,6 @@
       "publishedAt": "2026-10-10T17:14:03.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/sport/football/articles/cq1j427zze5xo?at_medium=rss&at_campaign=rss",
-      "title": "Timely recognition or long overdue? How Gross is proving all-time bargain",
-      "summary": "Named the Premier League's player of the month for September, BBC Sport looks at Brighton star Pascal Gross' impact both this season and over the past nine years during his two spells at the club.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cq1j427zze5xo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cq1j427zze5xo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-10-10T17:07:02.000Z"
-    },
-    {
       "id": "https://www.marketwatch.com/story/elon-musk-is-now-richer-than-any-american-ever-and-its-not-even-close-58f31401?mod=mw_rss_topstories",
       "title": "Elon Musk is now richer than any American ever &#x2014; and it&#x2019;s not even close",
       "summary": "Musk&#x2019;s trillioniare status means he&#x2019;s wealthier than his next three contemporaries combined &#x2014;&#xa0;and also worth more than historical tycoons like John D. Rockefeller.",
@@ -581,26 +731,6 @@
       "source": "MarketWatch · Top Stories",
       "category": "finance",
       "publishedAt": "2026-10-10T16:50:00.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/rugby-union/articles/c5y43m9l4rzyo?at_medium=rss&at_campaign=rss",
-      "title": "Edinburgh top URC after bonus-point win over Zebre",
-      "summary": "Edinburgh go top of the nascent United Rugby Championship table as a bonus-point victory at Zebre makes it three wins from three.",
-      "url": "https://www.bbc.co.uk/sport/rugby-union/articles/c5y43m9l4rzyo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/rugby-union/articles/c5y43m9l4rzyo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-10-10T16:41:22.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/cricket/articles/ckp8gqplvj85o?at_medium=rss&at_campaign=rss",
-      "title": "'What this team has been crying out for' - Renshaw 190 lifts Australia",
-      "summary": "After nine years and 280 days, Matt Renshaw scores epic century to put Australia on top against South Africa and push his own case for a regular place.",
-      "url": "https://www.bbc.co.uk/sport/cricket/articles/ckp8gqplvj85o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/cricket/articles/ckp8gqplvj85o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-10-10T16:18:38.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/rugby-union/articles/cwm237zey5rgo?at_medium=rss&at_campaign=rss",
@@ -673,16 +803,6 @@
       "publishedAt": "2026-10-10T14:58:55.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/sport/horse-racing/articles/cr62yq1xe1g9o?at_medium=rss&at_campaign=rss",
-      "title": "Darkness Falls beats Desert Castle in Dewhurst Stakes",
-      "summary": "Darkness Falls proves the stronger to narrowly beat Desert Castle in the Dewhurst Stakes at Newmarket.",
-      "url": "https://www.bbc.co.uk/sport/horse-racing/articles/cr62yq1xe1g9o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/horse-racing/articles/cr62yq1xe1g9o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-10-10T14:55:04.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/news/articles/c8vgx9ew571wo?at_medium=rss&at_campaign=rss",
       "title": "Drone strike by Sudan paramilitary kills 41 near Ethiopian border, rights group says",
       "summary": "Eight children are said to be among those killed by the strike, which hit a gathering of displaced people.",
@@ -733,16 +853,6 @@
       "publishedAt": "2026-10-10T14:00:01.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/sport/formula1/articles/cwn73gmz78reo?at_medium=rss&at_campaign=rss",
-      "title": "Verstappen wins sprint after Russell crashes out",
-      "summary": "Red Bull's Max Verstappen wins an incident-packed sprint race at the Singapore Grand Prix after George Russell crashes out of the lead.",
-      "url": "https://www.bbc.co.uk/sport/formula1/articles/cwn73gmz78reo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/formula1/articles/cwn73gmz78reo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-10-10T13:43:47.000Z"
-    },
-    {
       "id": "https://www.cnbc.com/2026/10/10/putin-trump-iran-war-russia-diesel.html",
       "title": "Putin relayed Iran war proposal to Trump, Kremlin says",
       "summary": "Putin's reported call with Trump regarding the Iran war comes on the heels of a deal for the U.S. to buy Russian diesel amid a surge in fuel prices.",
@@ -751,16 +861,6 @@
       "source": "CNBC · Finance",
       "category": "finance",
       "publishedAt": "2026-10-10T13:42:36.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/football/articles/cmx2dpwv02e1o?at_medium=rss&at_campaign=rss",
-      "title": "Who changed the game? - player ratings for Arsenal v Leeds",
-      "summary": "How Arsenal and Leeds players rated following their Premier League match.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cmx2dpwv02e1o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cmx2dpwv02e1o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-10-10T13:30:28.000Z"
     },
     {
       "id": "https://www.cnbc.com/2026/10/10/pokemon-card-values-grading-guide.html",
@@ -803,16 +903,6 @@
       "publishedAt": "2026-10-10T13:00:00.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/news/articles/c65yn7xvde7vo?at_medium=rss&at_campaign=rss",
-      "title": "'Cockroach' group leaders among hundreds detained in Delhi protest",
-      "summary": "The group - who are not registered as a political party in India - want electoral reforms ahead of crucial state elections.",
-      "url": "https://www.bbc.co.uk/news/articles/c65yn7xvde7vo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c65yn7xvde7vo?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-10-10T12:29:31.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/news/articles/cwy8lx1r2vrro?at_medium=rss&at_campaign=rss",
       "title": "Headmaster detained after BBC investigation into alleged sexual abuse of students",
       "summary": "Former students launched their own investigation, spending years collecting evidence and testimonies from others who say they were abused by the headteacher.",
@@ -843,16 +933,6 @@
       "publishedAt": "2026-10-10T12:00:01.000Z"
     },
     {
-      "id": "https://www.npr.org/2026/10/10/nx-s1-5982500/opinion-can-i-keep-the-baseball-i-caught",
-      "title": "Opinion: Can I keep the baseball I caught?",
-      "summary": "What would you do if you caught a baseball during the MLB playoffs? Give it to a kid nearby or keep it? This very scenario played out this week, with a fan deciding to keep the ball.",
-      "url": "https://www.npr.org/2026/10/10/nx-s1-5982500/opinion-can-i-keep-the-baseball-i-caught",
-      "canonicalUrl": "https://www.npr.org/2026/10/10/nx-s1-5982500/opinion-can-i-keep-the-baseball-i-caught",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-10-10T12:00:00.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/sport/cycling/articles/cqx2vm911870o?at_medium=rss&at_campaign=rss",
       "title": "'We lost the life of a brother' - rider protest delays Giro di Lombardia",
       "summary": "Riders at the Giro di Lombardia stage a protest over safety concerns which delays the start for five minutes, before 20-year-old Paul Seixas goes on to victory.",
@@ -873,16 +953,6 @@
       "publishedAt": "2026-10-10T11:00:01.000Z"
     },
     {
-      "id": "https://www.npr.org/2026/10/10/nx-s1-5996652/glp1-fda-naion-blind-lawsuit-ozempic",
-      "title": "Ongoing lawsuits allege GLP-1s can cause serious harm. But we don't know how often",
-      "summary": "Scant data about serious adverse effects makes it harder to answer scientific and legal questions about how often the drugs might cause serious harm like blindness or pancreatitis.",
-      "url": "https://www.npr.org/2026/10/10/nx-s1-5996652/glp1-fda-naion-blind-lawsuit-ozempic",
-      "canonicalUrl": "https://www.npr.org/2026/10/10/nx-s1-5996652/glp1-fda-naion-blind-lawsuit-ozempic",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-10-10T11:00:00.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/news/articles/cqkg50j1yd5lo?at_medium=rss&at_campaign=rss",
       "title": "Rogue Anthropic AI agent gave police fake tip in unsolved murder case",
       "summary": "Philadelphia police said the tip was \"flagged as spam\", but criticised the tech company for taking more than two months to detect and report the breach.",
@@ -891,6 +961,16 @@
       "source": "BBC News · World",
       "category": "general",
       "publishedAt": "2026-10-10T10:06:23.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/rugby-union/articles/c9zrdl4028mko?at_medium=rss&at_campaign=rss",
+      "title": "All Blacks power past Australia to retain Bledisloe Cup",
+      "summary": "New Zealand retain the Bledisloe Cup for a 23rd straight year as they power past Australia to extend their remarkable unbeaten run at Eden Park.",
+      "url": "https://www.bbc.co.uk/sport/rugby-union/articles/c9zrdl4028mko?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/rugby-union/articles/c9zrdl4028mko?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-10T09:21:28.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/news/articles/c6kgq7rqdql7o?at_medium=rss&at_campaign=rss",
@@ -911,36 +991,6 @@
       "source": "BBC Sport",
       "category": "sports",
       "publishedAt": "2026-10-10T09:10:35.000Z"
-    },
-    {
-      "id": "https://www.npr.org/2026/10/10/nx-s1-5993688/16-cozy-activities-to-add-to-your-fall-bucket-list",
-      "title": "16 cozy activities to add to your fall bucket list",
-      "summary": "Carve a pumpkin? You can do better than that. Fun and unusual ways to celebrate the season, from writing a gratitude letter to making an ancestral altar.",
-      "url": "https://www.npr.org/2026/10/10/nx-s1-5993688/16-cozy-activities-to-add-to-your-fall-bucket-list",
-      "canonicalUrl": "https://www.npr.org/2026/10/10/nx-s1-5993688/16-cozy-activities-to-add-to-your-fall-bucket-list",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-10-10T09:00:00.000Z"
-    },
-    {
-      "id": "https://www.npr.org/2026/10/10/nx-s1-5991897/democrats-latino-voters-influencers-bold-pac",
-      "title": "After losing ground with Latino voters, Democrats are turning to influencers for help",
-      "summary": "Democrats are hoping to win back Latino voters who have soured on both parties. They hope Latino content creators will bridge the gap.",
-      "url": "https://www.npr.org/2026/10/10/nx-s1-5991897/democrats-latino-voters-influencers-bold-pac",
-      "canonicalUrl": "https://www.npr.org/2026/10/10/nx-s1-5991897/democrats-latino-voters-influencers-bold-pac",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-10-10T09:00:00.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/football/articles/cxj0l2d4dp2vo?at_medium=rss&at_campaign=rss",
-      "title": "Delight for Scotland's Cuthbert after long summer of recovery",
-      "summary": "Erin Cuthbert expresses joy and relief at making her first appearance of the season in Scotland's impressive 2-0 win over Czech Republic.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cxj0l2d4dp2vo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cxj0l2d4dp2vo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-10-10T08:28:17.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/football/articles/ckz65plq04nqo?at_medium=rss&at_campaign=rss",
@@ -1013,16 +1063,6 @@
       "publishedAt": "2026-10-10T04:34:55.000Z"
     },
     {
-      "id": "https://www.cnbc.com/2026/10/09/trump-putin-diesel-russia-sanctions-ukraine.html",
-      "title": "Trump's diesel agreement with Putin accused of contradicting Russia sanctions law",
-      "summary": "Ukraine President Volodymyr Zelenskyy said in a searing statement that the U.S. easing sanctions on Moscow \"plays into Russia's hands.\"",
-      "url": "https://www.cnbc.com/2026/10/09/trump-putin-diesel-russia-sanctions-ukraine.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/09/trump-putin-diesel-russia-sanctions-ukraine.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-10-10T02:09:00.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/news/articles/cm79pdlywqd4o?at_medium=rss&at_campaign=rss",
       "title": "US country music star Ella Langley cancels show due to 'security threat'",
       "summary": "Police say they checked the concert venue in Tulsa, Oklahoma but \"could not find any threat\".",
@@ -1051,6 +1091,16 @@
       "source": "BBC News · World",
       "category": "general",
       "publishedAt": "2026-10-10T00:00:08.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/cricket/scorecard/e-236997?at_medium=rss&at_campaign=rss",
+      "title": "Australia bowlers take control of first Test v South Africa - scorecard",
+      "summary": "Latest scorecard from the first Test between South Africa and Australia in Durban.",
+      "url": "https://www.bbc.co.uk/sport/cricket/scorecard/e-236997?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/cricket/scorecard/e-236997?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-10T00:00:00.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/news/articles/crq5nlqnn184o?at_medium=rss&at_campaign=rss",
@@ -1123,16 +1173,6 @@
       "publishedAt": "2026-10-09T21:15:38.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/sport/football/articles/cwp8g1ry6rjlo?at_medium=rss&at_campaign=rss",
-      "title": "Greek takeaways: What did we learn from Lionesses' win?",
-      "summary": "England come away from Greece with a valuable first-leg lead in their Women's World Cup qualifying play-off - but who impressed in the 3-1 victory?",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cwp8g1ry6rjlo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cwp8g1ry6rjlo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-10-09T21:15:24.000Z"
-    },
-    {
       "id": "https://www.cnbc.com/2026/10/09/junk-bonds-are-flashing-yellow-watch-these-warning-signs.html",
       "title": "Junk bonds are 'flashing yellow.' Watch these warning signs",
       "summary": "Spreads have widened in the high-yield bond market, but that doesn't tell the whole story.",
@@ -1161,46 +1201,6 @@
       "source": "CNBC · Finance",
       "category": "finance",
       "publishedAt": "2026-10-09T20:16:58.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/videos/cqm263x40y37o?at_medium=rss&at_campaign=rss",
-      "title": "Thai Queen makes first solo flight in fighter jet",
-      "summary": "Thailand’s Queen Suthida made her first solo flight in a fighter jet, according to the Thai Royal Household.",
-      "url": "https://www.bbc.co.uk/news/videos/cqm263x40y37o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cqm263x40y37o?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-10-09T19:48:26.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/10/09/katie-zacharia-white-house-press-secretary.html",
-      "title": "Trump Media advisor Katie Zacharia offered White House press secretary role",
-      "summary": "The White House has tapped Katie Zacharia to be its next press secretary, a White House official confirmed to CNBC.",
-      "url": "https://www.cnbc.com/2026/10/09/katie-zacharia-white-house-press-secretary.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/09/katie-zacharia-white-house-press-secretary.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-10-09T19:25:28.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/10/09/tesla-full-self-driving-europe-regulator.html",
-      "title": "Tesla drops 'Full Self-Driving' brand name in Europe after regulator pushback",
-      "summary": "German regulators called Tesla's \"Full Self-Driving\" brand name \"somewhat misleading.\"",
-      "url": "https://www.cnbc.com/2026/10/09/tesla-full-self-driving-europe-regulator.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/09/tesla-full-self-driving-europe-regulator.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-10-09T19:21:14.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/10/09/trump-lisa-cook-fed-firing-committee-explained.html",
-      "title": "Trump created a committee to dig into the Fed's Lisa Cook. What is it and what comes next?",
-      "summary": "Trump’s bid to fire the Fed's Lisa Cook follows a Supreme Court ruling and could affect Jerome Powell, central bank independence and interest rates.",
-      "url": "https://www.cnbc.com/2026/10/09/trump-lisa-cook-fed-firing-committee-explained.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/09/trump-lisa-cook-fed-firing-committee-explained.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-10-09T19:19:00.000Z"
     }
   ],
   "sourceHealth": [
@@ -1231,7 +1231,7 @@
     {
       "name": "BBC Sport",
       "ok": true,
-      "itemCount": 78,
+      "itemCount": 79,
       "error": null
     },
     {
