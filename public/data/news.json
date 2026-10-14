@@ -1,16 +1,296 @@
 {
-  "generatedAt": "2026-10-13T21:13:54.408Z",
+  "generatedAt": "2026-10-14T01:12:46.825Z",
   "stale": false,
   "items": [
     {
+      "id": "https://www.bbc.co.uk/news/articles/cke8r4nmy36qo?at_medium=rss&at_campaign=rss",
+      "title": "What we know about the man who died falling from a Six Flags rollercoaster",
+      "summary": "Hassan Jihad Ibn Kariem died on Monday after police say he was ejected from a ride at a Six Flags amusement park in Georgia.",
+      "url": "https://www.bbc.co.uk/news/articles/cke8r4nmy36qo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cke8r4nmy36qo?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-10-14T00:59:16.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/10/14/singapore-gdp-q3.html",
+      "title": "Singapore third-quarter GDP growth softens from four-year high but beats estimates",
+      "summary": "The GDP print beat expectations of a 5% growth from economists polled by Reuters.",
+      "url": "https://www.cnbc.com/2026/10/14/singapore-gdp-q3.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/10/14/singapore-gdp-q3.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-10-14T00:28:34.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/ck1wvd9dvv22o?at_medium=rss&at_campaign=rss",
+      "title": "Pope diagnosed with lung cancer but had successful surgery, Vatican says",
+      "summary": "Pope Leo had successful surgery to remove a lower lobe of his right lung, the Vatican said.",
+      "url": "https://www.bbc.co.uk/news/articles/ck1wvd9dvv22o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ck1wvd9dvv22o?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-10-14T00:17:00.000Z"
+    },
+    {
       "id": "https://www.cnbc.com/2026/10/13/openai-employee-arrested-recording-device.html",
-      "title": "Saudi national OpenAI employee arrested after 'sophisticated recording device' planted in office",
+      "title": "FBI arrests Saudi OpenAI employee who allegedly planted recording device in conference room",
       "summary": "The Tuesday incident comes as the ChatGPT-maker, along with competitors, faces heightened scrutiny over its safety practices.",
       "url": "https://www.cnbc.com/2026/10/13/openai-employee-arrested-recording-device.html",
       "canonicalUrl": "https://www.cnbc.com/2026/10/13/openai-employee-arrested-recording-device.html",
       "source": "CNBC · Finance",
       "category": "finance",
-      "publishedAt": "2026-10-13T21:08:45.000Z"
+      "publishedAt": "2026-10-14T00:13:45.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/cw99zpmnxzmjo?at_medium=rss&at_campaign=rss",
+      "title": "Germany puts Ukrainian on trial accused of blowing up Nord Stream pipelines",
+      "summary": "Four years after the attacks, Serhii K will appear in court accused of a plot to destroy Russia's gas pipelines to Germany.",
+      "url": "https://www.bbc.co.uk/news/articles/cw99zpmnxzmjo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cw99zpmnxzmjo?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-10-13T23:42:22.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/videos/cqy8le2mrd0po?at_medium=rss&at_campaign=rss",
+      "title": "Watch: 'Traumatic' - Witnesses recount moment man fell out of Six Flags roller coaster",
+      "summary": "One person has died and others were injured after an incident on a rollercoaster at an amusement park in the US state of Georgia.",
+      "url": "https://www.bbc.co.uk/news/videos/cqy8le2mrd0po?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cqy8le2mrd0po?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-10-13T23:42:15.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/cm4g1rekpgnjo?at_medium=rss&at_campaign=rss",
+      "title": "Zimbabwean author denies using AI to write award-winning story",
+      "summary": "Simbarashe Kundizeza was responding to an accusation that has caused an uproar on social media.",
+      "url": "https://www.bbc.co.uk/news/articles/cm4g1rekpgnjo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm4g1rekpgnjo?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-10-13T23:31:10.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/10/14/goldman-says-investors-seek-profitable-chinese-business-growth-abroad.html",
+      "title": "Goldman says investors are looking for 'profitable' Chinese business growth overseas",
+      "summary": "Sluggish consumer demand in China has pushed many companies, such as electric car brands, to accelerate plans for entering other countries.",
+      "url": "https://www.cnbc.com/2026/10/14/goldman-says-investors-seek-profitable-chinese-business-growth-abroad.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/10/14/goldman-says-investors-seek-profitable-chinese-business-growth-abroad.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-10-13T23:05:12.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/cqrlyd1grwkko?at_medium=rss&at_campaign=rss",
+      "title": "Saka responds to Arteta's challenge with 'huge impact'",
+      "summary": "Bukayo Saka responds to the challenge set by Mikel Arteta as he comes off the bench to change the game against Lille in the Champions League.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cqrlyd1grwkko?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cqrlyd1grwkko?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-13T23:03:04.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/10/13/anthropic-wants-court-in-dc-to-rehear-appeal-of-pentagon-blacklist-.html",
+      "title": "Anthropic urges court in Washington, D.C. to rehear appeal of Pentagon blacklisting",
+      "summary": "Anthropic is asking a federal court in Washington, D.C. to rehear its appeal in a case concerning the Pentagon's blacklisting of the company's AI models.",
+      "url": "https://www.cnbc.com/2026/10/13/anthropic-wants-court-in-dc-to-rehear-appeal-of-pentagon-blacklist-.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/10/13/anthropic-wants-court-in-dc-to-rehear-appeal-of-pentagon-blacklist-.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-10-13T22:54:21.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/10/13/jim-cramer-accelevation-stock.html",
+      "title": "Here's where Jim Cramer stands on this newly public AI infrastructure stock",
+      "summary": "CNBC’s Jim Cramer said investors should hold off on buying newly public AI infrastructure company Accelevation Holdings.",
+      "url": "https://www.cnbc.com/2026/10/13/jim-cramer-accelevation-stock.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/10/13/jim-cramer-accelevation-stock.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-10-13T22:47:07.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/crx2d60y1py3o?at_medium=rss&at_campaign=rss",
+      "title": "Missiles intercepted near Riyadh after Saudi coalition hits Yemen fuel depot",
+      "summary": "The Saudi-led coalition fighting in Yemen struck a fuel depot near the Houthi-controlled capital, Sanaa.",
+      "url": "https://www.bbc.co.uk/news/articles/crx2d60y1py3o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/crx2d60y1py3o?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-10-13T22:29:55.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/10/13/g-s1-147968/pope-leo-has-lung-cancer-vatican-announces",
+      "title": "Pope Leo has lung cancer, the Vatican announces after surgery",
+      "summary": "Pope Leo XIV had surgery on Tuesday to remove a cancerous growth in his lung, the Vatican announced.",
+      "url": "https://www.npr.org/2026/10/13/g-s1-147968/pope-leo-has-lung-cancer-vatican-announces",
+      "canonicalUrl": "https://www.npr.org/2026/10/13/g-s1-147968/pope-leo-has-lung-cancer-vatican-announces",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-10-13T22:29:26.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/cmdx3nk7kwwro?at_medium=rss&at_campaign=rss",
+      "title": "Swans' Eom the target of alleged racism at Millwall",
+      "summary": "Swansea City head coach Vitor Matos says the lengthy stoppage during their 1-0 win away at Millwall was a result of racist abuse aimed at winger Ji-sung Eom.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cmdx3nk7kwwro?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cmdx3nk7kwwro?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-13T22:23:48.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/cmglwxd0d25xo?at_medium=rss&at_campaign=rss",
+      "title": "McArdle 'really encouraged' despite Portugal loss",
+      "summary": "Northern Ireland manager Michael McArdle says their play-off defeat by Portugal is \"the start of a new identity\" despite their heavy 7-1 aggregate loss.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cmglwxd0d25xo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cmglwxd0d25xo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-13T22:20:39.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/cm2kev8w934do?at_medium=rss&at_campaign=rss",
+      "title": "'Unplayable' Stanway a free-scoring warrior for Lionesses",
+      "summary": "Whatever the game, whatever the result, Georgia Stanway always seems to score for England.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cm2kev8w934do?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cm2kev8w934do?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-13T22:15:44.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/ck20r9qpw505o?at_medium=rss&at_campaign=rss",
+      "title": "Russian strikes hit key power plant in Kyiv, Zelensky says",
+      "summary": "The Ukrainian president says the ballistic missile strikes came with \"no early warning from our partners\".",
+      "url": "https://www.bbc.co.uk/news/articles/ck20r9qpw505o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ck20r9qpw505o?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-10-13T22:14:33.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/rugby-union/articles/c84g13lq3r2lo?at_medium=rss&at_campaign=rss",
+      "title": "Two punch-ups, two red cards, no chances left - Saracens sack Auvaa",
+      "summary": "Totoa Auvaa's young career has been derailed by a chaotic 14 months at Saracens which featured violence both on and off the pitch.",
+      "url": "https://www.bbc.co.uk/sport/rugby-union/articles/c84g13lq3r2lo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/rugby-union/articles/c84g13lq3r2lo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-13T22:12:16.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/crgqwv4vl24jo?at_medium=rss&at_campaign=rss",
+      "title": "Pakistan has locked down Imran Khan's stronghold - but it could backfire",
+      "summary": "Some fear the government's standoff with the former PM's supporters could bring more instability, not less.",
+      "url": "https://www.bbc.co.uk/news/articles/crgqwv4vl24jo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/crgqwv4vl24jo?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-10-13T22:07:40.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/cm5ynwpzkgk1o?at_medium=rss&at_campaign=rss",
+      "title": "'I'd talk to the TV': The paid companions bringing warmth to China's lonely",
+      "summary": "As loneliness grows in China, a new industry is emerging to provide companionship and support.",
+      "url": "https://www.bbc.co.uk/news/articles/cm5ynwpzkgk1o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm5ynwpzkgk1o?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-10-13T22:02:09.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/ckreyq9re0n0o?at_medium=rss&at_campaign=rss",
+      "title": "Who's to blame for the toxic smog choking South East Asia?",
+      "summary": "Anger is mounting at the companies accused of burning land in Indonesia and the authorities who have failed to stop them.",
+      "url": "https://www.bbc.co.uk/news/articles/ckreyq9re0n0o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ckreyq9re0n0o?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-10-13T22:01:43.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/videos/cm8xkxn8lqkeo?at_medium=rss&at_campaign=rss",
+      "title": "Why the lonely in China are hiring 'temporary children'",
+      "summary": "A new industry being dubbed the “loneliness economy” has emerged in China, with people hiring themselves out as companions to help the elderly.",
+      "url": "https://www.bbc.co.uk/news/videos/cm8xkxn8lqkeo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cm8xkxn8lqkeo?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-10-13T22:00:20.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/c8x235vx1d49o?at_medium=rss&at_campaign=rss",
+      "title": "Republic of Ireland to 'lock in' for World Cup dream",
+      "summary": "Republic of Ireland captain Katie McCabe is already focused on the final World Cup play-off with Poland after a big win over Kazakhstan.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c8x235vx1d49o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c8x235vx1d49o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-13T21:52:37.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/american-football/articles/c5zjxnwm8dzpo?at_medium=rss&at_campaign=rss",
+      "title": "Rams player suspended for punch & kicker cut by club",
+      "summary": "The fallout from the Los Angeles Rams' defeat by the Buffalo Bills continues as offensive lineman Alaric Jackson is suspended for punching an opponent while kicker Harrison Mevis is released.",
+      "url": "https://www.bbc.co.uk/sport/american-football/articles/c5zjxnwm8dzpo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/american-football/articles/c5zjxnwm8dzpo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-13T21:47:36.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/crlykw9eevx3o?at_medium=rss&at_campaign=rss",
+      "title": "Martinez issues scathing attack on Man Utd board - has he made things worse?",
+      "summary": "Lisandro Martinez launches a blistering attack on Manchester United's hierarchy for not strengthening the squad following qualification for the Champions League.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/crlykw9eevx3o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/crlykw9eevx3o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-13T21:43:09.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/cwg5jq4vlddzo?at_medium=rss&at_campaign=rss",
+      "title": "Saudi man charged with planting 'sophisticated' recording device in OpenAI office",
+      "summary": "Prosecutors say the device, wrapped in toilet paper, was found inserted in a USB port on the back of a TV in an executive conference room.",
+      "url": "https://www.bbc.co.uk/news/articles/cwg5jq4vlddzo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cwg5jq4vlddzo?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-10-13T21:42:49.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/ck4g17rrz1j5o?at_medium=rss&at_campaign=rss",
+      "title": "Pressure on Norway in play-off final - Wilkinson",
+      "summary": "Rhian Wilkinson says the pressure will be on Gemma Grainger's Norway in their Women's World Cup play-off final against Wales in December.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/ck4g17rrz1j5o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/ck4g17rrz1j5o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-13T21:32:09.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/10/13/six-flags-shares-plunge-after-hours-deadly-roller-coaster-incident-goliath-georgia.html",
+      "title": "Six Flags shares decline following deadly roller coaster incident",
+      "summary": "One person died and several others were injured in an incident involving the Goliath roller coaster at Six Flags Over Georgia, according to reports.",
+      "url": "https://www.cnbc.com/2026/10/13/six-flags-shares-plunge-after-hours-deadly-roller-coaster-incident-goliath-georgia.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/10/13/six-flags-shares-plunge-after-hours-deadly-roller-coaster-incident-goliath-georgia.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-10-13T21:18:03.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/10/13/judge-says-elon-musk-engaged-intimidation-of-ex-fema-cfo-mary-comans.html",
+      "title": "Judge says Musk engaged in intimidation of ex-FEMA CFO Mary Comans, clears her name",
+      "summary": "Ex-FEMA CFO Mary Comans' name was cleared by a federal judge after Elon Musk and other government officials falsely accused her of criminal actions in 2025.",
+      "url": "https://www.cnbc.com/2026/10/13/judge-says-elon-musk-engaged-intimidation-of-ex-fema-cfo-mary-comans.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/10/13/judge-says-elon-musk-engaged-intimidation-of-ex-fema-cfo-mary-comans.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-10-13T21:15:32.000Z"
     },
     {
       "id": "https://www.cnbc.com/2026/10/13/anthropic-q3-financials-ipo.html",
@@ -63,14 +343,14 @@
       "publishedAt": "2026-10-13T20:48:37.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/news/articles/ck1wvd9dvv22o?at_medium=rss&at_campaign=rss",
-      "title": "Pope diagnosed with lung cancer but had successful surgery, Vatican says",
-      "summary": "Pope Leo had successful surgery to remove a lower lobe of his right lung, the Vatican said.",
-      "url": "https://www.bbc.co.uk/news/articles/ck1wvd9dvv22o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ck1wvd9dvv22o?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-10-13T20:46:06.000Z"
+      "id": "https://www.theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device",
+      "title": "OpenAI employee arrested for allegedly planting a bug in a conference room",
+      "summary": "An OpenAI engineer was arrested after the company said it discovered a \"sophisticated recording device\" hidden in one of its offices. The employee was identified as Abdulrahman Alfozan, a 35-year-old Saudi national. Alfo",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device",
+      "canonicalUrl": "https://www.theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device",
+      "source": "The Verge · AI",
+      "category": "ai",
+      "publishedAt": "2026-10-13T20:45:25.000Z"
     },
     {
       "id": "https://www.cnbc.com/2026/10/13/bank-of-america-treasury-money-laundering.html",
@@ -81,16 +361,6 @@
       "source": "CNBC · Finance",
       "category": "finance",
       "publishedAt": "2026-10-13T20:45:01.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/10/13/six-flags-shares-plunge-after-hours-deadly-roller-coaster-incident-goliath-georgia.html",
-      "title": "Six Flags shares decline following deadly roller coaster incident",
-      "summary": "One person died and several others were injured in an incident involving the Goliath roller coaster at Six Flags Over Georgia, according to reports.",
-      "url": "https://www.cnbc.com/2026/10/13/six-flags-shares-plunge-after-hours-deadly-roller-coaster-incident-goliath-georgia.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/13/six-flags-shares-plunge-after-hours-deadly-roller-coaster-incident-goliath-georgia.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-10-13T20:43:11.000Z"
     },
     {
       "id": "https://www.marketwatch.com/story/the-spacex-threat-could-loom-over-at-ts-stock-for-a-prolonged-stretch-analyst-cautions-71436853?mod=mw_rss_topstories",
@@ -141,16 +411,6 @@
       "source": "MarketWatch · Top Stories",
       "category": "finance",
       "publishedAt": "2026-10-13T20:32:00.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/10/13/judge-says-elon-musk-engaged-intimidation-of-ex-fema-cfo-mary-comans.html",
-      "title": "Judge says Musk engaged in intimidation of ex-FEMA CFO Mary Comans, clears her name",
-      "summary": "Ex-FEMA CFO Mary Comans' name was cleared by a federal judge after Elon Musk and other government officials falsely accused her of criminal actions in 2025.",
-      "url": "https://www.cnbc.com/2026/10/13/judge-says-elon-musk-engaged-intimidation-of-ex-fema-cfo-mary-comans.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/13/judge-says-elon-musk-engaged-intimidation-of-ex-fema-cfo-mary-comans.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-10-13T20:30:08.000Z"
     },
     {
       "id": "https://www.marketwatch.com/story/my-wife-says-we-cant-afford-to-retire-we-have-4-million-do-i-just-keep-working-f1b6b085?mod=mw_rss_topstories",
@@ -243,14 +503,14 @@
       "publishedAt": "2026-10-13T20:05:58.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/news/articles/crx2d60y1py3o?at_medium=rss&at_campaign=rss",
-      "title": "Missiles intercepted near Riyadh after Saudi coalition hits Yemen fuel depot",
-      "summary": "The Saudi-led coalition fighting in Yemen struck a fuel depot near the Houthi-controlled capital, Sanaa.",
-      "url": "https://www.bbc.co.uk/news/articles/crx2d60y1py3o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/crx2d60y1py3o?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
+      "id": "https://www.npr.org/2026/10/13/nx-s1-5998849/what-an-economics-nobel-prize-winner-knows-about-pricing",
+      "title": "What an economics Nobel Prize winner knows about pricing",
+      "summary": "NPR's Ailsa Chang chats with Michael Woodford of Columbia University, who was one of two Americans awarded the Nobel Prize in Economics.",
+      "url": "https://www.npr.org/2026/10/13/nx-s1-5998849/what-an-economics-nobel-prize-winner-knows-about-pricing",
+      "canonicalUrl": "https://www.npr.org/2026/10/13/nx-s1-5998849/what-an-economics-nobel-prize-winner-knows-about-pricing",
+      "source": "NPR · Top Stories",
       "category": "general",
-      "publishedAt": "2026-10-13T20:02:15.000Z"
+      "publishedAt": "2026-10-13T20:03:35.000Z"
     },
     {
       "id": "https://www.npr.org/2026/10/13/g-s1-147871/trump-russia-diesel-deal-congressional-response",
@@ -293,6 +553,16 @@
       "publishedAt": "2026-10-13T19:46:12.000Z"
     },
     {
+      "id": "https://www.theverge.com/news/1010365/shopify-opens-its-catalog-up-to-more-ai-agents",
+      "title": "Shopify opens its catalog up to more AI agents",
+      "summary": "More AI agents will soon be able to browse and purchase from Shopify listings, marking an expansion of the company's agentic commerce ambitions. Shopify announced Tuesday it will let shoppers configure their AI agents to",
+      "url": "https://www.theverge.com/news/1010365/shopify-opens-its-catalog-up-to-more-ai-agents",
+      "canonicalUrl": "https://www.theverge.com/news/1010365/shopify-opens-its-catalog-up-to-more-ai-agents",
+      "source": "The Verge · AI",
+      "category": "ai",
+      "publishedAt": "2026-10-13T19:42:42.000Z"
+    },
+    {
       "id": "https://www.npr.org/2026/10/13/nx-s1-6000055/east-potomac-golf-course-tree-clearing-judge",
       "title": "A judge blocks the government's tree-clearing spree at a municipal D.C. golf course",
       "summary": "Locals and preservationists have long opposed Trump's plan to redevelop a municipal D.C. golf course. That legal fight escalated after the government cleared hundreds of trees on short notice.",
@@ -325,7 +595,7 @@
     {
       "id": "https://www.bbc.co.uk/news/articles/cr5ynplvpg7lo?at_medium=rss&at_campaign=rss",
       "title": "Trump ousts Kimberly Guilfoyle as US ambassador to Greece after corruption allegations",
-      "summary": "Guilfoyle the allegations of improper conduct are \"false\" and being ambassador was the \"honour of a lifetime\".",
+      "summary": "Guilfoyle said the allegations of improper conduct were false and that being ambassador was the \"honour of a lifetime\".",
       "url": "https://www.bbc.co.uk/news/articles/cr5ynplvpg7lo?at_medium=rss&at_campaign=rss",
       "canonicalUrl": "https://www.bbc.co.uk/news/articles/cr5ynplvpg7lo?at_medium=rss&at_campaign=rss",
       "source": "BBC News · World",
@@ -594,7 +864,7 @@
     },
     {
       "id": "https://www.theverge.com/ai-artificial-intelligence/1010277/mia-goth-instagram-ai-shirt-deepfake-divorce",
-      "title": "Actress Mia Goth says it’s ‘incomprehensible’ that Instagram allowed an AI image of her to spread",
+      "title": "It’s ‘incomprehensible’ that Instagram allowed an AI image of Mia Goth to spread, say her reps",
       "summary": "Earlier this month, news broke that actress Mia Goth had filed for divorce from actor and filmmaker Shia LaBeouf. An Instagram post from the account miagoth_ - marked with a blue verified checkmark - quickly spread. The ",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1010277/mia-goth-instagram-ai-shirt-deepfake-divorce",
       "canonicalUrl": "https://www.theverge.com/ai-artificial-intelligence/1010277/mia-goth-instagram-ai-shirt-deepfake-divorce",
@@ -631,16 +901,6 @@
       "source": "BBC Sport",
       "category": "sports",
       "publishedAt": "2026-10-13T16:34:03.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/articles/c6lykwjz17lgo?at_medium=rss&at_campaign=rss",
-      "title": "Ex-England hooker Singleton joins Glasgow a year after cardiac event",
-      "summary": "Former England hooker Jack Singleton joins Glasgow Warriors on a short-term deal a year after experiencing a cardiac event in training.",
-      "url": "https://www.bbc.co.uk/sport/articles/c6lykwjz17lgo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/articles/c6lykwjz17lgo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-10-13T16:17:23.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/football/videos/cmze418n8ke9o?at_medium=rss&at_campaign=rss",
@@ -753,16 +1013,6 @@
       "publishedAt": "2026-10-13T15:12:59.000Z"
     },
     {
-      "id": "https://www.cnbc.com/2026/10/13/unitedhealth-group-unh-earnings-q3-2026.html",
-      "title": "UnitedHealth Group tops estimates, hikes profit outlook as insurer manages high medical costs",
-      "summary": "UnitedHealth Group said it expects 2026 adjusted earnings of at least $20.50 per share, up from a previous outlook of $19.50 to $20.00 per share.",
-      "url": "https://www.cnbc.com/2026/10/13/unitedhealth-group-unh-earnings-q3-2026.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/13/unitedhealth-group-unh-earnings-q3-2026.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-10-13T15:04:35.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/sport/formula1/articles/cw62yglre6y5o?at_medium=rss&at_campaign=rss",
       "title": "A 'landmark' moment - why has Rwanda been chosen to host F1?",
       "summary": "How Rwanda has succeeded where Morocco and South Africa, among others, have failed by agreeing a deal to stage the African Grand Prix.",
@@ -771,16 +1021,6 @@
       "source": "BBC Sport",
       "category": "sports",
       "publishedAt": "2026-10-13T15:01:17.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/articles/cmn06w5x9g25o?at_medium=rss&at_campaign=rss",
-      "title": "Bulgaria summons Russian ambassador after ship sinks in Black Sea drone attack",
-      "summary": "Six crew members are rescued but 10 are missing after a merchant ship was sunk overnight, Bulgaria says.",
-      "url": "https://www.bbc.co.uk/news/articles/cmn06w5x9g25o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmn06w5x9g25o?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-10-13T14:51:59.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/rugby-union/articles/cxly4q1g796zo?at_medium=rss&at_campaign=rss",
@@ -803,26 +1043,6 @@
       "publishedAt": "2026-10-13T13:55:45.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/news/articles/c8y56re7ldqyo?at_medium=rss&at_campaign=rss",
-      "title": "Ex-president named leader of new DR Congo rebel coalition",
-      "summary": "Joseph Kabila had previously denied having links to the M23 rebels, which control much of eastern DR Congo.",
-      "url": "https://www.bbc.co.uk/news/articles/c8y56re7ldqyo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c8y56re7ldqyo?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-10-13T13:40:45.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/10/13/arm-mortgage-borrowers-rate-adjustment.html",
-      "title": "Thousands of homeowners face adjustable-rate mortgage resets — and much higher payments",
-      "summary": "Adjustable-rate mortgages with low introductory interest rates are facing their first adjustment at a time when rates are much higher, according to new data.",
-      "url": "https://www.cnbc.com/2026/10/13/arm-mortgage-borrowers-rate-adjustment.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/13/arm-mortgage-borrowers-rate-adjustment.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-10-13T13:35:01.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/sport/cricket/articles/cmd7qv2pg333o?at_medium=rss&at_campaign=rss",
       "title": "Rusty or something more? South Africa's concern after Australia loss",
       "summary": "Australia complete 214-run victory over South Africa in Durban. What does heavy defeat mean for the world champions?",
@@ -843,16 +1063,6 @@
       "publishedAt": "2026-10-13T13:27:31.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/news/articles/c6vg9nj4l322o?at_medium=rss&at_campaign=rss",
-      "title": "Hungarian MPs scrap Orbán's anti-LGBTQ measures",
-      "summary": "LGBTQ and human rights activists warmly welcomed the move, but call for changes to other Orbán-era laws.",
-      "url": "https://www.bbc.co.uk/news/articles/c6vg9nj4l322o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6vg9nj4l322o?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-10-13T13:23:45.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/sport/rugby-league/articles/cw5ynmn86prro?at_medium=rss&at_campaign=rss",
       "title": "Different ways to win - what Rugby League World Cup success looks like",
       "summary": "Some teams have their eyes on a trophy - others are prioritising longer-term gains. BBC Sport assesses a Rugby League World Cup that comes at a pivotal time for the international game.",
@@ -861,16 +1071,6 @@
       "source": "BBC Sport",
       "category": "sports",
       "publishedAt": "2026-10-13T13:16:34.000Z"
-    },
-    {
-      "id": "https://www.theverge.com/tech/1009704/apple-homeview-smart-display-first-look",
-      "title": "Apple launches HomeView, its first smart display for the home",
-      "summary": "It's finally here: Apple's long-rumored smart display, the Apple HomeView, has arrived. I got a first look at the device in New York City this week, and it's gorgeous. The HomeView puts a small, vibrant screen atop a spe",
-      "url": "https://www.theverge.com/tech/1009704/apple-homeview-smart-display-first-look",
-      "canonicalUrl": "https://www.theverge.com/tech/1009704/apple-homeview-smart-display-first-look",
-      "source": "The Verge · AI",
-      "category": "ai",
-      "publishedAt": "2026-10-13T13:00:00.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/cricket/articles/cqe8lg3xpmr3o?at_medium=rss&at_campaign=rss",
@@ -893,26 +1093,6 @@
       "publishedAt": "2026-10-13T12:22:59.000Z"
     },
     {
-      "id": "https://www.cnbc.com/2026/10/13/blackrock-baillie-gifford-bet-big-on-icon-3d-printed-homes.html",
-      "title": "BlackRock and Baillie Gifford bet big on Icon 3D printed homes",
-      "summary": "Icon, one of the biggest players in 3D printed real estate, is announcing its $200 million Series D financing co-led by Baillie Gifford and funds managed by BlackRock, among others.",
-      "url": "https://www.cnbc.com/2026/10/13/blackrock-baillie-gifford-bet-big-on-icon-3d-printed-homes.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/13/blackrock-baillie-gifford-bet-big-on-icon-3d-printed-homes.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-10-13T12:18:44.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/articles/cm8ezp4g7p6po?at_medium=rss&at_campaign=rss",
-      "title": "BBC FM radio transmissions suspended in Afghanistan",
-      "summary": "BBC programming is still reaching audiences on shortwave, medium wave, via satellite and online.",
-      "url": "https://www.bbc.co.uk/news/articles/cm8ezp4g7p6po?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cm8ezp4g7p6po?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-10-13T12:13:57.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/news/videos/cqpvgrkp0xpyo?at_medium=rss&at_campaign=rss",
       "title": "Watch: Emergency calls from botched Christa Pike execution released",
       "summary": "A series of calls, obtained by the Associated Press, reveal emergency services were delayed in reaching Pike.",
@@ -933,16 +1113,6 @@
       "publishedAt": "2026-10-13T11:27:24.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/weather/articles/cmlye0d7q7zno?at_medium=rss&at_campaign=rss",
-      "title": "Super El Niño sets another record as it strengthens to 'unprecedented levels'",
-      "summary": "El Niño has continued to strengthen, with several key measures now in record territory. Simon King explores how it compares to previous events.",
-      "url": "https://www.bbc.co.uk/weather/articles/cmlye0d7q7zno?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/weather/articles/cmlye0d7q7zno?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-10-13T11:18:44.000Z"
-    },
-    {
       "id": "https://www.npr.org/2026/10/13/g-s1-147822/up-first-newsletter-trump-ads-funding-campaign-rallies-ilhan-omar",
       "title": "Government spent millions on Trump ads. And, federal agents raid Ilhan Omar's home",
       "summary": "The government is using millions of taxpayers' dollars on pro-Trump ads, even after the president said this would not happen. And, federal agents search Rep. Ilhan Omar's D.C. home.",
@@ -951,26 +1121,6 @@
       "source": "NPR · Top Stories",
       "category": "general",
       "publishedAt": "2026-10-13T11:08:14.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/articles/cw3djkpp2g78o?at_medium=rss&at_campaign=rss",
-      "title": "Carragher settles tax debt to avoid bankruptcy",
-      "summary": "Jamie Carragher has settled an unpaid tax bill with His Majesty's Revenue and Customs.",
-      "url": "https://www.bbc.co.uk/news/articles/cw3djkpp2g78o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cw3djkpp2g78o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-10-13T11:02:28.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/10/13/santoli-the-stock-market-is-at-a-critical-juncture.html",
-      "title": "The stock market is at a critical juncture. Wall Street is convinced it will resolve in the bulls' favor",
-      "summary": "There's an extraordinary split between the headline S&P 500 pinned just under a record high and the median stock in the index struggling in a 16% drawdown.",
-      "url": "https://www.cnbc.com/2026/10/13/santoli-the-stock-market-is-at-a-critical-juncture.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/13/santoli-the-stock-market-is-at-a-critical-juncture.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-10-13T10:59:35.000Z"
     },
     {
       "id": "https://www.npr.org/2026/10/13/nx-s1-5998798/pakistan-imposes-emergency-rule-in-former-prime-ministers-stronghold",
@@ -993,16 +1143,6 @@
       "publishedAt": "2026-10-13T10:44:22.000Z"
     },
     {
-      "id": "https://www.theverge.com/ai-artificial-intelligence/1009802/character-ai-files-for-bankruptcy-disney",
-      "title": "Character.AI files for bankruptcy",
-      "summary": "Character.AI, one of the first breakout startups of the generative AI boom, has filed for bankruptcy and is selling some of its assets to Disney. The company, which builds various online bots for users to chat or rolepla",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1009802/character-ai-files-for-bankruptcy-disney",
-      "canonicalUrl": "https://www.theverge.com/ai-artificial-intelligence/1009802/character-ai-files-for-bankruptcy-disney",
-      "source": "The Verge · AI",
-      "category": "ai",
-      "publishedAt": "2026-10-13T10:32:23.000Z"
-    },
-    {
       "id": "https://www.npr.org/sections/planet-money/2026/10/13/g-s1-147816/what-ice-cream-has-to-do-with-this-years-nobel-prize-in-economics",
       "title": "What ice cream has to do with this year's Nobel Prize in economics",
       "summary": "Prices can get sticky. That helps explain why recessions hurt so much — and what policymakers can do about them.",
@@ -1021,16 +1161,6 @@
       "source": "ScienceDaily · Top Science",
       "category": "academic",
       "publishedAt": "2026-10-13T10:17:08.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/rugby-union/articles/c680z7dr7l93o?at_medium=rss&at_campaign=rss",
-      "title": "End use of artificial pitches - Rees-Zammit",
-      "summary": "Wales and Bristol star Louis Rees-Zammit calls for the end of artificial playing surfaces in top-flight rugby.",
-      "url": "https://www.bbc.co.uk/sport/rugby-union/articles/c680z7dr7l93o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/rugby-union/articles/c680z7dr7l93o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-10-13T10:13:53.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/american-football/videos/cm62yxgzp25po?at_medium=rss&at_campaign=rss",
@@ -1071,136 +1201,6 @@
       "source": "ScienceDaily · Top Science",
       "category": "academic",
       "publishedAt": "2026-10-13T09:47:22.000Z"
-    },
-    {
-      "id": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models",
-      "title": "AI labs are buying data from dead startups to train their models",
-      "summary": "When Keelan Miskell began winding down his crypto startup this year, he didn’t think its data was worth much: the users were anonymous, the company just a few years old. But he’s since turned the firm’s digital archives ",
-      "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models",
-      "canonicalUrl": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models",
-      "source": "MIT Technology Review · AI",
-      "category": "ai",
-      "publishedAt": "2026-10-13T09:00:00.000Z"
-    },
-    {
-      "id": "https://www.npr.org/2026/10/13/nx-s1-5996916/2026-election-midterms-polls-horse-race",
-      "title": "Polls are a snapshot, and other helpful things to remember during the midterm elections",
-      "summary": "With Election Day just a few weeks away — and millions of votes already cast — midterm polls are everywhere. While polling can be a helpful tool to understand the electorate, it's not a crystal ball.",
-      "url": "https://www.npr.org/2026/10/13/nx-s1-5996916/2026-election-midterms-polls-horse-race",
-      "canonicalUrl": "https://www.npr.org/2026/10/13/nx-s1-5996916/2026-election-midterms-polls-horse-race",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-10-13T09:00:00.000Z"
-    },
-    {
-      "id": "https://www.npr.org/2026/10/13/nx-s1-5994388/2026-elections-midterm-independent-candidates",
-      "title": "Win or lose, independent candidates want to meet voters in the middle",
-      "summary": "Nearly 200 independent candidates in more than 100 congressional races are trying to prove there's an alternative to the two party system — even though the chance of winning is very low.",
-      "url": "https://www.npr.org/2026/10/13/nx-s1-5994388/2026-elections-midterm-independent-candidates",
-      "canonicalUrl": "https://www.npr.org/2026/10/13/nx-s1-5994388/2026-elections-midterm-independent-candidates",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-10-13T09:00:00.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/football/articles/cmq5nljx7972o?at_medium=rss&at_campaign=rss",
-      "title": "How much did Man City's rule breaking cost your team?",
-      "summary": "The potential impact of Manchester City's rule breaking runs deep, including missed Champions League qualification, relegation and Premier League prize money.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cmq5nljx7972o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cmq5nljx7972o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-10-13T08:12:53.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/articles/cmn045en7d88o?at_medium=rss&at_campaign=rss",
-      "title": "Breaking Bad actor RJ Mitte dies aged 34",
-      "summary": "Mitte, who lived with cerebral palsy, starred as Walter White Jr in the Emmy-winning drama series.",
-      "url": "https://www.bbc.co.uk/news/articles/cmn045en7d88o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmn045en7d88o?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-10-13T08:03:34.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/formula1/articles/ck3wv14n070eo?at_medium=rss&at_campaign=rss",
-      "title": "Does Norris-Piastri crash show 'papaya rules' failing? - F1 Q&A",
-      "summary": "BBC Sport F1 correspondent Andrew Benson answers your latest questions after the Singapore Grand Prix.",
-      "url": "https://www.bbc.co.uk/sport/formula1/articles/ck3wv14n070eo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/formula1/articles/ck3wv14n070eo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-10-13T06:54:13.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/football/articles/c6kglnzvznn0o?at_medium=rss&at_campaign=rss",
-      "title": "The star is Luis Enrique - inside the plans to keep PSG at the top",
-      "summary": "As Luis Enrique bids to guide PSG to a third successive Champions League triumph, Guillem Balague looks at how the coach keeps his side at the top.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/c6kglnzvznn0o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c6kglnzvznn0o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-10-13T06:34:33.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/netball/articles/cv98zl9579ggo?at_medium=rss&at_campaign=rss",
-      "title": "An insurance policy with no guarantee - the complex issue of egg freezing in sport",
-      "summary": "BBC Sport examines the potential benefits, risks and unanswered questions facing female athletes about egg freezing.",
-      "url": "https://www.bbc.co.uk/sport/netball/articles/cv98zl9579ggo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/netball/articles/cv98zl9579ggo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-10-13T05:12:56.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/articles/cqd089r55vp3o?at_medium=rss&at_campaign=rss",
-      "title": "Death threats and isolation - the cost of fighting sexual violence in Iraq",
-      "summary": "Women say they share stories of abuse to highlight the issue, despite social pressure and safety fears.",
-      "url": "https://www.bbc.co.uk/news/articles/cqd089r55vp3o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqd089r55vp3o?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-10-13T05:02:57.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/articles/cr20wlp09gn3o?at_medium=rss&at_campaign=rss",
-      "title": "Where the US midterm elections will be won and lost",
-      "summary": "An in-depth look at the key polling, races and issues ahead of an election that will define Trump’s final two years as president.",
-      "url": "https://www.bbc.co.uk/news/articles/cr20wlp09gn3o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cr20wlp09gn3o?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-10-13T05:02:44.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/articles/c9y7lgg2vdggo?at_medium=rss&at_campaign=rss",
-      "title": "Russia's offensive ability is broken, Kyiv's former top general tells BBC",
-      "summary": "In his first interview since being forced from his post, Gen Syrskyi speaks about Ukraine's future in the war.",
-      "url": "https://www.bbc.co.uk/news/articles/c9y7lgg2vdggo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c9y7lgg2vdggo?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-10-13T05:02:34.000Z"
-    },
-    {
-      "id": "https://www.sciencedaily.com/releases/2026/10/261012185011.htm",
-      "title": "Scientists uncover a hidden map of the brain with 539 distinct regions",
-      "summary": "Scientists have uncovered a hidden layer of organization in the brain by creating the first detailed 3D map of its lipids, the fatty molecules essential for brain structure and communication. By analyzing millions of mea",
-      "url": "https://www.sciencedaily.com/releases/2026/10/261012185011.htm",
-      "canonicalUrl": "https://www.sciencedaily.com/releases/2026/10/261012185011.htm",
-      "source": "ScienceDaily · Top Science",
-      "category": "academic",
-      "publishedAt": "2026-10-13T05:00:55.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/videos/cqx298yx4k48o?at_medium=rss&at_campaign=rss",
-      "title": "BBC's Orla Guerin travels with Yemen's southern national security forces through desert battlefield",
-      "summary": "Orla Guerin travelled through Yemen, with forces loyal to its internationally recognised government, to a remote desert battlefield where Houthi rebels were dislodged just days ago.",
-      "url": "https://www.bbc.co.uk/news/videos/cqx298yx4k48o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cqx298yx4k48o?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-10-13T04:27:22.000Z"
     }
   ],
   "sourceHealth": [
@@ -1231,7 +1231,7 @@
     {
       "name": "BBC Sport",
       "ok": true,
-      "itemCount": 65,
+      "itemCount": 72,
       "error": null
     },
     {
@@ -1255,7 +1255,7 @@
     {
       "name": "BBC News · World",
       "ok": true,
-      "itemCount": 26,
+      "itemCount": 23,
       "error": null
     },
     {
