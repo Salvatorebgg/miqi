@@ -1,36 +1,416 @@
 {
-  "generatedAt": "2026-10-31T19:58:13.596Z",
+  "generatedAt": "2026-11-01T01:08:22.862Z",
   "stale": false,
   "items": [
     {
+      "id": "https://www.bbc.co.uk/news/articles/c893z699q401o?at_medium=rss&at_campaign=rss",
+      "title": "How the downfall of Serbia's Vučiċ mirrored that of Hungary's Orbán",
+      "summary": "Defeat for Serbia's Aleksandar Vučiċ in last weekend's vote was a carbon copy of Viktor Orbán's fall in Hungary.",
+      "url": "https://www.bbc.co.uk/news/articles/c893z699q401o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c893z699q401o?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-11-01T00:55:06.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/formula1/articles/cje36e0gze4ko?at_medium=rss&at_campaign=rss",
+      "title": "On 'tense' Antonelli's big weekend, this was Hamilton's day",
+      "summary": "As Kimi Antonelli bids to become F1's youngest world champion, veteran Lewis Hamilton rolled back the years to take his first Ferrari pole.",
+      "url": "https://www.bbc.co.uk/sport/formula1/articles/cje36e0gze4ko?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/formula1/articles/cje36e0gze4ko?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-01T00:35:28.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/c60qk92dvlwgo?at_medium=rss&at_campaign=rss",
+      "title": "India's opposition set to hold mega rally seeking election chief's resignation",
+      "summary": "It comes amid growing protests over a voter roll revision exercise feared to leave 130 million voters off rolls.",
+      "url": "https://www.bbc.co.uk/news/articles/c60qk92dvlwgo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c60qk92dvlwgo?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-11-01T00:12:07.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/videos/cmx23wyk769eo?at_medium=rss&at_campaign=rss",
+      "title": "How 'brave & balanced' Brighton beat Man City",
+      "summary": "Match of the Day pundits Danny Murphy and Stephan Warnock analyse Brighton's impressive 1-0 victory over Manchester City, with Warnock praising the balance of the Seagulls squad.",
+      "url": "https://www.bbc.co.uk/sport/football/videos/cmx23wyk769eo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/videos/cmx23wyk769eo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-31T23:59:24.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/videos/c9vgrjej28dvo?at_medium=rss&at_campaign=rss",
+      "title": "Has Martinez become a liability for Man Utd?",
+      "summary": "Match of the Day pundits Danny Murphy and Stephan Warnock analyse Lisandro Martinez's performance in Manchester United's 2-0 defeat to Chelsea, where the Argentinian defender was sent off.",
+      "url": "https://www.bbc.co.uk/sport/football/videos/c9vgrjej28dvo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/videos/c9vgrjej28dvo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-31T23:59:22.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/10/31/trump-murdoch-wsj-epstein-defamation-lawsuit-dismissed.html",
+      "title": "Trump defamation suit against Murdoch, WSJ over Epstein letter dismissed with prejudice",
+      "summary": "President Donald Trump denied writing a birthday letter to sex offender Jeffrey Epstein, which was the subject of a 2025 Wall Street Journal article.",
+      "url": "https://www.cnbc.com/2026/10/31/trump-murdoch-wsj-epstein-defamation-lawsuit-dismissed.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/10/31/trump-murdoch-wsj-epstein-defamation-lawsuit-dismissed.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-10-31T23:56:40.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/c8g47wl06vkqo?at_medium=rss&at_campaign=rss",
+      "title": "Are Manchester United really at risk of a relegation scrap?",
+      "summary": "Manchester United's current tally of nine points from seven games would not even get them 30 points if it was continued for the full season.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c8g47wl06vkqo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c8g47wl06vkqo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-31T23:52:28.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/formula1/articles/c3n04vjjpkv4o?at_medium=rss&at_campaign=rss",
+      "title": "Ocon denies reports of physical altercation behind dropping",
+      "summary": "Esteban Ocon denies reports that his being dropped by Haas at the Mexico City Grand Prix was a consequence of a row with team principal Ayao Komatsu descending into a physical confrontation.",
+      "url": "https://www.bbc.co.uk/sport/formula1/articles/c3n04vjjpkv4o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/formula1/articles/c3n04vjjpkv4o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-31T23:43:41.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/boxing/articles/cmy4xey44yqno?at_medium=rss&at_campaign=rss",
+      "title": "Canelo reclaims title with vintage win over Mbilli",
+      "summary": "Saul 'Canelo' Alvarez reclaims the WBC super-middleweight title with a vintage performance against Christian Mbilli in Riyadh.",
+      "url": "https://www.bbc.co.uk/sport/boxing/articles/cmy4xey44yqno?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/boxing/articles/cmy4xey44yqno?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-31T23:42:30.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/horse-racing/articles/c6x2vdmv1zx7o?at_medium=rss&at_campaign=rss",
+      "title": "Moore wins Breeders' Cup Turf for record sixth time",
+      "summary": "Jockey Ryan Moore and trainer Aidan O'Brien both made history as they won the Breeders' Cup Turf with Benvenuto Cellini.",
+      "url": "https://www.bbc.co.uk/sport/horse-racing/articles/c6x2vdmv1zx7o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/horse-racing/articles/c6x2vdmv1zx7o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-31T23:08:14.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/ck5ynzv8404ro?at_medium=rss&at_campaign=rss",
+      "title": "Coventry, Ipswich, Hull - promoted trio enjoy positive starts",
+      "summary": "The three teams have collected a respectable 31 points in total after nine games, and all currently sit above the relegation zone.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/ck5ynzv8404ro?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/ck5ynzv8404ro?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-31T23:08:07.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/cmq5npz5l5geo?at_medium=rss&at_campaign=rss",
+      "title": "I've been stuck on a tiny Pacific island for years and can't get a transit visa to fly home",
+      "summary": "Ruchira Ranasingha, 50, has been stranded in the Cook Islands since 2023 and wants to return to Sri Lanka.",
+      "url": "https://www.bbc.co.uk/news/articles/cmq5npz5l5geo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmq5npz5l5geo?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-10-31T23:06:13.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/videos/ckpdg3eq06z5o?at_medium=rss&at_campaign=rss",
+      "title": "Kane misses Bayern penalty before late Dortmund goal earns draw",
+      "summary": "Harry Kane misses from the spot as Bayern Muich are held to a 2-2 draw with Borussia Dortmund in Der Klassiker after Fabio Silva's late equaliser.",
+      "url": "https://www.bbc.co.uk/sport/football/videos/ckpdg3eq06z5o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/videos/ckpdg3eq06z5o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-31T23:05:55.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/10/31/nx-s1-6024694/virginia-dc-sue-trump-arch",
+      "title": "Virginia and D.C. sue to block construction of Trump arch",
+      "summary": "U.S. District Court Judge Tanya Chutkin ordered both sides to talk and to agree on a proposed briefing schedule on the motion for a temporary restraining order by Saturday evening.",
+      "url": "https://www.npr.org/2026/10/31/nx-s1-6024694/virginia-dc-sue-trump-arch",
+      "canonicalUrl": "https://www.npr.org/2026/10/31/nx-s1-6024694/virginia-dc-sue-trump-arch",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-10-31T22:48:51.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/c83vqypr511po?at_medium=rss&at_campaign=rss",
+      "title": "McInnes demands more after delivering Rangers' trophy chance",
+      "summary": "Derek McInnes knows there is room for improvement as he steers in-form Rangers to the Premier Sports Cup final with a 1-0 win over Aberdeen.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c83vqypr511po?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c83vqypr511po?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-31T22:40:38.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/videos/ckn8w20nn9g7o?at_medium=rss&at_campaign=rss",
+      "title": "Chelsea beat 10-man Man Utd to pile more pressure on Carrick",
+      "summary": "Lisandro Martinez is sent off for Manchester United as they suffer a 2-0 defeat against Chelsea at Stamford Bridge to pile more pressure on under-fire manager Michael Carrick.",
+      "url": "https://www.bbc.co.uk/sport/football/videos/ckn8w20nn9g7o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/videos/ckn8w20nn9g7o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-31T22:30:16.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/videos/cqx28l2gdepxo?at_medium=rss&at_campaign=rss",
+      "title": "Brighton pick up first away league victory over Man City",
+      "summary": "Brighton pick up their first away league victory at Manchester City, winning 1-0 to condemn City to a second successive Premier League defeat.",
+      "url": "https://www.bbc.co.uk/sport/football/videos/cqx28l2gdepxo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/videos/cqx28l2gdepxo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-31T22:30:05.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/videos/cm93zv0zkjqlo?at_medium=rss&at_campaign=rss",
+      "title": "Coventry out of bottom three after win over struggling Sunderland",
+      "summary": "Frank Lampard's Coventry City lift themselves out of the relegation zone after beating struggling Sunderland, who remain rooted to the bottom of the Premier League table.",
+      "url": "https://www.bbc.co.uk/sport/football/videos/cm93zv0zkjqlo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/videos/cm93zv0zkjqlo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-31T22:29:50.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/videos/c8qln4qq2656o?at_medium=rss&at_campaign=rss",
+      "title": "Enciso's stunning goal earns Ipswich draw at Hull",
+      "summary": "Julio Enciso scores the equalising goal for Ipswich as they draw 2-2 with Hull at the MKM Stadium.",
+      "url": "https://www.bbc.co.uk/sport/football/videos/c8qln4qq2656o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/videos/c8qln4qq2656o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-31T22:29:40.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/videos/cxvgdrg33m72o?at_medium=rss&at_campaign=rss",
+      "title": "Spurs revival continues with victory over 10-man Crystal Palace",
+      "summary": "Jean-Philippe Mateta was shown an early red card as Crystal Palace lose 2-0 at Tottenham to increase the pressure on manager Pierre Sage.",
+      "url": "https://www.bbc.co.uk/sport/football/videos/cxvgdrg33m72o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/videos/cxvgdrg33m72o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-31T22:29:29.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/videos/c6zxj1vzwx1xo?at_medium=rss&at_campaign=rss",
+      "title": "Evanilson scores again as Bournemouth beat Leeds",
+      "summary": "Forward Evanilson continues his fine goalscoring form by netting in a fourth Premier League match in a row to help Bournemouth defeat Leeds United at the Vitality Stadium.",
+      "url": "https://www.bbc.co.uk/sport/football/videos/c6zxj1vzwx1xo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/videos/c6zxj1vzwx1xo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-31T22:29:21.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/videos/ck1l3z063n8vo?at_medium=rss&at_campaign=rss",
+      "title": "Thiago on target as Brentford beat Forest",
+      "summary": "Igor Thiago's second-half goal helps Brentford to their first win in five as they beat Nottingham Forest 2-0 at the Gtech Community Stadium.",
+      "url": "https://www.bbc.co.uk/sport/football/videos/ck1l3z063n8vo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/videos/ck1l3z063n8vo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-31T22:29:11.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/videos/cmwy9rylr0e6o?at_medium=rss&at_campaign=rss",
+      "title": "Suzuki mistake gifts Fulham point at Villa",
+      "summary": "Aston Villa goalkeeper Zion Suzuki's second-half mistake sees Fulham secure a 1-1 draw at Villa Park after Nicolas Jackson had given the hosts the lead.",
+      "url": "https://www.bbc.co.uk/sport/football/videos/cmwy9rylr0e6o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/videos/cmwy9rylr0e6o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-31T22:29:02.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/10/31/binance-hack-asset-coverage-withdrawals.html",
+      "title": "Binance says 90% of $6.3 billion hack losses are now covered, plans to resume withdrawals Sunday",
+      "summary": "Binance says it has restored backing for 90% of assets affected by its $6.3 billion hack and is planning to resume withdrawals, subject to security checks.",
+      "url": "https://www.cnbc.com/2026/10/31/binance-hack-asset-coverage-withdrawals.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/10/31/binance-hack-asset-coverage-withdrawals.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-10-31T22:27:56.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/crz98lwn3pvzo?at_medium=rss&at_campaign=rss",
+      "title": "Man Utd enquire about Toney - Sunday's gossip",
+      "summary": "Manchester United enquire about Ivan Toney's availability, Barcelona are tracking Chelsea winger Estevao Willian, Jean-Philippe Mateta is set to leave Crystal Palace in January, plus more.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/crz98lwn3pvzo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/crz98lwn3pvzo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-31T22:14:36.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/ckpdg3ql4169o?at_medium=rss&at_campaign=rss",
+      "title": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
+      "summary": "The Federal Bureau of Investigation (FBI) says North Korea was responsible for the hack.",
+      "url": "https://www.bbc.co.uk/news/articles/ckpdg3ql4169o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ckpdg3ql4169o?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-10-31T22:11:45.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/videos/cmqln15wdyxgo?at_medium=rss&at_campaign=rss",
+      "title": "AC Milan score three first-half goals to seal derby victory over Inter",
+      "summary": "Christian Pulisic, Adrien Rabiot and Diego Moreira score in the first-half to help AC Milan to a 3-1 victory over city rivals Inter Milan in the first Milan derby of the season in Serie A.",
+      "url": "https://www.bbc.co.uk/sport/football/videos/cmqln15wdyxgo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/videos/cmqln15wdyxgo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-31T21:58:09.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/rugby-union/articles/cm3el2gwlwwdo?at_medium=rss&at_campaign=rss",
+      "title": "Bowen double helps Cardiff beat pointless Ospreys",
+      "summary": "Cardiff lift themselves back into the top half of the United Rugby Championship (URC) by defeating Ospreys 26-0 in a scrappy Welsh derby at St Helen's.",
+      "url": "https://www.bbc.co.uk/sport/rugby-union/articles/cm3el2gwlwwdo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/rugby-union/articles/cm3el2gwlwwdo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-31T21:44:20.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/videos/ck0j0y87j303o?at_medium=rss&at_campaign=rss",
+      "title": "Thousands demonstrate in Paris as protests spread across Europe",
+      "summary": "More than 320,000 people demonstrated across France against the rising cost of living and poor public services, with clashes between some protesters and police.",
+      "url": "https://www.bbc.co.uk/news/videos/ck0j0y87j303o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/videos/ck0j0y87j303o?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-10-31T21:29:01.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/c6n04v897qe4o?at_medium=rss&at_campaign=rss",
+      "title": "Are De Zerbi's Spurs finding elusive consistency?",
+      "summary": "Are Spurs finally finding elusive consistency under Roberto de Zerbi after a third successive Premier League win, asks chief football writer Phil McNulty?",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c6n04v897qe4o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c6n04v897qe4o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-31T21:16:11.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/10/31/nx-s1-6022285/mixed-economic-forecast-weighs-heavy-ahead-of-midterms",
+      "title": "Mixed economic forecast weighs heavy ahead of midterms",
+      "summary": "There was a mixed Halloween bag of economic news this week. GDP growth is up, but so are prices. For now at least, interest rates are staying the same. What does that mean for the midterm elections?",
+      "url": "https://www.npr.org/2026/10/31/nx-s1-6022285/mixed-economic-forecast-weighs-heavy-ahead-of-midterms",
+      "canonicalUrl": "https://www.npr.org/2026/10/31/nx-s1-6022285/mixed-economic-forecast-weighs-heavy-ahead-of-midterms",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-10-31T21:14:35.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/c6d7qwnz1jnjo?at_medium=rss&at_campaign=rss",
+      "title": "Verbruggen spreads belief as Brighton continue to impress",
+      "summary": "Goalkeeper Bart Verbruggen was the man of the moment on Saturday afternoon as he produced an impressive individual display to help Brighton beat Manchester City",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c6d7qwnz1jnjo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c6d7qwnz1jnjo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-31T20:36:26.000Z"
+    },
+    {
       "id": "https://www.bbc.co.uk/sport/rugby-union/articles/cj5ynk53x39eo?at_medium=rss&at_campaign=rss",
-      "title": "Saints come from behind to beat in-form Gloucester",
+      "title": "Saints rally to beat Gloucester but Mitchell hobbles off injured",
       "summary": "Late tries from George Hendy and Rory Hutchison gift Northampton Saints victory over stubborn Gloucester.",
       "url": "https://www.bbc.co.uk/sport/rugby-union/articles/cj5ynk53x39eo?at_medium=rss&at_campaign=rss",
       "canonicalUrl": "https://www.bbc.co.uk/sport/rugby-union/articles/cj5ynk53x39eo?at_medium=rss&at_campaign=rss",
       "source": "BBC Sport",
       "category": "sports",
-      "publishedAt": "2026-10-31T19:52:21.000Z"
+      "publishedAt": "2026-10-31T20:35:17.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/sport/tennis/articles/cq398yn8zvr9o?at_medium=rss&at_campaign=rss",
-      "title": "World number one-bound Zverev loses to De Minaur",
-      "summary": "Alexander Zverev loses his first match since securing the men's world number one ranking as he suffers a surprise defeat by Alex de Minaur in the semi-finals of the Vienna Open.",
-      "url": "https://www.bbc.co.uk/sport/tennis/articles/cq398yn8zvr9o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/tennis/articles/cq398yn8zvr9o?at_medium=rss&at_campaign=rss",
+      "id": "https://www.bbc.co.uk/sport/football/articles/cvn067174knjo?at_medium=rss&at_campaign=rss",
+      "title": "Glasner fears he will be next Forest sacking if wins don't follow",
+      "summary": "Nottingham Forest head coach Oliver Glasner warns he will be the fifth sacking in just over a year by the club, unless results improve soon.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cvn067174knjo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cvn067174knjo?at_medium=rss&at_campaign=rss",
       "source": "BBC Sport",
       "category": "sports",
-      "publishedAt": "2026-10-31T19:44:58.000Z"
+      "publishedAt": "2026-10-31T20:26:15.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/news/videos/ck0j0y87j303o?at_medium=rss&at_campaign=rss",
-      "title": "Clashes erupt between police and protesters in Paris",
-      "summary": "Over 320,000 people protested around France in a third weekend of demonstrations against the rising cost of living and poor public services.",
-      "url": "https://www.bbc.co.uk/news/videos/ck0j0y87j303o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/videos/ck0j0y87j303o?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-10-31T19:37:43.000Z"
+      "id": "https://www.bbc.co.uk/sport/football/articles/cv369yp2451lo?at_medium=rss&at_campaign=rss",
+      "title": "More goals for Lankshear, home woes for Hammers - Aaron McLean's EFL Takeaways",
+      "summary": "BBC Final Score pundit Aaron McLean looks at the weekend's talking points in the EFL, including Middlesbrough and West Ham United.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cv369yp2451lo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cv369yp2451lo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-31T20:24:50.000Z"
+    },
+    {
+      "id": "https://www.marketwatch.com/story/my-abusive-ex-husband-promised-20-000-for-our-kids-education-now-he-refuses-to-pay-is-he-legally-obligated-325ef50f?mod=mw_rss_topstories",
+      "title": "My abusive ex-husband promised $20,000 for our kids&#x2019; education. Now he refuses to pay. Is he legally obligated?",
+      "summary": "&#x201c;Before our divorce, my former mother-in-law entrusted him with $20,000 for each of our daughters to invest on their behalf.&#x201d;",
+      "url": "https://www.marketwatch.com/story/my-abusive-ex-husband-promised-20-000-for-our-kids-education-now-he-refuses-to-pay-is-he-legally-obligated-325ef50f?mod=mw_rss_topstories",
+      "canonicalUrl": "https://www.marketwatch.com/story/my-abusive-ex-husband-promised-20-000-for-our-kids-education-now-he-refuses-to-pay-is-he-legally-obligated-325ef50f?mod=mw_rss_topstories",
+      "source": "MarketWatch · Top Stories",
+      "category": "finance",
+      "publishedAt": "2026-10-31T20:15:00.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/cw054yj1g4e4o?at_medium=rss&at_campaign=rss",
+      "title": "Has Cliftonville's season finally turned a corner?",
+      "summary": "BBC Sport NI explores if Cliftonville's emphatic 7-1 win over Carrick Rangers could be a catalyst for improvement in their season.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cw054yj1g4e4o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cw054yj1g4e4o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-31T20:13:48.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/videos/c9203ymmn1m3o?at_medium=rss&at_campaign=rss",
+      "title": "Tottenham mood 'totally different' - De Zerbi",
+      "summary": "Tottenham manager Roberto De Zerbi said the mood at the club is \"totally different\" after picking up a third straight league victory with a 2-0 win over Crystal Palace.",
+      "url": "https://www.bbc.co.uk/sport/football/videos/c9203ymmn1m3o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/videos/c9203ymmn1m3o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-31T20:13:33.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/10/31/xai-naacp-clean-air-act-lawsuit-dismissal.html",
+      "title": "SpaceX loses bid to toss NAACP lawsuit over Memphis data center air pollution",
+      "summary": "The Colossus data centers and a power plant that SpaceXAI is also building in Southaven, Mississippi, have faced community backlash for years.",
+      "url": "https://www.cnbc.com/2026/10/31/xai-naacp-clean-air-act-lawsuit-dismissal.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/10/31/xai-naacp-clean-air-act-lawsuit-dismissal.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-10-31T20:12:37.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/cmrry892zpkro?at_medium=rss&at_campaign=rss",
+      "title": "Sunderland's paradox - San Siro trip amid relegation battle",
+      "summary": "Sunderland were last season's surprise package in the Premier League, but this time they are struggling after Coventry handed them their sixth defeat.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cmrry892zpkro?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cmrry892zpkro?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-10-31T20:03:10.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/10/31/openai-fundraising-20-billion-valuation.html",
+      "title": "OpenAI pares fundraising goal, now seeking up to $20 billion in latest round",
+      "summary": "The funding round is still in progress and has not closed, so the figures are subject to change, a person directly familiar with the deal told CNBC.",
+      "url": "https://www.cnbc.com/2026/10/31/openai-fundraising-20-billion-valuation.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/10/31/openai-fundraising-20-billion-valuation.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-10-31T19:56:23.000Z"
     },
     {
       "id": "https://www.npr.org/2026/10/31/g-s1-151121/france-seethes-again-as-youth-led-protests-sweep-europe",
@@ -54,23 +434,13 @@
     },
     {
       "id": "https://www.bbc.co.uk/news/articles/cqglw3k7djp1o?at_medium=rss&at_campaign=rss",
-      "title": "'We came back from hell', say Ukrainians after years in Russia-occupied frontline city",
-      "summary": "One evacuated couple says they crossed minefields in Oleshky in a search for food.",
+      "title": "'We came back from hell', say Ukrainians after years in Russia-occupied front-line city",
+      "summary": "One evacuated couple says they crossed minefields in Oleshky in search of food.",
       "url": "https://www.bbc.co.uk/news/articles/cqglw3k7djp1o?at_medium=rss&at_campaign=rss",
       "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqglw3k7djp1o?at_medium=rss&at_campaign=rss",
       "source": "BBC News · World",
       "category": "general",
       "publishedAt": "2026-10-31T19:22:26.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/10/31/binance-hack-asset-coverage-withdrawals.html",
-      "title": "Binance says 90% of $6.3 billion hack losses are now covered, plans to resume withdrawals Sunday",
-      "summary": "Binance says it has restored backing for 90% of assets affected by its $6.3 billion hack and is planning to resume withdrawals, subject to security checks.",
-      "url": "https://www.cnbc.com/2026/10/31/binance-hack-asset-coverage-withdrawals.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/31/binance-hack-asset-coverage-withdrawals.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-10-31T19:16:25.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/football/articles/cve8rkd8r302o?at_medium=rss&at_campaign=rss",
@@ -101,16 +471,6 @@
       "source": "MarketWatch · Top Stories",
       "category": "finance",
       "publishedAt": "2026-10-31T19:00:00.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/10/31/xai-naacp-clean-air-act-lawsuit-dismissal.html",
-      "title": "SpaceX loses bid to toss NAACP lawsuit over Memphis data center air pollution",
-      "summary": "The Colossus data centers and a power plant that SpaceXAI is also building in Southaven, Mississippi, have faced community backlash for years.",
-      "url": "https://www.cnbc.com/2026/10/31/xai-naacp-clean-air-act-lawsuit-dismissal.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/31/xai-naacp-clean-air-act-lawsuit-dismissal.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-10-31T18:56:37.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/rugby-union/articles/c3vgxjnew1w0o?at_medium=rss&at_campaign=rss",
@@ -153,16 +513,6 @@
       "publishedAt": "2026-10-31T18:42:33.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/sport/football/articles/ckz65vw61417o?at_medium=rss&at_campaign=rss",
-      "title": "Matos moves aside to give players the plaudits",
-      "summary": "Vitor Matos says he wants Swansea City's players to take the plaudits after leaving them to savour the moment after an emphatic victory over Blackburn Rovers.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/ckz65vw61417o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/ckz65vw61417o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-10-31T18:39:36.000Z"
-    },
-    {
       "id": "https://www.marketwatch.com/story/is-it-curtains-for-cola-saving-social-security-could-mean-changing-the-cost-of-living-adjustment-867c6bd8?mod=mw_rss_topstories",
       "title": "Is it curtains for COLA? Saving Social Security could mean changing the cost-of-living adjustment.",
       "summary": "Several proposals consider changing the way retirees receive inflation protection. Here&#x2019;s what it could cost you.",
@@ -171,16 +521,6 @@
       "source": "MarketWatch · Top Stories",
       "category": "finance",
       "publishedAt": "2026-10-31T18:33:00.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/iplayer/episode/l00590gm?at_medium=rss&at_campaign=rss",
-      "title": "Watch: Youth Olympics Opening Ceremony",
-      "summary": "Follow for live coverage of the Youth Olympics Opening Ceremony from Dakar, Senegal.",
-      "url": "https://www.bbc.co.uk/iplayer/episode/l00590gm?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/iplayer/episode/l00590gm?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-10-31T18:16:27.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/boxing/articles/crpdg3qwjg4eo?at_medium=rss&at_campaign=rss",
@@ -283,16 +623,6 @@
       "publishedAt": "2026-10-31T16:55:47.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/sport/rugby-union/articles/cjvgxel1xxvno?at_medium=rss&at_campaign=rss",
-      "title": "'We're history makers now' - King proud as Ireland win SA series",
-      "summary": "Ireland captain Erin King hails her side as \"history makers\" after they seal a Test series win on South African soil.",
-      "url": "https://www.bbc.co.uk/sport/rugby-union/articles/cjvgxel1xxvno?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/rugby-union/articles/cjvgxel1xxvno?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-10-31T16:50:44.000Z"
-    },
-    {
       "id": "https://www.marketwatch.com/story/whats-the-first-thing-most-people-do-with-their-401-k-after-they-retire-nothing-8a606518?mod=mw_rss_topstories",
       "title": "80% of workers make this 401(k) mistake when they retire",
       "summary": "Other tax repercussions crop up down the road because balances build up, and RMDs get complicated",
@@ -311,16 +641,6 @@
       "source": "BBC Sport",
       "category": "sports",
       "publishedAt": "2026-10-31T16:34:42.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/articles/ckpdg3ql4169o?at_medium=rss&at_campaign=rss",
-      "title": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
-      "summary": "Two analytics firms say they have robust intelligence pointing to a North Korean state-backed group as the likely culprit.",
-      "url": "https://www.bbc.co.uk/news/articles/ckpdg3ql4169o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ckpdg3ql4169o?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-10-31T16:32:08.000Z"
     },
     {
       "id": "https://www.cnbc.com/2026/10/31/binance-crypto-hack-safety.html",
@@ -363,16 +683,6 @@
       "publishedAt": "2026-10-31T15:37:11.000Z"
     },
     {
-      "id": "https://www.marketwatch.com/story/there-may-be-better-investment-options-my-church-received-1-5-million-from-a-parishioner-is-3-75-interest-enough-5164d790?mod=mw_rss_topstories",
-      "title": "Our church has a $1.5 million bequest earning 3.75% in a savings account. Are we throwing money away?",
-      "summary": "&#x201c;Given the size and long-term nature of this gift, we want to make sure the funds are managed prudently.&#x201d;",
-      "url": "https://www.marketwatch.com/story/there-may-be-better-investment-options-my-church-received-1-5-million-from-a-parishioner-is-3-75-interest-enough-5164d790?mod=mw_rss_topstories",
-      "canonicalUrl": "https://www.marketwatch.com/story/there-may-be-better-investment-options-my-church-received-1-5-million-from-a-parishioner-is-3-75-interest-enough-5164d790?mod=mw_rss_topstories",
-      "source": "MarketWatch · Top Stories",
-      "category": "finance",
-      "publishedAt": "2026-10-31T15:30:00.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/sport/cycling/articles/cwg5j38gzy69o?at_medium=rss&at_campaign=rss",
       "title": "Pogacar 'happy to be alive' after 'scary' crash",
       "summary": "Five-time Tour de France champion Tadej Pogacar says he is \"just happy to be alive\", two months after suffering three fractured vertebrae in a crash.",
@@ -381,16 +691,6 @@
       "source": "BBC Sport",
       "category": "sports",
       "publishedAt": "2026-10-31T15:26:18.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/football/articles/c6073yeg52xeo?at_medium=rss&at_campaign=rss",
-      "title": "Kane beat Mbappe to Ballon d'Or by just 28 points",
-      "summary": "Voting figures show Harry Kane beat second-placed Kylian Mbappe to the men's Ballon d'Or by one of the tightest winning margins in the award's history.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/c6073yeg52xeo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c6073yeg52xeo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-10-31T15:21:24.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/football/videos/cr5ynzdpjnn9o?at_medium=rss&at_campaign=rss",
@@ -414,8 +714,8 @@
     },
     {
       "id": "https://www.bbc.co.uk/sport/football/videos/cqrlywrdjdzyo?at_medium=rss&at_campaign=rss",
-      "title": "Carrick bemoans Man Utd defending in Chelsea loss",
-      "summary": "Manchester United manager Michael Carrick takes issue with his side's defending, particularly for the first goal they conceded in their 2-0 defeat to Chelsea in the Premier League.",
+      "title": "Carrick bemoans Man Utd defending in loss to Chelsea",
+      "summary": "Manchester United manager Michael Carrick takes issue with his side's defending, particularly for the first goal they conceded in their 2-0 defeat by Chelsea in the Premier League.",
       "url": "https://www.bbc.co.uk/sport/football/videos/cqrlywrdjdzyo?at_medium=rss&at_campaign=rss",
       "canonicalUrl": "https://www.bbc.co.uk/sport/football/videos/cqrlywrdjdzyo?at_medium=rss&at_campaign=rss",
       "source": "BBC Sport",
@@ -431,16 +731,6 @@
       "source": "BBC Sport",
       "category": "sports",
       "publishedAt": "2026-10-31T15:12:40.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/formula1/articles/crwydk35zlnvo?at_medium=rss&at_campaign=rss",
-      "title": "Hirakawa replaces Ocon for Mexico City Grand Prix",
-      "summary": "Ryo Hirakawa will race for Haas at the Mexico City Grand Prix, replacing Esteban Ocon.",
-      "url": "https://www.bbc.co.uk/sport/formula1/articles/crwydk35zlnvo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/formula1/articles/crwydk35zlnvo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-10-31T15:05:11.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/football/articles/c3j47prvlz04o?at_medium=rss&at_campaign=rss",
@@ -461,16 +751,6 @@
       "source": "BBC News · World",
       "category": "general",
       "publishedAt": "2026-10-31T14:28:15.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/football/articles/cqj6jp63k87zo?at_medium=rss&at_campaign=rss",
-      "title": "Carragher apologises to Villa for 'wrong' language",
-      "summary": "Jamie Carragher apologises for \"clumsy and wrong\" language when linking manager Unai Emery with becoming Manchester United head coach, after Aston Villa threatened to sue him.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cqj6jp63k87zo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cqj6jp63k87zo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-10-31T13:51:00.000Z"
     },
     {
       "id": "https://www.npr.org/2026/10/31/nx-s1-6024423/criminal-probe-alaska-senate-candidate",
@@ -683,16 +963,6 @@
       "publishedAt": "2026-10-31T10:38:30.000Z"
     },
     {
-      "id": "https://www.cnbc.com/make-it/2026/10/23/giant-halloween-skeleton-decorations.html",
-      "title": "The rise of the 15-foot skeleton—how a viral novelty became a Halloween staple",
-      "summary": "In just six years, giant skeletons have gone from an absurd viral novelty to the centerpiece of an expanding retail arms race for the front lawn.",
-      "url": "https://www.cnbc.com/make-it/2026/10/23/giant-halloween-skeleton-decorations.html",
-      "canonicalUrl": "https://www.cnbc.com/make-it/2026/10/23/giant-halloween-skeleton-decorations.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-10-31T10:27:19.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/sport/rugby-union/articles/cm75p91x04x5o?at_medium=rss&at_campaign=rss",
       "title": "Wales complete Japan double to end WXV on a high",
       "summary": "Wales completed a WXV double over Japan with a comfortable 29-5 victory in Kumagaya City.",
@@ -723,31 +993,11 @@
       "publishedAt": "2026-10-31T09:01:00.000Z"
     },
     {
-      "id": "https://www.npr.org/2026/10/31/nx-s1-5963520/ai-writing-detectors-pangram",
-      "title": "Your writing was flagged as AI. What does that actually mean?",
-      "summary": "As editors turn to imperfect AI detection tools to weed out machine-generated submissions, writers who say they were falsely accused of using AI are left wondering what triggered a positive result.",
-      "url": "https://www.npr.org/2026/10/31/nx-s1-5963520/ai-writing-detectors-pangram",
-      "canonicalUrl": "https://www.npr.org/2026/10/31/nx-s1-5963520/ai-writing-detectors-pangram",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-10-31T09:00:00.000Z"
-    },
-    {
-      "id": "https://www.npr.org/2026/10/31/nx-s1-6021471/ex-typhoon-halong-damages-western-alaska-native-villages-kipnuk",
-      "title": "After last year's storm, this remote Alaska town is still picking up the pieces",
-      "summary": "In October, 2025, the remnants of a typhoon seriously damaged Alaska Native villages in the far western part of the state. A year later, one of the hardest hit communities is still recovering.",
-      "url": "https://www.npr.org/2026/10/31/nx-s1-6021471/ex-typhoon-halong-damages-western-alaska-native-villages-kipnuk",
-      "canonicalUrl": "https://www.npr.org/2026/10/31/nx-s1-6021471/ex-typhoon-halong-damages-western-alaska-native-villages-kipnuk",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-10-31T09:00:00.000Z"
-    },
-    {
-      "id": "https://www.npr.org/2026/10/31/nx-s1-5992790/data-centers-west-virginia-skiing-dark-skies",
-      "title": "Plans for a data center threaten scenic wilderness and dark skies in West Virginia",
-      "summary": "Residents are fighting back against plans for a project that would span thousands of acres near the Monongahela National Forest and popular outdoor recreation, ski areas and dark sky sites.",
-      "url": "https://www.npr.org/2026/10/31/nx-s1-5992790/data-centers-west-virginia-skiing-dark-skies",
-      "canonicalUrl": "https://www.npr.org/2026/10/31/nx-s1-5992790/data-centers-west-virginia-skiing-dark-skies",
+      "id": "https://www.npr.org/2026/10/31/g-s1-149981/listener-questions-npr-midterms-2026-election",
+      "title": "Can I trust the polls? And other questions from listeners about the 2026 midterms",
+      "summary": "Ahead of Election Day, listeners send in questions about whether debates are dead, if polls are reliable for election coverage and how Trump might work with Democrats if they win control of Congress.",
+      "url": "https://www.npr.org/2026/10/31/g-s1-149981/listener-questions-npr-midterms-2026-election",
+      "canonicalUrl": "https://www.npr.org/2026/10/31/g-s1-149981/listener-questions-npr-midterms-2026-election",
       "source": "NPR · Top Stories",
       "category": "general",
       "publishedAt": "2026-10-31T09:00:00.000Z"
@@ -933,26 +1183,6 @@
       "publishedAt": "2026-10-30T23:26:16.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/news/videos/cmp3gp2vg078o?at_medium=rss&at_campaign=rss",
-      "title": "How has the ceasefire in Russian-occupied Oleshky been unfolding?",
-      "summary": "Ukraine correspondent Dan Johnson explains the temporary ceasefire in the devastated town of Oleshky.",
-      "url": "https://www.bbc.co.uk/news/videos/cmp3gp2vg078o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cmp3gp2vg078o?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-10-30T23:19:17.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/football/articles/ck3r52vn758xo?at_medium=rss&at_campaign=rss",
-      "title": "Man Utd target Barcelona's Lopez - Saturday's gossip",
-      "summary": "Manchester United target Barcelona's Fermin Lopez, Lisandro Martinez is attracting interest from the La Liga side, Arsenal eye Club Brugge striker Nicolo Tresoldi, plus more.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/ck3r52vn758xo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/ck3r52vn758xo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-10-30T23:08:16.000Z"
-    },
-    {
       "id": "https://www.cnbc.com/2026/10/30/alaska-senate-election-doj-lawsuit-sullivan-peltola.html",
       "title": "Alaska Senate election: DOJ wants to 'segregate' all ballots for 2nd Sullivan candidate",
       "summary": "The winner of the Alaska election could determine whether Republicans retain their majority in the U.S. Senate or if Democrats take control of the chamber.",
@@ -971,236 +1201,6 @@
       "source": "CNBC · Finance",
       "category": "finance",
       "publishedAt": "2026-10-30T22:52:04.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/10/30/meta-outlook-to-revised-to-negative-by-sp-after-cash-flow-negative.html",
-      "title": "Meta outlook revised downward by S&P on cash flow and capex concerns",
-      "summary": "Meta has been given a negative outlook by S&P Global Ratings due to the company's hefty capital expenditures and concerns about free cash flow.",
-      "url": "https://www.cnbc.com/2026/10/30/meta-outlook-to-revised-to-negative-by-sp-after-cash-flow-negative.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/30/meta-outlook-to-revised-to-negative-by-sp-after-cash-flow-negative.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-10-30T22:42:26.000Z"
-    },
-    {
-      "id": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3",
-      "title": "Apple Intelligence is finally coming to China with iOS 27.3",
-      "summary": "Apple will launch Apple Intelligence in China with iOS 27.3, the company announced on its Chinese newsroom website, as reported by MacRumors. The Apple Intelligence features will be available first in an iOS 27.3 beta th",
-      "url": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3",
-      "canonicalUrl": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3",
-      "source": "The Verge · AI",
-      "category": "ai",
-      "publishedAt": "2026-10-30T22:32:53.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/10/30/jim-cramer-week-ahead-apple-amd-jobs-report.html",
-      "title": "Cramer’s week ahead: Expect more volatility as tech earnings, midterms loom",
-      "summary": "Investors await earnings from Apple, AMD, and other major companies, as well as the midterm elections and the monthly jobs report.",
-      "url": "https://www.cnbc.com/2026/10/30/jim-cramer-week-ahead-apple-amd-jobs-report.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/30/jim-cramer-week-ahead-apple-amd-jobs-report.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-10-30T22:17:13.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/articles/cmd6dp2y576do?at_medium=rss&at_campaign=rss",
-      "title": "G20 'family photo' cancelled after protests over presence of Russian minister",
-      "summary": "UK Foreign Secretary Ed Miliband confronted his Russian counterpart at the meeting and accused his government of killing innocent civilians in Ukraine.",
-      "url": "https://www.bbc.co.uk/news/articles/cmd6dp2y576do?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmd6dp2y576do?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-10-30T22:11:52.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/10/30/gamble-on-democracy-inside-suspicious-election-contracts-trading-on-prediction-markets-.html",
-      "title": "Gamble on democracy: Inside suspicious election-contracts trading on prediction markets",
-      "summary": "CNBC examines unusual price spikes in election prediction markets and how low-volume contracts can be moved by relatively small trades.",
-      "url": "https://www.cnbc.com/2026/10/30/gamble-on-democracy-inside-suspicious-election-contracts-trading-on-prediction-markets-.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/30/gamble-on-democracy-inside-suspicious-election-contracts-trading-on-prediction-markets-.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-10-30T22:00:53.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/make-it/2026/10/30/binance-crypto-hack-customer-funds.html",
-      "title": "Binance loses $6.3 billion in crypto heist—what happens to your money when an exchange gets hacked",
-      "summary": "Crypto exchanges make it easier to buy, sell and store digital assets, but they come with risks, too.",
-      "url": "https://www.cnbc.com/make-it/2026/10/30/binance-crypto-hack-customer-funds.html",
-      "canonicalUrl": "https://www.cnbc.com/make-it/2026/10/30/binance-crypto-hack-customer-funds.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-10-30T21:45:52.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo?at_medium=rss&at_campaign=rss",
-      "title": "Crypto giant Binance attempting to recover $6.3bn stolen in hack linked to North Korea",
-      "summary": "The cyber-attack, which the company describes as complex, is believed to be the largest ever of its kind.",
-      "url": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-10-30T21:13:14.000Z"
-    },
-    {
-      "id": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers",
-      "title": "Sam Altman says it’s better for RAM to be in a data center than on your desk",
-      "summary": "Asked about supply chain shortages, like the ongoing RAM shortage, OpenAI CEO Sam Altman said in an interview that it's \"terrible\" to have RAM in personal PCs instead of data centers. During his appearance on the Cheeky ",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers",
-      "canonicalUrl": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers",
-      "source": "The Verge · AI",
-      "category": "ai",
-      "publishedAt": "2026-10-30T20:48:43.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/articles/cmewepdr109do?at_medium=rss&at_campaign=rss",
-      "title": "They strangled us, says founder of Russian newspaper shut under pressure from authorities",
-      "summary": "Novaya Gazeta has been one of the most high-profile independent news outlets in Russia over the last three decades.",
-      "url": "https://www.bbc.co.uk/news/articles/cmewepdr109do?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmewepdr109do?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-10-30T20:41:51.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo?at_medium=rss&at_campaign=rss",
-      "title": "US tech stocks see sharp falls as AI spending nears $1tn",
-      "summary": "Shares in Intel continue to fall while the tech-heavy Nasdaq opens at its lowest level in more than two months.",
-      "url": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-10-30T20:34:46.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/10/30/amazon-intel-earnings-big-tech-ai-spending-concerns.html",
-      "title": "Intel stock has worst day since 1970s, wiping about $12 billion off government's stake",
-      "summary": "Investors are nervous about the massive AI spending from the tech giants and whether that will pay off.",
-      "url": "https://www.cnbc.com/2026/10/30/amazon-intel-earnings-big-tech-ai-spending-concerns.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/30/amazon-intel-earnings-big-tech-ai-spending-concerns.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-10-30T20:30:57.000Z"
-    },
-    {
-      "id": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
-      "title": "The biggest names in AI are backing a new way to opt out of scraping",
-      "summary": "OpenAI, Google, Microsoft, and Anthropic say they will adopt a new standard that publishers can use to opt out of being scraped by AI, as reported earlier by Search Engine Roundtable. With this control, publishers can ap",
-      "url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
-      "canonicalUrl": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
-      "source": "The Verge · AI",
-      "category": "ai",
-      "publishedAt": "2026-10-30T20:26:10.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/10/30/binance-hack-elon-musk-tesla-spacex.html",
-      "title": "'Bad time to troll': Binance co-founder Zhao asks Musk for support after hack",
-      "summary": "Binance co-founder Changpeng Zhao asked Elon Musk to stop “trolling” after a $6.3 billion hack, pointing to Binance’s $1 billion-plus SpaceX stake.",
-      "url": "https://www.cnbc.com/2026/10/30/binance-hack-elon-musk-tesla-spacex.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/30/binance-hack-elon-musk-tesla-spacex.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-10-30T20:02:45.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/10/30/reid-hoffman-democrats-epstein-midterms-2026.html",
-      "title": "Reid Hoffman gives millions to Dems in late spending spree as Epstein fight spills into election",
-      "summary": "Reid Hoffman has given $8 million to Wisconsin Democrats backing David Crowley as Tom Tiffany attacks Hoffman's past ties to Jeffrey Epstein.",
-      "url": "https://www.cnbc.com/2026/10/30/reid-hoffman-democrats-epstein-midterms-2026.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/30/reid-hoffman-democrats-epstein-midterms-2026.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-10-30T18:32:17.000Z"
-    },
-    {
-      "id": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission",
-      "title": "Google&#8217;s satellite AI server transmits its first response to Earth",
-      "summary": "Google's AI chip-equipped satellite has generated its first response from space. In a blog post on Friday, Google says it successfully booted up the satellite's Tensor Processing Units (TPUs), allowing the on-board Gemma",
-      "url": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission",
-      "canonicalUrl": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission",
-      "source": "The Verge · AI",
-      "category": "ai",
-      "publishedAt": "2026-10-30T18:21:38.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/10/30/binance-hack-bitcoin-price.html",
-      "title": "Why bitcoin held up better after the record Binance hack",
-      "summary": "Bitcoin was trading down about 4% on Friday afternoon, less than a day after the biggest crypto hack in history.",
-      "url": "https://www.cnbc.com/2026/10/30/binance-hack-bitcoin-price.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/30/binance-hack-bitcoin-price.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-10-30T18:07:00.000Z"
-    },
-    {
-      "id": "https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru",
-      "title": "Starbucks wants to use AI to show you a ‘personalized digital menu’ at the drive-thru",
-      "summary": "Starbucks could eventually show you a personalized digital menu when you pull up to the drive-thru. During an earnings call on Thursday, Starbucks CEO Brian Niccol said the company is going to explore \"experiences that r",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru",
-      "canonicalUrl": "https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru",
-      "source": "The Verge · AI",
-      "category": "ai",
-      "publishedAt": "2026-10-30T17:38:04.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/10/30/treasury-i-bond-rate-through-april-2027.html",
-      "title": "Treasury Department announces new Series I bond rate of 5.51% for the next six months",
-      "summary": "The U.S. Department of the Treasury has announced new Series I bond rates through April 2027.",
-      "url": "https://www.cnbc.com/2026/10/30/treasury-i-bond-rate-through-april-2027.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/30/treasury-i-bond-rate-through-april-2027.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-10-30T17:15:53.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/articles/ck62ydn7dj9eo?at_medium=rss&at_campaign=rss",
-      "title": "US inmate Christa Pike says she woke up 'confused and in pain' after failed execution",
-      "summary": "It is Pike's first public statement since she survived an execution attempt by lethal injection in September.",
-      "url": "https://www.bbc.co.uk/news/articles/ck62ydn7dj9eo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ck62ydn7dj9eo?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-10-30T17:07:19.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/rugby-league/videos/c3kgqpeez9ppo?at_medium=rss&at_campaign=rss",
-      "title": "England beat Papua New Guinea but World Cup hopes in doubt",
-      "summary": "England beat Papua New Guinea 34-12 at the Rugby League World Cup in Wollongong, but look set to miss out on the semi-finals following their opening loss to Tonga.",
-      "url": "https://www.bbc.co.uk/sport/rugby-league/videos/c3kgqpeez9ppo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/rugby-league/videos/c3kgqpeez9ppo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-10-30T17:06:29.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/10/30/halloween-gets-pricier-as-chocolate-costs-rise-hershey-could-feel-it.html",
-      "title": "Halloween gets pricier as chocolate costs climb — Hershey may feel the pinch",
-      "summary": "Higher cocoa and sugar prices are fueling above-average cost inflation for candy",
-      "url": "https://www.cnbc.com/2026/10/30/halloween-gets-pricier-as-chocolate-costs-rise-hershey-could-feel-it.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/30/halloween-gets-pricier-as-chocolate-costs-rise-hershey-could-feel-it.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-10-30T16:55:41.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/football/articles/cr74pd99vwq3o?at_medium=rss&at_campaign=rss",
-      "title": "What Howe could bring to Man Utd - and what are the challenges?",
-      "summary": "Eddie Howe is being linked with the Manchester United job, but what are some of the considerations for him and the club?",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cr74pd99vwq3o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cr74pd99vwq3o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-10-30T16:27:13.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/rugby-league/videos/cmx281j2n8r4o?at_medium=rss&at_campaign=rss",
-      "title": "England out of World Cup after loss to Samoa",
-      "summary": "A Freedom Crichton Ropati hat-trick helps Samoa knock England out of the Women's Rugby League World Cup.",
-      "url": "https://www.bbc.co.uk/sport/rugby-league/videos/cmx281j2n8r4o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/rugby-league/videos/cmx281j2n8r4o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-10-30T15:00:50.000Z"
     }
   ],
   "sourceHealth": [
@@ -1231,7 +1231,7 @@
     {
       "name": "BBC Sport",
       "ok": true,
-      "itemCount": 57,
+      "itemCount": 72,
       "error": null
     },
     {
@@ -1255,7 +1255,7 @@
     {
       "name": "BBC News · World",
       "ok": true,
-      "itemCount": 28,
+      "itemCount": 27,
       "error": null
     },
     {
