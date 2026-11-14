@@ -1,16 +1,306 @@
 {
-  "generatedAt": "2026-11-14T02:25:15.744Z",
+  "generatedAt": "2026-11-14T11:27:00.807Z",
   "stale": false,
   "items": [
     {
+      "id": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
+      "title": "Flight disruptions continue after FAA lifts ground stop, some college football games delayed",
+      "summary": "U.S. flights are resuming after the FAA ground stop, but delays and cancellations are still piling up.",
+      "url": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-11-14T11:19:47.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/ckjwj03w4w0qo?at_medium=rss&at_campaign=rss",
+      "title": "Hungarian authorities uncover $20m during probe of Orbán-era minister",
+      "summary": "Prime Minister Péter Magyar promised a sweeping anti-corruption drive after ousting Orbán in April.",
+      "url": "https://www.bbc.co.uk/news/articles/ckjwj03w4w0qo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ckjwj03w4w0qo?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-11-14T10:42:20.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/triathlon/articles/c6930qpvq207o?at_medium=rss&at_campaign=rss",
+      "title": "Taylor-Brown wins in Dubai to top T100 standings",
+      "summary": "British triathlete Georgia Taylor-Brown moves top of the overall standings in the women's T100 series with her second victory of the season in Dubai.",
+      "url": "https://www.bbc.co.uk/sport/triathlon/articles/c6930qpvq207o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/triathlon/articles/c6930qpvq207o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-14T10:32:07.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=rss&at_campaign=rss",
+      "title": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
+      "summary": "The Ukrainian president says US envoys touted the exchange as part of efforts to end the war with Russia.",
+      "url": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-11-14T10:30:38.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/11/14/nx-s1-6040507/democrats-male-candidates-masculinity-trump",
+      "title": "As Democrats win big, thirst traps of male candidates take social media by storm",
+      "summary": "It's everywhere on social media: Democrats celebrating the attractive men voters elected in the midterms. But it's bigger than a meme and says a lot about politics of masculinity in the age of Trump.",
+      "url": "https://www.npr.org/2026/11/14/nx-s1-6040507/democrats-male-candidates-masculinity-trump",
+      "canonicalUrl": "https://www.npr.org/2026/11/14/nx-s1-6040507/democrats-male-candidates-masculinity-trump",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-11-14T10:00:00.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/11/14/nx-s1-6040299/hegseth-impeachment-democrats-house-test",
+      "title": "Hegseth's failed impeachment was a warning to Democrats. Where will they go from here?",
+      "summary": "Democrats have been given a huge opportunity with majorities in both the House and Senate — but the balance of priorities, timing, messaging and discipline are all going to be major tests.",
+      "url": "https://www.npr.org/2026/11/14/nx-s1-6040299/hegseth-impeachment-democrats-house-test",
+      "canonicalUrl": "https://www.npr.org/2026/11/14/nx-s1-6040299/hegseth-impeachment-democrats-house-test",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-11-14T10:00:00.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/11/14/nx-s1-6032604/organ-transplant-donor-dead-ethics",
+      "title": "An organ transplant controversy tests 'the dead donor rule'",
+      "summary": "New guidelines are supposed to protect organ donors in a retrieval procedure that keeps blood flowing through livers, kidneys, lungs and hearts. But bioethicists have troubling questions.",
+      "url": "https://www.npr.org/2026/11/14/nx-s1-6032604/organ-transplant-donor-dead-ethics",
+      "canonicalUrl": "https://www.npr.org/2026/11/14/nx-s1-6032604/organ-transplant-donor-dead-ethics",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-11-14T10:00:00.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/cmlydwy2zg10o?at_medium=rss&at_campaign=rss",
+      "title": "'Exciting' Moylan flourishing for club and country",
+      "summary": "BBC Sport NI looks as Jack Moylan's terrific form for Cardiff City and Republic of Ireland ahead of the Irish's final two Nations League games.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cmlydwy2zg10o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cmlydwy2zg10o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-14T09:59:18.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/cwx2e0dzvy0vo?at_medium=rss&at_campaign=rss",
+      "title": "NI target challenge of Nations League promotion",
+      "summary": "A win against Ukraine on Saturday night would leave Northern Ireland needing only a point away to Hungary next week to secure promotion to Nations League A for the first time.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cwx2e0dzvy0vo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cwx2e0dzvy0vo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-14T09:57:20.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/cricket/articles/ckvg2exrj5elo?at_medium=rss&at_campaign=rss",
+      "title": "Sooryavanshi becomes youngest captain in men's T20s",
+      "summary": "Teenage India sensation Vaibhav Sooryavanshi breaks the record held by Croatia's Zach Vukusic as the youngest captain in top-level men's Twenty20 cricket.",
+      "url": "https://www.bbc.co.uk/sport/cricket/articles/ckvg2exrj5elo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/cricket/articles/ckvg2exrj5elo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-14T09:53:45.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/darts/articles/c9p83m48e7g1o?at_medium=rss&at_campaign=rss",
+      "title": "Menzies sheds weight & embraces fitness after health issues",
+      "summary": "Cameron Menzies has lost five stone and embraced fitness and different forms of therapy after medical issues threatened to upend his darts careers.",
+      "url": "https://www.bbc.co.uk/sport/darts/articles/c9p83m48e7g1o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/darts/articles/c9p83m48e7g1o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-14T09:52:12.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/c60mdzn2dk1eo?at_medium=rss&at_campaign=rss",
+      "title": "Tuchel to remind England of anti-racism protocols before Spain game",
+      "summary": "Manager Thomas Tuchel will remind England's players of Uefa's anti-racism protocols before Sunday's Nations League fixture against Spain in Madrid.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c60mdzn2dk1eo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c60mdzn2dk1eo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-14T09:13:30.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/cw77p0v78exlo?at_medium=rss&at_campaign=rss",
+      "title": "Who would make your England-Spain combined XI?",
+      "summary": "How many England players do you think would make the Spain team?",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cw77p0v78exlo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cw77p0v78exlo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-14T08:57:49.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/cqr7grl145zpo?at_medium=rss&at_campaign=rss",
+      "title": "Clough's longevity: landmark achievement or indictment on football?",
+      "summary": "Mansfield boss Nigel Clough discusses his longevity and staying power as he becomes a club's longest-serving manager for a second time in his career.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cqr7grl145zpo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cqr7grl145zpo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-14T08:35:00.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/rugby-union/articles/cq74297dvnygo?at_medium=rss&at_campaign=rss",
+      "title": "Japan's unlikely leader who turned down the All Blacks",
+      "summary": "Warner Dearns did not want to go to Japan as a teenager. Now he is determined to stay and do his adopted country proud.",
+      "url": "https://www.bbc.co.uk/sport/rugby-union/articles/cq74297dvnygo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/rugby-union/articles/cq74297dvnygo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-14T08:22:15.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html",
+      "title": "Microsoft apologizes for massive outage that took down Outlook and other 365 services",
+      "summary": "A Microsoft outage on Thursday and Friday affected users of services like Outlook, Teams and 365.",
+      "url": "https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-11-14T08:11:28.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/cke89156y10zo?at_medium=rss&at_campaign=rss",
+      "title": "Six goals to go - will McGinn catch Dalglish & Law?",
+      "summary": "After drawing level with Hughie Gallacher on 24 Scotland goals, will midfielder John McGinn reach Kenny Dalglish and Denis Law's record tally of 30?",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cke89156y10zo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cke89156y10zo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-14T07:49:46.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/boxing/articles/c9ly4lerj8m3o?at_medium=rss&at_campaign=rss",
+      "title": "England boxer missed Worlds over sex-test mix-up",
+      "summary": "George Francis was left “broken” after he was banned from competing at the Under-19 World Championships because his team did not organise a sex verification test to prove he is male.",
+      "url": "https://www.bbc.co.uk/sport/boxing/articles/c9ly4lerj8m3o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/boxing/articles/c9ly4lerj8m3o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-14T07:43:44.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=rss&at_campaign=rss",
+      "title": "What we know about the ground stop and what to do if you're affected",
+      "summary": "US officials say the disruption was caused by old equipment overloading and not a cyber-attack.",
+      "url": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-11-14T07:42:11.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/cricket/articles/c59vwpv4rxjeo?at_medium=rss&at_campaign=rss",
+      "title": "Warner accuses Cricket Australia of 'cover-up'",
+      "summary": "Former vice-captain David Warner accuses Cricket Australia of a \"cover-up\", claiming Australia's bowlers were not interviewed in ball-tampering investigation.",
+      "url": "https://www.bbc.co.uk/sport/cricket/articles/c59vwpv4rxjeo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/cricket/articles/c59vwpv4rxjeo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-14T07:20:24.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/11/14/nvidia-jensen-huang-ceo-succession-risk.html",
+      "title": "Analysis: Companies love a ‘rockstar’ CEO. Until they depend on one",
+      "summary": "Jensen Huang’s exit tests Nvidia’s succession planning and governance, and offers lessons for companies that elevate their CEOs to rockstar status.",
+      "url": "https://www.cnbc.com/2026/11/14/nvidia-jensen-huang-ceo-succession-risk.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/11/14/nvidia-jensen-huang-ceo-succession-risk.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-11-14T07:08:45.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/mixed-martial-arts/articles/c6e3dw87pyjeo?at_medium=rss&at_campaign=rss",
+      "title": "The challenge that brought Nunes out of retirement",
+      "summary": "Amanda Nunes says the prospect of fighting Kayla Harrison and putting women's MMA back in the spotlight convinced her to come out of retirement to fight at UFC 334 on Saturday.",
+      "url": "https://www.bbc.co.uk/sport/mixed-martial-arts/articles/c6e3dw87pyjeo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/mixed-martial-arts/articles/c6e3dw87pyjeo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-14T07:00:15.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o?at_medium=rss&at_campaign=rss",
+      "title": "Microsoft says services fully restored after day-long global outage",
+      "summary": "Efforts to address the underlying problem with Outlook, Teams and Copilot are complete, the tech firm says.",
+      "url": "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-11-14T06:42:27.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/c5lyey8p8yv4o?at_medium=rss&at_campaign=rss",
+      "title": "How a reunion with scout Bompastor solved Chelsea's striker issue",
+      "summary": "Chelsea striker Melvine Malard and manager Sonia Bompastor tell the story of their 12-year footballing relationship.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c5lyey8p8yv4o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c5lyey8p8yv4o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-14T06:37:49.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/c6n83ld3le95o?at_medium=rss&at_campaign=rss",
+      "title": "Who am I? Plus today's other quizzes",
+      "summary": "Test your football knowledge against today's Who Am I?, Five in Five and Brainteaser.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c6n83ld3le95o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c6n83ld3le95o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-14T06:27:36.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/11/14/ecuador-biodiversity-green-finance-oil.html",
+      "title": "Ecuador wants to monetize its biodiversity — while still drilling for oil",
+      "summary": "Ecuador is planning to channel funds into its biodiversity, but faces a key challenge: its reliance on oil.",
+      "url": "https://www.cnbc.com/2026/11/14/ecuador-biodiversity-green-finance-oil.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/11/14/ecuador-biodiversity-green-finance-oil.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-11-14T06:00:01.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do?at_medium=rss&at_campaign=rss",
+      "title": "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
+      "summary": "Trump will discuss the \"reduction of nuclear weapons\" during the unprecedented talks, a spokeswoman says.",
+      "url": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-11-14T05:52:31.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/11/14/g-s1-151719/midterms-alaska-governor-kreiss-tomkins",
+      "title": "Democrat Jonathan Kreiss-Tomkins wins race for Alaska governor, replaces a Republican",
+      "summary": "Kreiss-Tomkins, a former state legislator, ran a campaign emphasizing bipartisanship in the the state that usually votes Republican. At 37, he'll be the youngest governor in the state's history.",
+      "url": "https://www.npr.org/2026/11/14/g-s1-151719/midterms-alaska-governor-kreiss-tomkins",
+      "canonicalUrl": "https://www.npr.org/2026/11/14/g-s1-151719/midterms-alaska-governor-kreiss-tomkins",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-11-14T05:12:43.000Z"
+    },
+    {
+      "id": "https://www.sciencedaily.com/releases/2026/11/261112025540.htm",
+      "title": "5,000-year-old skulls reveal a disturbing secret of ancient Egypt&#039;s first kings",
+      "summary": "A 5,000-year-old mystery surrounding the tombs of Egypt’s first kings has taken a disturbing turn. Scientists reexamining 46 ancient skulls discovered evidence of potentially fatal head injuries in 18, suggesting that at",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261112025540.htm",
+      "canonicalUrl": "https://www.sciencedaily.com/releases/2026/11/261112025540.htm",
+      "source": "ScienceDaily · Top Science",
+      "category": "academic",
+      "publishedAt": "2026-11-14T02:59:05.000Z"
+    },
+    {
       "id": "https://www.marketwatch.com/story/faa-declares-rare-widespread-ground-outage-bdc46393?mod=mw_rss_topstories",
-      "title": "FAA lifts rare nationwide ground stop; flights may take days to recover",
+      "title": "FAA lifts rare nationwide ground stop on flights; air travel may take days to recover",
       "summary": "Homeland Security Secretary Mullin said that there was &#x2018;zero evidence&#x2019; of cyberattack as fewer flights amid fuel-cost surge may hamper rebookings.",
       "url": "https://www.marketwatch.com/story/faa-declares-rare-widespread-ground-outage-bdc46393?mod=mw_rss_topstories",
       "canonicalUrl": "https://www.marketwatch.com/story/faa-declares-rare-widespread-ground-outage-bdc46393?mod=mw_rss_topstories",
       "source": "MarketWatch · Top Stories",
       "category": "finance",
-      "publishedAt": "2026-11-14T02:00:00.000Z"
+      "publishedAt": "2026-11-14T02:42:00.000Z"
     },
     {
       "id": "https://www.marketwatch.com/story/14-dividend-stocks-selected-for-long-term-growth-0a095c0d?mod=mw_rss_topstories",
@@ -23,14 +313,14 @@
       "publishedAt": "2026-11-14T01:58:00.000Z"
     },
     {
-      "id": "https://www.cnbc.com/2026/11/13/faa-ground-stop.html",
-      "title": "FAA lifts ground stop after four hours, but flight cancellations will stretch into the weekend",
-      "summary": "The Federal Aviation Administration issued a nationwide ground stop on Friday afternoon, disrupting thousands of departing of flights.",
-      "url": "https://www.cnbc.com/2026/11/13/faa-ground-stop.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/11/13/faa-ground-stop.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-11-14T01:54:38.000Z"
+      "id": "https://www.bbc.co.uk/news/videos/c893ryz7lw33o?at_medium=rss&at_campaign=rss",
+      "title": "'We'll get home one day' - US travellers impacted by nationwide ground stop",
+      "summary": "Passengers throughout the country were impacted over what the Federal Aviation Administration (FAA) describes as “safety and communication issues”.",
+      "url": "https://www.bbc.co.uk/news/videos/c893ryz7lw33o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/videos/c893ryz7lw33o?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-11-14T01:47:36.000Z"
     },
     {
       "id": "https://www.cnbc.com/2026/11/13/trump-nvidia-huang-china.html",
@@ -51,6 +341,16 @@
       "source": "CNBC · Finance",
       "category": "finance",
       "publishedAt": "2026-11-14T01:18:51.000Z"
+    },
+    {
+      "id": "https://www.sciencedaily.com/releases/2026/11/261112025523.htm",
+      "title": "Scientists capture electrons making seemingly impossible quantum jumps",
+      "summary": "Scientists have captured electrons making seemingly impossible jumps across forbidden energy gaps in graphene, with some transitions occurring at a remarkable 100% probability. The breakthrough offers an unprecedented lo",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261112025523.htm",
+      "canonicalUrl": "https://www.sciencedaily.com/releases/2026/11/261112025523.htm",
+      "source": "ScienceDaily · Top Science",
+      "category": "academic",
+      "publishedAt": "2026-11-14T01:13:05.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/tennis/articles/cw30gl912vq9o?at_medium=rss&at_campaign=rss",
@@ -334,7 +634,7 @@
     },
     {
       "id": "https://www.npr.org/2026/11/13/nx-s1-6040403/faa-nationwide-groundstop-airports",
-      "title": "FAA lifts the nationwide ground stop for all U.S. airports",
+      "title": "Old tech blamed for the ground stop that caused flight chaos: 'It got overloaded'",
       "summary": "The nationwide ground stop that paralyzed the U.S. aviation system on Friday has ended, according to Federal Aviation Administration.",
       "url": "https://www.npr.org/2026/11/13/nx-s1-6040403/faa-nationwide-groundstop-airports",
       "canonicalUrl": "https://www.npr.org/2026/11/13/nx-s1-6040403/faa-nationwide-groundstop-airports",
@@ -413,16 +713,6 @@
       "publishedAt": "2026-11-13T21:15:24.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o?at_medium=rss&at_campaign=rss",
-      "title": "Microsoft 'deeply sorry' for global outage after almost 24 hours of disruption",
-      "summary": "Experts say the event is a \"stark reminder\" of how heavily the world relies on a small group of big tech providers.",
-      "url": "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-11-13T21:14:22.000Z"
-    },
-    {
       "id": "https://www.marketwatch.com/story/amd-and-other-chip-stocks-slide-as-wall-street-rethinks-the-ai-trade-without-jensen-huang-2fb74547?mod=mw_rss_topstories",
       "title": "AMD and other chip stocks slide as Wall Street rethinks the AI trade without Jensen Huang",
       "summary": "At first, it looked like Nvidia&#x2019;s pain might be the rest of the chip sector&#x2019;s gain. But now, investors aren&#x2019;t so sure.",
@@ -431,16 +721,6 @@
       "source": "MarketWatch · Top Stories",
       "category": "finance",
       "publishedAt": "2026-11-13T21:10:00.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/11/13/treasury-yields-fed-rates.html",
-      "title": "10-year Treasury yield moves to 5.17% as traders weigh producer price report",
-      "summary": "Treasury yields moved higher as investor expectations for a December rate hike by the Federal Reserve gain strength.",
-      "url": "https://www.cnbc.com/2026/11/13/treasury-yields-fed-rates.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/11/13/treasury-yields-fed-rates.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-11-13T21:08:20.000Z"
     },
     {
       "id": "https://www.cnbc.com/make-it/2026/11/13/honeypot-scam-red-flags.html",
@@ -461,16 +741,6 @@
       "source": "NPR · Top Stories",
       "category": "general",
       "publishedAt": "2026-11-13T21:06:09.000Z"
-    },
-    {
-      "id": "https://www.npr.org/2026/11/13/nx-s1-6039273/east-po-hearing-nov-13",
-      "title": "The government says it will close a beloved D.C. park Sunday. Will a judge step in?",
-      "summary": "Federal judge Ana Reyes grilled the government on Friday about its plans for East Potomac Park, and indicated she could order it to remain open despite President Trump's renovation wishes.",
-      "url": "https://www.npr.org/2026/11/13/nx-s1-6039273/east-po-hearing-nov-13",
-      "canonicalUrl": "https://www.npr.org/2026/11/13/nx-s1-6039273/east-po-hearing-nov-13",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-11-13T21:06:05.000Z"
     },
     {
       "id": "https://www.cnbc.com/2026/11/13/robinhood-supreme-court-ipo-lawsuit.html",
@@ -504,7 +774,7 @@
     },
     {
       "id": "https://www.bbc.co.uk/sport/football/articles/ck9871qr76gmo?at_medium=rss&at_campaign=rss",
-      "title": "Wales out to derail Norway's repair job in Oslo",
+      "title": "'It's a shootout' - Wales out to derail stuttering Norway",
       "summary": "Norway's golden generation host Wales in a crunch Nations League clash on Saturday, aiming to end a rare losing streak for Erling Haaland and company.",
       "url": "https://www.bbc.co.uk/sport/football/articles/ck9871qr76gmo?at_medium=rss&at_campaign=rss",
       "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/ck9871qr76gmo?at_medium=rss&at_campaign=rss",
@@ -543,16 +813,6 @@
       "publishedAt": "2026-11-13T19:30:36.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/sport/football/articles/cqz0k4e00v0mo?at_medium=rss&at_campaign=rss",
-      "title": "Ronaldinho, 46, to play first game since 2015",
-      "summary": "Brazil great Ronaldinho is set to make his first competitive start in more than a decade when Ravenna face local rivals Forli in Italy's third division on Sunday.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cqz0k4e00v0mo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cqz0k4e00v0mo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-11-13T19:12:37.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/news/articles/cmy4930jq749o?at_medium=rss&at_campaign=rss",
       "title": "Democratic Senate leader Schumer set to face leadership challenge",
       "summary": "Maryland Senator Van Hollen says \"new leadership\" is needed for Democrats following the party's recent midterm successes.",
@@ -563,14 +823,14 @@
       "publishedAt": "2026-11-13T19:03:10.000Z"
     },
     {
-      "id": "https://www.npr.org/2026/11/13/g-s1-153578/whats-trumps-strategy-now-with-iran-to-keep-things-as-they-are",
-      "title": "What's Trump's strategy now with Iran? To keep things as they are",
-      "summary": "President Trump says the \"status quo\" is what Gulf Arab allies want as the Iran war hits a stalemate and the U.S. midterms force a pivot from threats of attacks to economic pressure.",
-      "url": "https://www.npr.org/2026/11/13/g-s1-153578/whats-trumps-strategy-now-with-iran-to-keep-things-as-they-are",
-      "canonicalUrl": "https://www.npr.org/2026/11/13/g-s1-153578/whats-trumps-strategy-now-with-iran-to-keep-things-as-they-are",
-      "source": "NPR · Top Stories",
+      "id": "https://www.bbc.co.uk/news/articles/cw4gn0ky2pgdo?at_medium=rss&at_campaign=rss",
+      "title": "Eurovision is finally coming to Asia - meet the stars gearing up to take the stage",
+      "summary": "On Saturday, the biggest and longest-running international song contest will make a leap into unknown territory.",
+      "url": "https://www.bbc.co.uk/news/articles/cw4gn0ky2pgdo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cw4gn0ky2pgdo?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
       "category": "general",
-      "publishedAt": "2026-11-13T19:02:04.000Z"
+      "publishedAt": "2026-11-13T19:01:36.000Z"
     },
     {
       "id": "https://www.cnbc.com/2026/11/13/retirement-401k-ira-withdrawal-taxes.html",
@@ -593,16 +853,6 @@
       "publishedAt": "2026-11-13T18:56:26.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/news/articles/cwvg238zrnm5o?at_medium=rss&at_campaign=rss",
-      "title": "Why is Microsoft's outage lasting so long and will emails be lost?",
-      "summary": "Microsoft says it is continuing to restore services including Outlook and Teams following a global outage.",
-      "url": "https://www.bbc.co.uk/news/articles/cwvg238zrnm5o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cwvg238zrnm5o?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-11-13T18:36:57.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/news/articles/cwg7l8n7dx5mo?at_medium=rss&at_campaign=rss",
       "title": "The Peruvian city that has embraced Pope Leo as one of its own",
       "summary": "Pope Leo XIV is in Peru as part of his Latin America tour, just weeks after having surgery for lung cancer.",
@@ -611,26 +861,6 @@
       "source": "BBC News · World",
       "category": "general",
       "publishedAt": "2026-11-13T18:34:45.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/football/articles/cmqj5r8edvneo?at_medium=rss&at_campaign=rss",
-      "title": "EFL warns clubs over social media posts",
-      "summary": "The English Football League (EFL) warns its members about their usage of posts on social media.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cmqj5r8edvneo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cmqj5r8edvneo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-11-13T18:20:17.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html",
-      "title": "Microsoft apologizes for massive outage that took down Outlook and other 365 services",
-      "summary": "A Microsoft outage on Thursday and Friday affected users of services like Outlook, Teams and 365.",
-      "url": "https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-11-13T18:18:28.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/rugby-union/articles/c50md0pgw8dlo?at_medium=rss&at_campaign=rss",
@@ -653,6 +883,16 @@
       "publishedAt": "2026-11-13T18:00:01.000Z"
     },
     {
+      "id": "https://www.bbc.co.uk/sport/articles/cm4gn9lvlgy2o?at_medium=rss&at_campaign=rss",
+      "title": "Estonia bans Russian athletes as backlash intensifies",
+      "summary": "Estonia is the latest country to say it will not allow Russian or Belarusian athletes to compete on its territory as a result of the ongoing war in Ukraine.",
+      "url": "https://www.bbc.co.uk/sport/articles/cm4gn9lvlgy2o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/articles/cm4gn9lvlgy2o?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-11-13T17:54:33.000Z"
+    },
+    {
       "id": "https://www.bbc.co.uk/sport/rugby-union/articles/c3qj5r9nx5lpo?at_medium=rss&at_campaign=rss",
       "title": "Beirne leads Ireland bid to build on strong start",
       "summary": "Tadhg Beirne, so often Ireland's 'Mr Dependable', leads the team's bid to improve on last week's win over Argentina against Fiji on Saturday.",
@@ -661,26 +901,6 @@
       "source": "BBC Sport",
       "category": "sports",
       "publishedAt": "2026-11-13T17:54:11.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/mixed-martial-arts/articles/cm3wgpl28yzgo?at_medium=rss&at_campaign=rss",
-      "title": "Eight sentenced to jail over Nurmagomedov-Dvalishvili brawl",
-      "summary": "Eight people face prison sentences for their part in mass brawl involving MMA fighters Usman Nurmagomedov and Merab Dvalishvili at a hotel in Abu Dhabi on Wednesday.",
-      "url": "https://www.bbc.co.uk/sport/mixed-martial-arts/articles/cm3wgpl28yzgo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/mixed-martial-arts/articles/cm3wgpl28yzgo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-11-13T17:15:52.000Z"
-    },
-    {
-      "id": "https://www.npr.org/2026/11/13/nx-s1-6034016/voter-fraud-search-trump-california",
-      "title": "The Trump administration's voter roll crusade could continue",
-      "summary": "Election officials are preparing for the Trump administration's pressure tactics over potential noncitizens on state voter rolls to continue, though recent court rulings pose new obstacles.",
-      "url": "https://www.npr.org/2026/11/13/nx-s1-6034016/voter-fraud-search-trump-california",
-      "canonicalUrl": "https://www.npr.org/2026/11/13/nx-s1-6034016/voter-fraud-search-trump-california",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-11-13T17:00:00.000Z"
     },
     {
       "id": "https://www.cnbc.com/2026/11/13/data-center-slowdown-utility-stocks.html",
@@ -701,36 +921,6 @@
       "source": "BBC News · World",
       "category": "general",
       "publishedAt": "2026-11-13T16:40:31.000Z"
-    },
-    {
-      "id": "https://www.npr.org/sections/planet-money/2026/11/13/nx-s1-6039196/does-europe-regret-its-bet-on-u-s-defense",
-      "title": "Does Europe regret its bet on U.S. defense?",
-      "summary": "Europe bet big on American defense technology and they're now paying the price. Years-long backlogs are underway due to production delays and the U.S. own military needs.",
-      "url": "https://www.npr.org/sections/planet-money/2026/11/13/nx-s1-6039196/does-europe-regret-its-bet-on-u-s-defense",
-      "canonicalUrl": "https://www.npr.org/sections/planet-money/2026/11/13/nx-s1-6039196/does-europe-regret-its-bet-on-u-s-defense",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-11-13T16:17:43.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/make-it/2026/11/13/menopause-career-setbacks.html",
-      "title": "Women are taking pay cuts and 'white-knuckling it' to manage menopause and work: 'I feel like I'm sitting on the sidelines'",
-      "summary": "Women, and some trans and non-binary people, often experience career setbacks stemming from menopause that can hurt them financially and professionally.",
-      "url": "https://www.cnbc.com/make-it/2026/11/13/menopause-career-setbacks.html",
-      "canonicalUrl": "https://www.cnbc.com/make-it/2026/11/13/menopause-career-setbacks.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-11-13T16:00:01.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/rugby-union/articles/cj7526lz35x9o?at_medium=rss&at_campaign=rss",
-      "title": "Vunipola exploring life after rugby with coaching role",
-      "summary": "Former England prop Mako Vunipola talks about planning for his retirement by venturing into coaching at Leicester Tigers.",
-      "url": "https://www.bbc.co.uk/sport/rugby-union/articles/cj7526lz35x9o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/rugby-union/articles/cj7526lz35x9o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-11-13T15:59:06.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/rugby-league/articles/crly54evvvv4o?at_medium=rss&at_campaign=rss",
@@ -783,16 +973,6 @@
       "publishedAt": "2026-11-13T15:28:06.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/news/articles/c6r7g5lp1zrxo?at_medium=rss&at_campaign=rss",
-      "title": "At least 24 killed after bus collides with truck in north-east India",
-      "summary": "Several of the deceased are college students, according to local official Atul Bora, but they have not yet been publicly identified.",
-      "url": "https://www.bbc.co.uk/news/articles/c6r7g5lp1zrxo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6r7g5lp1zrxo?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-11-13T15:16:50.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/news/videos/ckqx5ryx905qo?at_medium=rss&at_campaign=rss",
       "title": "Watch: Divers explore US ship sunk off Florida coast to create new reef",
       "summary": "The ship was intentionally sunk off the coast of Florida in order to create the world's largest artificial ocean reef.",
@@ -823,16 +1003,6 @@
       "publishedAt": "2026-11-13T14:47:16.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/sport/boxing/articles/cvde1nx6j6g3o?at_medium=rss&at_campaign=rss",
-      "title": "Cameron-Mayer rematch added to Paul Christmas Eve card",
-      "summary": "Chantelle Cameron will defend her light-middleweight world titles in a rematch against Mikaela Mayer on the undercard of Jake Paul's fight against Cedric Doumbe on 24 December.",
-      "url": "https://www.bbc.co.uk/sport/boxing/articles/cvde1nx6j6g3o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/boxing/articles/cvde1nx6j6g3o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-11-13T14:45:25.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/sport/rugby-union/articles/c6wy4lg2rx29o?at_medium=rss&at_campaign=rss",
       "title": "Townsend stresses individual responsibility as duo return",
       "summary": "Gregor Townsend stresses the importance of \"individual responsibility\" as Darcy Graham and Blair Kinghorn return to the Scotland XV against Australia.",
@@ -841,16 +1011,6 @@
       "source": "BBC Sport",
       "category": "sports",
       "publishedAt": "2026-11-13T14:27:11.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/11/13/canada-stellantis-auto-trump-tariffs-jeep.html",
-      "title": "‘We will sue them’: Canada threatens Stellantis as Trump trade war reshapes Jeep production plans",
-      "summary": "The dispute comes after Stellantis scrapped planned Jeep Compass production in Brampton and shifted future output to Illinois amid U.S. auto tariffs.",
-      "url": "https://www.cnbc.com/2026/11/13/canada-stellantis-auto-trump-tariffs-jeep.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/11/13/canada-stellantis-auto-trump-tariffs-jeep.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-11-13T14:24:57.000Z"
     },
     {
       "id": "https://www.cnbc.com/2026/11/13/chicago-feds-goolsbee-says-central-bank-has-definitely-got-work-to-do-on-inflation.html",
@@ -881,16 +1041,6 @@
       "source": "The Verge · AI",
       "category": "ai",
       "publishedAt": "2026-11-13T14:00:00.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/golf/articles/c3y0xlpkpg9lo?at_medium=rss&at_campaign=rss",
-      "title": "McIlroy and Hatton tied as Chacarra stays in hunt",
-      "summary": "Rory McIlroy is tied for the lead at the halfway mark of the season-ending DP World Tour Championship as he chases a record-equalling eighth Race to Dubai title.",
-      "url": "https://www.bbc.co.uk/sport/golf/articles/c3y0xlpkpg9lo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/golf/articles/c3y0xlpkpg9lo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-11-13T13:36:46.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/news/articles/c5gm3gnwl42eo?at_medium=rss&at_campaign=rss",
@@ -933,26 +1083,6 @@
       "publishedAt": "2026-11-13T12:47:16.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/news/articles/c67429m3vem3o?at_medium=rss&at_campaign=rss",
-      "title": "How a sex scandal at Nvidia is putting pressure on the White House",
-      "summary": "Jensen Huang's personal life may have triggered the crisis, but the questions now reach into the White House itself.",
-      "url": "https://www.bbc.co.uk/news/articles/c67429m3vem3o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c67429m3vem3o?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-11-13T12:22:30.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/athletics/articles/cqvg2lrkdz97o?at_medium=rss&at_campaign=rss",
-      "title": "Lazraq-Khlass banned for whereabouts violation",
-      "summary": "French heptathlete Auriana Lazraq-Khlass is suspended for 22 months for failing to comply with anti-doping rules.",
-      "url": "https://www.bbc.co.uk/sport/athletics/articles/cqvg2lrkdz97o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/athletics/articles/cqvg2lrkdz97o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-11-13T12:12:34.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/sport/football/articles/cm2kljzkw77ko?at_medium=rss&at_campaign=rss",
       "title": "How Ferguson-inspired Pochettino can succeed where Carrick failed at Man Utd",
       "summary": "With Mauricio Pochettino set to become Man Utd manager, we analyse if he can clear the tactical hurdles others haven't.",
@@ -991,26 +1121,6 @@
       "source": "ScienceDaily · Top Science",
       "category": "academic",
       "publishedAt": "2026-11-13T11:56:39.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/rugby-union/articles/c5rmg2djmm1lo?at_medium=rss&at_campaign=rss",
-      "title": "Borthwick challenges Ojomoh to match talent with toughness",
-      "summary": "Max Ojomoh must bring physicality, as well as his usual stardust, to England's backline, says head coach Steve Borthwick.",
-      "url": "https://www.bbc.co.uk/sport/rugby-union/articles/c5rmg2djmm1lo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/rugby-union/articles/c5rmg2djmm1lo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-11-13T11:53:05.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/videos/cqzjr903n01po?at_medium=rss&at_campaign=rss",
-      "title": "Watch: How a server outage took down Microsoft Teams and Outlook",
-      "summary": "A Microsoft outage is affecting services including Teams, Outlook and AI software Copilot.",
-      "url": "https://www.bbc.co.uk/news/videos/cqzjr903n01po?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cqzjr903n01po?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-11-13T11:43:27.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/rugby-league/videos/cqy4jdxven1go?at_medium=rss&at_campaign=rss",
@@ -1073,16 +1183,6 @@
       "publishedAt": "2026-11-13T10:00:46.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/sport/football/articles/cm782d4pz9jyo?at_medium=rss&at_campaign=rss",
-      "title": "Fernandes rejects second Man Utd contract offer",
-      "summary": "Manchester United captain Bruno Fernandes rejects the club's second contract offer, with his current deal due to expire at the end of the season.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cm782d4pz9jyo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cm782d4pz9jyo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-11-13T09:55:01.000Z"
-    },
-    {
       "id": "https://www.sciencedaily.com/releases/2026/11/261111005905.htm",
       "title": "The Sun unleashed a monster storm. Earth may have made it worse",
       "summary": "The massive solar storm that illuminated skies worldwide in May 2024 has uncovered an unexpected twist: Earth&#039;s own atmosphere may have helped make the storm so powerful. Satellite measurements revealed that roughly",
@@ -1093,26 +1193,6 @@
       "publishedAt": "2026-11-13T09:49:36.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/sport/olympics/articles/ck8dvp681e94o?at_medium=rss&at_campaign=rss",
-      "title": "Could AI help decide medals at LA28 Olympics?",
-      "summary": "AI-assisted judging was used at the World Gymnastics Championships and could help decide medals at the summer Olympics.",
-      "url": "https://www.bbc.co.uk/sport/olympics/articles/ck8dvp681e94o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/olympics/articles/ck8dvp681e94o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-11-13T08:46:14.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/articles/c6702z750zvyo?at_medium=rss&at_campaign=rss",
-      "title": "Australian cricket's sandpapergate is back - and it cuts deep in a 'nation of good sports'",
-      "summary": "Claims the entire Australian team knew of the 2018 sandpaper cheating plot are dividing the cricket world.",
-      "url": "https://www.bbc.co.uk/news/articles/c6702z750zvyo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6702z750zvyo?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-11-13T08:20:28.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/sport/football/articles/cve8716dg46xo?at_medium=rss&at_campaign=rss",
       "title": "From postcards to texts, the different ways a manager gets the sack - Pulis",
       "summary": "BBC Sport columnist Tony Pulis explains some of the different ways a manager can leave a club, whether they have been sacked or resigned.",
@@ -1121,86 +1201,6 @@
       "source": "BBC Sport",
       "category": "sports",
       "publishedAt": "2026-11-13T08:13:19.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/articles/cklyw3neqg2wo?at_medium=rss&at_campaign=rss",
-      "title": "African Miss Universe beauty queens in limbo as US visa restrictions bite",
-      "summary": "Hall has been seeking a US visa in South Africa as other African beauty queens face similar hurdles.",
-      "url": "https://www.bbc.co.uk/news/articles/cklyw3neqg2wo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cklyw3neqg2wo?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-11-13T07:01:43.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/football/articles/ck4gnd2pgd06o?at_medium=rss&at_campaign=rss",
-      "title": "Liverpool and Van Dijk have a decision to make",
-      "summary": "Virgil van Dijk says he is in no panic about his contract situation at Liverpool - BBC Sport takes a look at what could happen with his future.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/ck4gnd2pgd06o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/ck4gnd2pgd06o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-11-13T06:57:25.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/formula1/articles/c60735md0jrpo?at_medium=rss&at_campaign=rss",
-      "title": "Whatever happened to the diamond that went missing in F1 crash?",
-      "summary": "Whatever happened to the diamond that went missing after the Formula 1 car it was attached to crashed?",
-      "url": "https://www.bbc.co.uk/sport/formula1/articles/c60735md0jrpo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/formula1/articles/c60735md0jrpo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-11-13T06:12:20.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/videos/cxvg23n59y1ro?at_medium=rss&at_campaign=rss",
-      "title": "Will the Eurovision Song Contest succeed in Asia?",
-      "summary": "The world’s biggest and longest-running song contest is coming to Asia, with eleven countries competing in Bangkok, Thailand on Saturday.",
-      "url": "https://www.bbc.co.uk/news/videos/cxvg23n59y1ro?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cxvg23n59y1ro?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-11-13T02:24:11.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/videos/cv5y1309dg3go?at_medium=rss&at_campaign=rss",
-      "title": "Military cemetery decorum: The tradition behind Hegseth's Veterans Day reprimand",
-      "summary": "BBC's Bernd Debusmann breaks down why Defence Secretary Hegseth's group was reprimanded at Arlington National Cemetery and the history behind its strict rules of conduct.",
-      "url": "https://www.bbc.co.uk/news/videos/cv5y1309dg3go?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cv5y1309dg3go?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-11-12T23:42:52.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/football/articles/cxj0lvqpn94qo?at_medium=rss&at_campaign=rss",
-      "title": "Where does Kane rank among all-time England greats?",
-      "summary": "Harry Kane is England's all-time top scorer and record appearance maker, but where does he rank among the Three Lions' greatest players?",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cxj0lvqpn94qo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cxj0lvqpn94qo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-11-12T22:09:59.000Z"
-    },
-    {
-      "id": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen",
-      "title": "Google’s new Gemini model is better at understanding complicated questions",
-      "summary": "Google says its new Gemini 4 Hydrogen model can give more helpful answers to complex questions, including \"questions with multiple parts, hard-to-understand typos, or highly specific requests.\" The new model can break do",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen",
-      "canonicalUrl": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen",
-      "source": "The Verge · AI",
-      "category": "ai",
-      "publishedAt": "2026-11-12T21:55:32.000Z"
-    },
-    {
-      "id": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking",
-      "title": "Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility",
-      "summary": "Representatives from Nvidia told Illinois representative Bill Foster that it would be technically possible to implement the anti-smuggling measures called for in the Chip Security Act, Foster told MIT Technology Review i",
-      "url": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking",
-      "canonicalUrl": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking",
-      "source": "MIT Technology Review · AI",
-      "category": "ai",
-      "publishedAt": "2026-11-12T20:16:24.000Z"
     }
   ],
   "sourceHealth": [
@@ -1231,7 +1231,7 @@
     {
       "name": "BBC Sport",
       "ok": true,
-      "itemCount": 65,
+      "itemCount": 68,
       "error": null
     },
     {
@@ -1255,7 +1255,7 @@
     {
       "name": "BBC News · World",
       "ok": true,
-      "itemCount": 26,
+      "itemCount": 27,
       "error": null
     },
     {
