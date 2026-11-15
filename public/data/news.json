@@ -1,106 +1,306 @@
 {
-  "generatedAt": "2026-11-14T20:42:27.487Z",
+  "generatedAt": "2026-11-15T01:54:02.858Z",
   "stale": false,
   "items": [
     {
+      "id": "https://www.npr.org/2026/11/14/nx-s1-6041115/faa-ground-stop-college-football-delays",
+      "title": "FAA ground stop disrupts college football",
+      "summary": "Some college football games were delayed a few hours on Saturday or postponed to Sunday. And in Oklahoma at least, there will be perks for fans to make up for the inconvenience, including cheap beers.",
+      "url": "https://www.npr.org/2026/11/14/nx-s1-6041115/faa-ground-stop-college-football-delays",
+      "canonicalUrl": "https://www.npr.org/2026/11/14/nx-s1-6041115/faa-ground-stop-college-football-delays",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-11-15T01:13:59.000Z"
+    },
+    {
+      "id": "https://www.marketwatch.com/story/spacex-successfully-catches-starship-rocket-in-huge-milestone-for-the-space-industry-f42c136c?mod=mw_rss_topstories",
+      "title": "SpaceX successfully catches Starship rocket in huge milestone for the space industry",
+      "summary": "The historic first gets SpaceX closer to &#x201c;rapid reusability&#x201d; of rockets.",
+      "url": "https://www.marketwatch.com/story/spacex-successfully-catches-starship-rocket-in-huge-milestone-for-the-space-industry-f42c136c?mod=mw_rss_topstories",
+      "canonicalUrl": "https://www.marketwatch.com/story/spacex-successfully-catches-starship-rocket-in-huge-milestone-for-the-space-industry-f42c136c?mod=mw_rss_topstories",
+      "source": "MarketWatch · Top Stories",
+      "category": "finance",
+      "publishedAt": "2026-11-15T00:33:00.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/rugby-union/articles/c9e85d7mm0myo?at_medium=rss&at_campaign=rss",
+      "title": "Fiji 'did Ireland a favour' before South Africa game",
+      "summary": "Former South Africa head coach Jake White says his Fiji side \"did Ireland a favour\" in Saturday's Nations Championship match before they face the Springboks in Dublin next week.",
+      "url": "https://www.bbc.co.uk/sport/rugby-union/articles/c9e85d7mm0myo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/rugby-union/articles/c9e85d7mm0myo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-15T00:29:26.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/cmvg2e2q28w1o?at_medium=rss&at_campaign=rss",
+      "title": "My mother told me I would die if I sought treatment for Ebola - I am proof you can survive",
+      "summary": "Fear and misinformation surrounds the Ebola outbreak in DR Congo - Dr Kamwanga's mother was not immune.",
+      "url": "https://www.bbc.co.uk/news/articles/cmvg2e2q28w1o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmvg2e2q28w1o?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-11-15T00:06:55.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/c6dj1e8wyykmo?at_medium=rss&at_campaign=rss",
+      "title": "Judo champion shakes up French presidential race with surprise candidacy",
+      "summary": "Teddy Riner is one of the most popular figures in modern-day France, and one in five voters say they could support him.",
+      "url": "https://www.bbc.co.uk/news/articles/c6dj1e8wyykmo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6dj1e8wyykmo?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-11-15T00:06:51.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/11/14/nx-s1-6041093/st-patricks-day-parade-canceled-florida-dei",
+      "title": "Florida city cancels St. Patrick's Day parade, citing new anti-DEI law",
+      "summary": "A new Florida law that prohibits taxpayer dollars from going toward diversity initiatives has prompted Delray Beach to cancel its St. Patrick's Day parade after a nearly 60-year run.",
+      "url": "https://www.npr.org/2026/11/14/nx-s1-6041093/st-patricks-day-parade-canceled-florida-dei",
+      "canonicalUrl": "https://www.npr.org/2026/11/14/nx-s1-6041093/st-patricks-day-parade-canceled-florida-dei",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-11-15T00:03:52.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/tennis/articles/ck5y1xdrne28o?at_medium=rss&at_campaign=rss",
+      "title": "Svitolina races in WTA Finals showpiece against Andreeva",
+      "summary": "Elina Svitolina drops just three games as she thrashes Linda Noskova to set up a WTA Finals showpiece against Mirra Andreeva.",
+      "url": "https://www.bbc.co.uk/sport/tennis/articles/ck5y1xdrne28o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/tennis/articles/ck5y1xdrne28o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-14T23:31:10.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/c84gn2dl4zleo?at_medium=rss&at_campaign=rss",
+      "title": "The 'manager's dream' who has put NI one game from history",
+      "summary": "After scoring his first international goal in the 1-0 win over Ukraine, Northern Ireland boss Michael O'Neill says Terry Devlin is \"a bit of a dream\" to manage.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c84gn2dl4zleo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c84gn2dl4zleo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-14T23:21:45.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
+      "title": "Nationwide ground stop followed contractor upgrade to L3Harris telecommunication system: DOT’s Duffy",
+      "summary": "The FAA ground stop came after updates to an older communication system managed by L3Harris Technologies, Transportation Secretary Sean Duffy said Saturday.",
+      "url": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-11-14T23:21:21.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=rss&at_campaign=rss",
+      "title": "How telecoms upgrade work sparked US flight chaos",
+      "summary": "US officials say the disruption was caused by old equipment overloading and not a cyber-attack.",
+      "url": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-11-14T23:11:27.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/11/14/spacex-plans-to-try-first-ever-catch-of-starship-rocket-from-orbit.html",
+      "title": "SpaceX catches upper stage of Starship rocket in historic first",
+      "summary": "Starship Test Flight 15 marked the first time Elon Musk's company tried to catch both the booster and upper stage of the rocket.",
+      "url": "https://www.cnbc.com/2026/11/14/spacex-plans-to-try-first-ever-catch-of-starship-rocket-from-orbit.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/11/14/spacex-plans-to-try-first-ever-catch-of-starship-rocket-from-orbit.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-11-14T23:10:14.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/darts/articles/c61mdlgd94zno?at_medium=rss&at_campaign=rss",
+      "title": "Littler beats Greaves to start Grand Slam defence",
+      "summary": "Luke Littler begins his Grand Slam of Darts title defence with a comfortable 5-2 win over Beau Greaves in Wolverhampton.",
+      "url": "https://www.bbc.co.uk/sport/darts/articles/c61mdlgd94zno?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/darts/articles/c61mdlgd94zno?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-14T23:10:08.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/videos/c6p3ewwezqy2o?at_medium=rss&at_campaign=rss",
+      "title": "Liverpool put three past Brighton to end winless run",
+      "summary": "A Beata Olsson double helps Liverpool to an impressive 3-0 victory away to Brighton to end their five-game winless run in the Women's Super League.",
+      "url": "https://www.bbc.co.uk/sport/football/videos/c6p3ewwezqy2o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/videos/c6p3ewwezqy2o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-14T23:00:29.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/rugby-union/videos/cm4gnxew18z3o?at_medium=rss&at_campaign=rss",
+      "title": "Watch: Seven-try Ireland secure win over Fiji",
+      "summary": "Watch the tries as Ireland secure a 43-15 victory over Fiji in the Nations Championship in Dublin.",
+      "url": "https://www.bbc.co.uk/sport/rugby-union/videos/cm4gnxew18z3o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/rugby-union/videos/cm4gnxew18z3o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-14T22:53:45.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/11/14/nx-s1-6040942/maintenance-gone-awry-caused-nation-wide-ground-stop-says-transportation-secretary",
+      "title": "Maintenance gone awry caused nation-wide ground stop, says Transportation Secretary",
+      "summary": "Transportation Secretary Sean Duffy points blame toward contractor in explaining Friday's nation-wide aviation ground stop.",
+      "url": "https://www.npr.org/2026/11/14/nx-s1-6040942/maintenance-gone-awry-caused-nation-wide-ground-stop-says-transportation-secretary",
+      "canonicalUrl": "https://www.npr.org/2026/11/14/nx-s1-6040942/maintenance-gone-awry-caused-nation-wide-ground-stop-says-transportation-secretary",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-11-14T22:48:38.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/tennis/articles/ck62p9ge4d76o?at_medium=rss&at_campaign=rss",
+      "title": "Sabalenka apologises & says viral comment 'not directed at Svitolina'",
+      "summary": "Aryna Sabalenka apologises and denies claims she insulted opponent Elina Svitolina after a viral clip showed her swearing during her WTA Finals defeat by the Ukrainian.",
+      "url": "https://www.bbc.co.uk/sport/tennis/articles/ck62p9ge4d76o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/tennis/articles/ck62p9ge4d76o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-14T22:42:30.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/cr15e4w75wxpo?at_medium=rss&at_campaign=rss",
+      "title": "Hallgrimsson rues 'painful' defeat for Republic of Ireland",
+      "summary": "Republic of Ireland boss Heimir Hallgrimsson says their 1-0 defeat against Austria in their penultimate Nations League game was \"painful\".",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cr15e4w75wxpo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cr15e4w75wxpo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-14T22:40:02.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/videos/c6z9dxk71538o?at_medium=rss&at_campaign=rss",
+      "title": "Devlin nets winner as NI top Nations League group",
+      "summary": "Watch highlights as Northern Ireland beat Ukraine 1-0 at Windsor Park in the Nations League.",
+      "url": "https://www.bbc.co.uk/sport/football/videos/c6z9dxk71538o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/videos/c6z9dxk71538o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-14T22:38:02.000Z"
+    },
+    {
       "id": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=rss&at_campaign=rss",
       "title": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
-      "summary": "The US has not confirmed the Ukrainian president's comments which follow meetings US envoys had with him and Russia's Vladimir Putin.",
+      "summary": "The US has not confirmed the Ukrainian president's comments - a US official told the BBC \"many ideas continue to be discussed\".",
       "url": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=rss&at_campaign=rss",
       "canonicalUrl": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=rss&at_campaign=rss",
       "source": "BBC News · World",
       "category": "general",
-      "publishedAt": "2026-11-14T20:41:45.000Z"
+      "publishedAt": "2026-11-14T22:37:25.000Z"
     },
     {
-      "id": "https://www.espn.com/college-football/story/_/id/50482206/oklahoma-ad-infuriated-sec-ole-miss-sunday-game",
-      "title": "Oklahoma AD questions Ole Miss effort; decision to play Sunday 'inexplicable'",
-      "summary": "AD Roger Denny took aim at the SEC and Ole Miss about Oklahoma's game being moved to Sunday, calling it an \"inexplicable\" situation that \"unfairly burdens\" the Sooners.",
-      "url": "https://www.espn.com/college-football/story/_/id/50482206/oklahoma-ad-infuriated-sec-ole-miss-sunday-game",
-      "canonicalUrl": "https://www.espn.com/college-football/story/_/id/50482206/oklahoma-ad-infuriated-sec-ole-miss-sunday-game",
-      "source": "ESPN",
-      "category": "sports",
-      "publishedAt": "2026-11-14T20:27:23.000Z"
+      "id": "https://www.cnbc.com/2026/11/14/180-million-van-gogh-tests-the-art-market-and-collector-confidence-.html",
+      "title": "$180 million Van Gogh tests the art market and collector confidence",
+      "summary": "The art auctions in New York next week could top $2 billion, as a treasure trove of masterpieces comes to the market for the first time in decades.",
+      "url": "https://www.cnbc.com/2026/11/14/180-million-van-gogh-tests-the-art-market-and-collector-confidence-.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/11/14/180-million-van-gogh-tests-the-art-market-and-collector-confidence-.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-11-14T22:34:07.000Z"
     },
     {
-      "id": "https://www.espn.com/college-football/story/_/id/50481134/ohio-state-jeremiah-smith-sets-big-ten-receiving-record",
-      "title": "Buckeyes' Smith continues record haul, adds Big Ten career receiving mark",
-      "summary": "Ohio State wide receiver Jeremiah Smith broke yet another record, eclipsing the Big Ten mark for career receiving yards during the first half vs. Northwestern.",
-      "url": "https://www.espn.com/college-football/story/_/id/50481134/ohio-state-jeremiah-smith-sets-big-ten-receiving-record",
-      "canonicalUrl": "https://www.espn.com/college-football/story/_/id/50481134/ohio-state-jeremiah-smith-sets-big-ten-receiving-record",
-      "source": "ESPN",
+      "id": "https://www.bbc.co.uk/sport/football/articles/cq0mdzrjn0j2o?at_medium=rss&at_campaign=rss",
+      "title": "White has 'exciting future' despite boos - Rice",
+      "summary": "Midfielder Declan Rice has defended his Arsenal team-mate Ben White after he was booed during England's win over Croatia at Wembley.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cq0mdzrjn0j2o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cq0mdzrjn0j2o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
       "category": "sports",
-      "publishedAt": "2026-11-14T20:27:23.000Z"
+      "publishedAt": "2026-11-14T22:26:56.000Z"
     },
     {
-      "id": "https://www.espn.com/college-football/story/_/id/50482223/georgia-football-commit-marcellus-young-casario-dies-suddenly",
-      "title": "2027 UGA football commit dies following 'sudden medical emergency'",
-      "summary": "Marcellus Young Casario, a Georgia football commit, died Friday after experiencing a \"sudden medical emergency,\" according to his high school.",
-      "url": "https://www.espn.com/college-football/story/_/id/50482223/georgia-football-commit-marcellus-young-casario-dies-suddenly",
-      "canonicalUrl": "https://www.espn.com/college-football/story/_/id/50482223/georgia-football-commit-marcellus-young-casario-dies-suddenly",
-      "source": "ESPN",
-      "category": "sports",
-      "publishedAt": "2026-11-14T20:27:23.000Z"
+      "id": "https://www.npr.org/2026/11/14/nx-s1-6041119/us-measles-elimination-status-vaccines-cdc-paho",
+      "title": "US has lost measles elimination status, global health authorities say",
+      "summary": "The U.S. has lost its status as a country where measles is eliminated, according to researchers with direct knowledge of the deliberations at the Pan American Health Organization.",
+      "url": "https://www.npr.org/2026/11/14/nx-s1-6041119/us-measles-elimination-status-vaccines-cdc-paho",
+      "canonicalUrl": "https://www.npr.org/2026/11/14/nx-s1-6041119/us-measles-elimination-status-vaccines-cdc-paho",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-11-14T22:15:02.000Z"
     },
     {
-      "id": "https://www.espn.com/college-football/story/_/id/50482105/clemson-qb-tait-reynolds-suffers-leg-injury-slide",
-      "title": "Clemson QB Reynolds exits early with leg injury after slide",
-      "summary": "Clemson quarterback Tait Reynolds was knocked out of the Tigers' game against Georgia Tech on Saturday after injuring his knee on a run play.",
-      "url": "https://www.espn.com/college-football/story/_/id/50482105/clemson-qb-tait-reynolds-suffers-leg-injury-slide",
-      "canonicalUrl": "https://www.espn.com/college-football/story/_/id/50482105/clemson-qb-tait-reynolds-suffers-leg-injury-slide",
-      "source": "ESPN",
-      "category": "sports",
-      "publishedAt": "2026-11-14T20:27:23.000Z"
+      "id": "https://www.bbc.co.uk/news/videos/cwlym2gy3y3eo?at_medium=rss&at_campaign=rss",
+      "title": "'Can you believe it?': SpaceX catches part of its Starship rocket on return to Earth",
+      "summary": "SpaceX has performed the historic catch using mechanical arms nicknamed \"chopsticks\".",
+      "url": "https://www.bbc.co.uk/news/videos/cwlym2gy3y3eo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/videos/cwlym2gy3y3eo?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-11-14T22:09:40.000Z"
     },
     {
-      "id": "https://www.espn.com/nfl/story/_/id/50479874/sources-vikings-first-called-kirk-cousins-mnf",
-      "title": "Sources: Vikings made initial Cousins trade call before MNF meltdown",
-      "summary": "The Vikings initially reached out to the Raiders about a Kirk Cousins trade before their MNF game against the Bills, sources told ESPN and NFL Network.",
-      "url": "https://www.espn.com/nfl/story/_/id/50479874/sources-vikings-first-called-kirk-cousins-mnf",
-      "canonicalUrl": "https://www.espn.com/nfl/story/_/id/50479874/sources-vikings-first-called-kirk-cousins-mnf",
-      "source": "ESPN",
+      "id": "https://www.bbc.co.uk/sport/football/articles/c6e9kgn532gxo?at_medium=rss&at_campaign=rss",
+      "title": "Arsenal target Nusa could cost £66m - Sunday's gossip",
+      "summary": "Arsenal could have to pay £66m for RB Leipzig's Antonio Nusa, Real Betis reject Chelsea's bid for Jose Morante, plus more.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c6e9kgn532gxo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c6e9kgn532gxo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
       "category": "sports",
-      "publishedAt": "2026-11-14T20:27:23.000Z"
+      "publishedAt": "2026-11-14T21:48:45.000Z"
     },
     {
-      "id": "https://www.espn.com/nfl/story/_/id/50480529/chiefs-kenneth-walker-iii-groin-sit-sources-say",
-      "title": "Chiefs RB Walker (groin) to miss game vs. Bijan, Falcons",
-      "summary": "Chiefs running back Kenneth Walker III will miss Sunday's game due to a groin injury.",
-      "url": "https://www.espn.com/nfl/story/_/id/50480529/chiefs-kenneth-walker-iii-groin-sit-sources-say",
-      "canonicalUrl": "https://www.espn.com/nfl/story/_/id/50480529/chiefs-kenneth-walker-iii-groin-sit-sources-say",
-      "source": "ESPN",
-      "category": "sports",
-      "publishedAt": "2026-11-14T20:27:23.000Z"
+      "id": "https://www.npr.org/2026/11/14/g-s1-153786/spacex-successfully-catches-starship-and-makes-history",
+      "title": "SpaceX successfully catches Starship and makes history",
+      "summary": "The company's spacecraft returned to its Texas launchpad in dramatic fashion — by carefully lowering itself until two metal arms attached to the launch tower could secure it.",
+      "url": "https://www.npr.org/2026/11/14/g-s1-153786/spacex-successfully-catches-starship-and-makes-history",
+      "canonicalUrl": "https://www.npr.org/2026/11/14/g-s1-153786/spacex-successfully-catches-starship-and-makes-history",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-11-14T21:42:41.000Z"
     },
     {
-      "id": "https://www.espn.com/soccer/story/_/id/50481452/washington-spirit-vs-utah-royals-nwsl-championship-semiginal",
-      "title": "Rodman, Washington edge Utah to reach 3rd straight NWSL Championship",
-      "summary": "The Washington Spirit are heading to a third straight NWSL Championship after getting the better of the Utah Royals, 2-1, in Saturday's first semifinal.",
-      "url": "https://www.espn.com/soccer/story/_/id/50481452/washington-spirit-vs-utah-royals-nwsl-championship-semiginal",
-      "canonicalUrl": "https://www.espn.com/soccer/story/_/id/50481452/washington-spirit-vs-utah-royals-nwsl-championship-semiginal",
-      "source": "ESPN",
-      "category": "sports",
-      "publishedAt": "2026-11-14T20:27:23.000Z"
+      "id": "https://www.marketwatch.com/story/im-63-and-want-to-spend-95-000-on-a-roof-deck-for-my-500-000-home-is-that-a-good-investment-f1a59c27?mod=mw_rss_topstories",
+      "title": "I&#x2019;m 63 and spending $95,000 on a roof deck for my $500,000 home. Is that a good investment?",
+      "summary": "&#x201c;I have a net worth of $2.3 million and my only debt is a 15-year mortgage.&#x201d;",
+      "url": "https://www.marketwatch.com/story/im-63-and-want-to-spend-95-000-on-a-roof-deck-for-my-500-000-home-is-that-a-good-investment-f1a59c27?mod=mw_rss_topstories",
+      "canonicalUrl": "https://www.marketwatch.com/story/im-63-and-want-to-spend-95-000-on-a-roof-deck-for-my-500-000-home-is-that-a-good-investment-f1a59c27?mod=mw_rss_topstories",
+      "source": "MarketWatch · Top Stories",
+      "category": "finance",
+      "publishedAt": "2026-11-14T21:31:00.000Z"
     },
     {
-      "id": "https://www.espn.com/nfl/story/_/id/50479995/nfl-reassigns-backup-refs-work-games-closer-home",
-      "title": "NFL reassigns backup referees to work Sunday games within driving distance",
-      "summary": "The NFL, trying to avoid further travel issues from Friday's FAA ground stop, has reassigned officials to Week 10 games within driving distance of their homes.",
-      "url": "https://www.espn.com/nfl/story/_/id/50479995/nfl-reassigns-backup-refs-work-games-closer-home",
-      "canonicalUrl": "https://www.espn.com/nfl/story/_/id/50479995/nfl-reassigns-backup-refs-work-games-closer-home",
-      "source": "ESPN",
+      "id": "https://www.bbc.co.uk/sport/rugby-union/articles/cq0l3pn5z20xo?at_medium=rss&at_campaign=rss",
+      "title": "Comeback kid Joseph thrills as England eye All Blacks",
+      "summary": "Will Joseph's comeback after four years off the Test scene was worth waiting for. And there was plenty elsewhere to buoy England in a rout of Japan.",
+      "url": "https://www.bbc.co.uk/sport/rugby-union/articles/cq0l3pn5z20xo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/rugby-union/articles/cq0l3pn5z20xo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
       "category": "sports",
-      "publishedAt": "2026-11-14T20:27:23.000Z"
+      "publishedAt": "2026-11-14T21:06:00.000Z"
     },
     {
-      "id": "https://www.espn.com/nba/story/_/id/50463046/nba-g-league-delaware-blue-coats-200-dollar-tryout",
-      "title": "🏀 What happens when you pay $200 to try out for a G League team?",
-      "summary": "Former college players, content creators and even some Sixers fans chased the same opportunity to get noticed by the Delaware Blue Coats.",
-      "url": "https://www.espn.com/nba/story/_/id/50463046/nba-g-league-delaware-blue-coats-200-dollar-tryout",
-      "canonicalUrl": "https://www.espn.com/nba/story/_/id/50463046/nba-g-league-delaware-blue-coats-200-dollar-tryout",
-      "source": "ESPN",
+      "id": "https://www.marketwatch.com/story/i-inherited-1-4-million-from-my-father-am-i-wrong-to-ask-my-husband-of-25-years-for-a-postnuptial-agreement-b739c51d?mod=mw_rss_topstories",
+      "title": "I inherited $1.4 million from my father. Am I wrong to ask my husband of 25 years for a postnuptial agreement?",
+      "summary": "&#x201c;He has always said he wants his daughter to inherit a chunk of his estate, and I&#x2019;ve never objected to that.&#x201d;",
+      "url": "https://www.marketwatch.com/story/i-inherited-1-4-million-from-my-father-am-i-wrong-to-ask-my-husband-of-25-years-for-a-postnuptial-agreement-b739c51d?mod=mw_rss_topstories",
+      "canonicalUrl": "https://www.marketwatch.com/story/i-inherited-1-4-million-from-my-father-am-i-wrong-to-ask-my-husband-of-25-years-for-a-postnuptial-agreement-b739c51d?mod=mw_rss_topstories",
+      "source": "MarketWatch · Top Stories",
+      "category": "finance",
+      "publishedAt": "2026-11-14T21:00:00.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/cmx28nxw1elvo?at_medium=rss&at_campaign=rss",
+      "title": "What Wales need to stay in Nations League top tier",
+      "summary": "BBC Sport Wales explains how Wales can stay in the Nations League top tier despite finishing bottom of their group.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cmx28nxw1elvo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cmx28nxw1elvo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
       "category": "sports",
-      "publishedAt": "2026-11-14T20:27:23.000Z"
+      "publishedAt": "2026-11-14T20:52:48.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/c893r74ryy3qo?at_medium=rss&at_campaign=rss",
+      "title": "'No racism in Spain' – De la Fuente message for Tuchel",
+      "summary": "Spain manager Luis de la Fuente says \"there is no racism in Spain\" and England boss Thomas Tuchel reiterates that he does not believe it will be an issue at Sunday's Nations League meeting in Madrid.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c893r74ryy3qo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c893r74ryy3qo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-14T20:43:57.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/boxing/articles/cmkgkz244pgro?at_medium=rss&at_campaign=rss",
@@ -143,26 +343,6 @@
       "publishedAt": "2026-11-14T20:12:34.000Z"
     },
     {
-      "id": "https://www.espn.com/nfl/story/_/id/50475710/nfl-germany-lions-amon-ra-st-brown-munich",
-      "title": "'I thought he was speaking gibberish': Untold stories of Amon-Ra St. Brown's German upbringing",
-      "summary": "For Amon-Ra St. Brown, Sunday's NFL game in Munich will mark the ultimate convergence of his dual heritage. Here are stories that shed more light.",
-      "url": "https://www.espn.com/nfl/story/_/id/50475710/nfl-germany-lions-amon-ra-st-brown-munich",
-      "canonicalUrl": "https://www.espn.com/nfl/story/_/id/50475710/nfl-germany-lions-amon-ra-st-brown-munich",
-      "source": "ESPN",
-      "category": "sports",
-      "publishedAt": "2026-11-14T20:11:22.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=rss&at_campaign=rss",
-      "title": "How telecoms upgrade work sparked US flight chaos",
-      "summary": "US officials say the disruption was caused by old equipment overloading and not a cyber-attack.",
-      "url": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-11-14T20:03:48.000Z"
-    },
-    {
       "id": "https://www.marketwatch.com/story/it-leaves-me-with-a-sour-taste-my-elderly-mother-gave-our-cousin-800-for-a-car-repair-should-i-be-worried-88dbd188?mod=mw_rss_topstories",
       "title": "&#x2018;It leaves me with a sour taste&#x2019;: My elderly mother gave our cousin $800 for a car repair. Should I be worried?",
       "summary": "&#x201c;I know older people can easily feel patronized, and I don&#x2019;t want that to happen.&#x201d;",
@@ -171,46 +351,6 @@
       "source": "MarketWatch · Top Stories",
       "category": "finance",
       "publishedAt": "2026-11-14T20:00:00.000Z"
-    },
-    {
-      "id": "https://www.espn.com/nfl/story/_/id/50453290/week-10-predictions-upsets-fantasy-sleepers-stats-2026",
-      "title": "15 predictions: What we expect from Chuba Hubbard, Aaron Rodgers, George Kittle",
-      "summary": "Touchdown for Chuba Hubbard? Fantasy upside for Aaron Rodgers? Trick play from the Raiders? Let's predict 15 things for Week 10.",
-      "url": "https://www.espn.com/nfl/story/_/id/50453290/week-10-predictions-upsets-fantasy-sleepers-stats-2026",
-      "canonicalUrl": "https://www.espn.com/nfl/story/_/id/50453290/week-10-predictions-upsets-fantasy-sleepers-stats-2026",
-      "source": "ESPN",
-      "category": "sports",
-      "publishedAt": "2026-11-14T19:50:52.000Z"
-    },
-    {
-      "id": "https://www.espn.com/nfl/story/_/id/50453355/week-10-picks-predictions-schedule-fantasy-odds-2026",
-      "title": "Our guide to every Week 10 game: Matchup previews, predictions, picks and nuggets",
-      "summary": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
-      "url": "https://www.espn.com/nfl/story/_/id/50453355/week-10-picks-predictions-schedule-fantasy-odds-2026",
-      "canonicalUrl": "https://www.espn.com/nfl/story/_/id/50453355/week-10-picks-predictions-schedule-fantasy-odds-2026",
-      "source": "ESPN",
-      "category": "sports",
-      "publishedAt": "2026-11-14T19:50:52.000Z"
-    },
-    {
-      "id": "https://www.espn.com/college-football/story/_/id/50475169/faa-ground-stop-disrupting-travel-college-football-teams",
-      "title": "FAA ground stop throws sports world into travel chaos ahead of weekend games",
-      "summary": "Travel plans for teams in multiple sports were disrupted by the FAA's nationwide ground stop of all flights because of communications problems.",
-      "url": "https://www.espn.com/college-football/story/_/id/50475169/faa-ground-stop-disrupting-travel-college-football-teams",
-      "canonicalUrl": "https://www.espn.com/college-football/story/_/id/50475169/faa-ground-stop-disrupting-travel-college-football-teams",
-      "source": "ESPN",
-      "category": "sports",
-      "publishedAt": "2026-11-14T19:36:24.000Z"
-    },
-    {
-      "id": "https://www.espn.com/college-football/story/_/id/50481529/central-oklahoma-troll-ole-miss-faa-decsion",
-      "title": "Central Oklahoma AD trolls Ole Miss amid forced kickoff change from FAA crisis",
-      "summary": "The Division II school offered Ole Miss fans attending its Oklahoma matchup free admission due to the kickoff date change.",
-      "url": "https://www.espn.com/college-football/story/_/id/50481529/central-oklahoma-troll-ole-miss-faa-decsion",
-      "canonicalUrl": "https://www.espn.com/college-football/story/_/id/50481529/central-oklahoma-troll-ole-miss-faa-decsion",
-      "source": "ESPN",
-      "category": "sports",
-      "publishedAt": "2026-11-14T19:36:16.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/rugby-union/articles/cmkg57rz2re9o?at_medium=rss&at_campaign=rss",
@@ -303,46 +443,6 @@
       "publishedAt": "2026-11-14T18:48:39.000Z"
     },
     {
-      "id": "https://www.espn.com/fantasy/football/story/_/id/50435678/fantasy-football-streamers-last-minute-pickups-week-10",
-      "title": "Last-minute pickups for Week 10: Estime, Tyson among worthy adds",
-      "summary": "If injuries, bye weeks or tough matchups have you seeking lineup help, Matt Bowen lists potential options.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/50435678/fantasy-football-streamers-last-minute-pickups-week-10",
-      "canonicalUrl": "https://www.espn.com/fantasy/football/story/_/id/50435678/fantasy-football-streamers-last-minute-pickups-week-10",
-      "source": "ESPN",
-      "category": "sports",
-      "publishedAt": "2026-11-14T18:42:34.000Z"
-    },
-    {
-      "id": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
-      "title": "Buzz: Does Emmett Johnson have RB1 upside while Kenneth Walker III is out?",
-      "summary": "Kansas City rookie Emmett Johnson is expected to be thrust into a starting role for Week 10 with Kenneth Walker III ruled out.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
-      "canonicalUrl": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
-      "source": "ESPN",
-      "category": "sports",
-      "publishedAt": "2026-11-14T18:42:33.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
-      "title": "Nationwide ground stop followed contractor upgrade to L3Harris telecommunication system: DOT’s Duffy",
-      "summary": "The FAA ground stop came after updates to an older communication system managed by L3Harris Technologies, Transportation Secretary Sean Duffy said Saturday.",
-      "url": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-11-14T18:32:47.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/rugby-union/articles/cmvg208nlw04o?at_medium=rss&at_campaign=rss",
-      "title": "Joseph scores record-equalling five tries as England rout Japan",
-      "summary": "Will Joseph marked his comeback after four years out the Test game with a record-equalling five tries as England tore through Japan.",
-      "url": "https://www.bbc.co.uk/sport/rugby-union/articles/cmvg208nlw04o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/rugby-union/articles/cmvg208nlw04o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-11-14T18:31:30.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/sport/rugby-union/articles/c820q64ezyn7o?at_medium=rss&at_campaign=rss",
       "title": "Wales believed they could create history - Lake",
       "summary": "Captain Dewi Lake says he always believed Wales could defeat New Zealand and end the 73-year hoodoo against the All Blacks.",
@@ -353,26 +453,6 @@
       "publishedAt": "2026-11-14T18:30:58.000Z"
     },
     {
-      "id": "https://www.espn.com/mens-college-basketball/story/_/id/50467119/real-not-college-basketball",
-      "title": "How real are the good starts from UConn, Michigan State and Virginia?",
-      "summary": "Which teams' first two weeks are a mirage and which are a sign of good things to come?",
-      "url": "https://www.espn.com/mens-college-basketball/story/_/id/50467119/real-not-college-basketball",
-      "canonicalUrl": "https://www.espn.com/mens-college-basketball/story/_/id/50467119/real-not-college-basketball",
-      "source": "ESPN",
-      "category": "sports",
-      "publishedAt": "2026-11-14T18:30:26.000Z"
-    },
-    {
-      "id": "https://www.espn.com/mens-college-basketball/story/_/id/50453526/mens-college-basketball-power-rankings",
-      "title": "Power Rankings: Top 5 looks wholly different from preseason list",
-      "summary": "After two weeks of play, Florida tops the rankings, while Kansas and UCLA made big jumps with signature wins.",
-      "url": "https://www.espn.com/mens-college-basketball/story/_/id/50453526/mens-college-basketball-power-rankings",
-      "canonicalUrl": "https://www.espn.com/mens-college-basketball/story/_/id/50453526/mens-college-basketball-power-rankings",
-      "source": "ESPN",
-      "category": "sports",
-      "publishedAt": "2026-11-14T18:30:26.000Z"
-    },
-    {
       "id": "https://www.marketwatch.com/story/she-can-always-change-her-mind-should-a-widow-leave-the-family-home-to-her-stepchildren-649b06af?mod=mw_rss_topstories",
       "title": "Should a widow leave her late partner&#x2019;s home to her stepkids &#x2014; or cut off contact with them?",
       "summary": "&#x201c;It would be a less drastic step than selling the home now and splitting the proceeds.&#x201d;",
@@ -381,26 +461,6 @@
       "source": "MarketWatch · Top Stories",
       "category": "finance",
       "publishedAt": "2026-11-14T18:30:00.000Z"
-    },
-    {
-      "id": "https://www.espn.com/womens-college-basketball/story/_/id/50465961/uconn-huskies-searching-identity-amid-3-1-start",
-      "title": "'We've got to find ourselves a little bit': UConn's identity still taking shape",
-      "summary": "The Huskies' outlook appears murkier than in years past after the \"worst UConn performance\" in 20 years.",
-      "url": "https://www.espn.com/womens-college-basketball/story/_/id/50465961/uconn-huskies-searching-identity-amid-3-1-start",
-      "canonicalUrl": "https://www.espn.com/womens-college-basketball/story/_/id/50465961/uconn-huskies-searching-identity-amid-3-1-start",
-      "source": "ESPN",
-      "category": "sports",
-      "publishedAt": "2026-11-14T18:29:23.000Z"
-    },
-    {
-      "id": "https://www.espn.com/womens-college-basketball/story/_/id/50453869/tennessee-lady-vols-coach-kim-caldwell-ready-reset",
-      "title": "From rock-bottom to program reset: How Kim Caldwell hopes to turn around Tennessee",
-      "summary": "Owning last season's shortfalls, Kim Caldwell has returned to her roots. How it plays out will determine the Lady Vols' future.",
-      "url": "https://www.espn.com/womens-college-basketball/story/_/id/50453869/tennessee-lady-vols-coach-kim-caldwell-ready-reset",
-      "canonicalUrl": "https://www.espn.com/womens-college-basketball/story/_/id/50453869/tennessee-lady-vols-coach-kim-caldwell-ready-reset",
-      "source": "ESPN",
-      "category": "sports",
-      "publishedAt": "2026-11-14T18:29:23.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/news/articles/cwn83gxemk35o?at_medium=rss&at_campaign=rss",
@@ -493,36 +553,6 @@
       "publishedAt": "2026-11-14T17:50:00.000Z"
     },
     {
-      "id": "https://www.marketwatch.com/story/if-you-could-change-one-thing-about-caregiving-what-would-it-be-8b20be29?mod=mw_rss_topstories",
-      "title": "The lonely labor of caregiving: &#x2018;You shouldn&#x2019;t have to be rich to take care of the people you love&#x2019;",
-      "summary": "&#x201c;Take Me Home&#x201d; offers a view of how one family faces caregiving issues and finds solutions.",
-      "url": "https://www.marketwatch.com/story/if-you-could-change-one-thing-about-caregiving-what-would-it-be-8b20be29?mod=mw_rss_topstories",
-      "canonicalUrl": "https://www.marketwatch.com/story/if-you-could-change-one-thing-about-caregiving-what-would-it-be-8b20be29?mod=mw_rss_topstories",
-      "source": "MarketWatch · Top Stories",
-      "category": "finance",
-      "publishedAt": "2026-11-14T17:50:00.000Z"
-    },
-    {
-      "id": "https://www.marketwatch.com/story/its-not-medicare-for-all-but-medicare-for-more-what-this-could-mean-for-workers-over-50-4a5c51a3?mod=mw_rss_topstories",
-      "title": "Medicare at age 50? What &#x2018;Medicare for more&#x2019; could mean for American workers.",
-      "summary": "It&#x2019;s not &#x201c;Medicare for All,&#x201d; but a new bill would lower the Medicare age to 50, expanding coverage for 60 million adults",
-      "url": "https://www.marketwatch.com/story/its-not-medicare-for-all-but-medicare-for-more-what-this-could-mean-for-workers-over-50-4a5c51a3?mod=mw_rss_topstories",
-      "canonicalUrl": "https://www.marketwatch.com/story/its-not-medicare-for-all-but-medicare-for-more-what-this-could-mean-for-workers-over-50-4a5c51a3?mod=mw_rss_topstories",
-      "source": "MarketWatch · Top Stories",
-      "category": "finance",
-      "publishedAt": "2026-11-14T17:50:00.000Z"
-    },
-    {
-      "id": "https://www.marketwatch.com/story/why-this-big-idea-to-fix-social-security-relies-on-a-massive-stock-market-gamble-5423f50f?mod=mw_rss_topstories",
-      "title": "Why this &#x2018;big idea&#x2019; to fix Social Security relies on a massive stock-market gamble",
-      "summary": "From a long-term perspective, the past 50 years of strong market gains are the exception rather than the rule",
-      "url": "https://www.marketwatch.com/story/why-this-big-idea-to-fix-social-security-relies-on-a-massive-stock-market-gamble-5423f50f?mod=mw_rss_topstories",
-      "canonicalUrl": "https://www.marketwatch.com/story/why-this-big-idea-to-fix-social-security-relies-on-a-massive-stock-market-gamble-5423f50f?mod=mw_rss_topstories",
-      "source": "MarketWatch · Top Stories",
-      "category": "finance",
-      "publishedAt": "2026-11-14T17:50:00.000Z"
-    },
-    {
       "id": "https://www.cnbc.com/2026/11/14/nvidia-investors-jensen-huang-return-board-letter.html",
       "title": "Nvidia board urged to consider 'potential return of Jensen Huang' by two major investors",
       "summary": "Two Nvidia investors with about $2.13 billion of stock disclosed as of June 30 are calling for a deliberate leadership search after Huang’s resignation.",
@@ -533,76 +563,6 @@
       "publishedAt": "2026-11-14T17:46:06.000Z"
     },
     {
-      "id": "https://www.espn.com/mlb/story/_/id/50461703/free-agency-offseason-2026-27-gm-meetings-lessons",
-      "title": "What we learned about all 30 teams at the MLB GM meetings",
-      "summary": "With a wild winter ahead, here are the top offseason priorities straight from every front office.",
-      "url": "https://www.espn.com/mlb/story/_/id/50461703/free-agency-offseason-2026-27-gm-meetings-lessons",
-      "canonicalUrl": "https://www.espn.com/mlb/story/_/id/50461703/free-agency-offseason-2026-27-gm-meetings-lessons",
-      "source": "ESPN",
-      "category": "sports",
-      "publishedAt": "2026-11-14T17:29:41.000Z"
-    },
-    {
-      "id": "https://www.espn.com/mlb/story/_/id/50473334/2026-27-offseason-free-agency-trade-grades",
-      "title": "MLB offseason grades: Red Sox land Jake Bauers amid winter's first big moves",
-      "summary": "We've got you covered with grades and analysis on every winter signing and big offseason trade.",
-      "url": "https://www.espn.com/mlb/story/_/id/50473334/2026-27-offseason-free-agency-trade-grades",
-      "canonicalUrl": "https://www.espn.com/mlb/story/_/id/50473334/2026-27-offseason-free-agency-trade-grades",
-      "source": "ESPN",
-      "category": "sports",
-      "publishedAt": "2026-11-14T17:29:40.000Z"
-    },
-    {
-      "id": "https://www.espn.com/soccer/story/_/id/50479087/sonia-bompastor-chelsea-man-city-wsl-emma-hayes",
-      "title": "Chelsea reassert WSL dominance over Man City in front of USWNT boss Hayes",
-      "summary": "Sonia Bompastor took off Kadeisha Buchanan after 12 minutes and it paid off as Chelsea went top of the WSL by beating defending champions Manchester City.",
-      "url": "https://www.espn.com/soccer/story/_/id/50479087/sonia-bompastor-chelsea-man-city-wsl-emma-hayes",
-      "canonicalUrl": "https://www.espn.com/soccer/story/_/id/50479087/sonia-bompastor-chelsea-man-city-wsl-emma-hayes",
-      "source": "ESPN",
-      "category": "sports",
-      "publishedAt": "2026-11-14T17:15:16.000Z"
-    },
-    {
-      "id": "https://www.espn.com/college-football/story/_/id/50462068/lane-kiffin-lsu-playoff-expectations",
-      "title": "After an offseason of big talk and bigger money, the bill comes due for Lane Kiffin and LSU",
-      "summary": "There is understandably little patience at LSU this season. Lane Kiffin's chance to turn things around starts this weekend against Texas.",
-      "url": "https://www.espn.com/college-football/story/_/id/50462068/lane-kiffin-lsu-playoff-expectations",
-      "canonicalUrl": "https://www.espn.com/college-football/story/_/id/50462068/lane-kiffin-lsu-playoff-expectations",
-      "source": "ESPN",
-      "category": "sports",
-      "publishedAt": "2026-11-14T17:13:52.000Z"
-    },
-    {
-      "id": "https://www.espn.com/college-football/story/_/id/50435088/will-muschamp-texas-defense-boom",
-      "title": "Texas' defense has gotten its 'boom' back under Will Muschamp",
-      "summary": "While much attention has been on the Horns' offense, a newly aggressive D has kept them in the CFP hunt.",
-      "url": "https://www.espn.com/college-football/story/_/id/50435088/will-muschamp-texas-defense-boom",
-      "canonicalUrl": "https://www.espn.com/college-football/story/_/id/50435088/will-muschamp-texas-defense-boom",
-      "source": "ESPN",
-      "category": "sports",
-      "publishedAt": "2026-11-14T17:13:52.000Z"
-    },
-    {
-      "id": "https://www.espn.com/nhl/story/_/id/50464480/nhl-2026-27-power-rankings-top-teams-players-stats-projections-standings",
-      "title": "NHL Power Rankings: Updated poll, plus each team's points vs. preseason projections",
-      "summary": "Which teams are the most ahead of (or behind) their preseason expectations?",
-      "url": "https://www.espn.com/nhl/story/_/id/50464480/nhl-2026-27-power-rankings-top-teams-players-stats-projections-standings",
-      "canonicalUrl": "https://www.espn.com/nhl/story/_/id/50464480/nhl-2026-27-power-rankings-top-teams-players-stats-projections-standings",
-      "source": "ESPN",
-      "category": "sports",
-      "publishedAt": "2026-11-14T17:12:13.000Z"
-    },
-    {
-      "id": "https://www.espn.com/nhl/story/_/id/50473236/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
-      "title": "NHL Tonight: Guide to all 14 games on a massive hockey Saturday",
-      "summary": "Find game previews, betting intel, broadcast information, stats and highlights here.",
-      "url": "https://www.espn.com/nhl/story/_/id/50473236/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
-      "canonicalUrl": "https://www.espn.com/nhl/story/_/id/50473236/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
-      "source": "ESPN",
-      "category": "sports",
-      "publishedAt": "2026-11-14T17:12:13.000Z"
-    },
-    {
       "id": "https://www.npr.org/2026/11/14/nx-s1-6040952/faa-ground-stop-airplane-travel",
       "title": "FAA blames Friday's ground stop on 'equipment issue' during telecoms network upgrade",
       "summary": "Transportation Secretary Sean Duffy said initial investigations pointed to an issue with contractor L3Harris updating old tech at a remote location.",
@@ -611,16 +571,6 @@
       "source": "NPR · Top Stories",
       "category": "general",
       "publishedAt": "2026-11-14T16:53:04.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/rugby-union/articles/c63dgev0p8pgo?at_medium=rss&at_campaign=rss",
-      "title": "Magnificent Wales beat New Zealand for first time since 1953",
-      "summary": "Wales celebrate a first victory against New Zealand since 1953 with a brilliant 35-28 win to spark astonishing scenes in Cardiff.",
-      "url": "https://www.bbc.co.uk/sport/rugby-union/articles/c63dgev0p8pgo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/rugby-union/articles/c63dgev0p8pgo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-11-14T16:38:04.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/rugby-union/videos/ckdd10y25mm1o?at_medium=rss&at_campaign=rss",
@@ -713,26 +663,6 @@
       "publishedAt": "2026-11-14T15:36:47.000Z"
     },
     {
-      "id": "https://www.espn.com/mma/story/_/id/50463294/ufc-334-gane-hokit-harrison-nunes-picks",
-      "title": "Preview and picks for Ciryl Gane-Josh Hokit and Kayla Harrison-Amanda Nunes",
-      "summary": "A look at the matchups and experts' picks for both title fights at UFC 334 in New York City.",
-      "url": "https://www.espn.com/mma/story/_/id/50463294/ufc-334-gane-hokit-harrison-nunes-picks",
-      "canonicalUrl": "https://www.espn.com/mma/story/_/id/50463294/ufc-334-gane-hokit-harrison-nunes-picks",
-      "source": "ESPN",
-      "category": "sports",
-      "publishedAt": "2026-11-14T15:24:19.000Z"
-    },
-    {
-      "id": "https://www.espn.com/mma/story/_/id/50428840/amanda-nunes-kayla-harrison-ufc-rivals",
-      "title": "Inside the complicated history of Nunes and Harrison",
-      "summary": "Kayla Harrison thought she had found a teammate, but Amanda Nunes saw a future rival. What really happened?",
-      "url": "https://www.espn.com/mma/story/_/id/50428840/amanda-nunes-kayla-harrison-ufc-rivals",
-      "canonicalUrl": "https://www.espn.com/mma/story/_/id/50428840/amanda-nunes-kayla-harrison-ufc-rivals",
-      "source": "ESPN",
-      "category": "sports",
-      "publishedAt": "2026-11-14T15:24:19.000Z"
-    },
-    {
       "id": "https://www.cnbc.com/2026/11/14/real-estate-rental-income-industrial-storage-market.html",
       "title": "Rising rents draw Wall Street money to industrial outdoor storage lot investments across the U.S.",
       "summary": "A real estate investment in markets across the U.S. called 'industrial outdoor storage' is attracting Wall Street giants including Brookfield and Blackstone.",
@@ -773,26 +703,6 @@
       "publishedAt": "2026-11-14T14:54:22.000Z"
     },
     {
-      "id": "https://www.espn.com/college-football/story/_/id/50465602/college-football-week-11-uniforms-oregon-houston",
-      "title": "Oregon, Houston headline best uniforms of Week 11 in college football",
-      "summary": "Oregon bringing the heat is all but a given in the college football uniform game, and this week is no different.",
-      "url": "https://www.espn.com/college-football/story/_/id/50465602/college-football-week-11-uniforms-oregon-houston",
-      "canonicalUrl": "https://www.espn.com/college-football/story/_/id/50465602/college-football-week-11-uniforms-oregon-houston",
-      "source": "ESPN",
-      "category": "sports",
-      "publishedAt": "2026-11-14T14:31:05.000Z"
-    },
-    {
-      "id": "https://www.espn.com/nfl/story/_/id/50472000/sam-hartman-bachelor-season-30",
-      "title": "Commanders QB Sam Hartman to star as 'The Bachelor' in show's 30th season",
-      "summary": "The 30th season of ABC's \"The Bachelor\" that will premiere in March 2027 will star the former Notre Dame standout.",
-      "url": "https://www.espn.com/nfl/story/_/id/50472000/sam-hartman-bachelor-season-30",
-      "canonicalUrl": "https://www.espn.com/nfl/story/_/id/50472000/sam-hartman-bachelor-season-30",
-      "source": "ESPN",
-      "category": "sports",
-      "publishedAt": "2026-11-14T14:31:05.000Z"
-    },
-    {
       "id": "https://www.cnbc.com/2026/11/14/heating-oil-price-spike-household-budgets.html",
       "title": "Heating oil prices are up 59% from last winter. The spike is 'crushing folks,' Maine nonprofit says",
       "summary": "With household budgets already squeezed by persistent inflation, some residents are seeking emergency help with heating oil bills before winter begins.",
@@ -811,16 +721,6 @@
       "source": "BBC Sport",
       "category": "sports",
       "publishedAt": "2026-11-14T14:24:13.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/articles/ckregdgnl0xpo?at_medium=rss&at_campaign=rss",
-      "title": "Second catch attempt for SpaceX Starship rocket",
-      "summary": "The attempt follows an unsuccessful effort to catch of the rocket’s booster which instead came down in the ocean.",
-      "url": "https://www.bbc.co.uk/news/articles/ckregdgnl0xpo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/ckregdgnl0xpo?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-11-14T14:18:41.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/golf/articles/cqkgm00ykp7ko?at_medium=rss&at_campaign=rss",
@@ -853,26 +753,6 @@
       "publishedAt": "2026-11-14T14:02:39.000Z"
     },
     {
-      "id": "https://www.espn.com/nfl/story/_/id/50462723/2026-nfl-playoffs-mvp-super-bowl-breakout-players-divisions",
-      "title": "Execs predict the season's second half: Who will win division races, MVP, the Super Bowl?",
-      "summary": "Who will win the most competitive divisions, and who's in line for awards? We asked sources around the NFL at midseason.",
-      "url": "https://www.espn.com/nfl/story/_/id/50462723/2026-nfl-playoffs-mvp-super-bowl-breakout-players-divisions",
-      "canonicalUrl": "https://www.espn.com/nfl/story/_/id/50462723/2026-nfl-playoffs-mvp-super-bowl-breakout-players-divisions",
-      "source": "ESPN",
-      "category": "sports",
-      "publishedAt": "2026-11-14T13:16:05.000Z"
-    },
-    {
-      "id": "https://www.espn.com/nfl/story/_/id/50452792/2026-midseason-awards-ranking-mvp-rookies-coaches-barnwell",
-      "title": "Barnwell's NFL midseason awards: The top candidates to win MVP, ROY and more",
-      "summary": "Joe Burrow for MVP? Arvell Reese as the DROY? Hardware for Jaxon Smith-Njigba and Will Anderson Jr.? We ranked the top contenders to win eight NFL awards through Week 9.",
-      "url": "https://www.espn.com/nfl/story/_/id/50452792/2026-midseason-awards-ranking-mvp-rookies-coaches-barnwell",
-      "canonicalUrl": "https://www.espn.com/nfl/story/_/id/50452792/2026-midseason-awards-ranking-mvp-rookies-coaches-barnwell",
-      "source": "ESPN",
-      "category": "sports",
-      "publishedAt": "2026-11-14T13:16:05.000Z"
-    },
-    {
       "id": "https://www.npr.org/2026/11/14/nx-s1-6034952/alaska-results-ranked-choice-voting-nonpartisan-primary",
       "title": "Alaska voters aren't ditching ranked choice voting, top-four primaries",
       "summary": "This is the second time Alaskans voted down an effort to repeal the state's unique election system, which voters first approved in 2020. A repeal effort in 2024 also failed narrowly.",
@@ -893,16 +773,6 @@
       "publishedAt": "2026-11-14T13:00:01.000Z"
     },
     {
-      "id": "https://www.npr.org/2026/11/14/nx-s1-6028743/perspective-a-new-kind-of-white-house-press-secretary",
-      "title": "Perspective: A new kind of White House press secretary",
-      "summary": "With the White House press secretary job still left unfilled, maybe an AI assistant might be the answer?",
-      "url": "https://www.npr.org/2026/11/14/nx-s1-6028743/perspective-a-new-kind-of-white-house-press-secretary",
-      "canonicalUrl": "https://www.npr.org/2026/11/14/nx-s1-6028743/perspective-a-new-kind-of-white-house-press-secretary",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-11-14T13:00:00.000Z"
-    },
-    {
       "id": "https://www.sciencedaily.com/releases/2026/11/261113231624.htm",
       "title": "Scientists find a simple daily routine linked to less pain and depression",
       "summary": "A simple change to your daily routine could make a surprising difference in how you feel, both physically and mentally. University of Missouri researchers found that older adults who followed consistent daily schedules r",
@@ -921,36 +791,6 @@
       "source": "ScienceDaily · Top Science",
       "category": "academic",
       "publishedAt": "2026-11-14T12:25:05.000Z"
-    },
-    {
-      "id": "https://www.espn.com/soccer/story/_/id/50462231/mauricio-pochettino-manchester-united-transfer-usmnt",
-      "title": "Man United, Pochettino's to-do list based on what's gone wrong",
-      "summary": "Pochettino makes as much sense as anyone to take the Man United job, so now what? Let's look at the mess he's inheriting and what's at the top of his to-do list.",
-      "url": "https://www.espn.com/soccer/story/_/id/50462231/mauricio-pochettino-manchester-united-transfer-usmnt",
-      "canonicalUrl": "https://www.espn.com/soccer/story/_/id/50462231/mauricio-pochettino-manchester-united-transfer-usmnt",
-      "source": "ESPN",
-      "category": "sports",
-      "publishedAt": "2026-11-14T12:20:43.000Z"
-    },
-    {
-      "id": "https://www.espn.com/soccer/story/_/id/50454088/10-best-ranking-top-soccer-players-november",
-      "title": "The 10 Best List: The top soccer players in the world right now, ranked again",
-      "summary": "Who is the best soccer player in the world at the November international break? ESPN's latest rankings are here.",
-      "url": "https://www.espn.com/soccer/story/_/id/50454088/10-best-ranking-top-soccer-players-november",
-      "canonicalUrl": "https://www.espn.com/soccer/story/_/id/50454088/10-best-ranking-top-soccer-players-november",
-      "source": "ESPN",
-      "category": "sports",
-      "publishedAt": "2026-11-14T12:20:43.000Z"
-    },
-    {
-      "id": "https://www.espn.com/soccer/story/_/id/50462254/pochettino-usmnt-tenure-mercenary-feel",
-      "title": "Pochettino's USMNT tenure had ups, downs and an ever-present mercenary feel",
-      "summary": "Mauricio Pochettino delivered some highs during his time in charge of the USMNT, but his focus never appeared to stray too far from a return to Europe.",
-      "url": "https://www.espn.com/soccer/story/_/id/50462254/pochettino-usmnt-tenure-mercenary-feel",
-      "canonicalUrl": "https://www.espn.com/soccer/story/_/id/50462254/pochettino-usmnt-tenure-mercenary-feel",
-      "source": "ESPN",
-      "category": "sports",
-      "publishedAt": "2026-11-14T12:16:49.000Z"
     },
     {
       "id": "https://www.cnbc.com/2026/11/14/meet-the-seven-co-founders-of-anthropic.html",
@@ -1013,36 +853,6 @@
       "publishedAt": "2026-11-14T10:32:07.000Z"
     },
     {
-      "id": "https://www.npr.org/2026/11/14/nx-s1-6040299/hegseth-impeachment-democrats-house-test",
-      "title": "Hegseth's failed impeachment was a warning to Democrats. Where will they go from here?",
-      "summary": "Democrats have been given a huge opportunity with majorities in both the House and Senate — but the balance of priorities, timing, messaging and discipline are all going to be major tests.",
-      "url": "https://www.npr.org/2026/11/14/nx-s1-6040299/hegseth-impeachment-democrats-house-test",
-      "canonicalUrl": "https://www.npr.org/2026/11/14/nx-s1-6040299/hegseth-impeachment-democrats-house-test",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-11-14T10:00:00.000Z"
-    },
-    {
-      "id": "https://www.npr.org/2026/11/14/nx-s1-6032604/organ-transplant-donor-dead-ethics",
-      "title": "A new policy could help solve the U.S. organ shortage. Critics say it's unethical",
-      "summary": "New guidelines are supposed to protect organ donors in a retrieval procedure that keeps blood flowing through livers, kidneys, lungs and hearts. But bioethicists have troubling questions.",
-      "url": "https://www.npr.org/2026/11/14/nx-s1-6032604/organ-transplant-donor-dead-ethics",
-      "canonicalUrl": "https://www.npr.org/2026/11/14/nx-s1-6032604/organ-transplant-donor-dead-ethics",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-11-14T10:00:00.000Z"
-    },
-    {
-      "id": "https://www.npr.org/2026/11/14/nx-s1-6040507/democrats-male-candidates-masculinity-trump",
-      "title": "As Democrats win big, thirst traps of male candidates take social media by storm",
-      "summary": "It's everywhere on social media: Democrats celebrating the attractive men voters elected in the midterms. But it's bigger than a meme and says a lot about politics of masculinity in the age of Trump.",
-      "url": "https://www.npr.org/2026/11/14/nx-s1-6040507/democrats-male-candidates-masculinity-trump",
-      "canonicalUrl": "https://www.npr.org/2026/11/14/nx-s1-6040507/democrats-male-candidates-masculinity-trump",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-11-14T10:00:00.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/sport/cricket/articles/ckvg2exrj5elo?at_medium=rss&at_campaign=rss",
       "title": "Sooryavanshi becomes youngest captain in men's T20s",
       "summary": "Teenage India sensation Vaibhav Sooryavanshi breaks the record held by Croatia's Zach Vukusic as the youngest captain in top-level men's Twenty20 cricket.",
@@ -1051,56 +861,6 @@
       "source": "BBC Sport",
       "category": "sports",
       "publishedAt": "2026-11-14T09:53:45.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/darts/articles/c9p83m48e7g1o?at_medium=rss&at_campaign=rss",
-      "title": "Menzies sheds weight & embraces fitness after health issues",
-      "summary": "Cameron Menzies has lost five stone and embraced fitness and different forms of therapy after medical issues threatened to upend his darts careers.",
-      "url": "https://www.bbc.co.uk/sport/darts/articles/c9p83m48e7g1o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/darts/articles/c9p83m48e7g1o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-11-14T09:52:12.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/football/articles/c60mdzn2dk1eo?at_medium=rss&at_campaign=rss",
-      "title": "Tuchel to remind England of anti-racism protocols before Spain game",
-      "summary": "Manager Thomas Tuchel will remind England's players of Uefa's anti-racism protocols before Sunday's Nations League fixture against Spain in Madrid.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/c60mdzn2dk1eo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c60mdzn2dk1eo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-11-14T09:13:30.000Z"
-    },
-    {
-      "id": "https://www.espn.com/soccer/story/_/id/50478503/transfer-rumors-news-man-united-como-nico-paz-mauricio-pochettino",
-      "title": "Transfer rumors, news: Como's Paz to be Pochettino's first Man United summer signing?",
-      "summary": "Manchester United are monitoring Como superstar Nico Paz ahead of a move next summer. Transfer Talk has the latest.",
-      "url": "https://www.espn.com/soccer/story/_/id/50478503/transfer-rumors-news-man-united-como-nico-paz-mauricio-pochettino",
-      "canonicalUrl": "https://www.espn.com/soccer/story/_/id/50478503/transfer-rumors-news-man-united-como-nico-paz-mauricio-pochettino",
-      "source": "ESPN",
-      "category": "sports",
-      "publishedAt": "2026-11-14T08:59:41.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/football/articles/cw77p0v78exlo?at_medium=rss&at_campaign=rss",
-      "title": "Who would make your England-Spain combined XI?",
-      "summary": "How many England players do you think would make the Spain team?",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cw77p0v78exlo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cw77p0v78exlo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-11-14T08:57:49.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/football/articles/cqr7grl145zpo?at_medium=rss&at_campaign=rss",
-      "title": "Clough's longevity: landmark achievement or indictment on football?",
-      "summary": "Mansfield boss Nigel Clough discusses his longevity and staying power as he becomes a club's longest-serving manager for a second time in his career.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cqr7grl145zpo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cqr7grl145zpo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-11-14T08:35:00.000Z"
     },
     {
       "id": "https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html",
@@ -1123,16 +883,6 @@
       "publishedAt": "2026-11-14T07:49:46.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/sport/boxing/articles/c9ly4lerj8m3o?at_medium=rss&at_campaign=rss",
-      "title": "England boxer missed Worlds over sex-test mix-up",
-      "summary": "George Francis was left “broken” after he was banned from competing at the Under-19 World Championships because his team did not organise a sex verification test to prove he is male.",
-      "url": "https://www.bbc.co.uk/sport/boxing/articles/c9ly4lerj8m3o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/boxing/articles/c9ly4lerj8m3o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-11-14T07:43:44.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/sport/cricket/articles/c59vwpv4rxjeo?at_medium=rss&at_campaign=rss",
       "title": "Warner accuses Cricket Australia of 'cover-up'",
       "summary": "Former vice-captain David Warner accuses Cricket Australia of a \"cover-up\", claiming Australia's bowlers were not interviewed in ball-tampering investigation.",
@@ -1151,16 +901,6 @@
       "source": "CNBC · Finance",
       "category": "finance",
       "publishedAt": "2026-11-14T07:08:45.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/mixed-martial-arts/articles/c6e3dw87pyjeo?at_medium=rss&at_campaign=rss",
-      "title": "The challenge that brought Nunes out of retirement",
-      "summary": "Amanda Nunes says the prospect of fighting Kayla Harrison and putting women's MMA back in the spotlight convinced her to come out of retirement to fight at UFC 334 on Saturday.",
-      "url": "https://www.bbc.co.uk/sport/mixed-martial-arts/articles/c6e3dw87pyjeo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/mixed-martial-arts/articles/c6e3dw87pyjeo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-11-14T07:00:15.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o?at_medium=rss&at_campaign=rss",
@@ -1183,16 +923,6 @@
       "publishedAt": "2026-11-14T06:00:01.000Z"
     },
     {
-      "id": "https://www.npr.org/2026/11/14/g-s1-151719/midterms-alaska-governor-kreiss-tomkins",
-      "title": "Democrat Jonathan Kreiss-Tomkins wins race for Alaska governor, replaces a Republican",
-      "summary": "Kreiss-Tomkins, a former state legislator, ran a campaign emphasizing bipartisanship in the the state that usually votes Republican. At 37, he'll be the youngest governor in the state's history.",
-      "url": "https://www.npr.org/2026/11/14/g-s1-151719/midterms-alaska-governor-kreiss-tomkins",
-      "canonicalUrl": "https://www.npr.org/2026/11/14/g-s1-151719/midterms-alaska-governor-kreiss-tomkins",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-11-14T05:12:43.000Z"
-    },
-    {
       "id": "https://www.sciencedaily.com/releases/2026/11/261112025540.htm",
       "title": "5,000-year-old skulls reveal a disturbing secret of ancient Egypt&#039;s first kings",
       "summary": "A 5,000-year-old mystery surrounding the tombs of Egypt’s first kings has taken a disturbing turn. Scientists reexamining 46 ancient skulls discovered evidence of potentially fatal head injuries in 18, suggesting that at",
@@ -1201,6 +931,276 @@
       "source": "ScienceDaily · Top Science",
       "category": "academic",
       "publishedAt": "2026-11-14T02:59:05.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/videos/c893ryz7lw33o?at_medium=rss&at_campaign=rss",
+      "title": "'We'll get home one day' - US travellers impacted by nationwide ground stop",
+      "summary": "Passengers throughout the country were impacted over what the Federal Aviation Administration (FAA) describes as “safety and communication issues”.",
+      "url": "https://www.bbc.co.uk/news/videos/c893ryz7lw33o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/videos/c893ryz7lw33o?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-11-14T01:47:36.000Z"
+    },
+    {
+      "id": "https://www.sciencedaily.com/releases/2026/11/261112025523.htm",
+      "title": "Scientists capture electrons making seemingly impossible quantum jumps",
+      "summary": "Scientists have captured electrons making seemingly impossible jumps across forbidden energy gaps in graphene, with some transitions occurring at a remarkable 100% probability. The breakthrough offers an unprecedented lo",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261112025523.htm",
+      "canonicalUrl": "https://www.sciencedaily.com/releases/2026/11/261112025523.htm",
+      "source": "ScienceDaily · Top Science",
+      "category": "academic",
+      "publishedAt": "2026-11-14T01:13:05.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/cwm2mn272nqlo?at_medium=rss&at_campaign=rss",
+      "title": "Jojo the gorilla has spent his life alone. Can he finally find a companion?",
+      "summary": "Jojo was poached as an infant and grew up in captivity. His keepers want to find him a friend - but it's not straightforward.",
+      "url": "https://www.bbc.co.uk/news/articles/cwm2mn272nqlo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cwm2mn272nqlo?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-11-14T00:03:56.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/cmlydy0xw45wo?at_medium=rss&at_campaign=rss",
+      "title": "Arrested generals and a threatened VP: President's son fuels Ugandan succession fever",
+      "summary": "The 52-year-old general’s provocative posts and military threats have fuelled rumours of a dynastic succession.",
+      "url": "https://www.bbc.co.uk/news/articles/cmlydy0xw45wo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmlydy0xw45wo?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-11-14T00:03:52.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-washington-congress.html",
+      "title": "Nvidia is done with Jensen Huang. The fallout in Washington is just beginning",
+      "summary": "The Republican-led Congress wants to see Jensen Huang in Washington before Democrats take control in January.",
+      "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-washington-congress.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-washington-congress.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-11-13T23:54:36.000Z"
+    },
+    {
+      "id": "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search",
+      "title": "Amazon has a plan to index the world’s online shopping data",
+      "summary": "Amazon has plans to build a vault of data on every product sold anywhere on the internet, even products Amazon doesn't sell, and make the information available through its own site, according to Reuters. The project, cal",
+      "url": "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search",
+      "canonicalUrl": "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search",
+      "source": "The Verge · AI",
+      "category": "ai",
+      "publishedAt": "2026-11-13T23:49:11.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/rugby-union/videos/c6eq4npqy7e0o?at_medium=rss&at_campaign=rss",
+      "title": "France edge past South Africa after thriller in Nations Championship",
+      "summary": "France hold their nerve to beat South Africa by just two points, winning 21-19 at the Stade de France, to make it four wins from five in the Nations Championship and putting the home side in a strong position to top the ",
+      "url": "https://www.bbc.co.uk/sport/rugby-union/videos/c6eq4npqy7e0o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/rugby-union/videos/c6eq4npqy7e0o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-13T23:43:05.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/11/13/howard-lutnick-nvidia-jensen-huang-china-cantor-fitzgerald.html",
+      "title": "Lutnick faces questions over Nvidia spy scandal. His sons' firm has deep ties to the chipmaker",
+      "summary": "Jensen Huang’s resignation as Nvidia CEO has brought renewed scrutiny to Commerce Secretary Howard Lutnick and his family's financial ties to the chipmaker.",
+      "url": "https://www.cnbc.com/2026/11/13/howard-lutnick-nvidia-jensen-huang-china-cantor-fitzgerald.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/11/13/howard-lutnick-nvidia-jensen-huang-china-cantor-fitzgerald.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-11-13T23:42:18.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/cq99e0z4vg1eo?at_medium=rss&at_campaign=rss",
+      "title": "After a summer win, India's Gen Z protesters face a winter of uncertainty",
+      "summary": "A new wave of youth dissent swept India this summer, fuelled by frustration and irreverent online satire.",
+      "url": "https://www.bbc.co.uk/news/articles/cq99e0z4vg1eo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cq99e0z4vg1eo?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-11-13T23:11:51.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/c85y13pv69xwo?at_medium=rss&at_campaign=rss",
+      "title": "Fitness obsessed & 'control freak' - what can Man Utd expect from Pochettino?",
+      "summary": "What can Manchester United fans expect from their new manager Mauricio Pochettino? BBC Sport gets an insight from Toby Alderweireld, who played under him at Spurs.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c85y13pv69xwo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c85y13pv69xwo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-13T22:53:17.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/videos/c34gn5k2lk9lo?at_medium=rss&at_campaign=rss",
+      "title": "'If that penalty is given against you, you're furious'",
+      "summary": "Sportscene pundits Leanne Crichton and Scott Brown discuss the penalty award that led to Scotland beating North Macedonia.",
+      "url": "https://www.bbc.co.uk/sport/football/videos/c34gn5k2lk9lo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/videos/c34gn5k2lk9lo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-13T22:34:20.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/11/13/nvidia-stock-jensen-affair-ai.html",
+      "title": "Nvidia stock suffers longest weekly losing streak since 2012 as market value sinks by $1.7 trillion",
+      "summary": "Jensen Huang's resignation added to Nvidia's market woes, with the stock already in a downward slide since early October.",
+      "url": "https://www.cnbc.com/2026/11/13/nvidia-stock-jensen-affair-ai.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/11/13/nvidia-stock-jensen-affair-ai.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-11-13T22:18:43.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/make-it/2026/11/13/binance-hack-2-online-habits-that-can-help-you-avoid-scams-.html",
+      "title": "Hackers stole $6.3 billion from Binance—2 habits that take 'a few seconds' can help you avoid similar traps",
+      "summary": "Researchers from the Digital Inquiry Group say that two habits that take just \"a few seconds up front\" can help keep you from being \"duped\" online.",
+      "url": "https://www.cnbc.com/make-it/2026/11/13/binance-hack-2-online-habits-that-can-help-you-avoid-scams-.html",
+      "canonicalUrl": "https://www.cnbc.com/make-it/2026/11/13/binance-hack-2-online-habits-that-can-help-you-avoid-scams-.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-11-13T22:06:55.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/cricket/articles/cq1k97y4e1rxo?at_medium=rss&at_campaign=rss",
+      "title": "'Gloves are off' - how Australian papers reacted to Cummins on Khawaja",
+      "summary": "The Australian newpapers have their say after Pat Cummins' extraordinary 68-minute news conference.",
+      "url": "https://www.bbc.co.uk/sport/cricket/articles/cq1k97y4e1rxo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/cricket/articles/cq1k97y4e1rxo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-13T21:53:37.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html",
+      "title": "AI risks are the biggest threat to the financial system, Fed survey finds",
+      "summary": "The report comes with Wall Street on edge over high-flying AI hyperscalers, while communities are on alert for the rapid spread of data centers.",
+      "url": "https://www.cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-11-13T21:18:30.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/make-it/2026/11/13/honeypot-scam-red-flags.html",
+      "title": "They train people to avoid 'honeypot' scams—here are the common red flags they spot: 'It feels so good to be wanted'",
+      "summary": "Corporate security firms train companies and their employees on strategies for being vigilant against honeypots, and other social engineering attacks.",
+      "url": "https://www.cnbc.com/make-it/2026/11/13/honeypot-scam-red-flags.html",
+      "canonicalUrl": "https://www.cnbc.com/make-it/2026/11/13/honeypot-scam-red-flags.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-11-13T21:06:25.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/11/13/robinhood-supreme-court-ipo-lawsuit.html",
+      "title": "Supreme Court agrees to hear Robinhood challenge to IPO information omission lawsuit",
+      "summary": "The Trump administration had urged the Supreme Court to hear an appeal by Robinhood of a lower-court's decision to revive an investors' lawsuit over the IPO.",
+      "url": "https://www.cnbc.com/2026/11/13/robinhood-supreme-court-ipo-lawsuit.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/11/13/robinhood-supreme-court-ipo-lawsuit.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-11-13T20:48:13.000Z"
+    },
+    {
+      "id": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
+      "title": "ChatGPT Wallet lets OpenAI’s Dots agents make purchases for you",
+      "summary": "After launching its Dots AI agents platform earlier this year, OpenAI is launching a wallet for the agents. ChatGPT Wallet is rolling out starting today for ChatGPT Pro subscribers in the US aged 18 and older using a US ",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
+      "canonicalUrl": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
+      "source": "The Verge · AI",
+      "category": "ai",
+      "publishedAt": "2026-11-13T20:45:10.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/11/13/kevin-hassett-white-house-nec.html",
+      "title": "Hassett denies report he's leaving White House: 'Not true'",
+      "summary": "National Economic Council Director Kevin Hassett poured cold water on a report that he's expected to leave the White House in the coming weeks.",
+      "url": "https://www.cnbc.com/2026/11/13/kevin-hassett-white-house-nec.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/11/13/kevin-hassett-white-house-nec.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-11-13T20:27:47.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/11/13/nvidia-stock-advisors-jensen-huang-exit-exclusive-poll.html",
+      "title": "After Jensen Huang’s exit, what top financial advisors are doing with Nvidia: Exclusive CNBC poll",
+      "summary": "Advisors say investors should weigh their Nvidia exposure, time horizon and risk tolerance before reacting to the leadership change.",
+      "url": "https://www.cnbc.com/2026/11/13/nvidia-stock-advisors-jensen-huang-exit-exclusive-poll.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/11/13/nvidia-stock-advisors-jensen-huang-exit-exclusive-poll.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-11-13T19:53:38.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/11/13/a-trading-strategy-to-ride-out-the-nvidia-uncertainty-and-generate-income-in-the-process.html",
+      "title": "A trading strategy to ride out the Nvidia uncertainty and generate income in the process",
+      "summary": "By deploying a persistent covered call strategy, investors can leverage the exact fear driving the stock down to generate robust, risk-reducing income.",
+      "url": "https://www.cnbc.com/2026/11/13/a-trading-strategy-to-ride-out-the-nvidia-uncertainty-and-generate-income-in-the-process.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/11/13/a-trading-strategy-to-ride-out-the-nvidia-uncertainty-and-generate-income-in-the-process.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-11-13T19:30:36.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/11/13/retirement-401k-ira-withdrawal-taxes.html",
+      "title": "Retirees sometimes tap savings for one-off expenses. Here’s what advisors say to consider first",
+      "summary": "Retirees who need cash for a one-time expense may look to their 401(k) or IRA, but financial advisors say there are trade-offs to weigh first.",
+      "url": "https://www.cnbc.com/2026/11/13/retirement-401k-ira-withdrawal-taxes.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/11/13/retirement-401k-ira-withdrawal-taxes.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-11-13T19:01:12.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/iplayer/episode/m003575x?at_medium=rss&at_campaign=rss",
+      "title": "The Sandpapergate Scandal",
+      "summary": "Why has Australian cricket's sandpaper scandal returned to the headlines?",
+      "url": "https://www.bbc.co.uk/iplayer/episode/m003575x?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/iplayer/episode/m003575x?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-13T18:00:00.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/rugby-league/articles/crly54evvvv4o?at_medium=rss&at_campaign=rss",
+      "title": "Sharks, ladders and a four-year plan - how England won World Cup",
+      "summary": "England's triumph at the Wheelchair Rugby League World Cup was built on an aggressive approach by head coach Tom Coyd - which included encouraging his players to see themselves like sharks.",
+      "url": "https://www.bbc.co.uk/sport/rugby-league/articles/crly54evvvv4o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/rugby-league/articles/crly54evvvv4o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-13T15:49:30.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/american-football/videos/cmy493wdvpyyo?at_medium=rss&at_campaign=rss",
+      "title": "Late Diggs touchdown earns Commanders win at Giants",
+      "summary": "Stefon Diggs scores a late touchdown to help Washington Commanders beat New York Giants 24-21.",
+      "url": "https://www.bbc.co.uk/sport/american-football/videos/cmy493wdvpyyo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/american-football/videos/cmy493wdvpyyo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-13T15:45:33.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/11/13/ppi-inflation-report-october-2026.html",
+      "title": "Wholesale prices rose 0.3% in October, putting annual rate at 6.5%, the highest in nearly four years",
+      "summary": "The producer price index was expected to increase 0.4% in October, according to the Dow Jones consensus.",
+      "url": "https://www.cnbc.com/2026/11/13/ppi-inflation-report-october-2026.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/11/13/ppi-inflation-report-october-2026.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-11-13T15:44:16.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/videos/ckqx5ryx905qo?at_medium=rss&at_campaign=rss",
+      "title": "Watch: Divers explore US ship sunk off Florida coast to create new reef",
+      "summary": "The ship was intentionally sunk off the coast of Florida in order to create the world's largest artificial ocean reef.",
+      "url": "https://www.bbc.co.uk/news/videos/ckqx5ryx905qo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/videos/ckqx5ryx905qo?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-11-13T15:09:40.000Z"
     }
   ],
   "sourceHealth": [
@@ -1231,13 +1231,13 @@
     {
       "name": "BBC Sport",
       "ok": true,
-      "itemCount": 60,
+      "itemCount": 64,
       "error": null
     },
     {
       "name": "ESPN",
       "ok": true,
-      "itemCount": 41,
+      "itemCount": 0,
       "error": null
     },
     {
