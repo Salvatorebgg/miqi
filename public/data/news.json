@@ -1,7 +1,337 @@
 {
-  "generatedAt": "2026-11-15T01:54:02.858Z",
+  "generatedAt": "2026-11-15T11:56:18.400Z",
   "stale": false,
   "items": [
+    {
+      "id": "https://www.bbc.co.uk/sport/cricket/articles/c8n50wgr6vd4o?at_medium=rss&at_campaign=rss",
+      "title": "Banton pushes case and bowlers sparkle for inconsistent England",
+      "summary": "Tom Banton scores a century and Sonny Baker and Gus Atkinson impress with the ball as England's wildly inconsistent one-day team hammer Australia.",
+      "url": "https://www.bbc.co.uk/sport/cricket/articles/c8n50wgr6vd4o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/cricket/articles/c8n50wgr6vd4o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-15T11:35:40.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/c539gn33z1l3o?at_medium=rss&at_campaign=rss",
+      "title": "Wenger decides not to challenge Fifa chief Infantino",
+      "summary": "Arsene Wenger decides against running for the Fifa presidency, in a boost to Gianni Infantino's hopes of a fourth term.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c539gn33z1l3o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c539gn33z1l3o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-15T11:28:25.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/c3rrg9xgqlwpo?at_medium=rss&at_campaign=rss",
+      "title": "Three men sentenced to death in Jordan over fatal church mass shooting",
+      "summary": "The attack on funeral at a Greek Orthodox church killed nine and injured 34 others last month.",
+      "url": "https://www.bbc.co.uk/news/articles/c3rrg9xgqlwpo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c3rrg9xgqlwpo?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-11-15T11:06:32.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/rugby-league/articles/cm9q8l51pgeqo?at_medium=rss&at_campaign=rss",
+      "title": "Dominant Australia defeat New Zealand in Men's World Cup final",
+      "summary": "Australia win a fourth successive Men's Rugby League World Cup, beating New Zealand comfortably in the final in Brisbane.",
+      "url": "https://www.bbc.co.uk/sport/rugby-league/articles/cm9q8l51pgeqo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/rugby-league/articles/cm9q8l51pgeqo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-15T10:51:11.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/11/15/nx-s1-6039175/midterms-legislatures-states-democrats-gop",
+      "title": "Midterm voters ended the long-running GOP dominance in state legislatures",
+      "summary": "In several states, Democrats took control of legislatures that had been divided and they weakened GOP dominance in others. Issues on the agenda: More access to health care, new limits on school vouchers.",
+      "url": "https://www.npr.org/2026/11/15/nx-s1-6039175/midterms-legislatures-states-democrats-gop",
+      "canonicalUrl": "https://www.npr.org/2026/11/15/nx-s1-6039175/midterms-legislatures-states-democrats-gop",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-11-15T10:00:00.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/11/15/nx-s1-6002935/being-heumann-new-generation-disability-rights",
+      "title": "A new generation of disability rights activists carry on Judy Heumann's legacy",
+      "summary": "The film Being Heumann tells the lesser-known story of the mother of the disability rights movement. A new generation of activists share how they \"carry the torch\" today.",
+      "url": "https://www.npr.org/2026/11/15/nx-s1-6002935/being-heumann-new-generation-disability-rights",
+      "canonicalUrl": "https://www.npr.org/2026/11/15/nx-s1-6002935/being-heumann-new-generation-disability-rights",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-11-15T10:00:00.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/11/15/nx-s1-6040194/new-mexico-free-universal-childcare-families",
+      "title": "New Mexico wanted free childcare for all. This is what's worked — and what hasn't",
+      "summary": "A year ago in November, New Mexico became the first state to offer free childcare to every eligible family, regardless of income.",
+      "url": "https://www.npr.org/2026/11/15/nx-s1-6040194/new-mexico-free-universal-childcare-families",
+      "canonicalUrl": "https://www.npr.org/2026/11/15/nx-s1-6040194/new-mexico-free-universal-childcare-families",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-11-15T10:00:00.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/cr4gnz0lv2vlo?at_medium=rss&at_campaign=rss",
+      "title": "Pope Leo speaks of community 'suffering' on visit to remote Andes town",
+      "summary": "Santa Cruz de Succhabamba is part of the Diocese of Chiclayo, where the Pope served as bishop from 2015 to 2023.",
+      "url": "https://www.bbc.co.uk/news/articles/cr4gnz0lv2vlo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cr4gnz0lv2vlo?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-11-15T09:57:25.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/cricket/articles/c9ly4jm8djy7o?at_medium=rss&at_campaign=rss",
+      "title": "Australia's Sayers 'took sandpaper from field' & rejects Cummins' claims",
+      "summary": "Australia bowler Chadd Sayers says he helped take sandpaper from the field in the match prior to the Cape Town Test and backs Usman Khawaja's recollection over Pat Cummins'.",
+      "url": "https://www.bbc.co.uk/sport/cricket/articles/c9ly4jm8djy7o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/cricket/articles/c9ly4jm8djy7o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-15T09:33:33.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/cmrlgn4x2xw8o?at_medium=rss&at_campaign=rss",
+      "title": "Fifth Canadian soldier dies from injuries caused by large fire at military base",
+      "summary": "Pte William Douglas Dal Bianco died from his injuries on Friday, a month after a fire that tore through CFB Wainwright.",
+      "url": "https://www.bbc.co.uk/news/articles/cmrlgn4x2xw8o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmrlgn4x2xw8o?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-11-15T09:26:37.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/rugby-league/articles/c50mdzx3j039o?at_medium=rss&at_campaign=rss",
+      "title": "Ruthless Australia win record fourth Women's World Cup",
+      "summary": "Australia blow New Zealand away in the first half, with a hat-trick for Jaime Chapman, to win 34-10 in Brisbane and clinch a record fourth World Cup.",
+      "url": "https://www.bbc.co.uk/sport/rugby-league/articles/c50mdzx3j039o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/rugby-league/articles/c50mdzx3j039o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-15T09:12:00.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/rugby-union/articles/cvx2xnyxl85ko?at_medium=rss&at_campaign=rss",
+      "title": "Reality dawns after Wales dared to dream",
+      "summary": "As Welsh rugby fans wake up on Sunday morning the realisation will dawn on them that Wales beat New Zealand for the first time in 73 years.",
+      "url": "https://www.bbc.co.uk/sport/rugby-union/articles/cvx2xnyxl85ko?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/rugby-union/articles/cvx2xnyxl85ko?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-15T08:58:32.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/rugby-union/articles/c6wy41738nv7o?at_medium=rss&at_campaign=rss",
+      "title": "England are favourites against All Blacks, and fearless Wales are an inspiration",
+      "summary": "In his latest BBC Sport column, England World Cup winner Matt Dawson reflects on Steve Borthwick's side's emphatic 78-15 thrashing of Japan and looks ahead to their match against New Zealand next weekend.",
+      "url": "https://www.bbc.co.uk/sport/rugby-union/articles/c6wy41738nv7o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/rugby-union/articles/c6wy41738nv7o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-15T08:47:46.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/11/15/megaspeed-alice-huang-probe-nvidia-scandal.html",
+      "title": "Megaspeed says Alice Huang left in 2025 as it launches internal probe into reports about its business",
+      "summary": "The Singapore-based cloud computing company has faced heightened scrutiny since reports linked Nvidia's Jensen Huang to former Megaspeed executive Alice Huang.",
+      "url": "https://www.cnbc.com/2026/11/15/megaspeed-alice-huang-probe-nvidia-scandal.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/11/15/megaspeed-alice-huang-probe-nvidia-scandal.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-11-15T08:34:46.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/cqrkg4r6mg7xo?at_medium=rss&at_campaign=rss",
+      "title": "Israel kills Hamas commander in strike on Gaza camp, officials say",
+      "summary": "Both Hamas and IDF officials confirm the death of Samir Abu Younis, commander of the Rafah Brigade.",
+      "url": "https://www.bbc.co.uk/news/articles/cqrkg4r6mg7xo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqrkg4r6mg7xo?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-11-15T08:17:41.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/mixed-martial-arts/articles/c5742819x9n3o?at_medium=rss&at_campaign=rss",
+      "title": "Harrison shocks Nunes on UFC return to retain title",
+      "summary": "Kayla Harrison shocks returning great Amanda Nunes by submitting the former double champion to retain her bantamweight title at UFC 334 in New York.",
+      "url": "https://www.bbc.co.uk/sport/mixed-martial-arts/articles/c5742819x9n3o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/mixed-martial-arts/articles/c5742819x9n3o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-15T08:02:48.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/tennis/articles/ck62p9ge4d76o?at_medium=rss&at_campaign=rss",
+      "title": "Sabalenka apologises & says viral comment 'not directed at Svitolina'",
+      "summary": "Aryna Sabalenka apologises and denies claims she insulted opponent Elina Svitolina after a viral clip showed her swearing in Russian during her WTA Finals defeat by the Ukrainian.",
+      "url": "https://www.bbc.co.uk/sport/tennis/articles/ck62p9ge4d76o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/tennis/articles/ck62p9ge4d76o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-15T07:51:33.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/cqvg23nv0jw2o?at_medium=rss&at_campaign=rss",
+      "title": "How Spain's humble superstar Simon became world's best keeper",
+      "summary": "As Spain prepare to host England in the Nations League, BBC Sport columnist Guillem Balague charts the rise of Unai Simon to become the world's best keeper.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cqvg23nv0jw2o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cqvg23nv0jw2o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-15T07:29:30.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/cm4gkgnkkn9zo?at_medium=rss&at_campaign=rss",
+      "title": "How Aston Villa are reclaiming their identity",
+      "summary": "Aston Villa Women are celebrating an important 30-year milestone on Sunday - but how are they trying to reclaim their identity?",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cm4gkgnkkn9zo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cm4gkgnkkn9zo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-15T07:12:05.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/c6wy9lynq4qno?at_medium=rss&at_campaign=rss",
+      "title": "Copper wire upgrade behind US flight suspension, transport secretary says",
+      "summary": "The US government is trying to find out whether the chaos was caused by \"incompetence\" or faulty equipment.",
+      "url": "https://www.bbc.co.uk/news/articles/c6wy9lynq4qno?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6wy9lynq4qno?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-11-15T07:10:31.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/c32l8yzvjgx7o?at_medium=rss&at_campaign=rss",
+      "title": "Who am I? Guess WSL star No 12",
+      "summary": "Work out the identity of today's Women's Super League player in as few attempts as possible.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c32l8yzvjgx7o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c32l8yzvjgx7o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-15T07:01:31.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/c60mdnedvj2wo?at_medium=rss&at_campaign=rss",
+      "title": "Who am I? Plus today's other quizzes",
+      "summary": "Test your football knowledge against today's Who Am I?, Five in Five and Brainteaser.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c60mdnedvj2wo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/c60mdnedvj2wo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-15T06:47:10.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/football/articles/ckdd17mq2pvmo?at_medium=rss&at_campaign=rss",
+      "title": "Respect? Exposure? Why England's star names are going abroad",
+      "summary": "Harry Kane, Jude Bellingham and Anthony Gordon are three of England's current biggest stars, but all have chosen to play their club football abroad.",
+      "url": "https://www.bbc.co.uk/sport/football/articles/ckdd17mq2pvmo?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/ckdd17mq2pvmo?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-15T06:25:41.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/sport/boxing/articles/cmkg579gd821o?at_medium=rss&at_campaign=rss",
+      "title": "Barrett stops Gwynne for vacant lightweight title",
+      "summary": "Zelfa Barrett claimed the vacant WBA Intercontinental lightweight title with a fifth-round stoppage of Gavin Gwynne at Wembley Arena.",
+      "url": "https://www.bbc.co.uk/sport/boxing/articles/cmkg579gd821o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/sport/boxing/articles/cmkg579gd821o?at_medium=rss&at_campaign=rss",
+      "source": "BBC Sport",
+      "category": "sports",
+      "publishedAt": "2026-11-15T06:04:32.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/11/15/budapest-europes-next-digital-nomad-hotspot.html",
+      "title": "Could Budapest be the next digital nomad hotspot?",
+      "summary": "With its mix of sights, cafés and culture, Hungary's capital Budapest has become popular with those embracing the \"work from anywhere\" trend.",
+      "url": "https://www.cnbc.com/2026/11/15/budapest-europes-next-digital-nomad-hotspot.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/11/15/budapest-europes-next-digital-nomad-hotspot.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-11-15T06:00:01.000Z"
+    },
+    {
+      "id": "https://www.sciencedaily.com/releases/2026/11/261114202130.htm",
+      "title": "Alzheimer’s may start shrinking two brain regions years before memory loss",
+      "summary": "Johns Hopkins scientists have uncovered hidden warning signs of Alzheimer’s disease that may appear up to a decade before memory loss begins. Brain scans revealed that two regions involved in memory and emotion start shr",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261114202130.htm",
+      "canonicalUrl": "https://www.sciencedaily.com/releases/2026/11/261114202130.htm",
+      "source": "ScienceDaily · Top Science",
+      "category": "academic",
+      "publishedAt": "2026-11-15T04:31:56.000Z"
+    },
+    {
+      "id": "https://www.npr.org/2026/11/14/nx-s1-6041152/judge-trump-golf-course-blocks",
+      "title": "Judge temporarily blocks Trump from moving ahead on Washington public golf course redevelopment",
+      "summary": "A federal judge on Saturday ordered a two-week delay to any work at a historic Washington public golf course not far from the White House.",
+      "url": "https://www.npr.org/2026/11/14/nx-s1-6041152/judge-trump-golf-course-blocks",
+      "canonicalUrl": "https://www.npr.org/2026/11/14/nx-s1-6041152/judge-trump-golf-course-blocks",
+      "source": "NPR · Top Stories",
+      "category": "general",
+      "publishedAt": "2026-11-15T04:28:45.000Z"
+    },
+    {
+      "id": "https://www.sciencedaily.com/releases/2026/11/261112230458.htm",
+      "title": "Scientists discover a bizarre paradox among endangered penguins",
+      "summary": "A groundbreaking drone survey has revealed a startling split in the fate of New Zealand&#039;s endangered Erect-crested penguins. While one population has remained stable for decades, another has declined by more than 40",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261112230458.htm",
+      "canonicalUrl": "https://www.sciencedaily.com/releases/2026/11/261112230458.htm",
+      "source": "ScienceDaily · Top Science",
+      "category": "academic",
+      "publishedAt": "2026-11-15T03:42:52.000Z"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/c6j9mn7l14y0o?at_medium=rss&at_campaign=rss",
+      "title": "Judge temporarily blocks Trump from closing Washington DC golf course for renovation",
+      "summary": "It is the latest development in a months-long challenge to the US president's plans for East Potomac Golf Links.",
+      "url": "https://www.bbc.co.uk/news/articles/c6j9mn7l14y0o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6j9mn7l14y0o?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-11-15T03:21:04.000Z"
+    },
+    {
+      "id": "https://www.sciencedaily.com/releases/2026/11/261112230502.htm",
+      "title": "Dinosaurs may have been eating seaweed 100 million years ago",
+      "summary": "Dinosaurs may have been snacking on seaweed and other ocean foods more than 100 million years ago, according to surprising new evidence hidden in their fossilized teeth. Researchers discovered chemical signatures suggest",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261112230502.htm",
+      "canonicalUrl": "https://www.sciencedaily.com/releases/2026/11/261112230502.htm",
+      "source": "ScienceDaily · Top Science",
+      "category": "academic",
+      "publishedAt": "2026-11-15T03:00:54.000Z"
+    },
+    {
+      "id": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
+      "title": "Nationwide ground stop followed contractor upgrade to L3Harris telecommunication system: DOT’s Duffy",
+      "summary": "The FAA ground stop came after updates to an older communication system managed by L3Harris Technologies, Transportation Secretary Sean Duffy said Saturday.",
+      "url": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-11-15T02:53:59.000Z"
+    },
+    {
+      "id": "https://www.sciencedaily.com/releases/2026/11/261112230500.htm",
+      "title": "Physicists use laser light to unlock a crystal&#039;s hidden electrical powers",
+      "summary": "Scientists have discovered how to use flashes of laser light to organize tiny electrical regions inside a crystal, solving a decades-old mystery about how the material behaves. The laser-induced alignment lasts just a tr",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261112230500.htm",
+      "canonicalUrl": "https://www.sciencedaily.com/releases/2026/11/261112230500.htm",
+      "source": "ScienceDaily · Top Science",
+      "category": "academic",
+      "publishedAt": "2026-11-15T02:18:16.000Z"
+    },
+    {
+      "id": "https://www.sciencedaily.com/releases/2026/11/261112230504.htm",
+      "title": "Euclid discovers ancient cosmic beacons from the dawn of time, shining like a trillion suns",
+      "summary": "ESA’s Euclid space telescope has discovered 31 ancient quasars, including two record-breaking objects that shone with the brightness of a trillion Suns when the Universe was just 670 million years old. Powered by superma",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261112230504.htm",
+      "canonicalUrl": "https://www.sciencedaily.com/releases/2026/11/261112230504.htm",
+      "source": "ScienceDaily · Top Science",
+      "category": "academic",
+      "publishedAt": "2026-11-15T01:52:47.000Z"
+    },
     {
       "id": "https://www.npr.org/2026/11/14/nx-s1-6041115/faa-ground-stop-college-football-delays",
       "title": "FAA ground stop disrupts college football",
@@ -63,16 +393,6 @@
       "publishedAt": "2026-11-15T00:03:52.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/sport/tennis/articles/ck5y1xdrne28o?at_medium=rss&at_campaign=rss",
-      "title": "Svitolina races in WTA Finals showpiece against Andreeva",
-      "summary": "Elina Svitolina drops just three games as she thrashes Linda Noskova to set up a WTA Finals showpiece against Mirra Andreeva.",
-      "url": "https://www.bbc.co.uk/sport/tennis/articles/ck5y1xdrne28o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/tennis/articles/ck5y1xdrne28o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-11-14T23:31:10.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/sport/football/articles/c84gn2dl4zleo?at_medium=rss&at_campaign=rss",
       "title": "The 'manager's dream' who has put NI one game from history",
       "summary": "After scoring his first international goal in the 1-0 win over Ukraine, Northern Ireland boss Michael O'Neill says Terry Devlin is \"a bit of a dream\" to manage.",
@@ -81,16 +401,6 @@
       "source": "BBC Sport",
       "category": "sports",
       "publishedAt": "2026-11-14T23:21:45.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
-      "title": "Nationwide ground stop followed contractor upgrade to L3Harris telecommunication system: DOT’s Duffy",
-      "summary": "The FAA ground stop came after updates to an older communication system managed by L3Harris Technologies, Transportation Secretary Sean Duffy said Saturday.",
-      "url": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-11-14T23:21:21.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=rss&at_campaign=rss",
@@ -133,6 +443,16 @@
       "publishedAt": "2026-11-14T23:00:29.000Z"
     },
     {
+      "id": "https://www.cnbc.com/2026/11/14/root-cause-of-nationwide-ground-stop-is-unknown-faa-says.html",
+      "title": "'Root cause’ of nationwide ground stop is unknown, FAA says",
+      "summary": "Routers and networking equipment may be involved in the problems that led to the ground stop, but a definitive cause has not been established, officials said.",
+      "url": "https://www.cnbc.com/2026/11/14/root-cause-of-nationwide-ground-stop-is-unknown-faa-says.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/11/14/root-cause-of-nationwide-ground-stop-is-unknown-faa-says.html",
+      "source": "CNBC · Finance",
+      "category": "finance",
+      "publishedAt": "2026-11-14T22:54:47.000Z"
+    },
+    {
       "id": "https://www.bbc.co.uk/sport/rugby-union/videos/cm4gnxew18z3o?at_medium=rss&at_campaign=rss",
       "title": "Watch: Seven-try Ireland secure win over Fiji",
       "summary": "Watch the tries as Ireland secure a 43-15 victory over Fiji in the Nations Championship in Dublin.",
@@ -151,16 +471,6 @@
       "source": "NPR · Top Stories",
       "category": "general",
       "publishedAt": "2026-11-14T22:48:38.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/tennis/articles/ck62p9ge4d76o?at_medium=rss&at_campaign=rss",
-      "title": "Sabalenka apologises & says viral comment 'not directed at Svitolina'",
-      "summary": "Aryna Sabalenka apologises and denies claims she insulted opponent Elina Svitolina after a viral clip showed her swearing during her WTA Finals defeat by the Ukrainian.",
-      "url": "https://www.bbc.co.uk/sport/tennis/articles/ck62p9ge4d76o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/tennis/articles/ck62p9ge4d76o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-11-14T22:42:30.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/sport/football/articles/cr15e4w75wxpo?at_medium=rss&at_campaign=rss",
@@ -203,14 +513,14 @@
       "publishedAt": "2026-11-14T22:34:07.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/sport/football/articles/cq0mdzrjn0j2o?at_medium=rss&at_campaign=rss",
-      "title": "White has 'exciting future' despite boos - Rice",
-      "summary": "Midfielder Declan Rice has defended his Arsenal team-mate Ben White after he was booed during England's win over Croatia at Wembley.",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cq0mdzrjn0j2o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/football/articles/cq0mdzrjn0j2o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-11-14T22:26:56.000Z"
+      "id": "https://www.bbc.co.uk/news/articles/cwe89y2r5j20o?at_medium=rss&at_campaign=rss",
+      "title": "New Orleans port files $1m lawsuit over 'miracle on the Mississippi' tanker collision",
+      "summary": "The lawsuit filed by New Orleans officials also requests that the tanker involved in the collision with the cruise ship be seized and sold to pay for damages.",
+      "url": "https://www.bbc.co.uk/news/articles/cwe89y2r5j20o?at_medium=rss&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cwe89y2r5j20o?at_medium=rss&at_campaign=rss",
+      "source": "BBC News · World",
+      "category": "general",
+      "publishedAt": "2026-11-14T22:27:06.000Z"
     },
     {
       "id": "https://www.npr.org/2026/11/14/nx-s1-6041119/us-measles-elimination-status-vaccines-cdc-paho",
@@ -303,26 +613,6 @@
       "publishedAt": "2026-11-14T20:43:57.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/sport/boxing/articles/cmkgkz244pgro?at_medium=rss&at_campaign=rss",
-      "title": "Adames beats Welshman Warburton by unanimous decision",
-      "summary": "WBC middleweight champion Carlos Adames beats Gerome Warburton by unanimous decision in a non-title super middleweight bout.",
-      "url": "https://www.bbc.co.uk/sport/boxing/articles/cmkgkz244pgro?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/boxing/articles/cmkgkz244pgro?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-11-14T20:27:04.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/articles/cw20xmy0m5yyo?at_medium=rss&at_campaign=rss",
-      "title": "'Miracle on Mississippi' - All passengers rescued after New Orleans cruise ship collision",
-      "summary": "The collision leaves 32 people in hospital with non-critical injuries, but no-one unaccounted for.",
-      "url": "https://www.bbc.co.uk/news/articles/cw20xmy0m5yyo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cw20xmy0m5yyo?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-11-14T20:23:06.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/sport/football/articles/cq2d9l3e313zo?at_medium=rss&at_campaign=rss",
       "title": "Spain test will reveal if Tuchel and England have learned World Cup lessons",
       "summary": "England's game with world champions Spain will reveal if head coach Thomas Tuchel has learned from summer disappointment, says chief football writer Phil McNulty.",
@@ -403,26 +693,6 @@
       "publishedAt": "2026-11-14T19:14:33.000Z"
     },
     {
-      "id": "https://www.npr.org/2026/11/14/nx-s1-6037777/democrats-midterms-whats-next-conference",
-      "title": "'We can't let them down' -- After midterm wins, Democrats turn to charting path ahead",
-      "summary": "Democrats from across the country descended on Denver for a two-day conference to chart the course of their party after sweeping victories in the midterm elections.",
-      "url": "https://www.npr.org/2026/11/14/nx-s1-6037777/democrats-midterms-whats-next-conference",
-      "canonicalUrl": "https://www.npr.org/2026/11/14/nx-s1-6037777/democrats-midterms-whats-next-conference",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-11-14T19:13:54.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/articles/c6wy9lynq4qno?at_medium=rss&at_campaign=rss",
-      "title": "Copper wire upgrade caused nationwide flight suspension, US transport secretary says",
-      "summary": "The US government is trying to find out whether the chaos was caused by \"incompetence\" or faulty equipment.",
-      "url": "https://www.bbc.co.uk/news/articles/c6wy9lynq4qno?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6wy9lynq4qno?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-11-14T19:12:25.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/sport/football/articles/cmvg25w18q9qo?at_medium=rss&at_campaign=rss",
       "title": "Bompastor's risks pay off as Chelsea go top of WSL",
       "summary": "In any big encounter you will often hear managers say it is the \"fine margins\" that decide a game. In this case, it was Sonia Bompastor's decisions.",
@@ -441,16 +711,6 @@
       "source": "CNBC · Finance",
       "category": "finance",
       "publishedAt": "2026-11-14T18:48:39.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/rugby-union/articles/c820q64ezyn7o?at_medium=rss&at_campaign=rss",
-      "title": "Wales believed they could create history - Lake",
-      "summary": "Captain Dewi Lake says he always believed Wales could defeat New Zealand and end the 73-year hoodoo against the All Blacks.",
-      "url": "https://www.bbc.co.uk/sport/rugby-union/articles/c820q64ezyn7o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/rugby-union/articles/c820q64ezyn7o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-11-14T18:30:58.000Z"
     },
     {
       "id": "https://www.marketwatch.com/story/she-can-always-change-her-mind-should-a-widow-leave-the-family-home-to-her-stepchildren-649b06af?mod=mw_rss_topstories",
@@ -481,16 +741,6 @@
       "source": "BBC Sport",
       "category": "sports",
       "publishedAt": "2026-11-14T18:27:23.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/rugby-union/articles/cmly5dwnpvdzo?at_medium=rss&at_campaign=rss",
-      "title": "All Blacks ran into a Welsh brick wall - Barrett",
-      "summary": "New Zealand captain Beauden Barrett praises Wales' brick wall defence after the All Blacks are stunned in Cardiff.",
-      "url": "https://www.bbc.co.uk/sport/rugby-union/articles/cmly5dwnpvdzo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/rugby-union/articles/cmly5dwnpvdzo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-11-14T18:19:10.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/news/articles/cqrlgnx9dx6eo?at_medium=rss&at_campaign=rss",
@@ -553,26 +803,6 @@
       "publishedAt": "2026-11-14T17:50:00.000Z"
     },
     {
-      "id": "https://www.cnbc.com/2026/11/14/nvidia-investors-jensen-huang-return-board-letter.html",
-      "title": "Nvidia board urged to consider 'potential return of Jensen Huang' by two major investors",
-      "summary": "Two Nvidia investors with about $2.13 billion of stock disclosed as of June 30 are calling for a deliberate leadership search after Huang’s resignation.",
-      "url": "https://www.cnbc.com/2026/11/14/nvidia-investors-jensen-huang-return-board-letter.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/11/14/nvidia-investors-jensen-huang-return-board-letter.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-11-14T17:46:06.000Z"
-    },
-    {
-      "id": "https://www.npr.org/2026/11/14/nx-s1-6040952/faa-ground-stop-airplane-travel",
-      "title": "FAA blames Friday's ground stop on 'equipment issue' during telecoms network upgrade",
-      "summary": "Transportation Secretary Sean Duffy said initial investigations pointed to an issue with contractor L3Harris updating old tech at a remote location.",
-      "url": "https://www.npr.org/2026/11/14/nx-s1-6040952/faa-ground-stop-airplane-travel",
-      "canonicalUrl": "https://www.npr.org/2026/11/14/nx-s1-6040952/faa-ground-stop-airplane-travel",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-11-14T16:53:04.000Z"
-    },
-    {
       "id": "https://www.bbc.co.uk/sport/rugby-union/videos/ckdd10y25mm1o?at_medium=rss&at_campaign=rss",
       "title": "Highlights: Wales beat New Zealand for first time in 73 years",
       "summary": "Watch the best of the action as Wales beat New Zealand for the first time in 73 years",
@@ -601,16 +831,6 @@
       "source": "BBC Sport",
       "category": "sports",
       "publishedAt": "2026-11-14T16:17:49.000Z"
-    },
-    {
-      "id": "https://www.npr.org/2026/11/14/nx-s1-6040144/chile-protests-fuel-kast-students",
-      "title": "Fuel crisis and protests pressure Chile's far-right president",
-      "summary": "Chile's far-right President José Antonio Kast is facing mounting public anger, as rising fuel prices trigger transport strikes and protests across the country.",
-      "url": "https://www.npr.org/2026/11/14/nx-s1-6040144/chile-protests-fuel-kast-students",
-      "canonicalUrl": "https://www.npr.org/2026/11/14/nx-s1-6040144/chile-protests-fuel-kast-students",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-11-14T16:05:12.000Z"
     },
     {
       "id": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do?at_medium=rss&at_campaign=rss",
@@ -653,16 +873,6 @@
       "publishedAt": "2026-11-14T15:42:54.000Z"
     },
     {
-      "id": "https://www.cnbc.com/2026/11/13/trump-nvidia-huang-china.html",
-      "title": "Trump doesn’t plan to raise Nvidia, spy issue during China trip: U.S. officials",
-      "summary": "Nvidia CEO Jensen Huang resigned this week after reports of multiple affairs, including one with a suspected Chinese spy, Alice Huang.",
-      "url": "https://www.cnbc.com/2026/11/13/trump-nvidia-huang-china.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/11/13/trump-nvidia-huang-china.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-11-14T15:36:47.000Z"
-    },
-    {
       "id": "https://www.cnbc.com/2026/11/14/real-estate-rental-income-industrial-storage-market.html",
       "title": "Rising rents draw Wall Street money to industrial outdoor storage lot investments across the U.S.",
       "summary": "A real estate investment in markets across the U.S. called 'industrial outdoor storage' is attracting Wall Street giants including Brookfield and Blackstone.",
@@ -671,16 +881,6 @@
       "source": "CNBC · Finance",
       "category": "finance",
       "publishedAt": "2026-11-14T15:14:57.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/horse-racing/articles/c8p3v5wqgrzyo?at_medium=rss&at_campaign=rss",
-      "title": "Meetmebythesea wins first Paddy Power Gold Cup for McManus",
-      "summary": "Jockey Harry Cobden rides Meetmebythesea to a first Paddy Power Gold Cup success for owner JP McManus at Cheltenham.",
-      "url": "https://www.bbc.co.uk/sport/horse-racing/articles/c8p3v5wqgrzyo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/horse-racing/articles/c8p3v5wqgrzyo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-11-14T15:12:11.000Z"
     },
     {
       "id": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
@@ -723,16 +923,6 @@
       "publishedAt": "2026-11-14T14:24:13.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/sport/golf/articles/cqkgm00ykp7ko?at_medium=rss&at_campaign=rss",
-      "title": "McIlroy fades as Hatton leads in Dubai",
-      "summary": "Rory McIlroy's hopes of an eighth Race to Dubai title are dented as Tyrrell Hatton takes the outright lead into the fourth round of the DP World Tour Championship.",
-      "url": "https://www.bbc.co.uk/sport/golf/articles/cqkgm00ykp7ko?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/golf/articles/cqkgm00ykp7ko?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-11-14T14:09:23.000Z"
-    },
-    {
       "id": "https://www.cnbc.com/2026/11/14/hsa-investing-tax-benefits.html",
       "title": "Juice your growth and save on taxes in this workplace investment account",
       "summary": "High-deductible medical benefit plans with health savings accounts are on the menu at many employers as enrollment season for 2027 continues.",
@@ -751,16 +941,6 @@
       "source": "CNBC · Finance",
       "category": "finance",
       "publishedAt": "2026-11-14T14:02:39.000Z"
-    },
-    {
-      "id": "https://www.npr.org/2026/11/14/nx-s1-6034952/alaska-results-ranked-choice-voting-nonpartisan-primary",
-      "title": "Alaska voters aren't ditching ranked choice voting, top-four primaries",
-      "summary": "This is the second time Alaskans voted down an effort to repeal the state's unique election system, which voters first approved in 2020. A repeal effort in 2024 also failed narrowly.",
-      "url": "https://www.npr.org/2026/11/14/nx-s1-6034952/alaska-results-ranked-choice-voting-nonpartisan-primary",
-      "canonicalUrl": "https://www.npr.org/2026/11/14/nx-s1-6034952/alaska-results-ranked-choice-voting-nonpartisan-primary",
-      "source": "NPR · Top Stories",
-      "category": "general",
-      "publishedAt": "2026-11-14T13:08:05.000Z"
     },
     {
       "id": "https://www.cnbc.com/2026/11/14/retailers-invest-entertainment.html",
@@ -843,26 +1023,6 @@
       "publishedAt": "2026-11-14T10:42:20.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/sport/triathlon/articles/c6930qpvq207o?at_medium=rss&at_campaign=rss",
-      "title": "Taylor-Brown wins in Dubai to top T100 standings",
-      "summary": "British triathlete Georgia Taylor-Brown moves top of the overall standings in the women's T100 series with her second victory of the season in Dubai.",
-      "url": "https://www.bbc.co.uk/sport/triathlon/articles/c6930qpvq207o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/triathlon/articles/c6930qpvq207o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-11-14T10:32:07.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/cricket/articles/ckvg2exrj5elo?at_medium=rss&at_campaign=rss",
-      "title": "Sooryavanshi becomes youngest captain in men's T20s",
-      "summary": "Teenage India sensation Vaibhav Sooryavanshi breaks the record held by Croatia's Zach Vukusic as the youngest captain in top-level men's Twenty20 cricket.",
-      "url": "https://www.bbc.co.uk/sport/cricket/articles/ckvg2exrj5elo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/cricket/articles/ckvg2exrj5elo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-11-14T09:53:45.000Z"
-    },
-    {
       "id": "https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html",
       "title": "Microsoft apologizes for massive outage that took down Outlook and other 365 services",
       "summary": "A Microsoft outage on Thursday and Friday affected users of services like Outlook, Teams and 365.",
@@ -883,16 +1043,6 @@
       "publishedAt": "2026-11-14T07:49:46.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/sport/cricket/articles/c59vwpv4rxjeo?at_medium=rss&at_campaign=rss",
-      "title": "Warner accuses Cricket Australia of 'cover-up'",
-      "summary": "Former vice-captain David Warner accuses Cricket Australia of a \"cover-up\", claiming Australia's bowlers were not interviewed in ball-tampering investigation.",
-      "url": "https://www.bbc.co.uk/sport/cricket/articles/c59vwpv4rxjeo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/cricket/articles/c59vwpv4rxjeo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-11-14T07:20:24.000Z"
-    },
-    {
       "id": "https://www.cnbc.com/2026/11/14/nvidia-jensen-huang-ceo-succession-risk.html",
       "title": "Analysis: Companies love a ‘rockstar’ CEO. Until they depend on one",
       "summary": "Jensen Huang’s exit tests Nvidia’s succession planning and governance, and offers lessons for companies that elevate their CEOs to rockstar status.",
@@ -901,16 +1051,6 @@
       "source": "CNBC · Finance",
       "category": "finance",
       "publishedAt": "2026-11-14T07:08:45.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o?at_medium=rss&at_campaign=rss",
-      "title": "Microsoft says services fully restored after day-long global outage",
-      "summary": "Efforts to address the underlying problem with Outlook, Teams and Copilot are complete, the tech firm says.",
-      "url": "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-11-14T06:42:27.000Z"
     },
     {
       "id": "https://www.cnbc.com/2026/11/14/ecuador-biodiversity-green-finance-oil.html",
@@ -933,16 +1073,6 @@
       "publishedAt": "2026-11-14T02:59:05.000Z"
     },
     {
-      "id": "https://www.bbc.co.uk/news/videos/c893ryz7lw33o?at_medium=rss&at_campaign=rss",
-      "title": "'We'll get home one day' - US travellers impacted by nationwide ground stop",
-      "summary": "Passengers throughout the country were impacted over what the Federal Aviation Administration (FAA) describes as “safety and communication issues”.",
-      "url": "https://www.bbc.co.uk/news/videos/c893ryz7lw33o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/videos/c893ryz7lw33o?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-11-14T01:47:36.000Z"
-    },
-    {
       "id": "https://www.sciencedaily.com/releases/2026/11/261112025523.htm",
       "title": "Scientists capture electrons making seemingly impossible quantum jumps",
       "summary": "Scientists have captured electrons making seemingly impossible jumps across forbidden energy gaps in graphene, with some transitions occurring at a remarkable 100% probability. The breakthrough offers an unprecedented lo",
@@ -961,16 +1091,6 @@
       "source": "BBC News · World",
       "category": "general",
       "publishedAt": "2026-11-14T00:03:56.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/articles/cmlydy0xw45wo?at_medium=rss&at_campaign=rss",
-      "title": "Arrested generals and a threatened VP: President's son fuels Ugandan succession fever",
-      "summary": "The 52-year-old general’s provocative posts and military threats have fuelled rumours of a dynastic succession.",
-      "url": "https://www.bbc.co.uk/news/articles/cmlydy0xw45wo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmlydy0xw45wo?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-11-14T00:03:52.000Z"
     },
     {
       "id": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-washington-congress.html",
@@ -1081,126 +1201,6 @@
       "source": "CNBC · Finance",
       "category": "finance",
       "publishedAt": "2026-11-13T21:18:30.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/make-it/2026/11/13/honeypot-scam-red-flags.html",
-      "title": "They train people to avoid 'honeypot' scams—here are the common red flags they spot: 'It feels so good to be wanted'",
-      "summary": "Corporate security firms train companies and their employees on strategies for being vigilant against honeypots, and other social engineering attacks.",
-      "url": "https://www.cnbc.com/make-it/2026/11/13/honeypot-scam-red-flags.html",
-      "canonicalUrl": "https://www.cnbc.com/make-it/2026/11/13/honeypot-scam-red-flags.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-11-13T21:06:25.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/11/13/robinhood-supreme-court-ipo-lawsuit.html",
-      "title": "Supreme Court agrees to hear Robinhood challenge to IPO information omission lawsuit",
-      "summary": "The Trump administration had urged the Supreme Court to hear an appeal by Robinhood of a lower-court's decision to revive an investors' lawsuit over the IPO.",
-      "url": "https://www.cnbc.com/2026/11/13/robinhood-supreme-court-ipo-lawsuit.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/11/13/robinhood-supreme-court-ipo-lawsuit.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-11-13T20:48:13.000Z"
-    },
-    {
-      "id": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
-      "title": "ChatGPT Wallet lets OpenAI’s Dots agents make purchases for you",
-      "summary": "After launching its Dots AI agents platform earlier this year, OpenAI is launching a wallet for the agents. ChatGPT Wallet is rolling out starting today for ChatGPT Pro subscribers in the US aged 18 and older using a US ",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
-      "canonicalUrl": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
-      "source": "The Verge · AI",
-      "category": "ai",
-      "publishedAt": "2026-11-13T20:45:10.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/11/13/kevin-hassett-white-house-nec.html",
-      "title": "Hassett denies report he's leaving White House: 'Not true'",
-      "summary": "National Economic Council Director Kevin Hassett poured cold water on a report that he's expected to leave the White House in the coming weeks.",
-      "url": "https://www.cnbc.com/2026/11/13/kevin-hassett-white-house-nec.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/11/13/kevin-hassett-white-house-nec.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-11-13T20:27:47.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/11/13/nvidia-stock-advisors-jensen-huang-exit-exclusive-poll.html",
-      "title": "After Jensen Huang’s exit, what top financial advisors are doing with Nvidia: Exclusive CNBC poll",
-      "summary": "Advisors say investors should weigh their Nvidia exposure, time horizon and risk tolerance before reacting to the leadership change.",
-      "url": "https://www.cnbc.com/2026/11/13/nvidia-stock-advisors-jensen-huang-exit-exclusive-poll.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/11/13/nvidia-stock-advisors-jensen-huang-exit-exclusive-poll.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-11-13T19:53:38.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/11/13/a-trading-strategy-to-ride-out-the-nvidia-uncertainty-and-generate-income-in-the-process.html",
-      "title": "A trading strategy to ride out the Nvidia uncertainty and generate income in the process",
-      "summary": "By deploying a persistent covered call strategy, investors can leverage the exact fear driving the stock down to generate robust, risk-reducing income.",
-      "url": "https://www.cnbc.com/2026/11/13/a-trading-strategy-to-ride-out-the-nvidia-uncertainty-and-generate-income-in-the-process.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/11/13/a-trading-strategy-to-ride-out-the-nvidia-uncertainty-and-generate-income-in-the-process.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-11-13T19:30:36.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/11/13/retirement-401k-ira-withdrawal-taxes.html",
-      "title": "Retirees sometimes tap savings for one-off expenses. Here’s what advisors say to consider first",
-      "summary": "Retirees who need cash for a one-time expense may look to their 401(k) or IRA, but financial advisors say there are trade-offs to weigh first.",
-      "url": "https://www.cnbc.com/2026/11/13/retirement-401k-ira-withdrawal-taxes.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/11/13/retirement-401k-ira-withdrawal-taxes.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-11-13T19:01:12.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/iplayer/episode/m003575x?at_medium=rss&at_campaign=rss",
-      "title": "The Sandpapergate Scandal",
-      "summary": "Why has Australian cricket's sandpaper scandal returned to the headlines?",
-      "url": "https://www.bbc.co.uk/iplayer/episode/m003575x?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/iplayer/episode/m003575x?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-11-13T18:00:00.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/rugby-league/articles/crly54evvvv4o?at_medium=rss&at_campaign=rss",
-      "title": "Sharks, ladders and a four-year plan - how England won World Cup",
-      "summary": "England's triumph at the Wheelchair Rugby League World Cup was built on an aggressive approach by head coach Tom Coyd - which included encouraging his players to see themselves like sharks.",
-      "url": "https://www.bbc.co.uk/sport/rugby-league/articles/crly54evvvv4o?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/rugby-league/articles/crly54evvvv4o?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-11-13T15:49:30.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/sport/american-football/videos/cmy493wdvpyyo?at_medium=rss&at_campaign=rss",
-      "title": "Late Diggs touchdown earns Commanders win at Giants",
-      "summary": "Stefon Diggs scores a late touchdown to help Washington Commanders beat New York Giants 24-21.",
-      "url": "https://www.bbc.co.uk/sport/american-football/videos/cmy493wdvpyyo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/sport/american-football/videos/cmy493wdvpyyo?at_medium=rss&at_campaign=rss",
-      "source": "BBC Sport",
-      "category": "sports",
-      "publishedAt": "2026-11-13T15:45:33.000Z"
-    },
-    {
-      "id": "https://www.cnbc.com/2026/11/13/ppi-inflation-report-october-2026.html",
-      "title": "Wholesale prices rose 0.3% in October, putting annual rate at 6.5%, the highest in nearly four years",
-      "summary": "The producer price index was expected to increase 0.4% in October, according to the Dow Jones consensus.",
-      "url": "https://www.cnbc.com/2026/11/13/ppi-inflation-report-october-2026.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/11/13/ppi-inflation-report-october-2026.html",
-      "source": "CNBC · Finance",
-      "category": "finance",
-      "publishedAt": "2026-11-13T15:44:16.000Z"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/videos/ckqx5ryx905qo?at_medium=rss&at_campaign=rss",
-      "title": "Watch: Divers explore US ship sunk off Florida coast to create new reef",
-      "summary": "The ship was intentionally sunk off the coast of Florida in order to create the world's largest artificial ocean reef.",
-      "url": "https://www.bbc.co.uk/news/videos/ckqx5ryx905qo?at_medium=rss&at_campaign=rss",
-      "canonicalUrl": "https://www.bbc.co.uk/news/videos/ckqx5ryx905qo?at_medium=rss&at_campaign=rss",
-      "source": "BBC News · World",
-      "category": "general",
-      "publishedAt": "2026-11-13T15:09:40.000Z"
     }
   ],
   "sourceHealth": [
@@ -1231,7 +1231,7 @@
     {
       "name": "BBC Sport",
       "ok": true,
-      "itemCount": 64,
+      "itemCount": 67,
       "error": null
     },
     {
@@ -1255,7 +1255,7 @@
     {
       "name": "BBC News · World",
       "ok": true,
-      "itemCount": 23,
+      "itemCount": 22,
       "error": null
     },
     {
